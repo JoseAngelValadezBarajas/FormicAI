@@ -2,7 +2,7 @@
 
 FormicAI is a personal project for observing, recording, and analyzing ant colony videos over time. The long-term vision includes computer vision, tracking, data analysis, cloud services, multimodal AI, scientific literature retrieval, and IoT telemetry.
 
-This repository currently implements **FormicAI Vision v0.1**: video to motion analysis to metrics, heatmap, and annotated video.
+This repository currently implements **FormicAI Vision v0.1**: video to motion analysis to metrics, heatmap, annotated video, and optional motion-mask video.
 
 It does **not** detect ants yet. In this version, the system detects moving regions.
 
@@ -63,7 +63,7 @@ Using the convenience script:
 python main.py samples/ants.mp4
 ```
 
-The default motion filter scales the minimum contour area to the ROI size. For a 1920x1080 full-frame video, the default is about `1037` pixels; for a 320x240 video, it is about `38` pixels.
+The default motion filter scales the minimum contour area to the ROI size. For a 1920x1080 full-frame video, the default is about `207` pixels; for a 320x240 video, it is about `8` pixels.
 
 With a region of interest:
 
@@ -79,19 +79,17 @@ x,y,width,height
 
 If no ROI is provided, the full frame is analyzed.
 
-By default, the first `30` frames are used to warm up the background model and are recorded with activity score `0.0`. You can change this:
+By default, the first `30` frames are used to warm up the background model. They count as processed frames, but they do not participate in activity statistics. You can change this:
 
 ```bash
 python main.py samples/ants.mp4 --warmup-frames 30
 ```
 
-If the video is noisy, increase sensitivity filtering:
+To write a video showing the final binary motion mask used for scoring, heatmap accumulation, and detections:
 
 ```bash
-python main.py samples/ants.mp4 --background-var-threshold 64 --min-motion-area-ratio 0.0005
+python -m formicai analyze samples/ants.mp4 --write-motion-mask
 ```
-
-If subtle motion is being missed, lower those values.
 
 ## Outputs
 
@@ -100,6 +98,13 @@ By default, files are written to `output/`:
 - `output/analyzed.mp4`: original video with moving regions boxed and basic frame metrics overlaid.
 - `output/activity_heatmap.png`: accumulated motion heatmap for the full video.
 - `output/metrics.json`: video metadata and aggregate activity metrics.
+- `output/motion_mask.mp4`: optional final binary motion mask video, only written with `--write-motion-mask`.
+
+`metrics.json` includes:
+
+- `processedFrames`: frames read and processed, including warmup.
+- `warmupFrames`: frames used to stabilize the background model.
+- `scoredFrames`: frames included in activity statistics.
 
 ## Activity Score
 
@@ -109,11 +114,30 @@ The activity score is intentionally simple in v0.1:
 motion pixels after noise filtering and contour filtering / total ROI pixels
 ```
 
-The value is clamped between `0.0` and `1.0`.
+The value is clamped between `0.0` and `1.0`. Aggregate activity statistics are calculated only from `scoredFrames`, not warmup frames.
 
-Warmup frames are processed but not counted as motion, which avoids the first frame dominating the metrics while OpenCV initializes the background model.
+Warmup frames are processed but excluded from `averageActivityScore`, `maxActivityScore`, `peakActivityTimestampSeconds`, `averageActiveRegions`, and `maxActiveRegions`.
 
 This metric is useful for rough activity comparison, but it is not a biological ant count or behavior classifier.
+
+## Tuning Motion Detection
+
+Small moving regions may require lower contour-area thresholds. Try explicit values while inspecting `analyzed.mp4`, `activity_heatmap.png`, and optionally `motion_mask.mp4`:
+
+```bash
+python -m formicai analyze samples/ants.mp4 --min-motion-area 30 --write-motion-mask
+python -m formicai analyze samples/ants.mp4 --min-motion-area 75 --write-motion-mask
+```
+
+Smaller values are more sensitive and may add noise. Larger values reduce noise but may miss small motion. These are experimental parameters, not scientifically validated ant-detection thresholds.
+
+If the video is noisy, increase filtering:
+
+```bash
+python -m formicai analyze samples/ants.mp4 --background-var-threshold 64 --min-motion-area 100
+```
+
+If subtle motion is being missed, lower those values.
 
 ## Tests
 
@@ -121,7 +145,7 @@ This metric is useful for rough activity comparison, but it is not a biological 
 pytest
 ```
 
-The tests focus on deterministic behavior: ROI parsing/validation, activity score calculation, contour filtering, and metrics aggregation.
+The tests focus on deterministic behavior and include a smoke test that generates a temporary video and runs the full `VideoAnalyzer` pipeline.
 
 ## Current Limitations
 

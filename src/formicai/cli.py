@@ -41,7 +41,7 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument(
         "--min-motion-area-ratio",
         type=float,
-        default=0.0005,
+        default=0.0001,
         help="Default contour area as a ratio of ROI pixels when --min-motion-area is omitted.",
     )
     parser.add_argument(
@@ -67,6 +67,11 @@ def build_parser() -> argparse.ArgumentParser:
         type=int,
         default=30,
         help="Frames used to warm up the background model before scoring motion.",
+    )
+    parser.add_argument(
+        "--write-motion-mask",
+        action="store_true",
+        help="Write output/motion_mask.mp4 with the final binary mask used for scoring.",
     )
     parser.add_argument(
         "--log-level",
@@ -111,15 +116,25 @@ def main(argv: Sequence[str] | None = None) -> int:
         background_var_threshold=args.background_var_threshold,
         progress_interval=args.progress_interval,
         warmup_frames=args.warmup_frames,
+        write_motion_mask=args.write_motion_mask,
     )
 
     try:
         result = VideoAnalyzer(config).analyze()
-    except Exception as exc:
+    except (FileNotFoundError, ValueError, RuntimeError) as exc:
         logging.getLogger(__name__).error("%s", exc)
+        return 1
+    except Exception as exc:
+        logger = logging.getLogger(__name__)
+        if logger.isEnabledFor(logging.DEBUG):
+            logger.exception("Unexpected error while analyzing video")
+        else:
+            logger.error("Unexpected error while analyzing video: %s", exc)
         return 1
 
     logging.getLogger(__name__).info("Generated %s", result.annotated_video_path)
     logging.getLogger(__name__).info("Generated %s", result.heatmap_path)
     logging.getLogger(__name__).info("Generated %s", result.metrics_path)
+    if result.motion_mask_video_path is not None:
+        logging.getLogger(__name__).info("Generated %s", result.motion_mask_video_path)
     return 0

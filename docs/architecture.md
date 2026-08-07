@@ -10,7 +10,8 @@ VideoAnalyzer
  |-- MotionDetector
  |-- MetricsAggregator
  |-- HeatmapAccumulator
- `-- AnnotatedVideoWriter
+ |-- AnnotatedVideoWriter
+ `-- Optional motion mask writer
 ```
 
 ## Current Flow
@@ -19,8 +20,9 @@ VideoAnalyzer
 2. `VideoAnalyzer` validates the video, reads metadata, and streams frames one by one.
 3. `MotionDetector` uses OpenCV background subtraction plus light noise filtering to produce moving regions.
 4. `AnnotatedVideoWriter` writes bounding boxes and frame-level activity data to `output/analyzed.mp4`.
-5. `HeatmapAccumulator` stores only an accumulated motion matrix and writes `output/activity_heatmap.png`.
-6. `MetricsAggregator` summarizes activity into `output/metrics.json`.
+5. If enabled, the same writer infrastructure writes the final binary motion mask to `output/motion_mask.mp4`.
+6. `HeatmapAccumulator` stores only an accumulated motion matrix and writes `output/activity_heatmap.png`.
+7. `MetricsAggregator` keeps O(1) incremental counters and summarizes scored frames into `output/metrics.json`.
 
 ## Future Direction
 

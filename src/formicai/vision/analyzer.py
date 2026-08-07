@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import json
 import logging
+from contextlib import ExitStack
 from dataclasses import dataclass
 from pathlib import Path
 
@@ -24,11 +25,27 @@ class AnalysisConfig:
     output_dir: Path = Path("output")
     roi: ROI | None = None
     min_motion_area: float | None = None
-    min_motion_area_ratio: float = 0.0005
+    min_motion_area_ratio: float = 0.0001
     background_history: int = 500
     background_var_threshold: float = 64.0
     progress_interval: int = 100
     warmup_frames: int = 30
+    write_motion_mask: bool = False
+
+    def validate(self) -> None:
+        if self.background_history <= 0:
+            raise ValueError("background_history must be greater than 0.")
+        if self.background_var_threshold <= 0:
+            raise ValueError("background_var_threshold must be greater than 0.")
+        if self.progress_interval < 0:
+            raise ValueError("progress_interval must be greater than or equal to 0.")
+        if self.warmup_frames < 0:
+            raise ValueError("warmup_frames must be greater than or equal to 0.")
+        resolve_min_motion_area(
+            roi=ROI(x=0, y=0, width=1, height=1),
+            min_motion_area=self.min_motion_area,
+            min_motion_area_ratio=self.min_motion_area_ratio,
+        )
 
 
 class VideoAnalyzer:
@@ -36,6 +53,7 @@ class VideoAnalyzer:
         self._config = config
 
     def analyze(self) -> AnalysisResult:
+        self._config.validate()
         input_path = self._config.input_path
         if not input_path.exists():
             raise FileNotFoundError(f"Input video does not exist: {input_path}")
@@ -74,6 +92,11 @@ class VideoAnalyzer:
             annotated_video_path = output_dir / "analyzed.mp4"
             heatmap_path = output_dir / "activity_heatmap.png"
             metrics_path = output_dir / "metrics.json"
+            motion_mask_path = (
+                output_dir / "motion_mask.mp4"
+                if self._config.write_motion_mask
+                else None
+            )
 
             min_motion_area = self._resolve_min_motion_area(roi)
             LOGGER.info("Minimum motion contour area: %.1f px", min_motion_area)
@@ -101,15 +124,30 @@ class VideoAnalyzer:
                     "minMotionAreaRatio": self._config.min_motion_area_ratio,
                     "backgroundHistory": self._config.background_history,
                     "backgroundVarThreshold": self._config.background_var_threshold,
+                    "writeMotionMask": self._config.write_motion_mask,
                 },
             )
             writer_fps = metadata.fps if metadata.fps > 0 else 30.0
 
-            with AnnotatedVideoWriter(
-                annotated_video_path,
-                fps=writer_fps,
-                frame_size=(metadata.width, metadata.height),
-            ) as writer:
+            with ExitStack() as stack:
+                writer = stack.enter_context(
+                    AnnotatedVideoWriter(
+                        annotated_video_path,
+                        fps=writer_fps,
+                        frame_size=(metadata.width, metadata.height),
+                    )
+                )
+                motion_mask_writer = (
+                    stack.enter_context(
+                        AnnotatedVideoWriter(
+                            motion_mask_path,
+                            fps=writer_fps,
+                            frame_size=(metadata.width, metadata.height),
+                        )
+                    )
+                    if motion_mask_path is not None
+                    else None
+                )
                 processed_frames = self._process_frames(
                     capture=capture,
                     first_frame=first_frame,
@@ -119,6 +157,7 @@ class VideoAnalyzer:
                     heatmap=heatmap,
                     metrics=metrics,
                     writer=writer,
+                    motion_mask_writer=motion_mask_writer,
                     total_frames=metadata.frames,
                 )
 
@@ -131,6 +170,7 @@ class VideoAnalyzer:
                 annotated_video_path=annotated_video_path,
                 heatmap_path=heatmap_path,
                 metrics_path=metrics_path,
+                motion_mask_video_path=motion_mask_path,
                 metrics=metrics_payload,
             )
         finally:
@@ -146,6 +186,7 @@ class VideoAnalyzer:
         heatmap: HeatmapAccumulator,
         metrics: MetricsAggregator,
         writer: AnnotatedVideoWriter,
+        motion_mask_writer: AnnotatedVideoWriter | None,
         total_frames: int,
     ) -> int:
         frame_index = 0
@@ -176,13 +217,24 @@ class VideoAnalyzer:
                 activity_score=activity_score,
             )
             heatmap.add_motion(motion_mask, roi.x, roi.y)
-            metrics.add_frame(
-                frame_index=frame_index,
-                timestamp_seconds=timestamp_seconds,
-                activity_score=activity_score,
-                active_regions=len(detections),
-            )
+            if is_warmup_frame:
+                metrics.add_warmup_frame()
+            else:
+                metrics.add_scored_frame(
+                    timestamp_seconds=timestamp_seconds,
+                    activity_score=activity_score,
+                    active_regions=len(detections),
+                )
             writer.write(annotated)
+            if motion_mask_writer is not None:
+                motion_mask_writer.write(
+                    self._render_full_frame_motion_mask(
+                        motion_mask=motion_mask,
+                        roi=roi,
+                        frame_width=annotated.shape[1],
+                        frame_height=annotated.shape[0],
+                    )
+                )
 
             processed_frames += 1
             if (
@@ -293,6 +345,20 @@ class VideoAnalyzer:
                 thickness,
                 cv2.LINE_AA,
             )
+
+    @staticmethod
+    def _render_full_frame_motion_mask(
+        motion_mask: np.ndarray,
+        roi: ROI,
+        frame_width: int,
+        frame_height: int,
+    ) -> np.ndarray:
+        full_frame_mask = np.zeros((frame_height, frame_width), dtype=np.uint8)
+        full_frame_mask[
+            roi.y : roi.y + roi.height,
+            roi.x : roi.x + roi.width,
+        ] = motion_mask
+        return cv2.cvtColor(full_frame_mask, cv2.COLOR_GRAY2BGR)
 
     @staticmethod
     def _write_metrics(output_path: Path, payload: dict[str, object]) -> None:

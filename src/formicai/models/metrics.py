@@ -25,18 +25,11 @@ class VideoMetadata:
 
 
 @dataclass(frozen=True)
-class FrameMetrics:
-    frame_index: int
-    timestamp_seconds: float
-    activity_score: float
-    active_regions: int
-
-
-@dataclass(frozen=True)
 class AnalysisResult:
     annotated_video_path: Path
     heatmap_path: Path
     metrics_path: Path
+    motion_mask_video_path: Path | None
     metrics: dict[str, object]
 
 
@@ -54,40 +47,47 @@ class MetricsAggregator:
         self._roi = roi
         self._warmup_frames = warmup_frames
         self._parameters = parameters or {}
-        self._frames: list[FrameMetrics] = []
+        self._processed_frames = 0
+        self._warmup_frames_seen = 0
+        self._scored_frames = 0
+        self._total_activity_score = 0.0
+        self._max_activity_score = 0.0
+        self._peak_activity_timestamp_seconds = 0.0
+        self._total_active_regions = 0
+        self._max_active_regions = 0
 
-    def add_frame(
+    def add_warmup_frame(self) -> None:
+        self._processed_frames += 1
+        self._warmup_frames_seen += 1
+
+    def add_scored_frame(
         self,
-        frame_index: int,
         timestamp_seconds: float,
         activity_score: float,
         active_regions: int,
     ) -> None:
-        self._frames.append(
-            FrameMetrics(
-                frame_index=frame_index,
-                timestamp_seconds=timestamp_seconds,
-                activity_score=activity_score,
-                active_regions=active_regions,
-            )
-        )
+        self._processed_frames += 1
+        self._scored_frames += 1
+        self._total_activity_score += activity_score
+        self._total_active_regions += active_regions
+
+        if activity_score > self._max_activity_score:
+            self._max_activity_score = activity_score
+            self._peak_activity_timestamp_seconds = timestamp_seconds
+
+        if active_regions > self._max_active_regions:
+            self._max_active_regions = active_regions
 
     def summary(self) -> dict[str, object]:
-        processed_frames = len(self._frames)
-        activity_scores = [frame.activity_score for frame in self._frames]
-        active_region_counts = [frame.active_regions for frame in self._frames]
-
         average_activity = (
-            sum(activity_scores) / processed_frames if processed_frames else 0.0
-        )
-        max_activity = max(activity_scores, default=0.0)
-        peak_frame = max(
-            self._frames,
-            key=lambda frame: frame.activity_score,
-            default=None,
+            self._total_activity_score / self._scored_frames
+            if self._scored_frames
+            else 0.0
         )
         average_regions = (
-            sum(active_region_counts) / processed_frames if processed_frames else 0.0
+            self._total_active_regions / self._scored_frames
+            if self._scored_frames
+            else 0.0
         )
 
         return {
@@ -96,21 +96,23 @@ class MetricsAggregator:
             "roi": self._roi.to_dict(),
             "parameters": self._parameters,
             "analysis": {
-                "processedFrames": processed_frames,
-                "warmupFrames": min(self._warmup_frames, processed_frames),
+                "processedFrames": self._processed_frames,
+                "warmupFrames": self._warmup_frames_seen,
+                "configuredWarmupFrames": self._warmup_frames,
+                "scoredFrames": self._scored_frames,
                 "averageActivityScore": round(average_activity, 6),
-                "maxActivityScore": round(max_activity, 6),
+                "maxActivityScore": round(self._max_activity_score, 6),
                 "peakActivityTimestampSeconds": round(
-                    peak_frame.timestamp_seconds if peak_frame else 0.0,
+                    self._peak_activity_timestamp_seconds,
                     6,
                 ),
                 "averageActiveRegions": round(average_regions, 6),
-                "maxActiveRegions": max(active_region_counts, default=0),
+                "maxActiveRegions": self._max_active_regions,
             },
             "activityScoreDefinition": (
                 "Number of pixels kept as motion after noise filtering and contour "
                 "filtering divided by the total ROI pixel count. The value is clamped "
-                "to the 0.0-1.0 range. Warmup frames are processed but recorded with "
-                "score 0.0 while the background model stabilizes."
+                "to the 0.0-1.0 range. Warmup frames are processed to stabilize the "
+                "background model, but they are excluded from activity statistics."
             ),
         }
