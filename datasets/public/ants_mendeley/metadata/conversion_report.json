@@ -1,0 +1,78 @@
+{
+  "dataset": {
+    "name": "ANTS--ant detection and tracking",
+    "doi": "10.17632/9ws98g4npw.4",
+    "license": "CC0 1.0"
+  },
+  "phase": "ground_truth_conversion_only",
+  "noTraining": true,
+  "noModelEvaluation": true,
+  "sequences": {
+    "Seq0001": {
+      "rawDirectory": "datasets\\public\\ants_mendeley\\raw\\Ant_dataset\\IndoorDataset\\Seq0001Object10Image94",
+      "preparedDirectory": "datasets\\public\\ants_mendeley\\prepared\\Seq0001",
+      "images": 351,
+      "labels": 351,
+      "annotations": 3510,
+      "uniqueTrackIds": 10,
+      "frameRange": {
+        "min": 1,
+        "max": 351
+      },
+      "flags": [
+        1
+      ],
+      "resolution": {
+        "width": 1920,
+        "height": 1080
+      },
+      "fps": 25,
+      "imagesWithoutGT": [],
+      "gtFramesWithoutImage": [],
+      "malformedAnnotations": 0,
+      "invalidRows": 0,
+      "invalidClassIds": 0,
+      "outOfBoundsBoxes": 0,
+      "outOfRangeNormalizedCoordinates": 0,
+      "zeroOrNegativeBoxes": 0,
+      "duplicateFrameTrackIds": [],
+      "seqinfoNameMismatch": null,
+      "trackingMetadata": "datasets\\public\\ants_mendeley\\metadata\\tracking_seq0001.jsonl",
+      "datasetYaml": "datasets\\public\\ants_mendeley\\metadata\\seq0001.yaml",
+      "groundTruthMontage": "artifacts\\analysis\\public_ants\\Seq0001_ground_truth_montage.jpg"
+    },
+    "Seq0006": {
+      "rawDirectory": "datasets\\public\\ants_mendeley\\raw\\Ant_dataset\\OutdoorDataset\\Seq0006Object21Image64",
+      "preparedDirectory": "datasets\\public\\ants_mendeley\\prepared\\Seq0006",
+      "images": 600,
+      "labels": 600,
+      "annotations": 11178,
+      "uniqueTrackIds": 73,
+      "frameRange": {
+        "min": 1,
+        "max": 600
+      },
+      "flags": [
+        1
+      ],
+      "resolution": {
+        "width": 1280,
+        "height": 720
+      },
+      "fps": 30,
+      "imagesWithoutGT": [],
+      "gtFramesWithoutImage": [],
+      "malformedAnnotations": 0,
+      "invalidRows": 0,
+      "invalidClassIds": 0,
+      "outOfBoundsBoxes": 0,
+      "outOfRangeNormalizedCoordinates": 0,
+      "zeroOrNegativeBoxes": 0,
+      "duplicateFrameTrackIds": [],
+      "seqinfoNameMismatch": "folder=Seq0006Object21Image64; seqinfo.ini name=Seq0006Object10Image64",
+      "trackingMetadata": "datasets\\public\\ants_mendeley\\metadata\\tracking_seq0006.jsonl",
+      "datasetYaml": "datasets\\public\\ants_mendeley\\metadata\\seq0006.yaml",
+      "groundTruthMontage": "artifacts\\analysis\\public_ants\\Seq0006_ground_truth_montage.jpg"
+    }
+  }
+}

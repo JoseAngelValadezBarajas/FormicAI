@@ -1,0 +1,723 @@
+{
+  "sourceExport": "exported_dataset",
+  "strategy": "Merged Roboflow train/valid/test, sorted by timestamp from filename, used first 80% for train and last 20% for val with 1 boundary frame(s) omitted as temporal gap.",
+  "trainFraction": 0.8,
+  "gapCountRequested": 1,
+  "sourceDetectionAnnotations": 262,
+  "convertedSegmentationAnnotations": 37,
+  "sourceTotalAnnotations": 299,
+  "gapAnnotations": 4,
+  "totalPreparedAnnotations": 295,
+  "invalidAnnotations": 0,
+  "trainImages": 54,
+  "valImages": 13,
+  "gapImages": 1,
+  "trainAnnotations": 247,
+  "valAnnotations": 48,
+  "temporalRanges": {
+    "train": {
+      "firstFrame": 0,
+      "lastFrame": 371,
+      "firstTimestampSeconds": 0.0,
+      "lastTimestampSeconds": 12.378
+    },
+    "gap": {
+      "firstFrame": 378,
+      "lastFrame": 378,
+      "firstTimestampSeconds": 12.612,
+      "lastTimestampSeconds": 12.612
+    },
+    "val": {
+      "firstFrame": 385,
+      "lastFrame": 469,
+      "firstTimestampSeconds": 12.846,
+      "lastTimestampSeconds": 15.648
+    }
+  },
+  "train": [
+    {
+      "sourceSplit": "train",
+      "image": "exported_dataset\\train\\images\\ant2_frame_000000_t0000-000_jpg.rf.6a638ed7ff141c5a131c28a222ae0f44.jpg",
+      "label": "exported_dataset\\train\\labels\\ant2_frame_000000_t0000-000_jpg.rf.6a638ed7ff141c5a131c28a222ae0f44.txt",
+      "frameIndex": 0,
+      "timestampSeconds": 0.0,
+      "detectionAnnotations": 0,
+      "convertedSegmentationAnnotations": 4,
+      "totalAnnotations": 4
+    },
+    {
+      "sourceSplit": "train",
+      "image": "exported_dataset\\train\\images\\ant2_frame_000007_t0000-234_jpg.rf.74b9e82ddec39184ba0e2a6486a091eb.jpg",
+      "label": "exported_dataset\\train\\labels\\ant2_frame_000007_t0000-234_jpg.rf.74b9e82ddec39184ba0e2a6486a091eb.txt",
+      "frameIndex": 7,
+      "timestampSeconds": 0.234,
+      "detectionAnnotations": 0,
+      "convertedSegmentationAnnotations": 4,
+      "totalAnnotations": 4
+    },
+    {
+      "sourceSplit": "train",
+      "image": "exported_dataset\\train\\images\\ant2_frame_000014_t0000-467_jpg.rf.3c6b865d00726160687fc9fa9503bbec.jpg",
+      "label": "exported_dataset\\train\\labels\\ant2_frame_000014_t0000-467_jpg.rf.3c6b865d00726160687fc9fa9503bbec.txt",
+      "frameIndex": 14,
+      "timestampSeconds": 0.467,
+      "detectionAnnotations": 0,
+      "convertedSegmentationAnnotations": 5,
+      "totalAnnotations": 5
+    },
+    {
+      "sourceSplit": "valid",
+      "image": "exported_dataset\\valid\\images\\ant2_frame_000021_t0000-701_jpg.rf.66f848fdc841c4468c97684a14a0092d.jpg",
+      "label": "exported_dataset\\valid\\labels\\ant2_frame_000021_t0000-701_jpg.rf.66f848fdc841c4468c97684a14a0092d.txt",
+      "frameIndex": 21,
+      "timestampSeconds": 0.701,
+      "detectionAnnotations": 0,
+      "convertedSegmentationAnnotations": 5,
+      "totalAnnotations": 5
+    },
+    {
+      "sourceSplit": "train",
+      "image": "exported_dataset\\train\\images\\ant2_frame_000028_t0000-934_jpg.rf.274eaa7eebb0f80dee95c9d9fae7c014.jpg",
+      "label": "exported_dataset\\train\\labels\\ant2_frame_000028_t0000-934_jpg.rf.274eaa7eebb0f80dee95c9d9fae7c014.txt",
+      "frameIndex": 28,
+      "timestampSeconds": 0.934,
+      "detectionAnnotations": 0,
+      "convertedSegmentationAnnotations": 5,
+      "totalAnnotations": 5
+    },
+    {
+      "sourceSplit": "train",
+      "image": "exported_dataset\\train\\images\\ant2_frame_000035_t0001-168_jpg.rf.ee6ea1d4bf4969594480c4a0b9cf155c.jpg",
+      "label": "exported_dataset\\train\\labels\\ant2_frame_000035_t0001-168_jpg.rf.ee6ea1d4bf4969594480c4a0b9cf155c.txt",
+      "frameIndex": 35,
+      "timestampSeconds": 1.168,
+      "detectionAnnotations": 0,
+      "convertedSegmentationAnnotations": 4,
+      "totalAnnotations": 4
+    },
+    {
+      "sourceSplit": "train",
+      "image": "exported_dataset\\train\\images\\ant2_frame_000042_t0001-401_jpg.rf.a36b5834a343fae7c6de92229d4dd626.jpg",
+      "label": "exported_dataset\\train\\labels\\ant2_frame_000042_t0001-401_jpg.rf.a36b5834a343fae7c6de92229d4dd626.txt",
+      "frameIndex": 42,
+      "timestampSeconds": 1.401,
+      "detectionAnnotations": 0,
+      "convertedSegmentationAnnotations": 5,
+      "totalAnnotations": 5
+    },
+    {
+      "sourceSplit": "test",
+      "image": "exported_dataset\\test\\images\\ant2_frame_000049_t0001-635_jpg.rf.a12d16773c43b01c9722e34fd4f14402.jpg",
+      "label": "exported_dataset\\test\\labels\\ant2_frame_000049_t0001-635_jpg.rf.a12d16773c43b01c9722e34fd4f14402.txt",
+      "frameIndex": 49,
+      "timestampSeconds": 1.635,
+      "detectionAnnotations": 0,
+      "convertedSegmentationAnnotations": 5,
+      "totalAnnotations": 5
+    },
+    {
+      "sourceSplit": "train",
+      "image": "exported_dataset\\train\\images\\ant2_frame_000056_t0001-868_jpg.rf.1cbf90fa3fcd5c8f127389875fbad6c4.jpg",
+      "label": "exported_dataset\\train\\labels\\ant2_frame_000056_t0001-868_jpg.rf.1cbf90fa3fcd5c8f127389875fbad6c4.txt",
+      "frameIndex": 56,
+      "timestampSeconds": 1.868,
+      "detectionAnnotations": 4,
+      "convertedSegmentationAnnotations": 0,
+      "totalAnnotations": 4
+    },
+    {
+      "sourceSplit": "train",
+      "image": "exported_dataset\\train\\images\\ant2_frame_000063_t0002-102_jpg.rf.d120431557047b325cdf8e314fa770c7.jpg",
+      "label": "exported_dataset\\train\\labels\\ant2_frame_000063_t0002-102_jpg.rf.d120431557047b325cdf8e314fa770c7.txt",
+      "frameIndex": 63,
+      "timestampSeconds": 2.102,
+      "detectionAnnotations": 4,
+      "convertedSegmentationAnnotations": 0,
+      "totalAnnotations": 4
+    },
+    {
+      "sourceSplit": "valid",
+      "image": "exported_dataset\\valid\\images\\ant2_frame_000070_t0002-336_jpg.rf.a88dc47647063e77374898fb2970caa1.jpg",
+      "label": "exported_dataset\\valid\\labels\\ant2_frame_000070_t0002-336_jpg.rf.a88dc47647063e77374898fb2970caa1.txt",
+      "frameIndex": 70,
+      "timestampSeconds": 2.336,
+      "detectionAnnotations": 4,
+      "convertedSegmentationAnnotations": 0,
+      "totalAnnotations": 4
+    },
+    {
+      "sourceSplit": "train",
+      "image": "exported_dataset\\train\\images\\ant2_frame_000077_t0002-569_jpg.rf.7b2f20ff6a5212929d96537e27b81523.jpg",
+      "label": "exported_dataset\\train\\labels\\ant2_frame_000077_t0002-569_jpg.rf.7b2f20ff6a5212929d96537e27b81523.txt",
+      "frameIndex": 77,
+      "timestampSeconds": 2.569,
+      "detectionAnnotations": 4,
+      "convertedSegmentationAnnotations": 0,
+      "totalAnnotations": 4
+    },
+    {
+      "sourceSplit": "train",
+      "image": "exported_dataset\\train\\images\\ant2_frame_000084_t0002-803_jpg.rf.442650e77540d84a3d9b372aedaa9488.jpg",
+      "label": "exported_dataset\\train\\labels\\ant2_frame_000084_t0002-803_jpg.rf.442650e77540d84a3d9b372aedaa9488.txt",
+      "frameIndex": 84,
+      "timestampSeconds": 2.803,
+      "detectionAnnotations": 4,
+      "convertedSegmentationAnnotations": 0,
+      "totalAnnotations": 4
+    },
+    {
+      "sourceSplit": "train",
+      "image": "exported_dataset\\train\\images\\ant2_frame_000091_t0003-036_jpg.rf.44cd5d3798ae8d537b116d49fac4f52e.jpg",
+      "label": "exported_dataset\\train\\labels\\ant2_frame_000091_t0003-036_jpg.rf.44cd5d3798ae8d537b116d49fac4f52e.txt",
+      "frameIndex": 91,
+      "timestampSeconds": 3.036,
+      "detectionAnnotations": 4,
+      "convertedSegmentationAnnotations": 0,
+      "totalAnnotations": 4
+    },
+    {
+      "sourceSplit": "train",
+      "image": "exported_dataset\\train\\images\\ant2_frame_000098_t0003-270_jpg.rf.68fc599f9ff29d6d0d6693b597aac668.jpg",
+      "label": "exported_dataset\\train\\labels\\ant2_frame_000098_t0003-270_jpg.rf.68fc599f9ff29d6d0d6693b597aac668.txt",
+      "frameIndex": 98,
+      "timestampSeconds": 3.27,
+      "detectionAnnotations": 4,
+      "convertedSegmentationAnnotations": 0,
+      "totalAnnotations": 4
+    },
+    {
+      "sourceSplit": "train",
+      "image": "exported_dataset\\train\\images\\ant2_frame_000105_t0003-503_jpg.rf.4de2657012a00b84735dc11b8288abf5.jpg",
+      "label": "exported_dataset\\train\\labels\\ant2_frame_000105_t0003-503_jpg.rf.4de2657012a00b84735dc11b8288abf5.txt",
+      "frameIndex": 105,
+      "timestampSeconds": 3.503,
+      "detectionAnnotations": 5,
+      "convertedSegmentationAnnotations": 0,
+      "totalAnnotations": 5
+    },
+    {
+      "sourceSplit": "train",
+      "image": "exported_dataset\\train\\images\\ant2_frame_000112_t0003-737_jpg.rf.adae2bf15862175313b8974d592d2459.jpg",
+      "label": "exported_dataset\\train\\labels\\ant2_frame_000112_t0003-737_jpg.rf.adae2bf15862175313b8974d592d2459.txt",
+      "frameIndex": 112,
+      "timestampSeconds": 3.737,
+      "detectionAnnotations": 4,
+      "convertedSegmentationAnnotations": 0,
+      "totalAnnotations": 4
+    },
+    {
+      "sourceSplit": "train",
+      "image": "exported_dataset\\train\\images\\ant2_frame_000119_t0003-970_jpg.rf.8a035d864607c243739f58fbcd2dd4ff.jpg",
+      "label": "exported_dataset\\train\\labels\\ant2_frame_000119_t0003-970_jpg.rf.8a035d864607c243739f58fbcd2dd4ff.txt",
+      "frameIndex": 119,
+      "timestampSeconds": 3.97,
+      "detectionAnnotations": 5,
+      "convertedSegmentationAnnotations": 0,
+      "totalAnnotations": 5
+    },
+    {
+      "sourceSplit": "train",
+      "image": "exported_dataset\\train\\images\\ant2_frame_000126_t0004-204_jpg.rf.6b8da0815be50475e796ed91ea025b24.jpg",
+      "label": "exported_dataset\\train\\labels\\ant2_frame_000126_t0004-204_jpg.rf.6b8da0815be50475e796ed91ea025b24.txt",
+      "frameIndex": 126,
+      "timestampSeconds": 4.204,
+      "detectionAnnotations": 3,
+      "convertedSegmentationAnnotations": 0,
+      "totalAnnotations": 3
+    },
+    {
+      "sourceSplit": "train",
+      "image": "exported_dataset\\train\\images\\ant2_frame_000133_t0004-438_jpg.rf.eb3ae7a968ce6e9eea48726402e856d3.jpg",
+      "label": "exported_dataset\\train\\labels\\ant2_frame_000133_t0004-438_jpg.rf.eb3ae7a968ce6e9eea48726402e856d3.txt",
+      "frameIndex": 133,
+      "timestampSeconds": 4.438,
+      "detectionAnnotations": 5,
+      "convertedSegmentationAnnotations": 0,
+      "totalAnnotations": 5
+    },
+    {
+      "sourceSplit": "train",
+      "image": "exported_dataset\\train\\images\\ant2_frame_000140_t0004-671_jpg.rf.5b21c3cda4873f2f8903aa8adea85ff4.jpg",
+      "label": "exported_dataset\\train\\labels\\ant2_frame_000140_t0004-671_jpg.rf.5b21c3cda4873f2f8903aa8adea85ff4.txt",
+      "frameIndex": 140,
+      "timestampSeconds": 4.671,
+      "detectionAnnotations": 4,
+      "convertedSegmentationAnnotations": 0,
+      "totalAnnotations": 4
+    },
+    {
+      "sourceSplit": "train",
+      "image": "exported_dataset\\train\\images\\ant2_frame_000147_t0004-905_jpg.rf.36c30cce6d2e2c37164e8811c26dd0cb.jpg",
+      "label": "exported_dataset\\train\\labels\\ant2_frame_000147_t0004-905_jpg.rf.36c30cce6d2e2c37164e8811c26dd0cb.txt",
+      "frameIndex": 147,
+      "timestampSeconds": 4.905,
+      "detectionAnnotations": 3,
+      "convertedSegmentationAnnotations": 0,
+      "totalAnnotations": 3
+    },
+    {
+      "sourceSplit": "test",
+      "image": "exported_dataset\\test\\images\\ant2_frame_000154_t0005-138_jpg.rf.b6c35a183119fc2ec0452bd87c5c5aeb.jpg",
+      "label": "exported_dataset\\test\\labels\\ant2_frame_000154_t0005-138_jpg.rf.b6c35a183119fc2ec0452bd87c5c5aeb.txt",
+      "frameIndex": 154,
+      "timestampSeconds": 5.138,
+      "detectionAnnotations": 4,
+      "convertedSegmentationAnnotations": 0,
+      "totalAnnotations": 4
+    },
+    {
+      "sourceSplit": "test",
+      "image": "exported_dataset\\test\\images\\ant2_frame_000161_t0005-372_jpg.rf.466084ce20be5598a63ea1bbd0c520d2.jpg",
+      "label": "exported_dataset\\test\\labels\\ant2_frame_000161_t0005-372_jpg.rf.466084ce20be5598a63ea1bbd0c520d2.txt",
+      "frameIndex": 161,
+      "timestampSeconds": 5.372,
+      "detectionAnnotations": 4,
+      "convertedSegmentationAnnotations": 0,
+      "totalAnnotations": 4
+    },
+    {
+      "sourceSplit": "train",
+      "image": "exported_dataset\\train\\images\\ant2_frame_000168_t0005-605_jpg.rf.afb9a3b34bfcf2cdbbdef7684c5e8cf4.jpg",
+      "label": "exported_dataset\\train\\labels\\ant2_frame_000168_t0005-605_jpg.rf.afb9a3b34bfcf2cdbbdef7684c5e8cf4.txt",
+      "frameIndex": 168,
+      "timestampSeconds": 5.605,
+      "detectionAnnotations": 3,
+      "convertedSegmentationAnnotations": 0,
+      "totalAnnotations": 3
+    },
+    {
+      "sourceSplit": "train",
+      "image": "exported_dataset\\train\\images\\ant2_frame_000175_t0005-839_jpg.rf.cf21f3063f4c6a9f47c26af9acc304bd.jpg",
+      "label": "exported_dataset\\train\\labels\\ant2_frame_000175_t0005-839_jpg.rf.cf21f3063f4c6a9f47c26af9acc304bd.txt",
+      "frameIndex": 175,
+      "timestampSeconds": 5.839,
+      "detectionAnnotations": 5,
+      "convertedSegmentationAnnotations": 0,
+      "totalAnnotations": 5
+    },
+    {
+      "sourceSplit": "train",
+      "image": "exported_dataset\\train\\images\\ant2_frame_000182_t0006-072_jpg.rf.1f1bf5ee0305e5595449b9740e90ae9e.jpg",
+      "label": "exported_dataset\\train\\labels\\ant2_frame_000182_t0006-072_jpg.rf.1f1bf5ee0305e5595449b9740e90ae9e.txt",
+      "frameIndex": 182,
+      "timestampSeconds": 6.072,
+      "detectionAnnotations": 5,
+      "convertedSegmentationAnnotations": 0,
+      "totalAnnotations": 5
+    },
+    {
+      "sourceSplit": "train",
+      "image": "exported_dataset\\train\\images\\ant2_frame_000189_t0006-306_jpg.rf.5b13381c521daf6ba26755bcfba51678.jpg",
+      "label": "exported_dataset\\train\\labels\\ant2_frame_000189_t0006-306_jpg.rf.5b13381c521daf6ba26755bcfba51678.txt",
+      "frameIndex": 189,
+      "timestampSeconds": 6.306,
+      "detectionAnnotations": 5,
+      "convertedSegmentationAnnotations": 0,
+      "totalAnnotations": 5
+    },
+    {
+      "sourceSplit": "train",
+      "image": "exported_dataset\\train\\images\\ant2_frame_000196_t0006-540_jpg.rf.0031bf03484b80a50670cc03a41ae4f9.jpg",
+      "label": "exported_dataset\\train\\labels\\ant2_frame_000196_t0006-540_jpg.rf.0031bf03484b80a50670cc03a41ae4f9.txt",
+      "frameIndex": 196,
+      "timestampSeconds": 6.54,
+      "detectionAnnotations": 5,
+      "convertedSegmentationAnnotations": 0,
+      "totalAnnotations": 5
+    },
+    {
+      "sourceSplit": "train",
+      "image": "exported_dataset\\train\\images\\ant2_frame_000203_t0006-773_jpg.rf.4e6ae3f3247bedd2711775f00306d7a9.jpg",
+      "label": "exported_dataset\\train\\labels\\ant2_frame_000203_t0006-773_jpg.rf.4e6ae3f3247bedd2711775f00306d7a9.txt",
+      "frameIndex": 203,
+      "timestampSeconds": 6.773,
+      "detectionAnnotations": 5,
+      "convertedSegmentationAnnotations": 0,
+      "totalAnnotations": 5
+    },
+    {
+      "sourceSplit": "valid",
+      "image": "exported_dataset\\valid\\images\\ant2_frame_000210_t0007-007_jpg.rf.61e891b93ab409788887c7183976c65f.jpg",
+      "label": "exported_dataset\\valid\\labels\\ant2_frame_000210_t0007-007_jpg.rf.61e891b93ab409788887c7183976c65f.txt",
+      "frameIndex": 210,
+      "timestampSeconds": 7.007,
+      "detectionAnnotations": 5,
+      "convertedSegmentationAnnotations": 0,
+      "totalAnnotations": 5
+    },
+    {
+      "sourceSplit": "train",
+      "image": "exported_dataset\\train\\images\\ant2_frame_000217_t0007-240_jpg.rf.c65de929855eacd964ef2761c90c1322.jpg",
+      "label": "exported_dataset\\train\\labels\\ant2_frame_000217_t0007-240_jpg.rf.c65de929855eacd964ef2761c90c1322.txt",
+      "frameIndex": 217,
+      "timestampSeconds": 7.24,
+      "detectionAnnotations": 5,
+      "convertedSegmentationAnnotations": 0,
+      "totalAnnotations": 5
+    },
+    {
+      "sourceSplit": "valid",
+      "image": "exported_dataset\\valid\\images\\ant2_frame_000224_t0007-474_jpg.rf.3498aa79a5968f826e1dd63b5a3f0706.jpg",
+      "label": "exported_dataset\\valid\\labels\\ant2_frame_000224_t0007-474_jpg.rf.3498aa79a5968f826e1dd63b5a3f0706.txt",
+      "frameIndex": 224,
+      "timestampSeconds": 7.474,
+      "detectionAnnotations": 5,
+      "convertedSegmentationAnnotations": 0,
+      "totalAnnotations": 5
+    },
+    {
+      "sourceSplit": "valid",
+      "image": "exported_dataset\\valid\\images\\ant2_frame_000231_t0007-707_jpg.rf.813ad947bd5130bbf559d30b033b76d4.jpg",
+      "label": "exported_dataset\\valid\\labels\\ant2_frame_000231_t0007-707_jpg.rf.813ad947bd5130bbf559d30b033b76d4.txt",
+      "frameIndex": 231,
+      "timestampSeconds": 7.707,
+      "detectionAnnotations": 5,
+      "convertedSegmentationAnnotations": 0,
+      "totalAnnotations": 5
+    },
+    {
+      "sourceSplit": "train",
+      "image": "exported_dataset\\train\\images\\ant2_frame_000238_t0007-941_jpg.rf.8bc910f58d0601d8d118a6ab93504bd3.jpg",
+      "label": "exported_dataset\\train\\labels\\ant2_frame_000238_t0007-941_jpg.rf.8bc910f58d0601d8d118a6ab93504bd3.txt",
+      "frameIndex": 238,
+      "timestampSeconds": 7.941,
+      "detectionAnnotations": 5,
+      "convertedSegmentationAnnotations": 0,
+      "totalAnnotations": 5
+    },
+    {
+      "sourceSplit": "train",
+      "image": "exported_dataset\\train\\images\\ant2_frame_000245_t0008-174_jpg.rf.432d1f28cda5b99ebf1bb7ac806ef9f5.jpg",
+      "label": "exported_dataset\\train\\labels\\ant2_frame_000245_t0008-174_jpg.rf.432d1f28cda5b99ebf1bb7ac806ef9f5.txt",
+      "frameIndex": 245,
+      "timestampSeconds": 8.174,
+      "detectionAnnotations": 6,
+      "convertedSegmentationAnnotations": 0,
+      "totalAnnotations": 6
+    },
+    {
+      "sourceSplit": "test",
+      "image": "exported_dataset\\test\\images\\ant2_frame_000252_t0008-408_jpg.rf.ca34405b3a02fe66c2c5a8d4e4deda89.jpg",
+      "label": "exported_dataset\\test\\labels\\ant2_frame_000252_t0008-408_jpg.rf.ca34405b3a02fe66c2c5a8d4e4deda89.txt",
+      "frameIndex": 252,
+      "timestampSeconds": 8.408,
+      "detectionAnnotations": 5,
+      "convertedSegmentationAnnotations": 0,
+      "totalAnnotations": 5
+    },
+    {
+      "sourceSplit": "train",
+      "image": "exported_dataset\\train\\images\\ant2_frame_000259_t0008-642_jpg.rf.a44dcc08b193958e74aca2369a095fd3.jpg",
+      "label": "exported_dataset\\train\\labels\\ant2_frame_000259_t0008-642_jpg.rf.a44dcc08b193958e74aca2369a095fd3.txt",
+      "frameIndex": 259,
+      "timestampSeconds": 8.642,
+      "detectionAnnotations": 4,
+      "convertedSegmentationAnnotations": 0,
+      "totalAnnotations": 4
+    },
+    {
+      "sourceSplit": "train",
+      "image": "exported_dataset\\train\\images\\ant2_frame_000266_t0008-875_jpg.rf.e896f154a9a5519fbcb1498b5d97076b.jpg",
+      "label": "exported_dataset\\train\\labels\\ant2_frame_000266_t0008-875_jpg.rf.e896f154a9a5519fbcb1498b5d97076b.txt",
+      "frameIndex": 266,
+      "timestampSeconds": 8.875,
+      "detectionAnnotations": 5,
+      "convertedSegmentationAnnotations": 0,
+      "totalAnnotations": 5
+    },
+    {
+      "sourceSplit": "valid",
+      "image": "exported_dataset\\valid\\images\\ant2_frame_000273_t0009-109_jpg.rf.4b1c040decf46efa81e82e021672bd93.jpg",
+      "label": "exported_dataset\\valid\\labels\\ant2_frame_000273_t0009-109_jpg.rf.4b1c040decf46efa81e82e021672bd93.txt",
+      "frameIndex": 273,
+      "timestampSeconds": 9.109,
+      "detectionAnnotations": 5,
+      "convertedSegmentationAnnotations": 0,
+      "totalAnnotations": 5
+    },
+    {
+      "sourceSplit": "train",
+      "image": "exported_dataset\\train\\images\\ant2_frame_000280_t0009-342_jpg.rf.1a2d65cd4052cc07a0eedb5d92d32bee.jpg",
+      "label": "exported_dataset\\train\\labels\\ant2_frame_000280_t0009-342_jpg.rf.1a2d65cd4052cc07a0eedb5d92d32bee.txt",
+      "frameIndex": 280,
+      "timestampSeconds": 9.342,
+      "detectionAnnotations": 5,
+      "convertedSegmentationAnnotations": 0,
+      "totalAnnotations": 5
+    },
+    {
+      "sourceSplit": "train",
+      "image": "exported_dataset\\train\\images\\ant2_frame_000287_t0009-576_jpg.rf.edb1374a8a70215001666f8c0cc2f037.jpg",
+      "label": "exported_dataset\\train\\labels\\ant2_frame_000287_t0009-576_jpg.rf.edb1374a8a70215001666f8c0cc2f037.txt",
+      "frameIndex": 287,
+      "timestampSeconds": 9.576,
+      "detectionAnnotations": 5,
+      "convertedSegmentationAnnotations": 0,
+      "totalAnnotations": 5
+    },
+    {
+      "sourceSplit": "train",
+      "image": "exported_dataset\\train\\images\\ant2_frame_000294_t0009-809_jpg.rf.5e3a3faae93421c7cba0bb4dac921fa9.jpg",
+      "label": "exported_dataset\\train\\labels\\ant2_frame_000294_t0009-809_jpg.rf.5e3a3faae93421c7cba0bb4dac921fa9.txt",
+      "frameIndex": 294,
+      "timestampSeconds": 9.809,
+      "detectionAnnotations": 5,
+      "convertedSegmentationAnnotations": 0,
+      "totalAnnotations": 5
+    },
+    {
+      "sourceSplit": "valid",
+      "image": "exported_dataset\\valid\\images\\ant2_frame_000301_t0010-043_jpg.rf.e69be6b35f337a3951b808082e104bf2.jpg",
+      "label": "exported_dataset\\valid\\labels\\ant2_frame_000301_t0010-043_jpg.rf.e69be6b35f337a3951b808082e104bf2.txt",
+      "frameIndex": 301,
+      "timestampSeconds": 10.043,
+      "detectionAnnotations": 4,
+      "convertedSegmentationAnnotations": 0,
+      "totalAnnotations": 4
+    },
+    {
+      "sourceSplit": "train",
+      "image": "exported_dataset\\train\\images\\ant2_frame_000308_t0010-276_jpg.rf.0888fa381acb56b63fe00e1042853d4d.jpg",
+      "label": "exported_dataset\\train\\labels\\ant2_frame_000308_t0010-276_jpg.rf.0888fa381acb56b63fe00e1042853d4d.txt",
+      "frameIndex": 308,
+      "timestampSeconds": 10.276,
+      "detectionAnnotations": 5,
+      "convertedSegmentationAnnotations": 0,
+      "totalAnnotations": 5
+    },
+    {
+      "sourceSplit": "test",
+      "image": "exported_dataset\\test\\images\\ant2_frame_000315_t0010-510_jpg.rf.23653084add308d50951ab748e0b782c.jpg",
+      "label": "exported_dataset\\test\\labels\\ant2_frame_000315_t0010-510_jpg.rf.23653084add308d50951ab748e0b782c.txt",
+      "frameIndex": 315,
+      "timestampSeconds": 10.51,
+      "detectionAnnotations": 5,
+      "convertedSegmentationAnnotations": 0,
+      "totalAnnotations": 5
+    },
+    {
+      "sourceSplit": "valid",
+      "image": "exported_dataset\\valid\\images\\ant2_frame_000322_t0010-744_jpg.rf.923e13b0265401bb834afd6bbef60a27.jpg",
+      "label": "exported_dataset\\valid\\labels\\ant2_frame_000322_t0010-744_jpg.rf.923e13b0265401bb834afd6bbef60a27.txt",
+      "frameIndex": 322,
+      "timestampSeconds": 10.744,
+      "detectionAnnotations": 5,
+      "convertedSegmentationAnnotations": 0,
+      "totalAnnotations": 5
+    },
+    {
+      "sourceSplit": "valid",
+      "image": "exported_dataset\\valid\\images\\ant2_frame_000329_t0010-977_jpg.rf.44a724eba8384e947c7e1bb4808f2f91.jpg",
+      "label": "exported_dataset\\valid\\labels\\ant2_frame_000329_t0010-977_jpg.rf.44a724eba8384e947c7e1bb4808f2f91.txt",
+      "frameIndex": 329,
+      "timestampSeconds": 10.977,
+      "detectionAnnotations": 5,
+      "convertedSegmentationAnnotations": 0,
+      "totalAnnotations": 5
+    },
+    {
+      "sourceSplit": "train",
+      "image": "exported_dataset\\train\\images\\ant2_frame_000336_t0011-211_jpg.rf.14bf06a9112d8bd2fe7a7a3774c1f4db.jpg",
+      "label": "exported_dataset\\train\\labels\\ant2_frame_000336_t0011-211_jpg.rf.14bf06a9112d8bd2fe7a7a3774c1f4db.txt",
+      "frameIndex": 336,
+      "timestampSeconds": 11.211,
+      "detectionAnnotations": 5,
+      "convertedSegmentationAnnotations": 0,
+      "totalAnnotations": 5
+    },
+    {
+      "sourceSplit": "valid",
+      "image": "exported_dataset\\valid\\images\\ant2_frame_000343_t0011-444_jpg.rf.a3f38bce502311f0367f340f981db86c.jpg",
+      "label": "exported_dataset\\valid\\labels\\ant2_frame_000343_t0011-444_jpg.rf.a3f38bce502311f0367f340f981db86c.txt",
+      "frameIndex": 343,
+      "timestampSeconds": 11.444,
+      "detectionAnnotations": 5,
+      "convertedSegmentationAnnotations": 0,
+      "totalAnnotations": 5
+    },
+    {
+      "sourceSplit": "train",
+      "image": "exported_dataset\\train\\images\\ant2_frame_000350_t0011-678_jpg.rf.ede1e027d3016584084111ed00c40dab.jpg",
+      "label": "exported_dataset\\train\\labels\\ant2_frame_000350_t0011-678_jpg.rf.ede1e027d3016584084111ed00c40dab.txt",
+      "frameIndex": 350,
+      "timestampSeconds": 11.678,
+      "detectionAnnotations": 5,
+      "convertedSegmentationAnnotations": 0,
+      "totalAnnotations": 5
+    },
+    {
+      "sourceSplit": "train",
+      "image": "exported_dataset\\train\\images\\ant2_frame_000357_t0011-911_jpg.rf.fc4a945a2a5ca3ee3a27abdf234485c4.jpg",
+      "label": "exported_dataset\\train\\labels\\ant2_frame_000357_t0011-911_jpg.rf.fc4a945a2a5ca3ee3a27abdf234485c4.txt",
+      "frameIndex": 357,
+      "timestampSeconds": 11.911,
+      "detectionAnnotations": 4,
+      "convertedSegmentationAnnotations": 0,
+      "totalAnnotations": 4
+    },
+    {
+      "sourceSplit": "train",
+      "image": "exported_dataset\\train\\images\\ant2_frame_000364_t0012-145_jpg.rf.bc1608cb7027dfd577c0407c5c6d8548.jpg",
+      "label": "exported_dataset\\train\\labels\\ant2_frame_000364_t0012-145_jpg.rf.bc1608cb7027dfd577c0407c5c6d8548.txt",
+      "frameIndex": 364,
+      "timestampSeconds": 12.145,
+      "detectionAnnotations": 4,
+      "convertedSegmentationAnnotations": 0,
+      "totalAnnotations": 4
+    },
+    {
+      "sourceSplit": "test",
+      "image": "exported_dataset\\test\\images\\ant2_frame_000371_t0012-378_jpg.rf.28dc60ef4e6d2b637bd254f2708ab571.jpg",
+      "label": "exported_dataset\\test\\labels\\ant2_frame_000371_t0012-378_jpg.rf.28dc60ef4e6d2b637bd254f2708ab571.txt",
+      "frameIndex": 371,
+      "timestampSeconds": 12.378,
+      "detectionAnnotations": 5,
+      "convertedSegmentationAnnotations": 0,
+      "totalAnnotations": 5
+    }
+  ],
+  "gap": [
+    {
+      "sourceSplit": "valid",
+      "image": "exported_dataset\\valid\\images\\ant2_frame_000378_t0012-612_jpg.rf.43295c7548dd9769a28b9ed69d2216fc.jpg",
+      "label": "exported_dataset\\valid\\labels\\ant2_frame_000378_t0012-612_jpg.rf.43295c7548dd9769a28b9ed69d2216fc.txt",
+      "frameIndex": 378,
+      "timestampSeconds": 12.612,
+      "detectionAnnotations": 4,
+      "convertedSegmentationAnnotations": 0,
+      "totalAnnotations": 4
+    }
+  ],
+  "val": [
+    {
+      "sourceSplit": "train",
+      "image": "exported_dataset\\train\\images\\ant2_frame_000385_t0012-846_jpg.rf.d04f1771dab31918ed81e7e5ec533d13.jpg",
+      "label": "exported_dataset\\train\\labels\\ant2_frame_000385_t0012-846_jpg.rf.d04f1771dab31918ed81e7e5ec533d13.txt",
+      "frameIndex": 385,
+      "timestampSeconds": 12.846,
+      "detectionAnnotations": 4,
+      "convertedSegmentationAnnotations": 0,
+      "totalAnnotations": 4
+    },
+    {
+      "sourceSplit": "train",
+      "image": "exported_dataset\\train\\images\\ant2_frame_000392_t0013-079_jpg.rf.55a39f21c6487873eb5d364976564ed6.jpg",
+      "label": "exported_dataset\\train\\labels\\ant2_frame_000392_t0013-079_jpg.rf.55a39f21c6487873eb5d364976564ed6.txt",
+      "frameIndex": 392,
+      "timestampSeconds": 13.079,
+      "detectionAnnotations": 4,
+      "convertedSegmentationAnnotations": 0,
+      "totalAnnotations": 4
+    },
+    {
+      "sourceSplit": "test",
+      "image": "exported_dataset\\test\\images\\ant2_frame_000399_t0013-313_jpg.rf.84e5da119ad9a984fbf44a0daf9cb3c2.jpg",
+      "label": "exported_dataset\\test\\labels\\ant2_frame_000399_t0013-313_jpg.rf.84e5da119ad9a984fbf44a0daf9cb3c2.txt",
+      "frameIndex": 399,
+      "timestampSeconds": 13.313,
+      "detectionAnnotations": 3,
+      "convertedSegmentationAnnotations": 0,
+      "totalAnnotations": 3
+    },
+    {
+      "sourceSplit": "train",
+      "image": "exported_dataset\\train\\images\\ant2_frame_000406_t0013-546_jpg.rf.ae36ec19362dd955ba59fff0b2691344.jpg",
+      "label": "exported_dataset\\train\\labels\\ant2_frame_000406_t0013-546_jpg.rf.ae36ec19362dd955ba59fff0b2691344.txt",
+      "frameIndex": 406,
+      "timestampSeconds": 13.546,
+      "detectionAnnotations": 4,
+      "convertedSegmentationAnnotations": 0,
+      "totalAnnotations": 4
+    },
+    {
+      "sourceSplit": "train",
+      "image": "exported_dataset\\train\\images\\ant2_frame_000413_t0013-780_jpg.rf.a4ae5e62bbec2da9c5d013f2ce979dbc.jpg",
+      "label": "exported_dataset\\train\\labels\\ant2_frame_000413_t0013-780_jpg.rf.a4ae5e62bbec2da9c5d013f2ce979dbc.txt",
+      "frameIndex": 413,
+      "timestampSeconds": 13.78,
+      "detectionAnnotations": 4,
+      "convertedSegmentationAnnotations": 0,
+      "totalAnnotations": 4
+    },
+    {
+      "sourceSplit": "train",
+      "image": "exported_dataset\\train\\images\\ant2_frame_000420_t0014-013_jpg.rf.6f94b8122a6a331392110b0374a58850.jpg",
+      "label": "exported_dataset\\train\\labels\\ant2_frame_000420_t0014-013_jpg.rf.6f94b8122a6a331392110b0374a58850.txt",
+      "frameIndex": 420,
+      "timestampSeconds": 14.013,
+      "detectionAnnotations": 4,
+      "convertedSegmentationAnnotations": 0,
+      "totalAnnotations": 4
+    },
+    {
+      "sourceSplit": "train",
+      "image": "exported_dataset\\train\\images\\ant2_frame_000427_t0014-247_jpg.rf.5e24f7e93d62f2e9b844be1d8b325e17.jpg",
+      "label": "exported_dataset\\train\\labels\\ant2_frame_000427_t0014-247_jpg.rf.5e24f7e93d62f2e9b844be1d8b325e17.txt",
+      "frameIndex": 427,
+      "timestampSeconds": 14.247,
+      "detectionAnnotations": 4,
+      "convertedSegmentationAnnotations": 0,
+      "totalAnnotations": 4
+    },
+    {
+      "sourceSplit": "train",
+      "image": "exported_dataset\\train\\images\\ant2_frame_000434_t0014-480_jpg.rf.86c3c14f091264ef849a1baec3e7f181.jpg",
+      "label": "exported_dataset\\train\\labels\\ant2_frame_000434_t0014-480_jpg.rf.86c3c14f091264ef849a1baec3e7f181.txt",
+      "frameIndex": 434,
+      "timestampSeconds": 14.48,
+      "detectionAnnotations": 4,
+      "convertedSegmentationAnnotations": 0,
+      "totalAnnotations": 4
+    },
+    {
+      "sourceSplit": "train",
+      "image": "exported_dataset\\train\\images\\ant2_frame_000441_t0014-714_jpg.rf.5193f686d92adfedcd8fa58b9160aee8.jpg",
+      "label": "exported_dataset\\train\\labels\\ant2_frame_000441_t0014-714_jpg.rf.5193f686d92adfedcd8fa58b9160aee8.txt",
+      "frameIndex": 441,
+      "timestampSeconds": 14.714,
+      "detectionAnnotations": 4,
+      "convertedSegmentationAnnotations": 0,
+      "totalAnnotations": 4
+    },
+    {
+      "sourceSplit": "train",
+      "image": "exported_dataset\\train\\images\\ant2_frame_000448_t0014-948_jpg.rf.3241a34f56a26f90002f899a36206737.jpg",
+      "label": "exported_dataset\\train\\labels\\ant2_frame_000448_t0014-948_jpg.rf.3241a34f56a26f90002f899a36206737.txt",
+      "frameIndex": 448,
+      "timestampSeconds": 14.948,
+      "detectionAnnotations": 3,
+      "convertedSegmentationAnnotations": 0,
+      "totalAnnotations": 3
+    },
+    {
+      "sourceSplit": "valid",
+      "image": "exported_dataset\\valid\\images\\ant2_frame_000455_t0015-181_jpg.rf.dc0c7d308d5e2704147627e297c8884f.jpg",
+      "label": "exported_dataset\\valid\\labels\\ant2_frame_000455_t0015-181_jpg.rf.dc0c7d308d5e2704147627e297c8884f.txt",
+      "frameIndex": 455,
+      "timestampSeconds": 15.181,
+      "detectionAnnotations": 3,
+      "convertedSegmentationAnnotations": 0,
+      "totalAnnotations": 3
+    },
+    {
+      "sourceSplit": "valid",
+      "image": "exported_dataset\\valid\\images\\ant2_frame_000462_t0015-415_jpg.rf.d5e2c1dd6be0c2a936a44e0f8adc9487.jpg",
+      "label": "exported_dataset\\valid\\labels\\ant2_frame_000462_t0015-415_jpg.rf.d5e2c1dd6be0c2a936a44e0f8adc9487.txt",
+      "frameIndex": 462,
+      "timestampSeconds": 15.415,
+      "detectionAnnotations": 3,
+      "convertedSegmentationAnnotations": 0,
+      "totalAnnotations": 3
+    },
+    {
+      "sourceSplit": "train",
+      "image": "exported_dataset\\train\\images\\ant2_frame_000469_t0015-648_jpg.rf.bd623f91d6aa6a2a6443756d0a1f2bf3.jpg",
+      "label": "exported_dataset\\train\\labels\\ant2_frame_000469_t0015-648_jpg.rf.bd623f91d6aa6a2a6443756d0a1f2bf3.txt",
+      "frameIndex": 469,
+      "timestampSeconds": 15.648,
+      "detectionAnnotations": 4,
+      "convertedSegmentationAnnotations": 0,
+      "totalAnnotations": 4
+    }
+  ]
+}

@@ -4,6 +4,15 @@ __pycache__/
 .pytest_cache/
 .idea/
 .vscode/
+.env
+.env.*
+!.env.example
+*.log
+*.tmp
+*.temp
+*.cache
+tmp/
+temp/
 
 # Local/generated analysis artifacts
 output/*
@@ -19,3 +28,36 @@ samples/*.mkv
 build/
 dist/
 *.egg-info/
+
+# Local datasets and ML artifacts
+datasets/raw/**
+!datasets/raw/.gitkeep
+datasets/labeled/**
+!datasets/labeled/.gitkeep
+datasets/external_test/**
+!datasets/external_test/
+!datasets/external_test/README.md
+!datasets/external_test/*/
+!datasets/external_test/*/dataset.yaml
+!datasets/external_test/*/metadata.json
+datasets/public/**/raw/**
+datasets/public/**/prepared/**/images/**
+datasets/public/**/prepared/**/labels/**
+datasets/public/**/prepared/**/labels.cache
+datasets/public/**/metadata/inspection_*.json
+datasets/public/**/metadata/seq*.yaml
+datasets/public/**/metadata/tracking_*.jsonl
+datasets/prepared/**
+!datasets/prepared/.gitkeep
+!datasets/prepared/README.md
+!datasets/prepared/*/
+!datasets/prepared/*/dataset.yaml
+!datasets/prepared/*/split_metadata.json
+datasets/prepared/*/images/**
+datasets/prepared/*/labels/**
+artifacts/**
+!artifacts/.gitkeep
+*.pt
+runs/
+exported_dataset/data.yaml
+exported_dataset/**

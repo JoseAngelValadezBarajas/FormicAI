@@ -2,9 +2,12 @@
 
 FormicAI is a personal project for observing, recording, and analyzing ant colony videos over time. The long-term vision includes computer vision, tracking, data analysis, cloud services, multimodal AI, scientific literature retrieval, and IoT telemetry.
 
-This repository currently implements **FormicAI Vision v0.1**: video to motion analysis to metrics, heatmap, annotated video, and optional motion-mask video.
+This repository currently contains:
 
-It does **not** detect ants yet. In this version, the system detects moving regions.
+- **FormicAI Vision v0.1**: motion analysis, activity metrics, heatmap, annotated video, and optional motion-mask video.
+- **FormicAI Vision v0.2**: dataset preparation, `ants_v1_baseline` object detection, frozen internal validation, and frozen external ANTS benchmark evaluation.
+
+v0.1 detects moving regions, not ants. v0.2 adds a first experimental ant detector, but it is still a small baseline and not a general-purpose biological measurement system.
 
 ## Requirements
 
@@ -39,6 +42,14 @@ python -m pip install --upgrade pip
 python -m pip install -e ".[dev]"
 ```
 
+For future YOLO training/inference work:
+
+```bash
+python -m pip install -e ".[ml,dev]"
+```
+
+Ultralytics is an external dependency. Review its current licensing terms before commercial deployment.
+
 ## Add a Sample Video
 
 Place an `.mp4` video inside `samples/`:
@@ -49,7 +60,7 @@ samples/ants.mp4
 
 Large video files in `samples/` are ignored by Git.
 
-## Run Analysis
+## FormicAI Vision v0.1: Motion Analysis
 
 Using the project entry point:
 
@@ -147,15 +158,111 @@ pytest
 
 The tests focus on deterministic behavior and include a smoke test that generates a temporary video and runs the full `VideoAnalyzer` pipeline.
 
+## FormicAI Vision v0.2: Ant Detection
+
+v0.2 closes with dataset preparation tooling, a small proof-of-concept object detector, internal validation on `ant2`, and a frozen public ANTS benchmark. It does not create fake labels from motion regions.
+
+Extract candidate frames from a real local video:
+
+```bash
+python -m formicai dataset extract-frames samples/ant2.mp4 --output datasets/raw/ant2 --every-seconds 0.25 --roi 60,180,600,700
+```
+
+The first detector uses one class:
+
+```text
+0 ant
+```
+
+Annotate the extracted images manually with CVAT, Label Studio, Roboflow, or Ultralytics Platform, then prepare the export. The preparer preserves YOLO detection rows and can convert valid YOLO segmentation polygons into tight bounding boxes. See [datasets/README.md](datasets/README.md).
+
+After labels are prepared:
+
+```bash
+python -m formicai dataset prepare-roboflow exported_dataset --output datasets/prepared/ants_v1 --train-fraction 0.8 --gap-count 1
+python -m formicai dataset validate datasets/prepared/ants_v1
+python -m formicai dataset stats datasets/prepared/ants_v1
+```
+
+The initial baseline uses Ultralytics YOLO26 nano (`yolo26n.pt`) with transfer learning. This is a proof of concept from temporally separated frames of one source video, not evidence of generalization to new colonies, cameras, lighting, or videos.
+
+Run video detection with global-frame JSONL boxes:
+
+```bash
+python -m formicai detect-video samples/ant2.mp4 --model artifacts/models/ants_v1_baseline/weights/best.pt --roi 60,180,600,700
+```
+
+### FormicAI Vision v0.2 Milestone
+
+v0.2 is closed as an experimental baseline milestone:
+
+- `ants_v1_baseline` is frozen for reporting.
+- `best.pt` must not be modified in-place.
+- Public ANTS `Seq0001` and `Seq0006` are frozen benchmarks and must not participate in `ants_v1` training.
+- Dataset raw files, public images/labels, model weights, generated videos, virtual environments, API keys, secrets, and temporary files are intentionally kept out of Git.
+
+If future models train on other ANTS sequences, `Seq0001` and `Seq0006` must no longer be described as a completely external-dataset benchmark. They become a held-out sequence benchmark from the same public dataset, assuming those two sequences remain excluded from training.
+
+### ants_v1_baseline
+
+Model card: [docs/model_cards/ants_v1_baseline.md](docs/model_cards/ants_v1_baseline.md)
+
+Frozen model:
+
+```text
+artifacts/models/ants_v1_baseline/weights/best.pt
+SHA256: 4C91C700BCE3EF56F8198B600A4828686CEA2A0937C30F794B3F1B3023662A70
+```
+
+Final inference configuration:
+
+```text
+Architecture: YOLO26n
+end2end: false
+NMS IoU: 0.70
+confidence: 0.25
+imgsz: 640
+```
+
+Internal `ant2` validation:
+
+| Metric | Value |
+| --- | ---: |
+| Precision | 0.8120 |
+| Recall | 0.8542 |
+| mAP50 | 0.8104 |
+| mAP50-95 | 0.4821 |
+
+Frozen external ANTS benchmark:
+
+| Sequence | Standard P | Standard R | mAP50 | mAP50-95 | Center Precision | Center Recall |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| Seq0001 | 0.3631 | 0.2969 | 0.1074 | 0.0240 | 0.8547 | 0.6672 |
+| Seq0006 | 0.5594 | 0.4576 | 0.2868 | 0.0717 | 0.7892 | 0.6217 |
+
+Center-based metrics are diagnostic localization metrics only. They count whether a prediction center lands inside a ground-truth box with one-to-one matching. They do not replace standard mAP, precision, or recall.
+
+Annotation-style mismatch:
+
+```text
+FormicAI training: tight body boxes
+ANTS Seq0001: fixed 94x94 boxes
+ANTS Seq0006: fixed 64x64 boxes
+```
+
+Public benchmark provenance remains documented under [datasets/public/ants_mendeley/README.md](datasets/public/ants_mendeley/README.md): ANTS--ant detection and tracking, DOI `10.17632/9ws98g4npw.4`, CC0 1.0.
+
 ## Current Limitations
 
-- Detects moving regions, not ants.
+- Motion analysis still detects moving regions, not ants.
+- The first ant detector is trained on a very small single-video dataset and should be treated as experimental.
+- The detector struggles with small ants, partial visibility, crowded groups, complex backgrounds, shadows, rocks, and nest entrances.
+- External performance is affected by domain shift and annotation policy mismatch.
 - Background subtraction can be sensitive to lighting changes, camera shake, reflections, and early video frames while the background model stabilizes.
-- No object detection, tracking, behavior classification, backend, frontend, cloud, Gemini, RAG, or IoT features are included yet.
+- No tracking, behavior classification, backend, frontend, cloud, Gemini, RAG, or IoT features are included yet.
 
 ## Next Steps
 
-- v0.2: real ant object detection.
 - v0.3: tracking and trajectories.
 - v0.4: behavioral metrics.
 - v0.5+: backend, frontend, cloud, AI-assisted reports, research/RAG, and IoT telemetry.

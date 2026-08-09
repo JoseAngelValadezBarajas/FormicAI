@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "formicai"
-version = "0.1.0"
-description = "FormicAI Vision v0.1: motion analysis for ant colony videos."
+version = "0.2.0"
+description = "FormicAI Vision: motion analysis and ant detection dataset tooling."
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
@@ -16,6 +16,9 @@ dependencies = [
 [project.optional-dependencies]
 dev = [
     "pytest>=8.0",
+]
+ml = [
+    "ultralytics>=8.4.115,<9.0",
 ]
 
 [project.scripts]
