@@ -6,6 +6,7 @@ import sys
 from pathlib import Path
 from typing import Sequence
 
+from formicai.detection.spec import CURRENT_CHAMPION
 from formicai.detection.video import VideoDetectionConfig, VideoDetector
 from formicai.detection.evaluate import ExternalEvaluationConfig, ExternalEvaluator
 from formicai.detection.public_ants import BenchmarkConfig, PublicAntsBenchmarkEvaluator
@@ -365,7 +366,16 @@ def build_detect_video_parser() -> argparse.ArgumentParser:
         description="Run an ant object detector on a video and write annotated MP4 plus JSONL detections.",
     )
     parser.add_argument("input_video", type=Path, help="Path to source video.")
-    parser.add_argument("--model", type=Path, required=True, help="Path to trained detector weights.")
+    model_group = parser.add_mutually_exclusive_group(required=True)
+    model_group.add_argument("--model", type=Path, help="Path to trained detector weights.")
+    model_group.add_argument(
+        "--champion",
+        action="store_true",
+        help=(
+            "Use the current FormicAI detector champion, verify its SHA256 before loading, "
+            "and apply canonical inference defaults."
+        ),
+    )
     parser.add_argument(
         "--roi",
         type=parse_roi,
@@ -386,22 +396,28 @@ def build_detect_video_parser() -> argparse.ArgumentParser:
         help="Incremental JSONL detections output path.",
     )
     parser.add_argument(
+        "--output-metadata",
+        type=Path,
+        default=None,
+        help="Run provenance JSON output path. Defaults to <output-jsonl stem>.run.json.",
+    )
+    parser.add_argument(
         "--conf",
         type=float,
-        default=0.25,
+        default=CURRENT_CHAMPION.confidence,
         help="Confidence threshold for detections.",
     )
     parser.add_argument(
         "--iou",
         type=float,
-        default=0.70,
+        default=CURRENT_CHAMPION.iou,
         help="NMS IoU threshold when end-to-end mode is disabled.",
     )
     parser.add_argument(
         "--end2end",
         dest="end2end",
         action="store_true",
-        default=None,
+        default=CURRENT_CHAMPION.end2end,
         help="Force YOLO end-to-end inference mode.",
     )
     parser.add_argument(
@@ -413,7 +429,7 @@ def build_detect_video_parser() -> argparse.ArgumentParser:
     parser.add_argument(
         "--imgsz",
         type=int,
-        default=640,
+        default=CURRENT_CHAMPION.image_size,
         help="Inference image size.",
     )
     parser.add_argument(
@@ -428,6 +444,14 @@ def build_detect_video_parser() -> argparse.ArgumentParser:
         help="Logging verbosity.",
     )
     return parser
+
+
+def resolve_detect_video_model(args: argparse.Namespace) -> Path:
+    if args.champion:
+        return CURRENT_CHAMPION.model_path
+    if args.model is None:
+        raise ValueError("Either --champion or --model is required.")
+    return args.model
 
 
 def normalize_argv(argv: Sequence[str] | None) -> list[str] | None:
@@ -588,18 +612,21 @@ def run_detect_video(args: argparse.Namespace) -> int:
     logger = logging.getLogger(__name__)
 
     try:
+        model_path = resolve_detect_video_model(args)
         result = VideoDetector(
             VideoDetectionConfig(
                 input_path=args.input_video,
-                model_path=args.model,
+                model_path=model_path,
                 output_video_path=args.output_video,
                 output_jsonl_path=args.output_jsonl,
+                output_metadata_path=args.output_metadata,
                 roi=args.roi,
                 confidence=args.conf,
                 iou=args.iou,
                 end2end=args.end2end,
                 image_size=args.imgsz,
                 device=args.device,
+                expected_model_sha256=CURRENT_CHAMPION.sha256 if args.champion else None,
             )
         ).detect()
     except (FileNotFoundError, ValueError, RuntimeError) as exc:
@@ -619,6 +646,7 @@ def run_detect_video(args: argparse.Namespace) -> int:
     logger.info("End-to-end override: %s", result.end2end)
     logger.info("Generated %s", result.output_video_path)
     logger.info("Generated %s", result.output_jsonl_path)
+    logger.info("Generated %s", result.output_metadata_path)
     return 0
 
 

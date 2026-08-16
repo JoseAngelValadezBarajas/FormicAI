@@ -196,11 +196,21 @@ Roboflow `test` split records are inspected but excluded from prepared train/val
 
 The initial baseline uses Ultralytics YOLO26 nano (`yolo26n.pt`) with transfer learning. This is a proof of concept from temporally separated frames of one source video, not evidence of generalization to new colonies, cameras, lighting, or videos.
 
-Run video detection with global-frame JSONL boxes:
+Run video detection with the current experimental champion, canonical inference defaults, global-frame JSONL boxes, and separate run provenance metadata:
+
+```bash
+python -m formicai detect-video samples/ant2.mp4 --champion --roi 60,180,600,700
+```
+
+`--champion` resolves `ants_v3_mixedscale_e01`, verifies the selected model SHA256 before loading YOLO, uses `conf=0.25`, `iou=0.70`, `imgsz=640`, and `end2end=false`, then writes `output/ant_detections.jsonl` plus `output/ant_detections.run.json`.
+
+Custom detector weights are still supported for manual experiments:
 
 ```bash
 python -m formicai detect-video samples/ant2.mp4 --model artifacts/models/ants_v1_baseline/weights/best.pt --roi 60,180,600,700
 ```
+
+Custom model identity is recorded by SHA256. A custom path is not treated as the current champion unless its hash matches the registered champion hash.
 
 ### FormicAI Vision v0.2 Milestone
 
