@@ -102,6 +102,48 @@ def _install_fake_yolo(monkeypatch: pytest.MonkeyPatch, calls: list[dict[str, ob
     monkeypatch.setitem(sys.modules, "ultralytics", SimpleNamespace(YOLO=FakeYOLO, __version__="test-ultra"))
 
 
+def _assert_output_collision_rejected(
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
+    *,
+    output_video_path: Path | None = None,
+    output_jsonl_path: Path | None = None,
+    output_metadata_path: Path | None = None,
+) -> None:
+    video_path = tmp_path / "source.mp4"
+    model_path = tmp_path / "custom.pt"
+    video_path.write_bytes(b"video")
+    model_path.write_bytes(b"model")
+    writer_calls: list[object] = []
+
+    class FailingYOLO:
+        def __init__(self, model_path: str) -> None:
+            raise AssertionError("YOLO must not be instantiated for colliding output paths")
+
+    def failing_writer(*args: object, **kwargs: object) -> _FakeWriter:
+        writer_calls.append(args)
+        raise AssertionError("VideoWriter must not be created for colliding output paths")
+
+    monkeypatch.setitem(sys.modules, "ultralytics", SimpleNamespace(YOLO=FailingYOLO, __version__="test-ultra"))
+    monkeypatch.setattr(cv2, "VideoWriter", failing_writer)
+
+    with pytest.raises(ValueError, match="Output paths must be distinct"):
+        VideoDetector(
+            VideoDetectionConfig(
+                input_path=video_path,
+                model_path=model_path,
+                output_video_path=output_video_path or (tmp_path / "detections.mp4"),
+                output_jsonl_path=output_jsonl_path or (tmp_path / "detections.jsonl"),
+                output_metadata_path=output_metadata_path,
+            )
+        ).detect()
+
+    for path in {output_video_path, output_jsonl_path, output_metadata_path}:
+        if path is not None:
+            assert not path.resolve().exists()
+    assert writer_calls == []
+
+
 def test_current_champion_spec_is_canonical() -> None:
     assert CURRENT_CHAMPION.experiment == "ants_v3_mixedscale_e01"
     assert CURRENT_CHAMPION.sha256 == "424d508ef2b881740134c3c3a320f0dba4ea12d2f4a9f77a057451539347daaf"
@@ -157,6 +199,63 @@ def test_champion_sha_mismatch_fails_before_yolo_is_instantiated(
                 expected_model_sha256=CURRENT_CHAMPION.sha256,
             )
         ).detect()
+
+
+def test_jsonl_metadata_output_path_collision_is_rejected_before_outputs(
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    same_path = tmp_path / "same.json"
+
+    _assert_output_collision_rejected(
+        tmp_path,
+        monkeypatch,
+        output_jsonl_path=same_path,
+        output_metadata_path=same_path,
+    )
+
+
+def test_video_metadata_output_path_collision_is_rejected_before_outputs(
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    same_path = tmp_path / "same.out"
+
+    _assert_output_collision_rejected(
+        tmp_path,
+        monkeypatch,
+        output_video_path=same_path,
+        output_metadata_path=same_path,
+    )
+
+
+def test_video_jsonl_output_path_collision_is_rejected_before_outputs(
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    same_path = tmp_path / "same.out"
+
+    _assert_output_collision_rejected(
+        tmp_path,
+        monkeypatch,
+        output_video_path=same_path,
+        output_jsonl_path=same_path,
+    )
+
+
+def test_normalized_equivalent_output_path_collision_is_rejected(
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    output_dir = tmp_path / "out"
+    output_dir.mkdir()
+
+    _assert_output_collision_rejected(
+        tmp_path,
+        monkeypatch,
+        output_jsonl_path=output_dir / "file.json",
+        output_metadata_path=output_dir / "." / "file.json",
+    )
 
 
 def test_detect_video_parser_defaults_are_canonical() -> None:
@@ -290,6 +389,33 @@ def test_run_metadata_records_detection_provenance(
     assert metadata["result"]["processedFrames"] == 1
     assert metadata["result"]["totalDetections"] == 1
     assert metadata["result"]["outputJsonl"] == str(jsonl_path)
+
+
+def test_distinct_default_output_paths_continue_working(
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    _install_fake_video_io(monkeypatch)
+    calls: list[dict[str, object]] = []
+    _install_fake_yolo(monkeypatch, calls)
+    video_path = tmp_path / "source.mp4"
+    model_path = tmp_path / "custom.pt"
+    video_path.write_bytes(b"video")
+    model_path.write_bytes(b"custom model")
+
+    result = VideoDetector(
+        VideoDetectionConfig(
+            input_path=video_path,
+            model_path=model_path,
+            output_video_path=tmp_path / "detections.mp4",
+            output_jsonl_path=tmp_path / "detections.jsonl",
+        )
+    ).detect()
+
+    assert result.output_jsonl_path == tmp_path / "detections.jsonl"
+    assert result.output_metadata_path == tmp_path / "detections.run.json"
+    assert result.output_jsonl_path.exists()
+    assert result.output_metadata_path.exists()
 
 
 def test_inference_override_marks_metadata_noncanonical(

@@ -57,6 +57,13 @@ class VideoDetector:
         if not 0.0 <= self._config.confidence <= 1.0:
             raise ValueError("confidence must be between 0 and 1.")
 
+        metadata_path = self._config.output_metadata_path or default_run_metadata_path(self._config.output_jsonl_path)
+        _validate_distinct_output_paths(
+            output_video_path=self._config.output_video_path,
+            output_jsonl_path=self._config.output_jsonl_path,
+            output_metadata_path=metadata_path,
+        )
+
         model_sha256 = sha256_file(self._config.model_path)
         if (
             self._config.expected_model_sha256 is not None
@@ -79,7 +86,6 @@ class VideoDetector:
         class_names = validate_model_classes(getattr(model, "names", None), CURRENT_CHAMPION.classes)
         frame_index = 0
         total_detections = 0
-        metadata_path = self._config.output_metadata_path or default_run_metadata_path(self._config.output_jsonl_path)
 
         capture: Any | None = None
         writer: Any | None = None
@@ -213,6 +219,28 @@ class VideoDetector:
 
 def default_run_metadata_path(output_jsonl_path: Path) -> Path:
     return output_jsonl_path.with_suffix(".run.json")
+
+
+def _validate_distinct_output_paths(
+    *,
+    output_video_path: Path,
+    output_jsonl_path: Path,
+    output_metadata_path: Path,
+) -> None:
+    outputs = {
+        "output video": output_video_path,
+        "output JSONL": output_jsonl_path,
+        "run metadata": output_metadata_path,
+    }
+    resolved = {name: path.resolve() for name, path in outputs.items()}
+    names = list(resolved)
+    for index, left_name in enumerate(names):
+        for right_name in names[index + 1 :]:
+            if resolved[left_name] == resolved[right_name]:
+                raise ValueError(
+                    "Output paths must be distinct: "
+                    f"{left_name} and {right_name} both resolve to {resolved[left_name]}."
+                )
 
 
 def _build_run_metadata(
