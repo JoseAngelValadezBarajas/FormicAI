@@ -86,6 +86,7 @@ class ExternalEvaluator:
             raise FileNotFoundError(f"Model does not exist: {self._config.model_path}")
         if not 0.0 <= self._config.confidence <= 1.0:
             raise ValueError("confidence must be between 0 and 1.")
+        self._validate_output_boundary()
 
         video_datasets = self._discover_video_datasets()
 
@@ -122,6 +123,21 @@ class ExternalEvaluator:
                 "External test directory must contain per-video folders with images/ and labels/."
             )
         return tuple(self._validate_video_dataset(candidate) for candidate in candidates)
+
+    def _validate_output_boundary(self) -> None:
+        external_root = self._config.external_test_dir.resolve()
+        output = self._config.output_path.resolve()
+        artifact_root = self._config.output_path.parent.resolve()
+        if output == external_root or output.is_relative_to(external_root):
+            raise ValueError(
+                "External evaluation outputs must be outside the external test directory "
+                "to preserve its read-only/frozen status."
+            )
+        if artifact_root == external_root or artifact_root.is_relative_to(external_root):
+            raise ValueError(
+                "External evaluation outputs must be outside the external test directory "
+                "to preserve its read-only/frozen status."
+            )
 
     def _validate_video_dataset(self, root_dir: Path) -> ExternalVideoDataset:
         images_dir = root_dir / "images"

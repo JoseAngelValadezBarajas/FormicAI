@@ -51,6 +51,7 @@ New safe behavior:
 
 - Generated YAML uses the absolute resolved video folder path and points Ultralytics to `images`.
 - Existing `dataset.yaml` files inside external test folders are neither overwritten nor used.
+- External evaluation rejects `output_path` values located inside the external-test tree, so the frozen test directory remains read-only even with custom output configuration.
 
 ## Historical Result Impact
 

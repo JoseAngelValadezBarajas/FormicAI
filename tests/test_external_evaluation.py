@@ -7,6 +7,7 @@ from types import SimpleNamespace
 
 import cv2
 import numpy as np
+import pytest
 
 from formicai.detection.evaluate import ExternalEvaluationConfig, ExternalEvaluator
 
@@ -79,6 +80,101 @@ def test_external_evaluator_writes_metrics_by_video(tmp_path: Path, monkeypatch)
     assert data["macroAverage"]["videos"] == 2
     assert data["macroAverage"]["precision"] == 0.8
     assert data["videos"][0]["video"] == "ant3"
+
+
+def test_external_evaluator_rejects_direct_output_inside_external_test_dir(tmp_path: Path, monkeypatch) -> None:
+    external_test_dir = tmp_path / "external_test"
+    write_external_test_record(external_test_dir, "ant3", "ant3_frame_000000_t0000.000")
+    model_path = tmp_path / "best.pt"
+    model_path.write_bytes(b"weights")
+    output_path = external_test_dir / "metrics.json"
+    original_label = external_test_dir / "ant3" / "labels" / "ant3_frame_000000_t0000.000.txt"
+    original_label_bytes = original_label.read_bytes()
+
+    class FakeYOLO:
+        def __init__(self, path: str) -> None:
+            raise AssertionError("YOLO must not be constructed for unsafe output paths")
+
+    monkeypatch.setitem(sys.modules, "ultralytics", SimpleNamespace(YOLO=FakeYOLO))
+
+    with pytest.raises(ValueError, match="outside the external test directory"):
+        ExternalEvaluator(
+            ExternalEvaluationConfig(
+                external_test_dir=external_test_dir,
+                model_path=model_path,
+                output_path=output_path,
+            )
+        ).evaluate()
+
+    assert not output_path.exists()
+    assert not (external_test_dir / "external_test_dataset_yamls").exists()
+    assert not (external_test_dir / "external_test_val_runs").exists()
+    assert not (external_test_dir / "ant3" / "dataset.yaml").exists()
+    assert original_label.read_bytes() == original_label_bytes
+
+
+def test_external_evaluator_rejects_nested_output_inside_external_test_dir(tmp_path: Path, monkeypatch) -> None:
+    external_test_dir = tmp_path / "external_test"
+    write_external_test_record(external_test_dir, "ant3", "ant3_frame_000000_t0000.000")
+    model_path = tmp_path / "best.pt"
+    model_path.write_bytes(b"weights")
+    output_path = external_test_dir / "some" / "nested" / "metrics.json"
+
+    class FakeYOLO:
+        def __init__(self, path: str) -> None:
+            raise AssertionError("YOLO must not be constructed for unsafe output paths")
+
+    monkeypatch.setitem(sys.modules, "ultralytics", SimpleNamespace(YOLO=FakeYOLO))
+
+    with pytest.raises(ValueError, match="outside the external test directory"):
+        ExternalEvaluator(
+            ExternalEvaluationConfig(
+                external_test_dir=external_test_dir,
+                model_path=model_path,
+                output_path=output_path,
+            )
+        ).evaluate()
+
+    assert not (external_test_dir / "some").exists()
+    assert not (external_test_dir / "external_test_dataset_yamls").exists()
+    assert not (external_test_dir / "external_test_val_runs").exists()
+
+
+def test_external_evaluator_allows_safe_sibling_output_path(tmp_path: Path, monkeypatch) -> None:
+    external_test_dir = tmp_path / "external_test"
+    write_external_test_record(external_test_dir, "ant3", "ant3_frame_000000_t0000.000")
+    model_path = tmp_path / "best.pt"
+    model_path.write_bytes(b"weights")
+    output_path = tmp_path / "artifacts" / "metrics.json"
+    calls: list[dict[str, object]] = []
+
+    class FakeYOLO:
+        def __init__(self, path: str) -> None:
+            assert path == str(model_path)
+
+        def val(self, **kwargs: object) -> object:
+            calls.append(kwargs)
+            return SimpleNamespace(
+                box=SimpleNamespace(mp=0.8, mr=0.7, map50=0.6, map=0.5),
+                results_dict={},
+            )
+
+    monkeypatch.setitem(sys.modules, "ultralytics", SimpleNamespace(YOLO=FakeYOLO))
+
+    result = ExternalEvaluator(
+        ExternalEvaluationConfig(
+            external_test_dir=external_test_dir,
+            model_path=model_path,
+            output_path=output_path,
+        )
+    ).evaluate()
+
+    assert len(result.videos) == 1
+    assert output_path.exists()
+    generated_yaml = output_path.parent / "external_test_dataset_yamls" / "ant3.yaml"
+    assert generated_yaml.exists()
+    assert calls[0]["data"] == str(generated_yaml)
+    assert not (external_test_dir / "ant3" / "dataset.yaml").exists()
 
 
 def test_external_evaluator_does_not_touch_existing_dataset_yaml(tmp_path: Path, monkeypatch) -> None:
