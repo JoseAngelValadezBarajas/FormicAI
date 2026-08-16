@@ -1,0 +1,3798 @@
+{
+  "annotationCount": 3364,
+  "annotationPolicy": "FormicAI tight-body bounding boxes",
+  "classMapping": {
+    "0": "ant"
+  },
+  "experiment": "ants_v2_diverse_e01",
+  "files": [
+    {
+      "antsReferenceCount": 10,
+      "densityBucket": "medium",
+      "filename": "Seq0002_000001.jpg",
+      "image": {
+        "bytes": 192374,
+        "height": 1080,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0002/Seq0002_000001.jpg",
+        "sha256": "c2ab579ab32f76501d4d45345710d4560bbe94969efbe621d1df86b44ae36419",
+        "width": 1920
+      },
+      "label": {
+        "annotationCount": 10,
+        "bytes": 470,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0002/Seq0002_000001.txt",
+        "sha256": "915f40e4de8a0124314c9c899f176d9623164367aa61d0523988e19317f5efa8"
+      },
+      "originalFilename": "000001.jpg",
+      "originalFrame": 1,
+      "source": "Seq0002",
+      "sourceZipPath": "Ant_dataset/IndoorDataset/Seq0002Object10Image94/img/000001.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 10,
+      "densityBucket": "medium",
+      "filename": "Seq0002_000016.jpg",
+      "image": {
+        "bytes": 190291,
+        "height": 1080,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0002/Seq0002_000016.jpg",
+        "sha256": "8aa68a6e122eb67d0303eb8349045f986947c84f87f64de6dc50626995297eed",
+        "width": 1920
+      },
+      "label": {
+        "annotationCount": 10,
+        "bytes": 470,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0002/Seq0002_000016.txt",
+        "sha256": "1c0242bbd9e03c55498143a0a4cd088861c915216f1e62e4c1036859c64a31f8"
+      },
+      "originalFilename": "000016.jpg",
+      "originalFrame": 16,
+      "source": "Seq0002",
+      "sourceZipPath": "Ant_dataset/IndoorDataset/Seq0002Object10Image94/img/000016.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 10,
+      "densityBucket": "medium",
+      "filename": "Seq0002_000030.jpg",
+      "image": {
+        "bytes": 187033,
+        "height": 1080,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0002/Seq0002_000030.jpg",
+        "sha256": "7edebe77aeca74ad9228a77cdc5edec0a1286c78b10312f3cda9dee788341204",
+        "width": 1920
+      },
+      "label": {
+        "annotationCount": 10,
+        "bytes": 470,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0002/Seq0002_000030.txt",
+        "sha256": "3736760ffa08b8d4ddfe5252faa1ea479b1a231ed5f436834ca98ddc00a1f2d6"
+      },
+      "originalFilename": "000030.jpg",
+      "originalFrame": 30,
+      "source": "Seq0002",
+      "sourceZipPath": "Ant_dataset/IndoorDataset/Seq0002Object10Image94/img/000030.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 10,
+      "densityBucket": "medium",
+      "filename": "Seq0002_000045.jpg",
+      "image": {
+        "bytes": 185290,
+        "height": 1080,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0002/Seq0002_000045.jpg",
+        "sha256": "bbc5d24a122aedd6020569721d84c6b9f6aaa13fa9c75e55d10526f6634aac02",
+        "width": 1920
+      },
+      "label": {
+        "annotationCount": 10,
+        "bytes": 470,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0002/Seq0002_000045.txt",
+        "sha256": "83a60fc87022175f16a3dbd824025745f25d924e7d8db66242ae2ebc84e8d195"
+      },
+      "originalFilename": "000045.jpg",
+      "originalFrame": 45,
+      "source": "Seq0002",
+      "sourceZipPath": "Ant_dataset/IndoorDataset/Seq0002Object10Image94/img/000045.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 10,
+      "densityBucket": "medium",
+      "filename": "Seq0002_000059.jpg",
+      "image": {
+        "bytes": 178399,
+        "height": 1080,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0002/Seq0002_000059.jpg",
+        "sha256": "7e251bd0f9935ec2207acf89706792161660f25b9e94cde9243767f0072ddb30",
+        "width": 1920
+      },
+      "label": {
+        "annotationCount": 10,
+        "bytes": 470,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0002/Seq0002_000059.txt",
+        "sha256": "86d882fd2e52e86c0efd4c6ced0f206cdf44925fdd13f991f9fb7bb45b709d01"
+      },
+      "originalFilename": "000059.jpg",
+      "originalFrame": 59,
+      "source": "Seq0002",
+      "sourceZipPath": "Ant_dataset/IndoorDataset/Seq0002Object10Image94/img/000059.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 10,
+      "densityBucket": "medium",
+      "filename": "Seq0002_000074.jpg",
+      "image": {
+        "bytes": 176668,
+        "height": 1080,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0002/Seq0002_000074.jpg",
+        "sha256": "05e6d8ad1c6c5feffccffb52a25ec763d2000ed20f7ef6644e0cc5e264b006e2",
+        "width": 1920
+      },
+      "label": {
+        "annotationCount": 10,
+        "bytes": 470,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0002/Seq0002_000074.txt",
+        "sha256": "17d007417be457c45715dbe5da26bf5e10ad005bdeea88ffccc08129bf34c1ce"
+      },
+      "originalFilename": "000074.jpg",
+      "originalFrame": 74,
+      "source": "Seq0002",
+      "sourceZipPath": "Ant_dataset/IndoorDataset/Seq0002Object10Image94/img/000074.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 10,
+      "densityBucket": "medium",
+      "filename": "Seq0002_000089.jpg",
+      "image": {
+        "bytes": 176936,
+        "height": 1080,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0002/Seq0002_000089.jpg",
+        "sha256": "5902dc615886f84504cc74b7a2457c9fa9c392fe488be64c55cc5e2d721d77f1",
+        "width": 1920
+      },
+      "label": {
+        "annotationCount": 10,
+        "bytes": 470,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0002/Seq0002_000089.txt",
+        "sha256": "791d7d9b8fa46abc69d9bab31587c600c82c070897e49491d3563969c3bb3817"
+      },
+      "originalFilename": "000089.jpg",
+      "originalFrame": 89,
+      "source": "Seq0002",
+      "sourceZipPath": "Ant_dataset/IndoorDataset/Seq0002Object10Image94/img/000089.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 10,
+      "densityBucket": "medium",
+      "filename": "Seq0002_000103.jpg",
+      "image": {
+        "bytes": 178192,
+        "height": 1080,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0002/Seq0002_000103.jpg",
+        "sha256": "f11e3b8b0c78fe4bbbce9dc767842c28e90a5914e1b093dc3566eb2fa802331f",
+        "width": 1920
+      },
+      "label": {
+        "annotationCount": 9,
+        "bytes": 423,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0002/Seq0002_000103.txt",
+        "sha256": "ad4da414af51ae705531e0ce9faf9bef5bd1a2bef9c9be8c49b4d9a53b8c008c"
+      },
+      "originalFilename": "000103.jpg",
+      "originalFrame": 103,
+      "source": "Seq0002",
+      "sourceZipPath": "Ant_dataset/IndoorDataset/Seq0002Object10Image94/img/000103.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 10,
+      "densityBucket": "medium",
+      "filename": "Seq0002_000118.jpg",
+      "image": {
+        "bytes": 187637,
+        "height": 1080,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0002/Seq0002_000118.jpg",
+        "sha256": "05635eaf400a1c869d2b06f1a91ca030b872df1a1684772ca760d48ef63e1250",
+        "width": 1920
+      },
+      "label": {
+        "annotationCount": 9,
+        "bytes": 423,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0002/Seq0002_000118.txt",
+        "sha256": "e20969026bdede219e7cead4857aa388078f0c1310da26aeb5a9d09fd3107ab1"
+      },
+      "originalFilename": "000118.jpg",
+      "originalFrame": 118,
+      "source": "Seq0002",
+      "sourceZipPath": "Ant_dataset/IndoorDataset/Seq0002Object10Image94/img/000118.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 10,
+      "densityBucket": "medium",
+      "filename": "Seq0002_000132.jpg",
+      "image": {
+        "bytes": 197924,
+        "height": 1080,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0002/Seq0002_000132.jpg",
+        "sha256": "2d848ce7b623928d4d78abb455bb0cd44d9f24ba0bce372b5f8b209e72727868",
+        "width": 1920
+      },
+      "label": {
+        "annotationCount": 10,
+        "bytes": 470,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0002/Seq0002_000132.txt",
+        "sha256": "3d54e030cb31d670c7d6785375149a4b82ca4e1449bc6407e3488e97f92caaad"
+      },
+      "originalFilename": "000132.jpg",
+      "originalFrame": 132,
+      "source": "Seq0002",
+      "sourceZipPath": "Ant_dataset/IndoorDataset/Seq0002Object10Image94/img/000132.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 10,
+      "densityBucket": "medium",
+      "filename": "Seq0002_000147.jpg",
+      "image": {
+        "bytes": 195427,
+        "height": 1080,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0002/Seq0002_000147.jpg",
+        "sha256": "5d470261e78792e5ddd82c9df2d71afa388b4f57f08e203843dcea772d302ec7",
+        "width": 1920
+      },
+      "label": {
+        "annotationCount": 10,
+        "bytes": 470,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0002/Seq0002_000147.txt",
+        "sha256": "98633b534b0ec22f70c590e9cf28e20c1378c310c24813718164243ac243945c"
+      },
+      "originalFilename": "000147.jpg",
+      "originalFrame": 147,
+      "source": "Seq0002",
+      "sourceZipPath": "Ant_dataset/IndoorDataset/Seq0002Object10Image94/img/000147.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 10,
+      "densityBucket": "medium",
+      "filename": "Seq0002_000161.jpg",
+      "image": {
+        "bytes": 183804,
+        "height": 1080,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0002/Seq0002_000161.jpg",
+        "sha256": "1f61a1116ff274b5ce18696333ea0c9100e6f292c43c6e6b1f47a62d0748eb1c",
+        "width": 1920
+      },
+      "label": {
+        "annotationCount": 10,
+        "bytes": 470,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0002/Seq0002_000161.txt",
+        "sha256": "d25e5247dd19ccfff523000c20aadf5f9362ff040d19c3c10447e0389ab9da57"
+      },
+      "originalFilename": "000161.jpg",
+      "originalFrame": 161,
+      "source": "Seq0002",
+      "sourceZipPath": "Ant_dataset/IndoorDataset/Seq0002Object10Image94/img/000161.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 10,
+      "densityBucket": "medium",
+      "filename": "Seq0002_000176.jpg",
+      "image": {
+        "bytes": 185612,
+        "height": 1080,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0002/Seq0002_000176.jpg",
+        "sha256": "bc398fd6c13a157d5bfb7f0987992fa3a4dac1ac52fbf9fe5a2fabd6a2449be4",
+        "width": 1920
+      },
+      "label": {
+        "annotationCount": 10,
+        "bytes": 470,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0002/Seq0002_000176.txt",
+        "sha256": "82595b2c0f5a8b03c8c5f88a2de664db83b2e0e5197488a01f06b24f380a2613"
+      },
+      "originalFilename": "000176.jpg",
+      "originalFrame": 176,
+      "source": "Seq0002",
+      "sourceZipPath": "Ant_dataset/IndoorDataset/Seq0002Object10Image94/img/000176.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 10,
+      "densityBucket": "medium",
+      "filename": "Seq0002_000191.jpg",
+      "image": {
+        "bytes": 186471,
+        "height": 1080,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0002/Seq0002_000191.jpg",
+        "sha256": "6fe46563326bcdd8e6dfbdf8530616f5bfe5c5b7f9305b933b7cc870b0b790f8",
+        "width": 1920
+      },
+      "label": {
+        "annotationCount": 9,
+        "bytes": 423,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0002/Seq0002_000191.txt",
+        "sha256": "edd4a8daae7bd637e74ff800cfa1a93aa087cde540dd2849136c939ea32cdb82"
+      },
+      "originalFilename": "000191.jpg",
+      "originalFrame": 191,
+      "source": "Seq0002",
+      "sourceZipPath": "Ant_dataset/IndoorDataset/Seq0002Object10Image94/img/000191.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 10,
+      "densityBucket": "medium",
+      "filename": "Seq0002_000205.jpg",
+      "image": {
+        "bytes": 188168,
+        "height": 1080,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0002/Seq0002_000205.jpg",
+        "sha256": "a4b83dc2e12600f6aa7530dcb706cd4cf7bada1e0fd5beeef6d8325b622c20d6",
+        "width": 1920
+      },
+      "label": {
+        "annotationCount": 10,
+        "bytes": 470,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0002/Seq0002_000205.txt",
+        "sha256": "07f213052c1e03a8c7f960fb552ceec037d36d719950e866b272ca9733a02879"
+      },
+      "originalFilename": "000205.jpg",
+      "originalFrame": 205,
+      "source": "Seq0002",
+      "sourceZipPath": "Ant_dataset/IndoorDataset/Seq0002Object10Image94/img/000205.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 10,
+      "densityBucket": "medium",
+      "filename": "Seq0002_000220.jpg",
+      "image": {
+        "bytes": 186142,
+        "height": 1080,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0002/Seq0002_000220.jpg",
+        "sha256": "0c9c40ce45bc919fc053a9b48c06887af44cf164f29a54d8f1ffb7cef631c506",
+        "width": 1920
+      },
+      "label": {
+        "annotationCount": 10,
+        "bytes": 470,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0002/Seq0002_000220.txt",
+        "sha256": "872f79a3cf79310d5adde6daa0c3016f15edfdc9f54ff44dd0105c0277a0499e"
+      },
+      "originalFilename": "000220.jpg",
+      "originalFrame": 220,
+      "source": "Seq0002",
+      "sourceZipPath": "Ant_dataset/IndoorDataset/Seq0002Object10Image94/img/000220.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 10,
+      "densityBucket": "medium",
+      "filename": "Seq0002_000234.jpg",
+      "image": {
+        "bytes": 192239,
+        "height": 1080,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0002/Seq0002_000234.jpg",
+        "sha256": "53895b65151b2a210caf2f414ac2ef5403996736ae982d29fa6f2675f83b9cc5",
+        "width": 1920
+      },
+      "label": {
+        "annotationCount": 10,
+        "bytes": 470,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0002/Seq0002_000234.txt",
+        "sha256": "7f280f6c236168757b86db74b33b9a5ca9314274f7e6c774119c2bf70cb65050"
+      },
+      "originalFilename": "000234.jpg",
+      "originalFrame": 234,
+      "source": "Seq0002",
+      "sourceZipPath": "Ant_dataset/IndoorDataset/Seq0002Object10Image94/img/000234.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 10,
+      "densityBucket": "medium",
+      "filename": "Seq0002_000249.jpg",
+      "image": {
+        "bytes": 193963,
+        "height": 1080,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0002/Seq0002_000249.jpg",
+        "sha256": "9123a0931ec605a61c274a9ceeda0d46dd4e766d1d8e90b2bc399a293f918938",
+        "width": 1920
+      },
+      "label": {
+        "annotationCount": 10,
+        "bytes": 470,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0002/Seq0002_000249.txt",
+        "sha256": "e30436ce0e98fdc1a0dfdefe9a1c54f19e05c6a580732edb9d29cb8caef30adc"
+      },
+      "originalFilename": "000249.jpg",
+      "originalFrame": 249,
+      "source": "Seq0002",
+      "sourceZipPath": "Ant_dataset/IndoorDataset/Seq0002Object10Image94/img/000249.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 10,
+      "densityBucket": "medium",
+      "filename": "Seq0002_000263.jpg",
+      "image": {
+        "bytes": 188696,
+        "height": 1080,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0002/Seq0002_000263.jpg",
+        "sha256": "0a896554943a5f0ee8ac373608ba7386928d1b6dcb60845c871bb1d0b0d52218",
+        "width": 1920
+      },
+      "label": {
+        "annotationCount": 10,
+        "bytes": 470,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0002/Seq0002_000263.txt",
+        "sha256": "ecdf2157df213a7a71cdf1e46cc6928632380fca258fb13ebea6c4857726f16b"
+      },
+      "originalFilename": "000263.jpg",
+      "originalFrame": 263,
+      "source": "Seq0002",
+      "sourceZipPath": "Ant_dataset/IndoorDataset/Seq0002Object10Image94/img/000263.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 10,
+      "densityBucket": "medium",
+      "filename": "Seq0002_000278.jpg",
+      "image": {
+        "bytes": 193926,
+        "height": 1080,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0002/Seq0002_000278.jpg",
+        "sha256": "7150afe4ecbd52861008db1e39239dbd45541400931a5d3353505069ff3c3f05",
+        "width": 1920
+      },
+      "label": {
+        "annotationCount": 10,
+        "bytes": 470,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0002/Seq0002_000278.txt",
+        "sha256": "c766a09b42c83d195a24b4c50f2e786cd014c281e532ea1bf49f4c52cec0f09e"
+      },
+      "originalFilename": "000278.jpg",
+      "originalFrame": 278,
+      "source": "Seq0002",
+      "sourceZipPath": "Ant_dataset/IndoorDataset/Seq0002Object10Image94/img/000278.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 10,
+      "densityBucket": "medium",
+      "filename": "Seq0002_000293.jpg",
+      "image": {
+        "bytes": 189319,
+        "height": 1080,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0002/Seq0002_000293.jpg",
+        "sha256": "39e97850560bbf416740d8968aa7e4dd9659886144cca9e45ea486cdfc5413d8",
+        "width": 1920
+      },
+      "label": {
+        "annotationCount": 10,
+        "bytes": 470,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0002/Seq0002_000293.txt",
+        "sha256": "b892369dc17232d45bab70e152694f561141801e455b56c5c60be9a9eaf11387"
+      },
+      "originalFilename": "000293.jpg",
+      "originalFrame": 293,
+      "source": "Seq0002",
+      "sourceZipPath": "Ant_dataset/IndoorDataset/Seq0002Object10Image94/img/000293.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 10,
+      "densityBucket": "medium",
+      "filename": "Seq0002_000307.jpg",
+      "image": {
+        "bytes": 183533,
+        "height": 1080,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0002/Seq0002_000307.jpg",
+        "sha256": "e9d46daa3fc89d6800cb580b40d89aa63343fa8007473f4f384da969d42673bc",
+        "width": 1920
+      },
+      "label": {
+        "annotationCount": 10,
+        "bytes": 470,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0002/Seq0002_000307.txt",
+        "sha256": "8852daa0a60f759ff8bf63e29d3fd5d0ae8bd59760827e3b5b428e11c6f8f1e9"
+      },
+      "originalFilename": "000307.jpg",
+      "originalFrame": 307,
+      "source": "Seq0002",
+      "sourceZipPath": "Ant_dataset/IndoorDataset/Seq0002Object10Image94/img/000307.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 10,
+      "densityBucket": "medium",
+      "filename": "Seq0002_000322.jpg",
+      "image": {
+        "bytes": 188526,
+        "height": 1080,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0002/Seq0002_000322.jpg",
+        "sha256": "6445d14001eddee3e9f18b5854598dc0a2f903be733a151e3ccf4724fa55aa19",
+        "width": 1920
+      },
+      "label": {
+        "annotationCount": 10,
+        "bytes": 470,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0002/Seq0002_000322.txt",
+        "sha256": "0c1df3c7a5d5d7c0265a78d821b203f11def7c68006133c6a4cf3a879f53a423"
+      },
+      "originalFilename": "000322.jpg",
+      "originalFrame": 322,
+      "source": "Seq0002",
+      "sourceZipPath": "Ant_dataset/IndoorDataset/Seq0002Object10Image94/img/000322.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 10,
+      "densityBucket": "medium",
+      "filename": "Seq0002_000336.jpg",
+      "image": {
+        "bytes": 192701,
+        "height": 1080,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0002/Seq0002_000336.jpg",
+        "sha256": "0982a647d50902aafeef378ad002f26275635ba4ed95824997a704acd35d1cf4",
+        "width": 1920
+      },
+      "label": {
+        "annotationCount": 10,
+        "bytes": 470,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0002/Seq0002_000336.txt",
+        "sha256": "f8862a0f57bee5c852a91f5eec3b0e38fdd282dde4e489c6b4945f1682e1f1bb"
+      },
+      "originalFilename": "000336.jpg",
+      "originalFrame": 336,
+      "source": "Seq0002",
+      "sourceZipPath": "Ant_dataset/IndoorDataset/Seq0002Object10Image94/img/000336.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 10,
+      "densityBucket": "medium",
+      "filename": "Seq0002_000351.jpg",
+      "image": {
+        "bytes": 196451,
+        "height": 1080,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0002/Seq0002_000351.jpg",
+        "sha256": "f4f7176298745f9bcd0b1356be7cabc0c9cbd1d9508b75df9322f3955251da59",
+        "width": 1920
+      },
+      "label": {
+        "annotationCount": 10,
+        "bytes": 470,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0002/Seq0002_000351.txt",
+        "sha256": "57aa3b8dbf4e0919031b86552b5e5c5774c7ad4f766ce1c1e6b3b77bbae98435"
+      },
+      "originalFilename": "000351.jpg",
+      "originalFrame": 351,
+      "source": "Seq0002",
+      "sourceZipPath": "Ant_dataset/IndoorDataset/Seq0002Object10Image94/img/000351.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 10,
+      "densityBucket": "medium",
+      "filename": "Seq0003_000001.jpg",
+      "image": {
+        "bytes": 114140,
+        "height": 1080,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0003/Seq0003_000001.jpg",
+        "sha256": "71d09ca0144e99c0a7b4d4d0a7cb1716db44b9f3d5f7ac0a20ced32929d96d98",
+        "width": 1920
+      },
+      "label": {
+        "annotationCount": 10,
+        "bytes": 470,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0003/Seq0003_000001.txt",
+        "sha256": "fe898600226666b9f759a160d894e76adc8c69d465e22eb4cb804e4591daee94"
+      },
+      "originalFilename": "000001.jpg",
+      "originalFrame": 1,
+      "source": "Seq0003",
+      "sourceZipPath": "Ant_dataset/IndoorDataset/Seq0003Object10Image94/img/000001.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 10,
+      "densityBucket": "medium",
+      "filename": "Seq0003_000016.jpg",
+      "image": {
+        "bytes": 117048,
+        "height": 1080,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0003/Seq0003_000016.jpg",
+        "sha256": "6fcdf4c0bff2f1b663c5eda3055302b9500de0008f5e8aa4d46e9c914e23549c",
+        "width": 1920
+      },
+      "label": {
+        "annotationCount": 10,
+        "bytes": 470,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0003/Seq0003_000016.txt",
+        "sha256": "6e8ca9dc004bd2968ba4f48e5db92a2e4258926dd485464d57afa66b17159fa8"
+      },
+      "originalFilename": "000016.jpg",
+      "originalFrame": 16,
+      "source": "Seq0003",
+      "sourceZipPath": "Ant_dataset/IndoorDataset/Seq0003Object10Image94/img/000016.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 10,
+      "densityBucket": "medium",
+      "filename": "Seq0003_000030.jpg",
+      "image": {
+        "bytes": 115927,
+        "height": 1080,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0003/Seq0003_000030.jpg",
+        "sha256": "edf964f0d9748b801e2c3c582b769362998b8c9acf73f1fe06a305f884a82922",
+        "width": 1920
+      },
+      "label": {
+        "annotationCount": 10,
+        "bytes": 470,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0003/Seq0003_000030.txt",
+        "sha256": "a4c757fdf2fed667c6b6bf41478b804be22997960b56d04681c56024ee2f5063"
+      },
+      "originalFilename": "000030.jpg",
+      "originalFrame": 30,
+      "source": "Seq0003",
+      "sourceZipPath": "Ant_dataset/IndoorDataset/Seq0003Object10Image94/img/000030.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 10,
+      "densityBucket": "medium",
+      "filename": "Seq0003_000045.jpg",
+      "image": {
+        "bytes": 112505,
+        "height": 1080,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0003/Seq0003_000045.jpg",
+        "sha256": "b3c5fc3167b7a9ee8dec75c03c336da98ae975d4488d5ab33efdf8eea5b65514",
+        "width": 1920
+      },
+      "label": {
+        "annotationCount": 10,
+        "bytes": 470,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0003/Seq0003_000045.txt",
+        "sha256": "c7d56b7c5cec0b43bf6bfeb4fa71f3381f31adaf40ae8942f445da426d98084a"
+      },
+      "originalFilename": "000045.jpg",
+      "originalFrame": 45,
+      "source": "Seq0003",
+      "sourceZipPath": "Ant_dataset/IndoorDataset/Seq0003Object10Image94/img/000045.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 10,
+      "densityBucket": "medium",
+      "filename": "Seq0003_000059.jpg",
+      "image": {
+        "bytes": 118399,
+        "height": 1080,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0003/Seq0003_000059.jpg",
+        "sha256": "6aa51da80e4674c68d277f8ab3221504a956e98952de4ec6502acc13513d9398",
+        "width": 1920
+      },
+      "label": {
+        "annotationCount": 10,
+        "bytes": 470,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0003/Seq0003_000059.txt",
+        "sha256": "0700f0b9e928ee5b5c42d08aff0a60dc5fc54b79aaa00158119bd62500879bee"
+      },
+      "originalFilename": "000059.jpg",
+      "originalFrame": 59,
+      "source": "Seq0003",
+      "sourceZipPath": "Ant_dataset/IndoorDataset/Seq0003Object10Image94/img/000059.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 10,
+      "densityBucket": "medium",
+      "filename": "Seq0003_000074.jpg",
+      "image": {
+        "bytes": 105343,
+        "height": 1080,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0003/Seq0003_000074.jpg",
+        "sha256": "19a88b365cef5c088d3dad4dc3076075da7dab7354bcf60f456930a27b944a39",
+        "width": 1920
+      },
+      "label": {
+        "annotationCount": 10,
+        "bytes": 470,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0003/Seq0003_000074.txt",
+        "sha256": "d095da53c0f1f583e0e780d58f933484ed1a2d62d68810f5023a273eadb203da"
+      },
+      "originalFilename": "000074.jpg",
+      "originalFrame": 74,
+      "source": "Seq0003",
+      "sourceZipPath": "Ant_dataset/IndoorDataset/Seq0003Object10Image94/img/000074.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 10,
+      "densityBucket": "medium",
+      "filename": "Seq0003_000089.jpg",
+      "image": {
+        "bytes": 151627,
+        "height": 1080,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0003/Seq0003_000089.jpg",
+        "sha256": "ca1e8c3308e316a7d0bff7f04e0d2ebc4e0dee48d229907096609eb4bfe06092",
+        "width": 1920
+      },
+      "label": {
+        "annotationCount": 10,
+        "bytes": 470,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0003/Seq0003_000089.txt",
+        "sha256": "4b89d78e036518615bb01d728cb511600040d0f96b49a9feec8396ceef7d0cd4"
+      },
+      "originalFilename": "000089.jpg",
+      "originalFrame": 89,
+      "source": "Seq0003",
+      "sourceZipPath": "Ant_dataset/IndoorDataset/Seq0003Object10Image94/img/000089.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 10,
+      "densityBucket": "medium",
+      "filename": "Seq0003_000103.jpg",
+      "image": {
+        "bytes": 183661,
+        "height": 1080,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0003/Seq0003_000103.jpg",
+        "sha256": "2abd509754f4c127384b638fc9866dda7711a44abecb96cbe1300f4e27afdeea",
+        "width": 1920
+      },
+      "label": {
+        "annotationCount": 10,
+        "bytes": 470,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0003/Seq0003_000103.txt",
+        "sha256": "153deb71c54ba0322ca9ea6d323202ee8858ecf175bf1ba8174adb46a5c01a65"
+      },
+      "originalFilename": "000103.jpg",
+      "originalFrame": 103,
+      "source": "Seq0003",
+      "sourceZipPath": "Ant_dataset/IndoorDataset/Seq0003Object10Image94/img/000103.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 10,
+      "densityBucket": "medium",
+      "filename": "Seq0003_000118.jpg",
+      "image": {
+        "bytes": 189593,
+        "height": 1080,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0003/Seq0003_000118.jpg",
+        "sha256": "b5034c8a6b7a2dc3bb04e9da38d0c7f7730d758ce296459e948a6aadeb4d996d",
+        "width": 1920
+      },
+      "label": {
+        "annotationCount": 10,
+        "bytes": 470,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0003/Seq0003_000118.txt",
+        "sha256": "894c14e8211e2dbdad29dfa64248d8a7ae50bcbb4048adbafef1be1e54df41dd"
+      },
+      "originalFilename": "000118.jpg",
+      "originalFrame": 118,
+      "source": "Seq0003",
+      "sourceZipPath": "Ant_dataset/IndoorDataset/Seq0003Object10Image94/img/000118.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 10,
+      "densityBucket": "medium",
+      "filename": "Seq0003_000132.jpg",
+      "image": {
+        "bytes": 192702,
+        "height": 1080,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0003/Seq0003_000132.jpg",
+        "sha256": "1aec15d72758b760c1217c1b5171be2f2892b40b0dbd3e465da789fe353ff2f6",
+        "width": 1920
+      },
+      "label": {
+        "annotationCount": 10,
+        "bytes": 470,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0003/Seq0003_000132.txt",
+        "sha256": "9aa7a4662df774d990ecf246bb94ae0598415387d1cde75dc10b589e709d5128"
+      },
+      "originalFilename": "000132.jpg",
+      "originalFrame": 132,
+      "source": "Seq0003",
+      "sourceZipPath": "Ant_dataset/IndoorDataset/Seq0003Object10Image94/img/000132.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 10,
+      "densityBucket": "medium",
+      "filename": "Seq0003_000147.jpg",
+      "image": {
+        "bytes": 184870,
+        "height": 1080,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0003/Seq0003_000147.jpg",
+        "sha256": "96d5d3549f7e83409365619e14d081a7190d5f9ca148963354fa97360f61fc98",
+        "width": 1920
+      },
+      "label": {
+        "annotationCount": 10,
+        "bytes": 470,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0003/Seq0003_000147.txt",
+        "sha256": "284108f7f92dd8e92251a357f0670075f79a0534784dbd40e7fb829892e6fb48"
+      },
+      "originalFilename": "000147.jpg",
+      "originalFrame": 147,
+      "source": "Seq0003",
+      "sourceZipPath": "Ant_dataset/IndoorDataset/Seq0003Object10Image94/img/000147.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 10,
+      "densityBucket": "medium",
+      "filename": "Seq0003_000161.jpg",
+      "image": {
+        "bytes": 175240,
+        "height": 1080,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0003/Seq0003_000161.jpg",
+        "sha256": "c41d24132c9819b90f7e3a33b99ee6107b2521f2e4b97d8110d0f66f4f2274ba",
+        "width": 1920
+      },
+      "label": {
+        "annotationCount": 10,
+        "bytes": 470,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0003/Seq0003_000161.txt",
+        "sha256": "be092c1bc60464f94ef6a1269e2e6c0ebe8ec1d987a90a4ab3978443a935fcba"
+      },
+      "originalFilename": "000161.jpg",
+      "originalFrame": 161,
+      "source": "Seq0003",
+      "sourceZipPath": "Ant_dataset/IndoorDataset/Seq0003Object10Image94/img/000161.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 10,
+      "densityBucket": "medium",
+      "filename": "Seq0003_000176.jpg",
+      "image": {
+        "bytes": 107255,
+        "height": 1080,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0003/Seq0003_000176.jpg",
+        "sha256": "94c32329a00c679bc850d9ec894ae327db9911089b92a44689d0b6c065f17300",
+        "width": 1920
+      },
+      "label": {
+        "annotationCount": 10,
+        "bytes": 470,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0003/Seq0003_000176.txt",
+        "sha256": "669359a90bbceaa0cfa34f88ad5dbc71bf6089f1a10a49d8ad2473b2dcdd0c38"
+      },
+      "originalFilename": "000176.jpg",
+      "originalFrame": 176,
+      "source": "Seq0003",
+      "sourceZipPath": "Ant_dataset/IndoorDataset/Seq0003Object10Image94/img/000176.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 10,
+      "densityBucket": "medium",
+      "filename": "Seq0003_000191.jpg",
+      "image": {
+        "bytes": 109770,
+        "height": 1080,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0003/Seq0003_000191.jpg",
+        "sha256": "56385cfea7510122080a497e21512d9e6a72b74af66ba75d2d5470c0adeb4030",
+        "width": 1920
+      },
+      "label": {
+        "annotationCount": 10,
+        "bytes": 470,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0003/Seq0003_000191.txt",
+        "sha256": "9b0cbe5c50300e54b3cbc2ecb6c620ee3a75b8f350f7e9b7ac7d1281f3bee4af"
+      },
+      "originalFilename": "000191.jpg",
+      "originalFrame": 191,
+      "source": "Seq0003",
+      "sourceZipPath": "Ant_dataset/IndoorDataset/Seq0003Object10Image94/img/000191.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 10,
+      "densityBucket": "medium",
+      "filename": "Seq0003_000205.jpg",
+      "image": {
+        "bytes": 115852,
+        "height": 1080,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0003/Seq0003_000205.jpg",
+        "sha256": "794e0abb01cdf062d32f23dde1f9b870a877f4029bc80a9ee9622b63d6877542",
+        "width": 1920
+      },
+      "label": {
+        "annotationCount": 10,
+        "bytes": 470,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0003/Seq0003_000205.txt",
+        "sha256": "4df81ef29b971c7231f2321a8ee45e2825054ab4ae0aeda56668494292ab8b04"
+      },
+      "originalFilename": "000205.jpg",
+      "originalFrame": 205,
+      "source": "Seq0003",
+      "sourceZipPath": "Ant_dataset/IndoorDataset/Seq0003Object10Image94/img/000205.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 10,
+      "densityBucket": "medium",
+      "filename": "Seq0003_000220.jpg",
+      "image": {
+        "bytes": 117019,
+        "height": 1080,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0003/Seq0003_000220.jpg",
+        "sha256": "21bd25bfa6c5b2dcbee43dd5205bdce4b2de3eed012e5e0f70b66070ec9292d9",
+        "width": 1920
+      },
+      "label": {
+        "annotationCount": 10,
+        "bytes": 470,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0003/Seq0003_000220.txt",
+        "sha256": "6fe484dad891738e12878b3912b26a13c0ab88695df12deb21d05e4db68b2490"
+      },
+      "originalFilename": "000220.jpg",
+      "originalFrame": 220,
+      "source": "Seq0003",
+      "sourceZipPath": "Ant_dataset/IndoorDataset/Seq0003Object10Image94/img/000220.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 10,
+      "densityBucket": "medium",
+      "filename": "Seq0003_000234.jpg",
+      "image": {
+        "bytes": 119071,
+        "height": 1080,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0003/Seq0003_000234.jpg",
+        "sha256": "d3b9482e436fcb9439fb14502047c587d86ecd9ea72e7a3eeb5f827ff04a4d42",
+        "width": 1920
+      },
+      "label": {
+        "annotationCount": 10,
+        "bytes": 470,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0003/Seq0003_000234.txt",
+        "sha256": "8ec625849a08e475ce5d75c3cfabb546d8b866f25b4f2877e7923e43f388d549"
+      },
+      "originalFilename": "000234.jpg",
+      "originalFrame": 234,
+      "source": "Seq0003",
+      "sourceZipPath": "Ant_dataset/IndoorDataset/Seq0003Object10Image94/img/000234.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 10,
+      "densityBucket": "medium",
+      "filename": "Seq0003_000249.jpg",
+      "image": {
+        "bytes": 120022,
+        "height": 1080,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0003/Seq0003_000249.jpg",
+        "sha256": "9bdda722e97bb8cd79ede9cec87df8c51ad8ae2e6ad6ed589e5e9e3d6ea733ee",
+        "width": 1920
+      },
+      "label": {
+        "annotationCount": 10,
+        "bytes": 470,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0003/Seq0003_000249.txt",
+        "sha256": "2540ac13adeb800e229259fcebc4d888607ae73d8edf155056efdf9798b39b6e"
+      },
+      "originalFilename": "000249.jpg",
+      "originalFrame": 249,
+      "source": "Seq0003",
+      "sourceZipPath": "Ant_dataset/IndoorDataset/Seq0003Object10Image94/img/000249.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 10,
+      "densityBucket": "medium",
+      "filename": "Seq0003_000263.jpg",
+      "image": {
+        "bytes": 120157,
+        "height": 1080,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0003/Seq0003_000263.jpg",
+        "sha256": "af09643900f473555fd9c3ac2d2aaf89fe83e1279d27a0a1dc3d0908d4974a34",
+        "width": 1920
+      },
+      "label": {
+        "annotationCount": 10,
+        "bytes": 470,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0003/Seq0003_000263.txt",
+        "sha256": "648e8c35d4f877248faac0021355da4ae1d9a58e6213aca397b2161628e02c4f"
+      },
+      "originalFilename": "000263.jpg",
+      "originalFrame": 263,
+      "source": "Seq0003",
+      "sourceZipPath": "Ant_dataset/IndoorDataset/Seq0003Object10Image94/img/000263.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 10,
+      "densityBucket": "medium",
+      "filename": "Seq0003_000278.jpg",
+      "image": {
+        "bytes": 97918,
+        "height": 1080,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0003/Seq0003_000278.jpg",
+        "sha256": "e1d7fb848d5c5dd6800f9d832fdc0a74aa83fd20a672ba8529129daa97dd75d1",
+        "width": 1920
+      },
+      "label": {
+        "annotationCount": 10,
+        "bytes": 470,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0003/Seq0003_000278.txt",
+        "sha256": "e3a010fd2f71723097c7083384578311175c520f0d43f59e2bd46c9b0f0d83c8"
+      },
+      "originalFilename": "000278.jpg",
+      "originalFrame": 278,
+      "source": "Seq0003",
+      "sourceZipPath": "Ant_dataset/IndoorDataset/Seq0003Object10Image94/img/000278.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 10,
+      "densityBucket": "medium",
+      "filename": "Seq0003_000293.jpg",
+      "image": {
+        "bytes": 122241,
+        "height": 1080,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0003/Seq0003_000293.jpg",
+        "sha256": "bf7bc5a8cd98141e80cf9a1e7c2fce5aa57e00c845f084672a3f6329fb42355a",
+        "width": 1920
+      },
+      "label": {
+        "annotationCount": 10,
+        "bytes": 470,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0003/Seq0003_000293.txt",
+        "sha256": "5a4be78fa0eefc588c4f6550386bb0a3abdaee727ea127a573420f9132f5b914"
+      },
+      "originalFilename": "000293.jpg",
+      "originalFrame": 293,
+      "source": "Seq0003",
+      "sourceZipPath": "Ant_dataset/IndoorDataset/Seq0003Object10Image94/img/000293.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 10,
+      "densityBucket": "medium",
+      "filename": "Seq0003_000307.jpg",
+      "image": {
+        "bytes": 121602,
+        "height": 1080,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0003/Seq0003_000307.jpg",
+        "sha256": "3513ac901bc7012c04ad8d7473ae495d23ee71bb853e8e67ea102fbb5424841f",
+        "width": 1920
+      },
+      "label": {
+        "annotationCount": 10,
+        "bytes": 470,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0003/Seq0003_000307.txt",
+        "sha256": "0f80e690b7ed81f8635396a47f5b29b367cced4a90e6de316e81b449dabb432a"
+      },
+      "originalFilename": "000307.jpg",
+      "originalFrame": 307,
+      "source": "Seq0003",
+      "sourceZipPath": "Ant_dataset/IndoorDataset/Seq0003Object10Image94/img/000307.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 10,
+      "densityBucket": "medium",
+      "filename": "Seq0003_000322.jpg",
+      "image": {
+        "bytes": 112850,
+        "height": 1080,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0003/Seq0003_000322.jpg",
+        "sha256": "9001eaa0e1754c5e6572a7fefed362c98207ad1e819c185b346f24165912edbc",
+        "width": 1920
+      },
+      "label": {
+        "annotationCount": 10,
+        "bytes": 470,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0003/Seq0003_000322.txt",
+        "sha256": "d4438d31ea24624cc0c55aba9cda5f1ac6aa45426681bd7e660a6b2d83e30c5d"
+      },
+      "originalFilename": "000322.jpg",
+      "originalFrame": 322,
+      "source": "Seq0003",
+      "sourceZipPath": "Ant_dataset/IndoorDataset/Seq0003Object10Image94/img/000322.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 10,
+      "densityBucket": "medium",
+      "filename": "Seq0003_000336.jpg",
+      "image": {
+        "bytes": 134691,
+        "height": 1080,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0003/Seq0003_000336.jpg",
+        "sha256": "a84679578160fc32d563fc6fe2a1be4d938750521e4ed121342f0e80cb3c7b61",
+        "width": 1920
+      },
+      "label": {
+        "annotationCount": 10,
+        "bytes": 470,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0003/Seq0003_000336.txt",
+        "sha256": "509192a6bb34e7a4bf4211360c0683f0c90f5264c9aa14cd8c48e97b956204bf"
+      },
+      "originalFilename": "000336.jpg",
+      "originalFrame": 336,
+      "source": "Seq0003",
+      "sourceZipPath": "Ant_dataset/IndoorDataset/Seq0003Object10Image94/img/000336.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 10,
+      "densityBucket": "medium",
+      "filename": "Seq0003_000351.jpg",
+      "image": {
+        "bytes": 188102,
+        "height": 1080,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0003/Seq0003_000351.jpg",
+        "sha256": "98cce1fcaaa070917868bf580829d1b2db675871a6427925165a2812d9f3b53e",
+        "width": 1920
+      },
+      "label": {
+        "annotationCount": 10,
+        "bytes": 470,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0003/Seq0003_000351.txt",
+        "sha256": "5c36bf250234b5a451e22b9b8803d2b480b7200224b7a7ece705c041fffe0988"
+      },
+      "originalFilename": "000351.jpg",
+      "originalFrame": 351,
+      "source": "Seq0003",
+      "sourceZipPath": "Ant_dataset/IndoorDataset/Seq0003Object10Image94/img/000351.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 10,
+      "densityBucket": "medium",
+      "filename": "Seq0004_000001.jpg",
+      "image": {
+        "bytes": 62947,
+        "height": 1080,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0004/Seq0004_000001.jpg",
+        "sha256": "5e8ad6b1db84053181e6793791088c0f887975c5bf2e430540045c676812c6de",
+        "width": 1920
+      },
+      "label": {
+        "annotationCount": 10,
+        "bytes": 470,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0004/Seq0004_000001.txt",
+        "sha256": "9b9058665dbca13741c2134fd0a9e5f7a2083414a076146143e9e08eb2a388c0"
+      },
+      "originalFilename": "000001.jpg",
+      "originalFrame": 1,
+      "source": "Seq0004",
+      "sourceZipPath": "Ant_dataset/IndoorDataset/Seq0004Object10Image94/img/000001.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 10,
+      "densityBucket": "medium",
+      "filename": "Seq0004_000016.jpg",
+      "image": {
+        "bytes": 63399,
+        "height": 1080,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0004/Seq0004_000016.jpg",
+        "sha256": "c5b7f5687005260e8b271ed5fa62e095b321bfab2090e5f1f597a6b1811d8836",
+        "width": 1920
+      },
+      "label": {
+        "annotationCount": 10,
+        "bytes": 470,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0004/Seq0004_000016.txt",
+        "sha256": "15654c68ccc27596dd6baa886234addbc3036e50747b631f24cc636b2368349f"
+      },
+      "originalFilename": "000016.jpg",
+      "originalFrame": 16,
+      "source": "Seq0004",
+      "sourceZipPath": "Ant_dataset/IndoorDataset/Seq0004Object10Image94/img/000016.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 10,
+      "densityBucket": "medium",
+      "filename": "Seq0004_000030.jpg",
+      "image": {
+        "bytes": 56121,
+        "height": 1080,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0004/Seq0004_000030.jpg",
+        "sha256": "68d693d5d8d4e08e3a38178ba7729caa9354f095db1d7b455795b3c8d0f6f61c",
+        "width": 1920
+      },
+      "label": {
+        "annotationCount": 10,
+        "bytes": 470,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0004/Seq0004_000030.txt",
+        "sha256": "c1293020d617d399644f7e645c2df04c4db0c31719ce9a9154d793de392ce41b"
+      },
+      "originalFilename": "000030.jpg",
+      "originalFrame": 30,
+      "source": "Seq0004",
+      "sourceZipPath": "Ant_dataset/IndoorDataset/Seq0004Object10Image94/img/000030.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 10,
+      "densityBucket": "medium",
+      "filename": "Seq0004_000045.jpg",
+      "image": {
+        "bytes": 58948,
+        "height": 1080,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0004/Seq0004_000045.jpg",
+        "sha256": "9ef665854c8954e201b2af024c22d389c1a754bbf5f14dfdaf62096e459fc848",
+        "width": 1920
+      },
+      "label": {
+        "annotationCount": 10,
+        "bytes": 470,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0004/Seq0004_000045.txt",
+        "sha256": "2bb47b7d587b912fff6bb1356be27d055e6d7b867c8cf945df427e988b04912f"
+      },
+      "originalFilename": "000045.jpg",
+      "originalFrame": 45,
+      "source": "Seq0004",
+      "sourceZipPath": "Ant_dataset/IndoorDataset/Seq0004Object10Image94/img/000045.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 10,
+      "densityBucket": "medium",
+      "filename": "Seq0004_000059.jpg",
+      "image": {
+        "bytes": 60818,
+        "height": 1080,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0004/Seq0004_000059.jpg",
+        "sha256": "0484a03f61287c678679ef7a83a9f645b1b2a487ab531cf8418316b7c3550d66",
+        "width": 1920
+      },
+      "label": {
+        "annotationCount": 10,
+        "bytes": 470,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0004/Seq0004_000059.txt",
+        "sha256": "74868d7788c4c8ace40e967381f568095faef1cd440408893f68eccc078dacbd"
+      },
+      "originalFilename": "000059.jpg",
+      "originalFrame": 59,
+      "source": "Seq0004",
+      "sourceZipPath": "Ant_dataset/IndoorDataset/Seq0004Object10Image94/img/000059.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 10,
+      "densityBucket": "medium",
+      "filename": "Seq0004_000074.jpg",
+      "image": {
+        "bytes": 67099,
+        "height": 1080,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0004/Seq0004_000074.jpg",
+        "sha256": "62ae34afc400ebb8791935935c7df1303e4d003d9d50eee03b7a3f2444733756",
+        "width": 1920
+      },
+      "label": {
+        "annotationCount": 10,
+        "bytes": 470,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0004/Seq0004_000074.txt",
+        "sha256": "10521d5245fbbb745b9e338a1456b45626a820fb8a87d59ce2eb451da6b43d33"
+      },
+      "originalFilename": "000074.jpg",
+      "originalFrame": 74,
+      "source": "Seq0004",
+      "sourceZipPath": "Ant_dataset/IndoorDataset/Seq0004Object10Image94/img/000074.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 10,
+      "densityBucket": "medium",
+      "filename": "Seq0004_000089.jpg",
+      "image": {
+        "bytes": 70565,
+        "height": 1080,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0004/Seq0004_000089.jpg",
+        "sha256": "0d9de49cb0b6d8cc2917c019e796c69c1b3c40cb46d7fd33192ec6c699c60803",
+        "width": 1920
+      },
+      "label": {
+        "annotationCount": 10,
+        "bytes": 470,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0004/Seq0004_000089.txt",
+        "sha256": "85d7c8e1c1b1ed63b4d3539ed19b8da158eac6c1d3976e8576a9851c61777c22"
+      },
+      "originalFilename": "000089.jpg",
+      "originalFrame": 89,
+      "source": "Seq0004",
+      "sourceZipPath": "Ant_dataset/IndoorDataset/Seq0004Object10Image94/img/000089.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 10,
+      "densityBucket": "medium",
+      "filename": "Seq0004_000103.jpg",
+      "image": {
+        "bytes": 70075,
+        "height": 1080,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0004/Seq0004_000103.jpg",
+        "sha256": "df5e1540b3dd030b98b0e7fe8b4cf7d4bdc67d0032095afdc6cfc600adb3e829",
+        "width": 1920
+      },
+      "label": {
+        "annotationCount": 10,
+        "bytes": 470,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0004/Seq0004_000103.txt",
+        "sha256": "df6173cd5f3325ddaaaaa1260cdac4c23bf01f37c23215e5f4f6dfcd4486fad9"
+      },
+      "originalFilename": "000103.jpg",
+      "originalFrame": 103,
+      "source": "Seq0004",
+      "sourceZipPath": "Ant_dataset/IndoorDataset/Seq0004Object10Image94/img/000103.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 10,
+      "densityBucket": "medium",
+      "filename": "Seq0004_000118.jpg",
+      "image": {
+        "bytes": 72757,
+        "height": 1080,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0004/Seq0004_000118.jpg",
+        "sha256": "d19343b29e5e96350dcec8325359ab7cd5596e786ca07e43880ec9696f91d1c9",
+        "width": 1920
+      },
+      "label": {
+        "annotationCount": 10,
+        "bytes": 470,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0004/Seq0004_000118.txt",
+        "sha256": "dec9280c6d81175a53203bab7d92e62dfdfd9c10c9fd6c8b75688e5031797b71"
+      },
+      "originalFilename": "000118.jpg",
+      "originalFrame": 118,
+      "source": "Seq0004",
+      "sourceZipPath": "Ant_dataset/IndoorDataset/Seq0004Object10Image94/img/000118.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 10,
+      "densityBucket": "medium",
+      "filename": "Seq0004_000132.jpg",
+      "image": {
+        "bytes": 73281,
+        "height": 1080,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0004/Seq0004_000132.jpg",
+        "sha256": "3a0bd86f9f26d9acfc03ac7dcb64fb34c43de5e2f373b8ab675c0403fb466b5b",
+        "width": 1920
+      },
+      "label": {
+        "annotationCount": 10,
+        "bytes": 470,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0004/Seq0004_000132.txt",
+        "sha256": "da74c8518617410cd7559ec1cb5be7951db52ef9364900cb0dd938fd814aef2d"
+      },
+      "originalFilename": "000132.jpg",
+      "originalFrame": 132,
+      "source": "Seq0004",
+      "sourceZipPath": "Ant_dataset/IndoorDataset/Seq0004Object10Image94/img/000132.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 10,
+      "densityBucket": "medium",
+      "filename": "Seq0004_000147.jpg",
+      "image": {
+        "bytes": 60690,
+        "height": 1080,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0004/Seq0004_000147.jpg",
+        "sha256": "38ac335630b6975f4a75ddd581242f2ad25b75c522a8824cc97a2e34b9c76806",
+        "width": 1920
+      },
+      "label": {
+        "annotationCount": 10,
+        "bytes": 470,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0004/Seq0004_000147.txt",
+        "sha256": "8fa1d419ab40cf467e885ef8b3aae8fb21c8777fa9a353d8a46130d577ed3ec9"
+      },
+      "originalFilename": "000147.jpg",
+      "originalFrame": 147,
+      "source": "Seq0004",
+      "sourceZipPath": "Ant_dataset/IndoorDataset/Seq0004Object10Image94/img/000147.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 10,
+      "densityBucket": "medium",
+      "filename": "Seq0004_000161.jpg",
+      "image": {
+        "bytes": 59153,
+        "height": 1080,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0004/Seq0004_000161.jpg",
+        "sha256": "4b26f6d029e191b227007cc736decabeec62fa887520a4ee0d40c860223d191c",
+        "width": 1920
+      },
+      "label": {
+        "annotationCount": 10,
+        "bytes": 470,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0004/Seq0004_000161.txt",
+        "sha256": "87e1a14314eff68e22b0ec01f4149f8ed6759bc81dbd5315fe91802ed7c74f73"
+      },
+      "originalFilename": "000161.jpg",
+      "originalFrame": 161,
+      "source": "Seq0004",
+      "sourceZipPath": "Ant_dataset/IndoorDataset/Seq0004Object10Image94/img/000161.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 10,
+      "densityBucket": "medium",
+      "filename": "Seq0004_000176.jpg",
+      "image": {
+        "bytes": 62606,
+        "height": 1080,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0004/Seq0004_000176.jpg",
+        "sha256": "5fe9e5ad5ed05ec46d032668a44d46e5ac5c2d0fbb59a70a34e4de548cd92336",
+        "width": 1920
+      },
+      "label": {
+        "annotationCount": 10,
+        "bytes": 470,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0004/Seq0004_000176.txt",
+        "sha256": "f72ce46ae30d6e6087dd7ae5b9f8ec54fcc7226a217e228284f6b5aaf749c6a0"
+      },
+      "originalFilename": "000176.jpg",
+      "originalFrame": 176,
+      "source": "Seq0004",
+      "sourceZipPath": "Ant_dataset/IndoorDataset/Seq0004Object10Image94/img/000176.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 10,
+      "densityBucket": "medium",
+      "filename": "Seq0004_000191.jpg",
+      "image": {
+        "bytes": 60706,
+        "height": 1080,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0004/Seq0004_000191.jpg",
+        "sha256": "dad52daf49d8a4c6e409718b27065cc0bcd0f1a84600463fd23e41e85f683cae",
+        "width": 1920
+      },
+      "label": {
+        "annotationCount": 10,
+        "bytes": 470,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0004/Seq0004_000191.txt",
+        "sha256": "8ef885523c2a5059669004bb0f67d8e2672131a74240fbe0dfee1620575e5c75"
+      },
+      "originalFilename": "000191.jpg",
+      "originalFrame": 191,
+      "source": "Seq0004",
+      "sourceZipPath": "Ant_dataset/IndoorDataset/Seq0004Object10Image94/img/000191.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 10,
+      "densityBucket": "medium",
+      "filename": "Seq0004_000205.jpg",
+      "image": {
+        "bytes": 58644,
+        "height": 1080,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0004/Seq0004_000205.jpg",
+        "sha256": "097c5803993cebc503a550a8735c82a84b0d608705a24cee1675223b8dd8827a",
+        "width": 1920
+      },
+      "label": {
+        "annotationCount": 10,
+        "bytes": 470,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0004/Seq0004_000205.txt",
+        "sha256": "93bb15859c1aa49b590172a40cdc8243f9cb3700699a3302427b4bdf540aa2bc"
+      },
+      "originalFilename": "000205.jpg",
+      "originalFrame": 205,
+      "source": "Seq0004",
+      "sourceZipPath": "Ant_dataset/IndoorDataset/Seq0004Object10Image94/img/000205.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 10,
+      "densityBucket": "medium",
+      "filename": "Seq0004_000220.jpg",
+      "image": {
+        "bytes": 60222,
+        "height": 1080,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0004/Seq0004_000220.jpg",
+        "sha256": "7fb917d9bf90a9c891a86aa574ff35c8cb43293cd5ac7d0028bbb6536638e280",
+        "width": 1920
+      },
+      "label": {
+        "annotationCount": 10,
+        "bytes": 470,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0004/Seq0004_000220.txt",
+        "sha256": "ed5dbbc957bd22d15bf98ba44128fb6cfddb50e2b51b5ced3881acc983a15275"
+      },
+      "originalFilename": "000220.jpg",
+      "originalFrame": 220,
+      "source": "Seq0004",
+      "sourceZipPath": "Ant_dataset/IndoorDataset/Seq0004Object10Image94/img/000220.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 10,
+      "densityBucket": "medium",
+      "filename": "Seq0004_000234.jpg",
+      "image": {
+        "bytes": 59459,
+        "height": 1080,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0004/Seq0004_000234.jpg",
+        "sha256": "c7fdb79577a3d53e6ab737d867ad703ebc189913698aa004d15dac2504fb9e7e",
+        "width": 1920
+      },
+      "label": {
+        "annotationCount": 10,
+        "bytes": 470,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0004/Seq0004_000234.txt",
+        "sha256": "c37e0f203d6c72c3c9c39abf459d93df37ecdd4e90fe155bdaf213f04265632c"
+      },
+      "originalFilename": "000234.jpg",
+      "originalFrame": 234,
+      "source": "Seq0004",
+      "sourceZipPath": "Ant_dataset/IndoorDataset/Seq0004Object10Image94/img/000234.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 10,
+      "densityBucket": "medium",
+      "filename": "Seq0004_000249.jpg",
+      "image": {
+        "bytes": 56126,
+        "height": 1080,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0004/Seq0004_000249.jpg",
+        "sha256": "a0396c44df3beb181a311ceef60af71cde98c114af124dc3d28638ec8dd253d9",
+        "width": 1920
+      },
+      "label": {
+        "annotationCount": 10,
+        "bytes": 470,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0004/Seq0004_000249.txt",
+        "sha256": "96dcec80f004e7b4a11dfc9a17e0e17ce5694a044926a0108d075d737e95d941"
+      },
+      "originalFilename": "000249.jpg",
+      "originalFrame": 249,
+      "source": "Seq0004",
+      "sourceZipPath": "Ant_dataset/IndoorDataset/Seq0004Object10Image94/img/000249.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 10,
+      "densityBucket": "medium",
+      "filename": "Seq0004_000263.jpg",
+      "image": {
+        "bytes": 55864,
+        "height": 1080,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0004/Seq0004_000263.jpg",
+        "sha256": "a5250b11e2eeda72b350f079842de115fc2cb0fde3fff890a035de4250d57223",
+        "width": 1920
+      },
+      "label": {
+        "annotationCount": 10,
+        "bytes": 470,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0004/Seq0004_000263.txt",
+        "sha256": "679fe6e5daec24f270932bbd83806849c570983fb653b2f2611942986ae06f94"
+      },
+      "originalFilename": "000263.jpg",
+      "originalFrame": 263,
+      "source": "Seq0004",
+      "sourceZipPath": "Ant_dataset/IndoorDataset/Seq0004Object10Image94/img/000263.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 10,
+      "densityBucket": "medium",
+      "filename": "Seq0004_000278.jpg",
+      "image": {
+        "bytes": 58511,
+        "height": 1080,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0004/Seq0004_000278.jpg",
+        "sha256": "a24134b4df442ef062b72565aa518259029972af0525ebee98f99f93388e4e0b",
+        "width": 1920
+      },
+      "label": {
+        "annotationCount": 10,
+        "bytes": 470,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0004/Seq0004_000278.txt",
+        "sha256": "f68401e7e7f1873d06a62ab33ccef81d8ed2598eac6ccfabecf05c3079e3ef94"
+      },
+      "originalFilename": "000278.jpg",
+      "originalFrame": 278,
+      "source": "Seq0004",
+      "sourceZipPath": "Ant_dataset/IndoorDataset/Seq0004Object10Image94/img/000278.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 10,
+      "densityBucket": "medium",
+      "filename": "Seq0004_000293.jpg",
+      "image": {
+        "bytes": 59880,
+        "height": 1080,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0004/Seq0004_000293.jpg",
+        "sha256": "3aa3ef42810970da0ddfdd0285c0301343c8602a2285ac0aa473ed7736d23561",
+        "width": 1920
+      },
+      "label": {
+        "annotationCount": 10,
+        "bytes": 470,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0004/Seq0004_000293.txt",
+        "sha256": "b61b6a5bea206c46326f9b09a7e6b39e4ddcb474742c8f679e1ad18a19a52789"
+      },
+      "originalFilename": "000293.jpg",
+      "originalFrame": 293,
+      "source": "Seq0004",
+      "sourceZipPath": "Ant_dataset/IndoorDataset/Seq0004Object10Image94/img/000293.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 10,
+      "densityBucket": "medium",
+      "filename": "Seq0004_000307.jpg",
+      "image": {
+        "bytes": 59870,
+        "height": 1080,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0004/Seq0004_000307.jpg",
+        "sha256": "0783de93d97829bf302dca740ef5601f9e804f5318182a4eb44682234df75761",
+        "width": 1920
+      },
+      "label": {
+        "annotationCount": 10,
+        "bytes": 470,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0004/Seq0004_000307.txt",
+        "sha256": "aee0ed196e57ead8a533850724c6968db7373071636c75d2d347c372d030b349"
+      },
+      "originalFilename": "000307.jpg",
+      "originalFrame": 307,
+      "source": "Seq0004",
+      "sourceZipPath": "Ant_dataset/IndoorDataset/Seq0004Object10Image94/img/000307.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 10,
+      "densityBucket": "medium",
+      "filename": "Seq0004_000322.jpg",
+      "image": {
+        "bytes": 59637,
+        "height": 1080,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0004/Seq0004_000322.jpg",
+        "sha256": "3ff9727bf0bac47ca37eac375ead0d57c37f95f9c491b4a45a4d95e1cde84692",
+        "width": 1920
+      },
+      "label": {
+        "annotationCount": 10,
+        "bytes": 470,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0004/Seq0004_000322.txt",
+        "sha256": "831e1481b9a4d696861c4e8ed386f829afe42e1dd91929952e41943fb9427202"
+      },
+      "originalFilename": "000322.jpg",
+      "originalFrame": 322,
+      "source": "Seq0004",
+      "sourceZipPath": "Ant_dataset/IndoorDataset/Seq0004Object10Image94/img/000322.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 10,
+      "densityBucket": "medium",
+      "filename": "Seq0004_000336.jpg",
+      "image": {
+        "bytes": 59572,
+        "height": 1080,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0004/Seq0004_000336.jpg",
+        "sha256": "8d3f1005a2bf0f16d1f2c5c05267800859f23aed81eb7251f828744c3558135a",
+        "width": 1920
+      },
+      "label": {
+        "annotationCount": 10,
+        "bytes": 470,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0004/Seq0004_000336.txt",
+        "sha256": "ec53e9c102410bd9d091f3ef39abaa2022026f304835d83e08036602a835ab79"
+      },
+      "originalFilename": "000336.jpg",
+      "originalFrame": 336,
+      "source": "Seq0004",
+      "sourceZipPath": "Ant_dataset/IndoorDataset/Seq0004Object10Image94/img/000336.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 10,
+      "densityBucket": "medium",
+      "filename": "Seq0004_000351.jpg",
+      "image": {
+        "bytes": 57462,
+        "height": 1080,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0004/Seq0004_000351.jpg",
+        "sha256": "1d74309179a5f739f5bbf45d4ed78437c31ec6d1c8b9d8d5f47230c956d1a206",
+        "width": 1920
+      },
+      "label": {
+        "annotationCount": 10,
+        "bytes": 470,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0004/Seq0004_000351.txt",
+        "sha256": "6ee9948b79467df64211e0c0745e64d50057723de6c4629bd2167612d79c774b"
+      },
+      "originalFilename": "000351.jpg",
+      "originalFrame": 351,
+      "source": "Seq0004",
+      "sourceZipPath": "Ant_dataset/IndoorDataset/Seq0004Object10Image94/img/000351.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 26,
+      "densityBucket": "low",
+      "filename": "Seq0007_000001.jpg",
+      "image": {
+        "bytes": 479418,
+        "height": 720,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0007/Seq0007_000001.jpg",
+        "sha256": "c6c9ddc0a23fe1b458da3c2a6b6475f3d725019a0306d921d6c6582c101c9605",
+        "width": 1280
+      },
+      "label": {
+        "annotationCount": 25,
+        "bytes": 1175,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0007/Seq0007_000001.txt",
+        "sha256": "97266c3afbcc8692bdfd15477c50448c07d4e6bb067004a6e0f1de4eaf588650"
+      },
+      "originalFilename": "000001.jpg",
+      "originalFrame": 1,
+      "source": "Seq0007",
+      "sourceZipPath": "Ant_dataset/OutdoorDataset/Seq0007Object26Image64/img/000001.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 37,
+      "densityBucket": "medium",
+      "filename": "Seq0007_000024.jpg",
+      "image": {
+        "bytes": 470146,
+        "height": 720,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0007/Seq0007_000024.jpg",
+        "sha256": "a48f2b653a89ed8aafc8266eb1eba3e858921739ffc8dbac74124fd03b8b5403",
+        "width": 1280
+      },
+      "label": {
+        "annotationCount": 35,
+        "bytes": 1645,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0007/Seq0007_000024.txt",
+        "sha256": "b8938219fa524d40903bbb25ff6cd8e50744c7918726273afbe483feced6ef52"
+      },
+      "originalFilename": "000024.jpg",
+      "originalFrame": 24,
+      "source": "Seq0007",
+      "sourceZipPath": "Ant_dataset/OutdoorDataset/Seq0007Object26Image64/img/000024.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 38,
+      "densityBucket": "medium",
+      "filename": "Seq0007_000048.jpg",
+      "image": {
+        "bytes": 470437,
+        "height": 720,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0007/Seq0007_000048.jpg",
+        "sha256": "b3c9caa5eadea8d68c5defccc4bf1e52e04aa4d420c3582ceb98a42f0958cc78",
+        "width": 1280
+      },
+      "label": {
+        "annotationCount": 35,
+        "bytes": 1645,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0007/Seq0007_000048.txt",
+        "sha256": "a037cdd724b80547087cd9db1e222c48a5f0c76a117753224fef56da7d8edecc"
+      },
+      "originalFilename": "000048.jpg",
+      "originalFrame": 48,
+      "source": "Seq0007",
+      "sourceZipPath": "Ant_dataset/OutdoorDataset/Seq0007Object26Image64/img/000048.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 38,
+      "densityBucket": "medium",
+      "filename": "Seq0007_000071.jpg",
+      "image": {
+        "bytes": 467956,
+        "height": 720,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0007/Seq0007_000071.jpg",
+        "sha256": "ea853ea1b7bc7941d4061cdf64e7c366ba23febf2a03204c9f6ad8556463fd49",
+        "width": 1280
+      },
+      "label": {
+        "annotationCount": 35,
+        "bytes": 1645,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0007/Seq0007_000071.txt",
+        "sha256": "88a7d22ced2f9ab19706ca595225baed9c0040525b62bbd0d81a3add80b4a3aa"
+      },
+      "originalFilename": "000071.jpg",
+      "originalFrame": 71,
+      "source": "Seq0007",
+      "sourceZipPath": "Ant_dataset/OutdoorDataset/Seq0007Object26Image64/img/000071.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 36,
+      "densityBucket": "low",
+      "filename": "Seq0007_000094.jpg",
+      "image": {
+        "bytes": 467747,
+        "height": 720,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0007/Seq0007_000094.jpg",
+        "sha256": "fcee34b4de3237c76f07a9fb1a07d014d889702deafc5473345f113032f50e22",
+        "width": 1280
+      },
+      "label": {
+        "annotationCount": 32,
+        "bytes": 1504,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0007/Seq0007_000094.txt",
+        "sha256": "31754d159d87d061f3446de691dad31f51a4ad2bc1113c5243f9a8ed375243b1"
+      },
+      "originalFilename": "000094.jpg",
+      "originalFrame": 94,
+      "source": "Seq0007",
+      "sourceZipPath": "Ant_dataset/OutdoorDataset/Seq0007Object26Image64/img/000094.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 35,
+      "densityBucket": "low",
+      "filename": "Seq0007_000118.jpg",
+      "image": {
+        "bytes": 469924,
+        "height": 720,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0007/Seq0007_000118.jpg",
+        "sha256": "0412cdd671c2945972acf66932f03801e4c889023b856075f40450daf547f979",
+        "width": 1280
+      },
+      "label": {
+        "annotationCount": 29,
+        "bytes": 1363,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0007/Seq0007_000118.txt",
+        "sha256": "99656b0ce125c99483f931b7eb237b1bcebe85bd0099a0d193da5ee41d40f36f"
+      },
+      "originalFilename": "000118.jpg",
+      "originalFrame": 118,
+      "source": "Seq0007",
+      "sourceZipPath": "Ant_dataset/OutdoorDataset/Seq0007Object26Image64/img/000118.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 40,
+      "densityBucket": "high",
+      "filename": "Seq0007_000141.jpg",
+      "image": {
+        "bytes": 471682,
+        "height": 720,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0007/Seq0007_000141.jpg",
+        "sha256": "7d8db5e50948e250fd693ca06e21aa34796900909dce35648284e1ffeb787327",
+        "width": 1280
+      },
+      "label": {
+        "annotationCount": 40,
+        "bytes": 1880,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0007/Seq0007_000141.txt",
+        "sha256": "89c4faa35699bacdf9eae257e59d75f86ab18e1d795acab92471ba060ff882a2"
+      },
+      "originalFilename": "000141.jpg",
+      "originalFrame": 141,
+      "source": "Seq0007",
+      "sourceZipPath": "Ant_dataset/OutdoorDataset/Seq0007Object26Image64/img/000141.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 38,
+      "densityBucket": "medium",
+      "filename": "Seq0007_000164.jpg",
+      "image": {
+        "bytes": 472714,
+        "height": 720,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0007/Seq0007_000164.jpg",
+        "sha256": "6354d6fcec102b4c124ced6e23d942d88ecce4447c65fbdec2e295cb1bf56afa",
+        "width": 1280
+      },
+      "label": {
+        "annotationCount": 38,
+        "bytes": 1786,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0007/Seq0007_000164.txt",
+        "sha256": "594494ff71023adc90ea572ed4fefe1ae1fe0a005d42dfdbc0e088fbf617399a"
+      },
+      "originalFilename": "000164.jpg",
+      "originalFrame": 164,
+      "source": "Seq0007",
+      "sourceZipPath": "Ant_dataset/OutdoorDataset/Seq0007Object26Image64/img/000164.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 33,
+      "densityBucket": "low",
+      "filename": "Seq0007_000187.jpg",
+      "image": {
+        "bytes": 473988,
+        "height": 720,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0007/Seq0007_000187.jpg",
+        "sha256": "b102262c44e3e2d895672d1a25808e4c1e34f6b4ef05ce9be4a170c3823ea932",
+        "width": 1280
+      },
+      "label": {
+        "annotationCount": 35,
+        "bytes": 1645,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0007/Seq0007_000187.txt",
+        "sha256": "1bae6020ea62104d01401425d1fbdbb6faaa8dd47ef530739c9057abe9ad9b29"
+      },
+      "originalFilename": "000187.jpg",
+      "originalFrame": 187,
+      "source": "Seq0007",
+      "sourceZipPath": "Ant_dataset/OutdoorDataset/Seq0007Object26Image64/img/000187.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 33,
+      "densityBucket": "low",
+      "filename": "Seq0007_000211.jpg",
+      "image": {
+        "bytes": 474513,
+        "height": 720,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0007/Seq0007_000211.jpg",
+        "sha256": "07bf09b7525572c258bada1238f0362e17806e16d8cfa51f534205ef894c6817",
+        "width": 1280
+      },
+      "label": {
+        "annotationCount": 33,
+        "bytes": 1551,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0007/Seq0007_000211.txt",
+        "sha256": "1757a89f6733cd1a383064f27f16a916bc0b4801146e93faedb6aa5842e6922f"
+      },
+      "originalFilename": "000211.jpg",
+      "originalFrame": 211,
+      "source": "Seq0007",
+      "sourceZipPath": "Ant_dataset/OutdoorDataset/Seq0007Object26Image64/img/000211.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 33,
+      "densityBucket": "low",
+      "filename": "Seq0007_000234.jpg",
+      "image": {
+        "bytes": 473940,
+        "height": 720,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0007/Seq0007_000234.jpg",
+        "sha256": "6f4a3843c1c49f58938adf0ff6279896a6bbd4186021021082031e17e3f59adc",
+        "width": 1280
+      },
+      "label": {
+        "annotationCount": 33,
+        "bytes": 1551,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0007/Seq0007_000234.txt",
+        "sha256": "c1992dadb6810102124f2b6a601d4ed100ba89bea4a99631caacb47fab463767"
+      },
+      "originalFilename": "000234.jpg",
+      "originalFrame": 234,
+      "source": "Seq0007",
+      "sourceZipPath": "Ant_dataset/OutdoorDataset/Seq0007Object26Image64/img/000234.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 34,
+      "densityBucket": "low",
+      "filename": "Seq0007_000257.jpg",
+      "image": {
+        "bytes": 470038,
+        "height": 720,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0007/Seq0007_000257.jpg",
+        "sha256": "52921b7629e2c6daeaf902f46d2b2188b0018c59d2b85e05f87d2f74f8ee3e48",
+        "width": 1280
+      },
+      "label": {
+        "annotationCount": 35,
+        "bytes": 1645,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0007/Seq0007_000257.txt",
+        "sha256": "6d030d123ff5be22b3bdd5def1684fbb5bff515a26bdddf45b040abe5a4fc99f"
+      },
+      "originalFilename": "000257.jpg",
+      "originalFrame": 257,
+      "source": "Seq0007",
+      "sourceZipPath": "Ant_dataset/OutdoorDataset/Seq0007Object26Image64/img/000257.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 36,
+      "densityBucket": "low",
+      "filename": "Seq0007_000281.jpg",
+      "image": {
+        "bytes": 472032,
+        "height": 720,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0007/Seq0007_000281.jpg",
+        "sha256": "c2e0a86814977f4a8b2cbf9b13e6a1b4f10b8e7833fea59169f921f8d65d12bc",
+        "width": 1280
+      },
+      "label": {
+        "annotationCount": 35,
+        "bytes": 1645,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0007/Seq0007_000281.txt",
+        "sha256": "c263bd700a2abe7964e3ca0069c507f49d88ebb6d21267bf92c28a4927d1826f"
+      },
+      "originalFilename": "000281.jpg",
+      "originalFrame": 281,
+      "source": "Seq0007",
+      "sourceZipPath": "Ant_dataset/OutdoorDataset/Seq0007Object26Image64/img/000281.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 38,
+      "densityBucket": "medium",
+      "filename": "Seq0007_000304.jpg",
+      "image": {
+        "bytes": 472018,
+        "height": 720,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0007/Seq0007_000304.jpg",
+        "sha256": "2ca5625ff96138d2d640b585743ea07e79507b900513b745d286480f3ba90e55",
+        "width": 1280
+      },
+      "label": {
+        "annotationCount": 39,
+        "bytes": 1833,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0007/Seq0007_000304.txt",
+        "sha256": "6d0ec3e34b8dd80be09eabd64ee8a95c59991c2a0da9b187766bc4e1f9315775"
+      },
+      "originalFilename": "000304.jpg",
+      "originalFrame": 304,
+      "source": "Seq0007",
+      "sourceZipPath": "Ant_dataset/OutdoorDataset/Seq0007Object26Image64/img/000304.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 37,
+      "densityBucket": "medium",
+      "filename": "Seq0007_000327.jpg",
+      "image": {
+        "bytes": 473437,
+        "height": 720,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0007/Seq0007_000327.jpg",
+        "sha256": "617fa9c3bf54fe2e08e12e42376272a76671487cf7e51883698cf283d1c57fac",
+        "width": 1280
+      },
+      "label": {
+        "annotationCount": 37,
+        "bytes": 1739,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0007/Seq0007_000327.txt",
+        "sha256": "86a3c0cee2fdfd763cf94218bb0d92c1d81a35897eb0f9a73dd647caf3b00688"
+      },
+      "originalFilename": "000327.jpg",
+      "originalFrame": 327,
+      "source": "Seq0007",
+      "sourceZipPath": "Ant_dataset/OutdoorDataset/Seq0007Object26Image64/img/000327.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 35,
+      "densityBucket": "low",
+      "filename": "Seq0007_000351.jpg",
+      "image": {
+        "bytes": 474775,
+        "height": 720,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0007/Seq0007_000351.jpg",
+        "sha256": "e513660ca1c49111139766f72338fe7b7e0768c701dbcbbced5b7e2ec2007430",
+        "width": 1280
+      },
+      "label": {
+        "annotationCount": 37,
+        "bytes": 1739,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0007/Seq0007_000351.txt",
+        "sha256": "6fbb40b9674c4ffee907e42e4de3108c2d001ad79612dab763526d931e8c4db6"
+      },
+      "originalFilename": "000351.jpg",
+      "originalFrame": 351,
+      "source": "Seq0007",
+      "sourceZipPath": "Ant_dataset/OutdoorDataset/Seq0007Object26Image64/img/000351.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 39,
+      "densityBucket": "medium",
+      "filename": "Seq0007_000374.jpg",
+      "image": {
+        "bytes": 474361,
+        "height": 720,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0007/Seq0007_000374.jpg",
+        "sha256": "85b982963413e7e2dfc61303e4b2cea624dbda1e531c5f742d583e624240fe76",
+        "width": 1280
+      },
+      "label": {
+        "annotationCount": 42,
+        "bytes": 1974,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0007/Seq0007_000374.txt",
+        "sha256": "4d62e195c462946f7a2a5451752cc0683936280cf93228a6332352c4ed8987c4"
+      },
+      "originalFilename": "000374.jpg",
+      "originalFrame": 374,
+      "source": "Seq0007",
+      "sourceZipPath": "Ant_dataset/OutdoorDataset/Seq0007Object26Image64/img/000374.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 39,
+      "densityBucket": "medium",
+      "filename": "Seq0007_000397.jpg",
+      "image": {
+        "bytes": 478396,
+        "height": 720,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0007/Seq0007_000397.jpg",
+        "sha256": "bec62e268526a64c74fc0a912b32fc7ac9b2fe7eabf6bf7db0a5122b624c1047",
+        "width": 1280
+      },
+      "label": {
+        "annotationCount": 34,
+        "bytes": 1598,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0007/Seq0007_000397.txt",
+        "sha256": "256c8dc08814f4f67f5513922fd324b22dd65ee76150bd3ccf1362075f47a124"
+      },
+      "originalFilename": "000397.jpg",
+      "originalFrame": 397,
+      "source": "Seq0007",
+      "sourceZipPath": "Ant_dataset/OutdoorDataset/Seq0007Object26Image64/img/000397.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 39,
+      "densityBucket": "medium",
+      "filename": "Seq0007_000421.jpg",
+      "image": {
+        "bytes": 479162,
+        "height": 720,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0007/Seq0007_000421.jpg",
+        "sha256": "6ebc6c11c3af38c1348440f5cae7463ca527b37d91a26edd74f6f762cb7a36b5",
+        "width": 1280
+      },
+      "label": {
+        "annotationCount": 41,
+        "bytes": 1927,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0007/Seq0007_000421.txt",
+        "sha256": "835471281bd79629e2052dc9a604c30aa94cb0fdd70a4fd8896d43f5f509645b"
+      },
+      "originalFilename": "000421.jpg",
+      "originalFrame": 421,
+      "source": "Seq0007",
+      "sourceZipPath": "Ant_dataset/OutdoorDataset/Seq0007Object26Image64/img/000421.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 35,
+      "densityBucket": "low",
+      "filename": "Seq0007_000444.jpg",
+      "image": {
+        "bytes": 479480,
+        "height": 720,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0007/Seq0007_000444.jpg",
+        "sha256": "48a1b6ed415b3fab1419afd8b88a02064a149c0949094e49d8967d3f4ce717b6",
+        "width": 1280
+      },
+      "label": {
+        "annotationCount": 35,
+        "bytes": 1645,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0007/Seq0007_000444.txt",
+        "sha256": "f836879ea4b4724678fa42ce0db1964c3558a5a77047f25d2ee2c9216fc97209"
+      },
+      "originalFilename": "000444.jpg",
+      "originalFrame": 444,
+      "source": "Seq0007",
+      "sourceZipPath": "Ant_dataset/OutdoorDataset/Seq0007Object26Image64/img/000444.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 35,
+      "densityBucket": "low",
+      "filename": "Seq0007_000467.jpg",
+      "image": {
+        "bytes": 481079,
+        "height": 720,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0007/Seq0007_000467.jpg",
+        "sha256": "3f64f68dae0a7d17431adce95fcae92d9ab7dcc878c92226bbaf61323bc7826f",
+        "width": 1280
+      },
+      "label": {
+        "annotationCount": 36,
+        "bytes": 1692,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0007/Seq0007_000467.txt",
+        "sha256": "ea5831d5bf9181663a03ffb243a2b71c44ae13c0fcb4967d3915bd8b7532ac1b"
+      },
+      "originalFilename": "000467.jpg",
+      "originalFrame": 467,
+      "source": "Seq0007",
+      "sourceZipPath": "Ant_dataset/OutdoorDataset/Seq0007Object26Image64/img/000467.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 39,
+      "densityBucket": "medium",
+      "filename": "Seq0007_000491.jpg",
+      "image": {
+        "bytes": 480978,
+        "height": 720,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0007/Seq0007_000491.jpg",
+        "sha256": "5deb0417853055f51fe553877ab4453f2fae7fdb9bf4507858045b69e83050f2",
+        "width": 1280
+      },
+      "label": {
+        "annotationCount": 40,
+        "bytes": 1880,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0007/Seq0007_000491.txt",
+        "sha256": "6adae3444362261535a5c2dafedba483701bfd0244f8c299cc356464c35ae0a0"
+      },
+      "originalFilename": "000491.jpg",
+      "originalFrame": 491,
+      "source": "Seq0007",
+      "sourceZipPath": "Ant_dataset/OutdoorDataset/Seq0007Object26Image64/img/000491.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 40,
+      "densityBucket": "high",
+      "filename": "Seq0007_000514.jpg",
+      "image": {
+        "bytes": 479138,
+        "height": 720,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0007/Seq0007_000514.jpg",
+        "sha256": "02b64eeaaffcf26a16823b6e774771cffbfef1ec71038ec4686666fbab176fc5",
+        "width": 1280
+      },
+      "label": {
+        "annotationCount": 38,
+        "bytes": 1786,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0007/Seq0007_000514.txt",
+        "sha256": "e906ac84025208cfefda61f830a43669e19aa4d9c388fac502cb22b4f076b5cb"
+      },
+      "originalFilename": "000514.jpg",
+      "originalFrame": 514,
+      "source": "Seq0007",
+      "sourceZipPath": "Ant_dataset/OutdoorDataset/Seq0007Object26Image64/img/000514.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 41,
+      "densityBucket": "high",
+      "filename": "Seq0007_000537.jpg",
+      "image": {
+        "bytes": 479927,
+        "height": 720,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0007/Seq0007_000537.jpg",
+        "sha256": "7317041eb312d46419b3bc3f652689cd204ba63dd326ee94192f722a76290494",
+        "width": 1280
+      },
+      "label": {
+        "annotationCount": 38,
+        "bytes": 1786,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0007/Seq0007_000537.txt",
+        "sha256": "c7a79039a5521a95d5dac408c0ec96dc423b4d8f15329d16d64d1216ac0483a0"
+      },
+      "originalFilename": "000537.jpg",
+      "originalFrame": 537,
+      "source": "Seq0007",
+      "sourceZipPath": "Ant_dataset/OutdoorDataset/Seq0007Object26Image64/img/000537.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 39,
+      "densityBucket": "medium",
+      "filename": "Seq0007_000560.jpg",
+      "image": {
+        "bytes": 480336,
+        "height": 720,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0007/Seq0007_000560.jpg",
+        "sha256": "f6ff13c8372a7ee20b6d5a95e29c34c7ef30fd329d0d4bdc9940d46e041bf6f8",
+        "width": 1280
+      },
+      "label": {
+        "annotationCount": 37,
+        "bytes": 1739,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0007/Seq0007_000560.txt",
+        "sha256": "a621ee1cf7a110c40ab5aa74aeef81ee92f58b14daec0f72ce1ca50f0061472a"
+      },
+      "originalFilename": "000560.jpg",
+      "originalFrame": 560,
+      "source": "Seq0007",
+      "sourceZipPath": "Ant_dataset/OutdoorDataset/Seq0007Object26Image64/img/000560.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 39,
+      "densityBucket": "medium",
+      "filename": "Seq0007_000584.jpg",
+      "image": {
+        "bytes": 480663,
+        "height": 720,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0007/Seq0007_000584.jpg",
+        "sha256": "4bcf94423129f7dd34491a54488105d3435fa26d4d8d8f0bfdafef1eb3fa1a3f",
+        "width": 1280
+      },
+      "label": {
+        "annotationCount": 40,
+        "bytes": 1880,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0007/Seq0007_000584.txt",
+        "sha256": "04025646d014a94013168a137cbc11fd382ccc83d475ed745255f43ae5a188bd"
+      },
+      "originalFilename": "000584.jpg",
+      "originalFrame": 584,
+      "source": "Seq0007",
+      "sourceZipPath": "Ant_dataset/OutdoorDataset/Seq0007Object26Image64/img/000584.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 41,
+      "densityBucket": "high",
+      "filename": "Seq0007_000607.jpg",
+      "image": {
+        "bytes": 480815,
+        "height": 720,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0007/Seq0007_000607.jpg",
+        "sha256": "45cbba7dfc8737dea71b6c711d5b058684d208d2abd2afc39caa41d17d45083b",
+        "width": 1280
+      },
+      "label": {
+        "annotationCount": 40,
+        "bytes": 1880,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0007/Seq0007_000607.txt",
+        "sha256": "b58db417b2277d50a01bcc3224ae412c7d3ff8eb449e21c76a91fa321c4390d8"
+      },
+      "originalFilename": "000607.jpg",
+      "originalFrame": 607,
+      "source": "Seq0007",
+      "sourceZipPath": "Ant_dataset/OutdoorDataset/Seq0007Object26Image64/img/000607.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 40,
+      "densityBucket": "high",
+      "filename": "Seq0007_000630.jpg",
+      "image": {
+        "bytes": 481013,
+        "height": 720,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0007/Seq0007_000630.jpg",
+        "sha256": "be9f694fc265b24c1d81c47bcfc44a61bb28f29bfa329cc1331ab2bfc7160fac",
+        "width": 1280
+      },
+      "label": {
+        "annotationCount": 37,
+        "bytes": 1739,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0007/Seq0007_000630.txt",
+        "sha256": "782427bbd0dc353bbac8c2ff3dd61079680ce513cb4f87bb0f4b8c700aba10e8"
+      },
+      "originalFilename": "000630.jpg",
+      "originalFrame": 630,
+      "source": "Seq0007",
+      "sourceZipPath": "Ant_dataset/OutdoorDataset/Seq0007Object26Image64/img/000630.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 42,
+      "densityBucket": "high",
+      "filename": "Seq0007_000654.jpg",
+      "image": {
+        "bytes": 480831,
+        "height": 720,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0007/Seq0007_000654.jpg",
+        "sha256": "0b5fa7e2daa2fbc56cf188a1bd580ed6344c240102cde4282152d5fa3159e8f6",
+        "width": 1280
+      },
+      "label": {
+        "annotationCount": 41,
+        "bytes": 1927,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0007/Seq0007_000654.txt",
+        "sha256": "0acf76b65f0b68e8e34795fb1a3d5c772df5a4a18dfb23259dfa63a971f23453"
+      },
+      "originalFilename": "000654.jpg",
+      "originalFrame": 654,
+      "source": "Seq0007",
+      "sourceZipPath": "Ant_dataset/OutdoorDataset/Seq0007Object26Image64/img/000654.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 42,
+      "densityBucket": "high",
+      "filename": "Seq0007_000677.jpg",
+      "image": {
+        "bytes": 479969,
+        "height": 720,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0007/Seq0007_000677.jpg",
+        "sha256": "882b78ed19352c4ef2b6a06fe7cb65510a4a6a727eec9d9fa62fa83d9b0df653",
+        "width": 1280
+      },
+      "label": {
+        "annotationCount": 37,
+        "bytes": 1739,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0007/Seq0007_000677.txt",
+        "sha256": "130a4b6e16bcdbab92f49a9b46e53d66466f0ab05084bfe4aaabb96cceef44d3"
+      },
+      "originalFilename": "000677.jpg",
+      "originalFrame": 677,
+      "source": "Seq0007",
+      "sourceZipPath": "Ant_dataset/OutdoorDataset/Seq0007Object26Image64/img/000677.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 31,
+      "densityBucket": "high",
+      "filename": "Seq0008_000001.jpg",
+      "image": {
+        "bytes": 306897,
+        "height": 720,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0008/Seq0008_000001.jpg",
+        "sha256": "6e9ebdf8a6a75d635044285676b769de9d96b95092289ba85f1e19a346d80d24",
+        "width": 1280
+      },
+      "label": {
+        "annotationCount": 30,
+        "bytes": 1410,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0008/Seq0008_000001.txt",
+        "sha256": "341755710930d16b95a5b0f29a57f1375924d63d1c10f0ae861ce435584cdeb6"
+      },
+      "originalFilename": "000001.jpg",
+      "originalFrame": 1,
+      "source": "Seq0008",
+      "sourceZipPath": "Ant_dataset/OutdoorDataset/Seq0008Object31Image64/img/000001.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 33,
+      "densityBucket": "high",
+      "filename": "Seq0008_000020.jpg",
+      "image": {
+        "bytes": 303493,
+        "height": 720,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0008/Seq0008_000020.jpg",
+        "sha256": "735cf5bc3a1b240153f7691779be84730290af63260a49d67829cddd934cea96",
+        "width": 1280
+      },
+      "label": {
+        "annotationCount": 32,
+        "bytes": 1504,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0008/Seq0008_000020.txt",
+        "sha256": "9887526a991488eabee2dd22cc9eabd27ec03ef3466d220a428e66c2d225e30e"
+      },
+      "originalFilename": "000020.jpg",
+      "originalFrame": 20,
+      "source": "Seq0008",
+      "sourceZipPath": "Ant_dataset/OutdoorDataset/Seq0008Object31Image64/img/000020.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 33,
+      "densityBucket": "high",
+      "filename": "Seq0008_000039.jpg",
+      "image": {
+        "bytes": 304931,
+        "height": 720,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0008/Seq0008_000039.jpg",
+        "sha256": "555ea0fc3ea923434c448226c66ec81b723a3b41c5bae553dfa91bf0756a0362",
+        "width": 1280
+      },
+      "label": {
+        "annotationCount": 33,
+        "bytes": 1551,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0008/Seq0008_000039.txt",
+        "sha256": "7eef1a325f44a588fa4e9ffb20b65663e15f1e09319e5af580d3faddc91e0153"
+      },
+      "originalFilename": "000039.jpg",
+      "originalFrame": 39,
+      "source": "Seq0008",
+      "sourceZipPath": "Ant_dataset/OutdoorDataset/Seq0008Object31Image64/img/000039.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 30,
+      "densityBucket": "high",
+      "filename": "Seq0008_000059.jpg",
+      "image": {
+        "bytes": 305737,
+        "height": 720,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0008/Seq0008_000059.jpg",
+        "sha256": "cb6a9fa5f146b499c654d9a7eea2d3dcfe933781abda53f4fda9c4f1e9944889",
+        "width": 1280
+      },
+      "label": {
+        "annotationCount": 29,
+        "bytes": 1363,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0008/Seq0008_000059.txt",
+        "sha256": "6bb2fe924143cf9f3618a9874abe58b50478da5048101073e89f89928a2b9713"
+      },
+      "originalFilename": "000059.jpg",
+      "originalFrame": 59,
+      "source": "Seq0008",
+      "sourceZipPath": "Ant_dataset/OutdoorDataset/Seq0008Object31Image64/img/000059.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 28,
+      "densityBucket": "high",
+      "filename": "Seq0008_000078.jpg",
+      "image": {
+        "bytes": 305329,
+        "height": 720,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0008/Seq0008_000078.jpg",
+        "sha256": "aada859e14f3f05f08e906ff6059912a7ef281e74b7c1cd03a7ede99f2829fbf",
+        "width": 1280
+      },
+      "label": {
+        "annotationCount": 27,
+        "bytes": 1269,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0008/Seq0008_000078.txt",
+        "sha256": "427ed19d2fd2e5b39824b00277cfc7a09dced75f402fe0956316ddb2b54dd7cc"
+      },
+      "originalFilename": "000078.jpg",
+      "originalFrame": 78,
+      "source": "Seq0008",
+      "sourceZipPath": "Ant_dataset/OutdoorDataset/Seq0008Object31Image64/img/000078.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 24,
+      "densityBucket": "high",
+      "filename": "Seq0008_000097.jpg",
+      "image": {
+        "bytes": 303166,
+        "height": 720,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0008/Seq0008_000097.jpg",
+        "sha256": "c160d60cdb1ae13e0ce4c9f0c3ec7ae81c1e1ea0c4a0ffb731314fe2f348e3d9",
+        "width": 1280
+      },
+      "label": {
+        "annotationCount": 21,
+        "bytes": 987,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0008/Seq0008_000097.txt",
+        "sha256": "16e0d940ed3264f2e5cc6f10369ca20f90c2c63d5e9d17138827668c7235d2fb"
+      },
+      "originalFilename": "000097.jpg",
+      "originalFrame": 97,
+      "source": "Seq0008",
+      "sourceZipPath": "Ant_dataset/OutdoorDataset/Seq0008Object31Image64/img/000097.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 20,
+      "densityBucket": "medium",
+      "filename": "Seq0008_000116.jpg",
+      "image": {
+        "bytes": 303237,
+        "height": 720,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0008/Seq0008_000116.jpg",
+        "sha256": "cf516652c54aaf5bc2a00893d6f9effe7fc93531be99acf0f1d8eff533c55c3f",
+        "width": 1280
+      },
+      "label": {
+        "annotationCount": 20,
+        "bytes": 940,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0008/Seq0008_000116.txt",
+        "sha256": "78b8559d52fdee6cf8b88330e8bd5a7c04e6d70c7db2fa3b7862f5b8b45931a4"
+      },
+      "originalFilename": "000116.jpg",
+      "originalFrame": 116,
+      "source": "Seq0008",
+      "sourceZipPath": "Ant_dataset/OutdoorDataset/Seq0008Object31Image64/img/000116.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 19,
+      "densityBucket": "medium",
+      "filename": "Seq0008_000135.jpg",
+      "image": {
+        "bytes": 303459,
+        "height": 720,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0008/Seq0008_000135.jpg",
+        "sha256": "c4512ed0170d4facb75c5eee4d4d4034325bfdf2df30f3e004350933eecbfed4",
+        "width": 1280
+      },
+      "label": {
+        "annotationCount": 18,
+        "bytes": 846,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0008/Seq0008_000135.txt",
+        "sha256": "e8d8e389675d43701b5ac5746f32b5ed42de6ce96b5079ec5113414c376a4350"
+      },
+      "originalFilename": "000135.jpg",
+      "originalFrame": 135,
+      "source": "Seq0008",
+      "sourceZipPath": "Ant_dataset/OutdoorDataset/Seq0008Object31Image64/img/000135.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 21,
+      "densityBucket": "high",
+      "filename": "Seq0008_000154.jpg",
+      "image": {
+        "bytes": 303003,
+        "height": 720,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0008/Seq0008_000154.jpg",
+        "sha256": "cc6be1d0b9b078c29d90dcf15fc51e914754998a3fd344dc8cb3dcc06ea12184",
+        "width": 1280
+      },
+      "label": {
+        "annotationCount": 21,
+        "bytes": 987,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0008/Seq0008_000154.txt",
+        "sha256": "67294e1d7930475df99e15bcf48e78c774bc65bc432508cbc0b0e6aaf91e22c2"
+      },
+      "originalFilename": "000154.jpg",
+      "originalFrame": 154,
+      "source": "Seq0008",
+      "sourceZipPath": "Ant_dataset/OutdoorDataset/Seq0008Object31Image64/img/000154.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 20,
+      "densityBucket": "medium",
+      "filename": "Seq0008_000174.jpg",
+      "image": {
+        "bytes": 302585,
+        "height": 720,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0008/Seq0008_000174.jpg",
+        "sha256": "7b7f93e5f2def26ca5c8b59a44dfbf40243dfb511481b3c7de4d3f168a469ef8",
+        "width": 1280
+      },
+      "label": {
+        "annotationCount": 20,
+        "bytes": 940,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0008/Seq0008_000174.txt",
+        "sha256": "680514e92e36a3ea12e584b1794f13773a0cd81153b77a767ea43ec3697a5b16"
+      },
+      "originalFilename": "000174.jpg",
+      "originalFrame": 174,
+      "source": "Seq0008",
+      "sourceZipPath": "Ant_dataset/OutdoorDataset/Seq0008Object31Image64/img/000174.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 18,
+      "densityBucket": "medium",
+      "filename": "Seq0008_000193.jpg",
+      "image": {
+        "bytes": 302482,
+        "height": 720,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0008/Seq0008_000193.jpg",
+        "sha256": "02cb7021348f5909e3d285739b7c3cfb2fc50ce51f31fdd05445209ef577fd4b",
+        "width": 1280
+      },
+      "label": {
+        "annotationCount": 20,
+        "bytes": 940,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0008/Seq0008_000193.txt",
+        "sha256": "c85c7a326e76779ce703ec417ae47b8fdd77602b37acecb7b5ba332267064405"
+      },
+      "originalFilename": "000193.jpg",
+      "originalFrame": 193,
+      "source": "Seq0008",
+      "sourceZipPath": "Ant_dataset/OutdoorDataset/Seq0008Object31Image64/img/000193.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 20,
+      "densityBucket": "medium",
+      "filename": "Seq0008_000212.jpg",
+      "image": {
+        "bytes": 301983,
+        "height": 720,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0008/Seq0008_000212.jpg",
+        "sha256": "5905d9a5cf26a9d1df894e9495a5cddd988657873d63160aa0c2aeaa11902244",
+        "width": 1280
+      },
+      "label": {
+        "annotationCount": 18,
+        "bytes": 846,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0008/Seq0008_000212.txt",
+        "sha256": "6da7f7bc2079666dacef59bad53c8ea4d39c24956bdd4f7e56e96c31c9bcff1c"
+      },
+      "originalFilename": "000212.jpg",
+      "originalFrame": 212,
+      "source": "Seq0008",
+      "sourceZipPath": "Ant_dataset/OutdoorDataset/Seq0008Object31Image64/img/000212.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 22,
+      "densityBucket": "high",
+      "filename": "Seq0008_000231.jpg",
+      "image": {
+        "bytes": 303105,
+        "height": 720,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0008/Seq0008_000231.jpg",
+        "sha256": "c3845205c5be3b4bcf1228c688c4a01c3a109efd420258e2077cc4ea9b85dd77",
+        "width": 1280
+      },
+      "label": {
+        "annotationCount": 21,
+        "bytes": 987,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0008/Seq0008_000231.txt",
+        "sha256": "daa1e2cf88f22637631dfe58fdfad596fb9cb5281915ec477096389676ed1d48"
+      },
+      "originalFilename": "000231.jpg",
+      "originalFrame": 231,
+      "source": "Seq0008",
+      "sourceZipPath": "Ant_dataset/OutdoorDataset/Seq0008Object31Image64/img/000231.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 16,
+      "densityBucket": "medium",
+      "filename": "Seq0008_000250.jpg",
+      "image": {
+        "bytes": 302144,
+        "height": 720,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0008/Seq0008_000250.jpg",
+        "sha256": "4d11775e020d69df87cbb6dac8b3a89a1f297dd75c869cb0008af918a35ada9a",
+        "width": 1280
+      },
+      "label": {
+        "annotationCount": 19,
+        "bytes": 893,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0008/Seq0008_000250.txt",
+        "sha256": "dcd71d9f862299662790d98d66bb29eddf757253ccaaedcb9786b447b8b6dbc8"
+      },
+      "originalFilename": "000250.jpg",
+      "originalFrame": 250,
+      "source": "Seq0008",
+      "sourceZipPath": "Ant_dataset/OutdoorDataset/Seq0008Object31Image64/img/000250.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 16,
+      "densityBucket": "medium",
+      "filename": "Seq0008_000269.jpg",
+      "image": {
+        "bytes": 302887,
+        "height": 720,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0008/Seq0008_000269.jpg",
+        "sha256": "1f3cf1b6b3af36e75a3f5e737e82a634977fcc51bc2f4bcd46b78e7e11acca4b",
+        "width": 1280
+      },
+      "label": {
+        "annotationCount": 16,
+        "bytes": 752,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0008/Seq0008_000269.txt",
+        "sha256": "06dd8f30694309f1f66d32c2d6f39c8fd3cd033a3f6460f2001bda6224df2d39"
+      },
+      "originalFilename": "000269.jpg",
+      "originalFrame": 269,
+      "source": "Seq0008",
+      "sourceZipPath": "Ant_dataset/OutdoorDataset/Seq0008Object31Image64/img/000269.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 15,
+      "densityBucket": "medium",
+      "filename": "Seq0008_000289.jpg",
+      "image": {
+        "bytes": 302207,
+        "height": 720,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0008/Seq0008_000289.jpg",
+        "sha256": "e82d30c4ccf129380db6ca7664502114281270492c2ed285e4afef1459e1d5fc",
+        "width": 1280
+      },
+      "label": {
+        "annotationCount": 18,
+        "bytes": 846,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0008/Seq0008_000289.txt",
+        "sha256": "65cf0713512af829653d1eeebb3baa718a0ff155f23eb6879bd8b7bd729980ed"
+      },
+      "originalFilename": "000289.jpg",
+      "originalFrame": 289,
+      "source": "Seq0008",
+      "sourceZipPath": "Ant_dataset/OutdoorDataset/Seq0008Object31Image64/img/000289.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 14,
+      "densityBucket": "low",
+      "filename": "Seq0008_000308.jpg",
+      "image": {
+        "bytes": 301706,
+        "height": 720,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0008/Seq0008_000308.jpg",
+        "sha256": "28cef0b1d4c5ab82e633858c22716b7bdf9d6bafbef082e05dc0ee36b6fd0baf",
+        "width": 1280
+      },
+      "label": {
+        "annotationCount": 18,
+        "bytes": 846,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0008/Seq0008_000308.txt",
+        "sha256": "0bc25d73d5fc57aee2b42accc0e0b67c7b1b07f085b1cc205a550fe654e473a9"
+      },
+      "originalFilename": "000308.jpg",
+      "originalFrame": 308,
+      "source": "Seq0008",
+      "sourceZipPath": "Ant_dataset/OutdoorDataset/Seq0008Object31Image64/img/000308.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 13,
+      "densityBucket": "low",
+      "filename": "Seq0008_000327.jpg",
+      "image": {
+        "bytes": 301825,
+        "height": 720,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0008/Seq0008_000327.jpg",
+        "sha256": "c0718bf56a8c196f270c9d15b8460cf4a66b67edf153461691787ed24c979a99",
+        "width": 1280
+      },
+      "label": {
+        "annotationCount": 17,
+        "bytes": 799,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0008/Seq0008_000327.txt",
+        "sha256": "6c6910bb2f52b97298c8ac745f09508602d2c34ec9866eeeec7bbada43bafee2"
+      },
+      "originalFilename": "000327.jpg",
+      "originalFrame": 327,
+      "source": "Seq0008",
+      "sourceZipPath": "Ant_dataset/OutdoorDataset/Seq0008Object31Image64/img/000327.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 10,
+      "densityBucket": "low",
+      "filename": "Seq0008_000346.jpg",
+      "image": {
+        "bytes": 302958,
+        "height": 720,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0008/Seq0008_000346.jpg",
+        "sha256": "ba19c475fef783fbd14b8ea1f980ab1274ef67e9fe91302ce45f2a4cccd0f73b",
+        "width": 1280
+      },
+      "label": {
+        "annotationCount": 11,
+        "bytes": 517,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0008/Seq0008_000346.txt",
+        "sha256": "0768835df2ac263614ca5a90dd610c59090eec1af197baf6af26af557d7cb002"
+      },
+      "originalFilename": "000346.jpg",
+      "originalFrame": 346,
+      "source": "Seq0008",
+      "sourceZipPath": "Ant_dataset/OutdoorDataset/Seq0008Object31Image64/img/000346.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 13,
+      "densityBucket": "low",
+      "filename": "Seq0008_000365.jpg",
+      "image": {
+        "bytes": 302073,
+        "height": 720,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0008/Seq0008_000365.jpg",
+        "sha256": "fc5ba02405198ac11600a77a1e62a449d622901050195dcf120cade10cbb16e4",
+        "width": 1280
+      },
+      "label": {
+        "annotationCount": 13,
+        "bytes": 611,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0008/Seq0008_000365.txt",
+        "sha256": "94d60cbedd26fc64fc5f4222edc5467ff60923aef921529740e899f3a094588b"
+      },
+      "originalFilename": "000365.jpg",
+      "originalFrame": 365,
+      "source": "Seq0008",
+      "sourceZipPath": "Ant_dataset/OutdoorDataset/Seq0008Object31Image64/img/000365.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 14,
+      "densityBucket": "low",
+      "filename": "Seq0008_000384.jpg",
+      "image": {
+        "bytes": 302204,
+        "height": 720,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0008/Seq0008_000384.jpg",
+        "sha256": "6f0637ab6da63ff2f61e920bc0dc35e902c1ffaaf57ccc001d35b2990ada1a45",
+        "width": 1280
+      },
+      "label": {
+        "annotationCount": 15,
+        "bytes": 705,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0008/Seq0008_000384.txt",
+        "sha256": "ab855e4cb3c754914e4774241924a611695921ba62e5753064b173464a7aeb65"
+      },
+      "originalFilename": "000384.jpg",
+      "originalFrame": 384,
+      "source": "Seq0008",
+      "sourceZipPath": "Ant_dataset/OutdoorDataset/Seq0008Object31Image64/img/000384.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 12,
+      "densityBucket": "low",
+      "filename": "Seq0008_000404.jpg",
+      "image": {
+        "bytes": 302040,
+        "height": 720,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0008/Seq0008_000404.jpg",
+        "sha256": "7ed8e3fdb3cf1f181dcdad5e1f60e74799ea6a34af834945ec67b1afc75cf740",
+        "width": 1280
+      },
+      "label": {
+        "annotationCount": 11,
+        "bytes": 517,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0008/Seq0008_000404.txt",
+        "sha256": "ef4fe4020beffcca25ea989523d1a0338f44dac2f7c247a60e6190701e8401a3"
+      },
+      "originalFilename": "000404.jpg",
+      "originalFrame": 404,
+      "source": "Seq0008",
+      "sourceZipPath": "Ant_dataset/OutdoorDataset/Seq0008Object31Image64/img/000404.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 10,
+      "densityBucket": "low",
+      "filename": "Seq0008_000423.jpg",
+      "image": {
+        "bytes": 302108,
+        "height": 720,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0008/Seq0008_000423.jpg",
+        "sha256": "c6875e24b0af4af48e01d23ce4f832d9a3e452b95242dff733f1181726788783",
+        "width": 1280
+      },
+      "label": {
+        "annotationCount": 8,
+        "bytes": 376,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0008/Seq0008_000423.txt",
+        "sha256": "d3d161bd7544a1628bf2d5834a5fafbc81c11a6f180efafc9e62602cf8715ba1"
+      },
+      "originalFilename": "000423.jpg",
+      "originalFrame": 423,
+      "source": "Seq0008",
+      "sourceZipPath": "Ant_dataset/OutdoorDataset/Seq0008Object31Image64/img/000423.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 11,
+      "densityBucket": "low",
+      "filename": "Seq0008_000442.jpg",
+      "image": {
+        "bytes": 302761,
+        "height": 720,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0008/Seq0008_000442.jpg",
+        "sha256": "872a96de9312ae869629b7ae011224e6e220936e9eb200f2c1143bd904a20dc7",
+        "width": 1280
+      },
+      "label": {
+        "annotationCount": 8,
+        "bytes": 376,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0008/Seq0008_000442.txt",
+        "sha256": "00f90b9ceb26be3f485fd31f43ad55f2a773b80832fed1c98f9b69143a9a766d"
+      },
+      "originalFilename": "000442.jpg",
+      "originalFrame": 442,
+      "source": "Seq0008",
+      "sourceZipPath": "Ant_dataset/OutdoorDataset/Seq0008Object31Image64/img/000442.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 13,
+      "densityBucket": "low",
+      "filename": "Seq0008_000461.jpg",
+      "image": {
+        "bytes": 302488,
+        "height": 720,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0008/Seq0008_000461.jpg",
+        "sha256": "031297c321cad181e587bcbb901b1d7482cb8549ef5995a932d0090d9fce88c9",
+        "width": 1280
+      },
+      "label": {
+        "annotationCount": 10,
+        "bytes": 470,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0008/Seq0008_000461.txt",
+        "sha256": "4a706c22032e334b568e32c3e5c41a8cf2abdcea75fd3c461272c76f5cb0cdc8"
+      },
+      "originalFilename": "000461.jpg",
+      "originalFrame": 461,
+      "source": "Seq0008",
+      "sourceZipPath": "Ant_dataset/OutdoorDataset/Seq0008Object31Image64/img/000461.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 14,
+      "densityBucket": "low",
+      "filename": "Seq0008_000480.jpg",
+      "image": {
+        "bytes": 302957,
+        "height": 720,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0008/Seq0008_000480.jpg",
+        "sha256": "128192a0ead6a263293bd9150d259e86a4a29e24bce43feeb322d7b7f193bf1e",
+        "width": 1280
+      },
+      "label": {
+        "annotationCount": 13,
+        "bytes": 611,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0008/Seq0008_000480.txt",
+        "sha256": "cb968f6b4fe286690490ac611abc65361b01938bc1a25d40d5bd971a8c262f15"
+      },
+      "originalFilename": "000480.jpg",
+      "originalFrame": 480,
+      "source": "Seq0008",
+      "sourceZipPath": "Ant_dataset/OutdoorDataset/Seq0008Object31Image64/img/000480.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 14,
+      "densityBucket": "low",
+      "filename": "Seq0008_000499.jpg",
+      "image": {
+        "bytes": 302221,
+        "height": 720,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0008/Seq0008_000499.jpg",
+        "sha256": "92e253dc1199b4bc13094687ebd634700a602fa1e4c17f477e72cb0d941df588",
+        "width": 1280
+      },
+      "label": {
+        "annotationCount": 12,
+        "bytes": 564,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0008/Seq0008_000499.txt",
+        "sha256": "2c5f6c99c211816b8e740de9b6acb3964384ba336498dedf05447ebd922dfec2"
+      },
+      "originalFilename": "000499.jpg",
+      "originalFrame": 499,
+      "source": "Seq0008",
+      "sourceZipPath": "Ant_dataset/OutdoorDataset/Seq0008Object31Image64/img/000499.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 17,
+      "densityBucket": "medium",
+      "filename": "Seq0008_000519.jpg",
+      "image": {
+        "bytes": 302166,
+        "height": 720,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0008/Seq0008_000519.jpg",
+        "sha256": "2a8d2f4a8356d7bdc2f12081f7e6af2ef595e6fc6e7e5eac6e33c451e0211fb0",
+        "width": 1280
+      },
+      "label": {
+        "annotationCount": 14,
+        "bytes": 658,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0008/Seq0008_000519.txt",
+        "sha256": "a5b3c078b6aa0fbb1e9feb8c7e1c8f53dbdae029e7f95348f0f97dccc759ab46"
+      },
+      "originalFilename": "000519.jpg",
+      "originalFrame": 519,
+      "source": "Seq0008",
+      "sourceZipPath": "Ant_dataset/OutdoorDataset/Seq0008Object31Image64/img/000519.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 18,
+      "densityBucket": "medium",
+      "filename": "Seq0008_000538.jpg",
+      "image": {
+        "bytes": 301309,
+        "height": 720,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0008/Seq0008_000538.jpg",
+        "sha256": "35dc283e2b073d4f65db1a7acffb68fa7c303749720ea03584cd125ed897c0ac",
+        "width": 1280
+      },
+      "label": {
+        "annotationCount": 13,
+        "bytes": 611,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0008/Seq0008_000538.txt",
+        "sha256": "c7c0f38784b9fba4da418005d3f94ef5a7094fceda161381f5d9904fe23a7138"
+      },
+      "originalFilename": "000538.jpg",
+      "originalFrame": 538,
+      "source": "Seq0008",
+      "sourceZipPath": "Ant_dataset/OutdoorDataset/Seq0008Object31Image64/img/000538.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 21,
+      "densityBucket": "high",
+      "filename": "Seq0008_000557.jpg",
+      "image": {
+        "bytes": 302065,
+        "height": 720,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0008/Seq0008_000557.jpg",
+        "sha256": "03db9f1669d7312b37289cf1db1c8dd074711f37bc67b4f2bcf80c004dfa1608",
+        "width": 1280
+      },
+      "label": {
+        "annotationCount": 15,
+        "bytes": 705,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0008/Seq0008_000557.txt",
+        "sha256": "825df2da01e691fbab15e061c6428e75a028d34fd394d59bf3b9f339ae999dc3"
+      },
+      "originalFilename": "000557.jpg",
+      "originalFrame": 557,
+      "source": "Seq0008",
+      "sourceZipPath": "Ant_dataset/OutdoorDataset/Seq0008Object31Image64/img/000557.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 51,
+      "densityBucket": "low",
+      "filename": "Seq0009_000001.jpg",
+      "image": {
+        "bytes": 243359,
+        "height": 720,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0009/Seq0009_000001.jpg",
+        "sha256": "dfeb60256710d9a39aa92a02a299f40dd34f740dd3d708f3b76fb4f60672c618",
+        "width": 1280
+      },
+      "label": {
+        "annotationCount": 43,
+        "bytes": 2021,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0009/Seq0009_000001.txt",
+        "sha256": "fbbf5c2c89fe75593a7dc80d14e80475e210a3862a0c9eff9a84dc8aa354f7bb"
+      },
+      "originalFilename": "000001.jpg",
+      "originalFrame": 1,
+      "source": "Seq0009",
+      "sourceZipPath": "Ant_dataset/OutdoorDataset/Seq0009Object50Image64/img/000001.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 55,
+      "densityBucket": "medium",
+      "filename": "Seq0009_000029.jpg",
+      "image": {
+        "bytes": 240480,
+        "height": 720,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0009/Seq0009_000029.jpg",
+        "sha256": "14b9b3361b96b97489ebc7013548fceeb0e085f98cc3f91c757574c73f904ad7",
+        "width": 1280
+      },
+      "label": {
+        "annotationCount": 50,
+        "bytes": 2350,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0009/Seq0009_000029.txt",
+        "sha256": "4745bb8032b03ae403f1b1209924e9434265b865b19eae3af104eb2e8ee241b9"
+      },
+      "originalFilename": "000029.jpg",
+      "originalFrame": 29,
+      "source": "Seq0009",
+      "sourceZipPath": "Ant_dataset/OutdoorDataset/Seq0009Object50Image64/img/000029.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 54,
+      "densityBucket": "medium",
+      "filename": "Seq0009_000056.jpg",
+      "image": {
+        "bytes": 241137,
+        "height": 720,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0009/Seq0009_000056.jpg",
+        "sha256": "6616bce32ed78b045373566d8c15134393d44a21460507c758adca24f2681016",
+        "width": 1280
+      },
+      "label": {
+        "annotationCount": 50,
+        "bytes": 2350,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0009/Seq0009_000056.txt",
+        "sha256": "bfe549ff8f813af860747e4759554473b1072998a578514ae088faf5a09fb6e4"
+      },
+      "originalFilename": "000056.jpg",
+      "originalFrame": 56,
+      "source": "Seq0009",
+      "sourceZipPath": "Ant_dataset/OutdoorDataset/Seq0009Object50Image64/img/000056.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 50,
+      "densityBucket": "low",
+      "filename": "Seq0009_000084.jpg",
+      "image": {
+        "bytes": 240487,
+        "height": 720,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0009/Seq0009_000084.jpg",
+        "sha256": "1edaafed45c75e2bc23930fc6a4840b10cae9f51f5b72c4ebec8ae9c17c97142",
+        "width": 1280
+      },
+      "label": {
+        "annotationCount": 42,
+        "bytes": 1974,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0009/Seq0009_000084.txt",
+        "sha256": "50ae3126164a08d9262da59afc581303e9d11a887605e795b8bd9e29e1183ecf"
+      },
+      "originalFilename": "000084.jpg",
+      "originalFrame": 84,
+      "source": "Seq0009",
+      "sourceZipPath": "Ant_dataset/OutdoorDataset/Seq0009Object50Image64/img/000084.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 54,
+      "densityBucket": "medium",
+      "filename": "Seq0009_000112.jpg",
+      "image": {
+        "bytes": 240668,
+        "height": 720,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0009/Seq0009_000112.jpg",
+        "sha256": "912641203d9d2187f6d296cd817ad9d6dba3167d9629b313f7fc5d0e3439f291",
+        "width": 1280
+      },
+      "label": {
+        "annotationCount": 51,
+        "bytes": 2397,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0009/Seq0009_000112.txt",
+        "sha256": "16b9f5813639a837b81ef25892e5177dc52f93cba244a72f6c930f35a203deb2"
+      },
+      "originalFilename": "000112.jpg",
+      "originalFrame": 112,
+      "source": "Seq0009",
+      "sourceZipPath": "Ant_dataset/OutdoorDataset/Seq0009Object50Image64/img/000112.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 52,
+      "densityBucket": "low",
+      "filename": "Seq0009_000139.jpg",
+      "image": {
+        "bytes": 239735,
+        "height": 720,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0009/Seq0009_000139.jpg",
+        "sha256": "104163d7ea1e532556715ebc8ecf31bc1617073e42b1f20501fb3b2a81ad6669",
+        "width": 1280
+      },
+      "label": {
+        "annotationCount": 47,
+        "bytes": 2209,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0009/Seq0009_000139.txt",
+        "sha256": "acdec5166fb60ba3d263e7e743ebe4a57eaf44aa3c3854bbdde8c02be8cc70ae"
+      },
+      "originalFilename": "000139.jpg",
+      "originalFrame": 139,
+      "source": "Seq0009",
+      "sourceZipPath": "Ant_dataset/OutdoorDataset/Seq0009Object50Image64/img/000139.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 50,
+      "densityBucket": "low",
+      "filename": "Seq0009_000167.jpg",
+      "image": {
+        "bytes": 240474,
+        "height": 720,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0009/Seq0009_000167.jpg",
+        "sha256": "ad5e8a38f85dca92413d58d2193552872706b0a68abae3f4dbb88c0e2778fb60",
+        "width": 1280
+      },
+      "label": {
+        "annotationCount": 44,
+        "bytes": 2068,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0009/Seq0009_000167.txt",
+        "sha256": "02dd940d03382eda2eb64412ca81b4131275c428d5c6d174227534f13a3eee3d"
+      },
+      "originalFilename": "000167.jpg",
+      "originalFrame": 167,
+      "source": "Seq0009",
+      "sourceZipPath": "Ant_dataset/OutdoorDataset/Seq0009Object50Image64/img/000167.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 61,
+      "densityBucket": "high",
+      "filename": "Seq0009_000194.jpg",
+      "image": {
+        "bytes": 241657,
+        "height": 720,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0009/Seq0009_000194.jpg",
+        "sha256": "c553f7a95ddbcdf5b5edbf50ca7b040ec66be23c4b16f762d0bb0bd832278bb4",
+        "width": 1280
+      },
+      "label": {
+        "annotationCount": 51,
+        "bytes": 2397,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0009/Seq0009_000194.txt",
+        "sha256": "61fe25eaf7227c3c59ac30a4d1fa3195a223c601ab94911e5c2421a1191c2261"
+      },
+      "originalFilename": "000194.jpg",
+      "originalFrame": 194,
+      "source": "Seq0009",
+      "sourceZipPath": "Ant_dataset/OutdoorDataset/Seq0009Object50Image64/img/000194.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 57,
+      "densityBucket": "high",
+      "filename": "Seq0009_000222.jpg",
+      "image": {
+        "bytes": 241225,
+        "height": 720,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0009/Seq0009_000222.jpg",
+        "sha256": "5309b657e82739c33b4839cb3fc3f0a9f340e74628582d964dde55db37044ef3",
+        "width": 1280
+      },
+      "label": {
+        "annotationCount": 45,
+        "bytes": 2115,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0009/Seq0009_000222.txt",
+        "sha256": "58a61f90694fc06f01fc938fddd8c7af3bd2da333dbc3a44533084a5146fd728"
+      },
+      "originalFilename": "000222.jpg",
+      "originalFrame": 222,
+      "source": "Seq0009",
+      "sourceZipPath": "Ant_dataset/OutdoorDataset/Seq0009Object50Image64/img/000222.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 43,
+      "densityBucket": "low",
+      "filename": "Seq0009_000250.jpg",
+      "image": {
+        "bytes": 238640,
+        "height": 720,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0009/Seq0009_000250.jpg",
+        "sha256": "4eba8baa084c1148a87a336f28c8070f13b1491b34b3ddfa35d5e556a3628a16",
+        "width": 1280
+      },
+      "label": {
+        "annotationCount": 39,
+        "bytes": 1833,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0009/Seq0009_000250.txt",
+        "sha256": "f957a0a07527357ab3fa07c0c7f2f829a396b4d01c47cc86f822ca8b7a534e6d"
+      },
+      "originalFilename": "000250.jpg",
+      "originalFrame": 250,
+      "source": "Seq0009",
+      "sourceZipPath": "Ant_dataset/OutdoorDataset/Seq0009Object50Image64/img/000250.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 54,
+      "densityBucket": "medium",
+      "filename": "Seq0009_000277.jpg",
+      "image": {
+        "bytes": 241435,
+        "height": 720,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0009/Seq0009_000277.jpg",
+        "sha256": "564a5bdd87335757d5e759e7c52cef1982b8643ded576844bb51d82df6463837",
+        "width": 1280
+      },
+      "label": {
+        "annotationCount": 54,
+        "bytes": 2538,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0009/Seq0009_000277.txt",
+        "sha256": "a64068ec66b0ddc521fc07376b2f4169d7e3147c1ae071f57de611d6bda4ec71"
+      },
+      "originalFilename": "000277.jpg",
+      "originalFrame": 277,
+      "source": "Seq0009",
+      "sourceZipPath": "Ant_dataset/OutdoorDataset/Seq0009Object50Image64/img/000277.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 49,
+      "densityBucket": "low",
+      "filename": "Seq0009_000305.jpg",
+      "image": {
+        "bytes": 240285,
+        "height": 720,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0009/Seq0009_000305.jpg",
+        "sha256": "6859e4652b22b15e3078c08d0bb278b2d1a5c09221c79fd67cff5658a4cb6b9a",
+        "width": 1280
+      },
+      "label": {
+        "annotationCount": 53,
+        "bytes": 2491,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0009/Seq0009_000305.txt",
+        "sha256": "a1b20b0a90ed81ad44e9a56246911dd3a86a63d6986bde0c7874d205e36c8e3a"
+      },
+      "originalFilename": "000305.jpg",
+      "originalFrame": 305,
+      "source": "Seq0009",
+      "sourceZipPath": "Ant_dataset/OutdoorDataset/Seq0009Object50Image64/img/000305.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 50,
+      "densityBucket": "low",
+      "filename": "Seq0009_000333.jpg",
+      "image": {
+        "bytes": 240943,
+        "height": 720,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0009/Seq0009_000333.jpg",
+        "sha256": "05b7090e5202fef7d651448ab24da80b8dc36c209a14fb0e74bf955890a46421",
+        "width": 1280
+      },
+      "label": {
+        "annotationCount": 48,
+        "bytes": 2256,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0009/Seq0009_000333.txt",
+        "sha256": "94dcad8d5cf6d30507a2c3089eeb439aee57abbcd095bb05eca626edb805931f"
+      },
+      "originalFilename": "000333.jpg",
+      "originalFrame": 333,
+      "source": "Seq0009",
+      "sourceZipPath": "Ant_dataset/OutdoorDataset/Seq0009Object50Image64/img/000333.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 56,
+      "densityBucket": "high",
+      "filename": "Seq0009_000360.jpg",
+      "image": {
+        "bytes": 241780,
+        "height": 720,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0009/Seq0009_000360.jpg",
+        "sha256": "4c9162f314f14bb54f32b9a0e4b8a1ff8d78367e2ec364d5eb18a90a900539e9",
+        "width": 1280
+      },
+      "label": {
+        "annotationCount": 52,
+        "bytes": 2444,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0009/Seq0009_000360.txt",
+        "sha256": "b3810b70a462ff5986f382e739842338f73692615dbdc3632334299b91c3c610"
+      },
+      "originalFilename": "000360.jpg",
+      "originalFrame": 360,
+      "source": "Seq0009",
+      "sourceZipPath": "Ant_dataset/OutdoorDataset/Seq0009Object50Image64/img/000360.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 52,
+      "densityBucket": "low",
+      "filename": "Seq0009_000388.jpg",
+      "image": {
+        "bytes": 241113,
+        "height": 720,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0009/Seq0009_000388.jpg",
+        "sha256": "acff9880d57e802710e9e7d5f413c0db6cb1a2ffbe128611aa306c9b059c8f22",
+        "width": 1280
+      },
+      "label": {
+        "annotationCount": 51,
+        "bytes": 2397,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0009/Seq0009_000388.txt",
+        "sha256": "767b9e8ca92bfa4576bbf95319362f0b47ccfbae8437034ef4b11521cfcc7249"
+      },
+      "originalFilename": "000388.jpg",
+      "originalFrame": 388,
+      "source": "Seq0009",
+      "sourceZipPath": "Ant_dataset/OutdoorDataset/Seq0009Object50Image64/img/000388.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 55,
+      "densityBucket": "medium",
+      "filename": "Seq0009_000415.jpg",
+      "image": {
+        "bytes": 241764,
+        "height": 720,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0009/Seq0009_000415.jpg",
+        "sha256": "5353b83f0650de4c37572d145535be5f71e80edc3d3107525f7112ee9e8e6482",
+        "width": 1280
+      },
+      "label": {
+        "annotationCount": 51,
+        "bytes": 2397,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0009/Seq0009_000415.txt",
+        "sha256": "4d631e68d044ece162f50818a845c51bd81e29f92adde582de5293f5c787e6fd"
+      },
+      "originalFilename": "000415.jpg",
+      "originalFrame": 415,
+      "source": "Seq0009",
+      "sourceZipPath": "Ant_dataset/OutdoorDataset/Seq0009Object50Image64/img/000415.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 54,
+      "densityBucket": "medium",
+      "filename": "Seq0009_000443.jpg",
+      "image": {
+        "bytes": 241185,
+        "height": 720,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0009/Seq0009_000443.jpg",
+        "sha256": "cdbe2efc43f590b738f30caae76fdf4f85d6fa0af15f5d7654238b6d2416e41b",
+        "width": 1280
+      },
+      "label": {
+        "annotationCount": 56,
+        "bytes": 2632,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0009/Seq0009_000443.txt",
+        "sha256": "02d833dddc6d476b18c155389cfb631b4c8d58ecb6c57cbd9d181bb75a2394ea"
+      },
+      "originalFilename": "000443.jpg",
+      "originalFrame": 443,
+      "source": "Seq0009",
+      "sourceZipPath": "Ant_dataset/OutdoorDataset/Seq0009Object50Image64/img/000443.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 55,
+      "densityBucket": "medium",
+      "filename": "Seq0009_000471.jpg",
+      "image": {
+        "bytes": 240983,
+        "height": 720,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0009/Seq0009_000471.jpg",
+        "sha256": "130064fc18d53e29e15f6a004ea1ef4c605f1e6d4b2cf4465d0dd27c0512c509",
+        "width": 1280
+      },
+      "label": {
+        "annotationCount": 55,
+        "bytes": 2585,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0009/Seq0009_000471.txt",
+        "sha256": "6ef84871159531ec082da3764f3c9dcd2e005d432b6fc279b1336188d5d7f372"
+      },
+      "originalFilename": "000471.jpg",
+      "originalFrame": 471,
+      "source": "Seq0009",
+      "sourceZipPath": "Ant_dataset/OutdoorDataset/Seq0009Object50Image64/img/000471.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 55,
+      "densityBucket": "medium",
+      "filename": "Seq0009_000498.jpg",
+      "image": {
+        "bytes": 240256,
+        "height": 720,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0009/Seq0009_000498.jpg",
+        "sha256": "caca13e7e81274f4e5b23e825aa0b39bcff1f768b9963c1631b059c21003bb3c",
+        "width": 1280
+      },
+      "label": {
+        "annotationCount": 54,
+        "bytes": 2538,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0009/Seq0009_000498.txt",
+        "sha256": "07066a7e0914d9617a52b532eb297d739e5c6210fc957aaa69b3c182a0f1e880"
+      },
+      "originalFilename": "000498.jpg",
+      "originalFrame": 498,
+      "source": "Seq0009",
+      "sourceZipPath": "Ant_dataset/OutdoorDataset/Seq0009Object50Image64/img/000498.jpg",
+      "split": "train"
+    },
+    {
+      "antsReferenceCount": 51,
+      "densityBucket": "low",
+      "filename": "Seq0009_000526.jpg",
+      "image": {
+        "bytes": 239030,
+        "height": 720,
+        "path": "datasets/ants_v2_annotation_pack/train/Seq0009/Seq0009_000526.jpg",
+        "sha256": "2545f5e76b08cf5b026846d9d189cd46a30266d880883a31be55967fb0f7fcce",
+        "width": 1280
+      },
+      "label": {
+        "annotationCount": 51,
+        "bytes": 2397,
+        "format": "YOLO Detection",
+        "path": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels/Seq0009/Seq0009_000526.txt",
+        "sha256": "2daecb5dce64d5c01454ea01ac5087012a72dbc46f7e87bd2ae1560ac1c86904"
+      },
+      "originalFilename": "000526.jpg",
+      "originalFrame": 526,
+      "source": "Seq0009",
+      "sourceZipPath": "Ant_dataset/OutdoorDataset/Seq0009Object50Image64/img/000526.jpg",
+      "split": "train"
+    }
+  ],
+  "hashes": {
+    "fileSetSha256": "af429446bbff5253ccbf9cf292867c0d184b52b483ed9a875351ae3f0fe1c0a3",
+    "imageHashCount": 155,
+    "labelHashCount": 155,
+    "manifestSha256": "a5255cfa5a5e501088671d90f86da89bd6f280006f0a0a271ca773d122bb81b6",
+    "snapshotSha256": "06e937417c2e6bad001f13eefc8df0673bae4f2f75c672806080733f4d2113c2"
+  },
+  "imageCount": 155,
+  "provenance": {
+    "annotationManifestPath": "datasets/ants_v2_annotation_pack/metadata/annotation_manifest.jsonl",
+    "annotationManifestSha256": "08b400b5cc248c30de5b61484abc3e4f303416faa7792eb0cbb10e631be33b40",
+    "imageRoot": "datasets/ants_v2_annotation_pack",
+    "labelRoot": "artifacts/analysis/ants_v2_annotation_qa/train_final/labels",
+    "labelsSource": "Roboflow formicai-ants-v2 export validated by final TRAIN QA",
+    "trainingUsage": "Frozen TRAIN snapshot only; no training was executed during freeze creation."
+  },
+  "qa": {
+    "boundToleranceUsedForFreezeValidation": 1e-06,
+    "referenceTotals": {
+      "annotations": 3364,
+      "images": 155
+    },
+    "reportPath": "artifacts/analysis/ants_v2_annotation_qa/train_final/train_final_qa_metrics.json",
+    "reportSha256": "94b946cc04767e7c3ad0d9ce74b8350f65bdbe613d38b815b524bfaba8597301",
+    "result": "PASS"
+  },
+  "schemaVersion": "1.0",
+  "sourceCounts": {
+    "Seq0002": {
+      "annotations": 247,
+      "antsReferenceCount": 250,
+      "images": 25
+    },
+    "Seq0003": {
+      "annotations": 250,
+      "antsReferenceCount": 250,
+      "images": 25
+    },
+    "Seq0004": {
+      "annotations": 250,
+      "antsReferenceCount": 250,
+      "images": 25
+    },
+    "Seq0007": {
+      "annotations": 1089,
+      "antsReferenceCount": 1117,
+      "images": 30
+    },
+    "Seq0008": {
+      "annotations": 541,
+      "antsReferenceCount": 560,
+      "images": 30
+    },
+    "Seq0009": {
+      "annotations": 987,
+      "antsReferenceCount": 1058,
+      "images": 20
+    }
+  },
+  "sources": [
+    "Seq0002",
+    "Seq0003",
+    "Seq0004",
+    "Seq0007",
+    "Seq0008",
+    "Seq0009"
+  ],
+  "split": "train"
+}

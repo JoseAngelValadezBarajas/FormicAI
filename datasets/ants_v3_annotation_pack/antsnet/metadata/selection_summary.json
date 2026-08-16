@@ -1,0 +1,188 @@
+{
+  "candidate_subset_reference": "datasets/ants_v3_design/antsnet_candidate_subset.json",
+  "contact_sheets": {
+    "adult_brood": "artifacts/analysis/ants_v3_design/antsnet_relabel_pack/adult_brood_contact_sheet.jpg",
+    "majors_minors": "artifacts/analysis/ants_v3_design/antsnet_relabel_pack/majors_minors_contact_sheet.jpg",
+    "morphology_background_diversity": "artifacts/analysis/ants_v3_design/antsnet_relabel_pack/morphology_background_diversity_contact_sheet.jpg",
+    "multi_ant": "artifacts/analysis/ants_v3_design/antsnet_relabel_pack/multi_ant_contact_sheet.jpg",
+    "queen_large": "artifacts/analysis/ants_v3_design/antsnet_relabel_pack/queen_large_contact_sheet.jpg"
+  },
+  "counts": {
+    "brood_context_images": 7,
+    "major_minor_images": 21,
+    "multi_ant_images": 31,
+    "queen_images": 15,
+    "worker_images": 39
+  },
+  "deduplication_policy": [
+    "Remove clear same-source/near-identical frames when one retained image is more legible or carries stronger diversity.",
+    "Do not remove same species when scale, caste, pose, background, brood context, or composition materially differs.",
+    "Keep only a small number of small-scale examples because ants_v2 already covers that regime."
+  ],
+  "download_sha256_reference": "7f735cb2c080e383d66c7ddd9876f90160e2646287bd468fa8e5bdf3e69578ce",
+  "estimated_annotation_workload": {
+    "adult_annotations_to_draw_estimate_from_antsnet_metadata": 316,
+    "brood_boxes_not_to_annotate_estimate": 64,
+    "total_source_boxes_reference_only": 380
+  },
+  "experiment": "ants_v3_mixedscale_e01",
+  "family_distribution": {
+    "20201015": 4,
+    "ants": 3,
+    "campo_vicinus": 1,
+    "dolichoderinae": 1,
+    "img": 5,
+    "img_20200714": 1,
+    "img_20201001_wa0002": 1,
+    "img_20201001_wa0003": 1,
+    "messor_barbarus": 1,
+    "p1011354": 1,
+    "p1011358": 1,
+    "p1011413": 1,
+    "p1011432": 1,
+    "pa050405": 1,
+    "pa050408": 1,
+    "pa050409": 1,
+    "pa060434": 1,
+    "pa060480": 1,
+    "pa281465": 1,
+    "pic": 3,
+    "pogo_rugo": 1,
+    "pxl": 5,
+    "pxl_20201013": 1,
+    "pxl_20210404": 2
+  },
+  "final_relabel_count": 40,
+  "no_labels_created": true,
+  "no_source_annotations_copied": true,
+  "original_candidate_count": 54,
+  "original_class_distribution_reference_only": {
+    "Larva": 1,
+    "cocoon_camponotus_nicobarensis": 1,
+    "larva_camponotus_nicobarensis": 1,
+    "larva_myrmica_rubra": 4,
+    "larva_tetramorium_immigrans": 2,
+    "pupa_myrmica_rubra": 3,
+    "qorker_minor_camponotus_maritimus": 1,
+    "queen_camponotus_cinctellus": 2,
+    "queen_camponotus_maritimus": 1,
+    "queen_camponotus_nicobarensis": 3,
+    "queen_camponotus_quercicola": 4,
+    "queen_camponotus_vagus": 2,
+    "queen_camponotus_vicinus": 4,
+    "queen_myrmica_rubra": 3,
+    "worker_dolichoderinae": 1,
+    "worker_formica_sp": 2,
+    "worker_lasius_niger": 3,
+    "worker_major_messor_barbarus": 1,
+    "worker_major_pheidole_tysoni": 3,
+    "worker_minor_camponotus": 4,
+    "worker_minor_camponotus_cinctellus": 2,
+    "worker_minor_camponotus_nicobarensis": 4,
+    "worker_minor_camponotus_quercicola": 4,
+    "worker_minor_camponotus_vagus": 2,
+    "worker_minor_camponotus_vicinus": 4,
+    "worker_minor_pheidole_tysoni": 2,
+    "worker_novomessor_cockerelli": 1,
+    "worker_pogonomyrmex_occidentalis": 5,
+    "worker_pogonomyrmex_rugosus": 1,
+    "worker_tetramorium_immigrans": 2
+  },
+  "removed_near_duplicate_count": 14,
+  "removed_near_duplicates": [
+    {
+      "antsnet_original_filename": "PA050404_JPG.rf.6e2c914c47fbd08b5433a78e26598c52.jpg",
+      "near_duplicate_family_id": "pa050404",
+      "reason": "near-duplicate brood/queen colony frame; PA050405 is denser and more legible",
+      "status": "excluded_from_relabel_pack"
+    },
+    {
+      "antsnet_original_filename": "PA050403_JPG.rf.b7b1b6598df4cea464aeb5a3aa3c933d.jpg",
+      "near_duplicate_family_id": "pa050403",
+      "reason": "near-duplicate brood/queen colony frame; PA050405 retained as strongest representative",
+      "status": "excluded_from_relabel_pack"
+    },
+    {
+      "antsnet_original_filename": "P1011359-1-_JPG.rf.f774b7d9b81e18a5662f6c6a521c197b.jpg",
+      "near_duplicate_family_id": "p1011359",
+      "reason": "near-duplicate Myrmica brood/queen tube frame; other frames are more legible",
+      "status": "excluded_from_relabel_pack"
+    },
+    {
+      "antsnet_original_filename": "PA060433_JPG.rf.e20a216a9ec1d974bfd5d133037ca3a4.jpg",
+      "near_duplicate_family_id": "pa060433",
+      "reason": "near-duplicate Camponotus cinctellus close-up; PA060434 retained",
+      "status": "excluded_from_relabel_pack"
+    },
+    {
+      "antsnet_original_filename": "PA060481_JPG.rf.be5c2631f41c30b68b126c0c466f8250.jpg",
+      "near_duplicate_family_id": "pa060481",
+      "reason": "near-duplicate Camponotus cinctellus close-up; PA060480 retained",
+      "status": "excluded_from_relabel_pack"
+    },
+    {
+      "antsnet_original_filename": "PA050406_JPG.rf.e61705216bf06f1102aef78bd83875f3.jpg",
+      "near_duplicate_family_id": "pa050406",
+      "reason": "redundant PA05040x Camponotus nicobarensis colony series; later representatives retained",
+      "status": "excluded_from_relabel_pack"
+    },
+    {
+      "antsnet_original_filename": "PA050407_JPG.rf.8bccb2c1b3582b3af8dc8677decf8207.jpg",
+      "near_duplicate_family_id": "pa050407",
+      "reason": "redundant PA05040x Camponotus nicobarensis colony series",
+      "status": "excluded_from_relabel_pack"
+    },
+    {
+      "antsnet_original_filename": "PA050410_JPG.rf.f98d353fce83a640d11e3d3a4e82656f.jpg",
+      "near_duplicate_family_id": "pa050410",
+      "reason": "redundant PA05040x Camponotus nicobarensis colony series",
+      "status": "excluded_from_relabel_pack"
+    },
+    {
+      "antsnet_original_filename": "PA050411_JPG.rf.b0b1a42804e592938fac46144fce9417.jpg",
+      "near_duplicate_family_id": "pa050411",
+      "reason": "redundant PA05040x Camponotus nicobarensis colony series",
+      "status": "excluded_from_relabel_pack"
+    },
+    {
+      "antsnet_original_filename": "PA050412_JPG.rf.2ee933da2023fd9c6109cb0be2aef48a.jpg",
+      "near_duplicate_family_id": "pa050412",
+      "reason": "redundant PA05040x Camponotus nicobarensis colony series; PA050405/PA050408/PA050409 retained",
+      "status": "excluded_from_relabel_pack"
+    },
+    {
+      "antsnet_original_filename": "ants-7_jpg.rf.8cca682789fbfe33e9641fee0dc810f9.jpg",
+      "near_duplicate_family_id": "ants",
+      "reason": "near-duplicate Pheidole major close-up; ants-5/ants-6 cover this morphology",
+      "status": "excluded_from_relabel_pack"
+    },
+    {
+      "antsnet_original_filename": "20201015_185915_jpg.rf.10c746b312a740c4afb88f4d483ce2b1.jpg",
+      "near_duplicate_family_id": "20201015",
+      "reason": "near-consecutive 20201015 worker-minor frame; not needed for scale-gap priority",
+      "status": "excluded_from_relabel_pack"
+    },
+    {
+      "antsnet_original_filename": "PIC_0160_JPG.rf.d57db540e9336db258eace6a8fe176c7.jpg",
+      "near_duplicate_family_id": "pic",
+      "reason": "small-scale Lasius crowded series; retain only a small number because v2 already covers small ants",
+      "status": "excluded_from_relabel_pack"
+    },
+    {
+      "antsnet_original_filename": "PIC_0164_JPG.rf.ebc44be763d6eb57874977a87ca79e80.jpg",
+      "near_duplicate_family_id": "pic",
+      "reason": "small-scale Lasius crowded series; retain PIC_0161/PIC_0162 instead",
+      "status": "excluded_from_relabel_pack"
+    }
+  ],
+  "scale_distribution": {
+    "brood_or_no_adult_reference": 1,
+    "large_ge_ant2_median": 32,
+    "medium_bridge_v2_to_ant2": 4,
+    "small_le_v2_median": 3
+  },
+  "schemaVersion": "1.0",
+  "source": "AntsNet v14 YOLOv8 export",
+  "source_audit_reference": "datasets/ants_v3_design/antsnet_source_audit.json",
+  "status": "relabel_pack_prepared_no_labels_no_training"
+}

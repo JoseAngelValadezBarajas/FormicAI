@@ -1,0 +1,206 @@
+{
+  "name": "ants_v2_pilot_annotation_batch_e01",
+  "sourceManifest": "datasets/ants_v2_annotation_pack/metadata/annotation_manifest.jsonl",
+  "split": "train",
+  "selectionDate": "2026-08-09",
+  "selectionPolicy": {
+    "allowedSources": [
+      "Seq0002",
+      "Seq0003",
+      "Seq0004",
+      "Seq0007",
+      "Seq0008",
+      "Seq0009"
+    ],
+    "excludedSources": [
+      "Seq0001",
+      "Seq0005",
+      "Seq0006",
+      "Seq0010",
+      "ant3",
+      "ant4",
+      "ant2"
+    ],
+    "annotationsGenerated": false,
+    "predictionsUsed": false,
+    "pseudoLabelingUsed": false,
+    "trainingRun": false
+  },
+  "summary": {
+    "images": 10,
+    "estimatedAntsToAnnotate": 274,
+    "sourceDistribution": {
+      "Seq0002": 2,
+      "Seq0003": 1,
+      "Seq0004": 1,
+      "Seq0007": 2,
+      "Seq0008": 2,
+      "Seq0009": 2
+    },
+    "densityDistribution": {
+      "low": 1,
+      "medium": 6,
+      "high": 3
+    }
+  },
+  "filenames": [
+    "Seq0002_000001.jpg",
+    "Seq0004_000351.jpg",
+    "Seq0003_000205.jpg",
+    "Seq0002_000176.jpg",
+    "Seq0007_000024.jpg",
+    "Seq0007_000397.jpg",
+    "Seq0009_000194.jpg",
+    "Seq0009_000360.jpg",
+    "Seq0008_000423.jpg",
+    "Seq0008_000001.jpg"
+  ],
+  "images": [
+    {
+      "filename": "Seq0002_000001.jpg",
+      "source": "Seq0002",
+      "originalFrame": 1,
+      "estimatedAntCount": 10,
+      "density": "medium",
+      "reasonsForSelection": [
+        "indoor_simple",
+        "clean_background",
+        "large_ants",
+        "strong_contrast",
+        "early_temporal_anchor"
+      ]
+    },
+    {
+      "filename": "Seq0004_000351.jpg",
+      "source": "Seq0004",
+      "originalFrame": 351,
+      "estimatedAntCount": 10,
+      "density": "medium",
+      "reasonsForSelection": [
+        "indoor_simple",
+        "clean_background",
+        "large_ants",
+        "strong_contrast",
+        "late_temporal_anchor",
+        "different_indoor_source"
+      ]
+    },
+    {
+      "filename": "Seq0003_000205.jpg",
+      "source": "Seq0003",
+      "originalFrame": 205,
+      "estimatedAntCount": 10,
+      "density": "medium",
+      "reasonsForSelection": [
+        "indoor_distribution_or_pose_variation",
+        "spatial_upper_center",
+        "clean_background",
+        "large_ants",
+        "middle_temporal_region"
+      ]
+    },
+    {
+      "filename": "Seq0002_000176.jpg",
+      "source": "Seq0002",
+      "originalFrame": 176,
+      "estimatedAntCount": 10,
+      "density": "medium",
+      "reasonsForSelection": [
+        "indoor_distribution_or_pose_variation",
+        "clean_background",
+        "large_ants",
+        "temporally_separated_from_seq0002_000001",
+        "middle_temporal_region"
+      ]
+    },
+    {
+      "filename": "Seq0007_000024.jpg",
+      "source": "Seq0007",
+      "originalFrame": 24,
+      "estimatedAntCount": 37,
+      "density": "medium",
+      "reasonsForSelection": [
+        "outdoor_textured_background",
+        "organic_litter",
+        "small_ants",
+        "partial_or_edge_ant_candidate",
+        "early_temporal_region"
+      ]
+    },
+    {
+      "filename": "Seq0007_000397.jpg",
+      "source": "Seq0007",
+      "originalFrame": 397,
+      "estimatedAntCount": 39,
+      "density": "medium",
+      "reasonsForSelection": [
+        "outdoor_textured_background",
+        "organic_litter",
+        "small_ants",
+        "partial_or_edge_ant_candidate",
+        "temporally_separated_from_seq0007_000024"
+      ]
+    },
+    {
+      "filename": "Seq0009_000194.jpg",
+      "source": "Seq0009",
+      "originalFrame": 194,
+      "estimatedAntCount": 61,
+      "density": "high",
+      "reasonsForSelection": [
+        "outdoor_crowded",
+        "high_crowding",
+        "rocks",
+        "shadows",
+        "nest_entrance",
+        "small_ants"
+      ]
+    },
+    {
+      "filename": "Seq0009_000360.jpg",
+      "source": "Seq0009",
+      "originalFrame": 360,
+      "estimatedAntCount": 56,
+      "density": "high",
+      "reasonsForSelection": [
+        "outdoor_crowded",
+        "high_crowding",
+        "rocks",
+        "shadows",
+        "nest_entrance",
+        "temporally_separated_from_seq0009_000194"
+      ]
+    },
+    {
+      "filename": "Seq0008_000423.jpg",
+      "source": "Seq0008",
+      "originalFrame": 423,
+      "estimatedAntCount": 10,
+      "density": "low",
+      "reasonsForSelection": [
+        "small_ants_case",
+        "outdoor_low_density",
+        "nest_entrance",
+        "shadows",
+        "soil",
+        "partial_or_edge_ant_candidate"
+      ]
+    },
+    {
+      "filename": "Seq0008_000001.jpg",
+      "source": "Seq0008",
+      "originalFrame": 1,
+      "estimatedAntCount": 31,
+      "density": "high",
+      "reasonsForSelection": [
+        "visually_difficult",
+        "shadows",
+        "nest_entrance",
+        "soil",
+        "small_ants",
+        "crowded_scene",
+        "variable_density"
+      ]
+    }
+  ]
+}

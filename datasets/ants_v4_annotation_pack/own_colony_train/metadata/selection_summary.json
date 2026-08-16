@@ -1,0 +1,310 @@
+{
+  "artifacts": {
+    "contact_sheets": {
+      "block_nest_entry": "artifacts/analysis/ants_v4_train_selection/block_nest_entry.jpg",
+      "lateral_chamber": "artifacts/analysis/ants_v4_train_selection/lateral_chamber.jpg",
+      "overall_72": "artifacts/analysis/ants_v4_train_selection/overall_72.jpg",
+      "topdown_arena": "artifacts/analysis/ants_v4_train_selection/topdown_arena.jpg"
+    },
+    "images_dir": "datasets/ants_v4_annotation_pack/own_colony_train/images",
+    "manifest_csv": "datasets/ants_v4_annotation_pack/own_colony_train/metadata/manifest.csv",
+    "manifest_jsonl": "datasets/ants_v4_annotation_pack/own_colony_train/metadata/manifest.jsonl",
+    "selection_summary": "datasets/ants_v4_annotation_pack/own_colony_train/metadata/selection_summary.json",
+    "source_role_freeze_design": "datasets/ants_v4_design/source_role_freeze.json",
+    "source_role_freeze_pack": "datasets/ants_v4_annotation_pack/own_colony_train/metadata/source_role_freeze.json"
+  },
+  "constraints_observed": {
+    "no_annotations_generated": true,
+    "no_ant4": true,
+    "no_commit_push": true,
+    "no_label_assist": true,
+    "no_model_inference": true,
+    "no_pseudo_labeling": true,
+    "no_roboflow_upload": true,
+    "no_v1_v2_v3": true
+  },
+  "counts": {
+    "frames_per_domain_group": {
+      "block_nest_entry": 24,
+      "lateral_chamber": 24,
+      "topdown_arena": 24
+    },
+    "frames_per_video": {
+      "Ants10.mp4": 8,
+      "Ants3.mp4": 8,
+      "Ants4.mp4": 12,
+      "Ants5.mp4": 8,
+      "Ants6.mp4": 12,
+      "Ants7.mp4": 8,
+      "Ants8.mp4": 8,
+      "Ants9.mp4": 8
+    },
+    "selected_images": 72,
+    "unique_sha256": 72
+  },
+  "created_at_utc": "2026-08-14T06:50:53.461809+00:00",
+  "diversity_redundancy": {
+    "domain_phash_summary": {
+      "block_nest_entry": {
+        "median_phash_distance": 4.0,
+        "min_phash_distance": 0,
+        "near_duplicate_phash_pairs_le_2": 117,
+        "same_scene_phash_pairs_le_4": 177,
+        "selected_images": 24
+      },
+      "lateral_chamber": {
+        "median_phash_distance": 22.0,
+        "min_phash_distance": 1,
+        "near_duplicate_phash_pairs_le_2": 5,
+        "same_scene_phash_pairs_le_4": 13,
+        "selected_images": 24
+      },
+      "topdown_arena": {
+        "median_phash_distance": 4.0,
+        "min_phash_distance": 0,
+        "near_duplicate_phash_pairs_le_2": 44,
+        "same_scene_phash_pairs_le_4": 151,
+        "selected_images": 24
+      }
+    },
+    "interpretation": [
+      "No exact selected image SHA256 duplicates were found.",
+      "Some low pHash distances remain within static same-scene domains, which is expected for fixed-camera source videos; selection favored different temporal bins and available visual/statistical variation.",
+      "Ants4/Ants6 and Ants5/Ants9/Ants10 remain source-level redundant groups for future annotation budgeting, but all long videos are represented."
+    ]
+  },
+  "leakage_checks": {
+    "Ants11_selected": 0,
+    "Ants2_selected": 0,
+    "ant4_name_or_path_overlap": 0,
+    "ants_v3_existing_data_sha_overlap": 0,
+    "note": "ant4 source was not opened; ant4 check is source/name/path exclusion only.",
+    "own_colony_val_001_image_sha_overlap": 0,
+    "selected_images": 72,
+    "source_video_sha_overlap_with_own_colony_val_001": 0,
+    "unique_image_sha256": 72
+  },
+  "manifest_sha256": "983a6e6f182a178c53273bcac796e386d8eb060db4dd21a3fb6df81e77ad4bd6",
+  "phase": "V4 SOURCE ROLE FREEZE + TRAIN ANNOTATION PACK SELECTION",
+  "schema_version": "1.0",
+  "selection_policy": {
+    "candidate_generation": "uniform temporal bins per video with five deterministic offsets per bin",
+    "diversity_pruning_features": [
+      "temporal bin",
+      "perceptual hash distance",
+      "median luminance",
+      "median saturation",
+      "contrast",
+      "sharpness/edge proxy"
+    ],
+    "domain_targets": {
+      "block_nest_entry": 24,
+      "lateral_chamber": 24,
+      "topdown_arena": 24
+    },
+    "forbidden_selection_signals": [
+      "model inference",
+      "v1/v2/v3 predictions",
+      "pseudo-labels",
+      "label assist"
+    ],
+    "per_video_targets": {
+      "Ants10.mp4": 8,
+      "Ants3.mp4": 8,
+      "Ants4.mp4": 12,
+      "Ants5.mp4": 8,
+      "Ants6.mp4": 12,
+      "Ants7.mp4": 8,
+      "Ants8.mp4": 8,
+      "Ants9.mp4": 8
+    },
+    "target_images": 72
+  },
+  "source_role_freeze_sha256": "d135850b5ef7a41dca9b4dfe6faaa4c50a02d8942513a9feffab1e44ffb88f33",
+  "source_roles": {
+    "auxiliary_sources": [
+      {
+        "duration_seconds": 2.123,
+        "excluded_from_v4_e01_train_pack": true,
+        "filename": "Ants2.mp4",
+        "role": "AUXILIARY_SHORT_SOURCE"
+      }
+    ],
+    "constraints": {
+      "no_ant4": true,
+      "no_commit_push": true,
+      "no_label_assist": true,
+      "no_model_inference": true,
+      "no_pseudo_labeling": true,
+      "no_roboflow_upload": true,
+      "no_v1_v2_v3": true
+    },
+    "created_at_utc": "2026-08-14T06:50:12.446121+00:00",
+    "domain_groups": {
+      "block_nest_entry": [
+        "Ants4.mp4",
+        "Ants6.mp4"
+      ],
+      "lateral_chamber": [
+        "Ants3.mp4",
+        "Ants7.mp4",
+        "Ants8.mp4"
+      ],
+      "topdown_arena": [
+        "Ants5.mp4",
+        "Ants9.mp4",
+        "Ants10.mp4"
+      ]
+    },
+    "explicit_aliases": [
+      {
+        "alias_sha256": "8d5921d1af58d47ba2ce7c2c7fbaa06127ca7c8fe46c5de8d58e37188be13510",
+        "alias_video": "Ants11.mp4",
+        "canonical_existing_source": "own_colony_val_001.mp4",
+        "canonical_sha256": "8d5921d1af58d47ba2ce7c2c7fbaa06127ca7c8fe46c5de8d58e37188be13510",
+        "relationship": "same file by content SHA256",
+        "role": "EXISTING_DEV_VALIDATION_ALIAS",
+        "train_policy": "NEVER TRAIN; NEVER V4 TRAIN CANDIDATE"
+      }
+    ],
+    "phase": "V4 SOURCE ROLE FREEZE + TRAIN ANNOTATION PACK SELECTION",
+    "roles": {
+      "Ants10.mp4": {
+        "alias_of": null,
+        "excluded_from_v4_e01_train_pack": false,
+        "filename": "Ants10.mp4",
+        "local_path": "samples/v2/Ants10.mp4",
+        "reason": "Frozen source approved for v4 train annotation candidate selection.",
+        "role": "V4_TRAIN_SOURCE",
+        "session_group": "session_B_2026-08-14_topdown_arena",
+        "sha256": "876763613a636b6f4d561e08fee76a0ed51147e6527e93baaca6ae4d3b4aaa18",
+        "train_eligible": true,
+        "v4_domain_group": "topdown_arena"
+      },
+      "Ants11.mp4": {
+        "alias_of": {
+          "filename": "own_colony_val_001.mp4",
+          "role": "DEVELOPMENT_VALIDATION",
+          "sha256": "8d5921d1af58d47ba2ce7c2c7fbaa06127ca7c8fe46c5de8d58e37188be13510"
+        },
+        "excluded_from_v4_e01_train_pack": true,
+        "filename": "Ants11.mp4",
+        "local_path": "samples/v2/Ants11.mp4",
+        "reason": "Ants11.mp4 is content-identical to own_colony_val_001.mp4 and therefore remains development validation only; NEVER TRAIN and NEVER V4 TRAIN CANDIDATE.",
+        "role": "EXISTING_DEV_VALIDATION_ALIAS",
+        "session_group": "session_A_2026-08-13_tube_translucent",
+        "sha256": "8d5921d1af58d47ba2ce7c2c7fbaa06127ca7c8fe46c5de8d58e37188be13510",
+        "train_eligible": false,
+        "v4_domain_group": "development_validation_alias"
+      },
+      "Ants2.mp4": {
+        "alias_of": null,
+        "excluded_from_v4_e01_train_pack": true,
+        "filename": "Ants2.mp4",
+        "local_path": "samples/v2/Ants2.mp4",
+        "reason": "Short 2.123s source retained for audit but excluded from v4_e01 train pack.",
+        "role": "AUXILIARY_SHORT_SOURCE",
+        "session_group": "session_B_2026-08-14_block_nest_entry",
+        "sha256": "47416ba9ff809d819f816d89e3881f618a29cd2f54f49c52ff708163d5654d43",
+        "train_eligible": false,
+        "v4_domain_group": "auxiliary_short_source"
+      },
+      "Ants3.mp4": {
+        "alias_of": null,
+        "excluded_from_v4_e01_train_pack": false,
+        "filename": "Ants3.mp4",
+        "local_path": "samples/v2/Ants3.mp4",
+        "reason": "Frozen source approved for v4 train annotation candidate selection.",
+        "role": "V4_TRAIN_SOURCE",
+        "session_group": "session_B_2026-08-14_lateral_chamber",
+        "sha256": "2692ad60fe3f4f406b2f4b20973e63382707856410ca382607cc6a27138cff69",
+        "train_eligible": true,
+        "v4_domain_group": "lateral_chamber"
+      },
+      "Ants4.mp4": {
+        "alias_of": null,
+        "excluded_from_v4_e01_train_pack": false,
+        "filename": "Ants4.mp4",
+        "local_path": "samples/v2/Ants4.mp4",
+        "reason": "Frozen source approved for v4 train annotation candidate selection.",
+        "role": "V4_TRAIN_SOURCE",
+        "session_group": "session_B_2026-08-14_block_nest_entry",
+        "sha256": "b57141b70f2fd0ceafdcf4676990f8204eb11d4cf6601a25eaa0bd5b31a20192",
+        "train_eligible": true,
+        "v4_domain_group": "block_nest_entry"
+      },
+      "Ants5.mp4": {
+        "alias_of": null,
+        "excluded_from_v4_e01_train_pack": false,
+        "filename": "Ants5.mp4",
+        "local_path": "samples/v2/Ants5.mp4",
+        "reason": "Frozen source approved for v4 train annotation candidate selection.",
+        "role": "V4_TRAIN_SOURCE",
+        "session_group": "session_B_2026-08-14_topdown_arena",
+        "sha256": "9ad3cddc7e050ccc47233797ac219d17902e7ee5672b150bf0b6a2dffab3910c",
+        "train_eligible": true,
+        "v4_domain_group": "topdown_arena"
+      },
+      "Ants6.mp4": {
+        "alias_of": null,
+        "excluded_from_v4_e01_train_pack": false,
+        "filename": "Ants6.mp4",
+        "local_path": "samples/v2/Ants6.mp4",
+        "reason": "Frozen source approved for v4 train annotation candidate selection.",
+        "role": "V4_TRAIN_SOURCE",
+        "session_group": "session_B_2026-08-14_block_nest_entry",
+        "sha256": "d525ab0a5d1c3625c79ad50288d4c4480faf7880faf40b97e07b5e6043b937d0",
+        "train_eligible": true,
+        "v4_domain_group": "block_nest_entry"
+      },
+      "Ants7.mp4": {
+        "alias_of": null,
+        "excluded_from_v4_e01_train_pack": false,
+        "filename": "Ants7.mp4",
+        "local_path": "samples/v2/Ants7.mp4",
+        "reason": "Frozen source approved for v4 train annotation candidate selection.",
+        "role": "V4_TRAIN_SOURCE",
+        "session_group": "session_B_2026-08-14_lateral_chamber",
+        "sha256": "f1b690fcca541958f4026e733c3b93db0599919d60940a4c37de3f5e286be848",
+        "train_eligible": true,
+        "v4_domain_group": "lateral_chamber"
+      },
+      "Ants8.mp4": {
+        "alias_of": null,
+        "excluded_from_v4_e01_train_pack": false,
+        "filename": "Ants8.mp4",
+        "local_path": "samples/v2/Ants8.mp4",
+        "reason": "Frozen source approved for v4 train annotation candidate selection.",
+        "role": "V4_TRAIN_SOURCE",
+        "session_group": "session_B_2026-08-14_lateral_chamber",
+        "sha256": "a6d215f234f5055e70c30ffa083fd900b22e3579371ca08f220ca5b0ee1680b8",
+        "train_eligible": true,
+        "v4_domain_group": "lateral_chamber"
+      },
+      "Ants9.mp4": {
+        "alias_of": null,
+        "excluded_from_v4_e01_train_pack": false,
+        "filename": "Ants9.mp4",
+        "local_path": "samples/v2/Ants9.mp4",
+        "reason": "Frozen source approved for v4 train annotation candidate selection.",
+        "role": "V4_TRAIN_SOURCE",
+        "session_group": "session_B_2026-08-14_topdown_arena",
+        "sha256": "bf5f73aa86383edf263757edeb1d68c4a63cb3a1981a580b1d203de137fb5fdd",
+        "train_eligible": true,
+        "v4_domain_group": "topdown_arena"
+      }
+    },
+    "schema_version": "1.0",
+    "train_sources": [
+      "Ants10.mp4",
+      "Ants3.mp4",
+      "Ants4.mp4",
+      "Ants5.mp4",
+      "Ants6.mp4",
+      "Ants7.mp4",
+      "Ants8.mp4",
+      "Ants9.mp4"
+    ]
+  },
+  "status": "PASS"
+}

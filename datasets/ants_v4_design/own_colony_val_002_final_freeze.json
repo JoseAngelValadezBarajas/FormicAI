@@ -1,0 +1,59 @@
+{
+  "checkpoint_selection_eligible": false,
+  "counts": {
+    "max_annotations_per_positive_frame": 1,
+    "mean_annotations_per_positive_frame": 1.0,
+    "median_annotations_per_positive_frame": 1.0,
+    "min_annotations_per_positive_frame": 1,
+    "positive_frames": 29,
+    "review_frames": 0,
+    "total_annotations": 29,
+    "total_frames": 30,
+    "verified_zero_frames": 1,
+    "zero_annotation_frames": 1
+  },
+  "created_at_utc": "2026-08-14T08:40:46.648390+00:00",
+  "development_selection_eligible": false,
+  "experiment": "ants_v4_domain_e01",
+  "final_holdout_manifest": "datasets/ants_v4_annotation_pack/own_colony_val_002/metadata/final_holdout_manifest.json",
+  "frozen_integrity_leakage": {
+    "ant4_absent_by_source_path_manifest_guard": true,
+    "ant4_note": "ant4 was not opened; verified only through source/path/manifest guards.",
+    "duplicate_image_hashes": {},
+    "expected_image_hashes": 30,
+    "expected_selected_images_content_sha256": "9de3ea752bc889b90b6bb9528f4727daa551857c7f86486af80be91535c7af37",
+    "expected_source_selection_manifest_sha256": "e14e76478e4b2f234169cfd3fd59f3bfd8d404b3adbfa468f1a3377d7da884ab",
+    "local_image_sha256_matches_frozen_manifest": true,
+    "overlaps": {
+      "ants_v2_prepared": [],
+      "ants_v3_train": [],
+      "ants_v3_valid": [],
+      "own_colony_val_001": [],
+      "v4_train_addition": []
+    },
+    "passed": true,
+    "roboflow_metadata_sha256_mismatches": [],
+    "selected_images_content_sha256": "9de3ea752bc889b90b6bb9528f4727daa551857c7f86486af80be91535c7af37",
+    "source_selection_manifest_sha256": "e14e76478e4b2f234169cfd3fd59f3bfd8d404b3adbfa468f1a3377d7da884ab",
+    "source_video_sha256_mismatches": [],
+    "unique_image_hashes": 30
+  },
+  "hashes": {
+    "annotation_content_sha256": "57f9e49ca0e7b65192985236e75ae3135c0c201cfa7f8af0ea8a63f277a6a4f0",
+    "combined_holdout_sha256": "46a954cf00e21f196af3a33d97d34b91df953ee5eac015778e5ffaad8d327173",
+    "final_manifest_sha256": "a73eff32f7cb58c74b6af0c640e0d947f1f79a313679f66795a8e71ac0ab349c",
+    "image_content_sha256": "9de3ea752bc889b90b6bb9528f4727daa551857c7f86486af80be91535c7af37"
+  },
+  "qa_metrics": "artifacts/analysis/ants_v4_annotation_qa/own_colony_val_002/own_colony_val_002_qa_metrics.json",
+  "role": "CLEAN_OWN_COLONY_HOLDOUT",
+  "schema_version": "1.0",
+  "source_freeze": "datasets/ants_v4_design/own_colony_val_002_source.json",
+  "source_manifest": "datasets/ants_v4_annotation_pack/own_colony_val_002/metadata/manifest.jsonl",
+  "source_video": {
+    "filename": "own_colony_val_002.mp4",
+    "sha256": "02ecfaf7a26865b6629f49756de3f3e558e0419f97b1404b8f094577dccc731e"
+  },
+  "split": "test",
+  "status": "PASS",
+  "train_eligible": false
+}

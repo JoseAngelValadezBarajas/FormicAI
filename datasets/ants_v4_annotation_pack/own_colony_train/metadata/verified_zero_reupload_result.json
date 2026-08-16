@@ -1,0 +1,183 @@
+{
+  "accepted": 2,
+  "attempted": 2,
+  "constraintsObserved": {
+    "annotationsUploaded": 0,
+    "noCommitPush": true,
+    "noDatasetMaterialization": true,
+    "noInference": true,
+    "noPseudoLabeling": true,
+    "noReplacementSelection": true,
+    "noTraining": true
+  },
+  "createdAtUtc": "2026-08-14T07:39:47.081609+00:00",
+  "duplicates": 0,
+  "expected": {
+    "annotatedPositiveImages": 69,
+    "currentRoboflowImages": 71,
+    "domainGroupCounts": {
+      "block_nest_entry": 24,
+      "lateral_chamber": 23,
+      "topdown_arena": 24
+    },
+    "verifiedZeroAdultImages": 2
+  },
+  "experiment": "ants_v4_domain_e01",
+  "phase": "VERIFIED_ZERO_ADULT re-upload recovery",
+  "project": {
+    "id": "jose-angel-valadez-barajas/formicai-ants-v4",
+    "name": "FormicAI Ants v4",
+    "slug": "formicai-ants-v4",
+    "type": "object-detection"
+  },
+  "rejected": 0,
+  "reuploadedFiles": [
+    "Ants4_f002682_t0044p685s.jpg",
+    "Ants4_f002937_t0048p934s.jpg"
+  ],
+  "reviewFileNotUploaded": "Ants3_f001835_t0030p573s.jpg",
+  "schemaVersion": "1.0",
+  "status": "PASS",
+  "statusReasons": [],
+  "uploadResults": [
+    {
+      "batch_name": "ants_v4_train_verified_zero_adult",
+      "domain_group": "block_nest_entry",
+      "filename": "Ants4_f002682_t0044p685s.jpg",
+      "localImageSha256": "42168fcd11b17e0a7f27d46022fc53d3ae8574c1724ef87c844ecd4e12913a99",
+      "response": {
+        "annotation": null,
+        "image": {
+          "id": "qkCHbJx6is26yxF7YBox",
+          "success": true
+        },
+        "upload_retry_attempts": 0,
+        "upload_time": 1.2443325519561768
+      },
+      "source_video": "Ants4.mp4",
+      "split": "train",
+      "status": "accepted",
+      "tags": [
+        "ants_v4",
+        "block_nest_entry",
+        "domain_recovery",
+        "negative_background",
+        "own_colony",
+        "source_own_colony_train",
+        "source_video_ants4",
+        "train",
+        "verified_zero_adult"
+      ]
+    },
+    {
+      "batch_name": "ants_v4_train_verified_zero_adult",
+      "domain_group": "block_nest_entry",
+      "filename": "Ants4_f002937_t0048p934s.jpg",
+      "localImageSha256": "0db5d0c81361fa6ca2e18383ca261afebc402a227942e7b471e68814e85777af",
+      "response": {
+        "annotation": null,
+        "image": {
+          "id": "MXmH8thsmywMlsxRS6n5",
+          "success": true
+        },
+        "upload_retry_attempts": 0,
+        "upload_time": 1.0900602340698242
+      },
+      "source_video": "Ants4.mp4",
+      "split": "train",
+      "status": "accepted",
+      "tags": [
+        "ants_v4",
+        "block_nest_entry",
+        "domain_recovery",
+        "negative_background",
+        "own_colony",
+        "source_own_colony_train",
+        "source_video_ants4",
+        "train",
+        "verified_zero_adult"
+      ]
+    }
+  ],
+  "verification": {
+    "annotatedPositiveImages": 69,
+    "currentRoboflowImages": 71,
+    "domainGroupCounts": {
+      "block_nest_entry": 24,
+      "lateral_chamber": 23,
+      "topdown_arena": 24
+    },
+    "metadataHashMismatches": [],
+    "reuploadedAnnotationCounts": {
+      "Ants4_f002682_t0044p685s.jpg": 0,
+      "Ants4_f002937_t0048p934s.jpg": 0
+    },
+    "reuploadedFilesPresent": {
+      "Ants4_f002682_t0044p685s.jpg": true,
+      "Ants4_f002937_t0048p934s.jpg": true
+    },
+    "reviewFilePresent": false,
+    "sampleVerifiedZero": [
+      {
+        "metadata": {
+          "annotation_status": "verified_zero_adult_intentional_empty_label",
+          "domain_group": "block_nest_entry",
+          "image_sha256": "42168fcd11b17e0a7f27d46022fc53d3ae8574c1724ef87c844ecd4e12913a99",
+          "pack_filename": "Ants4_f002682_t0044p685s.jpg",
+          "role": "VERIFIED_ZERO_ADULT",
+          "source_video": "Ants4.mp4",
+          "training_semantics": "negative_background_example"
+        },
+        "name": "Ants4_f002682_t0044p685s.jpg",
+        "split": "train",
+        "tags": [
+          "ants_v4",
+          "block_nest_entry",
+          "domain_recovery",
+          "own_colony",
+          "source_own_colony_train",
+          "source_video_ants4",
+          "train",
+          "negative_background",
+          "verified_zero_adult"
+        ]
+      },
+      {
+        "metadata": {
+          "annotation_status": "verified_zero_adult_intentional_empty_label",
+          "domain_group": "block_nest_entry",
+          "image_sha256": "0db5d0c81361fa6ca2e18383ca261afebc402a227942e7b471e68814e85777af",
+          "pack_filename": "Ants4_f002937_t0048p934s.jpg",
+          "role": "VERIFIED_ZERO_ADULT",
+          "source_video": "Ants4.mp4",
+          "training_semantics": "negative_background_example"
+        },
+        "name": "Ants4_f002937_t0048p934s.jpg",
+        "split": "train",
+        "tags": [
+          "ants_v4",
+          "block_nest_entry",
+          "domain_recovery",
+          "own_colony",
+          "source_own_colony_train",
+          "source_video_ants4",
+          "train",
+          "negative_background",
+          "verified_zero_adult"
+        ]
+      }
+    ],
+    "splitCounts": {
+      "train": 71
+    },
+    "verifiedZeroAdultDomainCounts": {
+      "block_nest_entry": 2
+    },
+    "verifiedZeroAdultImages": 2,
+    "verifiedZeroAdultNames": [
+      "Ants4_f002682_t0044p685s.jpg",
+      "Ants4_f002937_t0048p934s.jpg"
+    ]
+  },
+  "workspace": "jose-angel-valadez-barajas"
+}

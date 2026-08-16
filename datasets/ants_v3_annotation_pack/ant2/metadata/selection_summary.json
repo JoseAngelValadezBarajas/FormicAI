@@ -1,0 +1,61 @@
+{
+  "annotation_policy": {
+    "adult_ant_positive": [
+      "queen",
+      "worker",
+      "major",
+      "minor",
+      "replete"
+    ],
+    "box_policy": "one physical adult ant = one tight visible body box around head + thorax + abdomen; no intentional leg/antenna-tip padding; overlapping boxes allowed",
+    "class_mapping": {
+      "0": "ant"
+    },
+    "forbidden": [
+      "training",
+      "pseudo-labeling",
+      "copying historical ant2 labels as new FormicAI ground truth",
+      "remapping AntsNet labels automatically",
+      "declaring hard negatives before full-resolution human zero-ant verification"
+    ],
+    "not_ant": [
+      "brood",
+      "food",
+      "cotton",
+      "substrate",
+      "reflection"
+    ]
+  },
+  "counts_by_scale": {
+    "large_ge_ant2_median": 19,
+    "large_ge_ant2_median_reference_from_design": 5,
+    "medium_bridge_v2_to_ant2": 18
+  },
+  "coverage_goals": [
+    "queen",
+    "large scale workers",
+    "medium workers",
+    "workers touching/near queen",
+    "brood",
+    "food",
+    "glare",
+    "substrate/container",
+    "different positions/poses"
+  ],
+  "dedupe_decision": "kept all 42 proposed ant2 frames; no exact duplicate hashes found and temporal variation supports queen/worker/distractor coverage",
+  "estimate_source": "datasets/ants_v3_design/proposed_annotation_pack.json existingAnnotationCount; historical labels kept as reference metadata only",
+  "estimated_adult_annotations": 182,
+  "exact_duplicate_image_hash_groups": [],
+  "experiment": "ants_v3_mixedscale_e01",
+  "final_image_count": 42,
+  "input_candidate_count": 42,
+  "manifest_csv": "datasets/ants_v3_annotation_pack/ant2/metadata/manifest.csv",
+  "manifest_jsonl": "datasets/ants_v3_annotation_pack/ant2/metadata/manifest.jsonl",
+  "near_duplicates_removed": [],
+  "near_duplicates_removed_count": 0,
+  "no_historical_labels_copied": true,
+  "no_labels_created": true,
+  "schemaVersion": "1.0",
+  "source": "ant2",
+  "status": "relabel_pack_prepared_images_only_no_labels"
+}

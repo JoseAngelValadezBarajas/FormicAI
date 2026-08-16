@@ -1,0 +1,547 @@
+{
+  "sources": [
+    {
+      "source": "datasets/raw/ant2",
+      "canonicalName": "ant2_raw_extracted_frames",
+      "classification": "DO NOT USE",
+      "reason": "Raw ant2 candidate frames; labels are not stored here and ant2 already influenced ants_v1.",
+      "imagesOrFrames": 70,
+      "annotations": 0,
+      "resolution": {
+        "600x700": 70
+      },
+      "sourceVideo": "samples\\ant2.mp4",
+      "annotationFormat": null,
+      "boxStyle": null,
+      "classNames": [],
+      "alreadyInfluencedAntsV1": true,
+      "intendedFutureRole": "Reference only."
+    },
+    {
+      "source": "exported_dataset",
+      "canonicalName": "ant2_roboflow_export",
+      "classification": "DO NOT USE",
+      "reason": "Roboflow export that produced ants_v1; keep as provenance/reference.",
+      "imagesOrFrames": 68,
+      "annotations": 299,
+      "labelFiles": 68,
+      "resolution": {
+        "600x700": 68
+      },
+      "sourceVideo": "samples/ant2.mp4",
+      "annotationFormat": {
+        "yolo_segmentation_polygon_as_tight_box": 37,
+        "yolo_detection": 262
+      },
+      "boxStyle": "tight body boxes",
+      "classNames": [
+        "ant"
+      ],
+      "alreadyInfluencedAntsV1": true,
+      "intendedFutureRole": "Baseline reference and no-catastrophic-regression check only.",
+      "scale": {
+        "widthOverImageWidth": {
+          "count": 299,
+          "min": 0.06833333333333325,
+          "p25": 0.15500000000000003,
+          "median": 0.18333333333333332,
+          "p75": 0.24363333333333337,
+          "max": 0.425,
+          "mean": 0.21362408026755852
+        },
+        "heightOverImageHeight": {
+          "count": 299,
+          "min": 0.04571428571428571,
+          "p25": 0.13357142857142856,
+          "median": 0.16,
+          "p75": 0.20571428571428568,
+          "max": 0.2857142857142857,
+          "mean": 0.1706589584328715
+        },
+        "areaOverImageArea": {
+          "count": 299,
+          "min": 0.007466666666666666,
+          "p25": 0.02189404761904762,
+          "median": 0.02842368357142857,
+          "p75": 0.04152011904761904,
+          "max": 0.11353571428571428,
+          "mean": 0.039326117715400545
+        }
+      }
+    },
+    {
+      "source": "datasets/prepared/ants_v1",
+      "canonicalName": "ant2_ants_v1_prepared",
+      "classification": "DO NOT USE",
+      "reason": "Prepared dataset used by ants_v1; keep as baseline provenance/regression reference.",
+      "imagesOrFrames": 67,
+      "annotations": 295,
+      "labelFiles": 67,
+      "resolution": {
+        "600x700": 67
+      },
+      "sourceVideo": "samples/ant2.mp4",
+      "annotationFormat": {
+        "yolo_detection": 295
+      },
+      "boxStyle": "tight body boxes",
+      "classNames": [
+        "ant"
+      ],
+      "alreadyInfluencedAntsV1": true,
+      "intendedFutureRole": "Baseline reference and no-catastrophic-regression check only.",
+      "scale": {
+        "widthOverImageWidth": {
+          "count": 295,
+          "min": 0.0683333333333,
+          "p25": 0.1555333333335,
+          "median": 0.183333333333,
+          "p75": 0.243633333333,
+          "max": 0.425,
+          "mean": 0.21357203389832338
+        },
+        "heightOverImageHeight": {
+          "count": 295,
+          "min": 0.0457142857143,
+          "p25": 0.134285714286,
+          "median": 0.16,
+          "p75": 0.205457142857,
+          "max": 0.285714285714,
+          "mean": 0.1705353995157332
+        },
+        "areaOverImageArea": {
+          "count": 295,
+          "min": 0.007466666666653763,
+          "p25": 0.02203214285712,
+          "median": 0.02842368357155649,
+          "p75": 0.040708214285676975,
+          "max": 0.113535714285775,
+          "mean": 0.03925357849152734
+        }
+      }
+    },
+    {
+      "source": "datasets\\external_test\\ant3",
+      "canonicalName": "ant3_external_test_frames",
+      "classification": "UNLABELED",
+      "reason": "Temporally distributed held-out local frames; labels are not present yet.",
+      "imagesOrFrames": 15,
+      "annotations": 0,
+      "labelFiles": 0,
+      "resolution": {
+        "400x472": 15
+      },
+      "sourceVideo": "samples\\ant3.mp4",
+      "annotationFormat": null,
+      "boxStyle": "expected tight body boxes, but labels are missing",
+      "classNames": [],
+      "alreadyInfluencedAntsV1": false,
+      "intendedFutureRole": "Manual-label later for external/stress evaluation; not training-ready today.",
+      "metadata": {
+        "requestedFrameCount": 15,
+        "roi": {
+          "x": 40,
+          "y": 122,
+          "width": 400,
+          "height": 472
+        },
+        "sourceFrames": 427,
+        "fps": 29.981112601195033
+      }
+    },
+    {
+      "source": "datasets\\external_test\\ant4",
+      "canonicalName": "ant4_external_test_frames",
+      "classification": "UNLABELED",
+      "reason": "Temporally distributed held-out local frames; labels are not present yet.",
+      "imagesOrFrames": 20,
+      "annotations": 0,
+      "labelFiles": 0,
+      "resolution": {
+        "400x472": 20
+      },
+      "sourceVideo": "samples\\ant4.mp4",
+      "annotationFormat": null,
+      "boxStyle": "expected tight body boxes, but labels are missing",
+      "classNames": [],
+      "alreadyInfluencedAntsV1": false,
+      "intendedFutureRole": "Manual-label later for external/stress evaluation; not training-ready today.",
+      "metadata": {
+        "requestedFrameCount": 20,
+        "roi": {
+          "x": 40,
+          "y": 122,
+          "width": 400,
+          "height": 472
+        },
+        "sourceFrames": 306,
+        "fps": 30.012914053432578
+      }
+    },
+    {
+      "source": "samples\\ant2.mp4",
+      "canonicalName": "ant2_video",
+      "classification": "DO NOT USE",
+      "reason": "Already influenced ants_v1 through labeled export; keep for regression/video reference.",
+      "imagesOrFrames": 487,
+      "annotations": 0,
+      "resolution": {
+        "width": 720,
+        "height": 1280
+      },
+      "sourceVideo": "samples\\ant2.mp4",
+      "annotationFormat": null,
+      "boxStyle": null,
+      "classNames": [],
+      "alreadyInfluencedAntsV1": true,
+      "intendedFutureRole": "Already influenced ants_v1 through labeled export; keep for regression/video reference.",
+      "video": {
+        "path": "samples\\ant2.mp4",
+        "readable": true,
+        "frames": 487,
+        "fps": 29.97138256079924,
+        "resolution": {
+          "width": 720,
+          "height": 1280
+        },
+        "durationSeconds": 16.248833333333334
+      }
+    },
+    {
+      "source": "samples\\ant3.mp4",
+      "canonicalName": "ant3_video",
+      "classification": "UNLABELED",
+      "reason": "Potential source for manual labels or stress/external test; not usable for training today.",
+      "imagesOrFrames": 427,
+      "annotations": 0,
+      "resolution": {
+        "width": 480,
+        "height": 864
+      },
+      "sourceVideo": "samples\\ant3.mp4",
+      "annotationFormat": null,
+      "boxStyle": null,
+      "classNames": [],
+      "alreadyInfluencedAntsV1": false,
+      "intendedFutureRole": "Potential source for manual labels or stress/external test; not usable for training today.",
+      "video": {
+        "path": "samples\\ant3.mp4",
+        "readable": true,
+        "frames": 427,
+        "fps": 29.981112601195033,
+        "resolution": {
+          "width": 480,
+          "height": 864
+        },
+        "durationSeconds": 14.2423
+      }
+    },
+    {
+      "source": "samples\\ant4.mp4",
+      "canonicalName": "ant4_video",
+      "classification": "UNLABELED",
+      "reason": "Potential source for manual labels or stress/external test; not usable for training today.",
+      "imagesOrFrames": 306,
+      "annotations": 0,
+      "resolution": {
+        "width": 480,
+        "height": 864
+      },
+      "sourceVideo": "samples\\ant4.mp4",
+      "annotationFormat": null,
+      "boxStyle": null,
+      "classNames": [],
+      "alreadyInfluencedAntsV1": false,
+      "intendedFutureRole": "Potential source for manual labels or stress/external test; not usable for training today.",
+      "video": {
+        "path": "samples\\ant4.mp4",
+        "readable": true,
+        "frames": 306,
+        "fps": 30.012914053432578,
+        "resolution": {
+          "width": 480,
+          "height": 864
+        },
+        "durationSeconds": 10.195611111111111
+      }
+    },
+    {
+      "source": "samples\\nest_test_001.mp4",
+      "canonicalName": "nest_test_001_video",
+      "classification": "UNLABELED",
+      "reason": "No verified ant labels found locally.",
+      "imagesOrFrames": 1293,
+      "annotations": 0,
+      "resolution": {
+        "width": 1080,
+        "height": 1920
+      },
+      "sourceVideo": "samples\\nest_test_001.mp4",
+      "annotationFormat": null,
+      "boxStyle": null,
+      "classNames": [],
+      "alreadyInfluencedAntsV1": false,
+      "intendedFutureRole": "No verified ant labels found locally.",
+      "video": {
+        "path": "samples\\nest_test_001.mp4",
+        "readable": true,
+        "frames": 1293,
+        "fps": 59.97640526052396,
+        "resolution": {
+          "width": 1080,
+          "height": 1920
+        },
+        "durationSeconds": 21.558477777777778
+      }
+    },
+    {
+      "source": "samples\\synthetic_motion.mp4",
+      "canonicalName": "synthetic_motion_video",
+      "classification": "DO NOT USE",
+      "reason": "Synthetic smoke-test video, not biological ant detection data.",
+      "imagesOrFrames": 90,
+      "annotations": 0,
+      "resolution": {
+        "width": 320,
+        "height": 240
+      },
+      "sourceVideo": "samples\\synthetic_motion.mp4",
+      "annotationFormat": null,
+      "boxStyle": null,
+      "classNames": [],
+      "alreadyInfluencedAntsV1": false,
+      "intendedFutureRole": "Synthetic smoke-test video, not biological ant detection data.",
+      "video": {
+        "path": "samples\\synthetic_motion.mp4",
+        "readable": true,
+        "frames": 90,
+        "fps": 30.0,
+        "resolution": {
+          "width": 320,
+          "height": 240
+        },
+        "durationSeconds": 3.0
+      }
+    },
+    {
+      "source": "Ant_dataset/IndoorDataset/Seq0001Object10Image94",
+      "canonicalName": "ANTS_Seq0001",
+      "classification": "EXTERNAL TEST",
+      "reason": "Frozen external benchmark from v0.2.",
+      "imagesOrFrames": 351,
+      "annotations": 3510,
+      "resolution": {
+        "width": 1920,
+        "height": 1080
+      },
+      "sourceVideo": null,
+      "annotationFormat": "MOT gt.txt; convertible to YOLO detection",
+      "boxStyle": "fixed tracking boxes (94x94)",
+      "classNames": [
+        "ant"
+      ],
+      "alreadyInfluencedAntsV1": false,
+      "intendedFutureRole": "FROZEN_EXTERNAL_BENCHMARK only.",
+      "environment": "indoor",
+      "densityClass": "medium density"
+    },
+    {
+      "source": "Ant_dataset/IndoorDataset/Seq0002Object10Image94",
+      "canonicalName": "ANTS_Seq0002",
+      "classification": "TRAIN CANDIDATE",
+      "reason": "Public ANTS candidate with fixed-size tracking boxes; annotation policy unresolved.",
+      "imagesOrFrames": 351,
+      "annotations": 3510,
+      "resolution": {
+        "width": 1920,
+        "height": 1080
+      },
+      "sourceVideo": null,
+      "annotationFormat": "MOT gt.txt; convertible to YOLO detection",
+      "boxStyle": "fixed tracking boxes (94x94)",
+      "classNames": [
+        "ant"
+      ],
+      "alreadyInfluencedAntsV1": false,
+      "intendedFutureRole": "Candidate only after annotation-policy decision.",
+      "environment": "indoor",
+      "densityClass": "medium density"
+    },
+    {
+      "source": "Ant_dataset/IndoorDataset/Seq0003Object10Image94",
+      "canonicalName": "ANTS_Seq0003",
+      "classification": "TRAIN CANDIDATE",
+      "reason": "Public ANTS candidate with fixed-size tracking boxes; annotation policy unresolved.",
+      "imagesOrFrames": 351,
+      "annotations": 3510,
+      "resolution": {
+        "width": 1920,
+        "height": 1080
+      },
+      "sourceVideo": null,
+      "annotationFormat": "MOT gt.txt; convertible to YOLO detection",
+      "boxStyle": "fixed tracking boxes (94x94)",
+      "classNames": [
+        "ant"
+      ],
+      "alreadyInfluencedAntsV1": false,
+      "intendedFutureRole": "Candidate only after annotation-policy decision.",
+      "environment": "indoor",
+      "densityClass": "medium density"
+    },
+    {
+      "source": "Ant_dataset/IndoorDataset/Seq0004Object10Image94",
+      "canonicalName": "ANTS_Seq0004",
+      "classification": "TRAIN CANDIDATE",
+      "reason": "Indoor clean source; train candidate or reserve depending on final indoor validation choice.",
+      "imagesOrFrames": 351,
+      "annotations": 3510,
+      "resolution": {
+        "width": 1920,
+        "height": 1080
+      },
+      "sourceVideo": null,
+      "annotationFormat": "MOT gt.txt; convertible to YOLO detection",
+      "boxStyle": "fixed tracking boxes (94x94)",
+      "classNames": [
+        "ant"
+      ],
+      "alreadyInfluencedAntsV1": false,
+      "intendedFutureRole": "Candidate only after annotation-policy decision.",
+      "environment": "indoor",
+      "densityClass": "medium density"
+    },
+    {
+      "source": "Ant_dataset/IndoorDataset/Seq0005Object10Image94",
+      "canonicalName": "ANTS_Seq0005",
+      "classification": "VALIDATION CANDIDATE",
+      "reason": "Recommended source-held-out validation candidate; do not train on it if selected for val.",
+      "imagesOrFrames": 1001,
+      "annotations": 10010,
+      "resolution": {
+        "width": 1920,
+        "height": 1080
+      },
+      "sourceVideo": null,
+      "annotationFormat": "MOT gt.txt; convertible to YOLO detection",
+      "boxStyle": "fixed tracking boxes (94x94)",
+      "classNames": [
+        "ant"
+      ],
+      "alreadyInfluencedAntsV1": false,
+      "intendedFutureRole": "Held-out validation candidate, never frozen benchmark.",
+      "environment": "indoor",
+      "densityClass": "medium density"
+    },
+    {
+      "source": "Ant_dataset/OutdoorDataset/Seq0006Object21Image64",
+      "canonicalName": "ANTS_Seq0006",
+      "classification": "EXTERNAL TEST",
+      "reason": "Frozen external benchmark from v0.2.",
+      "imagesOrFrames": 600,
+      "annotations": 11178,
+      "resolution": {
+        "width": 1280,
+        "height": 720
+      },
+      "sourceVideo": null,
+      "annotationFormat": "MOT gt.txt; convertible to YOLO detection",
+      "boxStyle": "fixed tracking boxes (64x64)",
+      "classNames": [
+        "ant"
+      ],
+      "alreadyInfluencedAntsV1": false,
+      "intendedFutureRole": "FROZEN_EXTERNAL_BENCHMARK only.",
+      "environment": "outdoor",
+      "densityClass": "medium density"
+    },
+    {
+      "source": "Ant_dataset/OutdoorDataset/Seq0007Object26Image64",
+      "canonicalName": "ANTS_Seq0007",
+      "classification": "TRAIN CANDIDATE",
+      "reason": "Public ANTS candidate with fixed-size tracking boxes; annotation policy unresolved.",
+      "imagesOrFrames": 677,
+      "annotations": 25158,
+      "resolution": {
+        "width": 1280,
+        "height": 720
+      },
+      "sourceVideo": null,
+      "annotationFormat": "MOT gt.txt; convertible to YOLO detection",
+      "boxStyle": "fixed tracking boxes (64x64)",
+      "classNames": [
+        "ant"
+      ],
+      "alreadyInfluencedAntsV1": false,
+      "intendedFutureRole": "Candidate only after annotation-policy decision.",
+      "environment": "outdoor",
+      "densityClass": "high density"
+    },
+    {
+      "source": "Ant_dataset/OutdoorDataset/Seq0008Object31Image64",
+      "canonicalName": "ANTS_Seq0008",
+      "classification": "TRAIN CANDIDATE",
+      "reason": "Public ANTS candidate with fixed-size tracking boxes; annotation policy unresolved.",
+      "imagesOrFrames": 577,
+      "annotations": 10280,
+      "resolution": {
+        "width": 1280,
+        "height": 720
+      },
+      "sourceVideo": null,
+      "annotationFormat": "MOT gt.txt; convertible to YOLO detection",
+      "boxStyle": "fixed tracking boxes (64x64)",
+      "classNames": [
+        "ant"
+      ],
+      "alreadyInfluencedAntsV1": false,
+      "intendedFutureRole": "Candidate only after annotation-policy decision.",
+      "environment": "outdoor",
+      "densityClass": "medium density"
+    },
+    {
+      "source": "Ant_dataset/OutdoorDataset/Seq0009Object50Image64",
+      "canonicalName": "ANTS_Seq0009",
+      "classification": "TRAIN CANDIDATE",
+      "reason": "Public ANTS candidate with fixed-size tracking boxes; annotation policy unresolved.",
+      "imagesOrFrames": 526,
+      "annotations": 27902,
+      "resolution": {
+        "width": 1280,
+        "height": 720
+      },
+      "sourceVideo": null,
+      "annotationFormat": "MOT gt.txt; convertible to YOLO detection",
+      "boxStyle": "fixed tracking boxes (64x64)",
+      "classNames": [
+        "ant"
+      ],
+      "alreadyInfluencedAntsV1": false,
+      "intendedFutureRole": "Candidate only after annotation-policy decision.",
+      "environment": "outdoor",
+      "densityClass": "high density"
+    },
+    {
+      "source": "Ant_dataset/OutdoorDataset/Seq0010Object30Image64",
+      "canonicalName": "ANTS_Seq0010",
+      "classification": "VALIDATION CANDIDATE",
+      "reason": "Recommended source-held-out validation candidate; do not train on it if selected for val.",
+      "imagesOrFrames": 526,
+      "annotations": 22044,
+      "resolution": {
+        "width": 1280,
+        "height": 720
+      },
+      "sourceVideo": null,
+      "annotationFormat": "MOT gt.txt; convertible to YOLO detection",
+      "boxStyle": "fixed tracking boxes (64x64)",
+      "classNames": [
+        "ant"
+      ],
+      "alreadyInfluencedAntsV1": false,
+      "intendedFutureRole": "Held-out validation candidate, never frozen benchmark.",
+      "environment": "outdoor",
+      "densityClass": "high density"
+    }
+  ]
+}

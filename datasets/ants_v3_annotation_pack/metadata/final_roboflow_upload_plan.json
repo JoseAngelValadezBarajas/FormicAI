@@ -1,0 +1,67 @@
+{
+  "experiment": "ants_v3_mixedscale_e01",
+  "no_pseudo_labeling": true,
+  "no_training_performed": true,
+  "no_upload_performed": true,
+  "roboflow_project_plan": {
+    "annotation_policy": "single-class adult ant detection; tight visible body boxes; no copied historical labels",
+    "batches": [
+      {
+        "batch": "ants_v3_antsnet",
+        "image_count": 40,
+        "labels_to_upload": "none_until_manual_FormicAI_relabel",
+        "source": "AntsNet v14",
+        "tags": [
+          "ants_v3",
+          "antsnet",
+          "public_source",
+          "manual_relabel",
+          "scale_diversity"
+        ]
+      },
+      {
+        "batch": "ants_v3_ant2",
+        "image_count": 27,
+        "labels_to_upload": "none_until_manual_FormicAI_relabel",
+        "manifest": "datasets/ants_v3_annotation_pack/ant2/metadata/final_manifest.jsonl",
+        "source": "ant2",
+        "tags": [
+          "ants_v3",
+          "ant2",
+          "own_colony",
+          "manual_relabel",
+          "queen_large",
+          "distractor_context",
+          "final_pruned"
+        ]
+      },
+      {
+        "batch": "ants_v3_hard_negative",
+        "blocked_by_review_candidates": 12,
+        "image_count": 0,
+        "labels_to_upload": "empty labels only after human zero-ant verification",
+        "manifest": "datasets/ants_v3_annotation_pack/hard_negatives/metadata/final_manifest.jsonl",
+        "source": "nest_test_001",
+        "tags": [
+          "ants_v3",
+          "hard_negative",
+          "verified_zero_ant",
+          "final_pruned"
+        ]
+      }
+    ],
+    "class_mapping": {
+      "0": "ant"
+    },
+    "project_name": "FormicAI Ants v3",
+    "status": "planned_after_final_visual_pruning_not_uploaded",
+    "task": "Object Detection"
+  },
+  "schemaVersion": "1.0",
+  "workload_summary": {
+    "ant2": 120,
+    "antsnet": 316,
+    "converted_positives": 0,
+    "total": 436
+  }
+}

@@ -1,0 +1,388 @@
+{
+  "experimentDesign": "ants_v3_mixedscale_e01",
+  "generatedFrom": {
+    "technicalInventoryRaw": "artifacts\\analysis\\ants_v3_design\\technical_inventory_raw.json",
+    "contactSheets": {
+      "ant2": {
+        "source": "ant2",
+        "contactSheet": "artifacts\\analysis\\ants_v3_design\\source_contact_sheets\\ant2_contact_sheet.jpg",
+        "sampledFrames": [
+          {
+            "frameIndex": 0,
+            "timestampSeconds": 0.0
+          },
+          {
+            "frameIndex": 44,
+            "timestampSeconds": 1.4680670773442848
+          },
+          {
+            "frameIndex": 88,
+            "timestampSeconds": 2.9361341546885695
+          },
+          {
+            "frameIndex": 133,
+            "timestampSeconds": 4.437566392881588
+          },
+          {
+            "frameIndex": 177,
+            "timestampSeconds": 5.905633470225872
+          },
+          {
+            "frameIndex": 221,
+            "timestampSeconds": 7.373700547570157
+          },
+          {
+            "frameIndex": 265,
+            "timestampSeconds": 8.841767624914441
+          },
+          {
+            "frameIndex": 309,
+            "timestampSeconds": 10.309834702258726
+          },
+          {
+            "frameIndex": 353,
+            "timestampSeconds": 11.777901779603011
+          },
+          {
+            "frameIndex": 398,
+            "timestampSeconds": 13.27933401779603
+          },
+          {
+            "frameIndex": 442,
+            "timestampSeconds": 14.747401095140313
+          },
+          {
+            "frameIndex": 486,
+            "timestampSeconds": 16.2154681724846
+          }
+        ]
+      },
+      "ant3": {
+        "source": "ant3",
+        "contactSheet": "artifacts\\analysis\\ants_v3_design\\source_contact_sheets\\ant3_contact_sheet.jpg",
+        "sampledFrames": [
+          {
+            "frameIndex": 0,
+            "timestampSeconds": 0.0
+          },
+          {
+            "frameIndex": 39,
+            "timestampSeconds": 1.3008189695550352
+          },
+          {
+            "frameIndex": 77,
+            "timestampSeconds": 2.568283606557377
+          },
+          {
+            "frameIndex": 116,
+            "timestampSeconds": 3.869102576112412
+          },
+          {
+            "frameIndex": 155,
+            "timestampSeconds": 5.169921545667447
+          },
+          {
+            "frameIndex": 194,
+            "timestampSeconds": 6.470740515222483
+          },
+          {
+            "frameIndex": 232,
+            "timestampSeconds": 7.738205152224824
+          },
+          {
+            "frameIndex": 271,
+            "timestampSeconds": 9.039024121779859
+          },
+          {
+            "frameIndex": 310,
+            "timestampSeconds": 10.339843091334894
+          },
+          {
+            "frameIndex": 349,
+            "timestampSeconds": 11.640662060889928
+          },
+          {
+            "frameIndex": 387,
+            "timestampSeconds": 12.908126697892271
+          },
+          {
+            "frameIndex": 426,
+            "timestampSeconds": 14.208945667447306
+          }
+        ]
+      },
+      "ant4": {
+        "source": "ant4",
+        "contactSheet": "artifacts\\analysis\\ants_v3_design\\source_contact_sheets\\ant4_contact_sheet.jpg",
+        "sampledFrames": [
+          {
+            "frameIndex": 0,
+            "timestampSeconds": 0.0
+          },
+          {
+            "frameIndex": 28,
+            "timestampSeconds": 0.9329317356572259
+          },
+          {
+            "frameIndex": 55,
+            "timestampSeconds": 1.832544480755265
+          },
+          {
+            "frameIndex": 83,
+            "timestampSeconds": 2.765476216412491
+          },
+          {
+            "frameIndex": 111,
+            "timestampSeconds": 3.698407952069717
+          },
+          {
+            "frameIndex": 139,
+            "timestampSeconds": 4.631339687726943
+          },
+          {
+            "frameIndex": 166,
+            "timestampSeconds": 5.530952432824982
+          },
+          {
+            "frameIndex": 194,
+            "timestampSeconds": 6.463884168482208
+          },
+          {
+            "frameIndex": 222,
+            "timestampSeconds": 7.396815904139434
+          },
+          {
+            "frameIndex": 250,
+            "timestampSeconds": 8.32974763979666
+          },
+          {
+            "frameIndex": 277,
+            "timestampSeconds": 9.229360384894699
+          },
+          {
+            "frameIndex": 305,
+            "timestampSeconds": 10.162292120551925
+          }
+        ]
+      },
+      "nest_test_001": {
+        "source": "nest_test_001",
+        "contactSheet": "artifacts\\analysis\\ants_v3_design\\source_contact_sheets\\nest_test_001_contact_sheet.jpg",
+        "sampledFrames": [
+          {
+            "frameIndex": 0,
+            "timestampSeconds": 0.0
+          },
+          {
+            "frameIndex": 117,
+            "timestampSeconds": 1.9507671307037895
+          },
+          {
+            "frameIndex": 235,
+            "timestampSeconds": 3.9182074847469277
+          },
+          {
+            "frameIndex": 352,
+            "timestampSeconds": 5.868974615450718
+          },
+          {
+            "frameIndex": 470,
+            "timestampSeconds": 7.836414969493855
+          },
+          {
+            "frameIndex": 587,
+            "timestampSeconds": 9.787182100197645
+          },
+          {
+            "frameIndex": 705,
+            "timestampSeconds": 11.754622454240783
+          },
+          {
+            "frameIndex": 822,
+            "timestampSeconds": 13.705389584944573
+          },
+          {
+            "frameIndex": 940,
+            "timestampSeconds": 15.67282993898771
+          },
+          {
+            "frameIndex": 1057,
+            "timestampSeconds": 17.623597069691503
+          },
+          {
+            "frameIndex": 1175,
+            "timestampSeconds": 19.59103742373464
+          },
+          {
+            "frameIndex": 1292,
+            "timestampSeconds": 21.54180455443843
+          }
+        ]
+      }
+    }
+  },
+  "sources": [
+    {
+      "source": "ant2",
+      "localPaths": [
+        "samples/ant2.mp4",
+        "datasets/prepared/ants_v1"
+      ],
+      "resolution": "720x1280",
+      "preparedResolution": {
+        "600x700": 67
+      },
+      "frameCount": 487,
+      "fps": 29.97138256079924,
+      "durationSeconds": 16.248833333333334,
+      "currentLabelsAvailable": true,
+      "currentLabels": {
+        "images": 67,
+        "annotations": 295,
+        "policy": "FormicAI tight-body boxes from ants_v1 provenance"
+      },
+      "currentRole": "training candidate and diagnostic/regression reference; no longer an untouched/unbiased final benchmark for v3",
+      "visualDomain": "own-colony close-up artificial nest/container through reflective plastic/acrylic",
+      "typicalAntScale": "large/mixed close-up; queen and workers are much larger than ants_v2 public TRAIN boxes",
+      "queenVisible": "yes",
+      "difficultNegativesVisible": [
+        "brood",
+        "food",
+        "cotton",
+        "plastic/acrylic glare",
+        "reflections",
+        "substrate/debris",
+        "round dish/container edges"
+      ],
+      "humanIdentifiabilityQuality": "medium-good for visible ants, but glare/plastic reflections and partial ants require careful QA",
+      "possibleFutureRole": "small own-colony positive training supplement plus regression reference; not final test"
+    },
+    {
+      "source": "ant3",
+      "localPaths": [
+        "samples/ant3.mp4",
+        "datasets/external_test/ant3"
+      ],
+      "resolution": "480x864",
+      "frameCount": 427,
+      "fps": 29.981112601195033,
+      "durationSeconds": 14.2423,
+      "currentLabelsAvailable": false,
+      "currentLabels": {
+        "images": 15,
+        "annotations": 0
+      },
+      "currentRole": "stress test only; not quantitative validation and not automatic train",
+      "visualDomain": "crowded outdoor/soil/food scene with shiny dark ants and strong overlap",
+      "typicalAntScale": "large-to-medium close-up but highly crowded/occluded",
+      "queenVisible": "unknown",
+      "difficultNegativesVisible": [
+        "soil",
+        "food",
+        "overlapping bodies",
+        "legs/antennae clutter",
+        "motion blur",
+        "specular highlights"
+      ],
+      "humanIdentifiabilityQuality": "insufficient for reliable full ground truth in current plan; use qualitative stress only",
+      "possibleFutureRole": "stress-test source after manual review, not train/model-selection source for e01"
+    },
+    {
+      "source": "ant4",
+      "localPaths": [
+        "samples/ant4.mp4",
+        "datasets/external_test/ant4"
+      ],
+      "resolution": "480x864",
+      "frameCount": 306,
+      "fps": 30.012914053432578,
+      "durationSeconds": 10.195611111111111,
+      "currentLabelsAvailable": false,
+      "currentLabels": {
+        "images": 20,
+        "annotations": 0
+      },
+      "currentRole": "candidate frozen own-colony final test after manual GT; do not use for train/val/tuning/model selection",
+      "visualDomain": "own-colony clean white substrate/food dish scene with many workers around food",
+      "typicalAntScale": "medium-to-large workers; scale closer to own colony than public ANTS outdoor sequences",
+      "queenVisible": "unknown/possible large ant visible; must not inspect/tune beyond frozen-test preparation",
+      "difficultNegativesVisible": [
+        "yellow food",
+        "clear dish rim",
+        "cotton/wood",
+        "white substrate texture",
+        "partial edge ants"
+      ],
+      "humanIdentifiabilityQuality": "good enough candidate for future manual GT, but must stay held out",
+      "possibleFutureRole": "frozen own-colony final test candidate only"
+    },
+    {
+      "source": "nest_test_001",
+      "localPaths": [
+        "samples/nest_test_001.mp4"
+      ],
+      "resolution": "1080x1920",
+      "frameCount": 1293,
+      "fps": 59.97640526052396,
+      "durationSeconds": 21.558477777777778,
+      "currentLabelsAvailable": false,
+      "currentLabels": {
+        "images": 0,
+        "annotations": 0
+      },
+      "currentRole": "candidate hard-negative/background source only; not sufficient as source-held-out own-colony validation",
+      "visualDomain": "empty or near-empty artificial nest setup with soil, rocks, cotton, tube, plastic, reflections",
+      "typicalAntScale": "not applicable; no identifiable ants in sampled contact sheet",
+      "queenVisible": "no",
+      "difficultNegativesVisible": [
+        "soil",
+        "rocks",
+        "cotton",
+        "plastic tube",
+        "nest/container edges",
+        "glare/reflections"
+      ],
+      "humanIdentifiabilityQuality": "good for background/hard-negative verification; lacks positive ant examples",
+      "possibleFutureRole": "10-12 verified hard-negative frames if full-resolution manual review confirms zero identifiable ants"
+    },
+    {
+      "source": "current ants_v2 public dataset",
+      "localPaths": [
+        "datasets/prepared/ants_v2_diverse_e01",
+        "datasets/ants_v2_design"
+      ],
+      "resolution": {
+        "1280x720": 80,
+        "1920x1080": 75
+      },
+      "frameCount": null,
+      "fps": null,
+      "durationSeconds": null,
+      "currentLabelsAvailable": true,
+      "currentLabels": {
+        "trainImages": 155,
+        "trainAnnotations": 3364,
+        "valImages": 60,
+        "valAnnotations": 1368,
+        "totalAnnotations": 4732
+      },
+      "currentRole": "public-domain base dataset for ants_v3 candidate; validation has already been used for v2 model selection",
+      "visualDomain": "public ANTS indoor/outdoor sequences with clean indoor plates and outdoor rocks/soil/nest entrances",
+      "typicalAntScale": "small-to-medium relative to image; median TRAIN bbox area 0.002088",
+      "queenVisible": "unknown/not primary own-colony queen coverage",
+      "difficultNegativesVisible": [
+        "rocks",
+        "soil",
+        "shadows",
+        "nest entrances",
+        "crowding",
+        "small ants"
+      ],
+      "humanIdentifiabilityQuality": "approved manual tight-box labels for ants_v2 train/val",
+      "possibleFutureRole": "keep public TRAIN as base; keep public VAL provisional with overfitting warning; do not use frozen Seq0001/Seq0006 for training/tuning"
+    }
+  ],
+  "newOwnColonyValidationVideoRequired": true,
+  "designGeneratedWithoutTrainingOrAnnotationChanges": true,
+  "contentSha256": "5c79bf81f795e8f7789dfa9817050f6f965d2b6e6686fc37b360652c3f430201"
+}

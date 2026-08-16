@@ -6,8 +6,16 @@ This repository currently contains:
 
 - **FormicAI Vision v0.1**: motion analysis, activity metrics, heatmap, annotated video, and optional motion-mask video.
 - **FormicAI Vision v0.2**: dataset preparation, `ants_v1_baseline` object detection, frozen internal validation, and frozen external ANTS benchmark evaluation.
+- **ants_v3_mixedscale_e01**: current experimental detector champion after mixed-scale queen/large-worker and AntsNet/ant2 relabeling.
+- **ants_v4_domain_e01**: closed real-camera own-domain exposure experiment; final result `MIXED`, not promoted.
 
 v0.1 detects moving regions, not ants. v0.2 adds a first experimental ant detector, but it is still a small baseline and not a general-purpose biological measurement system.
+
+Current experimental detector champion:
+
+```text
+ants_v3_mixedscale_e01
+```
 
 ## Requirements
 
@@ -251,6 +259,85 @@ ANTS Seq0006: fixed 64x64 boxes
 ```
 
 Public benchmark provenance remains documented under [datasets/public/ants_mendeley/README.md](datasets/public/ants_mendeley/README.md): ANTS--ant detection and tracking, DOI `10.17632/9ws98g4npw.4`, CC0 1.0.
+
+### ants_v2_diverse_e01
+
+Model card: [docs/model_cards/ants_v2_diverse_e01.md](docs/model_cards/ants_v2_diverse_e01.md)
+
+`ants_v2_diverse_e01` is frozen as a dataset-diversity experiment, not as a universal replacement for `ants_v1_baseline`.
+
+```text
+selected checkpoint: epoch40.pt / selected.pt
+selected SHA256: 4e37c15340b6ae1636eecc5b0d796fce9123fb1e987901a8b01bde46a76782e6
+dataset content SHA256: 8b7406900b49329e552bd002f9ceb7c4ea3aa3b64a076005ef18b6f9daa8990f
+```
+
+It strongly improves public ANTS external results, but the final ant2 regression check is a `MATERIAL REGRESSION`. ant2 is therefore no longer an untouched final benchmark for future v3 work. It may be used as a training candidate or diagnostic/regression reference, but not as a new unbiased final test.
+
+The next proposed dataset design is documented under [datasets/ants_v3_design](datasets/ants_v3_design): keep the public ants_v2 train base, add a small own-colony mixed-scale ant2 pack, add verified hard negatives, keep ant4 frozen as an own-colony final-test candidate, and collect a new own-colony validation video.
+
+### ants_v3_mixedscale_e01
+
+Model card: [docs/model_cards/ants_v3_mixedscale_e01.md](docs/model_cards/ants_v3_mixedscale_e01.md)
+
+`ants_v3_mixedscale_e01` is the current experimental detector champion.
+
+```text
+selected checkpoint: best.pt / selected.pt
+selected SHA256: 424d508ef2b881740134c3c3a320f0dba4ea12d2f4a9f77a057451539347daaf
+status: CURRENT CHAMPION
+```
+
+It added targeted mixed-scale adult-ant examples from AntsNet and ant2 while preserving the single-class FormicAI policy:
+
+```text
+0 ant
+tight visible adult ant body box
+```
+
+### ants_v4_domain_e01
+
+Model card: [docs/model_cards/ants_v4_domain_e01.md](docs/model_cards/ants_v4_domain_e01.md)
+
+`ants_v4_domain_e01` tested real-camera own-domain exposure and is formally closed:
+
+```text
+selected SHA256: 689249476dc61912050a5106ac712c9e24dd494da892a2d113f72ba20198e0e9
+final classification: MIXED
+promoted to champion: false
+current champion: ants_v3_mixedscale_e01
+```
+
+Detector lineage:
+
+| Version | Role |
+| --- | --- |
+| v1 | Original own-domain baseline |
+| v2 | Public/diverse generalization |
+| v3 | Mixed-scale + queen/large + AntsNet + ant2 |
+| v4 | Real-camera own-domain exposure |
+
+ANT4 final-test result:
+
+| Model | P | R | mAP50 | mAP50-95 |
+| --- | ---: | ---: | ---: | ---: |
+| v1 | 0.1092 | 0.0741 | 0.0098 | 0.0016 |
+| v2 | 0.4396 | 0.3527 | 0.1738 | 0.0459 |
+| v3 | 0.8664 | 0.8466 | 0.8200 | 0.4434 |
+| v4 | 0.8680 | 0.7654 | 0.7511 | 0.3786 |
+
+v4 improved clean `own_colony_val_002` versus v3 and preserved public development sources, but it regressed versus v3 on ANT4, still failed `own_colony_val_001`, and regressed in standard public-reference metrics versus v2. The result remains `MIXED`.
+
+After observation, source roles are:
+
+```text
+Seq0001 / Seq0006: OBSERVED PUBLIC REFERENCES
+own_colony_val_001: DEVELOPMENT / PATHOLOGICAL FAILURE SOURCE
+own_colony_val_002: OBSERVED OWN-COLONY REFERENCE for future experiments
+ant4: OBSERVED OWN-COLONY FINAL TEST, no longer unbiased for v5+
+```
+
+Weights, datasets, videos, labels, and analysis artifacts remain intentionally excluded from Git. Reproducibility is preserved through model cards, manifests, metadata, and SHA256 hashes.
 
 ## Current Limitations
 

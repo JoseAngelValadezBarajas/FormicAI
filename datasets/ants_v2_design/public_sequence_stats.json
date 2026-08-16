@@ -1,0 +1,790 @@
+{
+  "sequences": {
+    "Seq0001": {
+      "sequence": "Seq0001",
+      "role": "FROZEN_EXTERNAL_BENCHMARK",
+      "environment": "indoor",
+      "zipDirectory": "Ant_dataset/IndoorDataset/Seq0001Object10Image94",
+      "seqinfoName": "Seq0001Object10Image94",
+      "frameCount": 351,
+      "resolution": {
+        "width": 1920,
+        "height": 1080
+      },
+      "fps": 25,
+      "gtAnnotationCount": 3510,
+      "malformedGtRows": 0,
+      "uniqueTrackingIds": 10,
+      "antsPerFrame": {
+        "mean": 10,
+        "median": 10,
+        "min": 10,
+        "max": 10
+      },
+      "bbox": {
+        "widthPixels": {
+          "count": 3510,
+          "min": 94.0,
+          "p25": 94.0,
+          "median": 94.0,
+          "p75": 94.0,
+          "max": 94.0,
+          "mean": 94.0
+        },
+        "heightPixels": {
+          "count": 3510,
+          "min": 94.0,
+          "p25": 94.0,
+          "median": 94.0,
+          "p75": 94.0,
+          "max": 94.0,
+          "mean": 94.0
+        },
+        "widthOverImageWidth": {
+          "count": 3510,
+          "min": 0.04895833333333333,
+          "p25": 0.04895833333333333,
+          "median": 0.04895833333333333,
+          "p75": 0.04895833333333333,
+          "max": 0.04895833333333333,
+          "mean": 0.04895833333333333
+        },
+        "heightOverImageHeight": {
+          "count": 3510,
+          "min": 0.08703703703703704,
+          "p25": 0.08703703703703704,
+          "median": 0.08703703703703704,
+          "p75": 0.08703703703703704,
+          "max": 0.08703703703703704,
+          "mean": 0.08703703703703704
+        },
+        "areaOverImageArea": {
+          "count": 3510,
+          "min": 0.004261188271604938,
+          "p25": 0.004261188271604938,
+          "median": 0.004261188271604938,
+          "p75": 0.004261188271604938,
+          "max": 0.004261188271604938,
+          "mean": 0.004261188271604938
+        }
+      },
+      "densityClass": "medium density",
+      "sampleFrames": [
+        1,
+        118,
+        234,
+        351
+      ],
+      "sampleMontage": null
+    },
+    "Seq0002": {
+      "sequence": "Seq0002",
+      "role": "PUBLIC_CANDIDATE_SOURCE",
+      "environment": "indoor",
+      "zipDirectory": "Ant_dataset/IndoorDataset/Seq0002Object10Image94",
+      "seqinfoName": "Seq0002Object10Image94",
+      "frameCount": 351,
+      "resolution": {
+        "width": 1920,
+        "height": 1080
+      },
+      "fps": 25,
+      "gtAnnotationCount": 3510,
+      "malformedGtRows": 0,
+      "uniqueTrackingIds": 10,
+      "antsPerFrame": {
+        "mean": 10,
+        "median": 10,
+        "min": 10,
+        "max": 10
+      },
+      "bbox": {
+        "widthPixels": {
+          "count": 3510,
+          "min": 94.0,
+          "p25": 94.0,
+          "median": 94.0,
+          "p75": 94.0,
+          "max": 94.0,
+          "mean": 94.0
+        },
+        "heightPixels": {
+          "count": 3510,
+          "min": 94.0,
+          "p25": 94.0,
+          "median": 94.0,
+          "p75": 94.0,
+          "max": 94.0,
+          "mean": 94.0
+        },
+        "widthOverImageWidth": {
+          "count": 3510,
+          "min": 0.04895833333333333,
+          "p25": 0.04895833333333333,
+          "median": 0.04895833333333333,
+          "p75": 0.04895833333333333,
+          "max": 0.04895833333333333,
+          "mean": 0.04895833333333333
+        },
+        "heightOverImageHeight": {
+          "count": 3510,
+          "min": 0.08703703703703704,
+          "p25": 0.08703703703703704,
+          "median": 0.08703703703703704,
+          "p75": 0.08703703703703704,
+          "max": 0.08703703703703704,
+          "mean": 0.08703703703703704
+        },
+        "areaOverImageArea": {
+          "count": 3510,
+          "min": 0.004261188271604938,
+          "p25": 0.004261188271604938,
+          "median": 0.004261188271604938,
+          "p75": 0.004261188271604938,
+          "max": 0.004261188271604938,
+          "mean": 0.004261188271604938
+        }
+      },
+      "densityClass": "medium density",
+      "sampleFrames": [
+        1,
+        71,
+        141,
+        211,
+        281,
+        351
+      ],
+      "sampleMontage": "artifacts\\analysis\\ants_v2_design\\public_sequence_samples\\Seq0002_sample_frames.jpg"
+    },
+    "Seq0003": {
+      "sequence": "Seq0003",
+      "role": "PUBLIC_CANDIDATE_SOURCE",
+      "environment": "indoor",
+      "zipDirectory": "Ant_dataset/IndoorDataset/Seq0003Object10Image94",
+      "seqinfoName": "Seq0003Object10Image94",
+      "frameCount": 351,
+      "resolution": {
+        "width": 1920,
+        "height": 1080
+      },
+      "fps": 25,
+      "gtAnnotationCount": 3510,
+      "malformedGtRows": 0,
+      "uniqueTrackingIds": 10,
+      "antsPerFrame": {
+        "mean": 10,
+        "median": 10,
+        "min": 10,
+        "max": 10
+      },
+      "bbox": {
+        "widthPixels": {
+          "count": 3510,
+          "min": 94.0,
+          "p25": 94.0,
+          "median": 94.0,
+          "p75": 94.0,
+          "max": 94.0,
+          "mean": 94.0
+        },
+        "heightPixels": {
+          "count": 3510,
+          "min": 94.0,
+          "p25": 94.0,
+          "median": 94.0,
+          "p75": 94.0,
+          "max": 94.0,
+          "mean": 94.0
+        },
+        "widthOverImageWidth": {
+          "count": 3510,
+          "min": 0.04895833333333333,
+          "p25": 0.04895833333333333,
+          "median": 0.04895833333333333,
+          "p75": 0.04895833333333333,
+          "max": 0.04895833333333333,
+          "mean": 0.04895833333333333
+        },
+        "heightOverImageHeight": {
+          "count": 3510,
+          "min": 0.08703703703703704,
+          "p25": 0.08703703703703704,
+          "median": 0.08703703703703704,
+          "p75": 0.08703703703703704,
+          "max": 0.08703703703703704,
+          "mean": 0.08703703703703704
+        },
+        "areaOverImageArea": {
+          "count": 3510,
+          "min": 0.004261188271604938,
+          "p25": 0.004261188271604938,
+          "median": 0.004261188271604938,
+          "p75": 0.004261188271604938,
+          "max": 0.004261188271604938,
+          "mean": 0.004261188271604938
+        }
+      },
+      "densityClass": "medium density",
+      "sampleFrames": [
+        1,
+        71,
+        141,
+        211,
+        281,
+        351
+      ],
+      "sampleMontage": "artifacts\\analysis\\ants_v2_design\\public_sequence_samples\\Seq0003_sample_frames.jpg"
+    },
+    "Seq0004": {
+      "sequence": "Seq0004",
+      "role": "PUBLIC_CANDIDATE_SOURCE",
+      "environment": "indoor",
+      "zipDirectory": "Ant_dataset/IndoorDataset/Seq0004Object10Image94",
+      "seqinfoName": "Seq0004Object10Image94",
+      "frameCount": 351,
+      "resolution": {
+        "width": 1920,
+        "height": 1080
+      },
+      "fps": 25,
+      "gtAnnotationCount": 3510,
+      "malformedGtRows": 0,
+      "uniqueTrackingIds": 10,
+      "antsPerFrame": {
+        "mean": 10,
+        "median": 10,
+        "min": 10,
+        "max": 10
+      },
+      "bbox": {
+        "widthPixels": {
+          "count": 3510,
+          "min": 94.0,
+          "p25": 94.0,
+          "median": 94.0,
+          "p75": 94.0,
+          "max": 94.0,
+          "mean": 94.0
+        },
+        "heightPixels": {
+          "count": 3510,
+          "min": 94.0,
+          "p25": 94.0,
+          "median": 94.0,
+          "p75": 94.0,
+          "max": 94.0,
+          "mean": 94.0
+        },
+        "widthOverImageWidth": {
+          "count": 3510,
+          "min": 0.04895833333333333,
+          "p25": 0.04895833333333333,
+          "median": 0.04895833333333333,
+          "p75": 0.04895833333333333,
+          "max": 0.04895833333333333,
+          "mean": 0.04895833333333333
+        },
+        "heightOverImageHeight": {
+          "count": 3510,
+          "min": 0.08703703703703704,
+          "p25": 0.08703703703703704,
+          "median": 0.08703703703703704,
+          "p75": 0.08703703703703704,
+          "max": 0.08703703703703704,
+          "mean": 0.08703703703703704
+        },
+        "areaOverImageArea": {
+          "count": 3510,
+          "min": 0.004261188271604938,
+          "p25": 0.004261188271604938,
+          "median": 0.004261188271604938,
+          "p75": 0.004261188271604938,
+          "max": 0.004261188271604938,
+          "mean": 0.004261188271604938
+        }
+      },
+      "densityClass": "medium density",
+      "sampleFrames": [
+        1,
+        71,
+        141,
+        211,
+        281,
+        351
+      ],
+      "sampleMontage": "artifacts\\analysis\\ants_v2_design\\public_sequence_samples\\Seq0004_sample_frames.jpg"
+    },
+    "Seq0005": {
+      "sequence": "Seq0005",
+      "role": "PUBLIC_CANDIDATE_SOURCE",
+      "environment": "indoor",
+      "zipDirectory": "Ant_dataset/IndoorDataset/Seq0005Object10Image94",
+      "seqinfoName": "Seq0005Object10Image94",
+      "frameCount": 1001,
+      "resolution": {
+        "width": 1920,
+        "height": 1080
+      },
+      "fps": 25,
+      "gtAnnotationCount": 10010,
+      "malformedGtRows": 0,
+      "uniqueTrackingIds": 10,
+      "antsPerFrame": {
+        "mean": 10,
+        "median": 10,
+        "min": 10,
+        "max": 10
+      },
+      "bbox": {
+        "widthPixels": {
+          "count": 10010,
+          "min": 94.0,
+          "p25": 94.0,
+          "median": 94.0,
+          "p75": 94.0,
+          "max": 94.0,
+          "mean": 94.0
+        },
+        "heightPixels": {
+          "count": 10010,
+          "min": 94.0,
+          "p25": 94.0,
+          "median": 94.0,
+          "p75": 94.0,
+          "max": 94.0,
+          "mean": 94.0
+        },
+        "widthOverImageWidth": {
+          "count": 10010,
+          "min": 0.04895833333333333,
+          "p25": 0.04895833333333333,
+          "median": 0.04895833333333333,
+          "p75": 0.04895833333333333,
+          "max": 0.04895833333333333,
+          "mean": 0.04895833333333333
+        },
+        "heightOverImageHeight": {
+          "count": 10010,
+          "min": 0.08703703703703704,
+          "p25": 0.08703703703703704,
+          "median": 0.08703703703703704,
+          "p75": 0.08703703703703704,
+          "max": 0.08703703703703704,
+          "mean": 0.08703703703703704
+        },
+        "areaOverImageArea": {
+          "count": 10010,
+          "min": 0.004261188271604938,
+          "p25": 0.004261188271604938,
+          "median": 0.004261188271604938,
+          "p75": 0.004261188271604938,
+          "max": 0.004261188271604938,
+          "mean": 0.004261188271604938
+        }
+      },
+      "densityClass": "medium density",
+      "sampleFrames": [
+        1,
+        201,
+        401,
+        601,
+        801,
+        1001
+      ],
+      "sampleMontage": "artifacts\\analysis\\ants_v2_design\\public_sequence_samples\\Seq0005_sample_frames.jpg"
+    },
+    "Seq0006": {
+      "sequence": "Seq0006",
+      "role": "FROZEN_EXTERNAL_BENCHMARK",
+      "environment": "outdoor",
+      "zipDirectory": "Ant_dataset/OutdoorDataset/Seq0006Object21Image64",
+      "seqinfoName": "Seq0006Object10Image64",
+      "frameCount": 600,
+      "resolution": {
+        "width": 1280,
+        "height": 720
+      },
+      "fps": 30,
+      "gtAnnotationCount": 11178,
+      "malformedGtRows": 0,
+      "uniqueTrackingIds": 73,
+      "antsPerFrame": {
+        "mean": 18.63,
+        "median": 19.0,
+        "min": 13,
+        "max": 28
+      },
+      "bbox": {
+        "widthPixels": {
+          "count": 11178,
+          "min": 64.0,
+          "p25": 64.0,
+          "median": 64.0,
+          "p75": 64.0,
+          "max": 64.0,
+          "mean": 64.0
+        },
+        "heightPixels": {
+          "count": 11178,
+          "min": 64.0,
+          "p25": 64.0,
+          "median": 64.0,
+          "p75": 64.0,
+          "max": 64.0,
+          "mean": 64.0
+        },
+        "widthOverImageWidth": {
+          "count": 11178,
+          "min": 0.05,
+          "p25": 0.05,
+          "median": 0.05,
+          "p75": 0.05,
+          "max": 0.05,
+          "mean": 0.049999999999999996
+        },
+        "heightOverImageHeight": {
+          "count": 11178,
+          "min": 0.08888888888888889,
+          "p25": 0.08888888888888889,
+          "median": 0.08888888888888889,
+          "p75": 0.08888888888888889,
+          "max": 0.08888888888888889,
+          "mean": 0.08888888888888889
+        },
+        "areaOverImageArea": {
+          "count": 11178,
+          "min": 0.0044444444444444444,
+          "p25": 0.0044444444444444444,
+          "median": 0.0044444444444444444,
+          "p75": 0.0044444444444444444,
+          "max": 0.0044444444444444444,
+          "mean": 0.0044444444444444444
+        }
+      },
+      "densityClass": "medium density",
+      "sampleFrames": [
+        1,
+        201,
+        400,
+        600
+      ],
+      "sampleMontage": null
+    },
+    "Seq0007": {
+      "sequence": "Seq0007",
+      "role": "PUBLIC_CANDIDATE_SOURCE",
+      "environment": "outdoor",
+      "zipDirectory": "Ant_dataset/OutdoorDataset/Seq0007Object26Image64",
+      "seqinfoName": "Seq0007Object10Image64",
+      "frameCount": 677,
+      "resolution": {
+        "width": 1280,
+        "height": 720
+      },
+      "fps": 30,
+      "gtAnnotationCount": 25158,
+      "malformedGtRows": 0,
+      "uniqueTrackingIds": 162,
+      "antsPerFrame": {
+        "mean": 37.16100443131462,
+        "median": 37,
+        "min": 26,
+        "max": 44
+      },
+      "bbox": {
+        "widthPixels": {
+          "count": 25158,
+          "min": 64.0,
+          "p25": 64.0,
+          "median": 64.0,
+          "p75": 64.0,
+          "max": 64.0,
+          "mean": 64.0
+        },
+        "heightPixels": {
+          "count": 25158,
+          "min": 64.0,
+          "p25": 64.0,
+          "median": 64.0,
+          "p75": 64.0,
+          "max": 64.0,
+          "mean": 64.0
+        },
+        "widthOverImageWidth": {
+          "count": 25158,
+          "min": 0.05,
+          "p25": 0.05,
+          "median": 0.05,
+          "p75": 0.05,
+          "max": 0.05,
+          "mean": 0.05
+        },
+        "heightOverImageHeight": {
+          "count": 25158,
+          "min": 0.08888888888888889,
+          "p25": 0.08888888888888889,
+          "median": 0.08888888888888889,
+          "p75": 0.08888888888888889,
+          "max": 0.08888888888888889,
+          "mean": 0.08888888888888889
+        },
+        "areaOverImageArea": {
+          "count": 25158,
+          "min": 0.0044444444444444444,
+          "p25": 0.0044444444444444444,
+          "median": 0.0044444444444444444,
+          "p75": 0.0044444444444444444,
+          "max": 0.0044444444444444444,
+          "mean": 0.0044444444444444444
+        }
+      },
+      "densityClass": "high density",
+      "sampleFrames": [
+        1,
+        136,
+        271,
+        407,
+        542,
+        677
+      ],
+      "sampleMontage": "artifacts\\analysis\\ants_v2_design\\public_sequence_samples\\Seq0007_sample_frames.jpg"
+    },
+    "Seq0008": {
+      "sequence": "Seq0008",
+      "role": "PUBLIC_CANDIDATE_SOURCE",
+      "environment": "outdoor",
+      "zipDirectory": "Ant_dataset/OutdoorDataset/Seq0008Object31Image64",
+      "seqinfoName": "Seq0008Object10Image64",
+      "frameCount": 577,
+      "resolution": {
+        "width": 1280,
+        "height": 720
+      },
+      "fps": 30,
+      "gtAnnotationCount": 10280,
+      "malformedGtRows": 0,
+      "uniqueTrackingIds": 133,
+      "antsPerFrame": {
+        "mean": 17.81629116117851,
+        "median": 17,
+        "min": 0,
+        "max": 35
+      },
+      "bbox": {
+        "widthPixels": {
+          "count": 10280,
+          "min": 64.0,
+          "p25": 64.0,
+          "median": 64.0,
+          "p75": 64.0,
+          "max": 64.0,
+          "mean": 64.0
+        },
+        "heightPixels": {
+          "count": 10280,
+          "min": 64.0,
+          "p25": 64.0,
+          "median": 64.0,
+          "p75": 64.0,
+          "max": 64.0,
+          "mean": 64.0
+        },
+        "widthOverImageWidth": {
+          "count": 10280,
+          "min": 0.05,
+          "p25": 0.05,
+          "median": 0.05,
+          "p75": 0.05,
+          "max": 0.05,
+          "mean": 0.05
+        },
+        "heightOverImageHeight": {
+          "count": 10280,
+          "min": 0.08888888888888889,
+          "p25": 0.08888888888888889,
+          "median": 0.08888888888888889,
+          "p75": 0.08888888888888889,
+          "max": 0.08888888888888889,
+          "mean": 0.08888888888888889
+        },
+        "areaOverImageArea": {
+          "count": 10280,
+          "min": 0.0044444444444444444,
+          "p25": 0.0044444444444444444,
+          "median": 0.0044444444444444444,
+          "p75": 0.0044444444444444444,
+          "max": 0.0044444444444444444,
+          "mean": 0.0044444444444444444
+        }
+      },
+      "densityClass": "medium density",
+      "sampleFrames": [
+        1,
+        116,
+        231,
+        347,
+        462,
+        577
+      ],
+      "sampleMontage": "artifacts\\analysis\\ants_v2_design\\public_sequence_samples\\Seq0008_sample_frames.jpg"
+    },
+    "Seq0009": {
+      "sequence": "Seq0009",
+      "role": "PUBLIC_CANDIDATE_SOURCE",
+      "environment": "outdoor",
+      "zipDirectory": "Ant_dataset/OutdoorDataset/Seq0009Object50Image64",
+      "seqinfoName": "Seq0009Object10Image64",
+      "frameCount": 526,
+      "resolution": {
+        "width": 1280,
+        "height": 720
+      },
+      "fps": 30,
+      "gtAnnotationCount": 27902,
+      "malformedGtRows": 0,
+      "uniqueTrackingIds": 193,
+      "antsPerFrame": {
+        "mean": 53.045627376425855,
+        "median": 53.0,
+        "min": 43,
+        "max": 61
+      },
+      "bbox": {
+        "widthPixels": {
+          "count": 27902,
+          "min": 64.0,
+          "p25": 64.0,
+          "median": 64.0,
+          "p75": 64.0,
+          "max": 64.0,
+          "mean": 64.0
+        },
+        "heightPixels": {
+          "count": 27902,
+          "min": 64.0,
+          "p25": 64.0,
+          "median": 64.0,
+          "p75": 64.0,
+          "max": 64.0,
+          "mean": 64.0
+        },
+        "widthOverImageWidth": {
+          "count": 27902,
+          "min": 0.05,
+          "p25": 0.05,
+          "median": 0.05,
+          "p75": 0.05,
+          "max": 0.05,
+          "mean": 0.05
+        },
+        "heightOverImageHeight": {
+          "count": 27902,
+          "min": 0.08888888888888889,
+          "p25": 0.08888888888888889,
+          "median": 0.08888888888888889,
+          "p75": 0.08888888888888889,
+          "max": 0.08888888888888889,
+          "mean": 0.08888888888888889
+        },
+        "areaOverImageArea": {
+          "count": 27902,
+          "min": 0.0044444444444444444,
+          "p25": 0.0044444444444444444,
+          "median": 0.0044444444444444444,
+          "p75": 0.0044444444444444444,
+          "max": 0.0044444444444444444,
+          "mean": 0.0044444444444444444
+        }
+      },
+      "densityClass": "high density",
+      "sampleFrames": [
+        1,
+        106,
+        211,
+        316,
+        421,
+        526
+      ],
+      "sampleMontage": "artifacts\\analysis\\ants_v2_design\\public_sequence_samples\\Seq0009_sample_frames.jpg"
+    },
+    "Seq0010": {
+      "sequence": "Seq0010",
+      "role": "PUBLIC_CANDIDATE_SOURCE",
+      "environment": "outdoor",
+      "zipDirectory": "Ant_dataset/OutdoorDataset/Seq0010Object30Image64",
+      "seqinfoName": "Seq0010Object10Image64",
+      "frameCount": 526,
+      "resolution": {
+        "width": 1280,
+        "height": 720
+      },
+      "fps": 30,
+      "gtAnnotationCount": 22044,
+      "malformedGtRows": 0,
+      "uniqueTrackingIds": 101,
+      "antsPerFrame": {
+        "mean": 38.28136882129277,
+        "median": 39.0,
+        "min": 30,
+        "max": 44
+      },
+      "bbox": {
+        "widthPixels": {
+          "count": 22044,
+          "min": 64.0,
+          "p25": 64.0,
+          "median": 64.0,
+          "p75": 64.0,
+          "max": 64.0,
+          "mean": 64.0
+        },
+        "heightPixels": {
+          "count": 22044,
+          "min": 64.0,
+          "p25": 64.0,
+          "median": 64.0,
+          "p75": 64.0,
+          "max": 64.0,
+          "mean": 64.0
+        },
+        "widthOverImageWidth": {
+          "count": 22044,
+          "min": 0.05,
+          "p25": 0.05,
+          "median": 0.05,
+          "p75": 0.05,
+          "max": 0.05,
+          "mean": 0.05
+        },
+        "heightOverImageHeight": {
+          "count": 22044,
+          "min": 0.08888888888888889,
+          "p25": 0.08888888888888889,
+          "median": 0.08888888888888889,
+          "p75": 0.08888888888888889,
+          "max": 0.08888888888888889,
+          "mean": 0.08888888888888889
+        },
+        "areaOverImageArea": {
+          "count": 22044,
+          "min": 0.0044444444444444444,
+          "p25": 0.0044444444444444444,
+          "median": 0.0044444444444444444,
+          "p75": 0.0044444444444444444,
+          "max": 0.0044444444444444444,
+          "mean": 0.0044444444444444444
+        }
+      },
+      "densityClass": "high density",
+      "sampleFrames": [
+        1,
+        106,
+        211,
+        316,
+        421,
+        526
+      ],
+      "sampleMontage": "artifacts\\analysis\\ants_v2_design\\public_sequence_samples\\Seq0010_sample_frames.jpg"
+    }
+  }
+}

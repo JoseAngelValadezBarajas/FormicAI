@@ -1,0 +1,1887 @@
+{
+  "accepted": {
+    "AntsNet": 40,
+    "ant2": 27,
+    "total": 67
+  },
+  "annotationPolicy": {
+    "boxPolicy": "one physical adult ant = one tight visible body box around head + thorax + abdomen; no intentional leg/antenna-tip padding; boxes for different ants may overlap",
+    "classMapping": {
+      "0": "ant"
+    },
+    "forbidden": [
+      "Label Assist with ants_v1 or ants_v2",
+      "pseudo-labeling",
+      "original AntsNet labels",
+      "historical ant2 labels",
+      "empty hard-negative labels before human zero-ant verification"
+    ],
+    "notAnt": [
+      "brood",
+      "larva",
+      "pupa",
+      "cocoon",
+      "food",
+      "cotton",
+      "substrate",
+      "reflections"
+    ],
+    "positiveAdultAnt": [
+      "queen",
+      "worker",
+      "major",
+      "minor",
+      "replete"
+    ]
+  },
+  "batches": {
+    "ants_v3_ant2": {
+      "accepted": 27,
+      "attempted": 27,
+      "duplicates": 0,
+      "rejected": 0,
+      "source": "ant2",
+      "tags": [
+        "ants_v3",
+        "train",
+        "source_ant2",
+        "own_colony",
+        "mixed_scale"
+      ]
+    },
+    "ants_v3_antsnet": {
+      "accepted": 40,
+      "attempted": 40,
+      "duplicates": 0,
+      "rejected": 0,
+      "source": "AntsNet",
+      "tags": [
+        "ants_v3",
+        "train",
+        "source_antsnet",
+        "public",
+        "mixed_scale"
+      ]
+    },
+    "ants_v3_hard_negative": {
+      "accepted": 0,
+      "attempted": 0,
+      "duplicates": 0,
+      "reason": "hard-negative candidates remain REVIEW and were not uploaded",
+      "rejected": 0
+    }
+  },
+  "duplicates": {
+    "AntsNet": 0,
+    "ant2": 0,
+    "total": 0
+  },
+  "expected": {
+    "AntsNet": 40,
+    "annotations": 0,
+    "ant2": 27,
+    "hardNegativeCandidates": 0,
+    "split": "train",
+    "total": 67
+  },
+  "experiment": "ants_v3_mixedscale_e01",
+  "hardNegativeUploadCount": 0,
+  "noAutomaticAnnotation": true,
+  "noLabelsUploaded": true,
+  "noPseudoLabeling": true,
+  "noTrainingPerformed": true,
+  "project": {
+    "action": "reused_existing_project",
+    "id": "jose-angel-valadez-barajas/formicai-ants-v3",
+    "name": "FormicAI Ants v3",
+    "slug": "formicai-ants-v3",
+    "splitsBeforeUpload": {
+      "test": 0,
+      "train": 0,
+      "valid": 0
+    },
+    "type": "object-detection"
+  },
+  "rejected": {
+    "AntsNet": 0,
+    "ant2": 0,
+    "items": [],
+    "total": 0
+  },
+  "schemaVersion": "1.0",
+  "status": "PASS",
+  "statusReasons": [],
+  "uploadDateUtc": "2026-08-13T06:25:04.764402+00:00",
+  "uploadResults": [
+    {
+      "batch_name": "ants_v3_antsnet",
+      "filename": "PA050405_JPG.rf.b8e264074ef5eeba5936a4b80c14be14.jpg",
+      "response": {
+        "annotation": null,
+        "image": {
+          "id": "h0MFHARxPYFeiTUQ3Wkz",
+          "success": true
+        },
+        "upload_retry_attempts": 0,
+        "upload_time": 1.9116122722625732
+      },
+      "source": "AntsNet",
+      "split": "train",
+      "status": "accepted",
+      "tag_names": [
+        "ants_v3",
+        "train",
+        "source_antsnet",
+        "public",
+        "mixed_scale"
+      ]
+    },
+    {
+      "batch_name": "ants_v3_antsnet",
+      "filename": "P1011354-1-_JPG.rf.3860c0883c126647064bee7cdc133bac.jpg",
+      "response": {
+        "annotation": null,
+        "image": {
+          "id": "wJQKuFMni9WGutFOFps8",
+          "success": true
+        },
+        "upload_retry_attempts": 0,
+        "upload_time": 2.4237334728240967
+      },
+      "source": "AntsNet",
+      "split": "train",
+      "status": "accepted",
+      "tag_names": [
+        "ants_v3",
+        "train",
+        "source_antsnet",
+        "public",
+        "mixed_scale"
+      ]
+    },
+    {
+      "batch_name": "ants_v3_antsnet",
+      "filename": "P1011432_JPG.rf.8fdf006f1fd5a4f1b2edfaf8d46e0fd6.jpg",
+      "response": {
+        "annotation": null,
+        "image": {
+          "id": "PhPrqM97ooDbnB9MbLm2",
+          "success": true
+        },
+        "upload_retry_attempts": 0,
+        "upload_time": 1.8150286674499512
+      },
+      "source": "AntsNet",
+      "split": "train",
+      "status": "accepted",
+      "tag_names": [
+        "ants_v3",
+        "train",
+        "source_antsnet",
+        "public",
+        "mixed_scale"
+      ]
+    },
+    {
+      "batch_name": "ants_v3_antsnet",
+      "filename": "P1011358_JPG.rf.f2ef7ee49a456228d64a8a68b20351b6.jpg",
+      "response": {
+        "annotation": null,
+        "image": {
+          "id": "fC3zvkalNRlBwEs4gOUY",
+          "success": true
+        },
+        "upload_retry_attempts": 0,
+        "upload_time": 2.442873477935791
+      },
+      "source": "AntsNet",
+      "split": "train",
+      "status": "accepted",
+      "tag_names": [
+        "ants_v3",
+        "train",
+        "source_antsnet",
+        "public",
+        "mixed_scale"
+      ]
+    },
+    {
+      "batch_name": "ants_v3_antsnet",
+      "filename": "IMG_8778_JPG.rf.8f1f1982e0a1c5c1112182e5bb2f3e7c.jpg",
+      "response": {
+        "annotation": null,
+        "image": {
+          "id": "1M6oY5khaovtChnBOllt",
+          "success": true
+        },
+        "upload_retry_attempts": 0,
+        "upload_time": 0.9996440410614014
+      },
+      "source": "AntsNet",
+      "split": "train",
+      "status": "accepted",
+      "tag_names": [
+        "ants_v3",
+        "train",
+        "source_antsnet",
+        "public",
+        "mixed_scale"
+      ]
+    },
+    {
+      "batch_name": "ants_v3_antsnet",
+      "filename": "IMG_8782_JPG.rf.5aadbb542764c2adb11cef9b04b12fc4.jpg",
+      "response": {
+        "annotation": null,
+        "image": {
+          "id": "2cc30qHgksHqZXdAdZCR",
+          "success": true
+        },
+        "upload_retry_attempts": 0,
+        "upload_time": 0.7794504165649414
+      },
+      "source": "AntsNet",
+      "split": "train",
+      "status": "accepted",
+      "tag_names": [
+        "ants_v3",
+        "train",
+        "source_antsnet",
+        "public",
+        "mixed_scale"
+      ]
+    },
+    {
+      "batch_name": "ants_v3_antsnet",
+      "filename": "P1011413_JPG.rf.9d8b46db3a9d852069d29a7feb460113.jpg",
+      "response": {
+        "annotation": null,
+        "image": {
+          "id": "d9gUlJcom8YP0w1ScPKp",
+          "success": true
+        },
+        "upload_retry_attempts": 0,
+        "upload_time": 1.7934439182281494
+      },
+      "source": "AntsNet",
+      "split": "train",
+      "status": "accepted",
+      "tag_names": [
+        "ants_v3",
+        "train",
+        "source_antsnet",
+        "public",
+        "mixed_scale"
+      ]
+    },
+    {
+      "batch_name": "ants_v3_antsnet",
+      "filename": "ants-6_jpg.rf.7ea2a73a1d181bb18ec009bc12f6fb45.jpg",
+      "response": {
+        "annotation": null,
+        "image": {
+          "id": "1FAy3RBQ40880DvwPEDR",
+          "success": true
+        },
+        "upload_retry_attempts": 0,
+        "upload_time": 0.7224533557891846
+      },
+      "source": "AntsNet",
+      "split": "train",
+      "status": "accepted",
+      "tag_names": [
+        "ants_v3",
+        "train",
+        "source_antsnet",
+        "public",
+        "mixed_scale"
+      ]
+    },
+    {
+      "batch_name": "ants_v3_antsnet",
+      "filename": "ants-4_jpg.rf.cd994df8482faf8fd8d47bae1b5774ca.jpg",
+      "response": {
+        "annotation": null,
+        "image": {
+          "id": "2yRiaQld9WRZkwBG2fY0",
+          "success": true
+        },
+        "upload_retry_attempts": 0,
+        "upload_time": 1.1165506839752197
+      },
+      "source": "AntsNet",
+      "split": "train",
+      "status": "accepted",
+      "tag_names": [
+        "ants_v3",
+        "train",
+        "source_antsnet",
+        "public",
+        "mixed_scale"
+      ]
+    },
+    {
+      "batch_name": "ants_v3_antsnet",
+      "filename": "PA281465_JPG.rf.64cd61dc57659cea67e535bef8fd1dcf.jpg",
+      "response": {
+        "annotation": null,
+        "image": {
+          "id": "MKz7HM62x7cDxIh4biEW",
+          "success": true
+        },
+        "upload_retry_attempts": 0,
+        "upload_time": 1.4807891845703125
+      },
+      "source": "AntsNet",
+      "split": "train",
+      "status": "accepted",
+      "tag_names": [
+        "ants_v3",
+        "train",
+        "source_antsnet",
+        "public",
+        "mixed_scale"
+      ]
+    },
+    {
+      "batch_name": "ants_v3_antsnet",
+      "filename": "messor_barbarus_jpg.rf.9a5360a2991e94175446d4c5a0b19681.jpg",
+      "response": {
+        "annotation": null,
+        "image": {
+          "id": "oB577QmcORFheWdnUbGm",
+          "success": true
+        },
+        "upload_retry_attempts": 0,
+        "upload_time": 0.6658117771148682
+      },
+      "source": "AntsNet",
+      "split": "train",
+      "status": "accepted",
+      "tag_names": [
+        "ants_v3",
+        "train",
+        "source_antsnet",
+        "public",
+        "mixed_scale"
+      ]
+    },
+    {
+      "batch_name": "ants_v3_antsnet",
+      "filename": "20201015_185828_jpg.rf.dc1bfb7eb6ce62f31bc07be4827f499b.jpg",
+      "response": {
+        "annotation": null,
+        "image": {
+          "id": "pc7aRn4YhZHVzrRLrUzF",
+          "success": true
+        },
+        "upload_retry_attempts": 0,
+        "upload_time": 1.569021463394165
+      },
+      "source": "AntsNet",
+      "split": "train",
+      "status": "accepted",
+      "tag_names": [
+        "ants_v3",
+        "train",
+        "source_antsnet",
+        "public",
+        "mixed_scale"
+      ]
+    },
+    {
+      "batch_name": "ants_v3_antsnet",
+      "filename": "20201015_185843_jpg.rf.eb66861bf18d835af93236617619e158.jpg",
+      "response": {
+        "annotation": null,
+        "image": {
+          "id": "eCbDogfSs1IX5HYQIueQ",
+          "success": true
+        },
+        "upload_retry_attempts": 0,
+        "upload_time": 1.9288499355316162
+      },
+      "source": "AntsNet",
+      "split": "train",
+      "status": "accepted",
+      "tag_names": [
+        "ants_v3",
+        "train",
+        "source_antsnet",
+        "public",
+        "mixed_scale"
+      ]
+    },
+    {
+      "batch_name": "ants_v3_antsnet",
+      "filename": "PXL_20210213_104333581_jpg.rf.4f2ee52a91d2166d568c29f5fb78e934.jpg",
+      "response": {
+        "annotation": null,
+        "image": {
+          "id": "kYpnmPGcW46rcy6tCNpM",
+          "success": true
+        },
+        "upload_retry_attempts": 0,
+        "upload_time": 1.2503015995025635
+      },
+      "source": "AntsNet",
+      "split": "train",
+      "status": "accepted",
+      "tag_names": [
+        "ants_v3",
+        "train",
+        "source_antsnet",
+        "public",
+        "mixed_scale"
+      ]
+    },
+    {
+      "batch_name": "ants_v3_antsnet",
+      "filename": "PXL_20201231_072834451_jpg.rf.651e267b5b27e1d39699c03c66504d80.jpg",
+      "response": {
+        "annotation": null,
+        "image": {
+          "id": "wendk4jrYdVR95UEzxE3",
+          "success": true
+        },
+        "upload_retry_attempts": 0,
+        "upload_time": 2.064011335372925
+      },
+      "source": "AntsNet",
+      "split": "train",
+      "status": "accepted",
+      "tag_names": [
+        "ants_v3",
+        "train",
+        "source_antsnet",
+        "public",
+        "mixed_scale"
+      ]
+    },
+    {
+      "batch_name": "ants_v3_antsnet",
+      "filename": "PXL_20201013_190238010-2_jpg.rf.5dfc475f225730757341e6b6ab608a7f.jpg",
+      "response": {
+        "annotation": null,
+        "image": {
+          "id": "kXuzUDnM2rIiJyH4NGV1",
+          "success": true
+        },
+        "upload_retry_attempts": 0,
+        "upload_time": 1.9258251190185547
+      },
+      "source": "AntsNet",
+      "split": "train",
+      "status": "accepted",
+      "tag_names": [
+        "ants_v3",
+        "train",
+        "source_antsnet",
+        "public",
+        "mixed_scale"
+      ]
+    },
+    {
+      "batch_name": "ants_v3_antsnet",
+      "filename": "PXL_20210404_022730755-2_jpg.rf.5fdd3713fc44452816870fe82c529c99.jpg",
+      "response": {
+        "annotation": null,
+        "image": {
+          "id": "0EhkJsTa7jQHbj8W71Vi",
+          "success": true
+        },
+        "upload_retry_attempts": 0,
+        "upload_time": 0.8123550415039062
+      },
+      "source": "AntsNet",
+      "split": "train",
+      "status": "accepted",
+      "tag_names": [
+        "ants_v3",
+        "train",
+        "source_antsnet",
+        "public",
+        "mixed_scale"
+      ]
+    },
+    {
+      "batch_name": "ants_v3_antsnet",
+      "filename": "PXL_20210404_022729989-2_jpg.rf.137a9e16fc12d779db96ef53c9606579.jpg",
+      "response": {
+        "annotation": null,
+        "image": {
+          "id": "qySi6rW0gvYbJGnIJtZ7",
+          "success": true
+        },
+        "upload_retry_attempts": 0,
+        "upload_time": 0.8113727569580078
+      },
+      "source": "AntsNet",
+      "split": "train",
+      "status": "accepted",
+      "tag_names": [
+        "ants_v3",
+        "train",
+        "source_antsnet",
+        "public",
+        "mixed_scale"
+      ]
+    },
+    {
+      "batch_name": "ants_v3_antsnet",
+      "filename": "Pogo-rugo_jpg.rf.cf8ef6849dfeb599dfa4ad19b6d250b0.jpg",
+      "response": {
+        "annotation": null,
+        "image": {
+          "id": "LMmh2LradgYfdOczRoqf",
+          "success": true
+        },
+        "upload_retry_attempts": 0,
+        "upload_time": 3.0736591815948486
+      },
+      "source": "AntsNet",
+      "split": "train",
+      "status": "accepted",
+      "tag_names": [
+        "ants_v3",
+        "train",
+        "source_antsnet",
+        "public",
+        "mixed_scale"
+      ]
+    },
+    {
+      "batch_name": "ants_v3_antsnet",
+      "filename": "dolichoderinae_jpg.rf.d33d2bf792f0a4bdf97e3ff71e4d9817.jpg",
+      "response": {
+        "annotation": null,
+        "image": {
+          "id": "OYuA5jWAh0i0o2MtGiyc",
+          "success": true
+        },
+        "upload_retry_attempts": 0,
+        "upload_time": 0.7598831653594971
+      },
+      "source": "AntsNet",
+      "split": "train",
+      "status": "accepted",
+      "tag_names": [
+        "ants_v3",
+        "train",
+        "source_antsnet",
+        "public",
+        "mixed_scale"
+      ]
+    },
+    {
+      "batch_name": "ants_v3_antsnet",
+      "filename": "PIC_0161_JPG.rf.12a05c01b7ee5d1023e1272df5afa3e3.jpg",
+      "response": {
+        "annotation": null,
+        "image": {
+          "id": "bksLol1Cd5NpL5LPHTPe",
+          "success": true
+        },
+        "upload_retry_attempts": 0,
+        "upload_time": 0.9875876903533936
+      },
+      "source": "AntsNet",
+      "split": "train",
+      "status": "accepted",
+      "tag_names": [
+        "ants_v3",
+        "train",
+        "source_antsnet",
+        "public",
+        "mixed_scale"
+      ]
+    },
+    {
+      "batch_name": "ants_v3_antsnet",
+      "filename": "PIC_0163_JPG.rf.4967114187f8743455a5dd0f62224cb7.jpg",
+      "response": {
+        "annotation": null,
+        "image": {
+          "id": "HKmYYUwM8gzAVmotW56S",
+          "success": true
+        },
+        "upload_retry_attempts": 0,
+        "upload_time": 0.8016233444213867
+      },
+      "source": "AntsNet",
+      "split": "train",
+      "status": "accepted",
+      "tag_names": [
+        "ants_v3",
+        "train",
+        "source_antsnet",
+        "public",
+        "mixed_scale"
+      ]
+    },
+    {
+      "batch_name": "ants_v3_antsnet",
+      "filename": "IMG-20201001-WA0003_jpg.rf.94487368caaa4d8737ba61e7e6b8e62c.jpg",
+      "response": {
+        "annotation": null,
+        "image": {
+          "id": "ofZGApGbiLAgswuquSjv",
+          "success": true
+        },
+        "upload_retry_attempts": 0,
+        "upload_time": 0.7172715663909912
+      },
+      "source": "AntsNet",
+      "split": "train",
+      "status": "accepted",
+      "tag_names": [
+        "ants_v3",
+        "train",
+        "source_antsnet",
+        "public",
+        "mixed_scale"
+      ]
+    },
+    {
+      "batch_name": "ants_v3_antsnet",
+      "filename": "IMG-20201001-WA0002_jpg.rf.89aeb771d37a22f67742b522ec32e3a7.jpg",
+      "response": {
+        "annotation": null,
+        "image": {
+          "id": "P7VrdXePBXLERGNYjcM1",
+          "success": true
+        },
+        "upload_retry_attempts": 0,
+        "upload_time": 0.6818556785583496
+      },
+      "source": "AntsNet",
+      "split": "train",
+      "status": "accepted",
+      "tag_names": [
+        "ants_v3",
+        "train",
+        "source_antsnet",
+        "public",
+        "mixed_scale"
+      ]
+    },
+    {
+      "batch_name": "ants_v3_antsnet",
+      "filename": "PA050409_JPG.rf.645da5c7946df4af983a89d8686cf197.jpg",
+      "response": {
+        "annotation": null,
+        "image": {
+          "id": "U6Wo3rwXKMCSoRYv8Mnk",
+          "success": true
+        },
+        "upload_retry_attempts": 0,
+        "upload_time": 1.6868295669555664
+      },
+      "source": "AntsNet",
+      "split": "train",
+      "status": "accepted",
+      "tag_names": [
+        "ants_v3",
+        "train",
+        "source_antsnet",
+        "public",
+        "mixed_scale"
+      ]
+    },
+    {
+      "batch_name": "ants_v3_antsnet",
+      "filename": "PA060434_JPG.rf.3737151c3863d2b7c7f69cb82b01c071.jpg",
+      "response": {
+        "annotation": null,
+        "image": {
+          "id": "IFBsWjdk6X8LOTlueXel",
+          "success": true
+        },
+        "upload_retry_attempts": 0,
+        "upload_time": 1.5450246334075928
+      },
+      "source": "AntsNet",
+      "split": "train",
+      "status": "accepted",
+      "tag_names": [
+        "ants_v3",
+        "train",
+        "source_antsnet",
+        "public",
+        "mixed_scale"
+      ]
+    },
+    {
+      "batch_name": "ants_v3_antsnet",
+      "filename": "IMG_20200714_234333-2_jpg.rf.4df86039c52d2d695ffbba38447a73c4.jpg",
+      "response": {
+        "annotation": null,
+        "image": {
+          "id": "F1PsFYsTymTVZEZhh3Mv",
+          "success": true
+        },
+        "upload_retry_attempts": 0,
+        "upload_time": 0.711869478225708
+      },
+      "source": "AntsNet",
+      "split": "train",
+      "status": "accepted",
+      "tag_names": [
+        "ants_v3",
+        "train",
+        "source_antsnet",
+        "public",
+        "mixed_scale"
+      ]
+    },
+    {
+      "batch_name": "ants_v3_antsnet",
+      "filename": "PA060480_JPG.rf.51d6646d0151c31d0ecb1d35e4448841.jpg",
+      "response": {
+        "annotation": null,
+        "image": {
+          "id": "am1pwqg1fEWOibQa9Cqa",
+          "success": true
+        },
+        "upload_retry_attempts": 0,
+        "upload_time": 1.8202619552612305
+      },
+      "source": "AntsNet",
+      "split": "train",
+      "status": "accepted",
+      "tag_names": [
+        "ants_v3",
+        "train",
+        "source_antsnet",
+        "public",
+        "mixed_scale"
+      ]
+    },
+    {
+      "batch_name": "ants_v3_antsnet",
+      "filename": "campo-vicinus--3-_jpg.rf.1e27959b926d6d524399820fa678df19.jpg",
+      "response": {
+        "annotation": null,
+        "image": {
+          "id": "mTOq6U9WQPCfw8bV1Ojx",
+          "success": true
+        },
+        "upload_retry_attempts": 0,
+        "upload_time": 1.5083248615264893
+      },
+      "source": "AntsNet",
+      "split": "train",
+      "status": "accepted",
+      "tag_names": [
+        "ants_v3",
+        "train",
+        "source_antsnet",
+        "public",
+        "mixed_scale"
+      ]
+    },
+    {
+      "batch_name": "ants_v3_antsnet",
+      "filename": "IMG_20200704_215353_jpg.rf.26902cdc9e4b9b7139654214795dd311.jpg",
+      "response": {
+        "annotation": null,
+        "image": {
+          "id": "w9nkpGsErSH4Ql1OR3kY",
+          "success": true
+        },
+        "upload_retry_attempts": 0,
+        "upload_time": 2.600414752960205
+      },
+      "source": "AntsNet",
+      "split": "train",
+      "status": "accepted",
+      "tag_names": [
+        "ants_v3",
+        "train",
+        "source_antsnet",
+        "public",
+        "mixed_scale"
+      ]
+    },
+    {
+      "batch_name": "ants_v3_antsnet",
+      "filename": "IMG_20200706_121654_jpg.rf.a163b3f5d9ca6ff66a25f8ca2f1447c5.jpg",
+      "response": {
+        "annotation": null,
+        "image": {
+          "id": "GX0SIB9tryaYaATvOsRV",
+          "success": true
+        },
+        "upload_retry_attempts": 0,
+        "upload_time": 1.4689102172851562
+      },
+      "source": "AntsNet",
+      "split": "train",
+      "status": "accepted",
+      "tag_names": [
+        "ants_v3",
+        "train",
+        "source_antsnet",
+        "public",
+        "mixed_scale"
+      ]
+    },
+    {
+      "batch_name": "ants_v3_antsnet",
+      "filename": "IMG_20200710_221538_jpg.rf.7eb022008577b6666671d5a9c623fcbf.jpg",
+      "response": {
+        "annotation": null,
+        "image": {
+          "id": "9hZkBxCGdJP3TcDOxslq",
+          "success": true
+        },
+        "upload_retry_attempts": 0,
+        "upload_time": 1.6495099067687988
+      },
+      "source": "AntsNet",
+      "split": "train",
+      "status": "accepted",
+      "tag_names": [
+        "ants_v3",
+        "train",
+        "source_antsnet",
+        "public",
+        "mixed_scale"
+      ]
+    },
+    {
+      "batch_name": "ants_v3_antsnet",
+      "filename": "PA050408_JPG.rf.5926379d8f2ade13750705f781ea5012.jpg",
+      "response": {
+        "annotation": null,
+        "image": {
+          "id": "gL5olEhuQYfJjQaVHyqo",
+          "success": true
+        },
+        "upload_retry_attempts": 0,
+        "upload_time": 1.7677185535430908
+      },
+      "source": "AntsNet",
+      "split": "train",
+      "status": "accepted",
+      "tag_names": [
+        "ants_v3",
+        "train",
+        "source_antsnet",
+        "public",
+        "mixed_scale"
+      ]
+    },
+    {
+      "batch_name": "ants_v3_antsnet",
+      "filename": "ants-5_jpg.rf.11b9011aad4282159486da5e94038387.jpg",
+      "response": {
+        "annotation": null,
+        "image": {
+          "id": "HfxqRkTsMYjTvqR6llHt",
+          "success": true
+        },
+        "upload_retry_attempts": 0,
+        "upload_time": 0.7819974422454834
+      },
+      "source": "AntsNet",
+      "split": "train",
+      "status": "accepted",
+      "tag_names": [
+        "ants_v3",
+        "train",
+        "source_antsnet",
+        "public",
+        "mixed_scale"
+      ]
+    },
+    {
+      "batch_name": "ants_v3_antsnet",
+      "filename": "PXL_20210213_104329420_jpg.rf.745a8d66f424eb0000155081dae5c76b.jpg",
+      "response": {
+        "annotation": null,
+        "image": {
+          "id": "9JO09XYxcD8xanKeevWx",
+          "success": true
+        },
+        "upload_retry_attempts": 0,
+        "upload_time": 1.4551422595977783
+      },
+      "source": "AntsNet",
+      "split": "train",
+      "status": "accepted",
+      "tag_names": [
+        "ants_v3",
+        "train",
+        "source_antsnet",
+        "public",
+        "mixed_scale"
+      ]
+    },
+    {
+      "batch_name": "ants_v3_antsnet",
+      "filename": "PXL_20210213_104340498_jpg.rf.8a8d77e58a10320bff97f3462986c9fe.jpg",
+      "response": {
+        "annotation": null,
+        "image": {
+          "id": "vwr10IrCwTr44bIag9iu",
+          "success": true
+        },
+        "upload_retry_attempts": 0,
+        "upload_time": 1.4220285415649414
+      },
+      "source": "AntsNet",
+      "split": "train",
+      "status": "accepted",
+      "tag_names": [
+        "ants_v3",
+        "train",
+        "source_antsnet",
+        "public",
+        "mixed_scale"
+      ]
+    },
+    {
+      "batch_name": "ants_v3_antsnet",
+      "filename": "PXL_20210324_014344257_jpg.rf.1345d6cef92526df4cef444dea360624.jpg",
+      "response": {
+        "annotation": null,
+        "image": {
+          "id": "Or9yof7LiWNPDSYXdfBh",
+          "success": true
+        },
+        "upload_retry_attempts": 0,
+        "upload_time": 1.3299975395202637
+      },
+      "source": "AntsNet",
+      "split": "train",
+      "status": "accepted",
+      "tag_names": [
+        "ants_v3",
+        "train",
+        "source_antsnet",
+        "public",
+        "mixed_scale"
+      ]
+    },
+    {
+      "batch_name": "ants_v3_antsnet",
+      "filename": "20201015_185832_jpg.rf.310292f0864827d15dcc0fcb521ba5dc.jpg",
+      "response": {
+        "annotation": null,
+        "image": {
+          "id": "1bay9DngKxSG9YVNSaj1",
+          "success": true
+        },
+        "upload_retry_attempts": 0,
+        "upload_time": 1.2059264183044434
+      },
+      "source": "AntsNet",
+      "split": "train",
+      "status": "accepted",
+      "tag_names": [
+        "ants_v3",
+        "train",
+        "source_antsnet",
+        "public",
+        "mixed_scale"
+      ]
+    },
+    {
+      "batch_name": "ants_v3_antsnet",
+      "filename": "20201015_185838_jpg.rf.cf650d2b933beb82d408e64b7ec2e8c8.jpg",
+      "response": {
+        "annotation": null,
+        "image": {
+          "id": "SxoJPTDE0GtpmsdsAPdM",
+          "success": true
+        },
+        "upload_retry_attempts": 0,
+        "upload_time": 1.9329710006713867
+      },
+      "source": "AntsNet",
+      "split": "train",
+      "status": "accepted",
+      "tag_names": [
+        "ants_v3",
+        "train",
+        "source_antsnet",
+        "public",
+        "mixed_scale"
+      ]
+    },
+    {
+      "batch_name": "ants_v3_antsnet",
+      "filename": "PIC_0162_JPG.rf.2c36aacce0dee62f865027930fa061d2.jpg",
+      "response": {
+        "annotation": null,
+        "image": {
+          "id": "628xRYsL9Rmdwdp0pywC",
+          "success": true
+        },
+        "upload_retry_attempts": 0,
+        "upload_time": 0.8883874416351318
+      },
+      "source": "AntsNet",
+      "split": "train",
+      "status": "accepted",
+      "tag_names": [
+        "ants_v3",
+        "train",
+        "source_antsnet",
+        "public",
+        "mixed_scale"
+      ]
+    },
+    {
+      "batch_name": "ants_v3_ant2",
+      "filename": "ant2_frame_000000_t0000-000_jpg.rf.6a638ed7ff141c5a131c28a222ae0f44.jpg",
+      "response": {
+        "annotation": null,
+        "image": {
+          "id": "jeZDkPAHjwhrgs5opd0T",
+          "success": true
+        },
+        "upload_retry_attempts": 0,
+        "upload_time": 0.7999293804168701
+      },
+      "source": "ant2",
+      "split": "train",
+      "status": "accepted",
+      "tag_names": [
+        "ants_v3",
+        "train",
+        "source_ant2",
+        "own_colony",
+        "mixed_scale"
+      ]
+    },
+    {
+      "batch_name": "ants_v3_ant2",
+      "filename": "ant2_frame_000021_t0000-701_jpg.rf.66f848fdc841c4468c97684a14a0092d.jpg",
+      "response": {
+        "annotation": null,
+        "image": {
+          "id": "rO1XNCwZWxe3WzX4wv85",
+          "success": true
+        },
+        "upload_retry_attempts": 0,
+        "upload_time": 0.7360422611236572
+      },
+      "source": "ant2",
+      "split": "train",
+      "status": "accepted",
+      "tag_names": [
+        "ants_v3",
+        "train",
+        "source_ant2",
+        "own_colony",
+        "mixed_scale"
+      ]
+    },
+    {
+      "batch_name": "ants_v3_ant2",
+      "filename": "ant2_frame_000042_t0001-401_jpg.rf.a36b5834a343fae7c6de92229d4dd626.jpg",
+      "response": {
+        "annotation": null,
+        "image": {
+          "id": "nTokgjL2F0wXago9Hx0f",
+          "success": true
+        },
+        "upload_retry_attempts": 0,
+        "upload_time": 0.6771290302276611
+      },
+      "source": "ant2",
+      "split": "train",
+      "status": "accepted",
+      "tag_names": [
+        "ants_v3",
+        "train",
+        "source_ant2",
+        "own_colony",
+        "mixed_scale"
+      ]
+    },
+    {
+      "batch_name": "ants_v3_ant2",
+      "filename": "ant2_frame_000056_t0001-868_jpg.rf.1cbf90fa3fcd5c8f127389875fbad6c4.jpg",
+      "response": {
+        "annotation": null,
+        "image": {
+          "id": "07mPgEpR70DFmieH4Q6H",
+          "success": true
+        },
+        "upload_retry_attempts": 0,
+        "upload_time": 0.6845979690551758
+      },
+      "source": "ant2",
+      "split": "train",
+      "status": "accepted",
+      "tag_names": [
+        "ants_v3",
+        "train",
+        "source_ant2",
+        "own_colony",
+        "mixed_scale"
+      ]
+    },
+    {
+      "batch_name": "ants_v3_ant2",
+      "filename": "ant2_frame_000077_t0002-569_jpg.rf.7b2f20ff6a5212929d96537e27b81523.jpg",
+      "response": {
+        "annotation": null,
+        "image": {
+          "id": "eBWGhssMlVzOM8iYuCJ7",
+          "success": true
+        },
+        "upload_retry_attempts": 0,
+        "upload_time": 0.6857755184173584
+      },
+      "source": "ant2",
+      "split": "train",
+      "status": "accepted",
+      "tag_names": [
+        "ants_v3",
+        "train",
+        "source_ant2",
+        "own_colony",
+        "mixed_scale"
+      ]
+    },
+    {
+      "batch_name": "ants_v3_ant2",
+      "filename": "ant2_frame_000091_t0003-036_jpg.rf.44cd5d3798ae8d537b116d49fac4f52e.jpg",
+      "response": {
+        "annotation": null,
+        "image": {
+          "id": "UtkQJYFoPHTFManL7hsE",
+          "success": true
+        },
+        "upload_retry_attempts": 0,
+        "upload_time": 0.6764910221099854
+      },
+      "source": "ant2",
+      "split": "train",
+      "status": "accepted",
+      "tag_names": [
+        "ants_v3",
+        "train",
+        "source_ant2",
+        "own_colony",
+        "mixed_scale"
+      ]
+    },
+    {
+      "batch_name": "ants_v3_ant2",
+      "filename": "ant2_frame_000112_t0003-737_jpg.rf.adae2bf15862175313b8974d592d2459.jpg",
+      "response": {
+        "annotation": null,
+        "image": {
+          "id": "aEK6L3YQnKMuKGX6mRjf",
+          "success": true
+        },
+        "upload_retry_attempts": 0,
+        "upload_time": 1.1850306987762451
+      },
+      "source": "ant2",
+      "split": "train",
+      "status": "accepted",
+      "tag_names": [
+        "ants_v3",
+        "train",
+        "source_ant2",
+        "own_colony",
+        "mixed_scale"
+      ]
+    },
+    {
+      "batch_name": "ants_v3_ant2",
+      "filename": "ant2_frame_000126_t0004-204_jpg.rf.6b8da0815be50475e796ed91ea025b24.jpg",
+      "response": {
+        "annotation": null,
+        "image": {
+          "id": "iKppTpxrMyit5KVJ98rp",
+          "success": true
+        },
+        "upload_retry_attempts": 0,
+        "upload_time": 0.7263145446777344
+      },
+      "source": "ant2",
+      "split": "train",
+      "status": "accepted",
+      "tag_names": [
+        "ants_v3",
+        "train",
+        "source_ant2",
+        "own_colony",
+        "mixed_scale"
+      ]
+    },
+    {
+      "batch_name": "ants_v3_ant2",
+      "filename": "ant2_frame_000133_t0004-438_jpg.rf.eb3ae7a968ce6e9eea48726402e856d3.jpg",
+      "response": {
+        "annotation": null,
+        "image": {
+          "id": "kgCN64biO7AUm404sf41",
+          "success": true
+        },
+        "upload_retry_attempts": 0,
+        "upload_time": 0.6571226119995117
+      },
+      "source": "ant2",
+      "split": "train",
+      "status": "accepted",
+      "tag_names": [
+        "ants_v3",
+        "train",
+        "source_ant2",
+        "own_colony",
+        "mixed_scale"
+      ]
+    },
+    {
+      "batch_name": "ants_v3_ant2",
+      "filename": "ant2_frame_000161_t0005-372_jpg.rf.466084ce20be5598a63ea1bbd0c520d2.jpg",
+      "response": {
+        "annotation": null,
+        "image": {
+          "id": "mYQ9Rb6eD3p1uxIqTnQB",
+          "success": true
+        },
+        "upload_retry_attempts": 0,
+        "upload_time": 0.6609268188476562
+      },
+      "source": "ant2",
+      "split": "train",
+      "status": "accepted",
+      "tag_names": [
+        "ants_v3",
+        "train",
+        "source_ant2",
+        "own_colony",
+        "mixed_scale"
+      ]
+    },
+    {
+      "batch_name": "ants_v3_ant2",
+      "filename": "ant2_frame_000182_t0006-072_jpg.rf.1f1bf5ee0305e5595449b9740e90ae9e.jpg",
+      "response": {
+        "annotation": null,
+        "image": {
+          "id": "hfxMO5yZpYwu4VyayjYL",
+          "success": true
+        },
+        "upload_retry_attempts": 0,
+        "upload_time": 0.6906368732452393
+      },
+      "source": "ant2",
+      "split": "train",
+      "status": "accepted",
+      "tag_names": [
+        "ants_v3",
+        "train",
+        "source_ant2",
+        "own_colony",
+        "mixed_scale"
+      ]
+    },
+    {
+      "batch_name": "ants_v3_ant2",
+      "filename": "ant2_frame_000203_t0006-773_jpg.rf.4e6ae3f3247bedd2711775f00306d7a9.jpg",
+      "response": {
+        "annotation": null,
+        "image": {
+          "id": "4LwHdgd3NkXHcQyHLdtL",
+          "success": true
+        },
+        "upload_retry_attempts": 0,
+        "upload_time": 0.7363061904907227
+      },
+      "source": "ant2",
+      "split": "train",
+      "status": "accepted",
+      "tag_names": [
+        "ants_v3",
+        "train",
+        "source_ant2",
+        "own_colony",
+        "mixed_scale"
+      ]
+    },
+    {
+      "batch_name": "ants_v3_ant2",
+      "filename": "ant2_frame_000224_t0007-474_jpg.rf.3498aa79a5968f826e1dd63b5a3f0706.jpg",
+      "response": {
+        "annotation": null,
+        "image": {
+          "id": "o36egoqXjWLTY3kC26mJ",
+          "success": true
+        },
+        "upload_retry_attempts": 0,
+        "upload_time": 0.7185189723968506
+      },
+      "source": "ant2",
+      "split": "train",
+      "status": "accepted",
+      "tag_names": [
+        "ants_v3",
+        "train",
+        "source_ant2",
+        "own_colony",
+        "mixed_scale"
+      ]
+    },
+    {
+      "batch_name": "ants_v3_ant2",
+      "filename": "ant2_frame_000238_t0007-941_jpg.rf.8bc910f58d0601d8d118a6ab93504bd3.jpg",
+      "response": {
+        "annotation": null,
+        "image": {
+          "id": "8RDow0GM8yNEA55purom",
+          "success": true
+        },
+        "upload_retry_attempts": 0,
+        "upload_time": 0.7735927104949951
+      },
+      "source": "ant2",
+      "split": "train",
+      "status": "accepted",
+      "tag_names": [
+        "ants_v3",
+        "train",
+        "source_ant2",
+        "own_colony",
+        "mixed_scale"
+      ]
+    },
+    {
+      "batch_name": "ants_v3_ant2",
+      "filename": "ant2_frame_000245_t0008-174_jpg.rf.432d1f28cda5b99ebf1bb7ac806ef9f5.jpg",
+      "response": {
+        "annotation": null,
+        "image": {
+          "id": "OX7Hef5VqqC1n3U0wGg4",
+          "success": true
+        },
+        "upload_retry_attempts": 0,
+        "upload_time": 0.6645843982696533
+      },
+      "source": "ant2",
+      "split": "train",
+      "status": "accepted",
+      "tag_names": [
+        "ants_v3",
+        "train",
+        "source_ant2",
+        "own_colony",
+        "mixed_scale"
+      ]
+    },
+    {
+      "batch_name": "ants_v3_ant2",
+      "filename": "ant2_frame_000273_t0009-109_jpg.rf.4b1c040decf46efa81e82e021672bd93.jpg",
+      "response": {
+        "annotation": null,
+        "image": {
+          "id": "ptpcHfPVEJta6IyAVVnp",
+          "success": true
+        },
+        "upload_retry_attempts": 0,
+        "upload_time": 1.0559921264648438
+      },
+      "source": "ant2",
+      "split": "train",
+      "status": "accepted",
+      "tag_names": [
+        "ants_v3",
+        "train",
+        "source_ant2",
+        "own_colony",
+        "mixed_scale"
+      ]
+    },
+    {
+      "batch_name": "ants_v3_ant2",
+      "filename": "ant2_frame_000294_t0009-809_jpg.rf.5e3a3faae93421c7cba0bb4dac921fa9.jpg",
+      "response": {
+        "annotation": null,
+        "image": {
+          "id": "EHY1s1L9IDJ3Q2GtTCLc",
+          "success": true
+        },
+        "upload_retry_attempts": 0,
+        "upload_time": 0.6876990795135498
+      },
+      "source": "ant2",
+      "split": "train",
+      "status": "accepted",
+      "tag_names": [
+        "ants_v3",
+        "train",
+        "source_ant2",
+        "own_colony",
+        "mixed_scale"
+      ]
+    },
+    {
+      "batch_name": "ants_v3_ant2",
+      "filename": "ant2_frame_000301_t0010-043_jpg.rf.e69be6b35f337a3951b808082e104bf2.jpg",
+      "response": {
+        "annotation": null,
+        "image": {
+          "id": "VN0U3jHzuo5z8AbjfN9t",
+          "success": true
+        },
+        "upload_retry_attempts": 0,
+        "upload_time": 0.799654483795166
+      },
+      "source": "ant2",
+      "split": "train",
+      "status": "accepted",
+      "tag_names": [
+        "ants_v3",
+        "train",
+        "source_ant2",
+        "own_colony",
+        "mixed_scale"
+      ]
+    },
+    {
+      "batch_name": "ants_v3_ant2",
+      "filename": "ant2_frame_000315_t0010-510_jpg.rf.23653084add308d50951ab748e0b782c.jpg",
+      "response": {
+        "annotation": null,
+        "image": {
+          "id": "gTRtEBfr3SzqSfFDBih9",
+          "success": true
+        },
+        "upload_retry_attempts": 0,
+        "upload_time": 0.66225266456604
+      },
+      "source": "ant2",
+      "split": "train",
+      "status": "accepted",
+      "tag_names": [
+        "ants_v3",
+        "train",
+        "source_ant2",
+        "own_colony",
+        "mixed_scale"
+      ]
+    },
+    {
+      "batch_name": "ants_v3_ant2",
+      "filename": "ant2_frame_000329_t0010-977_jpg.rf.44a724eba8384e947c7e1bb4808f2f91.jpg",
+      "response": {
+        "annotation": null,
+        "image": {
+          "id": "iVo8pplZct3HLXmFcy0U",
+          "success": true
+        },
+        "upload_retry_attempts": 0,
+        "upload_time": 0.6742980480194092
+      },
+      "source": "ant2",
+      "split": "train",
+      "status": "accepted",
+      "tag_names": [
+        "ants_v3",
+        "train",
+        "source_ant2",
+        "own_colony",
+        "mixed_scale"
+      ]
+    },
+    {
+      "batch_name": "ants_v3_ant2",
+      "filename": "ant2_frame_000350_t0011-678_jpg.rf.ede1e027d3016584084111ed00c40dab.jpg",
+      "response": {
+        "annotation": null,
+        "image": {
+          "id": "P34uyvjYPY77OgT7JsCO",
+          "success": true
+        },
+        "upload_retry_attempts": 0,
+        "upload_time": 0.7269558906555176
+      },
+      "source": "ant2",
+      "split": "train",
+      "status": "accepted",
+      "tag_names": [
+        "ants_v3",
+        "train",
+        "source_ant2",
+        "own_colony",
+        "mixed_scale"
+      ]
+    },
+    {
+      "batch_name": "ants_v3_ant2",
+      "filename": "ant2_frame_000364_t0012-145_jpg.rf.bc1608cb7027dfd577c0407c5c6d8548.jpg",
+      "response": {
+        "annotation": null,
+        "image": {
+          "id": "C0V5XzK7OzfnUdGZ1AT3",
+          "success": true
+        },
+        "upload_retry_attempts": 0,
+        "upload_time": 0.7122843265533447
+      },
+      "source": "ant2",
+      "split": "train",
+      "status": "accepted",
+      "tag_names": [
+        "ants_v3",
+        "train",
+        "source_ant2",
+        "own_colony",
+        "mixed_scale"
+      ]
+    },
+    {
+      "batch_name": "ants_v3_ant2",
+      "filename": "ant2_frame_000392_t0013-079_jpg.rf.55a39f21c6487873eb5d364976564ed6.jpg",
+      "response": {
+        "annotation": null,
+        "image": {
+          "id": "3bQZV4PoDq3YrC7fUS4M",
+          "success": true
+        },
+        "upload_retry_attempts": 0,
+        "upload_time": 1.8949370384216309
+      },
+      "source": "ant2",
+      "split": "train",
+      "status": "accepted",
+      "tag_names": [
+        "ants_v3",
+        "train",
+        "source_ant2",
+        "own_colony",
+        "mixed_scale"
+      ]
+    },
+    {
+      "batch_name": "ants_v3_ant2",
+      "filename": "ant2_frame_000413_t0013-780_jpg.rf.a4ae5e62bbec2da9c5d013f2ce979dbc.jpg",
+      "response": {
+        "annotation": null,
+        "image": {
+          "id": "8IfJJm4mjYI5D41qMVj0",
+          "success": true
+        },
+        "upload_retry_attempts": 0,
+        "upload_time": 0.6935911178588867
+      },
+      "source": "ant2",
+      "split": "train",
+      "status": "accepted",
+      "tag_names": [
+        "ants_v3",
+        "train",
+        "source_ant2",
+        "own_colony",
+        "mixed_scale"
+      ]
+    },
+    {
+      "batch_name": "ants_v3_ant2",
+      "filename": "ant2_frame_000427_t0014-247_jpg.rf.5e24f7e93d62f2e9b844be1d8b325e17.jpg",
+      "response": {
+        "annotation": null,
+        "image": {
+          "id": "sIZuh5gbRCqIeed3t9np",
+          "success": true
+        },
+        "upload_retry_attempts": 0,
+        "upload_time": 0.6498801708221436
+      },
+      "source": "ant2",
+      "split": "train",
+      "status": "accepted",
+      "tag_names": [
+        "ants_v3",
+        "train",
+        "source_ant2",
+        "own_colony",
+        "mixed_scale"
+      ]
+    },
+    {
+      "batch_name": "ants_v3_ant2",
+      "filename": "ant2_frame_000448_t0014-948_jpg.rf.3241a34f56a26f90002f899a36206737.jpg",
+      "response": {
+        "annotation": null,
+        "image": {
+          "id": "E0bjh7AGb0tbT52za08k",
+          "success": true
+        },
+        "upload_retry_attempts": 0,
+        "upload_time": 0.6802701950073242
+      },
+      "source": "ant2",
+      "split": "train",
+      "status": "accepted",
+      "tag_names": [
+        "ants_v3",
+        "train",
+        "source_ant2",
+        "own_colony",
+        "mixed_scale"
+      ]
+    },
+    {
+      "batch_name": "ants_v3_ant2",
+      "filename": "ant2_frame_000469_t0015-648_jpg.rf.bd623f91d6aa6a2a6443756d0a1f2bf3.jpg",
+      "response": {
+        "annotation": null,
+        "image": {
+          "id": "n6TcOM6QnyxZAd8RsBFC",
+          "success": true
+        },
+        "upload_retry_attempts": 0,
+        "upload_time": 0.6937708854675293
+      },
+      "source": "ant2",
+      "split": "train",
+      "status": "accepted",
+      "tag_names": [
+        "ants_v3",
+        "train",
+        "source_ant2",
+        "own_colony",
+        "mixed_scale"
+      ]
+    }
+  ],
+  "verification": {
+    "annotatedImagesCount": 0,
+    "hardNegativeNameHits": [],
+    "hardNegativeTagCount": 0,
+    "method": "Roboflow SDK project.search by upload tags and split fields; Roboflow display names may normalize .rf.<hash> filenames, so source tags plus upload response counts are used for final counts.",
+    "searchSamples": {
+      "source_ant2": [
+        {
+          "annotations": [],
+          "id": "jeZDkPAHjwhrgs5opd0T",
+          "labels": [],
+          "name": "ant2_frame_000000_t0000-000.jpg",
+          "split": "train",
+          "tags": [
+            "ants_v3",
+            "train",
+            "source_ant2",
+            "own_colony",
+            "mixed_scale"
+          ],
+          "user_metadata": {
+            "annotation_policy": "one physical adult ant = one tight visible body box around head + thorax + abdomen; no intentional leg/antenna-tip padding; boxes for different ants may overlap",
+            "bbox_scale_summary_reference_only": "large_ge_ant2_median_reference_from_design",
+            "brood_context": false,
+            "cotton_context": true,
+            "experiment": "ants_v3_mixedscale_e01",
+            "family_id": "ant2_fam_01_initial_queen_brood",
+            "food_context": false,
+            "frame_index": 0,
+            "historical_annotation_count_reference_only": 4,
+            "image_sha256": "76258cfdc10ddd81c3db028a9727828bc4fdd56bcff9781a02d4f2162968504e",
+            "no_historical_labels_uploaded": true,
+            "pack_filename": "ant2_frame_000000_t0000-000_jpg.rf.6a638ed7ff141c5a131c28a222ae0f44.jpg",
+            "queen_present": true,
+            "reflection_context": false,
+            "source": "ant2",
+            "source_manifest": "datasets/ants_v3_annotation_pack/ant2/metadata/final_manifest.jsonl",
+            "source_video": "samples/ant2.mp4",
+            "timestamp_seconds": 0
+          }
+        },
+        {
+          "annotations": [],
+          "id": "07mPgEpR70DFmieH4Q6H",
+          "labels": [],
+          "name": "ant2_frame_000056_t0001-868.jpg",
+          "split": "train",
+          "tags": [
+            "ants_v3",
+            "train",
+            "source_ant2",
+            "own_colony",
+            "mixed_scale"
+          ],
+          "user_metadata": {
+            "annotation_policy": "one physical adult ant = one tight visible body box around head + thorax + abdomen; no intentional leg/antenna-tip padding; boxes for different ants may overlap",
+            "bbox_scale_summary_reference_only": "medium_bridge_v2_to_ant2",
+            "brood_context": false,
+            "cotton_context": true,
+            "experiment": "ants_v3_mixedscale_e01",
+            "family_id": "ant2_fam_02_queen_worker_transition",
+            "food_context": false,
+            "frame_index": 56,
+            "historical_annotation_count_reference_only": 4,
+            "image_sha256": "2c60c8c57e6eba57746e0a62d58832842294e2652d6c6586ff8dcc3be9bc05a3",
+            "no_historical_labels_uploaded": true,
+            "pack_filename": "ant2_frame_000056_t0001-868_jpg.rf.1cbf90fa3fcd5c8f127389875fbad6c4.jpg",
+            "queen_present": true,
+            "reflection_context": false,
+            "source": "ant2",
+            "source_manifest": "datasets/ants_v3_annotation_pack/ant2/metadata/final_manifest.jsonl",
+            "source_video": "samples/ant2.mp4",
+            "timestamp_seconds": 1.868
+          }
+        },
+        {
+          "annotations": [],
+          "id": "eBWGhssMlVzOM8iYuCJ7",
+          "labels": [],
+          "name": "ant2_frame_000077_t0002-569.jpg",
+          "split": "train",
+          "tags": [
+            "ants_v3",
+            "train",
+            "source_ant2",
+            "own_colony",
+            "mixed_scale"
+          ],
+          "user_metadata": {
+            "annotation_policy": "one physical adult ant = one tight visible body box around head + thorax + abdomen; no intentional leg/antenna-tip padding; boxes for different ants may overlap",
+            "bbox_scale_summary_reference_only": "medium_bridge_v2_to_ant2",
+            "brood_context": false,
+            "cotton_context": true,
+            "experiment": "ants_v3_mixedscale_e01",
+            "family_id": "ant2_fam_02_queen_worker_transition",
+            "food_context": false,
+            "frame_index": 77,
+            "historical_annotation_count_reference_only": 4,
+            "image_sha256": "fd5baf580b339b019cdf03f2f3c580d58b36261f31146b1ebd8d6887303cb01b",
+            "no_historical_labels_uploaded": true,
+            "pack_filename": "ant2_frame_000077_t0002-569_jpg.rf.7b2f20ff6a5212929d96537e27b81523.jpg",
+            "queen_present": true,
+            "reflection_context": false,
+            "source": "ant2",
+            "source_manifest": "datasets/ants_v3_annotation_pack/ant2/metadata/final_manifest.jsonl",
+            "source_video": "samples/ant2.mp4",
+            "timestamp_seconds": 2.569
+          }
+        }
+      ],
+      "source_antsnet": [
+        {
+          "annotations": [],
+          "id": "h0MFHARxPYFeiTUQ3Wkz",
+          "labels": [],
+          "name": "PA050405_JPG.jpg",
+          "split": "train",
+          "tags": [
+            "ants_v3",
+            "train",
+            "source_antsnet",
+            "public",
+            "mixed_scale"
+          ],
+          "user_metadata": {
+            "annotation_policy": "one physical adult ant = one tight visible body box around head + thorax + abdomen; no intentional leg/antenna-tip padding; boxes for different ants may overlap",
+            "bbox_scale_category": "large_ge_ant2_median",
+            "brood_context": true,
+            "estimated_adult_annotations_reference_only": 17,
+            "experiment": "ants_v3_mixedscale_e01",
+            "image_sha256": "e2347de4bc149233480bae252474fdfa684ef48bfe3c4d992ced888aa52f1a85",
+            "major_minor_present": true,
+            "multi_ant": true,
+            "no_source_labels_uploaded": true,
+            "original_species_caste_metadata_reference_only": "cocoon_camponotus_nicobarensis,larva_camponotus_nicobarensis,queen_camponotus_nicobarensis,worker_minor_camponotus_nicobarensis",
+            "pack_filename": "PA050405_JPG.rf.b8e264074ef5eeba5936a4b80c14be14.jpg",
+            "provisional_castes_reference_only": "brood,queen,worker_minor",
+            "provisional_species_tokens_reference_only": "camponotus,nicobarensis",
+            "queen_present": true,
+            "source": "AntsNet",
+            "source_manifest": "datasets/ants_v3_annotation_pack/antsnet/metadata/manifest.jsonl",
+            "source_original_filename": "PA050405_JPG.rf.b8e264074ef5eeba5936a4b80c14be14.jpg",
+            "worker_present": true
+          }
+        },
+        {
+          "annotations": [],
+          "id": "fC3zvkalNRlBwEs4gOUY",
+          "labels": [],
+          "name": "P1011358_JPG.jpg",
+          "split": "train",
+          "tags": [
+            "ants_v3",
+            "train",
+            "source_antsnet",
+            "public",
+            "mixed_scale"
+          ],
+          "user_metadata": {
+            "annotation_policy": "one physical adult ant = one tight visible body box around head + thorax + abdomen; no intentional leg/antenna-tip padding; boxes for different ants may overlap",
+            "bbox_scale_category": "large_ge_ant2_median",
+            "brood_context": true,
+            "estimated_adult_annotations_reference_only": 3,
+            "experiment": "ants_v3_mixedscale_e01",
+            "image_sha256": "d471239f1d71b4776962c9291150bce9dafc6dffe9bd7d073b6cd2192df174b5",
+            "major_minor_present": false,
+            "multi_ant": true,
+            "no_source_labels_uploaded": true,
+            "original_species_caste_metadata_reference_only": "larva_myrmica_rubra,pupa_myrmica_rubra,queen_myrmica_rubra",
+            "pack_filename": "P1011358_JPG.rf.f2ef7ee49a456228d64a8a68b20351b6.jpg",
+            "provisional_castes_reference_only": "brood,queen",
+            "provisional_species_tokens_reference_only": "myrmica,rubra",
+            "queen_present": true,
+            "source": "AntsNet",
+            "source_manifest": "datasets/ants_v3_annotation_pack/antsnet/metadata/manifest.jsonl",
+            "source_original_filename": "P1011358_JPG.rf.f2ef7ee49a456228d64a8a68b20351b6.jpg",
+            "worker_present": true
+          }
+        },
+        {
+          "annotations": [],
+          "id": "1M6oY5khaovtChnBOllt",
+          "labels": [],
+          "name": "IMG_8778_JPG.jpg",
+          "split": "train",
+          "tags": [
+            "ants_v3",
+            "train",
+            "source_antsnet",
+            "public",
+            "mixed_scale"
+          ],
+          "user_metadata": {
+            "annotation_policy": "one physical adult ant = one tight visible body box around head + thorax + abdomen; no intentional leg/antenna-tip padding; boxes for different ants may overlap",
+            "bbox_scale_category": "large_ge_ant2_median",
+            "brood_context": true,
+            "estimated_adult_annotations_reference_only": 4,
+            "experiment": "ants_v3_mixedscale_e01",
+            "image_sha256": "883e1ecd02831f2d956cd6020377a50cbf8ace231cc874bb7b57954dec4fdbc3",
+            "major_minor_present": false,
+            "multi_ant": true,
+            "no_source_labels_uploaded": true,
+            "original_species_caste_metadata_reference_only": "larva_tetramorium_immigrans,worker_tetramorium_immigrans",
+            "pack_filename": "IMG_8778_JPG.rf.8f1f1982e0a1c5c1112182e5bb2f3e7c.jpg",
+            "provisional_castes_reference_only": "brood,worker",
+            "provisional_species_tokens_reference_only": "immigrans,tetramorium",
+            "queen_present": false,
+            "source": "AntsNet",
+            "source_manifest": "datasets/ants_v3_annotation_pack/antsnet/metadata/manifest.jsonl",
+            "source_original_filename": "IMG_8778_JPG.rf.8f1f1982e0a1c5c1112182e5bb2f3e7c.jpg",
+            "worker_present": true
+          }
+        }
+      ]
+    },
+    "splitCounts": {
+      "train": 67
+    },
+    "tagCounts": {
+      "ants_v3": 67,
+      "hard_negative": 0,
+      "source_ant2": 27,
+      "source_antsnet": 40,
+      "train": 67
+    },
+    "uploadedAnnotationsCount": 0
+  },
+  "verifiedAtUtc": "2026-08-13T06:26:15.299780+00:00",
+  "workspace": "jose-angel-valadez-barajas"
+}

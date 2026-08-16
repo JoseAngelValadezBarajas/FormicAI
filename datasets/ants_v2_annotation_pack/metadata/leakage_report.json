@@ -1,0 +1,11 @@
+{
+  "forbiddenSourcesAbsent": {
+    "Seq0001": true,
+    "Seq0006": true,
+    "ant3": true,
+    "ant4": true
+  },
+  "trainValFilenameOverlap": [],
+  "duplicateRelativePaths": [],
+  "ok": true
+}

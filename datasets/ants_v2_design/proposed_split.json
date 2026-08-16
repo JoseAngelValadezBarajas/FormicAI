@@ -1,0 +1,89 @@
+{
+  "trainCandidates": [
+    {
+      "source": "ANTS_Seq0002",
+      "reason": "Approved train candidate for ants_v2_diverse_e01 annotation pack."
+    },
+    {
+      "source": "ANTS_Seq0003",
+      "reason": "Approved train candidate for ants_v2_diverse_e01 annotation pack."
+    },
+    {
+      "source": "ANTS_Seq0004",
+      "reason": "Approved train candidate for ants_v2_diverse_e01 annotation pack."
+    },
+    {
+      "source": "ANTS_Seq0007",
+      "reason": "Approved outdoor train candidate: organic/textured background, small ants, crowding."
+    },
+    {
+      "source": "ANTS_Seq0008",
+      "reason": "Approved outdoor train candidate: soil, nest entrances, shadows, variable density."
+    },
+    {
+      "source": "ANTS_Seq0009",
+      "reason": "Approved outdoor train candidate: high crowding and small ants."
+    }
+  ],
+  "validationCandidates": [
+    {
+      "source": "ANTS_Seq0005",
+      "reason": "Approved source-held-out validation candidate."
+    },
+    {
+      "source": "ANTS_Seq0010",
+      "reason": "Approved source-held-out outdoor validation candidate."
+    }
+  ],
+  "externalBenchmark": [
+    {
+      "source": "ANTS_Seq0001",
+      "status": "FROZEN_EXTERNAL_BENCHMARK",
+      "reason": "Never train/val/tune/select."
+    },
+    {
+      "source": "ANTS_Seq0006",
+      "status": "FROZEN_EXTERNAL_BENCHMARK",
+      "reason": "Never train/val/tune/select."
+    },
+    {
+      "source": "ant4_external_test_frames",
+      "status": "FROZEN_EXTERNAL_LOCAL_TEST_AFTER_GT",
+      "reason": "Do not use for model selection; evaluate only after manual ground truth exists."
+    }
+  ],
+  "stressTests": [
+    {
+      "source": "ant3_external_test_frames",
+      "reason": "Stress test only; insufficient quality for reliable quantitative validation."
+    }
+  ],
+  "excluded": [
+    {
+      "source": "ant2_roboflow_export",
+      "reason": "Regression check only; already influenced ants_v1."
+    },
+    {
+      "source": "ant2_ants_v1_prepared",
+      "reason": "Regression check only; already influenced ants_v1."
+    },
+    {
+      "source": "ant2_raw_extracted_frames",
+      "reason": "Regression/reference only; labels not stored here."
+    },
+    {
+      "source": "synthetic_motion_video",
+      "reason": "Synthetic smoke-test video, not biological ant data."
+    },
+    {
+      "source": "nest_test_001_video",
+      "reason": "No verified labels; not part of ants_v2_diverse_e01."
+    }
+  ],
+  "splitPrinciples": [
+    "Prefer source-level train/val split.",
+    "If a source must be split, use temporal blocks with a gap, never random frame split.",
+    "Seq0001 and Seq0006 are never eligible for train, val, tuning, augmentation tuning, confidence tuning, or model selection."
+  ],
+  "notHardcodedFinalSplit": true
+}

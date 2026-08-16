@@ -1,0 +1,2677 @@
+{
+  "createdAtUtc": "2026-08-14T06:37:41.530036+00:00",
+  "expectedApproximately": "11 videos",
+  "freezePolicy": {
+    "noFinalTrainHoldoutAssignmentYet": true,
+    "noModelInference": true,
+    "noModifyRenameReencodeAfterSha256": true,
+    "noPseudoLabeling": true,
+    "noTraining": true,
+    "role": "FROZEN_V4_SOURCE_CANDIDATE"
+  },
+  "nonVideoFiles": [
+    {
+      "absolutePath": "C:\\Dev\\Ants\\samples\\v2\\ant1.jpg",
+      "classification": "non_video_file_under_source_dir",
+      "extension": ".jpg",
+      "filename": "ant1.jpg",
+      "filesystemCreatedTimeLocal": "2026-08-13T23:28:22",
+      "filesystemModifiedTimeLocal": "2026-08-14T00:30:52.932728",
+      "localPath": "samples/v2/ant1.jpg",
+      "sha256": "3f558c8e05e9e982e3cc7d2043014d72a748d453f4a24f82c739f253e94baeaa",
+      "sizeBytes": 2841928
+    }
+  ],
+  "reviewReasons": [
+    "Expected approximately 11 videos but found 10 video files.",
+    "Non-video file ant1.jpg is present under samples/v2.",
+    "True recording-session continuity is uncertain; source-level groups are recommendations only."
+  ],
+  "schemaVersion": "1.0",
+  "sessionTimelineAnalysis": {
+    "method": "MP4 creation_time tags, filesystem metadata, filenames, and human visual inspection of deterministic audit contact sheets; no model inference.",
+    "notes": [
+      "Filesystem modified times are import/copy-like and span only seconds, so MP4 creation_time was treated as the more informative timestamp when available.",
+      "All MP4s report motorola edge 60 pro / Android 16 metadata.",
+      "Groups are source-level recommendations for future planning only; no TRAIN/HOLDOUT split is assigned here."
+    ],
+    "overallInterpretation": "Ants2-Ants10 appear to be same-device, same-morning source material with several visually distinct setups; Ants11 appears to be a separate recording day and the most own_colony_val-like source. True biological/session continuity remains uncertain from metadata alone.",
+    "sessionGroups": {
+      "session_A_2026-08-13_tube_translucent": {
+        "confidence": "high",
+        "evidence": [
+          "MP4 creation_time is 2026-08-13T07:56:40Z, different day than Ants2-Ants10",
+          "visual domain is unique: translucent tube/plastic with strong glare and warm cast"
+        ],
+        "videos": [
+          "Ants11.mp4"
+        ]
+      },
+      "session_B_2026-08-14_block_nest_entry": {
+        "confidence": "medium",
+        "evidence": [
+          "MP4 creation_time values fall between 2026-08-14T06:05:08Z and 06:07:20Z",
+          "same nest block/round entrance/white curved object composition",
+          "Ants4-Ants6 are near-duplicate/same-scene by pHash"
+        ],
+        "videos": [
+          "Ants2.mp4",
+          "Ants4.mp4",
+          "Ants6.mp4"
+        ]
+      },
+      "session_B_2026-08-14_lateral_chamber": {
+        "confidence": "medium",
+        "evidence": [
+          "same lateral plastic chamber/tube visual domain",
+          "MP4 creation_time values are same morning, though Ants7 is earlier than Ants3/Ants8",
+          "pHash marks same-domain possible different composition"
+        ],
+        "videos": [
+          "Ants7.mp4",
+          "Ants3.mp4",
+          "Ants8.mp4"
+        ]
+      },
+      "session_B_2026-08-14_topdown_arena": {
+        "confidence": "high",
+        "evidence": [
+          "MP4 creation_time values fall between 2026-08-14T06:12:01Z and 06:14:22Z",
+          "same top-down arena/white object/nest entrance composition",
+          "Ants5/Ants9/Ants10 are near-duplicate/same-scene by pHash"
+        ],
+        "videos": [
+          "Ants10.mp4",
+          "Ants9.mp4",
+          "Ants5.mp4"
+        ]
+      }
+    }
+  },
+  "sourceDirectory": "C:\\Dev\\Ants\\samples\\v2",
+  "source_role_freeze": {
+    "created_at_utc": "2026-08-14T06:50:12.446121+00:00",
+    "path": "datasets/ants_v4_design/source_role_freeze.json",
+    "sha256": "d135850b5ef7a41dca9b4dfe6faaa4c50a02d8942513a9feffab1e44ffb88f33"
+  },
+  "status": "REVIEW",
+  "updatedAtUtc": "2026-08-14T06:42:33.167672+00:00",
+  "videoCount": 10,
+  "videos": [
+    {
+      "absolutePath": "C:\\Dev\\Ants\\samples\\v2\\Ants10.mp4",
+      "auditSamples": [
+        {
+          "actualFrameIndex": 579,
+          "imagePath": "artifacts/analysis/ants_v4_source_audit/audit_frames/Ants10/Ants10_p10_f000579_t0009.647.jpg",
+          "imageSha256": "27d71f5e13417ae504943303c7a7235afa872907871a1633d15df3f01bba8265",
+          "percent": 0.1,
+          "phash": "cc9a33ac8ecbd8c2",
+          "requestedFrameIndex": 579,
+          "statistics": {
+            "contrastStd": 0.18520939350128174,
+            "edgeEnergy": 0.02695808932185173,
+            "meanLuminance": 0.4456811547279358,
+            "meanSaturation": 0.4721078872680664,
+            "medianLuminance": 0.44970667362213135,
+            "medianSaturation": 0.49803921580314636,
+            "sharpnessLaplacianVar": 601.9970113185634
+          },
+          "timestampSeconds": 9.64681553331032
+        },
+        {
+          "actualFrameIndex": 1448,
+          "imagePath": "artifacts/analysis/ants_v4_source_audit/audit_frames/Ants10/Ants10_p25_f001448_t0024.125.jpg",
+          "imageSha256": "74b9b70eae743bf88978b38e83a78019f086c29cd686d45e19aac7dc73fe2c7a",
+          "percent": 0.25,
+          "phash": "ccd433988c8bd9e6",
+          "requestedFrameIndex": 1448,
+          "statistics": {
+            "contrastStd": 0.18394431471824646,
+            "edgeEnergy": 0.027104420587420464,
+            "meanLuminance": 0.4460989832878113,
+            "meanSaturation": 0.4445915222167969,
+            "medianLuminance": 0.4493764638900757,
+            "medianSaturation": 0.46666666865348816,
+            "sharpnessLaplacianVar": 650.0338796247735
+          },
+          "timestampSeconds": 24.125369416637902
+        },
+        {
+          "actualFrameIndex": 2317,
+          "imagePath": "artifacts/analysis/ants_v4_source_audit/audit_frames/Ants10/Ants10_p40_f002317_t0038.604.jpg",
+          "imageSha256": "362398186d2cc8b0313b08fa70bc748d9af2eb8a3ce34f1df3cbdb9636a12988",
+          "percent": 0.4,
+          "phash": "cc9433988ccbd9e6",
+          "requestedFrameIndex": 2317,
+          "statistics": {
+            "contrastStd": 0.18413084745407104,
+            "edgeEnergy": 0.028269613161683083,
+            "meanLuminance": 0.4461398124694824,
+            "meanSaturation": 0.45185965299606323,
+            "medianLuminance": 0.4488055109977722,
+            "medianSaturation": 0.4745098054409027,
+            "sharpnessLaplacianVar": 701.0983418385138
+          },
+          "timestampSeconds": 38.60392329996548
+        },
+        {
+          "actualFrameIndex": 3476,
+          "imagePath": "artifacts/analysis/ants_v4_source_audit/audit_frames/Ants10/Ants10_p60_f003476_t0057.914.jpg",
+          "imageSha256": "5d9dd5afa208035176f0ee0682dcb9a03c610432268010a9cedff4f34a528e73",
+          "percent": 0.6,
+          "phash": "ccd633888c8bd9e6",
+          "requestedFrameIndex": 3476,
+          "statistics": {
+            "contrastStd": 0.183851420879364,
+            "edgeEnergy": 0.02829897776246071,
+            "meanLuminance": 0.4452279210090637,
+            "meanSaturation": 0.4465806186199188,
+            "medianLuminance": 0.4476008117198944,
+            "medianSaturation": 0.47058823704719543,
+            "sharpnessLaplacianVar": 697.6528172119915
+          },
+          "timestampSeconds": 57.91421553331032
+        },
+        {
+          "actualFrameIndex": 4345,
+          "imagePath": "artifacts/analysis/ants_v4_source_audit/audit_frames/Ants10/Ants10_p75_f004345_t0072.393.jpg",
+          "imageSha256": "82169c60888380d64298317326fb1c0f55b7294e046c587b375d8041cf626333",
+          "percent": 0.75,
+          "phash": "ccd033b88ccbd9e2",
+          "requestedFrameIndex": 4345,
+          "statistics": {
+            "contrastStd": 0.1836307793855667,
+            "edgeEnergy": 0.028774786740541458,
+            "meanLuminance": 0.44810354709625244,
+            "meanSaturation": 0.4461607336997986,
+            "medianLuminance": 0.4500596225261688,
+            "medianSaturation": 0.46666666865348816,
+            "sharpnessLaplacianVar": 744.6092454710625
+          },
+          "timestampSeconds": 72.3927694166379
+        },
+        {
+          "actualFrameIndex": 5214,
+          "imagePath": "artifacts/analysis/ants_v4_source_audit/audit_frames/Ants10/Ants10_p90_f005214_t0086.871.jpg",
+          "imageSha256": "79363c18c169365d8b1fdeb4c54670dcf95903de3b328bcedf2e5a807f079e89",
+          "percent": 0.9,
+          "phash": "cc9633988ccbd9e2",
+          "requestedFrameIndex": 5214,
+          "statistics": {
+            "contrastStd": 0.1848740130662918,
+            "edgeEnergy": 0.028951073065400124,
+            "meanLuminance": 0.4465312957763672,
+            "meanSaturation": 0.44578635692596436,
+            "medianLuminance": 0.4491356909275055,
+            "medianSaturation": 0.46666666865348816,
+            "sharpnessLaplacianVar": 752.2137900914174
+          },
+          "timestampSeconds": 86.87132329996548
+        }
+      ],
+      "auditSampling": {
+        "purpose": "source characterization only, not annotation selection",
+        "samplePercents": [
+          0.1,
+          0.25,
+          0.4,
+          0.6,
+          0.75,
+          0.9
+        ],
+        "usesModelInference": false
+      },
+      "excluded_from_v4_e01_train_pack": false,
+      "extension": ".mp4",
+      "filename": "Ants10.mp4",
+      "filesystemCreatedTimeLocal": "2026-08-13T23:19:00",
+      "filesystemModifiedTimeLocal": "2026-08-14T00:31:01.092498",
+      "freezeNote": "Do not modify, rename, reencode, or use for model inference during this source audit.",
+      "localPath": "samples/v2/Ants10.mp4",
+      "metadata": {
+        "codec": "h264",
+        "codecLongName": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+        "durationSeconds": 96.636937,
+        "ffprobeAvailable": true,
+        "ffprobeFormatTags": {
+          "com.android.manufacturer": "motorola",
+          "com.android.model": "motorola edge 60 pro",
+          "com.android.version": "16",
+          "compatible_brands": "isommp42",
+          "creation_time": "2026-08-14T06:12:01.000000Z",
+          "major_brand": "mp42",
+          "minor_version": "0"
+        },
+        "ffprobeStreamTags": {
+          "creation_time": "2026-08-14T06:12:01.000000Z",
+          "handler_name": "VideoHandle",
+          "language": "eng"
+        },
+        "fps": 60.01980632890937,
+        "frameCount": 5794,
+        "height": 1080,
+        "pixFmt": "yuv420p",
+        "width": 1920
+      },
+      "recordingMetadata": {
+        "androidVersion": "16",
+        "creationTimeUtc": "2026-08-14T06:12:01.000000Z",
+        "deviceManufacturer": "motorola",
+        "deviceModel": "motorola edge 60 pro",
+        "formatTags": {
+          "com.android.manufacturer": "motorola",
+          "com.android.model": "motorola edge 60 pro",
+          "com.android.version": "16",
+          "compatible_brands": "isommp42",
+          "creation_time": "2026-08-14T06:12:01.000000Z",
+          "major_brand": "mp42",
+          "minor_version": "0"
+        },
+        "streamTags": [
+          {
+            "creation_time": "2026-08-14T06:12:01.000000Z",
+            "handler_name": "VideoHandle",
+            "language": "eng"
+          },
+          {
+            "creation_time": "2026-08-14T06:12:01.000000Z",
+            "handler_name": "SoundHandle",
+            "language": "eng"
+          }
+        ]
+      },
+      "role": "V4_TRAIN_SOURCE",
+      "sessionGroup": "session_B_2026-08-14_topdown_arena",
+      "sha256": "876763613a636b6f4d561e08fee76a0ed51147e6527e93baaca6ae4d3b4aaa18",
+      "sizeBytes": 244976600,
+      "sourceStatistics": {
+        "contrastStd": {
+          "max": 0.18520939350128174,
+          "median": 0.18403758108615875,
+          "min": 0.1836307793855667,
+          "p10": 0.18374110013246536,
+          "p25": 0.18387464433908463,
+          "p75": 0.18468822166323662,
+          "p90": 0.18504170328378677
+        },
+        "edgeEnergy": {
+          "max": 0.028951073065400124,
+          "median": 0.028284295462071896,
+          "min": 0.02695808932185173,
+          "p10": 0.027031254954636097,
+          "p25": 0.02739571873098612,
+          "p75": 0.02865583449602127,
+          "p90": 0.02886292990297079
+        },
+        "medianLuminance": {
+          "max": 0.4500596225261688,
+          "median": 0.4492560774087906,
+          "min": 0.4476008117198944,
+          "p10": 0.4482031613588333,
+          "p25": 0.44888805598020554,
+          "p75": 0.44962412118911743,
+          "p90": 0.4498831480741501
+        },
+        "medianSaturation": {
+          "max": 0.49803921580314636,
+          "median": 0.4686274528503418,
+          "min": 0.46666666865348816,
+          "p10": 0.46666666865348816,
+          "p25": 0.46666666865348816,
+          "p75": 0.4735294133424759,
+          "p90": 0.48627451062202454
+        },
+        "sharpnessLaplacianVar": {
+          "max": 752.2137900914174,
+          "median": 699.3755795252526,
+          "min": 601.9970113185634,
+          "p10": 626.0154454716685,
+          "p25": 661.938614021578,
+          "p75": 733.7315195629253,
+          "p90": 748.41151778124
+        }
+      },
+      "source_role_reason": "Frozen source approved for v4 train annotation candidate selection.",
+      "train_eligible": true,
+      "v4_domain_group": "topdown_arena",
+      "v4_role": "V4_TRAIN_SOURCE",
+      "visualCharacterization": {
+        "cameraDistance": "medium-wide",
+        "cameraOrientation": "landscape top-down arena/nest area",
+        "colorCast": "warm yellow/brown",
+        "cottonVisibility": "large white curved cotton/food-like object visible",
+        "focus": "sharp/high edge energy",
+        "glareReflections": "moderate bright reflection on white object",
+        "motionBlur": "low in sampled frames",
+        "occlusion": "low to moderate; edge/entrance occlusion possible",
+        "queenPresence": "not obvious",
+        "substrateBackground": "textured brown substrate, nest entrance, container walls",
+        "tubePlasticGeometry": "container walls and nest entrance visible; no dominant tube",
+        "visibleAntDensity": "low to medium with ants moving around entrance/object",
+        "visualRole": "top-down own-colony context; near-duplicate/same scene with Ants5/Ants9"
+      },
+      "visualDomainGroup": "topdown_arena_cotton_entrance"
+    },
+    {
+      "absolutePath": "C:\\Dev\\Ants\\samples\\v2\\Ants11.mp4",
+      "alias_of": {
+        "filename": "own_colony_val_001.mp4",
+        "role": "DEVELOPMENT_VALIDATION",
+        "sha256": "8d5921d1af58d47ba2ce7c2c7fbaa06127ca7c8fe46c5de8d58e37188be13510"
+      },
+      "auditSamples": [
+        {
+          "actualFrameIndex": 727,
+          "imagePath": "artifacts/analysis/ants_v4_source_audit/audit_frames/Ants11/Ants11_p10_f000727_t0012.113.jpg",
+          "imageSha256": "33552c8b1a4b7a1113e29d0ab12bef4458fa53d50be8d560f093959b287c6693",
+          "percent": 0.1,
+          "phash": "c463391cc6e23f0f",
+          "requestedFrameIndex": 727,
+          "statistics": {
+            "contrastStd": 0.15804308652877808,
+            "edgeEnergy": 0.0071011753752827644,
+            "meanLuminance": 0.49917444586753845,
+            "meanSaturation": 0.6366152167320251,
+            "medianLuminance": 0.45515215396881104,
+            "medianSaturation": 0.7568627595901489,
+            "sharpnessLaplacianVar": 36.46773665856673
+          },
+          "timestampSeconds": 12.112682192283017
+        },
+        {
+          "actualFrameIndex": 1818,
+          "imagePath": "artifacts/analysis/ants_v4_source_audit/audit_frames/Ants11/Ants11_p25_f001818_t0030.290.jpg",
+          "imageSha256": "5d3fc68f56314120aabde584f582484d5f29975dd8e33660faa388454599ab40",
+          "percent": 0.25,
+          "phash": "c463391cc6e23f0f",
+          "requestedFrameIndex": 1818,
+          "statistics": {
+            "contrastStd": 0.15858623385429382,
+            "edgeEnergy": 0.00743749039247632,
+            "meanLuminance": 0.5002194046974182,
+            "meanSaturation": 0.6256877183914185,
+            "medianLuminance": 0.45603296160697937,
+            "medianSaturation": 0.7450980544090271,
+            "sharpnessLaplacianVar": 39.34525162857163
+          },
+          "timestampSeconds": 30.290036073687105
+        },
+        {
+          "actualFrameIndex": 2909,
+          "imagePath": "artifacts/analysis/ants_v4_source_audit/audit_frames/Ants11/Ants11_p40_f002909_t0048.467.jpg",
+          "imageSha256": "cc21b47e6edd5caa2efc4917648b63d0279cbdf3f3bda9ec6335169e86769bce",
+          "percent": 0.4,
+          "phash": "c463391cc6e23f0f",
+          "requestedFrameIndex": 2909,
+          "statistics": {
+            "contrastStd": 0.15819194912910461,
+            "edgeEnergy": 0.00762120820581913,
+            "meanLuminance": 0.5027645826339722,
+            "meanSaturation": 0.6017977595329285,
+            "medianLuminance": 0.45899057388305664,
+            "medianSaturation": 0.7137255072593689,
+            "sharpnessLaplacianVar": 41.08458956140286
+          },
+          "timestampSeconds": 48.46738995509119
+        },
+        {
+          "actualFrameIndex": 4364,
+          "imagePath": "artifacts/analysis/ants_v4_source_audit/audit_frames/Ants11/Ants11_p60_f004364_t0072.709.jpg",
+          "imageSha256": "a4f6170ebc162d0a02039247e1efb33ce1beb371e19bcc7ae4851ef36c40f0b8",
+          "percent": 0.6,
+          "phash": "c463391cc6e23f0f",
+          "requestedFrameIndex": 4364,
+          "statistics": {
+            "contrastStd": 0.15855951607227325,
+            "edgeEnergy": 0.007636670954525471,
+            "meanLuminance": 0.5001031160354614,
+            "meanSaturation": 0.6152963042259216,
+            "medianLuminance": 0.4565945267677307,
+            "medianSaturation": 0.729411780834198,
+            "sharpnessLaplacianVar": 41.30006693400992
+          },
+          "timestampSeconds": 72.70941552561635
+        },
+        {
+          "actualFrameIndex": 5455,
+          "imagePath": "artifacts/analysis/ants_v4_source_audit/audit_frames/Ants11/Ants11_p75_f005455_t0090.887.jpg",
+          "imageSha256": "af2f93c8f03dcd20e2abc6e3d902c2d5855af840e3a603d18179a1c6c9dd5ab6",
+          "percent": 0.75,
+          "phash": "c661391cc4e23f4f",
+          "requestedFrameIndex": 5455,
+          "statistics": {
+            "contrastStd": 0.15891273319721222,
+            "edgeEnergy": 0.007672975771129131,
+            "meanLuminance": 0.4995455741882324,
+            "meanSaturation": 0.6171170473098755,
+            "medianLuminance": 0.4553050994873047,
+            "medianSaturation": 0.729411780834198,
+            "sharpnessLaplacianVar": 41.15851121964016
+          },
+          "timestampSeconds": 90.88676940702044
+        },
+        {
+          "actualFrameIndex": 6546,
+          "imagePath": "artifacts/analysis/ants_v4_source_audit/audit_frames/Ants11/Ants11_p90_f006546_t0109.064.jpg",
+          "imageSha256": "8cfceaeefc4a79041b1496aaa5f65b183b5bfb96f27e3d784063f4d5a0b926a6",
+          "percent": 0.9,
+          "phash": "c4633b1cc4e23f0f",
+          "requestedFrameIndex": 6546,
+          "statistics": {
+            "contrastStd": 0.1582719087600708,
+            "edgeEnergy": 0.00742166256532073,
+            "meanLuminance": 0.5049627423286438,
+            "meanSaturation": 0.5951874256134033,
+            "medianLuminance": 0.4618462920188904,
+            "medianSaturation": 0.7098039388656616,
+            "sharpnessLaplacianVar": 40.237738157463355
+          },
+          "timestampSeconds": 109.06412328842453
+        }
+      ],
+      "auditSampling": {
+        "purpose": "source characterization only, not annotation selection",
+        "samplePercents": [
+          0.1,
+          0.25,
+          0.4,
+          0.6,
+          0.75,
+          0.9
+        ],
+        "usesModelInference": false
+      },
+      "excluded_from_v4_e01_train_pack": true,
+      "extension": ".mp4",
+      "filename": "Ants11.mp4",
+      "filesystemCreatedTimeLocal": "2026-08-13T23:18:46",
+      "filesystemModifiedTimeLocal": "2026-08-14T00:31:02.944296",
+      "freezeNote": "Do not modify, rename, reencode, or use for model inference during this source audit.",
+      "localPath": "samples/v2/Ants11.mp4",
+      "metadata": {
+        "codec": "h264",
+        "codecLongName": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+        "durationSeconds": 121.264833,
+        "ffprobeAvailable": true,
+        "ffprobeFormatTags": {
+          "com.android.manufacturer": "motorola",
+          "com.android.model": "motorola edge 60 pro",
+          "com.android.version": "16",
+          "compatible_brands": "isommp42",
+          "creation_time": "2026-08-13T07:56:40.000000Z",
+          "major_brand": "mp42",
+          "minor_version": "0"
+        },
+        "ffprobeStreamTags": {
+          "creation_time": "2026-08-13T07:56:40.000000Z",
+          "handler_name": "VideoHandle",
+          "language": "eng"
+        },
+        "fps": 60.01973703753008,
+        "frameCount": 7274,
+        "height": 1080,
+        "pixFmt": "yuv420p",
+        "width": 1920
+      },
+      "recordingMetadata": {
+        "androidVersion": "16",
+        "creationTimeUtc": "2026-08-13T07:56:40.000000Z",
+        "deviceManufacturer": "motorola",
+        "deviceModel": "motorola edge 60 pro",
+        "formatTags": {
+          "com.android.manufacturer": "motorola",
+          "com.android.model": "motorola edge 60 pro",
+          "com.android.version": "16",
+          "compatible_brands": "isommp42",
+          "creation_time": "2026-08-13T07:56:40.000000Z",
+          "major_brand": "mp42",
+          "minor_version": "0"
+        },
+        "streamTags": [
+          {
+            "creation_time": "2026-08-13T07:56:40.000000Z",
+            "handler_name": "VideoHandle",
+            "language": "eng"
+          },
+          {
+            "creation_time": "2026-08-13T07:56:40.000000Z",
+            "handler_name": "SoundHandle",
+            "language": "eng"
+          }
+        ]
+      },
+      "role": "EXISTING_DEV_VALIDATION_ALIAS",
+      "sessionGroup": "session_A_2026-08-13_tube_translucent",
+      "sha256": "8d5921d1af58d47ba2ce7c2c7fbaa06127ca7c8fe46c5de8d58e37188be13510",
+      "sizeBytes": 307393123,
+      "sourceStatistics": {
+        "contrastStd": {
+          "max": 0.15891273319721222,
+          "median": 0.15841571241617203,
+          "min": 0.15804308652877808,
+          "p10": 0.15811751782894135,
+          "p25": 0.15821193903684616,
+          "p75": 0.15857955440878868,
+          "p90": 0.15874948352575302
+        },
+        "edgeEnergy": {
+          "max": 0.007672975771129131,
+          "median": 0.007529349299147725,
+          "min": 0.0071011753752827644,
+          "p10": 0.007261418970301747,
+          "p25": 0.007425619522109628,
+          "p75": 0.0076328052673488855,
+          "p90": 0.007654823362827301
+        },
+        "medianLuminance": {
+          "max": 0.4618462920188904,
+          "median": 0.45631374418735504,
+          "min": 0.45515215396881104,
+          "p10": 0.45522862672805786,
+          "p25": 0.45548706501722336,
+          "p75": 0.45839156210422516,
+          "p90": 0.4604184329509735
+        },
+        "medianSaturation": {
+          "max": 0.7568627595901489,
+          "median": 0.729411780834198,
+          "min": 0.7098039388656616,
+          "p10": 0.7117647230625153,
+          "p25": 0.7176470756530762,
+          "p75": 0.7411764860153198,
+          "p90": 0.750980406999588
+        },
+        "sharpnessLaplacianVar": {
+          "max": 41.30006693400992,
+          "median": 40.6611638594331,
+          "min": 36.46773665856673,
+          "p10": 37.90649414356918,
+          "p25": 39.56837326079456,
+          "p75": 41.14003080508083,
+          "p90": 41.22928907682504
+        }
+      },
+      "source_role_reason": "Ants11.mp4 is content-identical to own_colony_val_001.mp4 and therefore remains development validation only; NEVER TRAIN and NEVER V4 TRAIN CANDIDATE.",
+      "train_eligible": false,
+      "v4_domain_group": "development_validation_alias",
+      "v4_role": "EXISTING_DEV_VALIDATION_ALIAS",
+      "visualCharacterization": {
+        "cameraDistance": "close to medium; ants partly obscured by translucent tube/plastic",
+        "cameraOrientation": "landscape video with portrait/tube-dominant composition",
+        "colorCast": "warm yellow/orange cast",
+        "cottonVisibility": "not prominent in sampled frames",
+        "focus": "soft through plastic; low edge energy",
+        "glareReflections": "strong glare/reflections, including star-like highlight",
+        "motionBlur": "possible mild blur/refraction from plastic and motion",
+        "occlusion": "high; ants partly hidden by tube curvature/plastic/reflections",
+        "queenPresence": "uncertain/not obvious from audit frames",
+        "substrateBackground": "tube/plastic interior with dark ants and warm reflected background",
+        "tubePlasticGeometry": "strong translucent cylindrical/tube geometry with specular highlights",
+        "visibleAntDensity": "low to medium in sampled frames",
+        "visualRole": "closest coverage of own_colony_val_001 failure domain"
+      },
+      "visualDomainGroup": "translucent_tube_ownval_like"
+    },
+    {
+      "absolutePath": "C:\\Dev\\Ants\\samples\\v2\\Ants2.mp4",
+      "auditSamples": [
+        {
+          "actualFrameIndex": 12,
+          "imagePath": "artifacts/analysis/ants_v4_source_audit/audit_frames/Ants2/Ants2_p10_f000012_t0000.200.jpg",
+          "imageSha256": "6135e758c834e3692db4687d946aceba65007b3878552d845c7ed5faf56580f2",
+          "percent": 0.1,
+          "phash": "ea2e315c8f662559",
+          "requestedFrameIndex": 12,
+          "statistics": {
+            "contrastStd": 0.17246107757091522,
+            "edgeEnergy": 0.005231249611824751,
+            "meanLuminance": 0.259235143661499,
+            "meanSaturation": 0.2999526262283325,
+            "medianLuminance": 0.1480572670698166,
+            "medianSaturation": 0.32156863808631897,
+            "sharpnessLaplacianVar": 18.022722318019564
+          },
+          "timestampSeconds": 0.19993333333333332
+        },
+        {
+          "actualFrameIndex": 29,
+          "imagePath": "artifacts/analysis/ants_v4_source_audit/audit_frames/Ants2/Ants2_p25_f000029_t0000.483.jpg",
+          "imageSha256": "4f8dae8051c98686d24308ff58bc5dfc78174eb60fecd77f97e825c18efc7d34",
+          "percent": 0.25,
+          "phash": "ea2e315c8f662559",
+          "requestedFrameIndex": 29,
+          "statistics": {
+            "contrastStd": 0.17628875374794006,
+            "edgeEnergy": 0.005468322895467281,
+            "meanLuminance": 0.26835426688194275,
+            "meanSaturation": 0.3270919919013977,
+            "medianLuminance": 0.1589207947254181,
+            "medianSaturation": 0.3686274588108063,
+            "sharpnessLaplacianVar": 19.688140913112505
+          },
+          "timestampSeconds": 0.4831722222222222
+        },
+        {
+          "actualFrameIndex": 47,
+          "imagePath": "artifacts/analysis/ants_v4_source_audit/audit_frames/Ants2/Ants2_p40_f000047_t0000.783.jpg",
+          "imageSha256": "32e66c7a41a7a9963c993deb70a950d9d8d4603924e1c664e15ea3dbce1abe36",
+          "percent": 0.4,
+          "phash": "ea2e315c8f662559",
+          "requestedFrameIndex": 47,
+          "statistics": {
+            "contrastStd": 0.17904311418533325,
+            "edgeEnergy": 0.005762523040175438,
+            "meanLuminance": 0.275495320558548,
+            "meanSaturation": 0.33139491081237793,
+            "medianLuminance": 0.16394354403018951,
+            "medianSaturation": 0.37254902720451355,
+            "sharpnessLaplacianVar": 21.763663181926717
+          },
+          "timestampSeconds": 0.7830722222222223
+        },
+        {
+          "actualFrameIndex": 70,
+          "imagePath": "artifacts/analysis/ants_v4_source_audit/audit_frames/Ants2/Ants2_p60_f000070_t0001.166.jpg",
+          "imageSha256": "778721f34187ea7e48a848eb3c3be932947c60ae577f347a07fa6d1f09a6efc0",
+          "percent": 0.6,
+          "phash": "ea2e315c8f662559",
+          "requestedFrameIndex": 70,
+          "statistics": {
+            "contrastStd": 0.180390864610672,
+            "edgeEnergy": 0.005519643425941467,
+            "meanLuminance": 0.277614951133728,
+            "meanSaturation": 0.3349633514881134,
+            "medianLuminance": 0.16571922600269318,
+            "medianSaturation": 0.3803921639919281,
+            "sharpnessLaplacianVar": 19.179174375512023
+          },
+          "timestampSeconds": 1.1662777777777777
+        },
+        {
+          "actualFrameIndex": 88,
+          "imagePath": "artifacts/analysis/ants_v4_source_audit/audit_frames/Ants2/Ants2_p75_f000088_t0001.466.jpg",
+          "imageSha256": "54c8ffdffd9d609a79992ddf818cdb331b8da422e59b68856a06e52c75608b9e",
+          "percent": 0.75,
+          "phash": "aa2e315d8f662559",
+          "requestedFrameIndex": 88,
+          "statistics": {
+            "contrastStd": 0.17746692895889282,
+            "edgeEnergy": 0.005332693457603455,
+            "meanLuminance": 0.27189114689826965,
+            "meanSaturation": 0.33322393894195557,
+            "medianLuminance": 0.16294588148593903,
+            "medianSaturation": 0.3764705955982208,
+            "sharpnessLaplacianVar": 17.033671390084244
+          },
+          "timestampSeconds": 1.4661777777777778
+        },
+        {
+          "actualFrameIndex": 105,
+          "imagePath": "artifacts/analysis/ants_v4_source_audit/audit_frames/Ants2/Ants2_p90_f000105_t0001.749.jpg",
+          "imageSha256": "fcb12c0bf42cbd644bc809ad9d08870c75432c76e86eabd2a16b127e159d7048",
+          "percent": 0.9,
+          "phash": "ea2e315c8f662559",
+          "requestedFrameIndex": 105,
+          "statistics": {
+            "contrastStd": 0.17010259628295898,
+            "edgeEnergy": 0.005078725516796112,
+            "meanLuminance": 0.2539556920528412,
+            "meanSaturation": 0.32864391803741455,
+            "medianLuminance": 0.14275608956813812,
+            "medianSaturation": 0.3686274588108063,
+            "sharpnessLaplacianVar": 16.647020620329847
+          },
+          "timestampSeconds": 1.7494166666666666
+        }
+      ],
+      "auditSampling": {
+        "purpose": "source characterization only, not annotation selection",
+        "samplePercents": [
+          0.1,
+          0.25,
+          0.4,
+          0.6,
+          0.75,
+          0.9
+        ],
+        "usesModelInference": false
+      },
+      "excluded_from_v4_e01_train_pack": true,
+      "extension": ".mp4",
+      "filename": "Ants2.mp4",
+      "filesystemCreatedTimeLocal": "2026-08-13T23:18:50",
+      "filesystemModifiedTimeLocal": "2026-08-14T00:30:52.970569",
+      "freezeNote": "Do not modify, rename, reencode, or use for model inference during this source audit.",
+      "localPath": "samples/v2/Ants2.mp4",
+      "metadata": {
+        "codec": "h264",
+        "codecLongName": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+        "durationSeconds": 2.123063,
+        "ffprobeAvailable": true,
+        "ffprobeFormatTags": {
+          "com.android.manufacturer": "motorola",
+          "com.android.model": "motorola edge 60 pro",
+          "com.android.version": "16",
+          "compatible_brands": "isommp42",
+          "creation_time": "2026-08-14T06:05:08.000000Z",
+          "major_brand": "mp42",
+          "minor_version": "0"
+        },
+        "ffprobeStreamTags": {
+          "creation_time": "2026-08-14T06:05:08.000000Z",
+          "handler_name": "VideoHandle",
+          "language": "eng"
+        },
+        "fps": 60.02000666888963,
+        "frameCount": 118,
+        "height": 1080,
+        "pixFmt": "yuv420p",
+        "width": 1920
+      },
+      "recordingMetadata": {
+        "androidVersion": "16",
+        "creationTimeUtc": "2026-08-14T06:05:08.000000Z",
+        "deviceManufacturer": "motorola",
+        "deviceModel": "motorola edge 60 pro",
+        "formatTags": {
+          "com.android.manufacturer": "motorola",
+          "com.android.model": "motorola edge 60 pro",
+          "com.android.version": "16",
+          "compatible_brands": "isommp42",
+          "creation_time": "2026-08-14T06:05:08.000000Z",
+          "major_brand": "mp42",
+          "minor_version": "0"
+        },
+        "streamTags": [
+          {
+            "creation_time": "2026-08-14T06:05:08.000000Z",
+            "handler_name": "VideoHandle",
+            "language": "eng"
+          },
+          {
+            "creation_time": "2026-08-14T06:05:08.000000Z",
+            "handler_name": "SoundHandle",
+            "language": "eng"
+          }
+        ]
+      },
+      "role": "AUXILIARY_SHORT_SOURCE",
+      "sessionGroup": "session_B_2026-08-14_block_nest_entry",
+      "sha256": "47416ba9ff809d819f816d89e3881f618a29cd2f54f49c52ff708163d5654d43",
+      "sizeBytes": 5345726,
+      "sourceStatistics": {
+        "contrastStd": {
+          "max": 0.180390864610672,
+          "median": 0.17687784135341644,
+          "min": 0.17010259628295898,
+          "p10": 0.1712818369269371,
+          "p25": 0.17341799661517143,
+          "p75": 0.17864906787872314,
+          "p90": 0.17971698939800262
+        },
+        "edgeEnergy": {
+          "max": 0.005762523040175438,
+          "median": 0.005400508176535368,
+          "min": 0.005078725516796112,
+          "p10": 0.0051549875643104315,
+          "p25": 0.005256610573269427,
+          "p75": 0.005506813293322921,
+          "p90": 0.005641083233058453
+        },
+        "medianLuminance": {
+          "max": 0.16571922600269318,
+          "median": 0.16093333810567856,
+          "min": 0.14275608956813812,
+          "p10": 0.14540667831897736,
+          "p25": 0.15077314898371696,
+          "p75": 0.1636941283941269,
+          "p90": 0.16483138501644135
+        },
+        "medianSaturation": {
+          "max": 0.3803921639919281,
+          "median": 0.3705882430076599,
+          "min": 0.32156863808631897,
+          "p10": 0.3450980484485626,
+          "p25": 0.3686274588108063,
+          "p75": 0.375490203499794,
+          "p90": 0.37843137979507446
+        },
+        "sharpnessLaplacianVar": {
+          "max": 21.763663181926717,
+          "median": 18.600948346765794,
+          "min": 16.647020620329847,
+          "p10": 16.840346005207046,
+          "p25": 17.280934122068075,
+          "p75": 19.560899278712384,
+          "p90": 20.72590204751961
+        }
+      },
+      "source_role_reason": "Short 2.123s source retained for audit but excluded from v4_e01 train pack.",
+      "train_eligible": false,
+      "v4_domain_group": "auxiliary_short_source",
+      "v4_role": "AUXILIARY_SHORT_SOURCE",
+      "visualCharacterization": {
+        "cameraDistance": "medium-wide",
+        "cameraOrientation": "landscape top-down/oblique block view",
+        "colorCast": "dark brown/greenish low-light cast",
+        "cottonVisibility": "large white curved cotton/food-like object visible",
+        "focus": "soft; very short clip",
+        "glareReflections": "low to moderate",
+        "motionBlur": "not obvious in sampled frames",
+        "occlusion": "low to moderate from entrance/shadows",
+        "queenPresence": "not obvious",
+        "substrateBackground": "dark substrate/nest block",
+        "tubePlasticGeometry": "container walls visible; nest block with round entrance",
+        "visibleAntDensity": "very low or no clear ants in sampled audit frames",
+        "visualRole": "same object as Ants4/Ants6 but darker/shorter; audit candidate, not final selection"
+      },
+      "visualDomainGroup": "block_nest_entry_dark_short"
+    },
+    {
+      "absolutePath": "C:\\Dev\\Ants\\samples\\v2\\Ants3.mp4",
+      "auditSamples": [
+        {
+          "actualFrameIndex": 188,
+          "imagePath": "artifacts/analysis/ants_v4_source_audit/audit_frames/Ants3/Ants3_p10_f000188_t0003.132.jpg",
+          "imageSha256": "7d82c04d70a02d63506d66b3a4a11527517a7d643225bf1a8ff7b1c25f293bd2",
+          "percent": 0.1,
+          "phash": "efd03adc9520ca1d",
+          "requestedFrameIndex": 188,
+          "statistics": {
+            "contrastStd": 0.16659954190254211,
+            "edgeEnergy": 0.00784649234265089,
+            "meanLuminance": 0.2963404655456543,
+            "meanSaturation": 0.32828933000564575,
+            "medianLuminance": 0.2435278445482254,
+            "medianSaturation": 0.3490196168422699,
+            "sharpnessLaplacianVar": 29.82509923405111
+          },
+          "timestampSeconds": 3.1322861155366732
+        },
+        {
+          "actualFrameIndex": 470,
+          "imagePath": "artifacts/analysis/ants_v4_source_audit/audit_frames/Ants3/Ants3_p25_f000470_t0007.831.jpg",
+          "imageSha256": "d9bb60fe3672277b1dd47211b741e922767cdbce2c40671c7fe5918ee638c3f1",
+          "percent": 0.25,
+          "phash": "fa357fd1306089b2",
+          "requestedFrameIndex": 470,
+          "statistics": {
+            "contrastStd": 0.17414510250091553,
+            "edgeEnergy": 0.005954033229500055,
+            "meanLuminance": 0.28521519899368286,
+            "meanSaturation": 0.33778074383735657,
+            "medianLuminance": 0.2237858772277832,
+            "medianSaturation": 0.3607843220233917,
+            "sharpnessLaplacianVar": 18.533450428233802
+          },
+          "timestampSeconds": 7.8307152888416836
+        },
+        {
+          "actualFrameIndex": 753,
+          "imagePath": "artifacts/analysis/ants_v4_source_audit/audit_frames/Ants3/Ants3_p40_f000753_t0012.546.jpg",
+          "imageSha256": "4ea3883951147f7766a1ed1d656f7f3410eb2ba2e2ecfbdab9158125ba3822cb",
+          "percent": 0.4,
+          "phash": "faf578d03060cf34",
+          "requestedFrameIndex": 753,
+          "statistics": {
+            "contrastStd": 0.17531128227710724,
+            "edgeEnergy": 0.005776574835181236,
+            "meanLuminance": 0.3022804260253906,
+            "meanSaturation": 0.332857221364975,
+            "medianLuminance": 0.2446243166923523,
+            "medianSaturation": 0.35686275362968445,
+            "sharpnessLaplacianVar": 17.45365684718798
+          },
+          "timestampSeconds": 12.545805558505931
+        },
+        {
+          "actualFrameIndex": 1129,
+          "imagePath": "artifacts/analysis/ants_v4_source_audit/audit_frames/Ants3/Ants3_p60_f001129_t0018.810.jpg",
+          "imageSha256": "5c71bfc3215157e4ae002eb6a09be3a907c014b8f8f94e342d6c76ae60ffcbfd",
+          "percent": 0.6,
+          "phash": "fff038d09530ea0e",
+          "requestedFrameIndex": 1129,
+          "statistics": {
+            "contrastStd": 0.16292592883110046,
+            "edgeEnergy": 0.00786740705370903,
+            "meanLuminance": 0.30509325861930847,
+            "meanSaturation": 0.3214547336101532,
+            "medianLuminance": 0.25135529041290283,
+            "medianSaturation": 0.3490196168422699,
+            "sharpnessLaplacianVar": 29.352878966475576
+          },
+          "timestampSeconds": 18.810377789579277
+        },
+        {
+          "actualFrameIndex": 1412,
+          "imagePath": "artifacts/analysis/ants_v4_source_audit/audit_frames/Ants3/Ants3_p75_f001412_t0023.525.jpg",
+          "imageSha256": "b8da3ba1aa7a04095849f08c1900f4262e62c556e0b081a36523a30c3afc4a97",
+          "percent": 0.75,
+          "phash": "fff02ad09530e28e",
+          "requestedFrameIndex": 1412,
+          "statistics": {
+            "contrastStd": 0.16301818192005157,
+            "edgeEnergy": 0.007318358868360519,
+            "meanLuminance": 0.2954047620296478,
+            "meanSaturation": 0.3344287574291229,
+            "medianLuminance": 0.23717725276947021,
+            "medianSaturation": 0.364705890417099,
+            "sharpnessLaplacianVar": 26.280667290171348
+          },
+          "timestampSeconds": 23.525468059243526
+        },
+        {
+          "actualFrameIndex": 1694,
+          "imagePath": "artifacts/analysis/ants_v4_source_audit/audit_frames/Ants3/Ants3_p90_f001694_t0028.224.jpg",
+          "imageSha256": "23d96647170c0b8d8ce5dc40556ae1c74268131bef6b485e17e600cbc3a077c8",
+          "percent": 0.9,
+          "phash": "fff038d09534e20e",
+          "requestedFrameIndex": 1694,
+          "statistics": {
+            "contrastStd": 0.16701950132846832,
+            "edgeEnergy": 0.006075616925954819,
+            "meanLuminance": 0.29667168855667114,
+            "meanSaturation": 0.3450756072998047,
+            "medianLuminance": 0.2356235235929489,
+            "medianSaturation": 0.3803921639919281,
+            "sharpnessLaplacianVar": 18.941130641049188
+          },
+          "timestampSeconds": 28.223897232548534
+        }
+      ],
+      "auditSampling": {
+        "purpose": "source characterization only, not annotation selection",
+        "samplePercents": [
+          0.1,
+          0.25,
+          0.4,
+          0.6,
+          0.75,
+          0.9
+        ],
+        "usesModelInference": false
+      },
+      "excluded_from_v4_e01_train_pack": false,
+      "extension": ".mp4",
+      "filename": "Ants3.mp4",
+      "filesystemCreatedTimeLocal": "2026-08-13T23:18:56",
+      "filesystemModifiedTimeLocal": "2026-08-14T00:30:53.417857",
+      "freezeNote": "Do not modify, rename, reencode, or use for model inference during this source audit.",
+      "localPath": "samples/v2/Ants3.mp4",
+      "metadata": {
+        "codec": "h264",
+        "codecLongName": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+        "durationSeconds": 31.485271,
+        "ffprobeAvailable": true,
+        "ffprobeFormatTags": {
+          "com.android.manufacturer": "motorola",
+          "com.android.model": "motorola edge 60 pro",
+          "com.android.version": "16",
+          "compatible_brands": "isommp42",
+          "creation_time": "2026-08-14T06:08:10.000000Z",
+          "major_brand": "mp42",
+          "minor_version": "0"
+        },
+        "ffprobeStreamTags": {
+          "creation_time": "2026-08-14T06:08:10.000000Z",
+          "handler_name": "VideoHandle",
+          "language": "eng"
+        },
+        "fps": 60.020059811103444,
+        "frameCount": 1883,
+        "height": 1080,
+        "pixFmt": "yuv420p",
+        "width": 1920
+      },
+      "recordingMetadata": {
+        "androidVersion": "16",
+        "creationTimeUtc": "2026-08-14T06:08:10.000000Z",
+        "deviceManufacturer": "motorola",
+        "deviceModel": "motorola edge 60 pro",
+        "formatTags": {
+          "com.android.manufacturer": "motorola",
+          "com.android.model": "motorola edge 60 pro",
+          "com.android.version": "16",
+          "compatible_brands": "isommp42",
+          "creation_time": "2026-08-14T06:08:10.000000Z",
+          "major_brand": "mp42",
+          "minor_version": "0"
+        },
+        "streamTags": [
+          {
+            "creation_time": "2026-08-14T06:08:10.000000Z",
+            "handler_name": "VideoHandle",
+            "language": "eng"
+          },
+          {
+            "creation_time": "2026-08-14T06:08:10.000000Z",
+            "handler_name": "SoundHandle",
+            "language": "eng"
+          }
+        ]
+      },
+      "role": "V4_TRAIN_SOURCE",
+      "sessionGroup": "session_B_2026-08-14_lateral_chamber",
+      "sha256": "2692ad60fe3f4f406b2f4b20973e63382707856410ca382607cc6a27138cff69",
+      "sizeBytes": 79874171,
+      "sourceStatistics": {
+        "contrastStd": {
+          "max": 0.17531128227710724,
+          "median": 0.16680952161550522,
+          "min": 0.16292592883110046,
+          "p10": 0.16297205537557602,
+          "p25": 0.1639135219156742,
+          "p75": 0.17236370220780373,
+          "p90": 0.17472819238901138
+        },
+        "edgeEnergy": {
+          "max": 0.00786740705370903,
+          "median": 0.006696987897157669,
+          "min": 0.005776574835181236,
+          "p10": 0.005865304032340646,
+          "p25": 0.005984429153613746,
+          "p75": 0.007714458974078298,
+          "p90": 0.00785694969817996
+        },
+        "medianLuminance": {
+          "max": 0.25135529041290283,
+          "median": 0.2403525486588478,
+          "min": 0.2237858772277832,
+          "p10": 0.22970470041036606,
+          "p25": 0.23601195588707924,
+          "p75": 0.24435019865632057,
+          "p90": 0.24798980355262756
+        },
+        "medianSaturation": {
+          "max": 0.3803921639919281,
+          "median": 0.3588235378265381,
+          "min": 0.3490196168422699,
+          "p10": 0.3490196168422699,
+          "p25": 0.35098040103912354,
+          "p75": 0.3637254983186722,
+          "p90": 0.37254902720451355
+        },
+        "sharpnessLaplacianVar": {
+          "max": 29.82509923405111,
+          "median": 22.610898965610268,
+          "min": 17.45365684718798,
+          "p10": 17.99355363771089,
+          "p25": 18.635370481437647,
+          "p75": 28.584826047399517,
+          "p90": 29.58898910026334
+        }
+      },
+      "source_role_reason": "Frozen source approved for v4 train annotation candidate selection.",
+      "train_eligible": true,
+      "v4_domain_group": "lateral_chamber",
+      "v4_role": "V4_TRAIN_SOURCE",
+      "visualCharacterization": {
+        "cameraDistance": "medium",
+        "cameraOrientation": "landscape lateral chamber/tube view",
+        "colorCast": "muted brown/orange with plastic haze",
+        "cottonVisibility": "not prominent",
+        "focus": "soft/low contrast through plastic",
+        "glareReflections": "moderate glare/reflections",
+        "motionBlur": "possible mild blur",
+        "occlusion": "moderate",
+        "queenPresence": "uncertain",
+        "substrateBackground": "brown chamber/tube background",
+        "tubePlasticGeometry": "side-view plastic chamber/tube with dark border",
+        "visibleAntDensity": "low to medium",
+        "visualRole": "similar domain to Ants7/Ants8; useful but visually related"
+      },
+      "visualDomainGroup": "lateral_chamber_plastic"
+    },
+    {
+      "absolutePath": "C:\\Dev\\Ants\\samples\\v2\\Ants4.mp4",
+      "auditSamples": [
+        {
+          "actualFrameIndex": 306,
+          "imagePath": "artifacts/analysis/ants_v4_source_audit/audit_frames/Ants4/Ants4_p10_f000306_t0005.098.jpg",
+          "imageSha256": "aa9684bfef8c0685184cfe798328bd0e9b30c64d7038c0847422099e1e40b77b",
+          "percent": 0.1,
+          "phash": "df3c308d8e3624d9",
+          "requestedFrameIndex": 306,
+          "statistics": {
+            "contrastStd": 0.18426233530044556,
+            "edgeEnergy": 0.029813379049301147,
+            "meanLuminance": 0.44780662655830383,
+            "meanSaturation": 0.4365362226963043,
+            "medianLuminance": 0.4509561061859131,
+            "medianSaturation": 0.45490196347236633,
+            "sharpnessLaplacianVar": 819.1870181978419
+          },
+          "timestampSeconds": 5.098312198303979
+        },
+        {
+          "actualFrameIndex": 766,
+          "imagePath": "artifacts/analysis/ants_v4_source_audit/audit_frames/Ants4/Ants4_p25_f000766_t0012.762.jpg",
+          "imageSha256": "94051134d885252a9cfd7f01400f3cf1a60a251076076b8a911d8004a817eeb1",
+          "percent": 0.25,
+          "phash": "df38308d9e3624d9",
+          "requestedFrameIndex": 766,
+          "statistics": {
+            "contrastStd": 0.1845220923423767,
+            "edgeEnergy": 0.03107605129480362,
+            "meanLuminance": 0.4484047293663025,
+            "meanSaturation": 0.437958687543869,
+            "medianLuminance": 0.4512031376361847,
+            "medianSaturation": 0.4588235318660736,
+            "sharpnessLaplacianVar": 886.6279959451288
+          },
+          "timestampSeconds": 12.762441646734796
+        },
+        {
+          "actualFrameIndex": 1226,
+          "imagePath": "artifacts/analysis/ants_v4_source_audit/audit_frames/Ants4/Ants4_p40_f001226_t0020.427.jpg",
+          "imageSha256": "5ee8861e02b196a827e0066eacdd02808f1a6bacdad02adc768d582b2bff1663",
+          "percent": 0.4,
+          "phash": "df3c308d8e3624d9",
+          "requestedFrameIndex": 1226,
+          "statistics": {
+            "contrastStd": 0.1848926544189453,
+            "edgeEnergy": 0.030830996111035347,
+            "meanLuminance": 0.44751250743865967,
+            "meanSaturation": 0.4429844915866852,
+            "medianLuminance": 0.45071372389793396,
+            "medianSaturation": 0.4627451002597809,
+            "sharpnessLaplacianVar": 877.6173607960054
+          },
+          "timestampSeconds": 20.426571095165617
+        },
+        {
+          "actualFrameIndex": 1839,
+          "imagePath": "artifacts/analysis/ants_v4_source_audit/audit_frames/Ants4/Ants4_p60_f001839_t0030.640.jpg",
+          "imageSha256": "daa29ec54de2b83d23395f9081d52c86be7d6d8cfc189f07acfeb317f85c55e2",
+          "percent": 0.6,
+          "phash": "df38308d9e3624d9",
+          "requestedFrameIndex": 1839,
+          "statistics": {
+            "contrastStd": 0.18508729338645935,
+            "edgeEnergy": 0.03066764771938324,
+            "meanLuminance": 0.4483972489833832,
+            "meanSaturation": 0.4329800009727478,
+            "medianLuminance": 0.4514957070350647,
+            "medianSaturation": 0.45098039507865906,
+            "sharpnessLaplacianVar": 869.5196780017359
+          },
+          "timestampSeconds": 30.639856642748423
+        },
+        {
+          "actualFrameIndex": 2299,
+          "imagePath": "artifacts/analysis/ants_v4_source_audit/audit_frames/Ants4/Ants4_p75_f002299_t0038.304.jpg",
+          "imageSha256": "edd1e2dd6344514804d5c4c876effa2023af26e029753d16f857ab8ec7100417",
+          "percent": 0.75,
+          "phash": "df38308d9e3624d9",
+          "requestedFrameIndex": 2299,
+          "statistics": {
+            "contrastStd": 0.1845567226409912,
+            "edgeEnergy": 0.030259575694799423,
+            "meanLuminance": 0.44743916392326355,
+            "meanSaturation": 0.43944939970970154,
+            "medianLuminance": 0.45009100437164307,
+            "medianSaturation": 0.4588235318660736,
+            "sharpnessLaplacianVar": 846.9802395548276
+          },
+          "timestampSeconds": 38.30398609117924
+        },
+        {
+          "actualFrameIndex": 2758,
+          "imagePath": "artifacts/analysis/ants_v4_source_audit/audit_frames/Ants4/Ants4_p90_f002758_t0045.951.jpg",
+          "imageSha256": "dbe8cf6e16636b1659c837e428bc3fb19e43f8f270535bdfd9c94d046c140ed4",
+          "percent": 0.9,
+          "phash": "df3c308d8e3624d9",
+          "requestedFrameIndex": 2758,
+          "statistics": {
+            "contrastStd": 0.18250839412212372,
+            "edgeEnergy": 0.029516026377677917,
+            "meanLuminance": 0.45124179124832153,
+            "meanSaturation": 0.4321054518222809,
+            "medianLuminance": 0.4532933235168457,
+            "medianSaturation": 0.45098039507865906,
+            "sharpnessLaplacianVar": 776.6811517593004
+          },
+          "timestampSeconds": 45.951454388635206
+        }
+      ],
+      "auditSampling": {
+        "purpose": "source characterization only, not annotation selection",
+        "samplePercents": [
+          0.1,
+          0.25,
+          0.4,
+          0.6,
+          0.75,
+          0.9
+        ],
+        "usesModelInference": false
+      },
+      "excluded_from_v4_e01_train_pack": false,
+      "extension": ".mp4",
+      "filename": "Ants4.mp4",
+      "filesystemCreatedTimeLocal": "2026-08-13T23:18:54",
+      "filesystemModifiedTimeLocal": "2026-08-14T00:30:54.175942",
+      "freezeNote": "Do not modify, rename, reencode, or use for model inference during this source audit.",
+      "localPath": "samples/v2/Ants4.mp4",
+      "metadata": {
+        "codec": "h264",
+        "codecLongName": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+        "durationSeconds": 51.169041,
+        "ffprobeAvailable": true,
+        "ffprobeFormatTags": {
+          "com.android.manufacturer": "motorola",
+          "com.android.model": "motorola edge 60 pro",
+          "com.android.version": "16",
+          "compatible_brands": "isommp42",
+          "creation_time": "2026-08-14T06:07:20.000000Z",
+          "major_brand": "mp42",
+          "minor_version": "0"
+        },
+        "ffprobeStreamTags": {
+          "creation_time": "2026-08-14T06:07:20.000000Z",
+          "handler_name": "VideoHandle",
+          "language": "eng"
+        },
+        "fps": 60.019863064053816,
+        "frameCount": 3066,
+        "height": 1080,
+        "pixFmt": "yuv420p",
+        "width": 1920
+      },
+      "recordingMetadata": {
+        "androidVersion": "16",
+        "creationTimeUtc": "2026-08-14T06:07:20.000000Z",
+        "deviceManufacturer": "motorola",
+        "deviceModel": "motorola edge 60 pro",
+        "formatTags": {
+          "com.android.manufacturer": "motorola",
+          "com.android.model": "motorola edge 60 pro",
+          "com.android.version": "16",
+          "compatible_brands": "isommp42",
+          "creation_time": "2026-08-14T06:07:20.000000Z",
+          "major_brand": "mp42",
+          "minor_version": "0"
+        },
+        "streamTags": [
+          {
+            "creation_time": "2026-08-14T06:07:20.000000Z",
+            "handler_name": "VideoHandle",
+            "language": "eng"
+          },
+          {
+            "creation_time": "2026-08-14T06:07:20.000000Z",
+            "handler_name": "SoundHandle",
+            "language": "eng"
+          }
+        ]
+      },
+      "role": "V4_TRAIN_SOURCE",
+      "sessionGroup": "session_B_2026-08-14_block_nest_entry",
+      "sha256": "b57141b70f2fd0ceafdcf4676990f8204eb11d4cf6601a25eaa0bd5b31a20192",
+      "sizeBytes": 129886391,
+      "sourceStatistics": {
+        "contrastStd": {
+          "max": 0.18508729338645935,
+          "median": 0.18453940749168396,
+          "min": 0.18250839412212372,
+          "p10": 0.18338536471128464,
+          "p25": 0.18432727456092834,
+          "p75": 0.1848086714744568,
+          "p90": 0.18498997390270233
+        },
+        "edgeEnergy": {
+          "max": 0.03107605129480362,
+          "median": 0.03046361170709133,
+          "min": 0.029516026377677917,
+          "p10": 0.029664702713489532,
+          "p25": 0.029924928210675716,
+          "p75": 0.03079015901312232,
+          "p90": 0.030953523702919483
+        },
+        "medianLuminance": {
+          "max": 0.4532933235168457,
+          "median": 0.4510796219110489,
+          "min": 0.45009100437164307,
+          "p10": 0.4504023641347885,
+          "p25": 0.45077431946992874,
+          "p75": 0.4514225646853447,
+          "p90": 0.4523945152759552
+        },
+        "medianSaturation": {
+          "max": 0.4627451002597809,
+          "median": 0.45686274766921997,
+          "min": 0.45098039507865906,
+          "p10": 0.45098039507865906,
+          "p25": 0.4519607871770859,
+          "p75": 0.4588235318660736,
+          "p90": 0.46078431606292725
+        },
+        "sharpnessLaplacianVar": {
+          "max": 886.6279959451288,
+          "median": 858.2499587782818,
+          "min": 776.6811517593004,
+          "p10": 797.9340849785711,
+          "p25": 826.1353235370883,
+          "p75": 875.592940097438,
+          "p90": 882.1226783705671
+        }
+      },
+      "source_role_reason": "Frozen source approved for v4 train annotation candidate selection.",
+      "train_eligible": true,
+      "v4_domain_group": "block_nest_entry",
+      "v4_role": "V4_TRAIN_SOURCE",
+      "visualCharacterization": {
+        "cameraDistance": "medium-wide",
+        "cameraOrientation": "landscape top-down/oblique block view",
+        "colorCast": "warm yellow/brown",
+        "cottonVisibility": "large white curved cotton/food-like object visible",
+        "focus": "sharp compared with tube clips; high edge energy",
+        "glareReflections": "moderate; bright hotspot around white object",
+        "motionBlur": "low in sampled frames",
+        "occlusion": "low to moderate from nest entrance and frame edges",
+        "queenPresence": "not obvious",
+        "substrateBackground": "grainy brown substrate/nest block and entrance",
+        "tubePlasticGeometry": "container walls visible; nest block with round entrance",
+        "visibleAntDensity": "low; scattered ants at frame edges/near entrance",
+        "visualRole": "bright block/nest entrance domain; near-duplicate/same scene with Ants6"
+      },
+      "visualDomainGroup": "block_nest_entry_bright"
+    },
+    {
+      "absolutePath": "C:\\Dev\\Ants\\samples\\v2\\Ants5.mp4",
+      "auditSamples": [
+        {
+          "actualFrameIndex": 369,
+          "imagePath": "artifacts/analysis/ants_v4_source_audit/audit_frames/Ants5/Ants5_p10_f000369_t0006.148.jpg",
+          "imageSha256": "24507f95d9d2461c4de668724279f160312d680748848e4f54bcec9aa90bf077",
+          "percent": 0.1,
+          "phash": "cc9433a88c8bd9ee",
+          "requestedFrameIndex": 369,
+          "statistics": {
+            "contrastStd": 0.18183821439743042,
+            "edgeEnergy": 0.02968638390302658,
+            "meanLuminance": 0.4514073431491852,
+            "meanSaturation": 0.444740355014801,
+            "medianLuminance": 0.4516211748123169,
+            "medianSaturation": 0.4745098054409027,
+            "sharpnessLaplacianVar": 780.105224233496
+          },
+          "timestampSeconds": 6.147968338303063
+        },
+        {
+          "actualFrameIndex": 922,
+          "imagePath": "artifacts/analysis/ants_v4_source_audit/audit_frames/Ants5/Ants5_p25_f000922_t0015.362.jpg",
+          "imageSha256": "9f2ec041adeb433ac8bdbff1130f48cae0fb45e351b0ff6f8bf61725b3c5ae56",
+          "percent": 0.25,
+          "phash": "cc9033ac8c8bd9ee",
+          "requestedFrameIndex": 922,
+          "statistics": {
+            "contrastStd": 0.18187229335308075,
+            "edgeEnergy": 0.030295033007860184,
+            "meanLuminance": 0.4505145847797394,
+            "meanSaturation": 0.4421535134315491,
+            "medianLuminance": 0.45009100437164307,
+            "medianSaturation": 0.46666666865348816,
+            "sharpnessLaplacianVar": 809.7770514850704
+          },
+          "timestampSeconds": 15.361590265353454
+        },
+        {
+          "actualFrameIndex": 1475,
+          "imagePath": "artifacts/analysis/ants_v4_source_audit/audit_frames/Ants5/Ants5_p40_f001475_t0024.575.jpg",
+          "imageSha256": "0aa198504ede446f99690cc6cdb5f73dbfc911cb440a36df02f52d4cd61337b5",
+          "percent": 0.4,
+          "phash": "cc9433b88c8bd9e6",
+          "requestedFrameIndex": 1475,
+          "statistics": {
+            "contrastStd": 0.18231725692749023,
+            "edgeEnergy": 0.030252423137426376,
+            "meanLuminance": 0.45346707105636597,
+            "meanSaturation": 0.4265444278717041,
+            "medianLuminance": 0.45401257276535034,
+            "medianSaturation": 0.45098039507865906,
+            "sharpnessLaplacianVar": 810.5270278667767
+          },
+          "timestampSeconds": 24.575212192403843
+        },
+        {
+          "actualFrameIndex": 2213,
+          "imagePath": "artifacts/analysis/ants_v4_source_audit/audit_frames/Ants5/Ants5_p60_f002213_t0036.871.jpg",
+          "imageSha256": "f1876422f6c0e6950f7749a90b302ce5330e10c7efa5b9b8ca6c0de6cc561a6f",
+          "percent": 0.6,
+          "phash": "cc9033b88c8bd9ee",
+          "requestedFrameIndex": 2213,
+          "statistics": {
+            "contrastStd": 0.18163685500621796,
+            "edgeEnergy": 0.030336901545524597,
+            "meanLuminance": 0.45175468921661377,
+            "meanSaturation": 0.4253196120262146,
+            "medianLuminance": 0.4514164626598358,
+            "medianSaturation": 0.45098039507865906,
+            "sharpnessLaplacianVar": 813.6653210911556
+          },
+          "timestampSeconds": 36.87114886900997
+        },
+        {
+          "actualFrameIndex": 2766,
+          "imagePath": "artifacts/analysis/ants_v4_source_audit/audit_frames/Ants5/Ants5_p75_f002766_t0046.085.jpg",
+          "imageSha256": "73c7df1b3914807ed4b45062edf11c2e8f704e99d54a73dbce8caa5e86f34f2e",
+          "percent": 0.75,
+          "phash": "cc9433b88c8bd9e6",
+          "requestedFrameIndex": 2766,
+          "statistics": {
+            "contrastStd": 0.18174675107002258,
+            "edgeEnergy": 0.02920668199658394,
+            "meanLuminance": 0.45217931270599365,
+            "meanSaturation": 0.42880162596702576,
+            "medianLuminance": 0.45295214653015137,
+            "medianSaturation": 0.45490196347236633,
+            "sharpnessLaplacianVar": 760.3506187294704
+          },
+          "timestampSeconds": 46.08477079606036
+        },
+        {
+          "actualFrameIndex": 3319,
+          "imagePath": "artifacts/analysis/ants_v4_source_audit/audit_frames/Ants5/Ants5_p90_f003319_t0055.298.jpg",
+          "imageSha256": "8dc2eb69ddc046797bd8d6255aff4c23d9694a050e3331fa38960caee9c4a523",
+          "percent": 0.9,
+          "phash": "cc9433b88c8bd9e6",
+          "requestedFrameIndex": 3319,
+          "statistics": {
+            "contrastStd": 0.1813812553882599,
+            "edgeEnergy": 0.030064253136515617,
+            "meanLuminance": 0.4506635367870331,
+            "meanSaturation": 0.44749200344085693,
+            "medianLuminance": 0.4505380392074585,
+            "medianSaturation": 0.4745098054409027,
+            "sharpnessLaplacianVar": 802.3933776960589
+          },
+          "timestampSeconds": 55.29839272311075
+        }
+      ],
+      "auditSampling": {
+        "purpose": "source characterization only, not annotation selection",
+        "samplePercents": [
+          0.1,
+          0.25,
+          0.4,
+          0.6,
+          0.75,
+          0.9
+        ],
+        "usesModelInference": false
+      },
+      "excluded_from_v4_e01_train_pack": false,
+      "extension": ".mp4",
+      "filename": "Ants5.mp4",
+      "filesystemCreatedTimeLocal": "2026-08-13T23:19:04",
+      "filesystemModifiedTimeLocal": "2026-08-14T00:30:55.051544",
+      "freezeNote": "Do not modify, rename, reencode, or use for model inference during this source audit.",
+      "localPath": "samples/v2/Ants5.mp4",
+      "metadata": {
+        "codec": "h264",
+        "codecLongName": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+        "durationSeconds": 61.604563,
+        "ffprobeAvailable": true,
+        "ffprobeFormatTags": {
+          "com.android.manufacturer": "motorola",
+          "com.android.model": "motorola edge 60 pro",
+          "com.android.version": "16",
+          "compatible_brands": "isommp42",
+          "creation_time": "2026-08-14T06:14:22.000000Z",
+          "major_brand": "mp42",
+          "minor_version": "0"
+        },
+        "ffprobeStreamTags": {
+          "creation_time": "2026-08-14T06:14:22.000000Z",
+          "handler_name": "VideoHandle",
+          "language": "eng"
+        },
+        "fps": 60.019827639816675,
+        "frameCount": 3689,
+        "height": 1080,
+        "pixFmt": "yuv420p",
+        "width": 1920
+      },
+      "recordingMetadata": {
+        "androidVersion": "16",
+        "creationTimeUtc": "2026-08-14T06:14:22.000000Z",
+        "deviceManufacturer": "motorola",
+        "deviceModel": "motorola edge 60 pro",
+        "formatTags": {
+          "com.android.manufacturer": "motorola",
+          "com.android.model": "motorola edge 60 pro",
+          "com.android.version": "16",
+          "compatible_brands": "isommp42",
+          "creation_time": "2026-08-14T06:14:22.000000Z",
+          "major_brand": "mp42",
+          "minor_version": "0"
+        },
+        "streamTags": [
+          {
+            "creation_time": "2026-08-14T06:14:22.000000Z",
+            "handler_name": "VideoHandle",
+            "language": "eng"
+          },
+          {
+            "creation_time": "2026-08-14T06:14:22.000000Z",
+            "handler_name": "SoundHandle",
+            "language": "eng"
+          }
+        ]
+      },
+      "role": "V4_TRAIN_SOURCE",
+      "sessionGroup": "session_B_2026-08-14_topdown_arena",
+      "sha256": "9ad3cddc7e050ccc47233797ac219d17902e7ee5672b150bf0b6a2dffab3910c",
+      "sizeBytes": 156126540,
+      "sourceStatistics": {
+        "contrastStd": {
+          "max": 0.18231725692749023,
+          "median": 0.1817924827337265,
+          "min": 0.1813812553882599,
+          "p10": 0.18150905519723892,
+          "p25": 0.1816643290221691,
+          "p75": 0.18186377361416817,
+          "p90": 0.1820947751402855
+        },
+        "edgeEnergy": {
+          "max": 0.030336901545524597,
+          "median": 0.030158338136970997,
+          "min": 0.02920668199658394,
+          "p10": 0.02944653294980526,
+          "p25": 0.02978085121139884,
+          "p75": 0.030284380540251732,
+          "p90": 0.03031596727669239
+        },
+        "medianLuminance": {
+          "max": 0.45401257276535034,
+          "median": 0.45151881873607635,
+          "min": 0.45009100437164307,
+          "p10": 0.4503145217895508,
+          "p25": 0.4507576450705528,
+          "p75": 0.45261940360069275,
+          "p90": 0.45348235964775085
+        },
+        "medianSaturation": {
+          "max": 0.4745098054409027,
+          "median": 0.46078431606292725,
+          "min": 0.45098039507865906,
+          "p10": 0.45098039507865906,
+          "p25": 0.4519607871770859,
+          "p75": 0.4725490212440491,
+          "p90": 0.4745098054409027
+        },
+        "sharpnessLaplacianVar": {
+          "max": 813.6653210911556,
+          "median": 806.0852145905646,
+          "min": 760.3506187294704,
+          "p10": 770.2279214814832,
+          "p25": 785.6772625991367,
+          "p75": 810.3395337713501,
+          "p90": 812.0961744789662
+        }
+      },
+      "source_role_reason": "Frozen source approved for v4 train annotation candidate selection.",
+      "train_eligible": true,
+      "v4_domain_group": "topdown_arena",
+      "v4_role": "V4_TRAIN_SOURCE",
+      "visualCharacterization": {
+        "cameraDistance": "medium-wide",
+        "cameraOrientation": "landscape top-down arena/nest area",
+        "colorCast": "warm yellow/brown",
+        "cottonVisibility": "large white curved cotton/food-like object visible",
+        "focus": "sharp/high edge energy",
+        "glareReflections": "moderate",
+        "motionBlur": "low in sampled frames",
+        "occlusion": "low to moderate",
+        "queenPresence": "not obvious",
+        "substrateBackground": "textured brown substrate and nest entrance",
+        "tubePlasticGeometry": "container walls and nest entrance visible; no dominant tube",
+        "visibleAntDensity": "low to medium",
+        "visualRole": "top-down own-colony context; near-duplicate/same scene with Ants9/Ants10"
+      },
+      "visualDomainGroup": "topdown_arena_cotton_entrance"
+    },
+    {
+      "absolutePath": "C:\\Dev\\Ants\\samples\\v2\\Ants6.mp4",
+      "auditSamples": [
+        {
+          "actualFrameIndex": 440,
+          "imagePath": "artifacts/analysis/ants_v4_source_audit/audit_frames/Ants6/Ants6_p10_f000440_t0007.331.jpg",
+          "imageSha256": "dba092c4825dce6e45e86ff94a58c4b19375642d02356ea84decf4e5bc51eca0",
+          "percent": 0.1,
+          "phash": "df3c308c9f3624d8",
+          "requestedFrameIndex": 440,
+          "statistics": {
+            "contrastStd": 0.18167662620544434,
+            "edgeEnergy": 0.02794884704053402,
+            "meanLuminance": 0.45359960198402405,
+            "meanSaturation": 0.4705383777618408,
+            "medianLuminance": 0.45330432057380676,
+            "medianSaturation": 0.49803921580314636,
+            "sharpnessLaplacianVar": 619.471975308641
+          },
+          "timestampSeconds": 7.330934423746782
+        },
+        {
+          "actualFrameIndex": 1100,
+          "imagePath": "artifacts/analysis/ants_v4_source_audit/audit_frames/Ants6/Ants6_p25_f001100_t0018.327.jpg",
+          "imageSha256": "529fdd8d76ea55d27790d86cb0bec185b53d65b984e3ba0728fd2a9a8ddb396b",
+          "percent": 0.25,
+          "phash": "df3c318c9e3620d9",
+          "requestedFrameIndex": 1100,
+          "statistics": {
+            "contrastStd": 0.18151086568832397,
+            "edgeEnergy": 0.02940475195646286,
+            "meanLuminance": 0.45854976773262024,
+            "meanSaturation": 0.43903255462646484,
+            "medianLuminance": 0.4605027437210083,
+            "medianSaturation": 0.45490196347236633,
+            "sharpnessLaplacianVar": 723.503865182661
+          },
+          "timestampSeconds": 18.327336059366957
+        },
+        {
+          "actualFrameIndex": 1760,
+          "imagePath": "artifacts/analysis/ants_v4_source_audit/audit_frames/Ants6/Ants6_p40_f001760_t0029.324.jpg",
+          "imageSha256": "4cca0de13f6ba69f5b2e9851a88a7bd61093b376979535431feef3e896dc89b1",
+          "percent": 0.4,
+          "phash": "df2e30dc8e3224d9",
+          "requestedFrameIndex": 1760,
+          "statistics": {
+            "contrastStd": 0.17441047728061676,
+            "edgeEnergy": 0.03072790987789631,
+            "meanLuminance": 0.462729275226593,
+            "meanSaturation": 0.4906318485736847,
+            "medianLuminance": 0.4620557129383087,
+            "medianSaturation": 0.5098039507865906,
+            "sharpnessLaplacianVar": 841.3541362132623
+          },
+          "timestampSeconds": 29.323737694987127
+        },
+        {
+          "actualFrameIndex": 2641,
+          "imagePath": "artifacts/analysis/ants_v4_source_audit/audit_frames/Ants6/Ants6_p60_f002641_t0044.002.jpg",
+          "imageSha256": "970b84e06ae765022bedf85603a8c028176353b7b83c2367725a9fd9f3827764",
+          "percent": 0.6,
+          "phash": "df28309d8e7624d9",
+          "requestedFrameIndex": 2641,
+          "statistics": {
+            "contrastStd": 0.18283866345882416,
+            "edgeEnergy": 0.02910972200334072,
+            "meanLuminance": 0.4501737356185913,
+            "meanSaturation": 0.44013121724128723,
+            "medianLuminance": 0.45344629883766174,
+            "medianSaturation": 0.4588235318660736,
+            "sharpnessLaplacianVar": 763.8875482246386
+          },
+          "timestampSeconds": 44.00226775708012
+        },
+        {
+          "actualFrameIndex": 3301,
+          "imagePath": "artifacts/analysis/ants_v4_source_audit/audit_frames/Ants6/Ants6_p75_f003301_t0054.999.jpg",
+          "imageSha256": "952d8e8c3442ed1eaf00000ad3f92dd478cd5830632e0968a03115b9fa96bb3a",
+          "percent": 0.75,
+          "phash": "df28309d9e3624d9",
+          "requestedFrameIndex": 3301,
+          "statistics": {
+            "contrastStd": 0.183217853307724,
+            "edgeEnergy": 0.02771209180355072,
+            "meanLuminance": 0.45007845759391785,
+            "meanSaturation": 0.4377659857273102,
+            "medianLuminance": 0.45344629883766174,
+            "medianSaturation": 0.4588235318660736,
+            "sharpnessLaplacianVar": 677.9668334463719
+          },
+          "timestampSeconds": 54.99866939270029
+        },
+        {
+          "actualFrameIndex": 3961,
+          "imagePath": "artifacts/analysis/ants_v4_source_audit/audit_frames/Ants6/Ants6_p90_f003961_t0065.995.jpg",
+          "imageSha256": "551647a624d1131c42565b9db7243e391c0a0e31361f8ac099c83966f17f1616",
+          "percent": 0.9,
+          "phash": "df38308d9e3624d9",
+          "requestedFrameIndex": 3961,
+          "statistics": {
+            "contrastStd": 0.18374107778072357,
+            "edgeEnergy": 0.029048696160316467,
+            "meanLuminance": 0.44780221581459045,
+            "meanSaturation": 0.44270721077919006,
+            "medianLuminance": 0.4510549008846283,
+            "medianSaturation": 0.4627451002597809,
+            "sharpnessLaplacianVar": 768.7642874601618
+          },
+          "timestampSeconds": 65.99507102832047
+        }
+      ],
+      "auditSampling": {
+        "purpose": "source characterization only, not annotation selection",
+        "samplePercents": [
+          0.1,
+          0.25,
+          0.4,
+          0.6,
+          0.75,
+          0.9
+        ],
+        "usesModelInference": false
+      },
+      "excluded_from_v4_e01_train_pack": false,
+      "extension": ".mp4",
+      "filename": "Ants6.mp4",
+      "filesystemCreatedTimeLocal": "2026-08-13T23:18:52",
+      "filesystemModifiedTimeLocal": "2026-08-14T00:30:56.339052",
+      "freezeNote": "Do not modify, rename, reencode, or use for model inference during this source audit.",
+      "localPath": "samples/v2/Ants6.mp4",
+      "metadata": {
+        "codec": "h264",
+        "codecLongName": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+        "durationSeconds": 73.554271,
+        "ffprobeAvailable": true,
+        "ffprobeFormatTags": {
+          "com.android.manufacturer": "motorola",
+          "com.android.model": "motorola edge 60 pro",
+          "com.android.version": "16",
+          "compatible_brands": "isommp42",
+          "creation_time": "2026-08-14T06:06:26.000000Z",
+          "major_brand": "mp42",
+          "minor_version": "0"
+        },
+        "ffprobeStreamTags": {
+          "creation_time": "2026-08-14T06:06:26.000000Z",
+          "handler_name": "VideoHandle",
+          "language": "eng"
+        },
+        "fps": 60.01963386478084,
+        "frameCount": 4402,
+        "height": 1080,
+        "pixFmt": "yuv420p",
+        "width": 1920
+      },
+      "recordingMetadata": {
+        "androidVersion": "16",
+        "creationTimeUtc": "2026-08-14T06:06:26.000000Z",
+        "deviceManufacturer": "motorola",
+        "deviceModel": "motorola edge 60 pro",
+        "formatTags": {
+          "com.android.manufacturer": "motorola",
+          "com.android.model": "motorola edge 60 pro",
+          "com.android.version": "16",
+          "compatible_brands": "isommp42",
+          "creation_time": "2026-08-14T06:06:26.000000Z",
+          "major_brand": "mp42",
+          "minor_version": "0"
+        },
+        "streamTags": [
+          {
+            "creation_time": "2026-08-14T06:06:26.000000Z",
+            "handler_name": "VideoHandle",
+            "language": "eng"
+          },
+          {
+            "creation_time": "2026-08-14T06:06:26.000000Z",
+            "handler_name": "SoundHandle",
+            "language": "eng"
+          }
+        ]
+      },
+      "role": "V4_TRAIN_SOURCE",
+      "sessionGroup": "session_B_2026-08-14_block_nest_entry",
+      "sha256": "d525ab0a5d1c3625c79ad50288d4c4480faf7880faf40b97e07b5e6043b937d0",
+      "sizeBytes": 186279042,
+      "sourceStatistics": {
+        "contrastStd": {
+          "max": 0.18374107778072357,
+          "median": 0.18225764483213425,
+          "min": 0.17441047728061676,
+          "p10": 0.17796067148447037,
+          "p25": 0.18155230581760406,
+          "p75": 0.18312305584549904,
+          "p90": 0.18347946554422379
+        },
+        "edgeEnergy": {
+          "max": 0.03072790987789631,
+          "median": 0.029079209081828594,
+          "min": 0.02771209180355072,
+          "p10": 0.02783046942204237,
+          "p25": 0.02822380932047963,
+          "p75": 0.029330994468182325,
+          "p90": 0.030066330917179585
+        },
+        "medianLuminance": {
+          "max": 0.4620557129383087,
+          "median": 0.45344629883766174,
+          "min": 0.4510549008846283,
+          "p10": 0.45217961072921753,
+          "p25": 0.4533398151397705,
+          "p75": 0.45873863250017166,
+          "p90": 0.4612792283296585
+        },
+        "medianSaturation": {
+          "max": 0.5098039507865906,
+          "median": 0.46078431606292725,
+          "min": 0.45490196347236633,
+          "p10": 0.45686274766921997,
+          "p25": 0.4588235318660736,
+          "p75": 0.489215686917305,
+          "p90": 0.5039215832948685
+        },
+        "sharpnessLaplacianVar": {
+          "max": 841.3541362132623,
+          "median": 743.6957067036499,
+          "min": 619.471975308641,
+          "p10": 648.7194043775064,
+          "p25": 689.3510913804441,
+          "p75": 767.545102651281,
+          "p90": 805.059211836712
+        }
+      },
+      "source_role_reason": "Frozen source approved for v4 train annotation candidate selection.",
+      "train_eligible": true,
+      "v4_domain_group": "block_nest_entry",
+      "v4_role": "V4_TRAIN_SOURCE",
+      "visualCharacterization": {
+        "cameraDistance": "medium-wide",
+        "cameraOrientation": "landscape top-down/oblique block view",
+        "colorCast": "warm yellow/brown",
+        "cottonVisibility": "large white curved cotton/food-like object visible",
+        "focus": "sharp compared with tube clips; high edge energy",
+        "glareReflections": "moderate; bright white object glare",
+        "motionBlur": "low in sampled frames",
+        "occlusion": "low to moderate",
+        "queenPresence": "not obvious",
+        "substrateBackground": "grainy brown substrate/nest block and entrance",
+        "tubePlasticGeometry": "container walls visible; nest block with round entrance",
+        "visibleAntDensity": "low; scattered ants across sampled frames",
+        "visualRole": "bright block/nest entrance domain; near-duplicate/same scene with Ants4"
+      },
+      "visualDomainGroup": "block_nest_entry_bright"
+    },
+    {
+      "absolutePath": "C:\\Dev\\Ants\\samples\\v2\\Ants7.mp4",
+      "auditSamples": [
+        {
+          "actualFrameIndex": 438,
+          "imagePath": "artifacts/analysis/ants_v4_source_audit/audit_frames/Ants7/Ants7_p10_f000438_t0007.303.jpg",
+          "imageSha256": "cc1b8d6b8ae75ad80a78c9976182e1347890d5d640482d3bde8bd0953934af0a",
+          "percent": 0.1,
+          "phash": "fde260d13ee08bb0",
+          "requestedFrameIndex": 438,
+          "statistics": {
+            "contrastStd": 0.14589636027812958,
+            "edgeEnergy": 0.005122886970639229,
+            "meanLuminance": 0.297313392162323,
+            "meanSaturation": 0.3225884735584259,
+            "medianLuminance": 0.25467920303344727,
+            "medianSaturation": 0.3529411852359772,
+            "sharpnessLaplacianVar": 17.03409334270453
+          },
+          "timestampSeconds": 7.302934003197077
+        },
+        {
+          "actualFrameIndex": 1094,
+          "imagePath": "artifacts/analysis/ants_v4_source_audit/audit_frames/Ants7/Ants7_p25_f001094_t0018.241.jpg",
+          "imageSha256": "14ed5f2658e7f9e178dfd187b663c9dc83c9b51f40d30b30421c2c861eb015b2",
+          "percent": 0.25,
+          "phash": "fda2c0d0bee09bb0",
+          "requestedFrameIndex": 1094,
+          "statistics": {
+            "contrastStd": 0.14965590834617615,
+            "edgeEnergy": 0.0049945758655667305,
+            "meanLuminance": 0.29204055666923523,
+            "meanSaturation": 0.32516390085220337,
+            "medianLuminance": 0.24543137848377228,
+            "medianSaturation": 0.3607843220233917,
+            "sharpnessLaplacianVar": 15.670062811580706
+          },
+          "timestampSeconds": 18.24066164268859
+        },
+        {
+          "actualFrameIndex": 1751,
+          "imagePath": "artifacts/analysis/ants_v4_source_audit/audit_frames/Ants7/Ants7_p40_f001751_t0029.195.jpg",
+          "imageSha256": "a8a44117d06ab89f5cd3782a967c103e8b83c4e528e29048b5c9cb2e7e94fe78",
+          "percent": 0.4,
+          "phash": "fda2e0d0bee08bb0",
+          "requestedFrameIndex": 1751,
+          "statistics": {
+            "contrastStd": 0.1466894894838333,
+            "edgeEnergy": 0.005127129144966602,
+            "meanLuminance": 0.2911989092826843,
+            "meanSaturation": 0.32586339116096497,
+            "medianLuminance": 0.24711450934410095,
+            "medianSaturation": 0.3607843220233917,
+            "sharpnessLaplacianVar": 16.4845441965918
+          },
+          "timestampSeconds": 29.195062647484203
+        },
+        {
+          "actualFrameIndex": 2627,
+          "imagePath": "artifacts/analysis/ants_v4_source_audit/audit_frames/Ants7/Ants7_p60_f002627_t0043.801.jpg",
+          "imageSha256": "c6e9f50c813b65a5780e365c0e8f36cc4032b31b4d47dce62366d0152db653e1",
+          "percent": 0.6,
+          "phash": "fde260d0be60ca35",
+          "requestedFrameIndex": 2627,
+          "statistics": {
+            "contrastStd": 0.14236225187778473,
+            "edgeEnergy": 0.005468541290611029,
+            "meanLuminance": 0.3188013732433319,
+            "meanSaturation": 0.27896565198898315,
+            "medianLuminance": 0.2805459201335907,
+            "medianSaturation": 0.29019609093666077,
+            "sharpnessLaplacianVar": 18.893471699729048
+          },
+          "timestampSeconds": 43.80093065387836
+        },
+        {
+          "actualFrameIndex": 3284,
+          "imagePath": "artifacts/analysis/ants_v4_source_audit/audit_frames/Ants7/Ants7_p75_f003284_t0054.755.jpg",
+          "imageSha256": "60e61b12684ec2889484f6b7243eb0a5b1b506ce0892611113570de842173e19",
+          "percent": 0.75,
+          "phash": "fde220d0bee0cbb0",
+          "requestedFrameIndex": 3284,
+          "statistics": {
+            "contrastStd": 0.1429135650396347,
+            "edgeEnergy": 0.005243731662631035,
+            "meanLuminance": 0.30233269929885864,
+            "meanSaturation": 0.31946104764938354,
+            "medianLuminance": 0.2597670555114746,
+            "medianSaturation": 0.3529411852359772,
+            "sharpnessLaplacianVar": 17.271442759013638
+          },
+          "timestampSeconds": 54.755331658673974
+        },
+        {
+          "actualFrameIndex": 3940,
+          "imagePath": "artifacts/analysis/ants_v4_source_audit/audit_frames/Ants7/Ants7_p90_f003940_t0065.693.jpg",
+          "imageSha256": "c84e093a7088fcfe0e549a8b1b1b7efe3ba21773e8ae6dd1d9f85fea56cd0d33",
+          "percent": 0.9,
+          "phash": "ffe220d0be60ca35",
+          "requestedFrameIndex": 3940,
+          "statistics": {
+            "contrastStd": 0.13934138417243958,
+            "edgeEnergy": 0.0051522813737392426,
+            "meanLuminance": 0.31273841857910156,
+            "meanSaturation": 0.28077471256256104,
+            "medianLuminance": 0.27767375111579895,
+            "medianSaturation": 0.29411765933036804,
+            "sharpnessLaplacianVar": 17.701654871466904
+          },
+          "timestampSeconds": 65.69305929816548
+        }
+      ],
+      "auditSampling": {
+        "purpose": "source characterization only, not annotation selection",
+        "samplePercents": [
+          0.1,
+          0.25,
+          0.4,
+          0.6,
+          0.75,
+          0.9
+        ],
+        "usesModelInference": false
+      },
+      "excluded_from_v4_e01_train_pack": false,
+      "extension": ".mp4",
+      "filename": "Ants7.mp4",
+      "filesystemCreatedTimeLocal": "2026-08-13T23:18:50",
+      "filesystemModifiedTimeLocal": "2026-08-14T00:30:57.402611",
+      "freezeNote": "Do not modify, rename, reencode, or use for model inference during this source audit.",
+      "localPath": "samples/v2/Ants7.mp4",
+      "metadata": {
+        "codec": "h264",
+        "codecLongName": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+        "durationSeconds": 73.123292,
+        "ffprobeAvailable": true,
+        "ffprobeFormatTags": {
+          "com.android.manufacturer": "motorola",
+          "com.android.model": "motorola edge 60 pro",
+          "com.android.version": "16",
+          "compatible_brands": "isommp42",
+          "creation_time": "2026-08-14T05:58:24.000000Z",
+          "major_brand": "mp42",
+          "minor_version": "0"
+        },
+        "ffprobeStreamTags": {
+          "creation_time": "2026-08-14T05:58:24.000000Z",
+          "handler_name": "VideoHandle",
+          "language": "eng"
+        },
+        "fps": 59.975894593632155,
+        "frameCount": 4379,
+        "height": 1080,
+        "pixFmt": "yuv420p",
+        "width": 1920
+      },
+      "recordingMetadata": {
+        "androidVersion": "16",
+        "creationTimeUtc": "2026-08-14T05:58:24.000000Z",
+        "deviceManufacturer": "motorola",
+        "deviceModel": "motorola edge 60 pro",
+        "formatTags": {
+          "com.android.manufacturer": "motorola",
+          "com.android.model": "motorola edge 60 pro",
+          "com.android.version": "16",
+          "compatible_brands": "isommp42",
+          "creation_time": "2026-08-14T05:58:24.000000Z",
+          "major_brand": "mp42",
+          "minor_version": "0"
+        },
+        "streamTags": [
+          {
+            "creation_time": "2026-08-14T05:58:24.000000Z",
+            "handler_name": "VideoHandle",
+            "language": "eng"
+          },
+          {
+            "creation_time": "2026-08-14T05:58:24.000000Z",
+            "handler_name": "SoundHandle",
+            "language": "eng"
+          }
+        ]
+      },
+      "role": "V4_TRAIN_SOURCE",
+      "sessionGroup": "session_B_2026-08-14_lateral_chamber",
+      "sha256": "f1b690fcca541958f4026e733c3b93db0599919d60940a4c37de3f5e286be848",
+      "sizeBytes": 185231419,
+      "sourceStatistics": {
+        "contrastStd": {
+          "max": 0.14965590834617615,
+          "median": 0.14440496265888214,
+          "min": 0.13934138417243958,
+          "p10": 0.14085181802511215,
+          "p25": 0.14250008016824722,
+          "p75": 0.14649120718240738,
+          "p90": 0.14817269891500473
+        },
+        "edgeEnergy": {
+          "max": 0.005468541290611029,
+          "median": 0.0051397052593529224,
+          "min": 0.0049945758655667305,
+          "p10": 0.00505873141810298,
+          "p25": 0.005123947514221072,
+          "p75": 0.005220869090408087,
+          "p90": 0.005356136476621032
+        },
+        "medianLuminance": {
+          "max": 0.2805459201335907,
+          "median": 0.25722312927246094,
+          "min": 0.24543137848377228,
+          "p10": 0.24627294391393661,
+          "p25": 0.24900568276643753,
+          "p75": 0.27319707721471786,
+          "p90": 0.2791098356246948
+        },
+        "medianSaturation": {
+          "max": 0.3607843220233917,
+          "median": 0.3529411852359772,
+          "min": 0.29019609093666077,
+          "p10": 0.2921568751335144,
+          "p25": 0.3088235408067703,
+          "p75": 0.3588235378265381,
+          "p90": 0.3607843220233917
+        },
+        "sharpnessLaplacianVar": {
+          "max": 18.893471699729048,
+          "median": 17.152768050859084,
+          "min": 15.670062811580706,
+          "p10": 16.077303504086252,
+          "p25": 16.62193148311998,
+          "p75": 17.594101843353588,
+          "p90": 18.297563285597974
+        }
+      },
+      "source_role_reason": "Frozen source approved for v4 train annotation candidate selection.",
+      "train_eligible": true,
+      "v4_domain_group": "lateral_chamber",
+      "v4_role": "V4_TRAIN_SOURCE",
+      "visualCharacterization": {
+        "cameraDistance": "medium; chamber and ants visible through cover",
+        "cameraOrientation": "landscape lateral chamber view",
+        "colorCast": "brown/orange substrate with darker plastic frame",
+        "cottonVisibility": "not prominent",
+        "focus": "soft through plastic; low edge energy",
+        "glareReflections": "moderate cover glare/reflections",
+        "motionBlur": "possible mild blur",
+        "occlusion": "moderate; cover glare and chamber edge occlude details",
+        "queenPresence": "possibly large ant, but not confirmed in audit",
+        "substrateBackground": "smooth brown chamber/tube substrate",
+        "tubePlasticGeometry": "rectangular/curved chamber with plastic cover and dark edges",
+        "visibleAntDensity": "low to medium; clustered ants in one chamber zone",
+        "visualRole": "own-colony side-view/plastic domain"
+      },
+      "visualDomainGroup": "lateral_chamber_plastic"
+    },
+    {
+      "absolutePath": "C:\\Dev\\Ants\\samples\\v2\\Ants8.mp4",
+      "auditSamples": [
+        {
+          "actualFrameIndex": 368,
+          "imagePath": "artifacts/analysis/ants_v4_source_audit/audit_frames/Ants8/Ants8_p10_f000368_t0006.136.jpg",
+          "imageSha256": "34300aeca8913d502148a2ae4da4c51bf3ebf337395c3604da83e662d1fb7a12",
+          "percent": 0.1,
+          "phash": "ead588d595e09eb0",
+          "requestedFrameIndex": 368,
+          "statistics": {
+            "contrastStd": 0.16487297415733337,
+            "edgeEnergy": 0.006887041963636875,
+            "meanLuminance": 0.3077075779438019,
+            "meanSaturation": 0.3222508132457733,
+            "medianLuminance": 0.2343929409980774,
+            "medianSaturation": 0.40784314274787903,
+            "sharpnessLaplacianVar": 28.151600597870786
+          },
+          "timestampSeconds": 6.135863861685407
+        },
+        {
+          "actualFrameIndex": 919,
+          "imagePath": "artifacts/analysis/ants_v4_source_audit/audit_frames/Ants8/Ants8_p25_f000919_t0015.323.jpg",
+          "imageSha256": "fc3c05e8c49a1eabb45d3cbb1f3f85a4c88ff3c9841f200d923c272202917d5a",
+          "percent": 0.25,
+          "phash": "e8d5a8c89de0ce99",
+          "requestedFrameIndex": 919,
+          "statistics": {
+            "contrastStd": 0.15044856071472168,
+            "edgeEnergy": 0.007348209619522095,
+            "meanLuminance": 0.2986551821231842,
+            "meanSaturation": 0.31014612317085266,
+            "medianLuminance": 0.23510274291038513,
+            "medianSaturation": 0.4000000059604645,
+            "sharpnessLaplacianVar": 30.13604742586161
+          },
+          "timestampSeconds": 15.322986111111112
+        },
+        {
+          "actualFrameIndex": 1470,
+          "imagePath": "artifacts/analysis/ants_v4_source_audit/audit_frames/Ants8/Ants8_p40_f001470_t0024.510.jpg",
+          "imageSha256": "5b88895b68622d92dd8fcd01366959751e9431e6e2234da32eacfd4616aa961a",
+          "percent": 0.4,
+          "phash": "ead588cd95e0ca99",
+          "requestedFrameIndex": 1470,
+          "statistics": {
+            "contrastStd": 0.15475396811962128,
+            "edgeEnergy": 0.006725131534039974,
+            "meanLuminance": 0.30274078249931335,
+            "meanSaturation": 0.3300338387489319,
+            "medianLuminance": 0.23693020641803741,
+            "medianSaturation": 0.4274509847164154,
+            "sharpnessLaplacianVar": 29.256546051951002
+          },
+          "timestampSeconds": 24.510108360536815
+        },
+        {
+          "actualFrameIndex": 2205,
+          "imagePath": "artifacts/analysis/ants_v4_source_audit/audit_frames/Ants8/Ants8_p60_f002205_t0036.765.jpg",
+          "imageSha256": "5df94fe53c68e79a30b8d5d6930f95ba710ad7a690bc891df16ae436e045d3f9",
+          "percent": 0.6,
+          "phash": "eac50aca9720ea9f",
+          "requestedFrameIndex": 2205,
+          "statistics": {
+            "contrastStd": 0.13720810413360596,
+            "edgeEnergy": 0.006307258270680904,
+            "meanLuminance": 0.2929134964942932,
+            "meanSaturation": 0.34336045384407043,
+            "medianLuminance": 0.2392713725566864,
+            "medianSaturation": 0.43529412150382996,
+            "sharpnessLaplacianVar": 25.5044600930266
+          },
+          "timestampSeconds": 36.76516254080523
+        },
+        {
+          "actualFrameIndex": 2756,
+          "imagePath": "artifacts/analysis/ants_v4_source_audit/audit_frames/Ants8/Ants8_p75_f002756_t0045.952.jpg",
+          "imageSha256": "74724ded743b7697438a11959ac679b1f6fc30e6c2e3198cd1914ed4026f02a6",
+          "percent": 0.75,
+          "phash": "e8c188ddb5e899b1",
+          "requestedFrameIndex": 2756,
+          "statistics": {
+            "contrastStd": 0.158464714884758,
+            "edgeEnergy": 0.0061507318168878555,
+            "meanLuminance": 0.3112429082393646,
+            "meanSaturation": 0.3038634955883026,
+            "medianLuminance": 0.24768078327178955,
+            "medianSaturation": 0.3843137323856354,
+            "sharpnessLaplacianVar": 27.024145434720808
+          },
+          "timestampSeconds": 45.95228479023093
+        },
+        {
+          "actualFrameIndex": 3308,
+          "imagePath": "artifacts/analysis/ants_v4_source_audit/audit_frames/Ants8/Ants8_p90_f003308_t0055.156.jpg",
+          "imageSha256": "f90820eb560f6703f177aa4e8653223d7886369eaeb0406ccc0308bd0b8039f7",
+          "percent": 0.9,
+          "phash": "e8450aca9f32ea8f",
+          "requestedFrameIndex": 3308,
+          "statistics": {
+            "contrastStd": 0.12228774279356003,
+            "edgeEnergy": 0.005477750673890114,
+            "meanLuminance": 0.2909674048423767,
+            "meanSaturation": 0.33744338154792786,
+            "medianLuminance": 0.24787215888500214,
+            "medianSaturation": 0.4117647111415863,
+            "sharpnessLaplacianVar": 22.22595522380351
+          },
+          "timestampSeconds": 55.15608058275904
+        }
+      ],
+      "auditSampling": {
+        "purpose": "source characterization only, not annotation selection",
+        "samplePercents": [
+          0.1,
+          0.25,
+          0.4,
+          0.6,
+          0.75,
+          0.9
+        ],
+        "usesModelInference": false
+      },
+      "excluded_from_v4_e01_train_pack": false,
+      "extension": ".mp4",
+      "filename": "Ants8.mp4",
+      "filesystemCreatedTimeLocal": "2026-08-13T23:18:58",
+      "filesystemModifiedTimeLocal": "2026-08-14T00:30:58.336818",
+      "freezeNote": "Do not modify, rename, reencode, or use for model inference during this source audit.",
+      "localPath": "samples/v2/Ants8.mp4",
+      "metadata": {
+        "codec": "h264",
+        "codecLongName": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+        "durationSeconds": 61.398208,
+        "ffprobeAvailable": true,
+        "ffprobeFormatTags": {
+          "com.android.manufacturer": "motorola",
+          "com.android.model": "motorola edge 60 pro",
+          "com.android.version": "16",
+          "compatible_brands": "isommp42",
+          "creation_time": "2026-08-14T06:09:39.000000Z",
+          "major_brand": "mp42",
+          "minor_version": "0"
+        },
+        "ffprobeStreamTags": {
+          "creation_time": "2026-08-14T06:09:39.000000Z",
+          "handler_name": "VideoHandle",
+          "language": "eng"
+        },
+        "fps": 59.97525504076573,
+        "frameCount": 3676,
+        "height": 1080,
+        "pixFmt": "yuv420p",
+        "width": 1920
+      },
+      "recordingMetadata": {
+        "androidVersion": "16",
+        "creationTimeUtc": "2026-08-14T06:09:39.000000Z",
+        "deviceManufacturer": "motorola",
+        "deviceModel": "motorola edge 60 pro",
+        "formatTags": {
+          "com.android.manufacturer": "motorola",
+          "com.android.model": "motorola edge 60 pro",
+          "com.android.version": "16",
+          "compatible_brands": "isommp42",
+          "creation_time": "2026-08-14T06:09:39.000000Z",
+          "major_brand": "mp42",
+          "minor_version": "0"
+        },
+        "streamTags": [
+          {
+            "creation_time": "2026-08-14T06:09:39.000000Z",
+            "handler_name": "VideoHandle",
+            "language": "eng"
+          },
+          {
+            "creation_time": "2026-08-14T06:09:39.000000Z",
+            "handler_name": "SoundHandle",
+            "language": "eng"
+          }
+        ]
+      },
+      "role": "V4_TRAIN_SOURCE",
+      "sessionGroup": "session_B_2026-08-14_lateral_chamber",
+      "sha256": "a6d215f234f5055e70c30ffa083fd900b22e3579371ca08f220ca5b0ee1680b8",
+      "sizeBytes": 155536454,
+      "sourceStatistics": {
+        "contrastStd": {
+          "max": 0.16487297415733337,
+          "median": 0.15260126441717148,
+          "min": 0.12228774279356003,
+          "p10": 0.129747923463583,
+          "p25": 0.1405182182788849,
+          "p75": 0.15753702819347382,
+          "p90": 0.16166884452104568
+        },
+        "edgeEnergy": {
+          "max": 0.007348209619522095,
+          "median": 0.006516194902360439,
+          "min": 0.005477750673890114,
+          "p10": 0.005814241245388985,
+          "p25": 0.006189863430336118,
+          "p75": 0.00684656435623765,
+          "p90": 0.007117625791579485
+        },
+        "medianLuminance": {
+          "max": 0.24787215888500214,
+          "median": 0.2381007894873619,
+          "min": 0.2343929409980774,
+          "p10": 0.23474784195423126,
+          "p25": 0.2355596087872982,
+          "p75": 0.24557843059301376,
+          "p90": 0.24777647107839584
+        },
+        "medianSaturation": {
+          "max": 0.43529412150382996,
+          "median": 0.40980392694473267,
+          "min": 0.3843137323856354,
+          "p10": 0.3921568691730499,
+          "p25": 0.4019607901573181,
+          "p75": 0.42352941632270813,
+          "p90": 0.4313725531101227
+        },
+        "sharpnessLaplacianVar": {
+          "max": 30.13604742586161,
+          "median": 27.587873016295795,
+          "min": 22.22595522380351,
+          "p10": 23.865207658415056,
+          "p25": 25.884381428450155,
+          "p75": 28.98030968843095,
+          "p90": 29.696296738906305
+        }
+      },
+      "source_role_reason": "Frozen source approved for v4 train annotation candidate selection.",
+      "train_eligible": true,
+      "v4_domain_group": "lateral_chamber",
+      "v4_role": "V4_TRAIN_SOURCE",
+      "visualCharacterization": {
+        "cameraDistance": "medium to slightly wider than Ants7",
+        "cameraOrientation": "landscape lateral chamber/tube view",
+        "colorCast": "brown/orange with plastic haze",
+        "cottonVisibility": "not prominent",
+        "focus": "soft/low contrast through plastic",
+        "glareReflections": "moderate glare/reflections",
+        "motionBlur": "possible mild blur",
+        "occlusion": "moderate",
+        "queenPresence": "uncertain",
+        "substrateBackground": "brown chamber/tube background",
+        "tubePlasticGeometry": "side-view plastic chamber/tube with visible hardware/screw area",
+        "visibleAntDensity": "low to medium",
+        "visualRole": "same visual family as Ants3/Ants7, slightly different framing"
+      },
+      "visualDomainGroup": "lateral_chamber_plastic"
+    },
+    {
+      "absolutePath": "C:\\Dev\\Ants\\samples\\v2\\Ants9.mp4",
+      "auditSamples": [
+        {
+          "actualFrameIndex": 459,
+          "imagePath": "artifacts/analysis/ants_v4_source_audit/audit_frames/Ants9/Ants9_p10_f000459_t0007.647.jpg",
+          "imageSha256": "b9de2da021855072c2adb09a5f4e479833f8ec3d089ae7b954d5e59868dfbfe6",
+          "percent": 0.1,
+          "phash": "ccd233988c8bd9e6",
+          "requestedFrameIndex": 459,
+          "statistics": {
+            "contrastStd": 0.18328264355659485,
+            "edgeEnergy": 0.024745581671595573,
+            "meanLuminance": 0.45831629633903503,
+            "meanSaturation": 0.4336076080799103,
+            "medianLuminance": 0.46239060163497925,
+            "medianSaturation": 0.45490196347236633,
+            "sharpnessLaplacianVar": 519.7016145416572
+          },
+          "timestampSeconds": 7.64747553330431
+        },
+        {
+          "actualFrameIndex": 1148,
+          "imagePath": "artifacts/analysis/ants_v4_source_audit/audit_frames/Ants9/Ants9_p25_f001148_t0019.127.jpg",
+          "imageSha256": "7a6261f2a6041c8518918ca5a1c0666da74bfb9d7ff89591df91012007eb59a6",
+          "percent": 0.25,
+          "phash": "ccd433b88c8bd9e4",
+          "requestedFrameIndex": 1148,
+          "statistics": {
+            "contrastStd": 0.18000054359436035,
+            "edgeEnergy": 0.02950473688542843,
+            "meanLuminance": 0.45493456721305847,
+            "meanSaturation": 0.38076961040496826,
+            "medianLuminance": 0.45544394850730896,
+            "medianSaturation": 0.40784314274787903,
+            "sharpnessLaplacianVar": 751.1801841041014
+          },
+          "timestampSeconds": 19.127019416630386
+        },
+        {
+          "actualFrameIndex": 1837,
+          "imagePath": "artifacts/analysis/ants_v4_source_audit/audit_frames/Ants9/Ants9_p40_f001837_t0030.607.jpg",
+          "imageSha256": "afa924549cd7ded9eaa04b8db1d65a74630f6bdab2202e59c6bb579e5c28be97",
+          "percent": 0.4,
+          "phash": "ccd433988c8bd9e6",
+          "requestedFrameIndex": 1837,
+          "statistics": {
+            "contrastStd": 0.18152041733264923,
+            "edgeEnergy": 0.030212365090847015,
+            "meanLuminance": 0.45165392756462097,
+            "meanSaturation": 0.42986756563186646,
+            "medianLuminance": 0.4517631530761719,
+            "medianSaturation": 0.4588235318660736,
+            "sharpnessLaplacianVar": 802.1999830655304
+          },
+          "timestampSeconds": 30.606563299956463
+        },
+        {
+          "actualFrameIndex": 2756,
+          "imagePath": "artifacts/analysis/ants_v4_source_audit/audit_frames/Ants9/Ants9_p60_f002756_t0045.918.jpg",
+          "imageSha256": "7e981021dd797fdc520e27714a1548bc150fae4d560f0bdcf0b48fbf221fb290",
+          "percent": 0.6,
+          "phash": "ccd233a88c8bd9ce",
+          "requestedFrameIndex": 2756,
+          "statistics": {
+            "contrastStd": 0.1808720976114273,
+            "edgeEnergy": 0.030557285994291306,
+            "meanLuminance": 0.45468974113464355,
+            "meanSaturation": 0.4014609158039093,
+            "medianLuminance": 0.45457884669303894,
+            "medianSaturation": 0.4274509847164154,
+            "sharpnessLaplacianVar": 809.3521416127631
+          },
+          "timestampSeconds": 45.91817553330431
+        },
+        {
+          "actualFrameIndex": 3445,
+          "imagePath": "artifacts/analysis/ants_v4_source_audit/audit_frames/Ants9/Ants9_p75_f003445_t0057.398.jpg",
+          "imageSha256": "3d6b0728ec8b1e234ac0f17fdf375b3521342cbe27d9db4605b5c24d962176f9",
+          "percent": 0.75,
+          "phash": "ccd033988c8bd9ee",
+          "requestedFrameIndex": 3445,
+          "statistics": {
+            "contrastStd": 0.1811201125383377,
+            "edgeEnergy": 0.03027728945016861,
+            "meanLuminance": 0.4535922408103943,
+            "meanSaturation": 0.44624894857406616,
+            "medianLuminance": 0.4537341296672821,
+            "medianSaturation": 0.47843137383461,
+            "sharpnessLaplacianVar": 809.0616681082627
+          },
+          "timestampSeconds": 57.39771941663039
+        },
+        {
+          "actualFrameIndex": 4134,
+          "imagePath": "artifacts/analysis/ants_v4_source_audit/audit_frames/Ants9/Ants9_p90_f004134_t0068.877.jpg",
+          "imageSha256": "2f480c23f818567a67864cca90143a1d03cbe9ad80bf6d7014fd4ddebb0e3259",
+          "percent": 0.9,
+          "phash": "ccd033b88ccbd9c6",
+          "requestedFrameIndex": 4134,
+          "statistics": {
+            "contrastStd": 0.18161576986312866,
+            "edgeEnergy": 0.030442912131547928,
+            "meanLuminance": 0.45545557141304016,
+            "meanSaturation": 0.4369712173938751,
+            "medianLuminance": 0.45641255378723145,
+            "medianSaturation": 0.4627451002597809,
+            "sharpnessLaplacianVar": 817.0834693284348
+          },
+          "timestampSeconds": 68.87726329995647
+        }
+      ],
+      "auditSampling": {
+        "purpose": "source characterization only, not annotation selection",
+        "samplePercents": [
+          0.1,
+          0.25,
+          0.4,
+          0.6,
+          0.75,
+          0.9
+        ],
+        "usesModelInference": false
+      },
+      "excluded_from_v4_e01_train_pack": false,
+      "extension": ".mp4",
+      "filename": "Ants9.mp4",
+      "filesystemCreatedTimeLocal": "2026-08-13T23:19:02",
+      "filesystemModifiedTimeLocal": "2026-08-14T00:30:59.468121",
+      "freezeNote": "Do not modify, rename, reencode, or use for model inference during this source audit.",
+      "localPath": "samples/v2/Ants9.mp4",
+      "metadata": {
+        "codec": "h264",
+        "codecLongName": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+        "durationSeconds": 76.661541,
+        "ffprobeAvailable": true,
+        "ffprobeFormatTags": {
+          "com.android.manufacturer": "motorola",
+          "com.android.model": "motorola edge 60 pro",
+          "com.android.version": "16",
+          "compatible_brands": "isommp42",
+          "creation_time": "2026-08-14T06:13:19.000000Z",
+          "major_brand": "mp42",
+          "minor_version": "0"
+        },
+        "ffprobeStreamTags": {
+          "creation_time": "2026-08-14T06:13:19.000000Z",
+          "handler_name": "VideoHandle",
+          "language": "eng"
+        },
+        "fps": 60.019806274774176,
+        "frameCount": 4594,
+        "height": 1080,
+        "pixFmt": "yuv420p",
+        "width": 1920
+      },
+      "recordingMetadata": {
+        "androidVersion": "16",
+        "creationTimeUtc": "2026-08-14T06:13:19.000000Z",
+        "deviceManufacturer": "motorola",
+        "deviceModel": "motorola edge 60 pro",
+        "formatTags": {
+          "com.android.manufacturer": "motorola",
+          "com.android.model": "motorola edge 60 pro",
+          "com.android.version": "16",
+          "compatible_brands": "isommp42",
+          "creation_time": "2026-08-14T06:13:19.000000Z",
+          "major_brand": "mp42",
+          "minor_version": "0"
+        },
+        "streamTags": [
+          {
+            "creation_time": "2026-08-14T06:13:19.000000Z",
+            "handler_name": "VideoHandle",
+            "language": "eng"
+          },
+          {
+            "creation_time": "2026-08-14T06:13:19.000000Z",
+            "handler_name": "SoundHandle",
+            "language": "eng"
+          }
+        ]
+      },
+      "role": "V4_TRAIN_SOURCE",
+      "sessionGroup": "session_B_2026-08-14_topdown_arena",
+      "sha256": "bf5f73aa86383edf263757edeb1d68c4a63cb3a1981a580b1d203de137fb5fdd",
+      "sizeBytes": 194299399,
+      "sourceStatistics": {
+        "contrastStd": {
+          "max": 0.18328264355659485,
+          "median": 0.18132026493549347,
+          "min": 0.18000054359436035,
+          "p10": 0.18043632060289383,
+          "p25": 0.1809341013431549,
+          "p75": 0.1815919317305088,
+          "p90": 0.18244920670986176
+        },
+        "edgeEnergy": {
+          "max": 0.030557285994291306,
+          "median": 0.030244827270507812,
+          "min": 0.024745581671595573,
+          "p10": 0.027125159278512,
+          "p25": 0.029681643936783075,
+          "p75": 0.0304015064612031,
+          "p90": 0.030500099062919617
+        },
+        "medianLuminance": {
+          "max": 0.46239060163497925,
+          "median": 0.45501139760017395,
+          "min": 0.4517631530761719,
+          "p10": 0.452748641371727,
+          "p25": 0.4539453089237213,
+          "p75": 0.4561704024672508,
+          "p90": 0.45940157771110535
+        },
+        "medianSaturation": {
+          "max": 0.47843137383461,
+          "median": 0.45686274766921997,
+          "min": 0.40784314274787903,
+          "p10": 0.4176470637321472,
+          "p25": 0.43431372940540314,
+          "p75": 0.46176470816135406,
+          "p90": 0.47058823704719543
+        },
+        "sharpnessLaplacianVar": {
+          "max": 817.0834693284348,
+          "median": 805.6308255868965,
+          "min": 519.7016145416572,
+          "p10": 635.4408993228793,
+          "p25": 763.9351338444586,
+          "p75": 809.279523236638,
+          "p90": 813.2178054705989
+        }
+      },
+      "source_role_reason": "Frozen source approved for v4 train annotation candidate selection.",
+      "train_eligible": true,
+      "v4_domain_group": "topdown_arena",
+      "v4_role": "V4_TRAIN_SOURCE",
+      "visualCharacterization": {
+        "cameraDistance": "medium-wide",
+        "cameraOrientation": "landscape video with tall/vertical composition of arena",
+        "colorCast": "warm yellow/brown",
+        "cottonVisibility": "large white curved cotton/food-like object visible",
+        "focus": "sharp/high edge energy",
+        "glareReflections": "moderate",
+        "motionBlur": "low in sampled frames",
+        "occlusion": "low to moderate; frame-edge ants present",
+        "queenPresence": "not obvious",
+        "substrateBackground": "textured brown substrate and nest entrance",
+        "tubePlasticGeometry": "container wall and nest entrance visible; no dominant tube",
+        "visibleAntDensity": "low to medium; ants around entrance/object/edges",
+        "visualRole": "top-down own-colony context; near-duplicate/same scene with Ants5/Ants10"
+      },
+      "visualDomainGroup": "topdown_arena_cotton_entrance"
+    }
+  ],
+  "visualDomainGroups": {
+    "direct_failure_domain": [
+      "Ants11.mp4"
+    ],
+    "nest_block_entry_domain": [
+      "Ants2.mp4",
+      "Ants4.mp4",
+      "Ants6.mp4"
+    ],
+    "related_plastic_chamber_domain": [
+      "Ants3.mp4",
+      "Ants7.mp4",
+      "Ants8.mp4"
+    ],
+    "topdown_arena_domain": [
+      "Ants5.mp4",
+      "Ants9.mp4",
+      "Ants10.mp4"
+    ]
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "Seq0001": {
+    "status": "frozen_external",
+    "allowedUses": [
+      "final comparison ants_v1_baseline vs ants_v2"
+    ],
+    "forbiddenUses": [
+      "training",
+      "validation",
+      "hyperparameter_tuning",
+      "confidence_tuning",
+      "augmentation_tuning",
+      "model_selection",
+      "pseudo_labeling_for_training"
+    ]
+  },
+  "Seq0006": {
+    "status": "frozen_external",
+    "allowedUses": [
+      "final comparison ants_v1_baseline vs ants_v2"
+    ],
+    "forbiddenUses": [
+      "training",
+      "validation",
+      "hyperparameter_tuning",
+      "confidence_tuning",
+      "augmentation_tuning",
+      "model_selection",
+      "pseudo_labeling_for_training"
+    ]
+  },
+  "ant4": {
+    "status": "frozen_external_local_test_after_ground_truth",
+    "allowedUses": [
+      "final local external comparison after manual GT exists"
+    ],
+    "forbiddenUses": [
+      "training",
+      "validation",
+      "hyperparameter_tuning",
+      "confidence_tuning",
+      "augmentation_tuning",
+      "model_selection",
+      "pseudo_labeling_for_training"
+    ]
+  },
+  "ant3": {
+    "status": "stress_test_only",
+    "allowedUses": [
+      "qualitative stress testing after manual review"
+    ],
+    "forbiddenUses": [
+      "quantitative_validation",
+      "training",
+      "model_selection",
+      "pseudo_labeling_for_training"
+    ]
+  },
+  "ant2": {
+    "status": "regression_check_only",
+    "allowedUses": [
+      "no_catastrophic_regression_check"
+    ],
+    "forbiddenUses": [
+      "new_training_evidence",
+      "external_benchmark_claim"
+    ]
+  }
+}

@@ -1,0 +1,725 @@
+{
+  "experimentDesign": "ants_v3_mixedscale_e01",
+  "sourceComparison": "ant2 prepared ants_v1 labels vs ants_v2_diverse_e01 TRAIN labels",
+  "ant2RoleChange": "ant2 results have been observed; ant2 may be a training candidate or diagnostic/regression reference, but it is not an untouched unbiased final benchmark for v3.",
+  "metrics": {
+    "ant2Combined": {
+      "images": 67,
+      "annotations": 295,
+      "resolution": {
+        "600x700": 67
+      },
+      "antsPerImage": {
+        "count": 67,
+        "min": 3.0,
+        "p10": 3.6000000000000005,
+        "p25": 4.0,
+        "p50": 4.0,
+        "median": 4.0,
+        "p75": 5.0,
+        "p90": 5.0,
+        "max": 6.0,
+        "mean": 4.402985074626866
+      },
+      "bboxNormalizedWidth": {
+        "count": 295,
+        "min": 0.0683333333333,
+        "p10": 0.133333333333,
+        "p25": 0.1555333333335,
+        "p50": 0.183333333333,
+        "median": 0.183333333333,
+        "p75": 0.243633333333,
+        "p90": 0.37033333333340007,
+        "max": 0.425,
+        "mean": 0.21357203389832338
+      },
+      "bboxNormalizedHeight": {
+        "count": 295,
+        "min": 0.0457142857143,
+        "p10": 0.11057142857160002,
+        "p25": 0.134285714286,
+        "p50": 0.16,
+        "median": 0.16,
+        "p75": 0.205457142857,
+        "p90": 0.25514285714280005,
+        "max": 0.285714285714,
+        "mean": 0.1705353995157332
+      },
+      "bboxNormalizedArea": {
+        "count": 295,
+        "min": 0.007466666666653763,
+        "p10": 0.016814220380960816,
+        "p25": 0.02203214285712,
+        "p50": 0.02842368357155649,
+        "median": 0.02842368357155649,
+        "p75": 0.040708214285676975,
+        "p90": 0.09519523809528771,
+        "max": 0.113535714285775,
+        "mean": 0.03925357849152734
+      },
+      "warnings": []
+    },
+    "antsV2TrainAll": {
+      "images": 155,
+      "annotations": 3364,
+      "resolution": {
+        "1280x720": 80,
+        "1920x1080": 75
+      },
+      "antsPerImage": {
+        "count": 155,
+        "min": 8.0,
+        "p10": 10.0,
+        "p25": 10.0,
+        "p50": 10.0,
+        "median": 10.0,
+        "p75": 35.0,
+        "p90": 44.599999999999994,
+        "max": 56.0,
+        "mean": 21.703225806451613
+      },
+      "bboxNormalizedWidth": {
+        "count": 3364,
+        "min": 0.00859375,
+        "p10": 0.02109375,
+        "p25": 0.02678646,
+        "p50": 0.0359375,
+        "median": 0.0359375,
+        "p75": 0.04609375,
+        "p90": 0.05572917,
+        "max": 0.08802083,
+        "mean": 0.037302032306777644
+      },
+      "bboxNormalizedHeight": {
+        "count": 3364,
+        "min": 0.01193056,
+        "p10": 0.03611111,
+        "p25": 0.04583333,
+        "p50": 0.06111111,
+        "median": 0.06111111,
+        "p75": 0.07685185,
+        "p90": 0.09305556,
+        "max": 0.15,
+        "mean": 0.06269342738109393
+      },
+      "bboxNormalizedArea": {
+        "count": 3364,
+        "min": 0.0002737693411632,
+        "p10": 0.0010264757125000002,
+        "p25": 0.0014084202734375001,
+        "p50": 0.00208821614453125,
+        "median": 0.00208821614453125,
+        "p75": 0.0029839407812499996,
+        "p90": 0.004041594286226851,
+        "max": 0.0114969128734568,
+        "mean": 0.0023658246012299776
+      },
+      "warnings": [
+        {
+          "label": "datasets\\prepared\\ants_v2_diverse_e01\\labels\\train\\Seq0007_000071.txt",
+          "line": 24,
+          "reason": "class/range/bounds warning for design-only stats",
+          "value": "0 0.01757812 0.35972222 0.03515625 0.02222222",
+          "bounds": [
+            -5.000000000837668e-09,
+            0.34861111,
+            0.035156245,
+            0.37083332999999996
+          ]
+        },
+        {
+          "label": "datasets\\prepared\\ants_v2_diverse_e01\\labels\\train\\Seq0007_000187.txt",
+          "line": 34,
+          "reason": "class/range/bounds warning for design-only stats",
+          "value": "0 0.36875000 0.96805556 0.02500000 0.06388889",
+          "bounds": [
+            0.35625,
+            0.936111115,
+            0.38125000000000003,
+            1.000000005
+          ]
+        },
+        {
+          "label": "datasets\\prepared\\ants_v2_diverse_e01\\labels\\train\\Seq0008_000001.txt",
+          "line": 30,
+          "reason": "class/range/bounds warning for design-only stats",
+          "value": "0 0.24453125 0.98541667 0.06250000 0.02916667",
+          "bounds": [
+            0.21328125,
+            0.970833335,
+            0.27578125,
+            1.000000005
+          ]
+        },
+        {
+          "label": "datasets\\prepared\\ants_v2_diverse_e01\\labels\\train\\Seq0008_000423.txt",
+          "line": 8,
+          "reason": "class/range/bounds warning for design-only stats",
+          "value": "0 0.43828125 0.97430556 0.06093750 0.05138889",
+          "bounds": [
+            0.4078125,
+            0.9486111150000001,
+            0.46875,
+            1.000000005
+          ]
+        },
+        {
+          "label": "datasets\\prepared\\ants_v2_diverse_e01\\labels\\train\\Seq0009_000056.txt",
+          "line": 50,
+          "reason": "class/range/bounds warning for design-only stats",
+          "value": "0 0.02851562 0.83333333 0.05703125 0.04166667",
+          "bounds": [
+            -5.000000000837668e-09,
+            0.812499995,
+            0.057031244999999994,
+            0.8541666649999999
+          ]
+        },
+        {
+          "label": "datasets\\prepared\\ants_v2_diverse_e01\\labels\\train\\Seq0009_000277.txt",
+          "line": 34,
+          "reason": "class/range/bounds warning for design-only stats",
+          "value": "0 0.53320312 0.96180556 0.02734375 0.07638889",
+          "bounds": [
+            0.519531245,
+            0.9236111149999999,
+            0.546874995,
+            1.000000005
+          ]
+        },
+        {
+          "label": "datasets\\prepared\\ants_v2_diverse_e01\\labels\\train\\Seq0009_000443.txt",
+          "line": 4,
+          "reason": "class/range/bounds warning for design-only stats",
+          "value": "0 0.11523438 0.01944444 0.05703125 0.03888889",
+          "bounds": [
+            0.086718755,
+            -5.000000000837668e-09,
+            0.143750005,
+            0.038888885
+          ]
+        },
+        {
+          "label": "datasets\\prepared\\ants_v2_diverse_e01\\labels\\train\\Seq0009_000498.txt",
+          "line": 18,
+          "reason": "class/range/bounds warning for design-only stats",
+          "value": "0 0.29453125 0.01319444 0.05625000 0.02638889",
+          "bounds": [
+            0.26640625,
+            -5.000000000837668e-09,
+            0.32265625000000003,
+            0.026388885
+          ]
+        }
+      ]
+    },
+    "antsV2TrainBySource": {
+      "Seq0002": {
+        "images": 25,
+        "annotations": 247,
+        "resolution": {
+          "1920x1080": 25
+        },
+        "antsPerImage": {
+          "count": 25,
+          "min": 9.0,
+          "p10": 9.4,
+          "p25": 10.0,
+          "p50": 10.0,
+          "median": 10.0,
+          "p75": 10.0,
+          "p90": 10.0,
+          "max": 10.0,
+          "mean": 9.88
+        },
+        "bboxNormalizedWidth": {
+          "count": 247,
+          "min": 0.01265104,
+          "p10": 0.02380729,
+          "p25": 0.03422396,
+          "p50": 0.04375,
+          "median": 0.04375,
+          "p75": 0.04984896,
+          "p90": 0.05729167,
+          "max": 0.08802083,
+          "mean": 0.04252640024291498
+        },
+        "bboxNormalizedHeight": {
+          "count": 247,
+          "min": 0.0264537,
+          "p10": 0.03968519,
+          "p25": 0.05290741,
+          "p50": 0.06944444,
+          "median": 0.06944444,
+          "p75": 0.08862037,
+          "p90": 0.10052778,
+          "max": 0.13796296,
+          "mean": 0.0716472485020243
+        },
+        "bboxNormalizedArea": {
+          "count": 247,
+          "min": 0.001141642490625,
+          "p10": 0.0017175324683703797,
+          "p25": 0.0020925528012066003,
+          "p50": 0.0025391419485706,
+          "median": 0.0025391419485706,
+          "p75": 0.0033181880481114997,
+          "p90": 0.0042775610645887415,
+          "max": 0.0114969128734568,
+          "mean": 0.0029937808064565054
+        },
+        "warnings": []
+      },
+      "Seq0003": {
+        "images": 25,
+        "annotations": 250,
+        "resolution": {
+          "1920x1080": 25
+        },
+        "antsPerImage": {
+          "count": 25,
+          "min": 10.0,
+          "p10": 10.0,
+          "p25": 10.0,
+          "p50": 10.0,
+          "median": 10.0,
+          "p75": 10.0,
+          "p90": 10.0,
+          "max": 10.0,
+          "mean": 10.0
+        },
+        "bboxNormalizedWidth": {
+          "count": 250,
+          "min": 0.01859896,
+          "p10": 0.03385417,
+          "p25": 0.03947005,
+          "p50": 0.045572915,
+          "median": 0.045572915,
+          "p75": 0.0561197925,
+          "p90": 0.065677083,
+          "max": 0.08125,
+          "mean": 0.04790297916
+        },
+        "bboxNormalizedHeight": {
+          "count": 250,
+          "min": 0.0287037,
+          "p10": 0.056296295,
+          "p25": 0.06481481,
+          "p50": 0.07685185,
+          "median": 0.07685185,
+          "p75": 0.09351852,
+          "p90": 0.10555556,
+          "max": 0.14907407,
+          "mean": 0.07918785176
+        },
+        "bboxNormalizedArea": {
+          "count": 250,
+          "min": 0.0010362336764352,
+          "p10": 0.00212664249976795,
+          "p25": 0.002642626246624225,
+          "p50": 0.0034719809769483,
+          "median": 0.0034719809769483,
+          "p75": 0.004879075300829474,
+          "p90": 0.006206886549884249,
+          "max": 0.0099305557517361,
+          "mean": 0.0038565853408478084
+        },
+        "warnings": []
+      },
+      "Seq0004": {
+        "images": 25,
+        "annotations": 250,
+        "resolution": {
+          "1920x1080": 25
+        },
+        "antsPerImage": {
+          "count": 25,
+          "min": 10.0,
+          "p10": 10.0,
+          "p25": 10.0,
+          "p50": 10.0,
+          "median": 10.0,
+          "p75": 10.0,
+          "p90": 10.0,
+          "max": 10.0,
+          "mean": 10.0
+        },
+        "bboxNormalizedWidth": {
+          "count": 250,
+          "min": 0.01116146,
+          "p10": 0.029151564999999997,
+          "p25": 0.037611979999999996,
+          "p50": 0.0453125,
+          "median": 0.0453125,
+          "p75": 0.0550781225,
+          "p90": 0.062552083,
+          "max": 0.07447917,
+          "mean": 0.04548333384
+        },
+        "bboxNormalizedHeight": {
+          "count": 250,
+          "min": 0.01984259,
+          "p10": 0.051824998,
+          "p25": 0.06481481,
+          "p50": 0.07592593,
+          "median": 0.07592593,
+          "p75": 0.08703704,
+          "p90": 0.1,
+          "max": 0.15,
+          "mean": 0.07604559292
+        },
+        "bboxNormalizedArea": {
+          "count": 250,
+          "min": 0.0007972173258371999,
+          "p10": 0.00158017492931733,
+          "p25": 0.00221408429778645,
+          "p50": 0.00320143715576775,
+          "median": 0.00320143715576775,
+          "p75": 0.0046518135779321,
+          "p90": 0.005774932349922841,
+          "max": 0.0093827164691358,
+          "mean": 0.003528990309085409
+        },
+        "warnings": []
+      },
+      "Seq0007": {
+        "images": 30,
+        "annotations": 1089,
+        "resolution": {
+          "1280x720": 30
+        },
+        "antsPerImage": {
+          "count": 30,
+          "min": 25.0,
+          "p10": 32.9,
+          "p25": 35.0,
+          "p50": 37.0,
+          "median": 37.0,
+          "p75": 38.75,
+          "p90": 40.1,
+          "max": 42.0,
+          "mean": 36.3
+        },
+        "bboxNormalizedWidth": {
+          "count": 1089,
+          "min": 0.00859375,
+          "p10": 0.01796875,
+          "p25": 0.02265625,
+          "p50": 0.028125,
+          "median": 0.028125,
+          "p75": 0.034375,
+          "p90": 0.040625,
+          "max": 0.07265625,
+          "mean": 0.029113435555555556
+        },
+        "bboxNormalizedHeight": {
+          "count": 1089,
+          "min": 0.01193056,
+          "p10": 0.03055556,
+          "p25": 0.0375,
+          "p50": 0.04722222,
+          "median": 0.04722222,
+          "p75": 0.05726389,
+          "p90": 0.06805556,
+          "max": 0.10416667,
+          "mean": 0.04843990399449036
+        },
+        "bboxNormalizedArea": {
+          "count": 1089,
+          "min": 0.0002737693411632,
+          "p10": 0.0007634548375000001,
+          "p25": 0.00099826390625,
+          "p50": 0.0012538680809375,
+          "median": 0.0012538680809375,
+          "p75": 0.0016406250468750001,
+          "p90": 0.0020887586484375,
+          "max": 0.0051432289609375,
+          "mean": 0.001394933562937224
+        },
+        "warnings": [
+          {
+            "label": "datasets\\prepared\\ants_v2_diverse_e01\\labels\\train\\Seq0007_000071.txt",
+            "line": 24,
+            "reason": "class/range/bounds warning for design-only stats",
+            "value": "0 0.01757812 0.35972222 0.03515625 0.02222222",
+            "bounds": [
+              -5.000000000837668e-09,
+              0.34861111,
+              0.035156245,
+              0.37083332999999996
+            ]
+          },
+          {
+            "label": "datasets\\prepared\\ants_v2_diverse_e01\\labels\\train\\Seq0007_000187.txt",
+            "line": 34,
+            "reason": "class/range/bounds warning for design-only stats",
+            "value": "0 0.36875000 0.96805556 0.02500000 0.06388889",
+            "bounds": [
+              0.35625,
+              0.936111115,
+              0.38125000000000003,
+              1.000000005
+            ]
+          }
+        ]
+      },
+      "Seq0008": {
+        "images": 30,
+        "annotations": 541,
+        "resolution": {
+          "1280x720": 30
+        },
+        "antsPerImage": {
+          "count": 30,
+          "min": 8.0,
+          "p10": 10.9,
+          "p25": 13.0,
+          "p50": 18.0,
+          "median": 18.0,
+          "p75": 20.75,
+          "p90": 29.1,
+          "max": 33.0,
+          "mean": 18.033333333333335
+        },
+        "bboxNormalizedWidth": {
+          "count": 541,
+          "min": 0.01484375,
+          "p10": 0.0234375,
+          "p25": 0.03046875,
+          "p50": 0.040625,
+          "median": 0.040625,
+          "p75": 0.05,
+          "p90": 0.0609375,
+          "max": 0.0875,
+          "mean": 0.04122862754158965
+        },
+        "bboxNormalizedHeight": {
+          "count": 541,
+          "min": 0.01944444,
+          "p10": 0.04444444,
+          "p25": 0.05555556,
+          "p50": 0.07083333,
+          "median": 0.07083333,
+          "p75": 0.0875,
+          "p90": 0.10138889,
+          "max": 0.13611111,
+          "mean": 0.07174471140480591
+        },
+        "bboxNormalizedArea": {
+          "count": 541,
+          "min": 0.000694444375,
+          "p10": 0.0016286893046875003,
+          "p25": 0.002031250125,
+          "p50": 0.0026736111875000006,
+          "median": 0.0026736111875000006,
+          "p75": 0.0034570310625,
+          "p90": 0.0042426216875,
+          "max": 0.008452690687499998,
+          "mean": 0.0028623289527928606
+        },
+        "warnings": [
+          {
+            "label": "datasets\\prepared\\ants_v2_diverse_e01\\labels\\train\\Seq0008_000001.txt",
+            "line": 30,
+            "reason": "class/range/bounds warning for design-only stats",
+            "value": "0 0.24453125 0.98541667 0.06250000 0.02916667",
+            "bounds": [
+              0.21328125,
+              0.970833335,
+              0.27578125,
+              1.000000005
+            ]
+          },
+          {
+            "label": "datasets\\prepared\\ants_v2_diverse_e01\\labels\\train\\Seq0008_000423.txt",
+            "line": 8,
+            "reason": "class/range/bounds warning for design-only stats",
+            "value": "0 0.43828125 0.97430556 0.06093750 0.05138889",
+            "bounds": [
+              0.4078125,
+              0.9486111150000001,
+              0.46875,
+              1.000000005
+            ]
+          }
+        ]
+      },
+      "Seq0009": {
+        "images": 20,
+        "annotations": 987,
+        "resolution": {
+          "1280x720": 20
+        },
+        "antsPerImage": {
+          "count": 20,
+          "min": 39.0,
+          "p10": 42.9,
+          "p25": 46.5,
+          "p50": 51.0,
+          "median": 51.0,
+          "p75": 52.25,
+          "p90": 54.1,
+          "max": 56.0,
+          "mean": 49.35
+        },
+        "bboxNormalizedWidth": {
+          "count": 987,
+          "min": 0.01015625,
+          "p10": 0.02265625,
+          "p25": 0.02890625,
+          "p50": 0.0375,
+          "median": 0.0375,
+          "p75": 0.046875,
+          "p90": 0.05499999999999998,
+          "max": 0.071875,
+          "mean": 0.03811977583586626
+        },
+        "bboxNormalizedHeight": {
+          "count": 987,
+          "min": 0.01666667,
+          "p10": 0.04027778,
+          "p25": 0.05,
+          "p50": 0.0625,
+          "median": 0.0625,
+          "p75": 0.07638889,
+          "p90": 0.0875,
+          "max": 0.12638889,
+          "mean": 0.06365806873353597
+        },
+        "bboxNormalizedArea": {
+          "count": 987,
+          "min": 0.0006119792890625001,
+          "p10": 0.001358940971875,
+          "p25": 0.00175184464453125,
+          "p50": 0.0022330730625000003,
+          "median": 0.0022330730625000003,
+          "p75": 0.00280436205859375,
+          "p90": 0.0034303383562499998,
+          "max": 0.006158854390625,
+          "mean": 0.0023355355353191576
+        },
+        "warnings": [
+          {
+            "label": "datasets\\prepared\\ants_v2_diverse_e01\\labels\\train\\Seq0009_000056.txt",
+            "line": 50,
+            "reason": "class/range/bounds warning for design-only stats",
+            "value": "0 0.02851562 0.83333333 0.05703125 0.04166667",
+            "bounds": [
+              -5.000000000837668e-09,
+              0.812499995,
+              0.057031244999999994,
+              0.8541666649999999
+            ]
+          },
+          {
+            "label": "datasets\\prepared\\ants_v2_diverse_e01\\labels\\train\\Seq0009_000277.txt",
+            "line": 34,
+            "reason": "class/range/bounds warning for design-only stats",
+            "value": "0 0.53320312 0.96180556 0.02734375 0.07638889",
+            "bounds": [
+              0.519531245,
+              0.9236111149999999,
+              0.546874995,
+              1.000000005
+            ]
+          },
+          {
+            "label": "datasets\\prepared\\ants_v2_diverse_e01\\labels\\train\\Seq0009_000443.txt",
+            "line": 4,
+            "reason": "class/range/bounds warning for design-only stats",
+            "value": "0 0.11523438 0.01944444 0.05703125 0.03888889",
+            "bounds": [
+              0.086718755,
+              -5.000000000837668e-09,
+              0.143750005,
+              0.038888885
+            ]
+          },
+          {
+            "label": "datasets\\prepared\\ants_v2_diverse_e01\\labels\\train\\Seq0009_000498.txt",
+            "line": 18,
+            "reason": "class/range/bounds warning for design-only stats",
+            "value": "0 0.29453125 0.01319444 0.05625000 0.02638889",
+            "bounds": [
+              0.26640625,
+              -5.000000000837668e-09,
+              0.32265625000000003,
+              0.026388885
+            ]
+          }
+        ]
+      }
+    },
+    "keyRatiosAnt2OverV2Train": {
+      "medianWidth": 5.101449275353044,
+      "medianHeight": 2.618181865785125,
+      "medianArea": 13.611466248833578,
+      "p90Area": 23.5538827882103,
+      "medianAntsPerImage": 0.4
+    }
+  },
+  "gapSummary": {
+    "medianWidthRatioAnt2OverV2Train": 5.101449275353044,
+    "medianHeightRatioAnt2OverV2Train": 2.618181865785125,
+    "medianAreaRatioAnt2OverV2Train": 13.611466248833578,
+    "p90AreaRatioAnt2OverV2Train": 23.5538827882103,
+    "ant2MedianAntsPerImage": 4.0,
+    "v2TrainMedianAntsPerImage": 10.0
+  },
+  "missingOrUnderrepresentedExamplesForV2": [
+    {
+      "category": "queen large scale",
+      "evidence": "queen visible throughout ant2 contact sheet and GT montages; normalized boxes much larger than v2 train"
+    },
+    {
+      "category": "large workers",
+      "evidence": "ant2 workers are close-up and often several times larger than public TRAIN ants"
+    },
+    {
+      "category": "workers near queen",
+      "evidence": "ant2 validation montage shows workers touching/near queen body, causing localization/class confusion"
+    },
+    {
+      "category": "brood",
+      "evidence": "eggs/larvae/pupae visible near bottom/food area and can look like false-positive structures"
+    },
+    {
+      "category": "food",
+      "evidence": "pink/yellow food/substrate surfaces visible in ant2 and ant4"
+    },
+    {
+      "category": "reflections/glare",
+      "evidence": "curved plastic/acrylic glare and bright reflection spots appear across ant2"
+    },
+    {
+      "category": "substrate/container/cotton",
+      "evidence": "cotton fibers, container edges, debris and round white objects are visible in ant2"
+    },
+    {
+      "category": "other false-positive-like structures",
+      "evidence": "brood, food edges, glare dots, cotton fibers, dish rims and plastic tube edges should be represented as hard negatives when no ants are present"
+    }
+  ],
+  "diagnosticArtifacts": {
+    "rawScaleAnalysis": "artifacts\\analysis\\ants_v3_design\\ant2_scale_analysis_raw.json",
+    "ant2TrainGtMontage": "artifacts\\analysis\\ants_v3_design\\ant2_train_gt_boxes.jpg",
+    "ant2ValGtMontage": "artifacts\\analysis\\ants_v3_design\\ant2_regression_val_gt_boxes.jpg",
+    "ant2VsV2Boxplot": "artifacts\\analysis\\ants_v3_design\\plots\\ant2_vs_v2_train_bbox_area_boxplot.png",
+    "bboxMedianP90Plot": "artifacts\\analysis\\ants_v3_design\\plots\\bbox_area_median_p90_by_source.png",
+    "v2TrainMontages": [
+      "artifacts\\analysis\\ants_v3_design\\v2_train_Seq0002_manual_boxes.jpg",
+      "artifacts\\analysis\\ants_v3_design\\v2_train_Seq0003_manual_boxes.jpg",
+      "artifacts\\analysis\\ants_v3_design\\v2_train_Seq0004_manual_boxes.jpg",
+      "artifacts\\analysis\\ants_v3_design\\v2_train_Seq0007_manual_boxes.jpg",
+      "artifacts\\analysis\\ants_v3_design\\v2_train_Seq0008_manual_boxes.jpg",
+      "artifacts\\analysis\\ants_v3_design\\v2_train_Seq0009_manual_boxes.jpg"
+    ]
+  },
+  "notes": [
+    "No pseudo-labels were generated.",
+    "No annotations were modified.",
+    "Lenient parsing was used only for design statistics; tiny floating point edge warnings in existing v2 labels are recorded in raw analysis and not corrected here."
+  ],
+  "designGeneratedWithoutTrainingOrAnnotationChanges": true,
+  "contentSha256": "6665d259645a4b40e2e2f7303e503f519bfd458fdc800d426dda173b0d8de610"
+}

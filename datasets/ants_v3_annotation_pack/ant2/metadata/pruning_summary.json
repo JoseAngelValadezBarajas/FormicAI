@@ -1,0 +1,31 @@
+{
+  "context_distribution": {
+    "brood_context": 10,
+    "cotton_context": 27,
+    "food_context": 10,
+    "queen_present": 17,
+    "reflection_context": 10
+  },
+  "estimated_adult_annotations": 120,
+  "estimated_annotation_source": "design_existing_annotation_count_reference_only from ant2 candidate manifest",
+  "experiment": "ants_v3_mixedscale_e01",
+  "final_images_dir": "datasets/ants_v3_annotation_pack/ant2/final_images",
+  "final_manifest_csv": "datasets/ants_v3_annotation_pack/ant2/metadata/final_manifest.csv",
+  "final_manifest_jsonl": "datasets/ants_v3_annotation_pack/ant2/metadata/final_manifest.jsonl",
+  "final_selected_count": 27,
+  "no_historical_labels_copied": true,
+  "no_labels_created": true,
+  "original_candidate_count": 42,
+  "removed_redundant_count": 15,
+  "removed_redundant_json": "datasets/ants_v3_annotation_pack/ant2/metadata/removed_redundant.json",
+  "scale_distribution": {
+    "large_ge_ant2_median": 13,
+    "large_ge_ant2_median_reference_from_design": 3,
+    "medium_bridge_v2_to_ant2": 11
+  },
+  "schemaVersion": "1.0",
+  "source": "ant2",
+  "status": "final_visual_diversity_pruned_images_only_no_labels",
+  "visual_families_json": "datasets/ants_v3_annotation_pack/ant2/metadata/visual_families.json",
+  "visual_family_count": 5
+}

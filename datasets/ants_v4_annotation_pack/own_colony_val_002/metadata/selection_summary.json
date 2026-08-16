@@ -1,0 +1,159 @@
+{
+  "annotation_set_role": "CLEAN_OWN_COLONY_HOLDOUT_ANNOTATION_SET",
+  "appearance_comparison_without_models": {
+    "compared_against": [
+      "own_colony_val_001",
+      "v4 TRAIN source groups"
+    ],
+    "method": "simple frame statistics plus visual inspection of the contact sheet; no model inference or detections",
+    "preliminary_statistical_read": "own_colony_val_002 is treated as a clean held-out own-colony source regardless of similarity; source-level separation is the guard.",
+    "visual_read": {
+      "decision": "Accepted as clean own-colony holdout annotation set; similarity to real domain is desired, not a reason to reject.",
+      "own_colony_val_001": "Conceptually similar failure-domain family: tube/plastic geometry, warm cast, glare/reflections, small own-colony ants. Exact source-video SHA is distinct, so it remains a clean holdout source.",
+      "v4_train_source_groups": "Most similar to chamber/tube/block-nest aspects rather than the broader topdown arena views; still held out at source level and not eligible for train or checkpoint selection."
+    }
+  },
+  "constraints_observed": {
+    "no_ant4": true,
+    "no_commit_push": true,
+    "no_label_assist": true,
+    "no_model_inference": true,
+    "no_pseudo_labeling": true,
+    "no_roboflow": true,
+    "no_training": true
+  },
+  "contact_sheet": "artifacts/analysis/ants_v4_holdout_design/own_colony_val_002_contact_sheet.jpg",
+  "created_at_utc": "2026-08-14T08:10:44.402780+00:00",
+  "domain_statistics": {
+    "aspect_ratio": 1.7777777777777777,
+    "contrast_std_luminance_median_over_selected_frames": 39.15503002716768,
+    "median_luminance_median_over_selected_frames": 123.0,
+    "median_saturation_median_over_selected_frames": 128.5,
+    "sharpness_laplacian_var_median_over_selected_frames": 140.88788251219546
+  },
+  "experiment": "ants_v4_domain_e01",
+  "freeze_policy": {
+    "checkpoint_selection_eligible": false,
+    "development_selection_eligible": false,
+    "evaluation_timing": "evaluate only after v4 selected.pt is selected and frozen using development validation",
+    "no_labels_generated": true,
+    "train_eligible": false
+  },
+  "leakage_check": {
+    "ant4_absent_by_source_path_manifest_guard": true,
+    "ant4_note": "ant4 was not opened; verified only through source/path/manifest text guards.",
+    "ants11_overlap": 0,
+    "duplicate_selected_image_sha256": {},
+    "overlaps_by_reference_group": {
+      "ants_v2_prepared_train_val": [],
+      "ants_v3_train": [],
+      "ants_v3_valid": [],
+      "ants_v4_own_domain_train_addition": [],
+      "own_colony_val_001": []
+    },
+    "passed": true,
+    "selected_image_count": 30,
+    "unique_selected_image_sha256_count": 30
+  },
+  "manifest_csv": "datasets/ants_v4_annotation_pack/own_colony_val_002/metadata/manifest.csv",
+  "manifest_jsonl": "datasets/ants_v4_annotation_pack/own_colony_val_002/metadata/manifest.jsonl",
+  "schema_version": "1.0",
+  "selected_frame_integrity": {
+    "manifest_sha256": "e14e76478e4b2f234169cfd3fd59f3bfd8d404b3adbfa468f1a3377d7da884ab",
+    "selected_image_content_sha256": "9de3ea752bc889b90b6bb9528f4727daa551857c7f86486af80be91535c7af37",
+    "selected_images": 30,
+    "unique_image_sha256": 30
+  },
+  "selected_video": {
+    "avg_frame_rate": "18597600/309859",
+    "codec": "h264",
+    "codec_long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+    "duration_seconds": 86.071944,
+    "file_size_bytes": 218550884,
+    "filename": "own_colony_val_002.mp4",
+    "filesystem_created_time_local": "2026-08-14T01:56:42.547482",
+    "filesystem_modified_time_local": "2026-08-14T01:56:47.737847",
+    "fps": 60.019557282505914,
+    "frame_count": 5166,
+    "local_path": "samples/v2/own_colony_val_002.mp4",
+    "path": "C:\\Dev\\Ants\\samples\\v2\\own_colony_val_002.mp4",
+    "pix_fmt": "yuv420p",
+    "r_frame_rate": "60/1",
+    "reliable_creation_metadata": {
+      "format_creation_time_utc": "2026-08-14T07:55:09.000000Z",
+      "format_tags": {
+        "com.android.manufacturer": "motorola",
+        "com.android.model": "motorola edge 60 pro",
+        "com.android.version": "16",
+        "compatible_brands": "isommp42",
+        "creation_time": "2026-08-14T07:55:09.000000Z",
+        "major_brand": "mp42",
+        "minor_version": "0"
+      },
+      "stream_creation_time_utc": "2026-08-14T07:55:09.000000Z",
+      "stream_tags": {
+        "creation_time": "2026-08-14T07:55:09.000000Z",
+        "handler_name": "VideoHandle",
+        "language": "eng"
+      }
+    },
+    "resolution": {
+      "height": 1080,
+      "width": 1920
+    },
+    "sha256": "02ecfaf7a26865b6629f49756de3f3e558e0419f97b1404b8f094577dccc731e"
+  },
+  "selection_policy": {
+    "excluded_interval": null,
+    "excluded_interval_reason": "No intro/outro was excluded before deterministic selection.",
+    "replaced_initial_center_frames": [],
+    "replacement_rule": "Only decode failure, corrupt frame, or completely black frame may be replaced.",
+    "selected_frames": 30,
+    "strategy": "30 equal temporal bins over the full usable video interval; center frame from each bin.",
+    "target_frames": 30
+  },
+  "source_level_duplicate_check": {
+    "known_sources_compared": [
+      "Ants10.mp4",
+      "Ants11.mp4",
+      "Ants2.mp4",
+      "Ants3.mp4",
+      "Ants4.mp4",
+      "Ants5.mp4",
+      "Ants6.mp4",
+      "Ants7.mp4",
+      "Ants8.mp4",
+      "Ants9.mp4",
+      "own_colony_val_001.mp4"
+    ],
+    "matches": [],
+    "passed": true
+  },
+  "source_metadata_path": "datasets/ants_v4_design/own_colony_val_002_source.json",
+  "source_role": "FROZEN_CLEAN_OWN_COLONY_HOLDOUT",
+  "status": "PASS",
+  "status_reasons": [],
+  "visual_sanity_check": {
+    "colony_scene_usable": true,
+    "human_annotation_plausible": true,
+    "notes": [
+      "Contact sheet shows a stable own-colony scene across all 30 temporal bins; no intro/outro was excluded.",
+      "The scene uses a portrait/vertical colony composition inside a 1920x1080 frame, with yellow/orange substrate and visible plastic/tube geometry.",
+      "Glare/reflections and bright plastic/cotton-like edges are present, especially along the left and lower frame regions.",
+      "Visible adult-ant density appears sparse to low-medium across the sampled timeline; ants are small to medium and occur in changing positions.",
+      "Focus/contrast are sufficient for human annotation, with some real-world blur/reflection/occlusion that should remain part of the clean holdout."
+    ],
+    "timeline_coverage_reasonable": true,
+    "video_decodes_correctly": true,
+    "visual_characterization": {
+      "approximate_ant_density": "sparse to low-medium in contact-sheet view",
+      "background": "yellow substrate/sand with chamber/tube artifacts",
+      "camera_angle": "fixed own-colony chamber/tube view; portrait-like scene content inside landscape video frame",
+      "color_cast": "warm yellow/orange",
+      "focus": "usable, with mild blur/compression in places",
+      "glare_reflections": "present; legitimate holdout domain feature",
+      "occlusion": "plastic/tube edges and substrate texture may partially occlude or distract",
+      "tube_plastic": "visible translucent/plastic boundaries and circular tube/port region"
+    }
+  }
+}

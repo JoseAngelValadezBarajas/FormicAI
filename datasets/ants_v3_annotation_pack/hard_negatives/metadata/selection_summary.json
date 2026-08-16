@@ -1,0 +1,42 @@
+{
+  "annotation_policy": {
+    "adult_ant_positive": [
+      "queen",
+      "worker",
+      "major",
+      "minor",
+      "replete"
+    ],
+    "box_policy": "one physical adult ant = one tight visible body box around head + thorax + abdomen; no intentional leg/antenna-tip padding; overlapping boxes allowed",
+    "class_mapping": {
+      "0": "ant"
+    },
+    "forbidden": [
+      "training",
+      "pseudo-labeling",
+      "copying historical ant2 labels as new FormicAI ground truth",
+      "remapping AntsNet labels automatically",
+      "declaring hard negatives before full-resolution human zero-ant verification"
+    ],
+    "not_ant": [
+      "brood",
+      "food",
+      "cotton",
+      "substrate",
+      "reflection"
+    ]
+  },
+  "candidate_count": 12,
+  "confirmed_zero_label_negatives": 0,
+  "experiment": "ants_v3_mixedscale_e01",
+  "manifest_csv": "datasets/ants_v3_annotation_pack/hard_negatives/metadata/manifest.csv",
+  "manifest_jsonl": "datasets/ants_v3_annotation_pack/hard_negatives/metadata/manifest.jsonl",
+  "no_labels_created": true,
+  "possible_zero_label_negatives": 12,
+  "schemaVersion": "1.0",
+  "source": "nest_test_001",
+  "source_video": "samples/nest_test_001.mp4",
+  "source_video_sha256": "85b12404b0d51569b0f5553a84f30b1ffa0e7a8b427fd9d570676c4dea41f6b6",
+  "status": "hard_negative_candidates_unverified_images_only_no_labels",
+  "verification_status": "UNVERIFIED"
+}

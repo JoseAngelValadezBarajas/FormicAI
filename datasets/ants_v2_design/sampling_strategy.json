@@ -1,0 +1,18 @@
+{
+  "recommended": "source-level split first; fixed temporal sampling within selected sources",
+  "avoid": [
+    "all frames by default",
+    "random frame split",
+    "Seq0001/Seq0006 for tuning"
+  ],
+  "initialCounts": {
+    "trainPerSelectedIndoorSequence": "75-150 frames",
+    "trainPerSelectedOutdoorSequence": "100-200 frames",
+    "validationPerHeldOutSequence": "100-200 frames"
+  },
+  "targetSize": {
+    "trainImages": "600-900",
+    "validationImages": "200-350",
+    "approxAnnotations": "5k-15k depending on selected outdoor density"
+  }
+}

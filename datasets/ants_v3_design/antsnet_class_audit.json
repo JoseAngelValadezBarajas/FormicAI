@@ -1,0 +1,716 @@
+{
+  "classCount": 70,
+  "classes": [
+    {
+      "annotation_count": 1,
+      "category": "BROOD",
+      "flags": [
+        "case_variant"
+      ],
+      "id": 0,
+      "image_count": 1,
+      "name": "Larva"
+    },
+    {
+      "annotation_count": 41,
+      "category": "BROOD",
+      "flags": [],
+      "id": 1,
+      "image_count": 3,
+      "name": "cocoon_camponotus_nicobarensis"
+    },
+    {
+      "annotation_count": 13,
+      "category": "BROOD",
+      "flags": [],
+      "id": 2,
+      "image_count": 3,
+      "name": "larva_camponotus_nicobarensis"
+    },
+    {
+      "annotation_count": 304,
+      "category": "BROOD",
+      "flags": [],
+      "id": 3,
+      "image_count": 48,
+      "name": "larva_myrmica_rubra"
+    },
+    {
+      "annotation_count": 17,
+      "category": "BROOD",
+      "flags": [],
+      "id": 4,
+      "image_count": 4,
+      "name": "larva_tetramorium_immigrans"
+    },
+    {
+      "annotation_count": 5,
+      "category": "UNKNOWN_OR_AMBIGUOUS",
+      "flags": [
+        "taxonomic_role_ambiguous"
+      ],
+      "id": 5,
+      "image_count": 3,
+      "name": "proceratium_silaceum"
+    },
+    {
+      "annotation_count": 40,
+      "category": "BROOD",
+      "flags": [],
+      "id": 6,
+      "image_count": 40,
+      "name": "pupa_myrmica_rubra"
+    },
+    {
+      "annotation_count": 173,
+      "category": "ADULT_ANT",
+      "flags": [
+        "suspicious_typo_qorker"
+      ],
+      "id": 7,
+      "image_count": 32,
+      "name": "qorker_minor_camponotus_maritimus"
+    },
+    {
+      "annotation_count": 6,
+      "category": "ADULT_ANT",
+      "flags": [],
+      "id": 8,
+      "image_count": 6,
+      "name": "queen"
+    },
+    {
+      "annotation_count": 4,
+      "category": "ADULT_ANT",
+      "flags": [],
+      "id": 9,
+      "image_count": 2,
+      "name": "queen_aphaenogaster_rudis"
+    },
+    {
+      "annotation_count": 3,
+      "category": "ADULT_ANT",
+      "flags": [],
+      "id": 10,
+      "image_count": 1,
+      "name": "queen_brachymyrmex_depilis"
+    },
+    {
+      "annotation_count": 2,
+      "category": "ADULT_ANT",
+      "flags": [],
+      "id": 11,
+      "image_count": 2,
+      "name": "queen_camponotus"
+    },
+    {
+      "annotation_count": 51,
+      "category": "ADULT_ANT",
+      "flags": [],
+      "id": 12,
+      "image_count": 51,
+      "name": "queen_camponotus_cinctellus"
+    },
+    {
+      "annotation_count": 1,
+      "category": "ADULT_ANT",
+      "flags": [],
+      "id": 13,
+      "image_count": 1,
+      "name": "queen_camponotus_fragilis"
+    },
+    {
+      "annotation_count": 7,
+      "category": "ADULT_ANT",
+      "flags": [],
+      "id": 14,
+      "image_count": 7,
+      "name": "queen_camponotus_herculeanus"
+    },
+    {
+      "annotation_count": 31,
+      "category": "ADULT_ANT",
+      "flags": [],
+      "id": 15,
+      "image_count": 31,
+      "name": "queen_camponotus_maritimus"
+    },
+    {
+      "annotation_count": 35,
+      "category": "ADULT_ANT",
+      "flags": [],
+      "id": 16,
+      "image_count": 25,
+      "name": "queen_camponotus_nicobarensis"
+    },
+    {
+      "annotation_count": 160,
+      "category": "ADULT_ANT",
+      "flags": [],
+      "id": 17,
+      "image_count": 160,
+      "name": "queen_camponotus_quercicola"
+    },
+    {
+      "annotation_count": 2,
+      "category": "ADULT_ANT",
+      "flags": [],
+      "id": 18,
+      "image_count": 2,
+      "name": "queen_camponotus_sp"
+    },
+    {
+      "annotation_count": 4,
+      "category": "ADULT_ANT",
+      "flags": [],
+      "id": 19,
+      "image_count": 4,
+      "name": "queen_camponotus_vagus"
+    },
+    {
+      "annotation_count": 87,
+      "category": "ADULT_ANT",
+      "flags": [],
+      "id": 20,
+      "image_count": 62,
+      "name": "queen_camponotus_vicinus"
+    },
+    {
+      "annotation_count": 10,
+      "category": "ADULT_ANT",
+      "flags": [],
+      "id": 21,
+      "image_count": 10,
+      "name": "queen_crematogaster_biroi"
+    },
+    {
+      "annotation_count": 18,
+      "category": "ADULT_ANT",
+      "flags": [],
+      "id": 22,
+      "image_count": 18,
+      "name": "queen_crematogaster_scutelarris"
+    },
+    {
+      "annotation_count": 63,
+      "category": "ADULT_ANT",
+      "flags": [],
+      "id": 23,
+      "image_count": 63,
+      "name": "queen_formica_sp"
+    },
+    {
+      "annotation_count": 2,
+      "category": "ADULT_ANT",
+      "flags": [],
+      "id": 24,
+      "image_count": 2,
+      "name": "queen_lasius_claviger"
+    },
+    {
+      "annotation_count": 47,
+      "category": "ADULT_ANT",
+      "flags": [],
+      "id": 25,
+      "image_count": 23,
+      "name": "queen_lasius_flavus"
+    },
+    {
+      "annotation_count": 2,
+      "category": "ADULT_ANT",
+      "flags": [],
+      "id": 26,
+      "image_count": 2,
+      "name": "queen_lasius_murphyi"
+    },
+    {
+      "annotation_count": 44,
+      "category": "ADULT_ANT",
+      "flags": [],
+      "id": 27,
+      "image_count": 44,
+      "name": "queen_lasius_niger"
+    },
+    {
+      "annotation_count": 20,
+      "category": "ADULT_ANT",
+      "flags": [],
+      "id": 28,
+      "image_count": 20,
+      "name": "queen_messor_barbarus"
+    },
+    {
+      "annotation_count": 7,
+      "category": "ADULT_ANT",
+      "flags": [],
+      "id": 29,
+      "image_count": 3,
+      "name": "queen_myrmecina_americana"
+    },
+    {
+      "annotation_count": 1,
+      "category": "ADULT_ANT",
+      "flags": [],
+      "id": 30,
+      "image_count": 1,
+      "name": "queen_myrmecocystus_mexicanus"
+    },
+    {
+      "annotation_count": 215,
+      "category": "ADULT_ANT",
+      "flags": [],
+      "id": 31,
+      "image_count": 81,
+      "name": "queen_myrmica_rubra"
+    },
+    {
+      "annotation_count": 271,
+      "category": "ADULT_ANT",
+      "flags": [],
+      "id": 32,
+      "image_count": 195,
+      "name": "queen_novomessor_cockerelli"
+    },
+    {
+      "annotation_count": 2,
+      "category": "ADULT_ANT",
+      "flags": [],
+      "id": 33,
+      "image_count": 2,
+      "name": "queen_pheidole"
+    },
+    {
+      "annotation_count": 2,
+      "category": "ADULT_ANT",
+      "flags": [],
+      "id": 34,
+      "image_count": 2,
+      "name": "queen_pheidole_tysoni"
+    },
+    {
+      "annotation_count": 46,
+      "category": "ADULT_ANT",
+      "flags": [],
+      "id": 35,
+      "image_count": 46,
+      "name": "queen_pogonomyrmex_occidentalis"
+    },
+    {
+      "annotation_count": 9,
+      "category": "ADULT_ANT",
+      "flags": [],
+      "id": 36,
+      "image_count": 9,
+      "name": "queen_pogonomyrmex_rugosus"
+    },
+    {
+      "annotation_count": 2,
+      "category": "ADULT_ANT",
+      "flags": [],
+      "id": 37,
+      "image_count": 2,
+      "name": "queen_pseudomyrmex"
+    },
+    {
+      "annotation_count": 3,
+      "category": "ADULT_ANT",
+      "flags": [],
+      "id": 38,
+      "image_count": 3,
+      "name": "queen_solenopsis_molesta"
+    },
+    {
+      "annotation_count": 7,
+      "category": "UNKNOWN_OR_AMBIGUOUS",
+      "flags": [
+        "taxonomic_role_ambiguous"
+      ],
+      "id": 39,
+      "image_count": 6,
+      "name": "stigmatomma_pallipes"
+    },
+    {
+      "annotation_count": 1,
+      "category": "UNKNOWN_OR_AMBIGUOUS",
+      "flags": [
+        "taxonomic_role_ambiguous"
+      ],
+      "id": 40,
+      "image_count": 1,
+      "name": "temnothorax_longispinosus"
+    },
+    {
+      "annotation_count": 4,
+      "category": "ADULT_ANT",
+      "flags": [],
+      "id": 41,
+      "image_count": 1,
+      "name": "worker_aphaenogaster_picea"
+    },
+    {
+      "annotation_count": 4,
+      "category": "ADULT_ANT",
+      "flags": [],
+      "id": 42,
+      "image_count": 1,
+      "name": "worker_brachymyrmex_depilis"
+    },
+    {
+      "annotation_count": 9,
+      "category": "ADULT_ANT",
+      "flags": [],
+      "id": 43,
+      "image_count": 9,
+      "name": "worker_crematogaster_biroi"
+    },
+    {
+      "annotation_count": 1,
+      "category": "ADULT_ANT",
+      "flags": [],
+      "id": 44,
+      "image_count": 1,
+      "name": "worker_dolichoderinae"
+    },
+    {
+      "annotation_count": 287,
+      "category": "ADULT_ANT",
+      "flags": [],
+      "id": 45,
+      "image_count": 78,
+      "name": "worker_formica_sp"
+    },
+    {
+      "annotation_count": 88,
+      "category": "ADULT_ANT",
+      "flags": [],
+      "id": 46,
+      "image_count": 23,
+      "name": "worker_lasius_flavus"
+    },
+    {
+      "annotation_count": 759,
+      "category": "ADULT_ANT",
+      "flags": [],
+      "id": 47,
+      "image_count": 41,
+      "name": "worker_lasius_niger"
+    },
+    {
+      "annotation_count": 1,
+      "category": "ADULT_ANT",
+      "flags": [],
+      "id": 48,
+      "image_count": 1,
+      "name": "worker_major_messor_barbarus"
+    },
+    {
+      "annotation_count": 2,
+      "category": "ADULT_ANT",
+      "flags": [],
+      "id": 49,
+      "image_count": 2,
+      "name": "worker_major_pheidole"
+    },
+    {
+      "annotation_count": 5,
+      "category": "ADULT_ANT",
+      "flags": [],
+      "id": 50,
+      "image_count": 5,
+      "name": "worker_major_pheidole_tysoni"
+    },
+    {
+      "annotation_count": 32,
+      "category": "ADULT_ANT",
+      "flags": [],
+      "id": 51,
+      "image_count": 7,
+      "name": "worker_minor_camponotus"
+    },
+    {
+      "annotation_count": 52,
+      "category": "ADULT_ANT",
+      "flags": [],
+      "id": 52,
+      "image_count": 39,
+      "name": "worker_minor_camponotus_cinctellus"
+    },
+    {
+      "annotation_count": 40,
+      "category": "ADULT_ANT",
+      "flags": [],
+      "id": 53,
+      "image_count": 7,
+      "name": "worker_minor_camponotus_herculeanus"
+    },
+    {
+      "annotation_count": 175,
+      "category": "ADULT_ANT",
+      "flags": [],
+      "id": 54,
+      "image_count": 26,
+      "name": "worker_minor_camponotus_nicobarensis"
+    },
+    {
+      "annotation_count": 290,
+      "category": "ADULT_ANT",
+      "flags": [],
+      "id": 55,
+      "image_count": 162,
+      "name": "worker_minor_camponotus_quercicola"
+    },
+    {
+      "annotation_count": 26,
+      "category": "ADULT_ANT",
+      "flags": [],
+      "id": 56,
+      "image_count": 3,
+      "name": "worker_minor_camponotus_vagus"
+    },
+    {
+      "annotation_count": 357,
+      "category": "ADULT_ANT",
+      "flags": [],
+      "id": 57,
+      "image_count": 70,
+      "name": "worker_minor_camponotus_vicinus"
+    },
+    {
+      "annotation_count": 28,
+      "category": "ADULT_ANT",
+      "flags": [],
+      "id": 58,
+      "image_count": 12,
+      "name": "worker_minor_myrmecocystus_mexicanus"
+    },
+    {
+      "annotation_count": 2,
+      "category": "ADULT_ANT",
+      "flags": [],
+      "id": 59,
+      "image_count": 2,
+      "name": "worker_minor_pheidole"
+    },
+    {
+      "annotation_count": 15,
+      "category": "ADULT_ANT",
+      "flags": [],
+      "id": 60,
+      "image_count": 3,
+      "name": "worker_minor_pheidole_tysoni"
+    },
+    {
+      "annotation_count": 6,
+      "category": "ADULT_ANT",
+      "flags": [],
+      "id": 61,
+      "image_count": 3,
+      "name": "worker_myrmica_pinetorum"
+    },
+    {
+      "annotation_count": 805,
+      "category": "ADULT_ANT",
+      "flags": [],
+      "id": 62,
+      "image_count": 191,
+      "name": "worker_novomessor_cockerelli"
+    },
+    {
+      "annotation_count": 1832,
+      "category": "ADULT_ANT",
+      "flags": [],
+      "id": 63,
+      "image_count": 115,
+      "name": "worker_pogonomyrmex_occidentalis"
+    },
+    {
+      "annotation_count": 58,
+      "category": "ADULT_ANT",
+      "flags": [],
+      "id": 64,
+      "image_count": 10,
+      "name": "worker_pogonomyrmex_rugosus"
+    },
+    {
+      "annotation_count": 19,
+      "category": "ADULT_ANT",
+      "flags": [],
+      "id": 65,
+      "image_count": 6,
+      "name": "worker_pogonomyrmex_subnitidus"
+    },
+    {
+      "annotation_count": 53,
+      "category": "ADULT_ANT",
+      "flags": [],
+      "id": 66,
+      "image_count": 20,
+      "name": "worker_replete_myrmecocystus_mexicanus"
+    },
+    {
+      "annotation_count": 26,
+      "category": "ADULT_ANT",
+      "flags": [],
+      "id": 67,
+      "image_count": 7,
+      "name": "worker_solenopsis_molesta"
+    },
+    {
+      "annotation_count": 2,
+      "category": "ADULT_ANT",
+      "flags": [],
+      "id": 68,
+      "image_count": 2,
+      "name": "worker_stenamma_schmitti"
+    },
+    {
+      "annotation_count": 14,
+      "category": "ADULT_ANT",
+      "flags": [],
+      "id": 69,
+      "image_count": 6,
+      "name": "worker_tetramorium_immigrans"
+    }
+  ],
+  "notes": [
+    "ADULT_ANT is provisional and based on explicit queen/worker caste names.",
+    "BROOD classes are not ants under FormicAI adult-ant detection policy.",
+    "UNKNOWN_OR_AMBIGUOUS taxonomic-only names require manual review before use.",
+    "Known suspicious typo preserved verbatim: qorker_minor_camponotus_maritimus."
+  ],
+  "schemaVersion": "1.0",
+  "source": "antsnet/antsnet v14 YOLOv8 export",
+  "summary": {
+    "adultAntClassCount": 61,
+    "adultAntClasses": [
+      "qorker_minor_camponotus_maritimus",
+      "queen",
+      "queen_aphaenogaster_rudis",
+      "queen_brachymyrmex_depilis",
+      "queen_camponotus",
+      "queen_camponotus_cinctellus",
+      "queen_camponotus_fragilis",
+      "queen_camponotus_herculeanus",
+      "queen_camponotus_maritimus",
+      "queen_camponotus_nicobarensis",
+      "queen_camponotus_quercicola",
+      "queen_camponotus_sp",
+      "queen_camponotus_vagus",
+      "queen_camponotus_vicinus",
+      "queen_crematogaster_biroi",
+      "queen_crematogaster_scutelarris",
+      "queen_formica_sp",
+      "queen_lasius_claviger",
+      "queen_lasius_flavus",
+      "queen_lasius_murphyi",
+      "queen_lasius_niger",
+      "queen_messor_barbarus",
+      "queen_myrmecina_americana",
+      "queen_myrmecocystus_mexicanus",
+      "queen_myrmica_rubra",
+      "queen_novomessor_cockerelli",
+      "queen_pheidole",
+      "queen_pheidole_tysoni",
+      "queen_pogonomyrmex_occidentalis",
+      "queen_pogonomyrmex_rugosus",
+      "queen_pseudomyrmex",
+      "queen_solenopsis_molesta",
+      "worker_aphaenogaster_picea",
+      "worker_brachymyrmex_depilis",
+      "worker_crematogaster_biroi",
+      "worker_dolichoderinae",
+      "worker_formica_sp",
+      "worker_lasius_flavus",
+      "worker_lasius_niger",
+      "worker_major_messor_barbarus",
+      "worker_major_pheidole",
+      "worker_major_pheidole_tysoni",
+      "worker_minor_camponotus",
+      "worker_minor_camponotus_cinctellus",
+      "worker_minor_camponotus_herculeanus",
+      "worker_minor_camponotus_nicobarensis",
+      "worker_minor_camponotus_quercicola",
+      "worker_minor_camponotus_vagus",
+      "worker_minor_camponotus_vicinus",
+      "worker_minor_myrmecocystus_mexicanus",
+      "worker_minor_pheidole",
+      "worker_minor_pheidole_tysoni",
+      "worker_myrmica_pinetorum",
+      "worker_novomessor_cockerelli",
+      "worker_pogonomyrmex_occidentalis",
+      "worker_pogonomyrmex_rugosus",
+      "worker_pogonomyrmex_subnitidus",
+      "worker_replete_myrmecocystus_mexicanus",
+      "worker_solenopsis_molesta",
+      "worker_stenamma_schmitti",
+      "worker_tetramorium_immigrans"
+    ],
+    "ambiguousClassCount": 3,
+    "ambiguousClasses": [
+      "proceratium_silaceum",
+      "stigmatomma_pallipes",
+      "temnothorax_longispinosus"
+    ],
+    "broodClassCount": 6,
+    "broodClasses": [
+      "Larva",
+      "cocoon_camponotus_nicobarensis",
+      "larva_camponotus_nicobarensis",
+      "larva_myrmica_rubra",
+      "larva_tetramorium_immigrans",
+      "pupa_myrmica_rubra"
+    ],
+    "suspiciousNames": [
+      {
+        "annotation_count": 1,
+        "category": "BROOD",
+        "flags": [
+          "case_variant"
+        ],
+        "id": 0,
+        "image_count": 1,
+        "name": "Larva"
+      },
+      {
+        "annotation_count": 5,
+        "category": "UNKNOWN_OR_AMBIGUOUS",
+        "flags": [
+          "taxonomic_role_ambiguous"
+        ],
+        "id": 5,
+        "image_count": 3,
+        "name": "proceratium_silaceum"
+      },
+      {
+        "annotation_count": 173,
+        "category": "ADULT_ANT",
+        "flags": [
+          "suspicious_typo_qorker"
+        ],
+        "id": 7,
+        "image_count": 32,
+        "name": "qorker_minor_camponotus_maritimus"
+      },
+      {
+        "annotation_count": 7,
+        "category": "UNKNOWN_OR_AMBIGUOUS",
+        "flags": [
+          "taxonomic_role_ambiguous"
+        ],
+        "id": 39,
+        "image_count": 6,
+        "name": "stigmatomma_pallipes"
+      },
+      {
+        "annotation_count": 1,
+        "category": "UNKNOWN_OR_AMBIGUOUS",
+        "flags": [
+          "taxonomic_role_ambiguous"
+        ],
+        "id": 40,
+        "image_count": 1,
+        "name": "temnothorax_longispinosus"
+      }
+    ]
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "experiment": "ants_v2_diverse_e01",
+  "policy": "manual tight body boxes; original ANTS boxes are metadata only",
+  "trainImages": 155,
+  "valImages": 60,
+  "totalImages": 215,
+  "estimatedAnnotationsFromANTSCounts": 4929,
+  "estimatedAnnotationsLimit": 6000,
+  "perSource": {
+    "Seq0002": {
+      "split": "train",
+      "selectedImages": 25,
+      "estimatedAnnotationsFromANTSCounts": 250,
+      "densityBucketDistribution": {
+        "medium": 25
+      },
+      "firstFrame": 1,
+      "lastFrame": 351
+    },
+    "Seq0003": {
+      "split": "train",
+      "selectedImages": 25,
+      "estimatedAnnotationsFromANTSCounts": 250,
+      "densityBucketDistribution": {
+        "medium": 25
+      },
+      "firstFrame": 1,
+      "lastFrame": 351
+    },
+    "Seq0004": {
+      "split": "train",
+      "selectedImages": 25,
+      "estimatedAnnotationsFromANTSCounts": 250,
+      "densityBucketDistribution": {
+        "medium": 25
+      },
+      "firstFrame": 1,
+      "lastFrame": 351
+    },
+    "Seq0007": {
+      "split": "train",
+      "selectedImages": 30,
+      "estimatedAnnotationsFromANTSCounts": 1117,
+      "densityBucketDistribution": {
+        "low": 11,
+        "medium": 12,
+        "high": 7
+      },
+      "firstFrame": 1,
+      "lastFrame": 677
+    },
+    "Seq0008": {
+      "split": "train",
+      "selectedImages": 30,
+      "estimatedAnnotationsFromANTSCounts": 560,
+      "densityBucketDistribution": {
+        "high": 9,
+        "medium": 10,
+        "low": 11
+      },
+      "firstFrame": 1,
+      "lastFrame": 557
+    },
+    "Seq0009": {
+      "split": "train",
+      "selectedImages": 20,
+      "estimatedAnnotationsFromANTSCounts": 1058,
+      "densityBucketDistribution": {
+        "low": 9,
+        "medium": 8,
+        "high": 3
+      },
+      "firstFrame": 1,
+      "lastFrame": 526
+    },
+    "Seq0005": {
+      "split": "val",
+      "selectedImages": 30,
+      "estimatedAnnotationsFromANTSCounts": 300,
+      "densityBucketDistribution": {
+        "medium": 30
+      },
+      "firstFrame": 1,
+      "lastFrame": 1001
+    },
+    "Seq0010": {
+      "split": "val",
+      "selectedImages": 30,
+      "estimatedAnnotationsFromANTSCounts": 1144,
+      "densityBucketDistribution": {
+        "low": 13,
+        "medium": 8,
+        "high": 9
+      },
+      "firstFrame": 1,
+      "lastFrame": 526
+    }
+  },
+  "densityDistribution": {
+    "medium": 143,
+    "low": 44,
+    "high": 28
+  },
+  "leakageReport": {
+    "forbiddenSourcesAbsent": {
+      "Seq0001": true,
+      "Seq0006": true,
+      "ant3": true,
+      "ant4": true
+    },
+    "trainValFilenameOverlap": [],
+    "duplicateRelativePaths": [],
+    "ok": true
+  },
+  "montageDir": "artifacts\\analysis\\ants_v2_annotation_pack_montages"
+}

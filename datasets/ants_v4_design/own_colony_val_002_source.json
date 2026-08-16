@@ -1,0 +1,186 @@
+{
+  "candidate_inventory": {
+    "non_videos": [
+      {
+        "classification": "non_video_file",
+        "filename": "ant1.jpg",
+        "filesystem_created_time_local": "2026-08-13T23:28:22",
+        "filesystem_modified_time_local": "2026-08-14T00:30:52.932728",
+        "path": "C:\\Dev\\Ants\\samples\\v2\\ant1.jpg",
+        "size_bytes": 2841928
+      }
+    ],
+    "plausible_new_video_candidates": [
+      {
+        "filename": "own_colony_val_002.mp4",
+        "filesystem_created_time_local": "2026-08-14T01:56:42.547482",
+        "filesystem_modified_time_local": "2026-08-14T01:56:47.737847",
+        "known_source": false,
+        "path": "C:\\Dev\\Ants\\samples\\v2\\own_colony_val_002.mp4",
+        "size_bytes": 218550884
+      }
+    ],
+    "videos": [
+      {
+        "filename": "Ants10.mp4",
+        "filesystem_created_time_local": "2026-08-13T23:19:00",
+        "filesystem_modified_time_local": "2026-08-14T00:31:01.092498",
+        "known_source": true,
+        "path": "C:\\Dev\\Ants\\samples\\v2\\Ants10.mp4",
+        "size_bytes": 244976600
+      },
+      {
+        "filename": "Ants11.mp4",
+        "filesystem_created_time_local": "2026-08-13T23:18:46",
+        "filesystem_modified_time_local": "2026-08-14T00:31:02.944296",
+        "known_source": true,
+        "path": "C:\\Dev\\Ants\\samples\\v2\\Ants11.mp4",
+        "size_bytes": 307393123
+      },
+      {
+        "filename": "Ants2.mp4",
+        "filesystem_created_time_local": "2026-08-13T23:18:50",
+        "filesystem_modified_time_local": "2026-08-14T00:30:52.970569",
+        "known_source": true,
+        "path": "C:\\Dev\\Ants\\samples\\v2\\Ants2.mp4",
+        "size_bytes": 5345726
+      },
+      {
+        "filename": "Ants3.mp4",
+        "filesystem_created_time_local": "2026-08-13T23:18:56",
+        "filesystem_modified_time_local": "2026-08-14T00:30:53.417857",
+        "known_source": true,
+        "path": "C:\\Dev\\Ants\\samples\\v2\\Ants3.mp4",
+        "size_bytes": 79874171
+      },
+      {
+        "filename": "Ants4.mp4",
+        "filesystem_created_time_local": "2026-08-13T23:18:54",
+        "filesystem_modified_time_local": "2026-08-14T00:30:54.175942",
+        "known_source": true,
+        "path": "C:\\Dev\\Ants\\samples\\v2\\Ants4.mp4",
+        "size_bytes": 129886391
+      },
+      {
+        "filename": "Ants5.mp4",
+        "filesystem_created_time_local": "2026-08-13T23:19:04",
+        "filesystem_modified_time_local": "2026-08-14T00:30:55.051544",
+        "known_source": true,
+        "path": "C:\\Dev\\Ants\\samples\\v2\\Ants5.mp4",
+        "size_bytes": 156126540
+      },
+      {
+        "filename": "Ants6.mp4",
+        "filesystem_created_time_local": "2026-08-13T23:18:52",
+        "filesystem_modified_time_local": "2026-08-14T00:30:56.339052",
+        "known_source": true,
+        "path": "C:\\Dev\\Ants\\samples\\v2\\Ants6.mp4",
+        "size_bytes": 186279042
+      },
+      {
+        "filename": "Ants7.mp4",
+        "filesystem_created_time_local": "2026-08-13T23:18:50",
+        "filesystem_modified_time_local": "2026-08-14T00:30:57.402611",
+        "known_source": true,
+        "path": "C:\\Dev\\Ants\\samples\\v2\\Ants7.mp4",
+        "size_bytes": 185231419
+      },
+      {
+        "filename": "Ants8.mp4",
+        "filesystem_created_time_local": "2026-08-13T23:18:58",
+        "filesystem_modified_time_local": "2026-08-14T00:30:58.336818",
+        "known_source": true,
+        "path": "C:\\Dev\\Ants\\samples\\v2\\Ants8.mp4",
+        "size_bytes": 155536454
+      },
+      {
+        "filename": "Ants9.mp4",
+        "filesystem_created_time_local": "2026-08-13T23:19:02",
+        "filesystem_modified_time_local": "2026-08-14T00:30:59.468121",
+        "known_source": true,
+        "path": "C:\\Dev\\Ants\\samples\\v2\\Ants9.mp4",
+        "size_bytes": 194299399
+      },
+      {
+        "filename": "own_colony_val_002.mp4",
+        "filesystem_created_time_local": "2026-08-14T01:56:42.547482",
+        "filesystem_modified_time_local": "2026-08-14T01:56:47.737847",
+        "known_source": false,
+        "path": "C:\\Dev\\Ants\\samples\\v2\\own_colony_val_002.mp4",
+        "size_bytes": 218550884
+      }
+    ]
+  },
+  "checkpoint_selection_eligible": false,
+  "constraints_observed": {
+    "no_ant4": true,
+    "no_commit_push": true,
+    "no_label_assist": true,
+    "no_model_inference": true,
+    "no_pseudo_labeling": true,
+    "no_roboflow": true,
+    "no_training": true
+  },
+  "created_at_utc": "2026-08-14T08:10:37.459137+00:00",
+  "development_selection_eligible": false,
+  "experiment": "ants_v4_domain_e01",
+  "role": "FROZEN_CLEAN_OWN_COLONY_HOLDOUT",
+  "schema_version": "1.0",
+  "source_level_duplicate_check": {
+    "known_sources_compared": [
+      "Ants10.mp4",
+      "Ants11.mp4",
+      "Ants2.mp4",
+      "Ants3.mp4",
+      "Ants4.mp4",
+      "Ants5.mp4",
+      "Ants6.mp4",
+      "Ants7.mp4",
+      "Ants8.mp4",
+      "Ants9.mp4",
+      "own_colony_val_001.mp4"
+    ],
+    "matches": [],
+    "passed": true
+  },
+  "source_video": {
+    "avg_frame_rate": "18597600/309859",
+    "codec": "h264",
+    "codec_long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+    "duration_seconds": 86.071944,
+    "file_size_bytes": 218550884,
+    "filename": "own_colony_val_002.mp4",
+    "filesystem_created_time_local": "2026-08-14T01:56:42.547482",
+    "filesystem_modified_time_local": "2026-08-14T01:56:47.737847",
+    "fps": 60.019557282505914,
+    "frame_count": 5166,
+    "local_path": "samples/v2/own_colony_val_002.mp4",
+    "path": "C:\\Dev\\Ants\\samples\\v2\\own_colony_val_002.mp4",
+    "pix_fmt": "yuv420p",
+    "r_frame_rate": "60/1",
+    "reliable_creation_metadata": {
+      "format_creation_time_utc": "2026-08-14T07:55:09.000000Z",
+      "format_tags": {
+        "com.android.manufacturer": "motorola",
+        "com.android.model": "motorola edge 60 pro",
+        "com.android.version": "16",
+        "compatible_brands": "isommp42",
+        "creation_time": "2026-08-14T07:55:09.000000Z",
+        "major_brand": "mp42",
+        "minor_version": "0"
+      },
+      "stream_creation_time_utc": "2026-08-14T07:55:09.000000Z",
+      "stream_tags": {
+        "creation_time": "2026-08-14T07:55:09.000000Z",
+        "handler_name": "VideoHandle",
+        "language": "eng"
+      }
+    },
+    "resolution": {
+      "height": 1080,
+      "width": 1920
+    },
+    "sha256": "02ecfaf7a26865b6629f49756de3f3e558e0419f97b1404b8f094577dccc731e"
+  },
+  "train_eligible": false
+}

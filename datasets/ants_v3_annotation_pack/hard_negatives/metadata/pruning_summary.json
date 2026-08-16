@@ -1,0 +1,20 @@
+{
+  "converted_positive_count": 0,
+  "decision_counts": {
+    "REVIEW": 12
+  },
+  "dropped_count": 0,
+  "experiment": "ants_v3_mixedscale_e01",
+  "final_images_dir": "datasets/ants_v3_annotation_pack/hard_negatives/final_images",
+  "final_manifest_jsonl": "datasets/ants_v3_annotation_pack/hard_negatives/metadata/final_manifest.jsonl",
+  "final_verified_zero_count": 0,
+  "no_empty_labels_created": true,
+  "original_candidate_count": 12,
+  "review_count": 12,
+  "review_reason": "all candidates contain a recurring dark shape inside the translucent tube; do not create zero-label negatives until human confirmation",
+  "schemaVersion": "1.0",
+  "source": "nest_test_001",
+  "status": "review_required_no_verified_zero_negatives",
+  "verification_results_json": "datasets/ants_v3_annotation_pack/hard_negatives/metadata/verification_results.json",
+  "visual_family_count": 4
+}

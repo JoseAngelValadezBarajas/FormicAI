@@ -1,0 +1,1527 @@
+{
+  "candidateCount": 54,
+  "candidates": [
+    {
+      "adult_annotation_count": 13,
+      "adult_area_max": 0.07755825,
+      "adult_area_median": 0.03141666666666667,
+      "annotation_count": 28,
+      "brood_annotation_count": 15,
+      "classes": [
+        "cocoon_camponotus_nicobarensis",
+        "larva_camponotus_nicobarensis",
+        "queen_camponotus_nicobarensis",
+        "worker_minor_camponotus_nicobarensis"
+      ],
+      "family_key": "pa050404",
+      "filename": "PA050404_JPG.rf.6e2c914c47fbd08b5433a78e26598c52.jpg",
+      "label_path": "datasets/external_sources/antsnet_raw/v14_yolov8/train/labels/PA050404_JPG.rf.6e2c914c47fbd08b5433a78e26598c52.txt",
+      "reason": [
+        "28 labeled objects",
+        "adult ants and brood appear together",
+        "adult bbox area reaches/exceeds ant2 median scale",
+        "major/minor caste class present",
+        "queen class present"
+      ],
+      "selection_categories": [
+        "brood_context_adult_plus_brood",
+        "large_scale_gap_candidate",
+        "major_minor",
+        "multi_ant_crowded",
+        "queen",
+        "worker"
+      ],
+      "source_path": "datasets/external_sources/antsnet_raw/v14_yolov8/train/images/PA050404_JPG.rf.6e2c914c47fbd08b5433a78e26598c52.jpg",
+      "status": "candidate_only_not_materialized",
+      "unknown_annotation_count": 0
+    },
+    {
+      "adult_annotation_count": 17,
+      "adult_area_max": 0.06655291666666667,
+      "adult_area_median": 0.03135425,
+      "annotation_count": 41,
+      "brood_annotation_count": 24,
+      "classes": [
+        "cocoon_camponotus_nicobarensis",
+        "larva_camponotus_nicobarensis",
+        "queen_camponotus_nicobarensis",
+        "worker_minor_camponotus_nicobarensis"
+      ],
+      "family_key": "pa050405",
+      "filename": "PA050405_JPG.rf.b8e264074ef5eeba5936a4b80c14be14.jpg",
+      "label_path": "datasets/external_sources/antsnet_raw/v14_yolov8/train/labels/PA050405_JPG.rf.b8e264074ef5eeba5936a4b80c14be14.txt",
+      "reason": [
+        "41 labeled objects",
+        "adult ants and brood appear together",
+        "adult bbox area reaches/exceeds ant2 median scale",
+        "major/minor caste class present",
+        "queen class present"
+      ],
+      "selection_categories": [
+        "brood_context_adult_plus_brood",
+        "large_scale_gap_candidate",
+        "major_minor",
+        "multi_ant_crowded",
+        "queen",
+        "worker"
+      ],
+      "source_path": "datasets/external_sources/antsnet_raw/v14_yolov8/train/images/PA050405_JPG.rf.b8e264074ef5eeba5936a4b80c14be14.jpg",
+      "status": "candidate_only_not_materialized",
+      "unknown_annotation_count": 0
+    },
+    {
+      "adult_annotation_count": 15,
+      "adult_area_max": 0.056570333333333334,
+      "adult_area_median": 0.029322,
+      "annotation_count": 30,
+      "brood_annotation_count": 15,
+      "classes": [
+        "cocoon_camponotus_nicobarensis",
+        "larva_camponotus_nicobarensis",
+        "queen_camponotus_nicobarensis",
+        "worker_minor_camponotus_nicobarensis"
+      ],
+      "family_key": "pa050403",
+      "filename": "PA050403_JPG.rf.b7b1b6598df4cea464aeb5a3aa3c933d.jpg",
+      "label_path": "datasets/external_sources/antsnet_raw/v14_yolov8/train/labels/PA050403_JPG.rf.b7b1b6598df4cea464aeb5a3aa3c933d.txt",
+      "reason": [
+        "30 labeled objects",
+        "adult ants and brood appear together",
+        "adult bbox area reaches/exceeds ant2 median scale",
+        "major/minor caste class present",
+        "queen class present"
+      ],
+      "selection_categories": [
+        "brood_context_adult_plus_brood",
+        "large_scale_gap_candidate",
+        "major_minor",
+        "multi_ant_crowded",
+        "queen",
+        "worker"
+      ],
+      "source_path": "datasets/external_sources/antsnet_raw/v14_yolov8/train/images/PA050403_JPG.rf.b7b1b6598df4cea464aeb5a3aa3c933d.jpg",
+      "status": "candidate_only_not_materialized",
+      "unknown_annotation_count": 0
+    },
+    {
+      "adult_annotation_count": 2,
+      "adult_area_max": 0.10761395958083833,
+      "adult_area_median": 0.10162977170658682,
+      "annotation_count": 13,
+      "brood_annotation_count": 11,
+      "classes": [
+        "Larva",
+        "larva_myrmica_rubra",
+        "pupa_myrmica_rubra",
+        "queen_myrmica_rubra"
+      ],
+      "family_key": "p1011354",
+      "filename": "P1011354-1-_JPG.rf.3860c0883c126647064bee7cdc133bac.jpg",
+      "label_path": "datasets/external_sources/antsnet_raw/v14_yolov8/train/labels/P1011354-1-_JPG.rf.3860c0883c126647064bee7cdc133bac.txt",
+      "reason": [
+        "13 labeled objects",
+        "adult ants and brood appear together",
+        "adult bbox area reaches/exceeds ant2 median scale",
+        "queen class present"
+      ],
+      "selection_categories": [
+        "brood_context_adult_plus_brood",
+        "large_scale_gap_candidate",
+        "multi_ant_crowded",
+        "queen"
+      ],
+      "source_path": "datasets/external_sources/antsnet_raw/v14_yolov8/train/images/P1011354-1-_JPG.rf.3860c0883c126647064bee7cdc133bac.jpg",
+      "status": "candidate_only_not_materialized",
+      "unknown_annotation_count": 0
+    },
+    {
+      "adult_annotation_count": 4,
+      "adult_area_max": 0.16372155688622755,
+      "adult_area_median": 0.0842537892964072,
+      "annotation_count": 12,
+      "brood_annotation_count": 8,
+      "classes": [
+        "larva_myrmica_rubra",
+        "pupa_myrmica_rubra",
+        "queen_myrmica_rubra"
+      ],
+      "family_key": "p1011432",
+      "filename": "P1011432_JPG.rf.8fdf006f1fd5a4f1b2edfaf8d46e0fd6.jpg",
+      "label_path": "datasets/external_sources/antsnet_raw/v14_yolov8/train/labels/P1011432_JPG.rf.8fdf006f1fd5a4f1b2edfaf8d46e0fd6.txt",
+      "reason": [
+        "12 labeled objects",
+        "adult ants and brood appear together",
+        "adult bbox area reaches/exceeds ant2 median scale",
+        "queen class present"
+      ],
+      "selection_categories": [
+        "brood_context_adult_plus_brood",
+        "large_scale_gap_candidate",
+        "multi_ant_crowded",
+        "queen"
+      ],
+      "source_path": "datasets/external_sources/antsnet_raw/v14_yolov8/train/images/P1011432_JPG.rf.8fdf006f1fd5a4f1b2edfaf8d46e0fd6.jpg",
+      "status": "candidate_only_not_materialized",
+      "unknown_annotation_count": 0
+    },
+    {
+      "adult_annotation_count": 3,
+      "adult_area_max": 0.09737200598802395,
+      "adult_area_median": 0.07577133233532934,
+      "annotation_count": 14,
+      "brood_annotation_count": 11,
+      "classes": [
+        "larva_myrmica_rubra",
+        "pupa_myrmica_rubra",
+        "queen_myrmica_rubra"
+      ],
+      "family_key": "p1011359",
+      "filename": "P1011359-1-_JPG.rf.f774b7d9b81e18a5662f6c6a521c197b.jpg",
+      "label_path": "datasets/external_sources/antsnet_raw/v14_yolov8/train/labels/P1011359-1-_JPG.rf.f774b7d9b81e18a5662f6c6a521c197b.txt",
+      "reason": [
+        "14 labeled objects",
+        "adult ants and brood appear together",
+        "adult bbox area reaches/exceeds ant2 median scale",
+        "queen class present"
+      ],
+      "selection_categories": [
+        "brood_context_adult_plus_brood",
+        "large_scale_gap_candidate",
+        "multi_ant_crowded",
+        "queen"
+      ],
+      "source_path": "datasets/external_sources/antsnet_raw/v14_yolov8/train/images/P1011359-1-_JPG.rf.f774b7d9b81e18a5662f6c6a521c197b.jpg",
+      "status": "candidate_only_not_materialized",
+      "unknown_annotation_count": 0
+    },
+    {
+      "adult_annotation_count": 3,
+      "adult_area_max": 0.09282120134730537,
+      "adult_area_median": 0.07668300898203594,
+      "annotation_count": 16,
+      "brood_annotation_count": 13,
+      "classes": [
+        "larva_myrmica_rubra",
+        "pupa_myrmica_rubra",
+        "queen_myrmica_rubra"
+      ],
+      "family_key": "p1011358",
+      "filename": "P1011358_JPG.rf.f2ef7ee49a456228d64a8a68b20351b6.jpg",
+      "label_path": "datasets/external_sources/antsnet_raw/v14_yolov8/train/labels/P1011358_JPG.rf.f2ef7ee49a456228d64a8a68b20351b6.txt",
+      "reason": [
+        "16 labeled objects",
+        "adult ants and brood appear together",
+        "adult bbox area reaches/exceeds ant2 median scale",
+        "queen class present"
+      ],
+      "selection_categories": [
+        "brood_context_adult_plus_brood",
+        "large_scale_gap_candidate",
+        "multi_ant_crowded",
+        "queen"
+      ],
+      "source_path": "datasets/external_sources/antsnet_raw/v14_yolov8/train/images/P1011358_JPG.rf.f2ef7ee49a456228d64a8a68b20351b6.jpg",
+      "status": "candidate_only_not_materialized",
+      "unknown_annotation_count": 0
+    },
+    {
+      "adult_annotation_count": 4,
+      "adult_area_max": 0.19649415361403927,
+      "adult_area_median": 0.1796249975185119,
+      "annotation_count": 10,
+      "brood_annotation_count": 6,
+      "classes": [
+        "larva_tetramorium_immigrans",
+        "worker_tetramorium_immigrans"
+      ],
+      "family_key": "img",
+      "filename": "IMG_8778_JPG.rf.8f1f1982e0a1c5c1112182e5bb2f3e7c.jpg",
+      "label_path": "datasets/external_sources/antsnet_raw/v14_yolov8/train/labels/IMG_8778_JPG.rf.8f1f1982e0a1c5c1112182e5bb2f3e7c.txt",
+      "reason": [
+        "10 labeled objects",
+        "adult ants and brood appear together",
+        "adult bbox area reaches/exceeds ant2 median scale"
+      ],
+      "selection_categories": [
+        "brood_context_adult_plus_brood",
+        "large_scale_gap_candidate",
+        "multi_ant_crowded",
+        "worker"
+      ],
+      "source_path": "datasets/external_sources/antsnet_raw/v14_yolov8/train/images/IMG_8778_JPG.rf.8f1f1982e0a1c5c1112182e5bb2f3e7c.jpg",
+      "status": "candidate_only_not_materialized",
+      "unknown_annotation_count": 0
+    },
+    {
+      "adult_annotation_count": 2,
+      "adult_area_max": 0.3710610326208516,
+      "adult_area_median": 0.3018055737840274,
+      "annotation_count": 3,
+      "brood_annotation_count": 1,
+      "classes": [
+        "larva_tetramorium_immigrans",
+        "worker_tetramorium_immigrans"
+      ],
+      "family_key": "img",
+      "filename": "IMG_8782_JPG.rf.5aadbb542764c2adb11cef9b04b12fc4.jpg",
+      "label_path": "datasets/external_sources/antsnet_raw/v14_yolov8/train/labels/IMG_8782_JPG.rf.5aadbb542764c2adb11cef9b04b12fc4.txt",
+      "reason": [
+        "adult ants and brood appear together",
+        "adult bbox area reaches/exceeds ant2 median scale"
+      ],
+      "selection_categories": [
+        "brood_context_adult_plus_brood",
+        "large_scale_gap_candidate",
+        "worker"
+      ],
+      "source_path": "datasets/external_sources/antsnet_raw/v14_yolov8/train/images/IMG_8782_JPG.rf.5aadbb542764c2adb11cef9b04b12fc4.jpg",
+      "status": "candidate_only_not_materialized",
+      "unknown_annotation_count": 0
+    },
+    {
+      "adult_annotation_count": 0,
+      "adult_area_max": null,
+      "adult_area_median": null,
+      "annotation_count": 1,
+      "brood_annotation_count": 1,
+      "classes": [
+        "larva_myrmica_rubra"
+      ],
+      "family_key": "p1011413",
+      "filename": "P1011413_JPG.rf.9d8b46db3a9d852069d29a7feb460113.jpg",
+      "label_path": "datasets/external_sources/antsnet_raw/v14_yolov8/train/labels/P1011413_JPG.rf.9d8b46db3a9d852069d29a7feb460113.txt",
+      "reason": [
+        "brood class present for negative-context review"
+      ],
+      "selection_categories": [
+        "brood_context_brood_only"
+      ],
+      "source_path": "datasets/external_sources/antsnet_raw/v14_yolov8/train/images/P1011413_JPG.rf.9d8b46db3a9d852069d29a7feb460113.jpg",
+      "status": "candidate_only_not_materialized",
+      "unknown_annotation_count": 0
+    },
+    {
+      "adult_annotation_count": 2,
+      "adult_area_max": 0.34885407464196305,
+      "adult_area_median": 0.23394696739947368,
+      "annotation_count": 2,
+      "brood_annotation_count": 0,
+      "classes": [
+        "worker_major_pheidole_tysoni",
+        "worker_minor_pheidole_tysoni"
+      ],
+      "family_key": "ants",
+      "filename": "ants-6_jpg.rf.7ea2a73a1d181bb18ec009bc12f6fb45.jpg",
+      "label_path": "datasets/external_sources/antsnet_raw/v14_yolov8/train/labels/ants-6_jpg.rf.7ea2a73a1d181bb18ec009bc12f6fb45.txt",
+      "reason": [
+        "adult bbox area reaches/exceeds ant2 median scale",
+        "major/minor caste class present"
+      ],
+      "selection_categories": [
+        "large_scale_gap_candidate",
+        "major_minor",
+        "worker"
+      ],
+      "source_path": "datasets/external_sources/antsnet_raw/v14_yolov8/train/images/ants-6_jpg.rf.7ea2a73a1d181bb18ec009bc12f6fb45.jpg",
+      "status": "candidate_only_not_materialized",
+      "unknown_annotation_count": 0
+    },
+    {
+      "adult_annotation_count": 2,
+      "adult_area_max": 0.2601669520547945,
+      "adult_area_median": 0.17529922249136876,
+      "annotation_count": 2,
+      "brood_annotation_count": 0,
+      "classes": [
+        "worker_major_pheidole_tysoni",
+        "worker_minor_pheidole_tysoni"
+      ],
+      "family_key": "ants",
+      "filename": "ants-4_jpg.rf.cd994df8482faf8fd8d47bae1b5774ca.jpg",
+      "label_path": "datasets/external_sources/antsnet_raw/v14_yolov8/train/labels/ants-4_jpg.rf.cd994df8482faf8fd8d47bae1b5774ca.txt",
+      "reason": [
+        "adult bbox area reaches/exceeds ant2 median scale",
+        "major/minor caste class present"
+      ],
+      "selection_categories": [
+        "large_scale_gap_candidate",
+        "major_minor",
+        "worker"
+      ],
+      "source_path": "datasets/external_sources/antsnet_raw/v14_yolov8/train/images/ants-4_jpg.rf.cd994df8482faf8fd8d47bae1b5774ca.jpg",
+      "status": "candidate_only_not_materialized",
+      "unknown_annotation_count": 0
+    },
+    {
+      "adult_annotation_count": 1,
+      "adult_area_max": 0.246251497005988,
+      "adult_area_median": 0.246251497005988,
+      "annotation_count": 1,
+      "brood_annotation_count": 0,
+      "classes": [
+        "worker_minor_camponotus_nicobarensis"
+      ],
+      "family_key": "pa281465",
+      "filename": "PA281465_JPG.rf.64cd61dc57659cea67e535bef8fd1dcf.jpg",
+      "label_path": "datasets/external_sources/antsnet_raw/v14_yolov8/train/labels/PA281465_JPG.rf.64cd61dc57659cea67e535bef8fd1dcf.txt",
+      "reason": [
+        "adult bbox area reaches/exceeds ant2 median scale",
+        "major/minor caste class present"
+      ],
+      "selection_categories": [
+        "large_scale_gap_candidate",
+        "major_minor",
+        "worker"
+      ],
+      "source_path": "datasets/external_sources/antsnet_raw/v14_yolov8/train/images/PA281465_JPG.rf.64cd61dc57659cea67e535bef8fd1dcf.jpg",
+      "status": "candidate_only_not_materialized",
+      "unknown_annotation_count": 0
+    },
+    {
+      "adult_annotation_count": 1,
+      "adult_area_max": 0.052964648482932614,
+      "adult_area_median": 0.052964648482932614,
+      "annotation_count": 1,
+      "brood_annotation_count": 0,
+      "classes": [
+        "worker_major_messor_barbarus"
+      ],
+      "family_key": "messor_barbarus",
+      "filename": "messor_barbarus_jpg.rf.9a5360a2991e94175446d4c5a0b19681.jpg",
+      "label_path": "datasets/external_sources/antsnet_raw/v14_yolov8/train/labels/messor_barbarus_jpg.rf.9a5360a2991e94175446d4c5a0b19681.txt",
+      "reason": [
+        "adult bbox area reaches/exceeds ant2 median scale",
+        "major/minor caste class present"
+      ],
+      "selection_categories": [
+        "large_scale_gap_candidate",
+        "major_minor",
+        "worker"
+      ],
+      "source_path": "datasets/external_sources/antsnet_raw/v14_yolov8/train/images/messor_barbarus_jpg.rf.9a5360a2991e94175446d4c5a0b19681.jpg",
+      "status": "candidate_only_not_materialized",
+      "unknown_annotation_count": 0
+    },
+    {
+      "adult_annotation_count": 3,
+      "adult_area_max": 0.013628570641219452,
+      "adult_area_median": 0.009347344261778787,
+      "annotation_count": 3,
+      "brood_annotation_count": 0,
+      "classes": [
+        "worker_minor_camponotus"
+      ],
+      "family_key": "20201015",
+      "filename": "20201015_185828_jpg.rf.dc1bfb7eb6ce62f31bc07be4827f499b.jpg",
+      "label_path": "datasets/external_sources/antsnet_raw/v14_yolov8/train/labels/20201015_185828_jpg.rf.dc1bfb7eb6ce62f31bc07be4827f499b.txt",
+      "reason": [
+        "adult bbox area materially larger than v2 small-ant median",
+        "major/minor caste class present"
+      ],
+      "selection_categories": [
+        "major_minor",
+        "medium_scale_gap_candidate",
+        "worker"
+      ],
+      "source_path": "datasets/external_sources/antsnet_raw/v14_yolov8/train/images/20201015_185828_jpg.rf.dc1bfb7eb6ce62f31bc07be4827f499b.jpg",
+      "status": "candidate_only_not_materialized",
+      "unknown_annotation_count": 0
+    },
+    {
+      "adult_annotation_count": 4,
+      "adult_area_max": 0.002966348576467624,
+      "adult_area_median": 0.0017009673275174267,
+      "annotation_count": 4,
+      "brood_annotation_count": 0,
+      "classes": [
+        "worker_minor_camponotus"
+      ],
+      "family_key": "20201015",
+      "filename": "20201015_185843_jpg.rf.eb66861bf18d835af93236617619e158.jpg",
+      "label_path": "datasets/external_sources/antsnet_raw/v14_yolov8/train/labels/20201015_185843_jpg.rf.eb66861bf18d835af93236617619e158.txt",
+      "reason": [
+        "major/minor caste class present",
+        "small adult boxes comparable to v2 small-ant scale"
+      ],
+      "selection_categories": [
+        "major_minor",
+        "small_scale",
+        "worker"
+      ],
+      "source_path": "datasets/external_sources/antsnet_raw/v14_yolov8/train/images/20201015_185843_jpg.rf.eb66861bf18d835af93236617619e158.jpg",
+      "status": "candidate_only_not_materialized",
+      "unknown_annotation_count": 0
+    },
+    {
+      "adult_annotation_count": 14,
+      "adult_area_max": 0.04601448990089863,
+      "adult_area_median": 0.015202126375241456,
+      "annotation_count": 14,
+      "brood_annotation_count": 0,
+      "classes": [
+        "worker_pogonomyrmex_occidentalis"
+      ],
+      "family_key": "pxl",
+      "filename": "PXL_20210213_104333581_jpg.rf.4f2ee52a91d2166d568c29f5fb78e934.jpg",
+      "label_path": "datasets/external_sources/antsnet_raw/v14_yolov8/train/labels/PXL_20210213_104333581_jpg.rf.4f2ee52a91d2166d568c29f5fb78e934.txt",
+      "reason": [
+        "14 labeled objects",
+        "adult bbox area reaches/exceeds ant2 median scale"
+      ],
+      "selection_categories": [
+        "large_scale_gap_candidate",
+        "multi_ant_crowded",
+        "worker"
+      ],
+      "source_path": "datasets/external_sources/antsnet_raw/v14_yolov8/train/images/PXL_20210213_104333581_jpg.rf.4f2ee52a91d2166d568c29f5fb78e934.jpg",
+      "status": "candidate_only_not_materialized",
+      "unknown_annotation_count": 0
+    },
+    {
+      "adult_annotation_count": 20,
+      "adult_area_max": 0.04459561602418745,
+      "adult_area_median": 0.0074096382380112544,
+      "annotation_count": 20,
+      "brood_annotation_count": 0,
+      "classes": [
+        "worker_pogonomyrmex_occidentalis"
+      ],
+      "family_key": "pxl",
+      "filename": "PXL_20201231_072834451_jpg.rf.651e267b5b27e1d39699c03c66504d80.jpg",
+      "label_path": "datasets/external_sources/antsnet_raw/v14_yolov8/train/labels/PXL_20201231_072834451_jpg.rf.651e267b5b27e1d39699c03c66504d80.txt",
+      "reason": [
+        "20 labeled objects",
+        "adult bbox area reaches/exceeds ant2 median scale"
+      ],
+      "selection_categories": [
+        "large_scale_gap_candidate",
+        "multi_ant_crowded",
+        "worker"
+      ],
+      "source_path": "datasets/external_sources/antsnet_raw/v14_yolov8/train/images/PXL_20201231_072834451_jpg.rf.651e267b5b27e1d39699c03c66504d80.jpg",
+      "status": "candidate_only_not_materialized",
+      "unknown_annotation_count": 0
+    },
+    {
+      "adult_annotation_count": 1,
+      "adult_area_max": 0.30519541001778916,
+      "adult_area_median": 0.30519541001778916,
+      "annotation_count": 1,
+      "brood_annotation_count": 0,
+      "classes": [
+        "worker_novomessor_cockerelli"
+      ],
+      "family_key": "pxl_20201013",
+      "filename": "PXL_20201013_190238010-2_jpg.rf.5dfc475f225730757341e6b6ab608a7f.jpg",
+      "label_path": "datasets/external_sources/antsnet_raw/v14_yolov8/train/labels/PXL_20201013_190238010-2_jpg.rf.5dfc475f225730757341e6b6ab608a7f.txt",
+      "reason": [
+        "adult bbox area reaches/exceeds ant2 median scale"
+      ],
+      "selection_categories": [
+        "large_scale_gap_candidate",
+        "worker"
+      ],
+      "source_path": "datasets/external_sources/antsnet_raw/v14_yolov8/train/images/PXL_20201013_190238010-2_jpg.rf.5dfc475f225730757341e6b6ab608a7f.jpg",
+      "status": "candidate_only_not_materialized",
+      "unknown_annotation_count": 0
+    },
+    {
+      "adult_annotation_count": 1,
+      "adult_area_max": 0.1733985495024456,
+      "adult_area_median": 0.1733985495024456,
+      "annotation_count": 1,
+      "brood_annotation_count": 0,
+      "classes": [
+        "worker_formica_sp"
+      ],
+      "family_key": "pxl_20210404",
+      "filename": "PXL_20210404_022730755-2_jpg.rf.5fdd3713fc44452816870fe82c529c99.jpg",
+      "label_path": "datasets/external_sources/antsnet_raw/v14_yolov8/train/labels/PXL_20210404_022730755-2_jpg.rf.5fdd3713fc44452816870fe82c529c99.txt",
+      "reason": [
+        "adult bbox area reaches/exceeds ant2 median scale"
+      ],
+      "selection_categories": [
+        "large_scale_gap_candidate",
+        "worker"
+      ],
+      "source_path": "datasets/external_sources/antsnet_raw/v14_yolov8/train/images/PXL_20210404_022730755-2_jpg.rf.5fdd3713fc44452816870fe82c529c99.jpg",
+      "status": "candidate_only_not_materialized",
+      "unknown_annotation_count": 0
+    },
+    {
+      "adult_annotation_count": 1,
+      "adult_area_max": 0.13109994521602034,
+      "adult_area_median": 0.13109994521602034,
+      "annotation_count": 1,
+      "brood_annotation_count": 0,
+      "classes": [
+        "worker_formica_sp"
+      ],
+      "family_key": "pxl_20210404",
+      "filename": "PXL_20210404_022729989-2_jpg.rf.137a9e16fc12d779db96ef53c9606579.jpg",
+      "label_path": "datasets/external_sources/antsnet_raw/v14_yolov8/train/labels/PXL_20210404_022729989-2_jpg.rf.137a9e16fc12d779db96ef53c9606579.txt",
+      "reason": [
+        "adult bbox area reaches/exceeds ant2 median scale"
+      ],
+      "selection_categories": [
+        "large_scale_gap_candidate",
+        "worker"
+      ],
+      "source_path": "datasets/external_sources/antsnet_raw/v14_yolov8/train/images/PXL_20210404_022729989-2_jpg.rf.137a9e16fc12d779db96ef53c9606579.jpg",
+      "status": "candidate_only_not_materialized",
+      "unknown_annotation_count": 0
+    },
+    {
+      "adult_annotation_count": 1,
+      "adult_area_max": 0.10867458480305701,
+      "adult_area_median": 0.10867458480305701,
+      "annotation_count": 1,
+      "brood_annotation_count": 0,
+      "classes": [
+        "worker_pogonomyrmex_rugosus"
+      ],
+      "family_key": "pogo_rugo",
+      "filename": "Pogo-rugo_jpg.rf.cf8ef6849dfeb599dfa4ad19b6d250b0.jpg",
+      "label_path": "datasets/external_sources/antsnet_raw/v14_yolov8/train/labels/Pogo-rugo_jpg.rf.cf8ef6849dfeb599dfa4ad19b6d250b0.txt",
+      "reason": [
+        "adult bbox area reaches/exceeds ant2 median scale"
+      ],
+      "selection_categories": [
+        "large_scale_gap_candidate",
+        "worker"
+      ],
+      "source_path": "datasets/external_sources/antsnet_raw/v14_yolov8/train/images/Pogo-rugo_jpg.rf.cf8ef6849dfeb599dfa4ad19b6d250b0.jpg",
+      "status": "candidate_only_not_materialized",
+      "unknown_annotation_count": 0
+    },
+    {
+      "adult_annotation_count": 1,
+      "adult_area_max": 0.03196787438740985,
+      "adult_area_median": 0.03196787438740985,
+      "annotation_count": 1,
+      "brood_annotation_count": 0,
+      "classes": [
+        "worker_dolichoderinae"
+      ],
+      "family_key": "dolichoderinae",
+      "filename": "dolichoderinae_jpg.rf.d33d2bf792f0a4bdf97e3ff71e4d9817.jpg",
+      "label_path": "datasets/external_sources/antsnet_raw/v14_yolov8/train/labels/dolichoderinae_jpg.rf.d33d2bf792f0a4bdf97e3ff71e4d9817.txt",
+      "reason": [
+        "adult bbox area reaches/exceeds ant2 median scale"
+      ],
+      "selection_categories": [
+        "large_scale_gap_candidate",
+        "worker"
+      ],
+      "source_path": "datasets/external_sources/antsnet_raw/v14_yolov8/train/images/dolichoderinae_jpg.rf.d33d2bf792f0a4bdf97e3ff71e4d9817.jpg",
+      "status": "candidate_only_not_materialized",
+      "unknown_annotation_count": 0
+    },
+    {
+      "adult_annotation_count": 23,
+      "adult_area_max": 0.002853491512345679,
+      "adult_area_median": 0.0013985339506172839,
+      "annotation_count": 23,
+      "brood_annotation_count": 0,
+      "classes": [
+        "worker_lasius_niger"
+      ],
+      "family_key": "pic",
+      "filename": "PIC_0161_JPG.rf.12a05c01b7ee5d1023e1272df5afa3e3.jpg",
+      "label_path": "datasets/external_sources/antsnet_raw/v14_yolov8/train/labels/PIC_0161_JPG.rf.12a05c01b7ee5d1023e1272df5afa3e3.txt",
+      "reason": [
+        "23 labeled objects",
+        "small adult boxes comparable to v2 small-ant scale"
+      ],
+      "selection_categories": [
+        "multi_ant_crowded",
+        "small_scale",
+        "worker"
+      ],
+      "source_path": "datasets/external_sources/antsnet_raw/v14_yolov8/train/images/PIC_0161_JPG.rf.12a05c01b7ee5d1023e1272df5afa3e3.jpg",
+      "status": "candidate_only_not_materialized",
+      "unknown_annotation_count": 0
+    },
+    {
+      "adult_annotation_count": 28,
+      "adult_area_max": 0.0022569444444444442,
+      "adult_area_median": 0.0010103202160493827,
+      "annotation_count": 28,
+      "brood_annotation_count": 0,
+      "classes": [
+        "worker_lasius_niger"
+      ],
+      "family_key": "pic",
+      "filename": "PIC_0163_JPG.rf.4967114187f8743455a5dd0f62224cb7.jpg",
+      "label_path": "datasets/external_sources/antsnet_raw/v14_yolov8/train/labels/PIC_0163_JPG.rf.4967114187f8743455a5dd0f62224cb7.txt",
+      "reason": [
+        "28 labeled objects",
+        "small adult boxes comparable to v2 small-ant scale"
+      ],
+      "selection_categories": [
+        "multi_ant_crowded",
+        "small_scale",
+        "worker"
+      ],
+      "source_path": "datasets/external_sources/antsnet_raw/v14_yolov8/train/images/PIC_0163_JPG.rf.4967114187f8743455a5dd0f62224cb7.jpg",
+      "status": "candidate_only_not_materialized",
+      "unknown_annotation_count": 0
+    },
+    {
+      "adult_annotation_count": 10,
+      "adult_area_max": 0.22014374999999997,
+      "adult_area_median": 0.04062291666666667,
+      "annotation_count": 10,
+      "brood_annotation_count": 0,
+      "classes": [
+        "queen_camponotus_vagus",
+        "worker_minor_camponotus_vagus"
+      ],
+      "family_key": "img_20201001_wa0003",
+      "filename": "IMG-20201001-WA0003_jpg.rf.94487368caaa4d8737ba61e7e6b8e62c.jpg",
+      "label_path": "datasets/external_sources/antsnet_raw/v14_yolov8/train/labels/IMG-20201001-WA0003_jpg.rf.94487368caaa4d8737ba61e7e6b8e62c.txt",
+      "reason": [
+        "10 labeled objects",
+        "adult bbox area reaches/exceeds ant2 median scale",
+        "major/minor caste class present",
+        "queen class present"
+      ],
+      "selection_categories": [
+        "large_scale_gap_candidate",
+        "major_minor",
+        "multi_ant_crowded",
+        "queen",
+        "worker"
+      ],
+      "source_path": "datasets/external_sources/antsnet_raw/v14_yolov8/train/images/IMG-20201001-WA0003_jpg.rf.94487368caaa4d8737ba61e7e6b8e62c.jpg",
+      "status": "candidate_only_not_materialized",
+      "unknown_annotation_count": 0
+    },
+    {
+      "adult_annotation_count": 10,
+      "adult_area_max": 0.12642430555555553,
+      "adult_area_median": 0.028573958333333337,
+      "annotation_count": 10,
+      "brood_annotation_count": 0,
+      "classes": [
+        "queen_camponotus_vagus",
+        "worker_minor_camponotus_vagus"
+      ],
+      "family_key": "img_20201001_wa0002",
+      "filename": "IMG-20201001-WA0002_jpg.rf.89aeb771d37a22f67742b522ec32e3a7.jpg",
+      "label_path": "datasets/external_sources/antsnet_raw/v14_yolov8/train/labels/IMG-20201001-WA0002_jpg.rf.89aeb771d37a22f67742b522ec32e3a7.txt",
+      "reason": [
+        "10 labeled objects",
+        "adult bbox area reaches/exceeds ant2 median scale",
+        "major/minor caste class present",
+        "queen class present"
+      ],
+      "selection_categories": [
+        "large_scale_gap_candidate",
+        "major_minor",
+        "multi_ant_crowded",
+        "queen",
+        "worker"
+      ],
+      "source_path": "datasets/external_sources/antsnet_raw/v14_yolov8/train/images/IMG-20201001-WA0002_jpg.rf.89aeb771d37a22f67742b522ec32e3a7.jpg",
+      "status": "candidate_only_not_materialized",
+      "unknown_annotation_count": 0
+    },
+    {
+      "adult_annotation_count": 13,
+      "adult_area_max": 0.10870374999999999,
+      "adult_area_median": 0.03094,
+      "annotation_count": 13,
+      "brood_annotation_count": 0,
+      "classes": [
+        "queen_camponotus_nicobarensis",
+        "worker_minor_camponotus_nicobarensis"
+      ],
+      "family_key": "pa050409",
+      "filename": "PA050409_JPG.rf.645da5c7946df4af983a89d8686cf197.jpg",
+      "label_path": "datasets/external_sources/antsnet_raw/v14_yolov8/train/labels/PA050409_JPG.rf.645da5c7946df4af983a89d8686cf197.txt",
+      "reason": [
+        "13 labeled objects",
+        "adult bbox area reaches/exceeds ant2 median scale",
+        "major/minor caste class present",
+        "queen class present"
+      ],
+      "selection_categories": [
+        "large_scale_gap_candidate",
+        "major_minor",
+        "multi_ant_crowded",
+        "queen",
+        "worker"
+      ],
+      "source_path": "datasets/external_sources/antsnet_raw/v14_yolov8/train/images/PA050409_JPG.rf.645da5c7946df4af983a89d8686cf197.jpg",
+      "status": "candidate_only_not_materialized",
+      "unknown_annotation_count": 0
+    },
+    {
+      "adult_annotation_count": 2,
+      "adult_area_max": 0.6956370000000001,
+      "adult_area_median": 0.399897375,
+      "annotation_count": 2,
+      "brood_annotation_count": 0,
+      "classes": [
+        "queen_camponotus_cinctellus",
+        "worker_minor_camponotus_cinctellus"
+      ],
+      "family_key": "pa060434",
+      "filename": "PA060434_JPG.rf.3737151c3863d2b7c7f69cb82b01c071.jpg",
+      "label_path": "datasets/external_sources/antsnet_raw/v14_yolov8/train/labels/PA060434_JPG.rf.3737151c3863d2b7c7f69cb82b01c071.txt",
+      "reason": [
+        "adult bbox area reaches/exceeds ant2 median scale",
+        "major/minor caste class present",
+        "queen class present"
+      ],
+      "selection_categories": [
+        "large_scale_gap_candidate",
+        "major_minor",
+        "queen",
+        "worker"
+      ],
+      "source_path": "datasets/external_sources/antsnet_raw/v14_yolov8/train/images/PA060434_JPG.rf.3737151c3863d2b7c7f69cb82b01c071.jpg",
+      "status": "candidate_only_not_materialized",
+      "unknown_annotation_count": 0
+    },
+    {
+      "adult_annotation_count": 3,
+      "adult_area_max": 0.637819,
+      "adult_area_median": 0.134144,
+      "annotation_count": 3,
+      "brood_annotation_count": 0,
+      "classes": [
+        "queen_camponotus_cinctellus",
+        "worker_minor_camponotus_cinctellus"
+      ],
+      "family_key": "pa060433",
+      "filename": "PA060433_JPG.rf.e20a216a9ec1d974bfd5d133037ca3a4.jpg",
+      "label_path": "datasets/external_sources/antsnet_raw/v14_yolov8/train/labels/PA060433_JPG.rf.e20a216a9ec1d974bfd5d133037ca3a4.txt",
+      "reason": [
+        "adult bbox area reaches/exceeds ant2 median scale",
+        "major/minor caste class present",
+        "queen class present"
+      ],
+      "selection_categories": [
+        "large_scale_gap_candidate",
+        "major_minor",
+        "queen",
+        "worker"
+      ],
+      "source_path": "datasets/external_sources/antsnet_raw/v14_yolov8/train/images/PA060433_JPG.rf.e20a216a9ec1d974bfd5d133037ca3a4.jpg",
+      "status": "candidate_only_not_materialized",
+      "unknown_annotation_count": 0
+    },
+    {
+      "adult_annotation_count": 3,
+      "adult_area_max": 0.5689800190897057,
+      "adult_area_median": 0.24548201507137546,
+      "annotation_count": 3,
+      "brood_annotation_count": 0,
+      "classes": [
+        "queen_camponotus_quercicola",
+        "worker_minor_camponotus_quercicola"
+      ],
+      "family_key": "img_20200714",
+      "filename": "IMG_20200714_234333-2_jpg.rf.4df86039c52d2d695ffbba38447a73c4.jpg",
+      "label_path": "datasets/external_sources/antsnet_raw/v14_yolov8/train/labels/IMG_20200714_234333-2_jpg.rf.4df86039c52d2d695ffbba38447a73c4.txt",
+      "reason": [
+        "adult bbox area reaches/exceeds ant2 median scale",
+        "major/minor caste class present",
+        "queen class present"
+      ],
+      "selection_categories": [
+        "large_scale_gap_candidate",
+        "major_minor",
+        "queen",
+        "worker"
+      ],
+      "source_path": "datasets/external_sources/antsnet_raw/v14_yolov8/train/images/IMG_20200714_234333-2_jpg.rf.4df86039c52d2d695ffbba38447a73c4.jpg",
+      "status": "candidate_only_not_materialized",
+      "unknown_annotation_count": 0
+    },
+    {
+      "adult_annotation_count": 3,
+      "adult_area_max": 0.5459404999999999,
+      "adult_area_median": 0.18190266666666668,
+      "annotation_count": 3,
+      "brood_annotation_count": 0,
+      "classes": [
+        "queen_camponotus_cinctellus",
+        "worker_minor_camponotus_cinctellus"
+      ],
+      "family_key": "pa060480",
+      "filename": "PA060480_JPG.rf.51d6646d0151c31d0ecb1d35e4448841.jpg",
+      "label_path": "datasets/external_sources/antsnet_raw/v14_yolov8/train/labels/PA060480_JPG.rf.51d6646d0151c31d0ecb1d35e4448841.txt",
+      "reason": [
+        "adult bbox area reaches/exceeds ant2 median scale",
+        "major/minor caste class present",
+        "queen class present"
+      ],
+      "selection_categories": [
+        "large_scale_gap_candidate",
+        "major_minor",
+        "queen",
+        "worker"
+      ],
+      "source_path": "datasets/external_sources/antsnet_raw/v14_yolov8/train/images/PA060480_JPG.rf.51d6646d0151c31d0ecb1d35e4448841.jpg",
+      "status": "candidate_only_not_materialized",
+      "unknown_annotation_count": 0
+    },
+    {
+      "adult_annotation_count": 2,
+      "adult_area_max": 0.545566,
+      "adult_area_median": 0.36640300000000003,
+      "annotation_count": 2,
+      "brood_annotation_count": 0,
+      "classes": [
+        "queen_camponotus_cinctellus",
+        "worker_minor_camponotus_cinctellus"
+      ],
+      "family_key": "pa060481",
+      "filename": "PA060481_JPG.rf.be5c2631f41c30b68b126c0c466f8250.jpg",
+      "label_path": "datasets/external_sources/antsnet_raw/v14_yolov8/train/labels/PA060481_JPG.rf.be5c2631f41c30b68b126c0c466f8250.txt",
+      "reason": [
+        "adult bbox area reaches/exceeds ant2 median scale",
+        "major/minor caste class present",
+        "queen class present"
+      ],
+      "selection_categories": [
+        "large_scale_gap_candidate",
+        "major_minor",
+        "queen",
+        "worker"
+      ],
+      "source_path": "datasets/external_sources/antsnet_raw/v14_yolov8/train/images/PA060481_JPG.rf.be5c2631f41c30b68b126c0c466f8250.jpg",
+      "status": "candidate_only_not_materialized",
+      "unknown_annotation_count": 0
+    },
+    {
+      "adult_annotation_count": 5,
+      "adult_area_max": 0.3200421758209457,
+      "adult_area_median": 0.08909084467120182,
+      "annotation_count": 5,
+      "brood_annotation_count": 0,
+      "classes": [
+        "queen_camponotus_vicinus",
+        "worker_minor_camponotus_vicinus"
+      ],
+      "family_key": "campo_vicinus",
+      "filename": "campo-vicinus--3-_jpg.rf.1e27959b926d6d524399820fa678df19.jpg",
+      "label_path": "datasets/external_sources/antsnet_raw/v14_yolov8/train/labels/campo-vicinus--3-_jpg.rf.1e27959b926d6d524399820fa678df19.txt",
+      "reason": [
+        "adult bbox area reaches/exceeds ant2 median scale",
+        "major/minor caste class present",
+        "queen class present"
+      ],
+      "selection_categories": [
+        "large_scale_gap_candidate",
+        "major_minor",
+        "queen",
+        "worker"
+      ],
+      "source_path": "datasets/external_sources/antsnet_raw/v14_yolov8/train/images/campo-vicinus--3-_jpg.rf.1e27959b926d6d524399820fa678df19.jpg",
+      "status": "candidate_only_not_materialized",
+      "unknown_annotation_count": 0
+    },
+    {
+      "adult_annotation_count": 10,
+      "adult_area_max": 0.038020160803518936,
+      "adult_area_median": 0.007433094765684052,
+      "annotation_count": 10,
+      "brood_annotation_count": 0,
+      "classes": [
+        "queen_camponotus_quercicola",
+        "queen_camponotus_vicinus",
+        "worker_minor_camponotus_quercicola",
+        "worker_minor_camponotus_vicinus"
+      ],
+      "family_key": "img",
+      "filename": "IMG_20200704_215353_jpg.rf.26902cdc9e4b9b7139654214795dd311.jpg",
+      "label_path": "datasets/external_sources/antsnet_raw/v14_yolov8/train/labels/IMG_20200704_215353_jpg.rf.26902cdc9e4b9b7139654214795dd311.txt",
+      "reason": [
+        "10 labeled objects",
+        "adult bbox area reaches/exceeds ant2 median scale",
+        "major/minor caste class present",
+        "queen class present"
+      ],
+      "selection_categories": [
+        "large_scale_gap_candidate",
+        "major_minor",
+        "multi_ant_crowded",
+        "queen",
+        "worker"
+      ],
+      "source_path": "datasets/external_sources/antsnet_raw/v14_yolov8/train/images/IMG_20200704_215353_jpg.rf.26902cdc9e4b9b7139654214795dd311.jpg",
+      "status": "candidate_only_not_materialized",
+      "unknown_annotation_count": 0
+    },
+    {
+      "adult_annotation_count": 11,
+      "adult_area_max": 0.054074021583942214,
+      "adult_area_median": 0.009563209929033341,
+      "annotation_count": 11,
+      "brood_annotation_count": 0,
+      "classes": [
+        "queen_camponotus_quercicola",
+        "queen_camponotus_vicinus",
+        "worker_minor_camponotus_quercicola",
+        "worker_minor_camponotus_vicinus"
+      ],
+      "family_key": "img",
+      "filename": "IMG_20200706_121654_jpg.rf.a163b3f5d9ca6ff66a25f8ca2f1447c5.jpg",
+      "label_path": "datasets/external_sources/antsnet_raw/v14_yolov8/train/labels/IMG_20200706_121654_jpg.rf.a163b3f5d9ca6ff66a25f8ca2f1447c5.txt",
+      "reason": [
+        "11 labeled objects",
+        "adult bbox area reaches/exceeds ant2 median scale",
+        "major/minor caste class present",
+        "queen class present"
+      ],
+      "selection_categories": [
+        "large_scale_gap_candidate",
+        "major_minor",
+        "multi_ant_crowded",
+        "queen",
+        "worker"
+      ],
+      "source_path": "datasets/external_sources/antsnet_raw/v14_yolov8/train/images/IMG_20200706_121654_jpg.rf.a163b3f5d9ca6ff66a25f8ca2f1447c5.jpg",
+      "status": "candidate_only_not_materialized",
+      "unknown_annotation_count": 0
+    },
+    {
+      "adult_annotation_count": 14,
+      "adult_area_max": 0.028789525069286975,
+      "adult_area_median": 0.006212822223796927,
+      "annotation_count": 14,
+      "brood_annotation_count": 0,
+      "classes": [
+        "qorker_minor_camponotus_maritimus",
+        "queen_camponotus_maritimus",
+        "queen_camponotus_quercicola",
+        "queen_camponotus_vicinus",
+        "worker_minor_camponotus_quercicola",
+        "worker_minor_camponotus_vicinus"
+      ],
+      "family_key": "img",
+      "filename": "IMG_20200710_221538_jpg.rf.7eb022008577b6666671d5a9c623fcbf.jpg",
+      "label_path": "datasets/external_sources/antsnet_raw/v14_yolov8/train/labels/IMG_20200710_221538_jpg.rf.7eb022008577b6666671d5a9c623fcbf.txt",
+      "reason": [
+        "14 labeled objects",
+        "adult bbox area reaches/exceeds ant2 median scale",
+        "major/minor caste class present",
+        "queen class present"
+      ],
+      "selection_categories": [
+        "large_scale_gap_candidate",
+        "major_minor",
+        "multi_ant_crowded",
+        "queen",
+        "worker"
+      ],
+      "source_path": "datasets/external_sources/antsnet_raw/v14_yolov8/train/images/IMG_20200710_221538_jpg.rf.7eb022008577b6666671d5a9c623fcbf.jpg",
+      "status": "candidate_only_not_materialized",
+      "unknown_annotation_count": 0
+    },
+    {
+      "adult_annotation_count": 17,
+      "adult_area_max": 0.05349333333333333,
+      "adult_area_median": 0.030097083333333333,
+      "annotation_count": 17,
+      "brood_annotation_count": 0,
+      "classes": [
+        "queen_camponotus_nicobarensis",
+        "worker_minor_camponotus_nicobarensis"
+      ],
+      "family_key": "pa050406",
+      "filename": "PA050406_JPG.rf.e61705216bf06f1102aef78bd83875f3.jpg",
+      "label_path": "datasets/external_sources/antsnet_raw/v14_yolov8/train/labels/PA050406_JPG.rf.e61705216bf06f1102aef78bd83875f3.txt",
+      "reason": [
+        "17 labeled objects",
+        "adult bbox area reaches/exceeds ant2 median scale",
+        "major/minor caste class present",
+        "queen class present"
+      ],
+      "selection_categories": [
+        "large_scale_gap_candidate",
+        "major_minor",
+        "multi_ant_crowded",
+        "queen",
+        "worker"
+      ],
+      "source_path": "datasets/external_sources/antsnet_raw/v14_yolov8/train/images/PA050406_JPG.rf.e61705216bf06f1102aef78bd83875f3.jpg",
+      "status": "candidate_only_not_materialized",
+      "unknown_annotation_count": 0
+    },
+    {
+      "adult_annotation_count": 13,
+      "adult_area_max": 0.09257708333333334,
+      "adult_area_median": 0.03860625,
+      "annotation_count": 13,
+      "brood_annotation_count": 0,
+      "classes": [
+        "queen_camponotus_nicobarensis",
+        "worker_minor_camponotus_nicobarensis"
+      ],
+      "family_key": "pa050407",
+      "filename": "PA050407_JPG.rf.8bccb2c1b3582b3af8dc8677decf8207.jpg",
+      "label_path": "datasets/external_sources/antsnet_raw/v14_yolov8/train/labels/PA050407_JPG.rf.8bccb2c1b3582b3af8dc8677decf8207.txt",
+      "reason": [
+        "13 labeled objects",
+        "adult bbox area reaches/exceeds ant2 median scale",
+        "major/minor caste class present",
+        "queen class present"
+      ],
+      "selection_categories": [
+        "large_scale_gap_candidate",
+        "major_minor",
+        "multi_ant_crowded",
+        "queen",
+        "worker"
+      ],
+      "source_path": "datasets/external_sources/antsnet_raw/v14_yolov8/train/images/PA050407_JPG.rf.8bccb2c1b3582b3af8dc8677decf8207.jpg",
+      "status": "candidate_only_not_materialized",
+      "unknown_annotation_count": 0
+    },
+    {
+      "adult_annotation_count": 13,
+      "adult_area_max": 0.10394416666666667,
+      "adult_area_median": 0.0375625,
+      "annotation_count": 13,
+      "brood_annotation_count": 0,
+      "classes": [
+        "queen_camponotus_nicobarensis",
+        "worker_minor_camponotus_nicobarensis"
+      ],
+      "family_key": "pa050408",
+      "filename": "PA050408_JPG.rf.5926379d8f2ade13750705f781ea5012.jpg",
+      "label_path": "datasets/external_sources/antsnet_raw/v14_yolov8/train/labels/PA050408_JPG.rf.5926379d8f2ade13750705f781ea5012.txt",
+      "reason": [
+        "13 labeled objects",
+        "adult bbox area reaches/exceeds ant2 median scale",
+        "major/minor caste class present",
+        "queen class present"
+      ],
+      "selection_categories": [
+        "large_scale_gap_candidate",
+        "major_minor",
+        "multi_ant_crowded",
+        "queen",
+        "worker"
+      ],
+      "source_path": "datasets/external_sources/antsnet_raw/v14_yolov8/train/images/PA050408_JPG.rf.5926379d8f2ade13750705f781ea5012.jpg",
+      "status": "candidate_only_not_materialized",
+      "unknown_annotation_count": 0
+    },
+    {
+      "adult_annotation_count": 15,
+      "adult_area_max": 0.09530625000000001,
+      "adult_area_median": 0.031698333333333335,
+      "annotation_count": 15,
+      "brood_annotation_count": 0,
+      "classes": [
+        "queen_camponotus_nicobarensis",
+        "worker_minor_camponotus_nicobarensis"
+      ],
+      "family_key": "pa050410",
+      "filename": "PA050410_JPG.rf.f98d353fce83a640d11e3d3a4e82656f.jpg",
+      "label_path": "datasets/external_sources/antsnet_raw/v14_yolov8/train/labels/PA050410_JPG.rf.f98d353fce83a640d11e3d3a4e82656f.txt",
+      "reason": [
+        "15 labeled objects",
+        "adult bbox area reaches/exceeds ant2 median scale",
+        "major/minor caste class present",
+        "queen class present"
+      ],
+      "selection_categories": [
+        "large_scale_gap_candidate",
+        "major_minor",
+        "multi_ant_crowded",
+        "queen",
+        "worker"
+      ],
+      "source_path": "datasets/external_sources/antsnet_raw/v14_yolov8/train/images/PA050410_JPG.rf.f98d353fce83a640d11e3d3a4e82656f.jpg",
+      "status": "candidate_only_not_materialized",
+      "unknown_annotation_count": 0
+    },
+    {
+      "adult_annotation_count": 14,
+      "adult_area_max": 0.09848541666666667,
+      "adult_area_median": 0.033099166666666666,
+      "annotation_count": 14,
+      "brood_annotation_count": 0,
+      "classes": [
+        "queen_camponotus_nicobarensis",
+        "worker_minor_camponotus_nicobarensis"
+      ],
+      "family_key": "pa050411",
+      "filename": "PA050411_JPG.rf.b0b1a42804e592938fac46144fce9417.jpg",
+      "label_path": "datasets/external_sources/antsnet_raw/v14_yolov8/train/labels/PA050411_JPG.rf.b0b1a42804e592938fac46144fce9417.txt",
+      "reason": [
+        "14 labeled objects",
+        "adult bbox area reaches/exceeds ant2 median scale",
+        "major/minor caste class present",
+        "queen class present"
+      ],
+      "selection_categories": [
+        "large_scale_gap_candidate",
+        "major_minor",
+        "multi_ant_crowded",
+        "queen",
+        "worker"
+      ],
+      "source_path": "datasets/external_sources/antsnet_raw/v14_yolov8/train/images/PA050411_JPG.rf.b0b1a42804e592938fac46144fce9417.jpg",
+      "status": "candidate_only_not_materialized",
+      "unknown_annotation_count": 0
+    },
+    {
+      "adult_annotation_count": 14,
+      "adult_area_max": 0.09456999999999999,
+      "adult_area_median": 0.041298749999999995,
+      "annotation_count": 14,
+      "brood_annotation_count": 0,
+      "classes": [
+        "queen_camponotus_nicobarensis",
+        "worker_minor_camponotus_nicobarensis"
+      ],
+      "family_key": "pa050412",
+      "filename": "PA050412_JPG.rf.2ee933da2023fd9c6109cb0be2aef48a.jpg",
+      "label_path": "datasets/external_sources/antsnet_raw/v14_yolov8/train/labels/PA050412_JPG.rf.2ee933da2023fd9c6109cb0be2aef48a.txt",
+      "reason": [
+        "14 labeled objects",
+        "adult bbox area reaches/exceeds ant2 median scale",
+        "major/minor caste class present",
+        "queen class present"
+      ],
+      "selection_categories": [
+        "large_scale_gap_candidate",
+        "major_minor",
+        "multi_ant_crowded",
+        "queen",
+        "worker"
+      ],
+      "source_path": "datasets/external_sources/antsnet_raw/v14_yolov8/train/images/PA050412_JPG.rf.2ee933da2023fd9c6109cb0be2aef48a.jpg",
+      "status": "candidate_only_not_materialized",
+      "unknown_annotation_count": 0
+    },
+    {
+      "adult_annotation_count": 1,
+      "adult_area_max": 0.637015628345108,
+      "adult_area_median": 0.637015628345108,
+      "annotation_count": 1,
+      "brood_annotation_count": 0,
+      "classes": [
+        "worker_major_pheidole_tysoni"
+      ],
+      "family_key": "ants",
+      "filename": "ants-5_jpg.rf.11b9011aad4282159486da5e94038387.jpg",
+      "label_path": "datasets/external_sources/antsnet_raw/v14_yolov8/train/labels/ants-5_jpg.rf.11b9011aad4282159486da5e94038387.txt",
+      "reason": [
+        "adult bbox area reaches/exceeds ant2 median scale",
+        "major/minor caste class present"
+      ],
+      "selection_categories": [
+        "large_scale_gap_candidate",
+        "major_minor",
+        "worker"
+      ],
+      "source_path": "datasets/external_sources/antsnet_raw/v14_yolov8/train/images/ants-5_jpg.rf.11b9011aad4282159486da5e94038387.jpg",
+      "status": "candidate_only_not_materialized",
+      "unknown_annotation_count": 0
+    },
+    {
+      "adult_annotation_count": 1,
+      "adult_area_max": 0.49603967912543967,
+      "adult_area_median": 0.49603967912543967,
+      "annotation_count": 1,
+      "brood_annotation_count": 0,
+      "classes": [
+        "worker_major_pheidole_tysoni"
+      ],
+      "family_key": "ants",
+      "filename": "ants-7_jpg.rf.8cca682789fbfe33e9641fee0dc810f9.jpg",
+      "label_path": "datasets/external_sources/antsnet_raw/v14_yolov8/train/labels/ants-7_jpg.rf.8cca682789fbfe33e9641fee0dc810f9.txt",
+      "reason": [
+        "adult bbox area reaches/exceeds ant2 median scale",
+        "major/minor caste class present"
+      ],
+      "selection_categories": [
+        "large_scale_gap_candidate",
+        "major_minor",
+        "worker"
+      ],
+      "source_path": "datasets/external_sources/antsnet_raw/v14_yolov8/train/images/ants-7_jpg.rf.8cca682789fbfe33e9641fee0dc810f9.jpg",
+      "status": "candidate_only_not_materialized",
+      "unknown_annotation_count": 0
+    },
+    {
+      "adult_annotation_count": 14,
+      "adult_area_max": 0.03443803736772487,
+      "adult_area_median": 0.01196865223712942,
+      "annotation_count": 14,
+      "brood_annotation_count": 0,
+      "classes": [
+        "worker_pogonomyrmex_occidentalis"
+      ],
+      "family_key": "pxl",
+      "filename": "PXL_20210213_104329420_jpg.rf.745a8d66f424eb0000155081dae5c76b.jpg",
+      "label_path": "datasets/external_sources/antsnet_raw/v14_yolov8/train/labels/PXL_20210213_104329420_jpg.rf.745a8d66f424eb0000155081dae5c76b.txt",
+      "reason": [
+        "14 labeled objects",
+        "adult bbox area reaches/exceeds ant2 median scale"
+      ],
+      "selection_categories": [
+        "large_scale_gap_candidate",
+        "multi_ant_crowded",
+        "worker"
+      ],
+      "source_path": "datasets/external_sources/antsnet_raw/v14_yolov8/train/images/PXL_20210213_104329420_jpg.rf.745a8d66f424eb0000155081dae5c76b.jpg",
+      "status": "candidate_only_not_materialized",
+      "unknown_annotation_count": 0
+    },
+    {
+      "adult_annotation_count": 15,
+      "adult_area_max": 0.03163055345595028,
+      "adult_area_median": 0.011558983161165702,
+      "annotation_count": 15,
+      "brood_annotation_count": 0,
+      "classes": [
+        "worker_pogonomyrmex_occidentalis"
+      ],
+      "family_key": "pxl",
+      "filename": "PXL_20210213_104340498_jpg.rf.8a8d77e58a10320bff97f3462986c9fe.jpg",
+      "label_path": "datasets/external_sources/antsnet_raw/v14_yolov8/train/labels/PXL_20210213_104340498_jpg.rf.8a8d77e58a10320bff97f3462986c9fe.txt",
+      "reason": [
+        "15 labeled objects",
+        "adult bbox area reaches/exceeds ant2 median scale"
+      ],
+      "selection_categories": [
+        "large_scale_gap_candidate",
+        "multi_ant_crowded",
+        "worker"
+      ],
+      "source_path": "datasets/external_sources/antsnet_raw/v14_yolov8/train/images/PXL_20210213_104340498_jpg.rf.8a8d77e58a10320bff97f3462986c9fe.jpg",
+      "status": "candidate_only_not_materialized",
+      "unknown_annotation_count": 0
+    },
+    {
+      "adult_annotation_count": 22,
+      "adult_area_max": 0.034704834866045184,
+      "adult_area_median": 0.017199457908163268,
+      "annotation_count": 22,
+      "brood_annotation_count": 0,
+      "classes": [
+        "worker_pogonomyrmex_occidentalis"
+      ],
+      "family_key": "pxl",
+      "filename": "PXL_20210324_014344257_jpg.rf.1345d6cef92526df4cef444dea360624.jpg",
+      "label_path": "datasets/external_sources/antsnet_raw/v14_yolov8/train/labels/PXL_20210324_014344257_jpg.rf.1345d6cef92526df4cef444dea360624.txt",
+      "reason": [
+        "22 labeled objects",
+        "adult bbox area reaches/exceeds ant2 median scale"
+      ],
+      "selection_categories": [
+        "large_scale_gap_candidate",
+        "multi_ant_crowded",
+        "worker"
+      ],
+      "source_path": "datasets/external_sources/antsnet_raw/v14_yolov8/train/images/PXL_20210324_014344257_jpg.rf.1345d6cef92526df4cef444dea360624.jpg",
+      "status": "candidate_only_not_materialized",
+      "unknown_annotation_count": 0
+    },
+    {
+      "adult_annotation_count": 5,
+      "adult_area_max": 0.004095870601326951,
+      "adult_area_median": 0.0035670325228856978,
+      "annotation_count": 5,
+      "brood_annotation_count": 0,
+      "classes": [
+        "worker_minor_camponotus"
+      ],
+      "family_key": "20201015",
+      "filename": "20201015_185832_jpg.rf.310292f0864827d15dcc0fcb521ba5dc.jpg",
+      "label_path": "datasets/external_sources/antsnet_raw/v14_yolov8/train/labels/20201015_185832_jpg.rf.310292f0864827d15dcc0fcb521ba5dc.txt",
+      "reason": [
+        "major/minor caste class present"
+      ],
+      "selection_categories": [
+        "major_minor",
+        "worker"
+      ],
+      "source_path": "datasets/external_sources/antsnet_raw/v14_yolov8/train/images/20201015_185832_jpg.rf.310292f0864827d15dcc0fcb521ba5dc.jpg",
+      "status": "candidate_only_not_materialized",
+      "unknown_annotation_count": 0
+    },
+    {
+      "adult_annotation_count": 6,
+      "adult_area_max": 0.008519804526748971,
+      "adult_area_median": 0.00429352875409423,
+      "annotation_count": 6,
+      "brood_annotation_count": 0,
+      "classes": [
+        "worker_minor_camponotus"
+      ],
+      "family_key": "20201015",
+      "filename": "20201015_185838_jpg.rf.cf650d2b933beb82d408e64b7ec2e8c8.jpg",
+      "label_path": "datasets/external_sources/antsnet_raw/v14_yolov8/train/labels/20201015_185838_jpg.rf.cf650d2b933beb82d408e64b7ec2e8c8.txt",
+      "reason": [
+        "major/minor caste class present"
+      ],
+      "selection_categories": [
+        "major_minor",
+        "worker"
+      ],
+      "source_path": "datasets/external_sources/antsnet_raw/v14_yolov8/train/images/20201015_185838_jpg.rf.cf650d2b933beb82d408e64b7ec2e8c8.jpg",
+      "status": "candidate_only_not_materialized",
+      "unknown_annotation_count": 0
+    },
+    {
+      "adult_annotation_count": 2,
+      "adult_area_max": 0.007388806216931217,
+      "adult_area_median": 0.006742931547619048,
+      "annotation_count": 2,
+      "brood_annotation_count": 0,
+      "classes": [
+        "worker_minor_camponotus"
+      ],
+      "family_key": "20201015",
+      "filename": "20201015_185915_jpg.rf.10c746b312a740c4afb88f4d483ce2b1.jpg",
+      "label_path": "datasets/external_sources/antsnet_raw/v14_yolov8/train/labels/20201015_185915_jpg.rf.10c746b312a740c4afb88f4d483ce2b1.txt",
+      "reason": [
+        "major/minor caste class present"
+      ],
+      "selection_categories": [
+        "major_minor",
+        "worker"
+      ],
+      "source_path": "datasets/external_sources/antsnet_raw/v14_yolov8/train/images/20201015_185915_jpg.rf.10c746b312a740c4afb88f4d483ce2b1.jpg",
+      "status": "candidate_only_not_materialized",
+      "unknown_annotation_count": 0
+    },
+    {
+      "adult_annotation_count": 25,
+      "adult_area_max": 0.001357060185185185,
+      "adult_area_median": 0.000974633487654321,
+      "annotation_count": 25,
+      "brood_annotation_count": 0,
+      "classes": [
+        "worker_lasius_niger"
+      ],
+      "family_key": "pic",
+      "filename": "PIC_0160_JPG.rf.d57db540e9336db258eace6a8fe176c7.jpg",
+      "label_path": "datasets/external_sources/antsnet_raw/v14_yolov8/train/labels/PIC_0160_JPG.rf.d57db540e9336db258eace6a8fe176c7.txt",
+      "reason": [
+        "25 labeled objects",
+        "small adult boxes comparable to v2 small-ant scale"
+      ],
+      "selection_categories": [
+        "multi_ant_crowded",
+        "small_scale",
+        "worker"
+      ],
+      "source_path": "datasets/external_sources/antsnet_raw/v14_yolov8/train/images/PIC_0160_JPG.rf.d57db540e9336db258eace6a8fe176c7.jpg",
+      "status": "candidate_only_not_materialized",
+      "unknown_annotation_count": 0
+    },
+    {
+      "adult_annotation_count": 27,
+      "adult_area_max": 0.0013686342592592593,
+      "adult_area_median": 0.0008434606481481482,
+      "annotation_count": 27,
+      "brood_annotation_count": 0,
+      "classes": [
+        "worker_lasius_niger"
+      ],
+      "family_key": "pic",
+      "filename": "PIC_0164_JPG.rf.ebc44be763d6eb57874977a87ca79e80.jpg",
+      "label_path": "datasets/external_sources/antsnet_raw/v14_yolov8/train/labels/PIC_0164_JPG.rf.ebc44be763d6eb57874977a87ca79e80.txt",
+      "reason": [
+        "27 labeled objects",
+        "small adult boxes comparable to v2 small-ant scale"
+      ],
+      "selection_categories": [
+        "multi_ant_crowded",
+        "small_scale",
+        "worker"
+      ],
+      "source_path": "datasets/external_sources/antsnet_raw/v14_yolov8/train/images/PIC_0164_JPG.rf.ebc44be763d6eb57874977a87ca79e80.jpg",
+      "status": "candidate_only_not_materialized",
+      "unknown_annotation_count": 0
+    },
+    {
+      "adult_annotation_count": 24,
+      "adult_area_max": 0.006712962962962962,
+      "adult_area_median": 0.0031129436728395063,
+      "annotation_count": 24,
+      "brood_annotation_count": 0,
+      "classes": [
+        "worker_lasius_niger"
+      ],
+      "family_key": "pic",
+      "filename": "PIC_0162_JPG.rf.2c36aacce0dee62f865027930fa061d2.jpg",
+      "label_path": "datasets/external_sources/antsnet_raw/v14_yolov8/train/labels/PIC_0162_JPG.rf.2c36aacce0dee62f865027930fa061d2.txt",
+      "reason": [
+        "24 labeled objects"
+      ],
+      "selection_categories": [
+        "multi_ant_crowded",
+        "worker"
+      ],
+      "source_path": "datasets/external_sources/antsnet_raw/v14_yolov8/train/images/PIC_0162_JPG.rf.2c36aacce0dee62f865027930fa061d2.jpg",
+      "status": "candidate_only_not_materialized",
+      "unknown_annotation_count": 0
+    }
+  ],
+  "experiment": "ants_v3_mixedscale_e01",
+  "schemaVersion": "1.0",
+  "selectionPolicy": "Conservative 50-100 image candidate pool optimized for diversity, scale gap, queen/major/minor, brood context, and reduced filename-family redundancy. No images copied into TRAIN.",
+  "source": "AntsNet v14 YOLOv8 export",
+  "status": "proposal_only_not_materialized",
+  "summary": {
+    "categoryCounts": {
+      "brood_context_adult_plus_brood": 9,
+      "brood_context_brood_only": 1,
+      "large_scale_gap_candidate": 43,
+      "major_minor": 32,
+      "medium_scale_gap_candidate": 1,
+      "multi_ant_crowded": 30,
+      "queen": 25,
+      "small_scale": 5,
+      "worker": 49
+    },
+    "classCoverage": {
+      "Larva": 1,
+      "cocoon_camponotus_nicobarensis": 3,
+      "larva_camponotus_nicobarensis": 3,
+      "larva_myrmica_rubra": 5,
+      "larva_tetramorium_immigrans": 2,
+      "pupa_myrmica_rubra": 4,
+      "qorker_minor_camponotus_maritimus": 1,
+      "queen_camponotus_cinctellus": 4,
+      "queen_camponotus_maritimus": 1,
+      "queen_camponotus_nicobarensis": 10,
+      "queen_camponotus_quercicola": 4,
+      "queen_camponotus_vagus": 2,
+      "queen_camponotus_vicinus": 4,
+      "queen_myrmica_rubra": 4,
+      "worker_dolichoderinae": 1,
+      "worker_formica_sp": 2,
+      "worker_lasius_niger": 5,
+      "worker_major_messor_barbarus": 1,
+      "worker_major_pheidole_tysoni": 4,
+      "worker_minor_camponotus": 5,
+      "worker_minor_camponotus_cinctellus": 4,
+      "worker_minor_camponotus_nicobarensis": 11,
+      "worker_minor_camponotus_quercicola": 4,
+      "worker_minor_camponotus_vagus": 2,
+      "worker_minor_camponotus_vicinus": 4,
+      "worker_minor_pheidole_tysoni": 2,
+      "worker_novomessor_cockerelli": 1,
+      "worker_pogonomyrmex_occidentalis": 5,
+      "worker_pogonomyrmex_rugosus": 1,
+      "worker_tetramorium_immigrans": 2
+    },
+    "familyCount": 34,
+    "size": 54,
+    "status": "proposal_only_not_materialized"
+  }
+}

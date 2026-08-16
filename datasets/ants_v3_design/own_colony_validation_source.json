@@ -1,0 +1,36 @@
+{
+  "experiment": "ants_v3_mixedscale_e01",
+  "freezeDateUtc": "2026-08-13T08:02:51.253795+00:00",
+  "role": "FROZEN_OWN_COLONY_VALIDATION_SOURCE",
+  "schemaVersion": "1.0",
+  "selectionPolicy": {
+    "excludedInterval": null,
+    "excludedIntervalReason": "No intro/outro was excluded before selection; full video interval was treated as colony scene candidate.",
+    "noInferenceWithAntsV1OrV2": true,
+    "noModelsUsed": true,
+    "noPseudoLabeling": true,
+    "noTrainingUseAllowed": true,
+    "strategy": "temporal stratification over full usable video interval; 30 equal bins; initial center frame per bin",
+    "targetFrameCount": 30,
+    "unusableFrameRule": "Only technically unusable frames are skipped: unreadable/corrupt or strict black-frame check gray_mean < 2 and gray_std < 2."
+  },
+  "source": {
+    "avgFrameRate": "54555000/908951",
+    "codec": "h264",
+    "codecLongName": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+    "durationSeconds": 121.193467,
+    "fileSizeBytes": 307393123,
+    "filename": "own_colony_val_001.mp4",
+    "fps": 60.01973703753008,
+    "frameCount": 7274,
+    "modifiedTimeLocal": "2026-08-13T01:58:46.627721",
+    "originalPath": "C:\\Dev\\Ants\\samples\\own_colony_val_001.mp4",
+    "pixFmt": "yuv420p",
+    "rFrameRate": "60/1",
+    "resolution": {
+      "height": 1080,
+      "width": 1920
+    },
+    "sha256": "8d5921d1af58d47ba2ce7c2c7fbaa06127ca7c8fe46c5de8d58e37188be13510"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "principles": [
+    "Do not declare success from train mAP.",
+    "Use source-held-out validation plus final frozen external benchmark.",
+    "Check no catastrophic regression on ant2."
+  ],
+  "reasonableInitialCriteria": {
+    "internalValidation": "ants_v2 source-held-out validation should be credible across indoor/outdoor domains.",
+    "Seq0001": "center recall should improve over 0.6672 or remain comparable while standard mAP does not regress meaningfully.",
+    "Seq0006": "center recall should improve over 0.6217 and standard mAP50 should improve over 0.2868 if outdoor data is included.",
+    "ant2Regression": "No catastrophic regression on obvious ant2 detections."
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "sources": {
+    "ANTS_Seq0001": {
+      "meanAntsPerFrame": 10,
+      "medianAntsPerFrame": 10,
+      "minAntsPerFrame": 10,
+      "maxAntsPerFrame": 10,
+      "densityClass": "medium density",
+      "frameCount": 351,
+      "annotations": 3510
+    },
+    "ANTS_Seq0002": {
+      "meanAntsPerFrame": 10,
+      "medianAntsPerFrame": 10,
+      "minAntsPerFrame": 10,
+      "maxAntsPerFrame": 10,
+      "densityClass": "medium density",
+      "frameCount": 351,
+      "annotations": 3510
+    },
+    "ANTS_Seq0003": {
+      "meanAntsPerFrame": 10,
+      "medianAntsPerFrame": 10,
+      "minAntsPerFrame": 10,
+      "maxAntsPerFrame": 10,
+      "densityClass": "medium density",
+      "frameCount": 351,
+      "annotations": 3510
+    },
+    "ANTS_Seq0004": {
+      "meanAntsPerFrame": 10,
+      "medianAntsPerFrame": 10,
+      "minAntsPerFrame": 10,
+      "maxAntsPerFrame": 10,
+      "densityClass": "medium density",
+      "frameCount": 351,
+      "annotations": 3510
+    },
+    "ANTS_Seq0005": {
+      "meanAntsPerFrame": 10,
+      "medianAntsPerFrame": 10,
+      "minAntsPerFrame": 10,
+      "maxAntsPerFrame": 10,
+      "densityClass": "medium density",
+      "frameCount": 1001,
+      "annotations": 10010
+    },
+    "ANTS_Seq0006": {
+      "meanAntsPerFrame": 18.63,
+      "medianAntsPerFrame": 19.0,
+      "minAntsPerFrame": 13,
+      "maxAntsPerFrame": 28,
+      "densityClass": "medium density",
+      "frameCount": 600,
+      "annotations": 11178
+    },
+    "ANTS_Seq0007": {
+      "meanAntsPerFrame": 37.16100443131462,
+      "medianAntsPerFrame": 37,
+      "minAntsPerFrame": 26,
+      "maxAntsPerFrame": 44,
+      "densityClass": "high density",
+      "frameCount": 677,
+      "annotations": 25158
+    },
+    "ANTS_Seq0008": {
+      "meanAntsPerFrame": 17.81629116117851,
+      "medianAntsPerFrame": 17,
+      "minAntsPerFrame": 0,
+      "maxAntsPerFrame": 35,
+      "densityClass": "medium density",
+      "frameCount": 577,
+      "annotations": 10280
+    },
+    "ANTS_Seq0009": {
+      "meanAntsPerFrame": 53.045627376425855,
+      "medianAntsPerFrame": 53.0,
+      "minAntsPerFrame": 43,
+      "maxAntsPerFrame": 61,
+      "densityClass": "high density",
+      "frameCount": 526,
+      "annotations": 27902
+    },
+    "ANTS_Seq0010": {
+      "meanAntsPerFrame": 38.28136882129277,
+      "medianAntsPerFrame": 39.0,
+      "minAntsPerFrame": 30,
+      "maxAntsPerFrame": 44,
+      "densityClass": "high density",
+      "frameCount": 526,
+      "annotations": 22044
+    },
+    "ants_v1_training_ant2": {
+      "meanAntsPerFrame": 4.402985074626866,
+      "densityClass": "low density",
+      "frameCount": 67,
+      "annotations": 295
+    }
+  }
+}

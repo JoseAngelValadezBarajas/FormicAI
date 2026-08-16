@@ -1,0 +1,89 @@
+{
+  "removed": [
+    {
+      "antsnet_original_filename": "PA050404_JPG.rf.6e2c914c47fbd08b5433a78e26598c52.jpg",
+      "near_duplicate_family_id": "pa050404",
+      "reason": "near-duplicate brood/queen colony frame; PA050405 is denser and more legible",
+      "status": "excluded_from_relabel_pack"
+    },
+    {
+      "antsnet_original_filename": "PA050403_JPG.rf.b7b1b6598df4cea464aeb5a3aa3c933d.jpg",
+      "near_duplicate_family_id": "pa050403",
+      "reason": "near-duplicate brood/queen colony frame; PA050405 retained as strongest representative",
+      "status": "excluded_from_relabel_pack"
+    },
+    {
+      "antsnet_original_filename": "P1011359-1-_JPG.rf.f774b7d9b81e18a5662f6c6a521c197b.jpg",
+      "near_duplicate_family_id": "p1011359",
+      "reason": "near-duplicate Myrmica brood/queen tube frame; other frames are more legible",
+      "status": "excluded_from_relabel_pack"
+    },
+    {
+      "antsnet_original_filename": "PA060433_JPG.rf.e20a216a9ec1d974bfd5d133037ca3a4.jpg",
+      "near_duplicate_family_id": "pa060433",
+      "reason": "near-duplicate Camponotus cinctellus close-up; PA060434 retained",
+      "status": "excluded_from_relabel_pack"
+    },
+    {
+      "antsnet_original_filename": "PA060481_JPG.rf.be5c2631f41c30b68b126c0c466f8250.jpg",
+      "near_duplicate_family_id": "pa060481",
+      "reason": "near-duplicate Camponotus cinctellus close-up; PA060480 retained",
+      "status": "excluded_from_relabel_pack"
+    },
+    {
+      "antsnet_original_filename": "PA050406_JPG.rf.e61705216bf06f1102aef78bd83875f3.jpg",
+      "near_duplicate_family_id": "pa050406",
+      "reason": "redundant PA05040x Camponotus nicobarensis colony series; later representatives retained",
+      "status": "excluded_from_relabel_pack"
+    },
+    {
+      "antsnet_original_filename": "PA050407_JPG.rf.8bccb2c1b3582b3af8dc8677decf8207.jpg",
+      "near_duplicate_family_id": "pa050407",
+      "reason": "redundant PA05040x Camponotus nicobarensis colony series",
+      "status": "excluded_from_relabel_pack"
+    },
+    {
+      "antsnet_original_filename": "PA050410_JPG.rf.f98d353fce83a640d11e3d3a4e82656f.jpg",
+      "near_duplicate_family_id": "pa050410",
+      "reason": "redundant PA05040x Camponotus nicobarensis colony series",
+      "status": "excluded_from_relabel_pack"
+    },
+    {
+      "antsnet_original_filename": "PA050411_JPG.rf.b0b1a42804e592938fac46144fce9417.jpg",
+      "near_duplicate_family_id": "pa050411",
+      "reason": "redundant PA05040x Camponotus nicobarensis colony series",
+      "status": "excluded_from_relabel_pack"
+    },
+    {
+      "antsnet_original_filename": "PA050412_JPG.rf.2ee933da2023fd9c6109cb0be2aef48a.jpg",
+      "near_duplicate_family_id": "pa050412",
+      "reason": "redundant PA05040x Camponotus nicobarensis colony series; PA050405/PA050408/PA050409 retained",
+      "status": "excluded_from_relabel_pack"
+    },
+    {
+      "antsnet_original_filename": "ants-7_jpg.rf.8cca682789fbfe33e9641fee0dc810f9.jpg",
+      "near_duplicate_family_id": "ants",
+      "reason": "near-duplicate Pheidole major close-up; ants-5/ants-6 cover this morphology",
+      "status": "excluded_from_relabel_pack"
+    },
+    {
+      "antsnet_original_filename": "20201015_185915_jpg.rf.10c746b312a740c4afb88f4d483ce2b1.jpg",
+      "near_duplicate_family_id": "20201015",
+      "reason": "near-consecutive 20201015 worker-minor frame; not needed for scale-gap priority",
+      "status": "excluded_from_relabel_pack"
+    },
+    {
+      "antsnet_original_filename": "PIC_0160_JPG.rf.d57db540e9336db258eace6a8fe176c7.jpg",
+      "near_duplicate_family_id": "pic",
+      "reason": "small-scale Lasius crowded series; retain only a small number because v2 already covers small ants",
+      "status": "excluded_from_relabel_pack"
+    },
+    {
+      "antsnet_original_filename": "PIC_0164_JPG.rf.ebc44be763d6eb57874977a87ca79e80.jpg",
+      "near_duplicate_family_id": "pic",
+      "reason": "small-scale Lasius crowded series; retain PIC_0161/PIC_0162 instead",
+      "status": "excluded_from_relabel_pack"
+    }
+  ],
+  "removed_count": 14
+}

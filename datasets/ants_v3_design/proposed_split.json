@@ -1,0 +1,113 @@
+{
+  "experiment": "ants_v3_mixedscale_e01",
+  "status": "proposed_only_not_materialized",
+  "trainingCandidates": [
+    {
+      "source": "ANTS Seq0002",
+      "role": "public TRAIN base",
+      "images": 25,
+      "annotationsInFrozenV2": 247
+    },
+    {
+      "source": "ANTS Seq0003",
+      "role": "public TRAIN base",
+      "images": 25,
+      "annotationsInFrozenV2": 250
+    },
+    {
+      "source": "ANTS Seq0004",
+      "role": "public TRAIN base",
+      "images": 25,
+      "annotationsInFrozenV2": 250
+    },
+    {
+      "source": "ANTS Seq0007",
+      "role": "public TRAIN base",
+      "images": 30,
+      "annotationsInFrozenV2": 1089
+    },
+    {
+      "source": "ANTS Seq0008",
+      "role": "public TRAIN base",
+      "images": 30,
+      "annotationsInFrozenV2": 541
+    },
+    {
+      "source": "ANTS Seq0009",
+      "role": "public TRAIN base",
+      "images": 20,
+      "annotationsInFrozenV2": 987
+    },
+    {
+      "source": "ant2",
+      "role": "own-colony positive training candidate plus regression reference",
+      "targetPositiveFrames": "30-50",
+      "why": "restore queen/large-worker close-up scale and local distractors"
+    },
+    {
+      "source": "nest_test_001",
+      "role": "verified hard-negative training candidate only",
+      "targetHardNegativeFrames": "10-12 after full-resolution zero-ant verification"
+    }
+  ],
+  "trainingBaseCountsBeforeOwnColonyAdditions": {
+    "images": 155,
+    "annotations": 3364,
+    "sources": [
+      "Seq0002",
+      "Seq0003",
+      "Seq0004",
+      "Seq0007",
+      "Seq0008",
+      "Seq0009"
+    ]
+  },
+  "validationCandidates": [
+    {
+      "source": "ANTS Seq0005",
+      "role": "provisional public validation",
+      "warning": "already used for v2 model selection; repeated experiments can overfit validation"
+    },
+    {
+      "source": "ANTS Seq0010",
+      "role": "provisional public validation",
+      "warning": "already used for v2 model selection; repeated experiments can overfit validation"
+    },
+    {
+      "source": "NEW OWN-COLONY VALIDATION VIDEO REQUIRED",
+      "role": "source-held-out own-colony validation",
+      "whyNestTest001Insufficient": "nest_test_001 appears to lack positive identifiable ants and lacks queen/worker diversity"
+    }
+  ],
+  "stressTests": [
+    {
+      "source": "ant3",
+      "role": "stress test only; not quantitative validation, not train"
+    }
+  ],
+  "frozenFinalTestCandidates": [
+    {
+      "source": "ant4",
+      "role": "frozen own-colony final test candidate after manual GT; do not use for train/val/model selection"
+    },
+    {
+      "source": "Seq0001",
+      "role": "observed frozen public benchmark/reference; never train/tune"
+    },
+    {
+      "source": "Seq0006",
+      "role": "observed frozen public benchmark/reference; never train/tune"
+    }
+  ],
+  "forbiddenForV3TrainValTuning": [
+    "ant4",
+    "Seq0001",
+    "Seq0006",
+    "ant3",
+    "synthetic_motion",
+    "nest_test_001 hard negatives unless manually verified as zero-ant"
+  ],
+  "ant2BenchmarkStatusChange": "ant2 is no longer an untouched final benchmark for v3 because v2 regression results have been observed and will inform data design.",
+  "designGeneratedWithoutTrainingOrAnnotationChanges": true,
+  "contentSha256": "872fe44f6836b02932f9b70c9e3e947a58f13bddd706fb53adbf2f37ff413ec1"
+}

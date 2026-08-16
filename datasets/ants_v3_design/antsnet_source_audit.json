@@ -1,0 +1,3871 @@
+{
+  "annotationPolicyCompatibility": {
+    "automatedSignals": {
+      "adultAnnotationsTotal": 6322,
+      "emptyLabelCount": 3,
+      "largeAdultBoxCountGeAnt2Median": 1580,
+      "suspiciousAnnotationSamples": [
+        {
+          "annotation_index": 1,
+          "area": 4.920949861426051e-07,
+          "class_name": "worker_lasius_niger",
+          "filename": "20201015_185818_jpg.rf.4e84c901a3b505c0925babdd05f037d9.jpg",
+          "reason": "extremely small adult box",
+          "severity": "medium"
+        },
+        {
+          "filename": "20201015_185904_jpg.rf.7f0781969d102d52361425e3a1c8f47f.jpg",
+          "reason": "empty label; could be valid negative but unusual for source dataset",
+          "severity": "medium"
+        },
+        {
+          "annotation_index": 1,
+          "area": 0.3759780317844852,
+          "class_name": "queen_lasius_claviger",
+          "filename": "ants-1-3_JPG.rf.ee575a4f414efc376c03e9a44f517443.jpg",
+          "reason": "very large adult box may be crop/padded/species-identification style",
+          "severity": "medium"
+        },
+        {
+          "annotation_index": 1,
+          "area": 0.637015628345108,
+          "class_name": "worker_major_pheidole_tysoni",
+          "filename": "ants-5_jpg.rf.11b9011aad4282159486da5e94038387.jpg",
+          "reason": "very large adult box may be crop/padded/species-identification style",
+          "severity": "medium"
+        },
+        {
+          "annotation_index": 1,
+          "area": 0.49603967912543967,
+          "class_name": "worker_major_pheidole_tysoni",
+          "filename": "ants-7_jpg.rf.8cca682789fbfe33e9641fee0dc810f9.jpg",
+          "reason": "very large adult box may be crop/padded/species-identification style",
+          "severity": "medium"
+        },
+        {
+          "annotation_index": 2,
+          "area": 0.3791650703196445,
+          "class_name": "worker_replete_myrmecocystus_mexicanus",
+          "filename": "IMG_1706_JPG.rf.ec28b5b674f043358215e5ebe06f10f2.jpg",
+          "reason": "very large adult box may be crop/padded/species-identification style",
+          "severity": "medium"
+        },
+        {
+          "annotation_index": 1,
+          "area": 0.5542052469135802,
+          "class_name": "worker_replete_myrmecocystus_mexicanus",
+          "filename": "IMG_1708_JPG.rf.e2bc995941f639de9d8a3414c9a70b77.jpg",
+          "reason": "very large adult box may be crop/padded/species-identification style",
+          "severity": "medium"
+        },
+        {
+          "annotation_index": 1,
+          "area": 0.6123053572959534,
+          "class_name": "worker_replete_myrmecocystus_mexicanus",
+          "filename": "IMG_1710_JPG.rf.7023334e362f87da3775b22a343322ec.jpg",
+          "reason": "very large adult box may be crop/padded/species-identification style",
+          "severity": "medium"
+        },
+        {
+          "annotation_index": 1,
+          "area": 0.6254489865540696,
+          "class_name": "worker_replete_myrmecocystus_mexicanus",
+          "filename": "IMG_1711_JPG.rf.8e30751fdef8261f627842e42da8cb2c.jpg",
+          "reason": "very large adult box may be crop/padded/species-identification style",
+          "severity": "medium"
+        },
+        {
+          "annotation_index": 1,
+          "area": 0.7153903034979424,
+          "class_name": "worker_replete_myrmecocystus_mexicanus",
+          "filename": "IMG_1715_JPG.rf.b9a29fef90467c0b1b6583e55f5f8915.jpg",
+          "reason": "very large adult box may be crop/padded/species-identification style",
+          "severity": "medium"
+        },
+        {
+          "annotation_index": 2,
+          "area": 0.691358024691358,
+          "class_name": "worker_replete_myrmecocystus_mexicanus",
+          "filename": "IMG_1716_JPG.rf.2543ada309fde12656713e51d78e04d6.jpg",
+          "reason": "very large adult box may be crop/padded/species-identification style",
+          "severity": "medium"
+        },
+        {
+          "annotation_index": 1,
+          "area": 0.5855313803869456,
+          "class_name": "worker_replete_myrmecocystus_mexicanus",
+          "filename": "IMG_1717_JPG.rf.ea35fe36bd4bcc1df8fecab32f527e89.jpg",
+          "reason": "very large adult box may be crop/padded/species-identification style",
+          "severity": "medium"
+        },
+        {
+          "annotation_index": 6,
+          "area": 0.5147590654649634,
+          "class_name": "worker_replete_myrmecocystus_mexicanus",
+          "filename": "IMG_1719_JPG.rf.c48a8697ba9d78cc375d75cf9f3675a0.jpg",
+          "reason": "very large adult box may be crop/padded/species-identification style",
+          "severity": "medium"
+        },
+        {
+          "annotation_index": 3,
+          "area": 0.5944147724837106,
+          "class_name": "worker_replete_myrmecocystus_mexicanus",
+          "filename": "IMG_1720_JPG.rf.6b0bd2e2ef324c3f7e7210699aebb058.jpg",
+          "reason": "very large adult box may be crop/padded/species-identification style",
+          "severity": "medium"
+        },
+        {
+          "annotation_index": 1,
+          "area": 0.8080632716049383,
+          "class_name": "worker_replete_myrmecocystus_mexicanus",
+          "filename": "IMG_1723_JPG.rf.ec8233128c4878a8fc8dd8cf4c846b8f.jpg",
+          "reason": "very large adult box may be crop/padded/species-identification style",
+          "severity": "medium"
+        },
+        {
+          "annotation_index": 2,
+          "area": 0.40737006628300754,
+          "class_name": "worker_replete_myrmecocystus_mexicanus",
+          "filename": "IMG_1723_JPG.rf.ec8233128c4878a8fc8dd8cf4c846b8f.jpg",
+          "reason": "very large adult box may be crop/padded/species-identification style",
+          "severity": "medium"
+        },
+        {
+          "filename": "IMG_20200707_211150_jpg.rf.3b0a2ad707b923e76f99f0c3cf7ce2a9.jpg",
+          "reason": "empty label; could be valid negative but unusual for source dataset",
+          "severity": "medium"
+        },
+        {
+          "annotation_index": 1,
+          "area": 0.5689800190897057,
+          "class_name": "queen_camponotus_quercicola",
+          "filename": "IMG_20200714_234333-2_jpg.rf.4df86039c52d2d695ffbba38447a73c4.jpg",
+          "reason": "very large adult box may be crop/padded/species-identification style",
+          "severity": "medium"
+        },
+        {
+          "annotation_index": 2,
+          "area": 0.7570418792517007,
+          "class_name": "worker_minor_camponotus_quercicola",
+          "filename": "IMG_20200720_000410_jpg.rf.d9edc4c5b9aa3a54c8dadc33a614358f.jpg",
+          "reason": "very large adult box may be crop/padded/species-identification style",
+          "severity": "medium"
+        },
+        {
+          "annotation_index": 1,
+          "area": 0.4974312641723355,
+          "class_name": "queen_camponotus_quercicola",
+          "filename": "IMG_20200720_000416_jpg.rf.b2e27cb165224ab46e160a2856808dc3.jpg",
+          "reason": "very large adult box may be crop/padded/species-identification style",
+          "severity": "medium"
+        },
+        {
+          "annotation_index": 1,
+          "area": 0.6569812531494078,
+          "class_name": "worker_minor_camponotus_quercicola",
+          "filename": "IMG_20200720_000428_jpg.rf.5a064834567f0fc5278eccfb8dc96e0d.jpg",
+          "reason": "very large adult box may be crop/padded/species-identification style",
+          "severity": "medium"
+        },
+        {
+          "annotation_index": 1,
+          "area": 0.7117371827002256,
+          "class_name": "queen_lasius_murphyi",
+          "filename": "IMG_8382_JPG.rf.b11739fbb92df24b4173f0fda9a5f0f5.jpg",
+          "reason": "very large adult box may be crop/padded/species-identification style",
+          "severity": "medium"
+        },
+        {
+          "annotation_index": 1,
+          "area": 0.4614715259293925,
+          "class_name": "worker_stenamma_schmitti",
+          "filename": "IMG_8505_JPG.rf.a969ea127389afe55db0263593ea144c.jpg",
+          "reason": "very large adult box may be crop/padded/species-identification style",
+          "severity": "medium"
+        },
+        {
+          "annotation_index": 1,
+          "area": 0.39424909009058395,
+          "class_name": "queen_myrmecina_americana",
+          "filename": "IMG_8676_JPG.rf.1b65a0d97c8ec335a8767e0c98aeafb5.jpg",
+          "reason": "very large adult box may be crop/padded/species-identification style",
+          "severity": "medium"
+        },
+        {
+          "annotation_index": 1,
+          "area": 0.4346952685009147,
+          "class_name": "queen_aphaenogaster_rudis",
+          "filename": "IMG_8781_JPG.rf.ab6b3044f4408163f5ea486987424ce1.jpg",
+          "reason": "very large adult box may be crop/padded/species-identification style",
+          "severity": "medium"
+        },
+        {
+          "annotation_index": 2,
+          "area": 0.4126134447752628,
+          "class_name": "queen_aphaenogaster_rudis",
+          "filename": "IMG_8781_JPG.rf.ab6b3044f4408163f5ea486987424ce1.jpg",
+          "reason": "very large adult box may be crop/padded/species-identification style",
+          "severity": "medium"
+        },
+        {
+          "annotation_index": 2,
+          "area": 0.3710610326208516,
+          "class_name": "worker_tetramorium_immigrans",
+          "filename": "IMG_8782_JPG.rf.5aadbb542764c2adb11cef9b04b12fc4.jpg",
+          "reason": "very large adult box may be crop/padded/species-identification style",
+          "severity": "medium"
+        },
+        {
+          "annotation_index": 1,
+          "area": 0.3977170426437555,
+          "class_name": "queen_aphaenogaster_rudis",
+          "filename": "IMG_8785_JPG.rf.0be3b7bf7cd8298efc18cb94f621ebf4.jpg",
+          "reason": "very large adult box may be crop/padded/species-identification style",
+          "severity": "medium"
+        },
+        {
+          "annotation_index": 2,
+          "area": 0.3698137449415713,
+          "class_name": "queen_aphaenogaster_rudis",
+          "filename": "IMG_8785_JPG.rf.0be3b7bf7cd8298efc18cb94f621ebf4.jpg",
+          "reason": "very large adult box may be crop/padded/species-identification style",
+          "severity": "medium"
+        },
+        {
+          "annotation_index": 1,
+          "area": 0.3758041266773387,
+          "class_name": "worker_myrmica_pinetorum",
+          "filename": "IMG_8862_JPG.rf.a942f66d37393d079d3a84886c22427e.jpg",
+          "reason": "very large adult box may be crop/padded/species-identification style",
+          "severity": "medium"
+        },
+        {
+          "annotation_index": 2,
+          "area": 0.4329281409296459,
+          "class_name": "worker_myrmica_pinetorum",
+          "filename": "IMG_8862_JPG.rf.a942f66d37393d079d3a84886c22427e.jpg",
+          "reason": "very large adult box may be crop/padded/species-identification style",
+          "severity": "medium"
+        },
+        {
+          "annotation_index": 1,
+          "area": 0.434776965666442,
+          "class_name": "worker_myrmica_pinetorum",
+          "filename": "IMG_8863_JPG.rf.20281db56c801a0f3c0874460c2b6941.jpg",
+          "reason": "very large adult box may be crop/padded/species-identification style",
+          "severity": "medium"
+        },
+        {
+          "annotation_index": 2,
+          "area": 0.606581435011965,
+          "class_name": "worker_myrmica_pinetorum",
+          "filename": "IMG_8863_JPG.rf.20281db56c801a0f3c0874460c2b6941.jpg",
+          "reason": "very large adult box may be crop/padded/species-identification style",
+          "severity": "medium"
+        },
+        {
+          "annotation_index": 1,
+          "area": 0.8524193302298457,
+          "class_name": "worker_myrmica_pinetorum",
+          "filename": "IMG_8864_JPG.rf.6a29847cbb7eb786dab41a1a99bcbb45.jpg",
+          "reason": "very large adult box may be crop/padded/species-identification style",
+          "severity": "medium"
+        },
+        {
+          "annotation_index": 2,
+          "area": 0.38556200137656516,
+          "class_name": "worker_myrmica_pinetorum",
+          "filename": "IMG_8864_JPG.rf.6a29847cbb7eb786dab41a1a99bcbb45.jpg",
+          "reason": "very large adult box may be crop/padded/species-identification style",
+          "severity": "medium"
+        },
+        {
+          "annotation_index": 1,
+          "area": 0.4793618464155585,
+          "class_name": "queen_lasius_claviger",
+          "filename": "IMG_8874_JPG.rf.fdc40d52ee6c6183f8e613a9137bbf0d.jpg",
+          "reason": "very large adult box may be crop/padded/species-identification style",
+          "severity": "medium"
+        },
+        {
+          "annotation_index": 5,
+          "area": 8.333333333333334e-07,
+          "class_name": "worker_lasius_flavus",
+          "filename": "P3171545_JPG.rf.56594bcf23ad4c1f51e569897b7ea693.jpg",
+          "reason": "extremely small adult box",
+          "severity": "medium"
+        },
+        {
+          "annotation_index": 6,
+          "area": 3.3333333333333337e-06,
+          "class_name": "queen_lasius_flavus",
+          "filename": "P3171547_JPG.rf.52ba9f0571450b51e5e3f07a5f1523b8.jpg",
+          "reason": "extremely small adult box",
+          "severity": "medium"
+        },
+        {
+          "annotation_index": 6,
+          "area": 4.166666666666667e-07,
+          "class_name": "worker_lasius_flavus",
+          "filename": "P3171554_JPG.rf.b1aae379d5ddef999ec20ab9039b065f.jpg",
+          "reason": "extremely small adult box",
+          "severity": "medium"
+        },
+        {
+          "annotation_index": 5,
+          "area": 8.333333333333334e-07,
+          "class_name": "worker_lasius_flavus",
+          "filename": "P3171555_JPG.rf.875168a537bc5517644825663a2e153c.jpg",
+          "reason": "extremely small adult box",
+          "severity": "medium"
+        },
+        {
+          "annotation_index": 6,
+          "area": 8.333333333333334e-07,
+          "class_name": "worker_lasius_flavus",
+          "filename": "P3171555_JPG.rf.875168a537bc5517644825663a2e153c.jpg",
+          "reason": "extremely small adult box",
+          "severity": "medium"
+        },
+        {
+          "annotation_index": 6,
+          "area": 1.6666666666666669e-06,
+          "class_name": "worker_lasius_flavus",
+          "filename": "P3171559_JPG.rf.9c8dfba86364a49f5cfef45216be84ed.jpg",
+          "reason": "extremely small adult box",
+          "severity": "medium"
+        },
+        {
+          "annotation_index": 5,
+          "area": 0.48185,
+          "class_name": "queen_lasius_flavus",
+          "filename": "P3171563_JPG.rf.a955f11e06284558d444f68479a6bc67.jpg",
+          "reason": "very large adult box may be crop/padded/species-identification style",
+          "severity": "medium"
+        },
+        {
+          "annotation_index": 5,
+          "area": 0.4526179166666667,
+          "class_name": "queen_lasius_flavus",
+          "filename": "P3171564_JPG.rf.0b44cf33be91c2c99b6599654e0f77b1.jpg",
+          "reason": "very large adult box may be crop/padded/species-identification style",
+          "severity": "medium"
+        },
+        {
+          "annotation_index": 1,
+          "area": 0.56232,
+          "class_name": "queen_crematogaster_scutelarris",
+          "filename": "P3231658_JPG.rf.cae992ba4dda3ef1d265458e1ca14d48.jpg",
+          "reason": "very large adult box may be crop/padded/species-identification style",
+          "severity": "medium"
+        },
+        {
+          "annotation_index": 1,
+          "area": 0.57967875,
+          "class_name": "queen_crematogaster_scutelarris",
+          "filename": "P3231659_JPG.rf.c9b450719bce0ac6f794da80e6d396da.jpg",
+          "reason": "very large adult box may be crop/padded/species-identification style",
+          "severity": "medium"
+        },
+        {
+          "annotation_index": 1,
+          "area": 0.5820833333333333,
+          "class_name": "queen_crematogaster_scutelarris",
+          "filename": "P3231660_JPG.rf.65a8ed900305d9b8928c57995ee5e172.jpg",
+          "reason": "very large adult box may be crop/padded/species-identification style",
+          "severity": "medium"
+        },
+        {
+          "annotation_index": 1,
+          "area": 0.5697500000000001,
+          "class_name": "queen_crematogaster_scutelarris",
+          "filename": "P3231661_JPG.rf.70389d39e8de12d42701d668f2591259.jpg",
+          "reason": "very large adult box may be crop/padded/species-identification style",
+          "severity": "medium"
+        },
+        {
+          "annotation_index": 1,
+          "area": 0.5639958333333334,
+          "class_name": "queen_crematogaster_scutelarris",
+          "filename": "P3231662_JPG.rf.ff85544a8b3395b6e4fdd70027cbad6e.jpg",
+          "reason": "very large adult box may be crop/padded/species-identification style",
+          "severity": "medium"
+        },
+        {
+          "annotation_index": 1,
+          "area": 0.6108250000000001,
+          "class_name": "queen_crematogaster_scutelarris",
+          "filename": "P3231663_JPG.rf.786a37d03b352ea8c5a17f761d840c2d.jpg",
+          "reason": "very large adult box may be crop/padded/species-identification style",
+          "severity": "medium"
+        },
+        {
+          "annotation_index": 1,
+          "area": 0.5728229166666666,
+          "class_name": "queen_crematogaster_scutelarris",
+          "filename": "P3231664_JPG.rf.b5cc036747904a4fcd5fa2dd00f3783c.jpg",
+          "reason": "very large adult box may be crop/padded/species-identification style",
+          "severity": "medium"
+        },
+        {
+          "annotation_index": 1,
+          "area": 0.5811666666666666,
+          "class_name": "queen_crematogaster_scutelarris",
+          "filename": "P3231665_JPG.rf.c99e28f561513d601dfb2c460442addd.jpg",
+          "reason": "very large adult box may be crop/padded/species-identification style",
+          "severity": "medium"
+        },
+        {
+          "annotation_index": 1,
+          "area": 0.5671,
+          "class_name": "queen_crematogaster_scutelarris",
+          "filename": "P3231666_JPG.rf.4e9a7302b601d7a1df2ce01ced88d25b.jpg",
+          "reason": "very large adult box may be crop/padded/species-identification style",
+          "severity": "medium"
+        },
+        {
+          "annotation_index": 1,
+          "area": 0.5758833333333333,
+          "class_name": "queen_crematogaster_scutelarris",
+          "filename": "P3231667_JPG.rf.5d5c5f181122b5df74727b830e061595.jpg",
+          "reason": "very large adult box may be crop/padded/species-identification style",
+          "severity": "medium"
+        },
+        {
+          "annotation_index": 1,
+          "area": 0.5781145833333333,
+          "class_name": "queen_crematogaster_scutelarris",
+          "filename": "P3231668_JPG.rf.7a93ae204516676f6be2c4ec9960bf0e.jpg",
+          "reason": "very large adult box may be crop/padded/species-identification style",
+          "severity": "medium"
+        },
+        {
+          "annotation_index": 1,
+          "area": 0.4639509166666666,
+          "class_name": "queen_messor_barbarus",
+          "filename": "P3231684_JPG.rf.c66284bcb9c7f9a3c3188f60a9577896.jpg",
+          "reason": "very large adult box may be crop/padded/species-identification style",
+          "severity": "medium"
+        },
+        {
+          "annotation_index": 1,
+          "area": 0.4560359166666666,
+          "class_name": "queen_messor_barbarus",
+          "filename": "P3231685_JPG.rf.d19bc721dad51aaef004bdaabf18c63a.jpg",
+          "reason": "very large adult box may be crop/padded/species-identification style",
+          "severity": "medium"
+        },
+        {
+          "annotation_index": 1,
+          "area": 0.45537633333333327,
+          "class_name": "queen_messor_barbarus",
+          "filename": "P3231686_JPG.rf.7ef59c6ac8326afa74ecfcf920dc9419.jpg",
+          "reason": "very large adult box may be crop/padded/species-identification style",
+          "severity": "medium"
+        },
+        {
+          "annotation_index": 1,
+          "area": 0.44251375,
+          "class_name": "queen_messor_barbarus",
+          "filename": "P3231687_JPG.rf.d4dfc6cefd79e549d9e7e5ee2dc6d6f1.jpg",
+          "reason": "very large adult box may be crop/padded/species-identification style",
+          "severity": "medium"
+        },
+        {
+          "annotation_index": 1,
+          "area": 0.46359999999999996,
+          "class_name": "queen_messor_barbarus",
+          "filename": "P3231688_JPG.rf.307e5a7b49679dd36b3a6ddde14958b7.jpg",
+          "reason": "very large adult box may be crop/padded/species-identification style",
+          "severity": "medium"
+        },
+        {
+          "annotation_index": 1,
+          "area": 0.47142,
+          "class_name": "queen_messor_barbarus",
+          "filename": "P3231689_JPG.rf.36654177325d432410087b569d6f1f15.jpg",
+          "reason": "very large adult box may be crop/padded/species-identification style",
+          "severity": "medium"
+        },
+        {
+          "annotation_index": 1,
+          "area": 0.4767,
+          "class_name": "queen_messor_barbarus",
+          "filename": "P3231690_JPG.rf.4b43aca4a47b842b94ce54b9ba9d3ad1.jpg",
+          "reason": "very large adult box may be crop/padded/species-identification style",
+          "severity": "medium"
+        },
+        {
+          "annotation_index": 1,
+          "area": 0.5001995833333334,
+          "class_name": "queen_messor_barbarus",
+          "filename": "P3231691_JPG.rf.c45bc182741478e3967b570e493f3707.jpg",
+          "reason": "very large adult box may be crop/padded/species-identification style",
+          "severity": "medium"
+        },
+        {
+          "annotation_index": 1,
+          "area": 0.511715,
+          "class_name": "queen_messor_barbarus",
+          "filename": "P3231692_JPG.rf.5ca1e7c51e176f866d55b863c5751036.jpg",
+          "reason": "very large adult box may be crop/padded/species-identification style",
+          "severity": "medium"
+        },
+        {
+          "annotation_index": 1,
+          "area": 0.5176775,
+          "class_name": "queen_messor_barbarus",
+          "filename": "P3231693_JPG.rf.42150acae5d65899d4cc66797273ede5.jpg",
+          "reason": "very large adult box may be crop/padded/species-identification style",
+          "severity": "medium"
+        },
+        {
+          "annotation_index": 1,
+          "area": 0.5331354166666666,
+          "class_name": "queen_messor_barbarus",
+          "filename": "P3231694_JPG.rf.1f8169093877cab3b611982caffdd464.jpg",
+          "reason": "very large adult box may be crop/padded/species-identification style",
+          "severity": "medium"
+        },
+        {
+          "annotation_index": 1,
+          "area": 0.5349225,
+          "class_name": "queen_messor_barbarus",
+          "filename": "P3231695_JPG.rf.cb51c6b991b60f865d5a4e8988a33ae7.jpg",
+          "reason": "very large adult box may be crop/padded/species-identification style",
+          "severity": "medium"
+        },
+        {
+          "annotation_index": 1,
+          "area": 0.52791125,
+          "class_name": "queen_messor_barbarus",
+          "filename": "P3231696_JPG.rf.2c510eca7b093ffbe8b7b70c217b5353.jpg",
+          "reason": "very large adult box may be crop/padded/species-identification style",
+          "severity": "medium"
+        },
+        {
+          "annotation_index": 1,
+          "area": 0.530285,
+          "class_name": "queen_messor_barbarus",
+          "filename": "P3231697_JPG.rf.38d66809750b8088d6c89e4f776920bb.jpg",
+          "reason": "very large adult box may be crop/padded/species-identification style",
+          "severity": "medium"
+        },
+        {
+          "annotation_index": 1,
+          "area": 0.637819,
+          "class_name": "queen_camponotus_cinctellus",
+          "filename": "PA060433_JPG.rf.e20a216a9ec1d974bfd5d133037ca3a4.jpg",
+          "reason": "very large adult box may be crop/padded/species-identification style",
+          "severity": "medium"
+        },
+        {
+          "annotation_index": 1,
+          "area": 0.6956370000000001,
+          "class_name": "queen_camponotus_cinctellus",
+          "filename": "PA060434_JPG.rf.3737151c3863d2b7c7f69cb82b01c071.jpg",
+          "reason": "very large adult box may be crop/padded/species-identification style",
+          "severity": "medium"
+        },
+        {
+          "annotation_index": 1,
+          "area": 0.7083319166666666,
+          "class_name": "queen_camponotus_cinctellus",
+          "filename": "PA060435_JPG.rf.85642482c3652dcaa02789ca1fb3a6c8.jpg",
+          "reason": "very large adult box may be crop/padded/species-identification style",
+          "severity": "medium"
+        },
+        {
+          "annotation_index": 2,
+          "area": 0.4235595,
+          "class_name": "queen_camponotus_cinctellus",
+          "filename": "PA060436_JPG.rf.6300b5b8aa08fef6dd5a8a8053993109.jpg",
+          "reason": "very large adult box may be crop/padded/species-identification style",
+          "severity": "medium"
+        },
+        {
+          "annotation_index": 1,
+          "area": 0.47155125000000003,
+          "class_name": "queen_camponotus_cinctellus",
+          "filename": "PA060437_JPG.rf.85252d9e8bc86e08188cf6d9c33fa239.jpg",
+          "reason": "very large adult box may be crop/padded/species-identification style",
+          "severity": "medium"
+        },
+        {
+          "annotation_index": 1,
+          "area": 0.44016249999999996,
+          "class_name": "queen_camponotus_cinctellus",
+          "filename": "PA060438_JPG.rf.2c516b3a7df721d23e7c6dcca99bbc72.jpg",
+          "reason": "very large adult box may be crop/padded/species-identification style",
+          "severity": "medium"
+        },
+        {
+          "annotation_index": 1,
+          "area": 0.365217,
+          "class_name": "queen_camponotus_cinctellus",
+          "filename": "PA060440_JPG.rf.778e1fe990e1a8d03f51e9828362f712.jpg",
+          "reason": "very large adult box may be crop/padded/species-identification style",
+          "severity": "medium"
+        },
+        {
+          "annotation_index": 1,
+          "area": 0.367859,
+          "class_name": "queen_camponotus_cinctellus",
+          "filename": "PA060441_JPG.rf.5c918b7af2231195abad53850f0f1057.jpg",
+          "reason": "very large adult box may be crop/padded/species-identification style",
+          "severity": "medium"
+        },
+        {
+          "annotation_index": 1,
+          "area": 0.37995999999999996,
+          "class_name": "queen_camponotus_cinctellus",
+          "filename": "PA060442_JPG.rf.b10fe84aecb18dbd048f8042182e86eb.jpg",
+          "reason": "very large adult box may be crop/padded/species-identification style",
+          "severity": "medium"
+        },
+        {
+          "annotation_index": 1,
+          "area": 0.50265575,
+          "class_name": "queen_camponotus_cinctellus",
+          "filename": "PA060443_JPG.rf.958a3d0606b15df545819401ce78c8af.jpg",
+          "reason": "very large adult box may be crop/padded/species-identification style",
+          "severity": "medium"
+        },
+        {
+          "annotation_index": 1,
+          "area": 0.49286175,
+          "class_name": "queen_camponotus_cinctellus",
+          "filename": "PA060444_JPG.rf.c8c35420edf8a04e29be9b384552a4f0.jpg",
+          "reason": "very large adult box may be crop/padded/species-identification style",
+          "severity": "medium"
+        },
+        {
+          "annotation_index": 1,
+          "area": 0.4584825,
+          "class_name": "queen_camponotus_cinctellus",
+          "filename": "PA060445_JPG.rf.5d66e6e67c218dcc53f238890e890c6d.jpg",
+          "reason": "very large adult box may be crop/padded/species-identification style",
+          "severity": "medium"
+        },
+        {
+          "annotation_index": 1,
+          "area": 0.46594624999999995,
+          "class_name": "queen_camponotus_cinctellus",
+          "filename": "PA060446_JPG.rf.b37d4f3b419a5d9dfe32da77e210211f.jpg",
+          "reason": "very large adult box may be crop/padded/species-identification style",
+          "severity": "medium"
+        },
+        {
+          "annotation_index": 1,
+          "area": 0.4797833333333333,
+          "class_name": "queen_camponotus_cinctellus",
+          "filename": "PA060447_JPG.rf.78629c0a3684e4bfb5589df229764e00.jpg",
+          "reason": "very large adult box may be crop/padded/species-identification style",
+          "severity": "medium"
+        },
+        {
+          "annotation_index": 1,
+          "area": 0.4736573333333333,
+          "class_name": "queen_camponotus_cinctellus",
+          "filename": "PA060448_JPG.rf.e3f6a4bf1147c42b5a78809b0c5e5810.jpg",
+          "reason": "very large adult box may be crop/padded/species-identification style",
+          "severity": "medium"
+        },
+        {
+          "annotation_index": 1,
+          "area": 0.4756996666666667,
+          "class_name": "queen_camponotus_cinctellus",
+          "filename": "PA060449_JPG.rf.f40e6b919aaa885606d3caa0fac06bb1.jpg",
+          "reason": "very large adult box may be crop/padded/species-identification style",
+          "severity": "medium"
+        },
+        {
+          "annotation_index": 1,
+          "area": 0.41705,
+          "class_name": "queen_camponotus_cinctellus",
+          "filename": "PA060450_JPG.rf.931ef4cb474616efefab125716c010d3.jpg",
+          "reason": "very large adult box may be crop/padded/species-identification style",
+          "severity": "medium"
+        },
+        {
+          "annotation_index": 1,
+          "area": 0.46375999999999995,
+          "class_name": "queen_camponotus_cinctellus",
+          "filename": "PA060451_JPG.rf.6e36ce108762ca12b1094ecb5fcc0f4c.jpg",
+          "reason": "very large adult box may be crop/padded/species-identification style",
+          "severity": "medium"
+        },
+        {
+          "annotation_index": 1,
+          "area": 0.37328558333333334,
+          "class_name": "queen_camponotus_cinctellus",
+          "filename": "PA060452_JPG.rf.e8381c0e99d6606bc672f4b28f49c0dc.jpg",
+          "reason": "very large adult box may be crop/padded/species-identification style",
+          "severity": "medium"
+        },
+        {
+          "annotation_index": 1,
+          "area": 0.3747916666666667,
+          "class_name": "queen_camponotus_cinctellus",
+          "filename": "PA060453_JPG.rf.b7bcff9b913044157a2bec07e3e51a10.jpg",
+          "reason": "very large adult box may be crop/padded/species-identification style",
+          "severity": "medium"
+        },
+        {
+          "annotation_index": 1,
+          "area": 0.387985,
+          "class_name": "queen_camponotus_cinctellus",
+          "filename": "PA060463_JPG.rf.b44b91bf6fb761bbe5322c6e93ecd9a7.jpg",
+          "reason": "very large adult box may be crop/padded/species-identification style",
+          "severity": "medium"
+        },
+        {
+          "annotation_index": 2,
+          "area": 0.53237,
+          "class_name": "queen_camponotus_cinctellus",
+          "filename": "PA060464_JPG.rf.949dcf0f7e1fa9aef33076e145f29033.jpg",
+          "reason": "very large adult box may be crop/padded/species-identification style",
+          "severity": "medium"
+        },
+        {
+          "annotation_index": 1,
+          "area": 0.5115630000000001,
+          "class_name": "queen_camponotus_cinctellus",
+          "filename": "PA060465_JPG.rf.43c814025676ca365f254361c6e3d5dd.jpg",
+          "reason": "very large adult box may be crop/padded/species-identification style",
+          "severity": "medium"
+        },
+        {
+          "annotation_index": 1,
+          "area": 0.5085726666666667,
+          "class_name": "queen_camponotus_cinctellus",
+          "filename": "PA060466_JPG.rf.8fafc5afa100fc944cf5384a598d735f.jpg",
+          "reason": "very large adult box may be crop/padded/species-identification style",
+          "severity": "medium"
+        },
+        {
+          "annotation_index": 1,
+          "area": 0.378456,
+          "class_name": "queen_camponotus_cinctellus",
+          "filename": "PA060467_JPG.rf.087e4866c09a17e64d7dd5b625179632.jpg",
+          "reason": "very large adult box may be crop/padded/species-identification style",
+          "severity": "medium"
+        },
+        {
+          "annotation_index": 2,
+          "area": 0.3581563333333333,
+          "class_name": "queen_camponotus_cinctellus",
+          "filename": "PA060468_JPG.rf.7e3fb507f4f028d47659089d6c54bd7c.jpg",
+          "reason": "very large adult box may be crop/padded/species-identification style",
+          "severity": "medium"
+        },
+        {
+          "annotation_index": 2,
+          "area": 0.37605750000000004,
+          "class_name": "queen_camponotus_cinctellus",
+          "filename": "PA060469_JPG.rf.31c0c493dd5dd30273784a72f18246f4.jpg",
+          "reason": "very large adult box may be crop/padded/species-identification style",
+          "severity": "medium"
+        },
+        {
+          "annotation_index": 2,
+          "area": 0.377052,
+          "class_name": "queen_camponotus_cinctellus",
+          "filename": "PA060470_JPG.rf.1dda7cbcbc2eb83744c1e29880dc2f3d.jpg",
+          "reason": "very large adult box may be crop/padded/species-identification style",
+          "severity": "medium"
+        },
+        {
+          "annotation_index": 2,
+          "area": 0.35335083333333334,
+          "class_name": "queen_camponotus_cinctellus",
+          "filename": "PA060471_JPG.rf.acda63af21f49842bf4c43c4089dd453.jpg",
+          "reason": "very large adult box may be crop/padded/species-identification style",
+          "severity": "medium"
+        },
+        {
+          "annotation_index": 2,
+          "area": 0.3630683333333333,
+          "class_name": "queen_camponotus_cinctellus",
+          "filename": "PA060472_JPG.rf.1ee46fde67355d7e54de6a9f8cff201e.jpg",
+          "reason": "very large adult box may be crop/padded/species-identification style",
+          "severity": "medium"
+        },
+        {
+          "annotation_index": 1,
+          "area": 0.47381566666666664,
+          "class_name": "queen_camponotus_cinctellus",
+          "filename": "PA060474_JPG.rf.5d1a5aeb2534adb63fc789e568b29643.jpg",
+          "reason": "very large adult box may be crop/padded/species-identification style",
+          "severity": "medium"
+        }
+      ],
+      "unknownTaxonomicOnlyAnnotations": 13
+    },
+    "classification": "CONVERTIBLE_WITH_REVIEW",
+    "rules": {
+      "ambiguousTaxonomicOnlyPolicy": "taxonomic-only class names require manual review before adult-ant inclusion.",
+      "broodPolicy": "brood boxes are metadata/negative context only and must not be remapped automatically to ant.",
+      "formicaiAdultAntMappingCandidate": "queen_* and worker_* classes can be considered adult ant candidates; brood remains NOT ant."
+    },
+    "visualFindings": [
+      "Many adult boxes localize the ant well but include more legs/antennae/padding than FormicAI tight-body boxes.",
+      "Large queen and single-ant closeups are useful for the ant2 scale gap, but several look like broad species-identification crops.",
+      "Crowded colony/nest frames usually use one box per visible individual, but manual review is needed before remapping.",
+      "Brood boxes are present and often co-occur with adults; brood must remain NOT-ant under FormicAI policy."
+    ]
+  },
+  "auditConclusionPreVisual": "REVIEW",
+  "bboxScale": {
+    "ant2TightBoxesAllPreparedAntsV1": {
+      "area": {
+        "max": 0.113535714285775,
+        "mean": 0.03925357849152734,
+        "min": 0.007466666666653763,
+        "p10": 0.016814220380960816,
+        "p25": 0.02203214285712,
+        "p50": 0.02842368357155649,
+        "p75": 0.040708214285676975,
+        "p90": 0.09519523809528771
+      },
+      "count": 295,
+      "height": {
+        "max": 0.285714285714,
+        "mean": 0.1705353995157332,
+        "min": 0.0457142857143,
+        "p10": 0.1105714285716,
+        "p25": 0.134285714286,
+        "p50": 0.16,
+        "p75": 0.205457142857,
+        "p90": 0.25514285714280005
+      },
+      "width": {
+        "max": 0.425,
+        "mean": 0.21357203389832338,
+        "min": 0.0683333333333,
+        "p10": 0.133333333333,
+        "p25": 0.1555333333335,
+        "p50": 0.183333333333,
+        "p75": 0.243633333333,
+        "p90": 0.37033333333340007
+      }
+    },
+    "ant2TightBoxesValOnly": {
+      "area": {
+        "max": 0.10714285714274999,
+        "mean": 0.05372283225694579,
+        "min": 0.014100000000029998,
+        "p10": 0.02075809523810962,
+        "p25": 0.027167857142975357,
+        "p50": 0.04268809523813643,
+        "p75": 0.09104999999986108,
+        "p90": 0.10287309523827755
+      },
+      "count": 48,
+      "height": {
+        "max": 0.285714285714,
+        "mean": 0.1949776785714583,
+        "min": 0.09,
+        "p10": 0.1181428571426,
+        "p25": 0.1383428571425,
+        "p50": 0.194607142857,
+        "p75": 0.2667857142855,
+        "p90": 0.277142857143
+      },
+      "width": {
+        "max": 0.39545,
+        "mean": 0.25507916666666663,
+        "min": 0.12425,
+        "p10": 0.160166666667,
+        "p25": 0.18909166666675,
+        "p50": 0.2358333333335,
+        "p75": 0.35041666666675,
+        "p90": 0.3693333333332
+      }
+    },
+    "antsnetAdult": {
+      "area": {
+        "max": 0.8524193302298457,
+        "mean": 0.03519221172094517,
+        "min": 4.166666666666667e-07,
+        "p10": 0.0012862378747795413,
+        "p25": 0.003015769675925926,
+        "p50": 0.008656811972474174,
+        "p75": 0.028411408564814812,
+        "p90": 0.0866894513473055
+      },
+      "count": 6322,
+      "height": {
+        "max": 1.0,
+        "mean": 0.14700773888633029,
+        "min": 0.00033068783068783067,
+        "p10": 0.03981481481481482,
+        "p25": 0.05906911375661376,
+        "p50": 0.09986772486772487,
+        "p75": 0.18253968253968253,
+        "p90": 0.32043650793650796
+      },
+      "width": {
+        "max": 0.999,
+        "mean": 0.1337006605113183,
+        "min": 0.000248015873015873,
+        "p10": 0.030753968253968252,
+        "p25": 0.0496031746031746,
+        "p50": 0.08903769841269842,
+        "p75": 0.16387648809523808,
+        "p90": 0.27978725554106915
+      }
+    },
+    "antsnetBrood": {
+      "area": {
+        "max": 0.14814910664056555,
+        "mean": 0.008023791659139964,
+        "min": 1.5905688622754494e-06,
+        "p10": 0.0023307915419161678,
+        "p25": 0.0030526992889221556,
+        "p50": 0.005704010728542914,
+        "p75": 0.009270625,
+        "p90": 0.013761133982035928
+      },
+      "count": 416,
+      "height": {
+        "max": 0.45917387127761766,
+        "mean": 0.10145624185492333,
+        "min": 0.00037425149700598805,
+        "p10": 0.05078243512974052,
+        "p25": 0.07035928143712575,
+        "p50": 0.08495508982035928,
+        "p75": 0.125,
+        "p90": 0.17421407185628743
+      },
+      "width": {
+        "max": 0.32264271969211034,
+        "mean": 0.0693523077058472,
+        "min": 0.00425,
+        "p10": 0.03625,
+        "p25": 0.04625,
+        "p50": 0.064625,
+        "p75": 0.07956250000000001,
+        "p90": 0.111375
+      }
+    },
+    "antsnetUnknownOrAmbiguous": {
+      "area": {
+        "max": 0.39828923547095857,
+        "mean": 0.2345436749584324,
+        "min": 0.11417968869142629,
+        "p10": 0.1756568652670992,
+        "p25": 0.19029693375917503,
+        "p50": 0.22290845261632244,
+        "p75": 0.24550740650685585,
+        "p90": 0.3370950566093456
+      },
+      "count": 13,
+      "height": {
+        "max": 0.6062992125984252,
+        "mean": 0.4568826374140364,
+        "min": 0.35072711719418304,
+        "p10": 0.36635852718526085,
+        "p25": 0.4018340975406419,
+        "p50": 0.4436689930209372,
+        "p75": 0.47126436781609193,
+        "p90": 0.5892120571126388
+      },
+      "width": {
+        "max": 0.731306990881459,
+        "mean": 0.5111382556753585,
+        "min": 0.2841463414634146,
+        "p10": 0.3798756910811487,
+        "p25": 0.4602577873254565,
+        "p50": 0.5077109162382825,
+        "p75": 0.5889754343918514,
+        "p90": 0.6018296169239565
+      }
+    },
+    "formicaiV2Train": {
+      "area": {
+        "max": 0.0114969128734568,
+        "mean": 0.0023658246012299776,
+        "min": 0.0002737693411632,
+        "p10": 0.0010264757125,
+        "p25": 0.0014084202734375001,
+        "p50": 0.00208821614453125,
+        "p75": 0.0029839407812499996,
+        "p90": 0.004041594286226851
+      },
+      "count": 3364,
+      "height": {
+        "max": 0.15,
+        "mean": 0.06269342738109393,
+        "min": 0.01193056,
+        "p10": 0.03611111,
+        "p25": 0.04583333,
+        "p50": 0.06111111,
+        "p75": 0.07685185,
+        "p90": 0.09305556
+      },
+      "width": {
+        "max": 0.08802083,
+        "mean": 0.037302032306777644,
+        "min": 0.00859375,
+        "p10": 0.02109375,
+        "p25": 0.02678646,
+        "p50": 0.0359375,
+        "p75": 0.04609375,
+        "p90": 0.05572917
+      }
+    },
+    "interpretation": "AntsNet adult boxes span small through large scales; compare p50/p75/p90 directly before treating as tight-body compatible.",
+    "scaleBinsRelativeToFormicAI": {
+      "large_ge_ant2_median": 1580,
+      "medium_gt_v2_p75_lt_ant2_median": 3175,
+      "small_le_v2_train_p75": 1567
+    },
+    "scaleImageBinsRelativeToFormicAI": {
+      "images_only_small_adult_boxes": 12,
+      "images_with_any_large_ge_ant2_median": 710,
+      "images_with_any_medium_gap_box": 261
+    }
+  },
+  "broodHardNegativeAudit": {
+    "broodAnnotations": 416,
+    "broodAnyImages": 55,
+    "broodClasses": [
+      "Larva",
+      "cocoon_camponotus_nicobarensis",
+      "larva_camponotus_nicobarensis",
+      "larva_myrmica_rubra",
+      "larva_tetramorium_immigrans",
+      "pupa_myrmica_rubra"
+    ],
+    "broodOnlyImages": 1,
+    "broodPlusAdultImages": 54,
+    "recommendation": "Do not convert brood labels automatically. Use brood-containing images only after manual FormicAI adult-ant labeling/negative-region review."
+  },
+  "candidateSubsetSummary": {
+    "categoryCounts": {
+      "brood_context_adult_plus_brood": 9,
+      "brood_context_brood_only": 1,
+      "large_scale_gap_candidate": 43,
+      "major_minor": 32,
+      "medium_scale_gap_candidate": 1,
+      "multi_ant_crowded": 30,
+      "queen": 25,
+      "small_scale": 5,
+      "worker": 49
+    },
+    "classCoverage": {
+      "Larva": 1,
+      "cocoon_camponotus_nicobarensis": 3,
+      "larva_camponotus_nicobarensis": 3,
+      "larva_myrmica_rubra": 5,
+      "larva_tetramorium_immigrans": 2,
+      "pupa_myrmica_rubra": 4,
+      "qorker_minor_camponotus_maritimus": 1,
+      "queen_camponotus_cinctellus": 4,
+      "queen_camponotus_maritimus": 1,
+      "queen_camponotus_nicobarensis": 10,
+      "queen_camponotus_quercicola": 4,
+      "queen_camponotus_vagus": 2,
+      "queen_camponotus_vicinus": 4,
+      "queen_myrmica_rubra": 4,
+      "worker_dolichoderinae": 1,
+      "worker_formica_sp": 2,
+      "worker_lasius_niger": 5,
+      "worker_major_messor_barbarus": 1,
+      "worker_major_pheidole_tysoni": 4,
+      "worker_minor_camponotus": 5,
+      "worker_minor_camponotus_cinctellus": 4,
+      "worker_minor_camponotus_nicobarensis": 11,
+      "worker_minor_camponotus_quercicola": 4,
+      "worker_minor_camponotus_vagus": 2,
+      "worker_minor_camponotus_vicinus": 4,
+      "worker_minor_pheidole_tysoni": 2,
+      "worker_novomessor_cockerelli": 1,
+      "worker_pogonomyrmex_occidentalis": 5,
+      "worker_pogonomyrmex_rugosus": 1,
+      "worker_tetramorium_immigrans": 2
+    },
+    "familyCount": 34,
+    "size": 54,
+    "status": "proposal_only_not_materialized"
+  },
+  "classTaxonomySummary": {
+    "adultAntClassCount": 61,
+    "adultAntClasses": [
+      "qorker_minor_camponotus_maritimus",
+      "queen",
+      "queen_aphaenogaster_rudis",
+      "queen_brachymyrmex_depilis",
+      "queen_camponotus",
+      "queen_camponotus_cinctellus",
+      "queen_camponotus_fragilis",
+      "queen_camponotus_herculeanus",
+      "queen_camponotus_maritimus",
+      "queen_camponotus_nicobarensis",
+      "queen_camponotus_quercicola",
+      "queen_camponotus_sp",
+      "queen_camponotus_vagus",
+      "queen_camponotus_vicinus",
+      "queen_crematogaster_biroi",
+      "queen_crematogaster_scutelarris",
+      "queen_formica_sp",
+      "queen_lasius_claviger",
+      "queen_lasius_flavus",
+      "queen_lasius_murphyi",
+      "queen_lasius_niger",
+      "queen_messor_barbarus",
+      "queen_myrmecina_americana",
+      "queen_myrmecocystus_mexicanus",
+      "queen_myrmica_rubra",
+      "queen_novomessor_cockerelli",
+      "queen_pheidole",
+      "queen_pheidole_tysoni",
+      "queen_pogonomyrmex_occidentalis",
+      "queen_pogonomyrmex_rugosus",
+      "queen_pseudomyrmex",
+      "queen_solenopsis_molesta",
+      "worker_aphaenogaster_picea",
+      "worker_brachymyrmex_depilis",
+      "worker_crematogaster_biroi",
+      "worker_dolichoderinae",
+      "worker_formica_sp",
+      "worker_lasius_flavus",
+      "worker_lasius_niger",
+      "worker_major_messor_barbarus",
+      "worker_major_pheidole",
+      "worker_major_pheidole_tysoni",
+      "worker_minor_camponotus",
+      "worker_minor_camponotus_cinctellus",
+      "worker_minor_camponotus_herculeanus",
+      "worker_minor_camponotus_nicobarensis",
+      "worker_minor_camponotus_quercicola",
+      "worker_minor_camponotus_vagus",
+      "worker_minor_camponotus_vicinus",
+      "worker_minor_myrmecocystus_mexicanus",
+      "worker_minor_pheidole",
+      "worker_minor_pheidole_tysoni",
+      "worker_myrmica_pinetorum",
+      "worker_novomessor_cockerelli",
+      "worker_pogonomyrmex_occidentalis",
+      "worker_pogonomyrmex_rugosus",
+      "worker_pogonomyrmex_subnitidus",
+      "worker_replete_myrmecocystus_mexicanus",
+      "worker_solenopsis_molesta",
+      "worker_stenamma_schmitti",
+      "worker_tetramorium_immigrans"
+    ],
+    "ambiguousClassCount": 3,
+    "ambiguousClasses": [
+      "proceratium_silaceum",
+      "stigmatomma_pallipes",
+      "temnothorax_longispinosus"
+    ],
+    "broodClassCount": 6,
+    "broodClasses": [
+      "Larva",
+      "cocoon_camponotus_nicobarensis",
+      "larva_camponotus_nicobarensis",
+      "larva_myrmica_rubra",
+      "larva_tetramorium_immigrans",
+      "pupa_myrmica_rubra"
+    ],
+    "suspiciousNames": [
+      {
+        "annotation_count": 1,
+        "category": "BROOD",
+        "flags": [
+          "case_variant"
+        ],
+        "id": 0,
+        "image_count": 1,
+        "name": "Larva"
+      },
+      {
+        "annotation_count": 5,
+        "category": "UNKNOWN_OR_AMBIGUOUS",
+        "flags": [
+          "taxonomic_role_ambiguous"
+        ],
+        "id": 5,
+        "image_count": 3,
+        "name": "proceratium_silaceum"
+      },
+      {
+        "annotation_count": 173,
+        "category": "ADULT_ANT",
+        "flags": [
+          "suspicious_typo_qorker"
+        ],
+        "id": 7,
+        "image_count": 32,
+        "name": "qorker_minor_camponotus_maritimus"
+      },
+      {
+        "annotation_count": 7,
+        "category": "UNKNOWN_OR_AMBIGUOUS",
+        "flags": [
+          "taxonomic_role_ambiguous"
+        ],
+        "id": 39,
+        "image_count": 6,
+        "name": "stigmatomma_pallipes"
+      },
+      {
+        "annotation_count": 1,
+        "category": "UNKNOWN_OR_AMBIGUOUS",
+        "flags": [
+          "taxonomic_role_ambiguous"
+        ],
+        "id": 40,
+        "image_count": 1,
+        "name": "temnothorax_longispinosus"
+      }
+    ]
+  },
+  "download": {
+    "content_length_bytes": 905223644,
+    "format": "yolov8",
+    "location": "datasets/external_sources/antsnet_raw/v14_yolov8",
+    "project": "antsnet",
+    "sha256": "7f735cb2c080e383d66c7ddd9876f90160e2646287bd468fa8e5bdf3e69578ce",
+    "version": 14,
+    "version_metadata": {
+      "augmentation": {},
+      "exports": [
+        "coco",
+        "voc",
+        "yolov5pytorch",
+        "yolov8"
+      ],
+      "id": "antsnet/antsnet/14",
+      "images": 997,
+      "preprocessing": {},
+      "splits": {
+        "train": 997
+      }
+    },
+    "workspace": "antsnet",
+    "zip_path": "datasets/external_sources/antsnet_raw/v14_yolov8/roboflow.zip",
+    "zip_size_bytes": 905223644
+  },
+  "duplicatesAndAugmentation": {
+    "dhashNearDuplicateComponentsCount": 57,
+    "dhashNearDuplicateComponentsSample": [
+      {
+        "count": 20,
+        "files": [
+          "PA060464_JPG.rf.949dcf0f7e1fa9aef33076e145f29033.jpg",
+          "PA060465_JPG.rf.43c814025676ca365f254361c6e3d5dd.jpg",
+          "PA060466_JPG.rf.8fafc5afa100fc944cf5384a598d735f.jpg",
+          "PA060467_JPG.rf.087e4866c09a17e64d7dd5b625179632.jpg",
+          "PA060468_JPG.rf.7e3fb507f4f028d47659089d6c54bd7c.jpg",
+          "PA060469_JPG.rf.31c0c493dd5dd30273784a72f18246f4.jpg",
+          "PA060470_JPG.rf.1dda7cbcbc2eb83744c1e29880dc2f3d.jpg",
+          "PA060471_JPG.rf.acda63af21f49842bf4c43c4089dd453.jpg",
+          "PA060472_JPG.rf.1ee46fde67355d7e54de6a9f8cff201e.jpg",
+          "PA060473_JPG.rf.7d7dd787774e82c9488eb9a0fb69692c.jpg",
+          "PA060474_JPG.rf.5d1a5aeb2534adb63fc789e568b29643.jpg",
+          "PA060475_JPG.rf.033c4a322d45e50b66d5e69213b74ef2.jpg",
+          "PA060476_JPG.rf.77fd306ae33aec30a6951b46ec6e7e75.jpg",
+          "PA060477_JPG.rf.b89ec448340105b6bbe7ded3e4b23a63.jpg",
+          "PA060478_JPG.rf.7c55aede671e893397944a962923ca10.jpg",
+          "PA060479_JPG.rf.adb77c6f17d20df2dcc6fb03a51ac1bc.jpg",
+          "PA060480_JPG.rf.51d6646d0151c31d0ecb1d35e4448841.jpg",
+          "PA060481_JPG.rf.be5c2631f41c30b68b126c0c466f8250.jpg",
+          "PA060482_JPG.rf.648585d9a4a0b24b8bcdb9cfb6dbfec6.jpg",
+          "PA060483_JPG.rf.e5dac9f8880e8a49f892de9b22a5b789.jpg"
+        ]
+      },
+      {
+        "count": 14,
+        "files": [
+          "P3231684_JPG.rf.c66284bcb9c7f9a3c3188f60a9577896.jpg",
+          "P3231685_JPG.rf.d19bc721dad51aaef004bdaabf18c63a.jpg",
+          "P3231686_JPG.rf.7ef59c6ac8326afa74ecfcf920dc9419.jpg",
+          "P3231687_JPG.rf.d4dfc6cefd79e549d9e7e5ee2dc6d6f1.jpg",
+          "P3231688_JPG.rf.307e5a7b49679dd36b3a6ddde14958b7.jpg",
+          "P3231689_JPG.rf.36654177325d432410087b569d6f1f15.jpg",
+          "P3231690_JPG.rf.4b43aca4a47b842b94ce54b9ba9d3ad1.jpg",
+          "P3231691_JPG.rf.c45bc182741478e3967b570e493f3707.jpg",
+          "P3231692_JPG.rf.5ca1e7c51e176f866d55b863c5751036.jpg",
+          "P3231693_JPG.rf.42150acae5d65899d4cc66797273ede5.jpg",
+          "P3231694_JPG.rf.1f8169093877cab3b611982caffdd464.jpg",
+          "P3231695_JPG.rf.cb51c6b991b60f865d5a4e8988a33ae7.jpg",
+          "P3231696_JPG.rf.2c510eca7b093ffbe8b7b70c217b5353.jpg",
+          "P3231697_JPG.rf.38d66809750b8088d6c89e4f776920bb.jpg"
+        ]
+      },
+      {
+        "count": 11,
+        "files": [
+          "P3171550_JPG.rf.d65c467d47f4e126e1c6fa3f3dc09331.jpg",
+          "P3171551_JPG.rf.5f165e149cbab6e99e2f4bcbb6c25a92.jpg",
+          "P3171552_JPG.rf.df8f9cb0ef41f77f683e5ff261215853.jpg",
+          "P3171553_JPG.rf.8a5d2049524d9fa619fde99e689eec02.jpg",
+          "P3171554_JPG.rf.b1aae379d5ddef999ec20ab9039b065f.jpg",
+          "P3171555_JPG.rf.875168a537bc5517644825663a2e153c.jpg",
+          "P3171556_JPG.rf.e6b677760945c71c864e197f4859ec22.jpg",
+          "P3171558_JPG.rf.78a73584b9a881fb843aa31f3cc7ee8d.jpg",
+          "P3171559_JPG.rf.9c8dfba86364a49f5cfef45216be84ed.jpg",
+          "P3171560_JPG.rf.c8ddcf39b3516061038eccda652a0c0d.jpg",
+          "P3171561_JPG.rf.2057bcc28621a3ec1223bf321c36018d.jpg"
+        ]
+      },
+      {
+        "count": 11,
+        "files": [
+          "P3231658_JPG.rf.cae992ba4dda3ef1d265458e1ca14d48.jpg",
+          "P3231659_JPG.rf.c9b450719bce0ac6f794da80e6d396da.jpg",
+          "P3231660_JPG.rf.65a8ed900305d9b8928c57995ee5e172.jpg",
+          "P3231661_JPG.rf.70389d39e8de12d42701d668f2591259.jpg",
+          "P3231662_JPG.rf.ff85544a8b3395b6e4fdd70027cbad6e.jpg",
+          "P3231663_JPG.rf.786a37d03b352ea8c5a17f761d840c2d.jpg",
+          "P3231664_JPG.rf.b5cc036747904a4fcd5fa2dd00f3783c.jpg",
+          "P3231665_JPG.rf.c99e28f561513d601dfb2c460442addd.jpg",
+          "P3231666_JPG.rf.4e9a7302b601d7a1df2ce01ced88d25b.jpg",
+          "P3231667_JPG.rf.5d5c5f181122b5df74727b830e061595.jpg",
+          "P3231668_JPG.rf.7a93ae204516676f6be2c4ec9960bf0e.jpg"
+        ]
+      },
+      {
+        "count": 6,
+        "files": [
+          "P3171544_JPG.rf.ebd6d5dfeec0441826ec65fd2c2fb46f.jpg",
+          "P3171545_JPG.rf.56594bcf23ad4c1f51e569897b7ea693.jpg",
+          "P3171546_JPG.rf.9a7ad3ff1f99305040878b3b3368cac3.jpg",
+          "P3171547_JPG.rf.52ba9f0571450b51e5e3f07a5f1523b8.jpg",
+          "P3171548_JPG.rf.0a2cf03d1c561f20e92f2127013e2988.jpg",
+          "P3171549_JPG.rf.8965324aa4177e72f6ebd4a5ca0f3879.jpg"
+        ]
+      },
+      {
+        "count": 5,
+        "files": [
+          "P1011370-1-_JPG.rf.5cd69388cbc381b658d6095b2ce87152.jpg",
+          "P1011371-1-_JPG.rf.3318adfb0e03e90c8e16f2094f13c53e.jpg",
+          "P1011372_JPG.rf.b147d42993c1437097ebebd2ca9830e8.jpg",
+          "P1011373_JPG.rf.ed960858fb27007d468202ed4587553d.jpg",
+          "P1011374_JPG.rf.9c3ffa61f0f9a1237f6fc2bbb61b0aef.jpg"
+        ]
+      },
+      {
+        "count": 5,
+        "files": [
+          "P1011402_JPG.rf.e0f8388463c1d4b1b26fa2f40ecfe2da.jpg",
+          "P1011403_JPG.rf.ac12b081faaf0daeb1901bdd8d1b841a.jpg",
+          "P1011404_JPG.rf.39d64f074d53f4180826c496e333f8e2.jpg",
+          "P1011405_JPG.rf.5e1194e48c812f2db3d6a9824653d727.jpg",
+          "P1011406_JPG.rf.6e4d31c4aa55f64fdf51e87a9fc99b5a.jpg"
+        ]
+      },
+      {
+        "count": 5,
+        "files": [
+          "PA060455_JPG.rf.10b8da4e86cb6a2e2ff41285ec61fa14.jpg",
+          "PA060456_JPG.rf.fc557822cfa8639d404bbc451a97c016.jpg",
+          "PA060457_JPG.rf.2ba417c8f3f5281c269b37b1f8a69a68.jpg",
+          "PA060458_JPG.rf.62e22b2c692c2f5ca82e1d8c9eb27bf9.jpg",
+          "PA060459_JPG.rf.3205f54ff22caa9eadf1c893cec5d644.jpg"
+        ]
+      },
+      {
+        "count": 4,
+        "files": [
+          "P3231680_JPG.rf.8aa650eae23a441aaab268ef4b57194c.jpg",
+          "P3231681_JPG.rf.6f05a4d84d92a43ab7fda00687327e80.jpg",
+          "P3231682_JPG.rf.9b4f80161547a9bcca03c6d2f280d68f.jpg",
+          "P3231683_JPG.rf.aa37ee06c69676dba583737e8e1e253a.jpg"
+        ]
+      },
+      {
+        "count": 4,
+        "files": [
+          "PXL_20201011_002021475_jpg.rf.a5908e02f493e91c9f09de98d5118368.jpg",
+          "PXL_20201011_002028767_jpg.rf.de3913ad553da94c4658e51c02b3feb7.jpg",
+          "PXL_20201011_002030697_jpg.rf.0a4bde6bb6c8a89f05bb186642798946.jpg",
+          "PXL_20201011_002044681_jpg.rf.9bf04aa6195ba1e7f0c380efbe63d7d2.jpg"
+        ]
+      },
+      {
+        "count": 3,
+        "files": [
+          "P1011361-1-_JPG.rf.27c3dc78c9ab3d98f64857c549146666.jpg",
+          "P1011362_JPG.rf.66ec20da2a3628464e233d3389092293.jpg",
+          "P1011363_JPG.rf.c80fa0c75bfebf91c5301cbdb49c9b94.jpg"
+        ]
+      },
+      {
+        "count": 3,
+        "files": [
+          "P1011397_JPG.rf.6e36562d71fb393625b658fe302d5753.jpg",
+          "P1011398_JPG.rf.31db31a62a7c0172022c9c76bdb74abe.jpg",
+          "P1011399_JPG.rf.a956f8d74faefa4c2d2e75915b18fbed.jpg"
+        ]
+      },
+      {
+        "count": 3,
+        "files": [
+          "PA050407_JPG.rf.8bccb2c1b3582b3af8dc8677decf8207.jpg",
+          "PA050408_JPG.rf.5926379d8f2ade13750705f781ea5012.jpg",
+          "PA050409_JPG.rf.645da5c7946df4af983a89d8686cf197.jpg"
+        ]
+      },
+      {
+        "count": 3,
+        "files": [
+          "PXL_20201002_234122374_jpg.rf.d6d35b6bf48b6ea3d60a5711b4586ac3.jpg",
+          "PXL_20201002_234125321_jpg.rf.3c0db6ccca62b6d1ce31da98f1632426.jpg",
+          "PXL_20201002_234126121_jpg.rf.7fe308c8d092cda912bd9af44ad10e95.jpg"
+        ]
+      },
+      {
+        "count": 3,
+        "files": [
+          "PXL_20201009_175629160_jpg.rf.cfe86385422fccca2970272aa269df1f.jpg",
+          "PXL_20201009_175645726_jpg.rf.1c87e455aec858f0ff8f515f62128002.jpg",
+          "PXL_20201009_175650210_jpg.rf.845828a11a1a54e8046669c5eaa59158.jpg"
+        ]
+      },
+      {
+        "count": 2,
+        "files": [
+          "IMG_20200625_120535_jpg.rf.c7c1a08e34b0d304b9540caaf6cccc75.jpg",
+          "IMG_20200625_120537_jpg.rf.7ec11cde9789e9c97bd3698b6b4a38e1.jpg"
+        ]
+      },
+      {
+        "count": 2,
+        "files": [
+          "IMG_20200710_160232_jpg.rf.8f0191ddfb7816d0f87993932705151a.jpg",
+          "IMG_20200710_160236_jpg.rf.500add7b87b73ae1e051a971820207e0.jpg"
+        ]
+      },
+      {
+        "count": 2,
+        "files": [
+          "IMG_20200710_160237_jpg.rf.cfac94157cb8ecc2ac2e9e51b739de17.jpg",
+          "IMG_20200710_160238_jpg.rf.857a82aa63c671676dfd71cbbbf6d0c6.jpg"
+        ]
+      },
+      {
+        "count": 2,
+        "files": [
+          "IMG_20200714_234326_jpg.rf.d02fff6be1011068253f39f15b9751b2.jpg",
+          "IMG_20200714_234329_jpg.rf.4bdfaa69549bbe323678f22b4cdc7822.jpg"
+        ]
+      },
+      {
+        "count": 2,
+        "files": [
+          "IMG_20200722_003228_jpg.rf.f37b5a6ebceddf874de0d8ac16513b8c.jpg",
+          "IMG_20200722_003230_jpg.rf.0a6a78b1e6f58aacef2f6a547e42c943.jpg"
+        ]
+      },
+      {
+        "count": 2,
+        "files": [
+          "IMG_20200722_224527_jpg.rf.3b8f95ce59da32ada3aea430f652748a.jpg",
+          "IMG_20200722_224532_jpg.rf.822e7ede42f06ef157d3ec45a02e0cd6.jpg"
+        ]
+      },
+      {
+        "count": 2,
+        "files": [
+          "IMG_20200723_094505_jpg.rf.7d008054ca6da0e7ff252c712d72c34a.jpg",
+          "IMG_20200723_094509_jpg.rf.535e4ee40c873f3459f01f042da114d4.jpg"
+        ]
+      },
+      {
+        "count": 2,
+        "files": [
+          "P1011375_JPG.rf.0a6a33233d131ecfee337f41b673d1ab.jpg",
+          "P1011378_JPG.rf.41b800500e72f7113f218a5bda15ce41.jpg"
+        ]
+      },
+      {
+        "count": 2,
+        "files": [
+          "P1011388_JPG.rf.8c911596e5a2f577e736d170ee989655.jpg",
+          "P1011391_JPG.rf.b594d3c6b5fc14f52a0c02401e90d56d.jpg"
+        ]
+      },
+      {
+        "count": 2,
+        "files": [
+          "P1011389_JPG.rf.ebb60954460df98a9f97d5fbf2535f08.jpg",
+          "P1011390_JPG.rf.17c73cdad296aab260248d980dda20af.jpg"
+        ]
+      },
+      {
+        "count": 2,
+        "files": [
+          "P1011393_JPG.rf.fc9f1abdb290585685e1c0aa457c3973.jpg",
+          "P1011396_JPG.rf.0e1d821466c6b172afefb015b80f03ed.jpg"
+        ]
+      },
+      {
+        "count": 2,
+        "files": [
+          "P1011394_JPG.rf.4e829ef6a7440b99109f64b481d77a38.jpg",
+          "P1011395_JPG.rf.45046a72dcae8d96d01c57feda674f31.jpg"
+        ]
+      },
+      {
+        "count": 2,
+        "files": [
+          "P1011400_JPG.rf.024f267ed7a528245ba939ca57a55ac8.jpg",
+          "P1011401_JPG.rf.fb93f127b3f0f1d344372505b4f9ec8b.jpg"
+        ]
+      },
+      {
+        "count": 2,
+        "files": [
+          "P1011407_JPG.rf.1b10240407f3ec7eff42993f93480876.jpg",
+          "P1011409_JPG.rf.58a897c39396d6b386239c9771061a38.jpg"
+        ]
+      },
+      {
+        "count": 2,
+        "files": [
+          "P1011414_JPG.rf.00b95fb9f75f14a895cbea6fc1a16a0c.jpg",
+          "P1011415_JPG.rf.e5ed2f0a11894aa03caf10b7cef86280.jpg"
+        ]
+      }
+    ],
+    "dhashNearDuplicatePairCount": 273,
+    "dhashNearDuplicatePairsSample": [
+      {
+        "a": "P3171552_JPG.rf.df8f9cb0ef41f77f683e5ff261215853.jpg",
+        "b": "P3171561_JPG.rf.2057bcc28621a3ec1223bf321c36018d.jpg",
+        "hamming": 0
+      },
+      {
+        "a": "P3231658_JPG.rf.cae992ba4dda3ef1d265458e1ca14d48.jpg",
+        "b": "P3231659_JPG.rf.c9b450719bce0ac6f794da80e6d396da.jpg",
+        "hamming": 0
+      },
+      {
+        "a": "P3231680_JPG.rf.8aa650eae23a441aaab268ef4b57194c.jpg",
+        "b": "P3231683_JPG.rf.aa37ee06c69676dba583737e8e1e253a.jpg",
+        "hamming": 0
+      },
+      {
+        "a": "P3231681_JPG.rf.6f05a4d84d92a43ab7fda00687327e80.jpg",
+        "b": "P3231682_JPG.rf.9b4f80161547a9bcca03c6d2f280d68f.jpg",
+        "hamming": 0
+      },
+      {
+        "a": "P3231689_JPG.rf.36654177325d432410087b569d6f1f15.jpg",
+        "b": "P3231690_JPG.rf.4b43aca4a47b842b94ce54b9ba9d3ad1.jpg",
+        "hamming": 0
+      },
+      {
+        "a": "P3231691_JPG.rf.c45bc182741478e3967b570e493f3707.jpg",
+        "b": "P3231692_JPG.rf.5ca1e7c51e176f866d55b863c5751036.jpg",
+        "hamming": 0
+      },
+      {
+        "a": "P3231694_JPG.rf.1f8169093877cab3b611982caffdd464.jpg",
+        "b": "P3231695_JPG.rf.cb51c6b991b60f865d5a4e8988a33ae7.jpg",
+        "hamming": 0
+      },
+      {
+        "a": "PXL_20201018_115509223_jpg.rf.2686140554adc29fa25642cebdb938a2.jpg",
+        "b": "PXL_20201018_115510773_jpg.rf.ce969d0d469be97cb0f6ee4c7d63a529.jpg",
+        "hamming": 0
+      },
+      {
+        "a": "P1011389_JPG.rf.ebb60954460df98a9f97d5fbf2535f08.jpg",
+        "b": "P1011390_JPG.rf.17c73cdad296aab260248d980dda20af.jpg",
+        "hamming": 1
+      },
+      {
+        "a": "P1011394_JPG.rf.4e829ef6a7440b99109f64b481d77a38.jpg",
+        "b": "P1011395_JPG.rf.45046a72dcae8d96d01c57feda674f31.jpg",
+        "hamming": 1
+      },
+      {
+        "a": "P1011405_JPG.rf.5e1194e48c812f2db3d6a9824653d727.jpg",
+        "b": "P1011406_JPG.rf.6e4d31c4aa55f64fdf51e87a9fc99b5a.jpg",
+        "hamming": 1
+      },
+      {
+        "a": "P1011423_JPG.rf.0a40d516392fd746fe91f8d544562ef5.jpg",
+        "b": "P1011425_JPG.rf.6b6ac30f9c64fdcb03b6846f19bb2e09.jpg",
+        "hamming": 1
+      },
+      {
+        "a": "P3171553_JPG.rf.8a5d2049524d9fa619fde99e689eec02.jpg",
+        "b": "P3171554_JPG.rf.b1aae379d5ddef999ec20ab9039b065f.jpg",
+        "hamming": 1
+      },
+      {
+        "a": "P3171554_JPG.rf.b1aae379d5ddef999ec20ab9039b065f.jpg",
+        "b": "P3171556_JPG.rf.e6b677760945c71c864e197f4859ec22.jpg",
+        "hamming": 1
+      },
+      {
+        "a": "P3171556_JPG.rf.e6b677760945c71c864e197f4859ec22.jpg",
+        "b": "P3171559_JPG.rf.9c8dfba86364a49f5cfef45216be84ed.jpg",
+        "hamming": 1
+      },
+      {
+        "a": "P3231658_JPG.rf.cae992ba4dda3ef1d265458e1ca14d48.jpg",
+        "b": "P3231667_JPG.rf.5d5c5f181122b5df74727b830e061595.jpg",
+        "hamming": 1
+      },
+      {
+        "a": "P3231659_JPG.rf.c9b450719bce0ac6f794da80e6d396da.jpg",
+        "b": "P3231667_JPG.rf.5d5c5f181122b5df74727b830e061595.jpg",
+        "hamming": 1
+      },
+      {
+        "a": "P3231662_JPG.rf.ff85544a8b3395b6e4fdd70027cbad6e.jpg",
+        "b": "P3231667_JPG.rf.5d5c5f181122b5df74727b830e061595.jpg",
+        "hamming": 1
+      },
+      {
+        "a": "P3231663_JPG.rf.786a37d03b352ea8c5a17f761d840c2d.jpg",
+        "b": "P3231664_JPG.rf.b5cc036747904a4fcd5fa2dd00f3783c.jpg",
+        "hamming": 1
+      },
+      {
+        "a": "P3231666_JPG.rf.4e9a7302b601d7a1df2ce01ced88d25b.jpg",
+        "b": "P3231667_JPG.rf.5d5c5f181122b5df74727b830e061595.jpg",
+        "hamming": 1
+      },
+      {
+        "a": "P3231680_JPG.rf.8aa650eae23a441aaab268ef4b57194c.jpg",
+        "b": "P3231681_JPG.rf.6f05a4d84d92a43ab7fda00687327e80.jpg",
+        "hamming": 1
+      },
+      {
+        "a": "P3231680_JPG.rf.8aa650eae23a441aaab268ef4b57194c.jpg",
+        "b": "P3231682_JPG.rf.9b4f80161547a9bcca03c6d2f280d68f.jpg",
+        "hamming": 1
+      },
+      {
+        "a": "P3231681_JPG.rf.6f05a4d84d92a43ab7fda00687327e80.jpg",
+        "b": "P3231683_JPG.rf.aa37ee06c69676dba583737e8e1e253a.jpg",
+        "hamming": 1
+      },
+      {
+        "a": "P3231682_JPG.rf.9b4f80161547a9bcca03c6d2f280d68f.jpg",
+        "b": "P3231683_JPG.rf.aa37ee06c69676dba583737e8e1e253a.jpg",
+        "hamming": 1
+      },
+      {
+        "a": "P3231687_JPG.rf.d4dfc6cefd79e549d9e7e5ee2dc6d6f1.jpg",
+        "b": "P3231688_JPG.rf.307e5a7b49679dd36b3a6ddde14958b7.jpg",
+        "hamming": 1
+      },
+      {
+        "a": "P3231687_JPG.rf.d4dfc6cefd79e549d9e7e5ee2dc6d6f1.jpg",
+        "b": "P3231689_JPG.rf.36654177325d432410087b569d6f1f15.jpg",
+        "hamming": 1
+      },
+      {
+        "a": "P3231687_JPG.rf.d4dfc6cefd79e549d9e7e5ee2dc6d6f1.jpg",
+        "b": "P3231690_JPG.rf.4b43aca4a47b842b94ce54b9ba9d3ad1.jpg",
+        "hamming": 1
+      },
+      {
+        "a": "P3231691_JPG.rf.c45bc182741478e3967b570e493f3707.jpg",
+        "b": "P3231693_JPG.rf.42150acae5d65899d4cc66797273ede5.jpg",
+        "hamming": 1
+      },
+      {
+        "a": "P3231692_JPG.rf.5ca1e7c51e176f866d55b863c5751036.jpg",
+        "b": "P3231693_JPG.rf.42150acae5d65899d4cc66797273ede5.jpg",
+        "hamming": 1
+      },
+      {
+        "a": "P3231694_JPG.rf.1f8169093877cab3b611982caffdd464.jpg",
+        "b": "P3231696_JPG.rf.2c510eca7b093ffbe8b7b70c217b5353.jpg",
+        "hamming": 1
+      },
+      {
+        "a": "P3231695_JPG.rf.cb51c6b991b60f865d5a4e8988a33ae7.jpg",
+        "b": "P3231696_JPG.rf.2c510eca7b093ffbe8b7b70c217b5353.jpg",
+        "hamming": 1
+      },
+      {
+        "a": "PA060466_JPG.rf.8fafc5afa100fc944cf5384a598d735f.jpg",
+        "b": "PA060467_JPG.rf.087e4866c09a17e64d7dd5b625179632.jpg",
+        "hamming": 1
+      },
+      {
+        "a": "PA060475_JPG.rf.033c4a322d45e50b66d5e69213b74ef2.jpg",
+        "b": "PA060476_JPG.rf.77fd306ae33aec30a6951b46ec6e7e75.jpg",
+        "hamming": 1
+      },
+      {
+        "a": "PXL_20201002_234125321_jpg.rf.3c0db6ccca62b6d1ce31da98f1632426.jpg",
+        "b": "PXL_20201002_234126121_jpg.rf.7fe308c8d092cda912bd9af44ad10e95.jpg",
+        "hamming": 1
+      },
+      {
+        "a": "PXL_20210331_051648282_jpg.rf.e1ed5b857083cab8bd454bfb6b55d8e4.jpg",
+        "b": "PXL_20210331_051650221_jpg.rf.7cc20afdd55469e06be690dde1a227d8.jpg",
+        "hamming": 1
+      },
+      {
+        "a": "IMG_20200710_160237_jpg.rf.cfac94157cb8ecc2ac2e9e51b739de17.jpg",
+        "b": "IMG_20200710_160238_jpg.rf.857a82aa63c671676dfd71cbbbf6d0c6.jpg",
+        "hamming": 2
+      },
+      {
+        "a": "IMG_20200723_094505_jpg.rf.7d008054ca6da0e7ff252c712d72c34a.jpg",
+        "b": "IMG_20200723_094509_jpg.rf.535e4ee40c873f3459f01f042da114d4.jpg",
+        "hamming": 2
+      },
+      {
+        "a": "P1011361-1-_JPG.rf.27c3dc78c9ab3d98f64857c549146666.jpg",
+        "b": "P1011363_JPG.rf.c80fa0c75bfebf91c5301cbdb49c9b94.jpg",
+        "hamming": 2
+      },
+      {
+        "a": "P1011372_JPG.rf.b147d42993c1437097ebebd2ca9830e8.jpg",
+        "b": "P1011374_JPG.rf.9c3ffa61f0f9a1237f6fc2bbb61b0aef.jpg",
+        "hamming": 2
+      },
+      {
+        "a": "P1011398_JPG.rf.31db31a62a7c0172022c9c76bdb74abe.jpg",
+        "b": "P1011399_JPG.rf.a956f8d74faefa4c2d2e75915b18fbed.jpg",
+        "hamming": 2
+      },
+      {
+        "a": "P3171551_JPG.rf.5f165e149cbab6e99e2f4bcbb6c25a92.jpg",
+        "b": "P3171552_JPG.rf.df8f9cb0ef41f77f683e5ff261215853.jpg",
+        "hamming": 2
+      },
+      {
+        "a": "P3171551_JPG.rf.5f165e149cbab6e99e2f4bcbb6c25a92.jpg",
+        "b": "P3171561_JPG.rf.2057bcc28621a3ec1223bf321c36018d.jpg",
+        "hamming": 2
+      },
+      {
+        "a": "P3171552_JPG.rf.df8f9cb0ef41f77f683e5ff261215853.jpg",
+        "b": "P3171560_JPG.rf.c8ddcf39b3516061038eccda652a0c0d.jpg",
+        "hamming": 2
+      },
+      {
+        "a": "P3171553_JPG.rf.8a5d2049524d9fa619fde99e689eec02.jpg",
+        "b": "P3171555_JPG.rf.875168a537bc5517644825663a2e153c.jpg",
+        "hamming": 2
+      },
+      {
+        "a": "P3171553_JPG.rf.8a5d2049524d9fa619fde99e689eec02.jpg",
+        "b": "P3171556_JPG.rf.e6b677760945c71c864e197f4859ec22.jpg",
+        "hamming": 2
+      },
+      {
+        "a": "P3171554_JPG.rf.b1aae379d5ddef999ec20ab9039b065f.jpg",
+        "b": "P3171559_JPG.rf.9c8dfba86364a49f5cfef45216be84ed.jpg",
+        "hamming": 2
+      },
+      {
+        "a": "P3171560_JPG.rf.c8ddcf39b3516061038eccda652a0c0d.jpg",
+        "b": "P3171561_JPG.rf.2057bcc28621a3ec1223bf321c36018d.jpg",
+        "hamming": 2
+      },
+      {
+        "a": "P3231656_JPG.rf.873fa7635844d39e92d2a468f581617c.jpg",
+        "b": "P3231657_JPG.rf.39aeb7cc191763ba646d2227992fc405.jpg",
+        "hamming": 2
+      },
+      {
+        "a": "P3231658_JPG.rf.cae992ba4dda3ef1d265458e1ca14d48.jpg",
+        "b": "P3231662_JPG.rf.ff85544a8b3395b6e4fdd70027cbad6e.jpg",
+        "hamming": 2
+      },
+      {
+        "a": "P3231658_JPG.rf.cae992ba4dda3ef1d265458e1ca14d48.jpg",
+        "b": "P3231666_JPG.rf.4e9a7302b601d7a1df2ce01ced88d25b.jpg",
+        "hamming": 2
+      },
+      {
+        "a": "P3231659_JPG.rf.c9b450719bce0ac6f794da80e6d396da.jpg",
+        "b": "P3231662_JPG.rf.ff85544a8b3395b6e4fdd70027cbad6e.jpg",
+        "hamming": 2
+      },
+      {
+        "a": "P3231659_JPG.rf.c9b450719bce0ac6f794da80e6d396da.jpg",
+        "b": "P3231666_JPG.rf.4e9a7302b601d7a1df2ce01ced88d25b.jpg",
+        "hamming": 2
+      },
+      {
+        "a": "P3231662_JPG.rf.ff85544a8b3395b6e4fdd70027cbad6e.jpg",
+        "b": "P3231663_JPG.rf.786a37d03b352ea8c5a17f761d840c2d.jpg",
+        "hamming": 2
+      },
+      {
+        "a": "P3231662_JPG.rf.ff85544a8b3395b6e4fdd70027cbad6e.jpg",
+        "b": "P3231666_JPG.rf.4e9a7302b601d7a1df2ce01ced88d25b.jpg",
+        "hamming": 2
+      },
+      {
+        "a": "P3231664_JPG.rf.b5cc036747904a4fcd5fa2dd00f3783c.jpg",
+        "b": "P3231665_JPG.rf.c99e28f561513d601dfb2c460442addd.jpg",
+        "hamming": 2
+      },
+      {
+        "a": "P3231685_JPG.rf.d19bc721dad51aaef004bdaabf18c63a.jpg",
+        "b": "P3231686_JPG.rf.7ef59c6ac8326afa74ecfcf920dc9419.jpg",
+        "hamming": 2
+      },
+      {
+        "a": "P3231688_JPG.rf.307e5a7b49679dd36b3a6ddde14958b7.jpg",
+        "b": "P3231689_JPG.rf.36654177325d432410087b569d6f1f15.jpg",
+        "hamming": 2
+      },
+      {
+        "a": "P3231688_JPG.rf.307e5a7b49679dd36b3a6ddde14958b7.jpg",
+        "b": "P3231690_JPG.rf.4b43aca4a47b842b94ce54b9ba9d3ad1.jpg",
+        "hamming": 2
+      },
+      {
+        "a": "P3231689_JPG.rf.36654177325d432410087b569d6f1f15.jpg",
+        "b": "P3231693_JPG.rf.42150acae5d65899d4cc66797273ede5.jpg",
+        "hamming": 2
+      },
+      {
+        "a": "P3231689_JPG.rf.36654177325d432410087b569d6f1f15.jpg",
+        "b": "P3231694_JPG.rf.1f8169093877cab3b611982caffdd464.jpg",
+        "hamming": 2
+      },
+      {
+        "a": "P3231689_JPG.rf.36654177325d432410087b569d6f1f15.jpg",
+        "b": "P3231695_JPG.rf.cb51c6b991b60f865d5a4e8988a33ae7.jpg",
+        "hamming": 2
+      },
+      {
+        "a": "P3231690_JPG.rf.4b43aca4a47b842b94ce54b9ba9d3ad1.jpg",
+        "b": "P3231693_JPG.rf.42150acae5d65899d4cc66797273ede5.jpg",
+        "hamming": 2
+      },
+      {
+        "a": "P3231690_JPG.rf.4b43aca4a47b842b94ce54b9ba9d3ad1.jpg",
+        "b": "P3231694_JPG.rf.1f8169093877cab3b611982caffdd464.jpg",
+        "hamming": 2
+      },
+      {
+        "a": "P3231690_JPG.rf.4b43aca4a47b842b94ce54b9ba9d3ad1.jpg",
+        "b": "P3231695_JPG.rf.cb51c6b991b60f865d5a4e8988a33ae7.jpg",
+        "hamming": 2
+      },
+      {
+        "a": "P3231693_JPG.rf.42150acae5d65899d4cc66797273ede5.jpg",
+        "b": "P3231694_JPG.rf.1f8169093877cab3b611982caffdd464.jpg",
+        "hamming": 2
+      },
+      {
+        "a": "P3231693_JPG.rf.42150acae5d65899d4cc66797273ede5.jpg",
+        "b": "P3231695_JPG.rf.cb51c6b991b60f865d5a4e8988a33ae7.jpg",
+        "hamming": 2
+      },
+      {
+        "a": "PA060460_JPG.rf.7a0d68bbf52386caef6acb9168d9d3d9.jpg",
+        "b": "PA060461_JPG.rf.35085fab4422389fb6ed487ae9bf58f7.jpg",
+        "hamming": 2
+      },
+      {
+        "a": "PA060465_JPG.rf.43c814025676ca365f254361c6e3d5dd.jpg",
+        "b": "PA060467_JPG.rf.087e4866c09a17e64d7dd5b625179632.jpg",
+        "hamming": 2
+      },
+      {
+        "a": "PA060467_JPG.rf.087e4866c09a17e64d7dd5b625179632.jpg",
+        "b": "PA060468_JPG.rf.7e3fb507f4f028d47659089d6c54bd7c.jpg",
+        "hamming": 2
+      },
+      {
+        "a": "PA060470_JPG.rf.1dda7cbcbc2eb83744c1e29880dc2f3d.jpg",
+        "b": "PA060471_JPG.rf.acda63af21f49842bf4c43c4089dd453.jpg",
+        "hamming": 2
+      },
+      {
+        "a": "PA060480_JPG.rf.51d6646d0151c31d0ecb1d35e4448841.jpg",
+        "b": "PA060481_JPG.rf.be5c2631f41c30b68b126c0c466f8250.jpg",
+        "hamming": 2
+      },
+      {
+        "a": "PA060481_JPG.rf.be5c2631f41c30b68b126c0c466f8250.jpg",
+        "b": "PA060482_JPG.rf.648585d9a4a0b24b8bcdb9cfb6dbfec6.jpg",
+        "hamming": 2
+      },
+      {
+        "a": "PXL_20201002_234122374_jpg.rf.d6d35b6bf48b6ea3d60a5711b4586ac3.jpg",
+        "b": "PXL_20201002_234125321_jpg.rf.3c0db6ccca62b6d1ce31da98f1632426.jpg",
+        "hamming": 2
+      },
+      {
+        "a": "PXL_20201009_175936143_jpg.rf.6f02f8b0c6716b6a65ccfb62998dc5e4.jpg",
+        "b": "PXL_20201009_175937669_jpg.rf.42a85ef9edfc5c0790747dbfcb2ce7f8.jpg",
+        "hamming": 2
+      },
+      {
+        "a": "PXL_20201030_030411306_jpg.rf.d8d220fd250da4b77740f5dfcd370460.jpg",
+        "b": "PXL_20201030_030413588_jpg.rf.4c53ba7c8c8a1d7b8c0e158c3d69b96d.jpg",
+        "hamming": 2
+      },
+      {
+        "a": "PXL_20201030_074534102_jpg.rf.f417c6158760438d8577aecd40112bd2.jpg",
+        "b": "PXL_20201030_074535097_jpg.rf.607244fa62f61cb35ca95144328562c7.jpg",
+        "hamming": 2
+      },
+      {
+        "a": "PXL_20201231_072850970_jpg.rf.d5d6a5db41e5f2368e662d997942b500.jpg",
+        "b": "PXL_20201231_072852683_jpg.rf.973330f5dfa6f564de2e41788d127d63.jpg",
+        "hamming": 2
+      },
+      {
+        "a": "P1011361-1-_JPG.rf.27c3dc78c9ab3d98f64857c549146666.jpg",
+        "b": "P1011362_JPG.rf.66ec20da2a3628464e233d3389092293.jpg",
+        "hamming": 3
+      },
+      {
+        "a": "P1011371-1-_JPG.rf.3318adfb0e03e90c8e16f2094f13c53e.jpg",
+        "b": "P1011372_JPG.rf.b147d42993c1437097ebebd2ca9830e8.jpg",
+        "hamming": 3
+      },
+      {
+        "a": "P1011371-1-_JPG.rf.3318adfb0e03e90c8e16f2094f13c53e.jpg",
+        "b": "P1011373_JPG.rf.ed960858fb27007d468202ed4587553d.jpg",
+        "hamming": 3
+      },
+      {
+        "a": "P1011371-1-_JPG.rf.3318adfb0e03e90c8e16f2094f13c53e.jpg",
+        "b": "P1011374_JPG.rf.9c3ffa61f0f9a1237f6fc2bbb61b0aef.jpg",
+        "hamming": 3
+      },
+      {
+        "a": "P1011375_JPG.rf.0a6a33233d131ecfee337f41b673d1ab.jpg",
+        "b": "P1011378_JPG.rf.41b800500e72f7113f218a5bda15ce41.jpg",
+        "hamming": 3
+      },
+      {
+        "a": "P1011388_JPG.rf.8c911596e5a2f577e736d170ee989655.jpg",
+        "b": "P1011391_JPG.rf.b594d3c6b5fc14f52a0c02401e90d56d.jpg",
+        "hamming": 3
+      },
+      {
+        "a": "P1011393_JPG.rf.fc9f1abdb290585685e1c0aa457c3973.jpg",
+        "b": "P1011396_JPG.rf.0e1d821466c6b172afefb015b80f03ed.jpg",
+        "hamming": 3
+      },
+      {
+        "a": "P1011400_JPG.rf.024f267ed7a528245ba939ca57a55ac8.jpg",
+        "b": "P1011401_JPG.rf.fb93f127b3f0f1d344372505b4f9ec8b.jpg",
+        "hamming": 3
+      },
+      {
+        "a": "P1011414_JPG.rf.00b95fb9f75f14a895cbea6fc1a16a0c.jpg",
+        "b": "P1011415_JPG.rf.e5ed2f0a11894aa03caf10b7cef86280.jpg",
+        "hamming": 3
+      },
+      {
+        "a": "P3171547_JPG.rf.52ba9f0571450b51e5e3f07a5f1523b8.jpg",
+        "b": "P3171549_JPG.rf.8965324aa4177e72f6ebd4a5ca0f3879.jpg",
+        "hamming": 3
+      },
+      {
+        "a": "P3171548_JPG.rf.0a2cf03d1c561f20e92f2127013e2988.jpg",
+        "b": "P3171549_JPG.rf.8965324aa4177e72f6ebd4a5ca0f3879.jpg",
+        "hamming": 3
+      },
+      {
+        "a": "P3171550_JPG.rf.d65c467d47f4e126e1c6fa3f3dc09331.jpg",
+        "b": "P3171551_JPG.rf.5f165e149cbab6e99e2f4bcbb6c25a92.jpg",
+        "hamming": 3
+      },
+      {
+        "a": "P3171552_JPG.rf.df8f9cb0ef41f77f683e5ff261215853.jpg",
+        "b": "P3171554_JPG.rf.b1aae379d5ddef999ec20ab9039b065f.jpg",
+        "hamming": 3
+      },
+      {
+        "a": "P3171553_JPG.rf.8a5d2049524d9fa619fde99e689eec02.jpg",
+        "b": "P3171559_JPG.rf.9c8dfba86364a49f5cfef45216be84ed.jpg",
+        "hamming": 3
+      },
+      {
+        "a": "P3171554_JPG.rf.b1aae379d5ddef999ec20ab9039b065f.jpg",
+        "b": "P3171555_JPG.rf.875168a537bc5517644825663a2e153c.jpg",
+        "hamming": 3
+      },
+      {
+        "a": "P3171554_JPG.rf.b1aae379d5ddef999ec20ab9039b065f.jpg",
+        "b": "P3171560_JPG.rf.c8ddcf39b3516061038eccda652a0c0d.jpg",
+        "hamming": 3
+      },
+      {
+        "a": "P3171554_JPG.rf.b1aae379d5ddef999ec20ab9039b065f.jpg",
+        "b": "P3171561_JPG.rf.2057bcc28621a3ec1223bf321c36018d.jpg",
+        "hamming": 3
+      },
+      {
+        "a": "P3171559_JPG.rf.9c8dfba86364a49f5cfef45216be84ed.jpg",
+        "b": "P3171560_JPG.rf.c8ddcf39b3516061038eccda652a0c0d.jpg",
+        "hamming": 3
+      },
+      {
+        "a": "P3231658_JPG.rf.cae992ba4dda3ef1d265458e1ca14d48.jpg",
+        "b": "P3231664_JPG.rf.b5cc036747904a4fcd5fa2dd00f3783c.jpg",
+        "hamming": 3
+      },
+      {
+        "a": "P3231658_JPG.rf.cae992ba4dda3ef1d265458e1ca14d48.jpg",
+        "b": "P3231665_JPG.rf.c99e28f561513d601dfb2c460442addd.jpg",
+        "hamming": 3
+      },
+      {
+        "a": "P3231659_JPG.rf.c9b450719bce0ac6f794da80e6d396da.jpg",
+        "b": "P3231664_JPG.rf.b5cc036747904a4fcd5fa2dd00f3783c.jpg",
+        "hamming": 3
+      },
+      {
+        "a": "P3231659_JPG.rf.c9b450719bce0ac6f794da80e6d396da.jpg",
+        "b": "P3231665_JPG.rf.c99e28f561513d601dfb2c460442addd.jpg",
+        "hamming": 3
+      },
+      {
+        "a": "P3231660_JPG.rf.65a8ed900305d9b8928c57995ee5e172.jpg",
+        "b": "P3231661_JPG.rf.70389d39e8de12d42701d668f2591259.jpg",
+        "hamming": 3
+      }
+    ],
+    "dhashNearDuplicateThreshold": 5,
+    "exactDuplicateImageGroupCount": 0,
+    "exactDuplicateImageGroups": [],
+    "exactDuplicateLabelGroupCount": 1,
+    "exactDuplicateLabelGroups": [
+      {
+        "count": 3,
+        "files": [
+          "20201015_185904_jpg.rf.7f0781969d102d52361425e3a1c8f47f.txt",
+          "IMG_20200707_211150_jpg.rf.3b0a2ad707b923e76f99f0c3cf7ce2a9.txt",
+          "PXL_20200927_004437669_jpg.rf.7920441f9b3fc8c6798c063a09f156b8.txt"
+        ],
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    ],
+    "filenameFamilyGroupsCount": 10,
+    "finding": "Roboflow version metadata reports no augmentations. Exact hashes detect exact duplicates only; perceptual hash/family groups indicate repeated/near-duplicate photo series that should not be split blindly.",
+    "roboflowMetadataAugmentations": {},
+    "roboflowMetadataPreprocessing": {},
+    "topFilenameFamilyGroups": [
+      {
+        "count": 420,
+        "family_key": "pxl",
+        "sample_files": [
+          "PXL_20200925_071058256_jpg.rf.8b394925f1eba8338338013f95ccf41c.jpg",
+          "PXL_20200925_071100398_jpg.rf.7b40a18a80b7d488ee431c22c9a498d3.jpg",
+          "PXL_20200925_071103383_jpg.rf.9033b7106e149d5f5d0f93a2212dda45.jpg",
+          "PXL_20200925_071104268_jpg.rf.369a85a3bec663a4b466fa4c0bda5c60.jpg",
+          "PXL_20200927_004402594_jpg.rf.7dfdb739b6e8d1de95c44e43926de872.jpg",
+          "PXL_20200927_004405901_jpg.rf.4838f8e6edb1436bd3d771b96f95b629.jpg",
+          "PXL_20200927_004431075_jpg.rf.b5586c884344385f84173b018e828f31.jpg",
+          "PXL_20200927_004437669_jpg.rf.7920441f9b3fc8c6798c063a09f156b8.jpg",
+          "PXL_20200927_004446112_jpg.rf.63a5d4889ec3152a9441b7ffdbdf0b40.jpg",
+          "PXL_20200927_004448712_jpg.rf.8390ba53008143aa0e8064ff475d04fa.jpg",
+          "PXL_20200927_004547163_jpg.rf.71052fe6a18912a4223cb3e1393ce5b2.jpg",
+          "PXL_20200927_004549381_jpg.rf.95905e2d30c25c814bd04520ec146c67.jpg"
+        ]
+      },
+      {
+        "count": 245,
+        "family_key": "img",
+        "sample_files": [
+          "IMG_0435_jpg.rf.a9a303cf74668e09c093f49c6c0a9c78.jpg",
+          "IMG_0436_jpg.rf.e86753d4ab93e16e0be83c342d6eaa84.jpg",
+          "IMG_0574_JPG.rf.3de74325979f2bd637e070e7d65886ef.jpg",
+          "IMG_0713_jpg.rf.a21fe9942f87b4e1f642e873300a668c.jpg",
+          "IMG_0798_jpg.rf.5c5c908eac96b13c140d39843ae0e3cc.jpg",
+          "IMG_0802_jpg.rf.9b2849eac8ad9042c12a7ef683af9c46.jpg",
+          "IMG_0868_jpg.rf.7685c4049004bf862511d67ce43c4b42.jpg",
+          "IMG_0869_jpg.rf.ad7a7919bfd13e2c0a45b2f96fc0c18c.jpg",
+          "IMG_1410_jpg.rf.ff444bf935a7e5a240242934c3db2252.jpg",
+          "IMG_1672-2_JPG.rf.436634dcc7110df029aa4f6cfa559561.jpg",
+          "IMG_1698_JPG.rf.636202a691e62059720d94b5f63fc002.jpg",
+          "IMG_1699_JPG.rf.0f651d099bdc56ceed958401eba3e8f4.jpg"
+        ]
+      },
+      {
+        "count": 26,
+        "family_key": "pic",
+        "sample_files": [
+          "PIC_0140_JPG.rf.8aa0b70a2ccc2079731bdfc409479e6d.jpg",
+          "PIC_0141_JPG.rf.e6141457be1582e3719f161b54c3f5ad.jpg",
+          "PIC_0142_JPG.rf.b2311f6ca63aec81b466572524e18272.jpg",
+          "PIC_0143_JPG.rf.2db8a863a615fb8d926224fbc961e2b0.jpg",
+          "PIC_0144_JPG.rf.3bfe19fbc20d6e627cd874a1ad6b10ac.jpg",
+          "PIC_0145_JPG.rf.a9567c99231206791919a1e0ef373534.jpg",
+          "PIC_0146_JPG.rf.1d01dff061f6c91b797084c3e79c1779.jpg",
+          "PIC_0147_JPG.rf.df297f5404df1e90f8eb057f5268c84a.jpg",
+          "PIC_0148_JPG.rf.b0b3f7d2abcd54461f44055abb9d58c5.jpg",
+          "PIC_0149_JPG.rf.776082390815bebda5fcfcd14363b6b5.jpg",
+          "PIC_0150_JPG.rf.298ec29f9519c475279a5d85203b5aca.jpg",
+          "PIC_0151_JPG.rf.57a09670ef5c8dc4b4b476251d573529.jpg"
+        ]
+      },
+      {
+        "count": 10,
+        "family_key": "20201015",
+        "sample_files": [
+          "20201015_185818_jpg.rf.4e84c901a3b505c0925babdd05f037d9.jpg",
+          "20201015_185823_jpg.rf.bce4678c02d484117389f2633144662d.jpg",
+          "20201015_185828_jpg.rf.dc1bfb7eb6ce62f31bc07be4827f499b.jpg",
+          "20201015_185832_jpg.rf.310292f0864827d15dcc0fcb521ba5dc.jpg",
+          "20201015_185838_jpg.rf.cf650d2b933beb82d408e64b7ec2e8c8.jpg",
+          "20201015_185843_jpg.rf.eb66861bf18d835af93236617619e158.jpg",
+          "20201015_185850_jpg.rf.1f596138ea8263c82a22ecfb8640dc2b.jpg",
+          "20201015_185904_jpg.rf.7f0781969d102d52361425e3a1c8f47f.jpg",
+          "20201015_185915_jpg.rf.10c746b312a740c4afb88f4d483ce2b1.jpg",
+          "20201015_185920_jpg.rf.c333968f7fa9d052e32e67280c00f0a4.jpg"
+        ]
+      },
+      {
+        "count": 6,
+        "family_key": "pogo_rugo",
+        "sample_files": [
+          "Pogo-rugo_jpg.rf.cf8ef6849dfeb599dfa4ad19b6d250b0.jpg",
+          "pogo-rugo--2-_jpg.rf.c981734866ce9a7b445742d6f868da67.jpg",
+          "pogo-rugo--3-_jpg.rf.3e153ba789b9556882f163b350fa7158.jpg",
+          "pogo-rugo--4-_jpg.rf.84080d7c6dd045683668d9b2d7e7009f.jpg",
+          "pogo-rugo--5-_jpg.rf.4db37e1d19213dc5982563d0ecfeefac.jpg",
+          "pogo-rugo--6-_jpg.rf.2afb904adbb4d00e88233b46f9d50a3f.jpg"
+        ]
+      },
+      {
+        "count": 5,
+        "family_key": "ants",
+        "sample_files": [
+          "ants-1-3_JPG.rf.ee575a4f414efc376c03e9a44f517443.jpg",
+          "ants-4_jpg.rf.cd994df8482faf8fd8d47bae1b5774ca.jpg",
+          "ants-5_jpg.rf.11b9011aad4282159486da5e94038387.jpg",
+          "ants-6_jpg.rf.7ea2a73a1d181bb18ec009bc12f6fb45.jpg",
+          "ants-7_jpg.rf.8cca682789fbfe33e9641fee0dc810f9.jpg"
+        ]
+      },
+      {
+        "count": 5,
+        "family_key": "campo_vicinus",
+        "sample_files": [
+          "Campo-vicinus_jpg.rf.da6fae59064484bc440803fbb6e147cb.jpg",
+          "campo-vicinus--2-_jpg.rf.36e0029143156a33a65517961a907832.jpg",
+          "campo-vicinus--3-_jpg.rf.1e27959b926d6d524399820fa678df19.jpg",
+          "campo-vicinus--4-_jpg.rf.57a4074a103fa1815203ac5201d1a8b5.jpg",
+          "campo-vicinus--5-_jpg.rf.dbb71689c3fffe762ce35dbaf950c965.jpg"
+        ]
+      },
+      {
+        "count": 3,
+        "family_key": "pxl_20210404",
+        "sample_files": [
+          "PXL_20210404_015841214-2_jpg.rf.6b25b7b329b4dc2bb1d77d17774ee422.jpg",
+          "PXL_20210404_022729989-2_jpg.rf.137a9e16fc12d779db96ef53c9606579.jpg",
+          "PXL_20210404_022730755-2_jpg.rf.5fdd3713fc44452816870fe82c529c99.jpg"
+        ]
+      },
+      {
+        "count": 2,
+        "family_key": "p1011355",
+        "sample_files": [
+          "P1011355-1-_JPG.rf.30f42cd73d933291f30618869682740c.jpg",
+          "P1011355_JPG.rf.526e247594094cba11d64ad9f568f5f9.jpg"
+        ]
+      },
+      {
+        "count": 2,
+        "family_key": "pxl_20210404_015807139_exported",
+        "sample_files": [
+          "PXL_20210404_015807139_exported_0_jpg.rf.39ee1e1901d930be511f34c2e418ce84.jpg",
+          "PXL_20210404_015807139_exported_11617_jpg.rf.fbb6ff5b17c30541f0b5537597907143.jpg"
+        ]
+      }
+    ]
+  },
+  "imageRecordsSummaryPath": "artifacts/analysis/ants_v3_design/antsnet/antsnet_image_records_summary.json",
+  "plots": {
+    "bbox_area_comparison_boxplot": "artifacts/analysis/ants_v3_design/antsnet/plots/bbox_area_comparison_boxplot.png",
+    "bbox_area_distribution_log10": "artifacts/analysis/ants_v3_design/antsnet/plots/bbox_area_distribution_log10.png"
+  },
+  "proposedUseInV3": {
+    "doNotUseDirectlyFor": [
+      "automatic 70-class-to-ant remap",
+      "validation split without leakage grouping",
+      "hard negatives from brood boxes without manual policy review"
+    ],
+    "recommendation": "REVIEW_BEFORE_USE",
+    "role": "candidate public source for manual FormicAI tight-body relabeling and scale/domain diversity, not a direct label import",
+    "usefulSignals": [
+      "queen and large-scale ants",
+      "major/minor/replete worker caste variation",
+      "brood-adult context for negative-context policy review",
+      "artificial nest, tube, gravel, substrate, and colony-scene variation"
+    ]
+  },
+  "provenanceDomainAudit": {
+    "availableMetadata": "Public Roboflow export identifies provider AntsNet.org and MIT license; no per-image photographer/site/source URLs were present in the YOLOv8 export.",
+    "classTaxonomyEvidence": {
+      "classCount": 70,
+      "speciesOrGenusTokensObserved": [
+        "americana",
+        "aphaenogaster",
+        "barbarus",
+        "biroi",
+        "brachymyrmex",
+        "camponotus",
+        "cinctellus",
+        "claviger",
+        "cockerelli",
+        "crematogaster",
+        "depilis",
+        "dolichoderinae",
+        "flavus",
+        "formica",
+        "fragilis",
+        "herculeanus",
+        "immigrans",
+        "lasius",
+        "longispinosus",
+        "maritimus",
+        "messor",
+        "mexicanus",
+        "molesta",
+        "murphyi",
+        "myrmecina",
+        "myrmecocystus",
+        "myrmica",
+        "nicobarensis",
+        "niger",
+        "novomessor",
+        "occidentalis",
+        "pallipes",
+        "pheidole",
+        "picea",
+        "pinetorum",
+        "pogonomyrmex",
+        "proceratium",
+        "pseudomyrmex",
+        "qorker",
+        "quercicola",
+        "rubra",
+        "rudis",
+        "rugosus",
+        "schmitti",
+        "scutelarris",
+        "silaceum",
+        "solenopsis",
+        "stenamma",
+        "stigmatomma",
+        "subnitidus",
+        "temnothorax",
+        "tetramorium",
+        "tysoni",
+        "vagus",
+        "vicinus"
+      ]
+    },
+    "filenameEvidence": {
+      "filenameFamilyGroupsCount": 10,
+      "topFilenameFamilyGroups": [
+        {
+          "count": 420,
+          "family_key": "pxl",
+          "sample_files": [
+            "PXL_20200925_071058256_jpg.rf.8b394925f1eba8338338013f95ccf41c.jpg",
+            "PXL_20200925_071100398_jpg.rf.7b40a18a80b7d488ee431c22c9a498d3.jpg",
+            "PXL_20200925_071103383_jpg.rf.9033b7106e149d5f5d0f93a2212dda45.jpg",
+            "PXL_20200925_071104268_jpg.rf.369a85a3bec663a4b466fa4c0bda5c60.jpg",
+            "PXL_20200927_004402594_jpg.rf.7dfdb739b6e8d1de95c44e43926de872.jpg",
+            "PXL_20200927_004405901_jpg.rf.4838f8e6edb1436bd3d771b96f95b629.jpg",
+            "PXL_20200927_004431075_jpg.rf.b5586c884344385f84173b018e828f31.jpg",
+            "PXL_20200927_004437669_jpg.rf.7920441f9b3fc8c6798c063a09f156b8.jpg",
+            "PXL_20200927_004446112_jpg.rf.63a5d4889ec3152a9441b7ffdbdf0b40.jpg",
+            "PXL_20200927_004448712_jpg.rf.8390ba53008143aa0e8064ff475d04fa.jpg",
+            "PXL_20200927_004547163_jpg.rf.71052fe6a18912a4223cb3e1393ce5b2.jpg",
+            "PXL_20200927_004549381_jpg.rf.95905e2d30c25c814bd04520ec146c67.jpg"
+          ]
+        },
+        {
+          "count": 245,
+          "family_key": "img",
+          "sample_files": [
+            "IMG_0435_jpg.rf.a9a303cf74668e09c093f49c6c0a9c78.jpg",
+            "IMG_0436_jpg.rf.e86753d4ab93e16e0be83c342d6eaa84.jpg",
+            "IMG_0574_JPG.rf.3de74325979f2bd637e070e7d65886ef.jpg",
+            "IMG_0713_jpg.rf.a21fe9942f87b4e1f642e873300a668c.jpg",
+            "IMG_0798_jpg.rf.5c5c908eac96b13c140d39843ae0e3cc.jpg",
+            "IMG_0802_jpg.rf.9b2849eac8ad9042c12a7ef683af9c46.jpg",
+            "IMG_0868_jpg.rf.7685c4049004bf862511d67ce43c4b42.jpg",
+            "IMG_0869_jpg.rf.ad7a7919bfd13e2c0a45b2f96fc0c18c.jpg",
+            "IMG_1410_jpg.rf.ff444bf935a7e5a240242934c3db2252.jpg",
+            "IMG_1672-2_JPG.rf.436634dcc7110df029aa4f6cfa559561.jpg",
+            "IMG_1698_JPG.rf.636202a691e62059720d94b5f63fc002.jpg",
+            "IMG_1699_JPG.rf.0f651d099bdc56ceed958401eba3e8f4.jpg"
+          ]
+        },
+        {
+          "count": 26,
+          "family_key": "pic",
+          "sample_files": [
+            "PIC_0140_JPG.rf.8aa0b70a2ccc2079731bdfc409479e6d.jpg",
+            "PIC_0141_JPG.rf.e6141457be1582e3719f161b54c3f5ad.jpg",
+            "PIC_0142_JPG.rf.b2311f6ca63aec81b466572524e18272.jpg",
+            "PIC_0143_JPG.rf.2db8a863a615fb8d926224fbc961e2b0.jpg",
+            "PIC_0144_JPG.rf.3bfe19fbc20d6e627cd874a1ad6b10ac.jpg",
+            "PIC_0145_JPG.rf.a9567c99231206791919a1e0ef373534.jpg",
+            "PIC_0146_JPG.rf.1d01dff061f6c91b797084c3e79c1779.jpg",
+            "PIC_0147_JPG.rf.df297f5404df1e90f8eb057f5268c84a.jpg",
+            "PIC_0148_JPG.rf.b0b3f7d2abcd54461f44055abb9d58c5.jpg",
+            "PIC_0149_JPG.rf.776082390815bebda5fcfcd14363b6b5.jpg",
+            "PIC_0150_JPG.rf.298ec29f9519c475279a5d85203b5aca.jpg",
+            "PIC_0151_JPG.rf.57a09670ef5c8dc4b4b476251d573529.jpg"
+          ]
+        },
+        {
+          "count": 10,
+          "family_key": "20201015",
+          "sample_files": [
+            "20201015_185818_jpg.rf.4e84c901a3b505c0925babdd05f037d9.jpg",
+            "20201015_185823_jpg.rf.bce4678c02d484117389f2633144662d.jpg",
+            "20201015_185828_jpg.rf.dc1bfb7eb6ce62f31bc07be4827f499b.jpg",
+            "20201015_185832_jpg.rf.310292f0864827d15dcc0fcb521ba5dc.jpg",
+            "20201015_185838_jpg.rf.cf650d2b933beb82d408e64b7ec2e8c8.jpg",
+            "20201015_185843_jpg.rf.eb66861bf18d835af93236617619e158.jpg",
+            "20201015_185850_jpg.rf.1f596138ea8263c82a22ecfb8640dc2b.jpg",
+            "20201015_185904_jpg.rf.7f0781969d102d52361425e3a1c8f47f.jpg",
+            "20201015_185915_jpg.rf.10c746b312a740c4afb88f4d483ce2b1.jpg",
+            "20201015_185920_jpg.rf.c333968f7fa9d052e32e67280c00f0a4.jpg"
+          ]
+        },
+        {
+          "count": 6,
+          "family_key": "pogo_rugo",
+          "sample_files": [
+            "Pogo-rugo_jpg.rf.cf8ef6849dfeb599dfa4ad19b6d250b0.jpg",
+            "pogo-rugo--2-_jpg.rf.c981734866ce9a7b445742d6f868da67.jpg",
+            "pogo-rugo--3-_jpg.rf.3e153ba789b9556882f163b350fa7158.jpg",
+            "pogo-rugo--4-_jpg.rf.84080d7c6dd045683668d9b2d7e7009f.jpg",
+            "pogo-rugo--5-_jpg.rf.4db37e1d19213dc5982563d0ecfeefac.jpg",
+            "pogo-rugo--6-_jpg.rf.2afb904adbb4d00e88233b46f9d50a3f.jpg"
+          ]
+        },
+        {
+          "count": 5,
+          "family_key": "ants",
+          "sample_files": [
+            "ants-1-3_JPG.rf.ee575a4f414efc376c03e9a44f517443.jpg",
+            "ants-4_jpg.rf.cd994df8482faf8fd8d47bae1b5774ca.jpg",
+            "ants-5_jpg.rf.11b9011aad4282159486da5e94038387.jpg",
+            "ants-6_jpg.rf.7ea2a73a1d181bb18ec009bc12f6fb45.jpg",
+            "ants-7_jpg.rf.8cca682789fbfe33e9641fee0dc810f9.jpg"
+          ]
+        },
+        {
+          "count": 5,
+          "family_key": "campo_vicinus",
+          "sample_files": [
+            "Campo-vicinus_jpg.rf.da6fae59064484bc440803fbb6e147cb.jpg",
+            "campo-vicinus--2-_jpg.rf.36e0029143156a33a65517961a907832.jpg",
+            "campo-vicinus--3-_jpg.rf.1e27959b926d6d524399820fa678df19.jpg",
+            "campo-vicinus--4-_jpg.rf.57a4074a103fa1815203ac5201d1a8b5.jpg",
+            "campo-vicinus--5-_jpg.rf.dbb71689c3fffe762ce35dbaf950c965.jpg"
+          ]
+        },
+        {
+          "count": 3,
+          "family_key": "pxl_20210404",
+          "sample_files": [
+            "PXL_20210404_015841214-2_jpg.rf.6b25b7b329b4dc2bb1d77d17774ee422.jpg",
+            "PXL_20210404_022729989-2_jpg.rf.137a9e16fc12d779db96ef53c9606579.jpg",
+            "PXL_20210404_022730755-2_jpg.rf.5fdd3713fc44452816870fe82c529c99.jpg"
+          ]
+        },
+        {
+          "count": 2,
+          "family_key": "p1011355",
+          "sample_files": [
+            "P1011355-1-_JPG.rf.30f42cd73d933291f30618869682740c.jpg",
+            "P1011355_JPG.rf.526e247594094cba11d64ad9f568f5f9.jpg"
+          ]
+        },
+        {
+          "count": 2,
+          "family_key": "pxl_20210404_015807139_exported",
+          "sample_files": [
+            "PXL_20210404_015807139_exported_0_jpg.rf.39ee1e1901d930be511f34c2e418ce84.jpg",
+            "PXL_20210404_015807139_exported_11617_jpg.rf.fbb6ff5b17c30541f0b5537597907143.jpg"
+          ]
+        }
+      ]
+    },
+    "finding": "Species/caste diversity is real at label-taxonomy level, but independent provenance is not established by the export. Treat repeated filename families and same-species series as potential leakage groups."
+  },
+  "schemaVersion": "1.0",
+  "semanticCounts": {
+    "adult_ant_annotations": 6322,
+    "brood_annotations": 416,
+    "brood_any_images": 55,
+    "brood_plus_adult_images": 54,
+    "major_minor_images": 275,
+    "multi_ant_images_ge_10_labels": 215,
+    "queen_images": 789,
+    "single_or_few_large_ant_closeup_images": 299,
+    "unknown_or_ambiguous_annotations": 13,
+    "worker_images": 762
+  },
+  "source": {
+    "audited_version_url": "https://universe.roboflow.com/antsnet/antsnet/dataset/14",
+    "license": "MIT",
+    "name": "AntsNet",
+    "project": "antsnet",
+    "provider": "AntsNet.org",
+    "public_page_observed": {
+      "classes": 70,
+      "dataset_versions": 3,
+      "images": 997
+    },
+    "public_url": "https://universe.roboflow.com/antsnet/antsnet",
+    "sources_used": [
+      "https://universe.roboflow.com/antsnet/antsnet",
+      "https://universe.roboflow.com/antsnet/antsnet/dataset/14",
+      "datasets/external_sources/antsnet_raw/v14_yolov8/README.dataset.txt",
+      "datasets/external_sources/antsnet_raw/v14_yolov8/README.roboflow.txt"
+    ],
+    "task": "Object Detection",
+    "workspace": "antsnet"
+  },
+  "structuralQA": {
+    "actual_image_count": 997,
+    "actual_label_count": 997,
+    "annotations_total": 6751,
+    "boxes_per_image": {
+      "max": 41.0,
+      "mean": 6.771313941825476,
+      "min": 0.0,
+      "p10": 1.0,
+      "p25": 2.0,
+      "p50": 4.0,
+      "p75": 8.0,
+      "p90": 19.0
+    },
+    "class_count_from_data_yaml": 70,
+    "class_frequencies": {
+      "Larva": 1,
+      "cocoon_camponotus_nicobarensis": 41,
+      "larva_camponotus_nicobarensis": 13,
+      "larva_myrmica_rubra": 304,
+      "larva_tetramorium_immigrans": 17,
+      "proceratium_silaceum": 5,
+      "pupa_myrmica_rubra": 40,
+      "qorker_minor_camponotus_maritimus": 173,
+      "queen": 6,
+      "queen_aphaenogaster_rudis": 4,
+      "queen_brachymyrmex_depilis": 3,
+      "queen_camponotus": 2,
+      "queen_camponotus_cinctellus": 51,
+      "queen_camponotus_fragilis": 1,
+      "queen_camponotus_herculeanus": 7,
+      "queen_camponotus_maritimus": 31,
+      "queen_camponotus_nicobarensis": 35,
+      "queen_camponotus_quercicola": 160,
+      "queen_camponotus_sp": 2,
+      "queen_camponotus_vagus": 4,
+      "queen_camponotus_vicinus": 87,
+      "queen_crematogaster_biroi": 10,
+      "queen_crematogaster_scutelarris": 18,
+      "queen_formica_sp": 63,
+      "queen_lasius_claviger": 2,
+      "queen_lasius_flavus": 47,
+      "queen_lasius_murphyi": 2,
+      "queen_lasius_niger": 44,
+      "queen_messor_barbarus": 20,
+      "queen_myrmecina_americana": 7,
+      "queen_myrmecocystus_mexicanus": 1,
+      "queen_myrmica_rubra": 215,
+      "queen_novomessor_cockerelli": 271,
+      "queen_pheidole": 2,
+      "queen_pheidole_tysoni": 2,
+      "queen_pogonomyrmex_occidentalis": 46,
+      "queen_pogonomyrmex_rugosus": 9,
+      "queen_pseudomyrmex": 2,
+      "queen_solenopsis_molesta": 3,
+      "stigmatomma_pallipes": 7,
+      "temnothorax_longispinosus": 1,
+      "worker_aphaenogaster_picea": 4,
+      "worker_brachymyrmex_depilis": 4,
+      "worker_crematogaster_biroi": 9,
+      "worker_dolichoderinae": 1,
+      "worker_formica_sp": 287,
+      "worker_lasius_flavus": 88,
+      "worker_lasius_niger": 759,
+      "worker_major_messor_barbarus": 1,
+      "worker_major_pheidole": 2,
+      "worker_major_pheidole_tysoni": 5,
+      "worker_minor_camponotus": 32,
+      "worker_minor_camponotus_cinctellus": 52,
+      "worker_minor_camponotus_herculeanus": 40,
+      "worker_minor_camponotus_nicobarensis": 175,
+      "worker_minor_camponotus_quercicola": 290,
+      "worker_minor_camponotus_vagus": 26,
+      "worker_minor_camponotus_vicinus": 357,
+      "worker_minor_myrmecocystus_mexicanus": 28,
+      "worker_minor_pheidole": 2,
+      "worker_minor_pheidole_tysoni": 15,
+      "worker_myrmica_pinetorum": 6,
+      "worker_novomessor_cockerelli": 805,
+      "worker_pogonomyrmex_occidentalis": 1832,
+      "worker_pogonomyrmex_rugosus": 58,
+      "worker_pogonomyrmex_subnitidus": 19,
+      "worker_replete_myrmecocystus_mexicanus": 53,
+      "worker_solenopsis_molesta": 26,
+      "worker_stenamma_schmitti": 2,
+      "worker_tetramorium_immigrans": 14
+    },
+    "classes_with_annotations": 70,
+    "density_thresholds_by_annotations_per_image": {
+      "low_max": 2.0,
+      "medium_max": 6.0
+    },
+    "duplicate_image_filenames": [],
+    "duplicate_label_filenames": [],
+    "empty_label_count": 3,
+    "empty_labels": [
+      "20201015_185904_jpg.rf.7f0781969d102d52361425e3a1c8f47f.jpg",
+      "IMG_20200707_211150_jpg.rf.3b0a2ad707b923e76f99f0c3cf7ce2a9.jpg",
+      "PXL_20200927_004437669_jpg.rf.7920441f9b3fc8c6798c063a09f156b8.jpg"
+    ],
+    "exact_duplicate_images_by_sha256": [],
+    "exact_duplicate_labels_by_sha256": [
+      {
+        "count": 3,
+        "files": [
+          "20201015_185904_jpg.rf.7f0781969d102d52361425e3a1c8f47f.txt",
+          "IMG_20200707_211150_jpg.rf.3b0a2ad707b923e76f99f0c3cf7ce2a9.txt",
+          "PXL_20200927_004437669_jpg.rf.7920441f9b3fc8c6798c063a09f156b8.txt"
+        ],
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    ],
+    "exact_duplicate_normalized_label_text_by_sha256": [
+      {
+        "count": 3,
+        "files": [
+          "20201015_185904_jpg.rf.7f0781969d102d52361425e3a1c8f47f.txt",
+          "IMG_20200707_211150_jpg.rf.3b0a2ad707b923e76f99f0c3cf7ce2a9.txt",
+          "PXL_20200927_004437669_jpg.rf.7920441f9b3fc8c6798c063a09f156b8.txt"
+        ],
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    ],
+    "images_per_class": {
+      "Larva": 1,
+      "cocoon_camponotus_nicobarensis": 3,
+      "larva_camponotus_nicobarensis": 3,
+      "larva_myrmica_rubra": 48,
+      "larva_tetramorium_immigrans": 4,
+      "proceratium_silaceum": 3,
+      "pupa_myrmica_rubra": 40,
+      "qorker_minor_camponotus_maritimus": 32,
+      "queen": 6,
+      "queen_aphaenogaster_rudis": 2,
+      "queen_brachymyrmex_depilis": 1,
+      "queen_camponotus": 2,
+      "queen_camponotus_cinctellus": 51,
+      "queen_camponotus_fragilis": 1,
+      "queen_camponotus_herculeanus": 7,
+      "queen_camponotus_maritimus": 31,
+      "queen_camponotus_nicobarensis": 25,
+      "queen_camponotus_quercicola": 160,
+      "queen_camponotus_sp": 2,
+      "queen_camponotus_vagus": 4,
+      "queen_camponotus_vicinus": 62,
+      "queen_crematogaster_biroi": 10,
+      "queen_crematogaster_scutelarris": 18,
+      "queen_formica_sp": 63,
+      "queen_lasius_claviger": 2,
+      "queen_lasius_flavus": 23,
+      "queen_lasius_murphyi": 2,
+      "queen_lasius_niger": 44,
+      "queen_messor_barbarus": 20,
+      "queen_myrmecina_americana": 3,
+      "queen_myrmecocystus_mexicanus": 1,
+      "queen_myrmica_rubra": 81,
+      "queen_novomessor_cockerelli": 195,
+      "queen_pheidole": 2,
+      "queen_pheidole_tysoni": 2,
+      "queen_pogonomyrmex_occidentalis": 46,
+      "queen_pogonomyrmex_rugosus": 9,
+      "queen_pseudomyrmex": 2,
+      "queen_solenopsis_molesta": 3,
+      "stigmatomma_pallipes": 6,
+      "temnothorax_longispinosus": 1,
+      "worker_aphaenogaster_picea": 1,
+      "worker_brachymyrmex_depilis": 1,
+      "worker_crematogaster_biroi": 9,
+      "worker_dolichoderinae": 1,
+      "worker_formica_sp": 78,
+      "worker_lasius_flavus": 23,
+      "worker_lasius_niger": 41,
+      "worker_major_messor_barbarus": 1,
+      "worker_major_pheidole": 2,
+      "worker_major_pheidole_tysoni": 5,
+      "worker_minor_camponotus": 7,
+      "worker_minor_camponotus_cinctellus": 39,
+      "worker_minor_camponotus_herculeanus": 7,
+      "worker_minor_camponotus_nicobarensis": 26,
+      "worker_minor_camponotus_quercicola": 162,
+      "worker_minor_camponotus_vagus": 3,
+      "worker_minor_camponotus_vicinus": 70,
+      "worker_minor_myrmecocystus_mexicanus": 12,
+      "worker_minor_pheidole": 2,
+      "worker_minor_pheidole_tysoni": 3,
+      "worker_myrmica_pinetorum": 3,
+      "worker_novomessor_cockerelli": 191,
+      "worker_pogonomyrmex_occidentalis": 115,
+      "worker_pogonomyrmex_rugosus": 10,
+      "worker_pogonomyrmex_subnitidus": 6,
+      "worker_replete_myrmecocystus_mexicanus": 20,
+      "worker_solenopsis_molesta": 7,
+      "worker_stenamma_schmitti": 2,
+      "worker_tetramorium_immigrans": 6
+    },
+    "invalid_normalized_coordinates": [],
+    "labels_without_images": [],
+    "malformed_yolo_rows": [],
+    "missing_image_label_pairs": []
+  },
+  "suspiciousFiles": [
+    {
+      "annotation_index": 1,
+      "area": 4.920949861426051e-07,
+      "class_name": "worker_lasius_niger",
+      "filename": "20201015_185818_jpg.rf.4e84c901a3b505c0925babdd05f037d9.jpg",
+      "reason": "extremely small adult box",
+      "severity": "medium"
+    },
+    {
+      "filename": "20201015_185904_jpg.rf.7f0781969d102d52361425e3a1c8f47f.jpg",
+      "reason": "empty label; could be valid negative but unusual for source dataset",
+      "severity": "medium"
+    },
+    {
+      "annotation_index": 1,
+      "area": 0.3759780317844852,
+      "class_name": "queen_lasius_claviger",
+      "filename": "ants-1-3_JPG.rf.ee575a4f414efc376c03e9a44f517443.jpg",
+      "reason": "very large adult box may be crop/padded/species-identification style",
+      "severity": "medium"
+    },
+    {
+      "annotation_index": 1,
+      "area": 0.637015628345108,
+      "class_name": "worker_major_pheidole_tysoni",
+      "filename": "ants-5_jpg.rf.11b9011aad4282159486da5e94038387.jpg",
+      "reason": "very large adult box may be crop/padded/species-identification style",
+      "severity": "medium"
+    },
+    {
+      "annotation_index": 1,
+      "area": 0.49603967912543967,
+      "class_name": "worker_major_pheidole_tysoni",
+      "filename": "ants-7_jpg.rf.8cca682789fbfe33e9641fee0dc810f9.jpg",
+      "reason": "very large adult box may be crop/padded/species-identification style",
+      "severity": "medium"
+    },
+    {
+      "annotation_index": 2,
+      "area": 0.3791650703196445,
+      "class_name": "worker_replete_myrmecocystus_mexicanus",
+      "filename": "IMG_1706_JPG.rf.ec28b5b674f043358215e5ebe06f10f2.jpg",
+      "reason": "very large adult box may be crop/padded/species-identification style",
+      "severity": "medium"
+    },
+    {
+      "annotation_index": 1,
+      "area": 0.5542052469135802,
+      "class_name": "worker_replete_myrmecocystus_mexicanus",
+      "filename": "IMG_1708_JPG.rf.e2bc995941f639de9d8a3414c9a70b77.jpg",
+      "reason": "very large adult box may be crop/padded/species-identification style",
+      "severity": "medium"
+    },
+    {
+      "annotation_index": 1,
+      "area": 0.6123053572959534,
+      "class_name": "worker_replete_myrmecocystus_mexicanus",
+      "filename": "IMG_1710_JPG.rf.7023334e362f87da3775b22a343322ec.jpg",
+      "reason": "very large adult box may be crop/padded/species-identification style",
+      "severity": "medium"
+    },
+    {
+      "annotation_index": 1,
+      "area": 0.6254489865540696,
+      "class_name": "worker_replete_myrmecocystus_mexicanus",
+      "filename": "IMG_1711_JPG.rf.8e30751fdef8261f627842e42da8cb2c.jpg",
+      "reason": "very large adult box may be crop/padded/species-identification style",
+      "severity": "medium"
+    },
+    {
+      "annotation_index": 1,
+      "area": 0.7153903034979424,
+      "class_name": "worker_replete_myrmecocystus_mexicanus",
+      "filename": "IMG_1715_JPG.rf.b9a29fef90467c0b1b6583e55f5f8915.jpg",
+      "reason": "very large adult box may be crop/padded/species-identification style",
+      "severity": "medium"
+    },
+    {
+      "annotation_index": 2,
+      "area": 0.691358024691358,
+      "class_name": "worker_replete_myrmecocystus_mexicanus",
+      "filename": "IMG_1716_JPG.rf.2543ada309fde12656713e51d78e04d6.jpg",
+      "reason": "very large adult box may be crop/padded/species-identification style",
+      "severity": "medium"
+    },
+    {
+      "annotation_index": 1,
+      "area": 0.5855313803869456,
+      "class_name": "worker_replete_myrmecocystus_mexicanus",
+      "filename": "IMG_1717_JPG.rf.ea35fe36bd4bcc1df8fecab32f527e89.jpg",
+      "reason": "very large adult box may be crop/padded/species-identification style",
+      "severity": "medium"
+    },
+    {
+      "annotation_index": 6,
+      "area": 0.5147590654649634,
+      "class_name": "worker_replete_myrmecocystus_mexicanus",
+      "filename": "IMG_1719_JPG.rf.c48a8697ba9d78cc375d75cf9f3675a0.jpg",
+      "reason": "very large adult box may be crop/padded/species-identification style",
+      "severity": "medium"
+    },
+    {
+      "annotation_index": 3,
+      "area": 0.5944147724837106,
+      "class_name": "worker_replete_myrmecocystus_mexicanus",
+      "filename": "IMG_1720_JPG.rf.6b0bd2e2ef324c3f7e7210699aebb058.jpg",
+      "reason": "very large adult box may be crop/padded/species-identification style",
+      "severity": "medium"
+    },
+    {
+      "annotation_index": 1,
+      "area": 0.8080632716049383,
+      "class_name": "worker_replete_myrmecocystus_mexicanus",
+      "filename": "IMG_1723_JPG.rf.ec8233128c4878a8fc8dd8cf4c846b8f.jpg",
+      "reason": "very large adult box may be crop/padded/species-identification style",
+      "severity": "medium"
+    },
+    {
+      "annotation_index": 2,
+      "area": 0.40737006628300754,
+      "class_name": "worker_replete_myrmecocystus_mexicanus",
+      "filename": "IMG_1723_JPG.rf.ec8233128c4878a8fc8dd8cf4c846b8f.jpg",
+      "reason": "very large adult box may be crop/padded/species-identification style",
+      "severity": "medium"
+    },
+    {
+      "filename": "IMG_20200707_211150_jpg.rf.3b0a2ad707b923e76f99f0c3cf7ce2a9.jpg",
+      "reason": "empty label; could be valid negative but unusual for source dataset",
+      "severity": "medium"
+    },
+    {
+      "annotation_index": 1,
+      "area": 0.5689800190897057,
+      "class_name": "queen_camponotus_quercicola",
+      "filename": "IMG_20200714_234333-2_jpg.rf.4df86039c52d2d695ffbba38447a73c4.jpg",
+      "reason": "very large adult box may be crop/padded/species-identification style",
+      "severity": "medium"
+    },
+    {
+      "annotation_index": 2,
+      "area": 0.7570418792517007,
+      "class_name": "worker_minor_camponotus_quercicola",
+      "filename": "IMG_20200720_000410_jpg.rf.d9edc4c5b9aa3a54c8dadc33a614358f.jpg",
+      "reason": "very large adult box may be crop/padded/species-identification style",
+      "severity": "medium"
+    },
+    {
+      "annotation_index": 1,
+      "area": 0.4974312641723355,
+      "class_name": "queen_camponotus_quercicola",
+      "filename": "IMG_20200720_000416_jpg.rf.b2e27cb165224ab46e160a2856808dc3.jpg",
+      "reason": "very large adult box may be crop/padded/species-identification style",
+      "severity": "medium"
+    },
+    {
+      "annotation_index": 1,
+      "area": 0.6569812531494078,
+      "class_name": "worker_minor_camponotus_quercicola",
+      "filename": "IMG_20200720_000428_jpg.rf.5a064834567f0fc5278eccfb8dc96e0d.jpg",
+      "reason": "very large adult box may be crop/padded/species-identification style",
+      "severity": "medium"
+    },
+    {
+      "annotation_index": 1,
+      "area": 0.7117371827002256,
+      "class_name": "queen_lasius_murphyi",
+      "filename": "IMG_8382_JPG.rf.b11739fbb92df24b4173f0fda9a5f0f5.jpg",
+      "reason": "very large adult box may be crop/padded/species-identification style",
+      "severity": "medium"
+    },
+    {
+      "annotation_index": 1,
+      "area": 0.4614715259293925,
+      "class_name": "worker_stenamma_schmitti",
+      "filename": "IMG_8505_JPG.rf.a969ea127389afe55db0263593ea144c.jpg",
+      "reason": "very large adult box may be crop/padded/species-identification style",
+      "severity": "medium"
+    },
+    {
+      "annotation_index": 1,
+      "area": 0.39424909009058395,
+      "class_name": "queen_myrmecina_americana",
+      "filename": "IMG_8676_JPG.rf.1b65a0d97c8ec335a8767e0c98aeafb5.jpg",
+      "reason": "very large adult box may be crop/padded/species-identification style",
+      "severity": "medium"
+    },
+    {
+      "annotation_index": 1,
+      "area": 0.4346952685009147,
+      "class_name": "queen_aphaenogaster_rudis",
+      "filename": "IMG_8781_JPG.rf.ab6b3044f4408163f5ea486987424ce1.jpg",
+      "reason": "very large adult box may be crop/padded/species-identification style",
+      "severity": "medium"
+    },
+    {
+      "annotation_index": 2,
+      "area": 0.4126134447752628,
+      "class_name": "queen_aphaenogaster_rudis",
+      "filename": "IMG_8781_JPG.rf.ab6b3044f4408163f5ea486987424ce1.jpg",
+      "reason": "very large adult box may be crop/padded/species-identification style",
+      "severity": "medium"
+    },
+    {
+      "annotation_index": 2,
+      "area": 0.3710610326208516,
+      "class_name": "worker_tetramorium_immigrans",
+      "filename": "IMG_8782_JPG.rf.5aadbb542764c2adb11cef9b04b12fc4.jpg",
+      "reason": "very large adult box may be crop/padded/species-identification style",
+      "severity": "medium"
+    },
+    {
+      "annotation_index": 1,
+      "area": 0.3977170426437555,
+      "class_name": "queen_aphaenogaster_rudis",
+      "filename": "IMG_8785_JPG.rf.0be3b7bf7cd8298efc18cb94f621ebf4.jpg",
+      "reason": "very large adult box may be crop/padded/species-identification style",
+      "severity": "medium"
+    },
+    {
+      "annotation_index": 2,
+      "area": 0.3698137449415713,
+      "class_name": "queen_aphaenogaster_rudis",
+      "filename": "IMG_8785_JPG.rf.0be3b7bf7cd8298efc18cb94f621ebf4.jpg",
+      "reason": "very large adult box may be crop/padded/species-identification style",
+      "severity": "medium"
+    },
+    {
+      "annotation_index": 1,
+      "area": 0.3758041266773387,
+      "class_name": "worker_myrmica_pinetorum",
+      "filename": "IMG_8862_JPG.rf.a942f66d37393d079d3a84886c22427e.jpg",
+      "reason": "very large adult box may be crop/padded/species-identification style",
+      "severity": "medium"
+    },
+    {
+      "annotation_index": 2,
+      "area": 0.4329281409296459,
+      "class_name": "worker_myrmica_pinetorum",
+      "filename": "IMG_8862_JPG.rf.a942f66d37393d079d3a84886c22427e.jpg",
+      "reason": "very large adult box may be crop/padded/species-identification style",
+      "severity": "medium"
+    },
+    {
+      "annotation_index": 1,
+      "area": 0.434776965666442,
+      "class_name": "worker_myrmica_pinetorum",
+      "filename": "IMG_8863_JPG.rf.20281db56c801a0f3c0874460c2b6941.jpg",
+      "reason": "very large adult box may be crop/padded/species-identification style",
+      "severity": "medium"
+    },
+    {
+      "annotation_index": 2,
+      "area": 0.606581435011965,
+      "class_name": "worker_myrmica_pinetorum",
+      "filename": "IMG_8863_JPG.rf.20281db56c801a0f3c0874460c2b6941.jpg",
+      "reason": "very large adult box may be crop/padded/species-identification style",
+      "severity": "medium"
+    },
+    {
+      "annotation_index": 1,
+      "area": 0.8524193302298457,
+      "class_name": "worker_myrmica_pinetorum",
+      "filename": "IMG_8864_JPG.rf.6a29847cbb7eb786dab41a1a99bcbb45.jpg",
+      "reason": "very large adult box may be crop/padded/species-identification style",
+      "severity": "medium"
+    },
+    {
+      "annotation_index": 2,
+      "area": 0.38556200137656516,
+      "class_name": "worker_myrmica_pinetorum",
+      "filename": "IMG_8864_JPG.rf.6a29847cbb7eb786dab41a1a99bcbb45.jpg",
+      "reason": "very large adult box may be crop/padded/species-identification style",
+      "severity": "medium"
+    },
+    {
+      "annotation_index": 1,
+      "area": 0.4793618464155585,
+      "class_name": "queen_lasius_claviger",
+      "filename": "IMG_8874_JPG.rf.fdc40d52ee6c6183f8e613a9137bbf0d.jpg",
+      "reason": "very large adult box may be crop/padded/species-identification style",
+      "severity": "medium"
+    },
+    {
+      "annotation_index": 5,
+      "area": 8.333333333333334e-07,
+      "class_name": "worker_lasius_flavus",
+      "filename": "P3171545_JPG.rf.56594bcf23ad4c1f51e569897b7ea693.jpg",
+      "reason": "extremely small adult box",
+      "severity": "medium"
+    },
+    {
+      "annotation_index": 6,
+      "area": 3.3333333333333337e-06,
+      "class_name": "queen_lasius_flavus",
+      "filename": "P3171547_JPG.rf.52ba9f0571450b51e5e3f07a5f1523b8.jpg",
+      "reason": "extremely small adult box",
+      "severity": "medium"
+    },
+    {
+      "annotation_index": 6,
+      "area": 4.166666666666667e-07,
+      "class_name": "worker_lasius_flavus",
+      "filename": "P3171554_JPG.rf.b1aae379d5ddef999ec20ab9039b065f.jpg",
+      "reason": "extremely small adult box",
+      "severity": "medium"
+    },
+    {
+      "annotation_index": 5,
+      "area": 8.333333333333334e-07,
+      "class_name": "worker_lasius_flavus",
+      "filename": "P3171555_JPG.rf.875168a537bc5517644825663a2e153c.jpg",
+      "reason": "extremely small adult box",
+      "severity": "medium"
+    },
+    {
+      "annotation_index": 6,
+      "area": 8.333333333333334e-07,
+      "class_name": "worker_lasius_flavus",
+      "filename": "P3171555_JPG.rf.875168a537bc5517644825663a2e153c.jpg",
+      "reason": "extremely small adult box",
+      "severity": "medium"
+    },
+    {
+      "annotation_index": 6,
+      "area": 1.6666666666666669e-06,
+      "class_name": "worker_lasius_flavus",
+      "filename": "P3171559_JPG.rf.9c8dfba86364a49f5cfef45216be84ed.jpg",
+      "reason": "extremely small adult box",
+      "severity": "medium"
+    },
+    {
+      "annotation_index": 5,
+      "area": 0.48185,
+      "class_name": "queen_lasius_flavus",
+      "filename": "P3171563_JPG.rf.a955f11e06284558d444f68479a6bc67.jpg",
+      "reason": "very large adult box may be crop/padded/species-identification style",
+      "severity": "medium"
+    },
+    {
+      "annotation_index": 5,
+      "area": 0.4526179166666667,
+      "class_name": "queen_lasius_flavus",
+      "filename": "P3171564_JPG.rf.0b44cf33be91c2c99b6599654e0f77b1.jpg",
+      "reason": "very large adult box may be crop/padded/species-identification style",
+      "severity": "medium"
+    },
+    {
+      "annotation_index": 1,
+      "area": 0.56232,
+      "class_name": "queen_crematogaster_scutelarris",
+      "filename": "P3231658_JPG.rf.cae992ba4dda3ef1d265458e1ca14d48.jpg",
+      "reason": "very large adult box may be crop/padded/species-identification style",
+      "severity": "medium"
+    },
+    {
+      "annotation_index": 1,
+      "area": 0.57967875,
+      "class_name": "queen_crematogaster_scutelarris",
+      "filename": "P3231659_JPG.rf.c9b450719bce0ac6f794da80e6d396da.jpg",
+      "reason": "very large adult box may be crop/padded/species-identification style",
+      "severity": "medium"
+    },
+    {
+      "annotation_index": 1,
+      "area": 0.5820833333333333,
+      "class_name": "queen_crematogaster_scutelarris",
+      "filename": "P3231660_JPG.rf.65a8ed900305d9b8928c57995ee5e172.jpg",
+      "reason": "very large adult box may be crop/padded/species-identification style",
+      "severity": "medium"
+    },
+    {
+      "annotation_index": 1,
+      "area": 0.5697500000000001,
+      "class_name": "queen_crematogaster_scutelarris",
+      "filename": "P3231661_JPG.rf.70389d39e8de12d42701d668f2591259.jpg",
+      "reason": "very large adult box may be crop/padded/species-identification style",
+      "severity": "medium"
+    },
+    {
+      "annotation_index": 1,
+      "area": 0.5639958333333334,
+      "class_name": "queen_crematogaster_scutelarris",
+      "filename": "P3231662_JPG.rf.ff85544a8b3395b6e4fdd70027cbad6e.jpg",
+      "reason": "very large adult box may be crop/padded/species-identification style",
+      "severity": "medium"
+    },
+    {
+      "annotation_index": 1,
+      "area": 0.6108250000000001,
+      "class_name": "queen_crematogaster_scutelarris",
+      "filename": "P3231663_JPG.rf.786a37d03b352ea8c5a17f761d840c2d.jpg",
+      "reason": "very large adult box may be crop/padded/species-identification style",
+      "severity": "medium"
+    },
+    {
+      "annotation_index": 1,
+      "area": 0.5728229166666666,
+      "class_name": "queen_crematogaster_scutelarris",
+      "filename": "P3231664_JPG.rf.b5cc036747904a4fcd5fa2dd00f3783c.jpg",
+      "reason": "very large adult box may be crop/padded/species-identification style",
+      "severity": "medium"
+    },
+    {
+      "annotation_index": 1,
+      "area": 0.5811666666666666,
+      "class_name": "queen_crematogaster_scutelarris",
+      "filename": "P3231665_JPG.rf.c99e28f561513d601dfb2c460442addd.jpg",
+      "reason": "very large adult box may be crop/padded/species-identification style",
+      "severity": "medium"
+    },
+    {
+      "annotation_index": 1,
+      "area": 0.5671,
+      "class_name": "queen_crematogaster_scutelarris",
+      "filename": "P3231666_JPG.rf.4e9a7302b601d7a1df2ce01ced88d25b.jpg",
+      "reason": "very large adult box may be crop/padded/species-identification style",
+      "severity": "medium"
+    },
+    {
+      "annotation_index": 1,
+      "area": 0.5758833333333333,
+      "class_name": "queen_crematogaster_scutelarris",
+      "filename": "P3231667_JPG.rf.5d5c5f181122b5df74727b830e061595.jpg",
+      "reason": "very large adult box may be crop/padded/species-identification style",
+      "severity": "medium"
+    },
+    {
+      "annotation_index": 1,
+      "area": 0.5781145833333333,
+      "class_name": "queen_crematogaster_scutelarris",
+      "filename": "P3231668_JPG.rf.7a93ae204516676f6be2c4ec9960bf0e.jpg",
+      "reason": "very large adult box may be crop/padded/species-identification style",
+      "severity": "medium"
+    },
+    {
+      "annotation_index": 1,
+      "area": 0.4639509166666666,
+      "class_name": "queen_messor_barbarus",
+      "filename": "P3231684_JPG.rf.c66284bcb9c7f9a3c3188f60a9577896.jpg",
+      "reason": "very large adult box may be crop/padded/species-identification style",
+      "severity": "medium"
+    },
+    {
+      "annotation_index": 1,
+      "area": 0.4560359166666666,
+      "class_name": "queen_messor_barbarus",
+      "filename": "P3231685_JPG.rf.d19bc721dad51aaef004bdaabf18c63a.jpg",
+      "reason": "very large adult box may be crop/padded/species-identification style",
+      "severity": "medium"
+    },
+    {
+      "annotation_index": 1,
+      "area": 0.45537633333333327,
+      "class_name": "queen_messor_barbarus",
+      "filename": "P3231686_JPG.rf.7ef59c6ac8326afa74ecfcf920dc9419.jpg",
+      "reason": "very large adult box may be crop/padded/species-identification style",
+      "severity": "medium"
+    },
+    {
+      "annotation_index": 1,
+      "area": 0.44251375,
+      "class_name": "queen_messor_barbarus",
+      "filename": "P3231687_JPG.rf.d4dfc6cefd79e549d9e7e5ee2dc6d6f1.jpg",
+      "reason": "very large adult box may be crop/padded/species-identification style",
+      "severity": "medium"
+    },
+    {
+      "annotation_index": 1,
+      "area": 0.46359999999999996,
+      "class_name": "queen_messor_barbarus",
+      "filename": "P3231688_JPG.rf.307e5a7b49679dd36b3a6ddde14958b7.jpg",
+      "reason": "very large adult box may be crop/padded/species-identification style",
+      "severity": "medium"
+    },
+    {
+      "annotation_index": 1,
+      "area": 0.47142,
+      "class_name": "queen_messor_barbarus",
+      "filename": "P3231689_JPG.rf.36654177325d432410087b569d6f1f15.jpg",
+      "reason": "very large adult box may be crop/padded/species-identification style",
+      "severity": "medium"
+    },
+    {
+      "annotation_index": 1,
+      "area": 0.4767,
+      "class_name": "queen_messor_barbarus",
+      "filename": "P3231690_JPG.rf.4b43aca4a47b842b94ce54b9ba9d3ad1.jpg",
+      "reason": "very large adult box may be crop/padded/species-identification style",
+      "severity": "medium"
+    },
+    {
+      "annotation_index": 1,
+      "area": 0.5001995833333334,
+      "class_name": "queen_messor_barbarus",
+      "filename": "P3231691_JPG.rf.c45bc182741478e3967b570e493f3707.jpg",
+      "reason": "very large adult box may be crop/padded/species-identification style",
+      "severity": "medium"
+    },
+    {
+      "annotation_index": 1,
+      "area": 0.511715,
+      "class_name": "queen_messor_barbarus",
+      "filename": "P3231692_JPG.rf.5ca1e7c51e176f866d55b863c5751036.jpg",
+      "reason": "very large adult box may be crop/padded/species-identification style",
+      "severity": "medium"
+    },
+    {
+      "annotation_index": 1,
+      "area": 0.5176775,
+      "class_name": "queen_messor_barbarus",
+      "filename": "P3231693_JPG.rf.42150acae5d65899d4cc66797273ede5.jpg",
+      "reason": "very large adult box may be crop/padded/species-identification style",
+      "severity": "medium"
+    },
+    {
+      "annotation_index": 1,
+      "area": 0.5331354166666666,
+      "class_name": "queen_messor_barbarus",
+      "filename": "P3231694_JPG.rf.1f8169093877cab3b611982caffdd464.jpg",
+      "reason": "very large adult box may be crop/padded/species-identification style",
+      "severity": "medium"
+    },
+    {
+      "annotation_index": 1,
+      "area": 0.5349225,
+      "class_name": "queen_messor_barbarus",
+      "filename": "P3231695_JPG.rf.cb51c6b991b60f865d5a4e8988a33ae7.jpg",
+      "reason": "very large adult box may be crop/padded/species-identification style",
+      "severity": "medium"
+    },
+    {
+      "annotation_index": 1,
+      "area": 0.52791125,
+      "class_name": "queen_messor_barbarus",
+      "filename": "P3231696_JPG.rf.2c510eca7b093ffbe8b7b70c217b5353.jpg",
+      "reason": "very large adult box may be crop/padded/species-identification style",
+      "severity": "medium"
+    },
+    {
+      "annotation_index": 1,
+      "area": 0.530285,
+      "class_name": "queen_messor_barbarus",
+      "filename": "P3231697_JPG.rf.38d66809750b8088d6c89e4f776920bb.jpg",
+      "reason": "very large adult box may be crop/padded/species-identification style",
+      "severity": "medium"
+    },
+    {
+      "annotation_index": 1,
+      "area": 0.637819,
+      "class_name": "queen_camponotus_cinctellus",
+      "filename": "PA060433_JPG.rf.e20a216a9ec1d974bfd5d133037ca3a4.jpg",
+      "reason": "very large adult box may be crop/padded/species-identification style",
+      "severity": "medium"
+    },
+    {
+      "annotation_index": 1,
+      "area": 0.6956370000000001,
+      "class_name": "queen_camponotus_cinctellus",
+      "filename": "PA060434_JPG.rf.3737151c3863d2b7c7f69cb82b01c071.jpg",
+      "reason": "very large adult box may be crop/padded/species-identification style",
+      "severity": "medium"
+    },
+    {
+      "annotation_index": 1,
+      "area": 0.7083319166666666,
+      "class_name": "queen_camponotus_cinctellus",
+      "filename": "PA060435_JPG.rf.85642482c3652dcaa02789ca1fb3a6c8.jpg",
+      "reason": "very large adult box may be crop/padded/species-identification style",
+      "severity": "medium"
+    },
+    {
+      "annotation_index": 2,
+      "area": 0.4235595,
+      "class_name": "queen_camponotus_cinctellus",
+      "filename": "PA060436_JPG.rf.6300b5b8aa08fef6dd5a8a8053993109.jpg",
+      "reason": "very large adult box may be crop/padded/species-identification style",
+      "severity": "medium"
+    },
+    {
+      "annotation_index": 1,
+      "area": 0.47155125000000003,
+      "class_name": "queen_camponotus_cinctellus",
+      "filename": "PA060437_JPG.rf.85252d9e8bc86e08188cf6d9c33fa239.jpg",
+      "reason": "very large adult box may be crop/padded/species-identification style",
+      "severity": "medium"
+    },
+    {
+      "annotation_index": 1,
+      "area": 0.44016249999999996,
+      "class_name": "queen_camponotus_cinctellus",
+      "filename": "PA060438_JPG.rf.2c516b3a7df721d23e7c6dcca99bbc72.jpg",
+      "reason": "very large adult box may be crop/padded/species-identification style",
+      "severity": "medium"
+    },
+    {
+      "annotation_index": 1,
+      "area": 0.365217,
+      "class_name": "queen_camponotus_cinctellus",
+      "filename": "PA060440_JPG.rf.778e1fe990e1a8d03f51e9828362f712.jpg",
+      "reason": "very large adult box may be crop/padded/species-identification style",
+      "severity": "medium"
+    },
+    {
+      "annotation_index": 1,
+      "area": 0.367859,
+      "class_name": "queen_camponotus_cinctellus",
+      "filename": "PA060441_JPG.rf.5c918b7af2231195abad53850f0f1057.jpg",
+      "reason": "very large adult box may be crop/padded/species-identification style",
+      "severity": "medium"
+    },
+    {
+      "annotation_index": 1,
+      "area": 0.37995999999999996,
+      "class_name": "queen_camponotus_cinctellus",
+      "filename": "PA060442_JPG.rf.b10fe84aecb18dbd048f8042182e86eb.jpg",
+      "reason": "very large adult box may be crop/padded/species-identification style",
+      "severity": "medium"
+    },
+    {
+      "annotation_index": 1,
+      "area": 0.50265575,
+      "class_name": "queen_camponotus_cinctellus",
+      "filename": "PA060443_JPG.rf.958a3d0606b15df545819401ce78c8af.jpg",
+      "reason": "very large adult box may be crop/padded/species-identification style",
+      "severity": "medium"
+    },
+    {
+      "annotation_index": 1,
+      "area": 0.49286175,
+      "class_name": "queen_camponotus_cinctellus",
+      "filename": "PA060444_JPG.rf.c8c35420edf8a04e29be9b384552a4f0.jpg",
+      "reason": "very large adult box may be crop/padded/species-identification style",
+      "severity": "medium"
+    },
+    {
+      "annotation_index": 1,
+      "area": 0.4584825,
+      "class_name": "queen_camponotus_cinctellus",
+      "filename": "PA060445_JPG.rf.5d66e6e67c218dcc53f238890e890c6d.jpg",
+      "reason": "very large adult box may be crop/padded/species-identification style",
+      "severity": "medium"
+    },
+    {
+      "annotation_index": 1,
+      "area": 0.46594624999999995,
+      "class_name": "queen_camponotus_cinctellus",
+      "filename": "PA060446_JPG.rf.b37d4f3b419a5d9dfe32da77e210211f.jpg",
+      "reason": "very large adult box may be crop/padded/species-identification style",
+      "severity": "medium"
+    },
+    {
+      "annotation_index": 1,
+      "area": 0.4797833333333333,
+      "class_name": "queen_camponotus_cinctellus",
+      "filename": "PA060447_JPG.rf.78629c0a3684e4bfb5589df229764e00.jpg",
+      "reason": "very large adult box may be crop/padded/species-identification style",
+      "severity": "medium"
+    },
+    {
+      "annotation_index": 1,
+      "area": 0.4736573333333333,
+      "class_name": "queen_camponotus_cinctellus",
+      "filename": "PA060448_JPG.rf.e3f6a4bf1147c42b5a78809b0c5e5810.jpg",
+      "reason": "very large adult box may be crop/padded/species-identification style",
+      "severity": "medium"
+    },
+    {
+      "annotation_index": 1,
+      "area": 0.4756996666666667,
+      "class_name": "queen_camponotus_cinctellus",
+      "filename": "PA060449_JPG.rf.f40e6b919aaa885606d3caa0fac06bb1.jpg",
+      "reason": "very large adult box may be crop/padded/species-identification style",
+      "severity": "medium"
+    },
+    {
+      "annotation_index": 1,
+      "area": 0.41705,
+      "class_name": "queen_camponotus_cinctellus",
+      "filename": "PA060450_JPG.rf.931ef4cb474616efefab125716c010d3.jpg",
+      "reason": "very large adult box may be crop/padded/species-identification style",
+      "severity": "medium"
+    },
+    {
+      "annotation_index": 1,
+      "area": 0.46375999999999995,
+      "class_name": "queen_camponotus_cinctellus",
+      "filename": "PA060451_JPG.rf.6e36ce108762ca12b1094ecb5fcc0f4c.jpg",
+      "reason": "very large adult box may be crop/padded/species-identification style",
+      "severity": "medium"
+    },
+    {
+      "annotation_index": 1,
+      "area": 0.37328558333333334,
+      "class_name": "queen_camponotus_cinctellus",
+      "filename": "PA060452_JPG.rf.e8381c0e99d6606bc672f4b28f49c0dc.jpg",
+      "reason": "very large adult box may be crop/padded/species-identification style",
+      "severity": "medium"
+    },
+    {
+      "annotation_index": 1,
+      "area": 0.3747916666666667,
+      "class_name": "queen_camponotus_cinctellus",
+      "filename": "PA060453_JPG.rf.b7bcff9b913044157a2bec07e3e51a10.jpg",
+      "reason": "very large adult box may be crop/padded/species-identification style",
+      "severity": "medium"
+    },
+    {
+      "annotation_index": 1,
+      "area": 0.387985,
+      "class_name": "queen_camponotus_cinctellus",
+      "filename": "PA060463_JPG.rf.b44b91bf6fb761bbe5322c6e93ecd9a7.jpg",
+      "reason": "very large adult box may be crop/padded/species-identification style",
+      "severity": "medium"
+    },
+    {
+      "annotation_index": 2,
+      "area": 0.53237,
+      "class_name": "queen_camponotus_cinctellus",
+      "filename": "PA060464_JPG.rf.949dcf0f7e1fa9aef33076e145f29033.jpg",
+      "reason": "very large adult box may be crop/padded/species-identification style",
+      "severity": "medium"
+    },
+    {
+      "annotation_index": 1,
+      "area": 0.5115630000000001,
+      "class_name": "queen_camponotus_cinctellus",
+      "filename": "PA060465_JPG.rf.43c814025676ca365f254361c6e3d5dd.jpg",
+      "reason": "very large adult box may be crop/padded/species-identification style",
+      "severity": "medium"
+    },
+    {
+      "annotation_index": 1,
+      "area": 0.5085726666666667,
+      "class_name": "queen_camponotus_cinctellus",
+      "filename": "PA060466_JPG.rf.8fafc5afa100fc944cf5384a598d735f.jpg",
+      "reason": "very large adult box may be crop/padded/species-identification style",
+      "severity": "medium"
+    },
+    {
+      "annotation_index": 1,
+      "area": 0.378456,
+      "class_name": "queen_camponotus_cinctellus",
+      "filename": "PA060467_JPG.rf.087e4866c09a17e64d7dd5b625179632.jpg",
+      "reason": "very large adult box may be crop/padded/species-identification style",
+      "severity": "medium"
+    },
+    {
+      "annotation_index": 2,
+      "area": 0.3581563333333333,
+      "class_name": "queen_camponotus_cinctellus",
+      "filename": "PA060468_JPG.rf.7e3fb507f4f028d47659089d6c54bd7c.jpg",
+      "reason": "very large adult box may be crop/padded/species-identification style",
+      "severity": "medium"
+    },
+    {
+      "annotation_index": 2,
+      "area": 0.37605750000000004,
+      "class_name": "queen_camponotus_cinctellus",
+      "filename": "PA060469_JPG.rf.31c0c493dd5dd30273784a72f18246f4.jpg",
+      "reason": "very large adult box may be crop/padded/species-identification style",
+      "severity": "medium"
+    },
+    {
+      "annotation_index": 2,
+      "area": 0.377052,
+      "class_name": "queen_camponotus_cinctellus",
+      "filename": "PA060470_JPG.rf.1dda7cbcbc2eb83744c1e29880dc2f3d.jpg",
+      "reason": "very large adult box may be crop/padded/species-identification style",
+      "severity": "medium"
+    },
+    {
+      "annotation_index": 2,
+      "area": 0.35335083333333334,
+      "class_name": "queen_camponotus_cinctellus",
+      "filename": "PA060471_JPG.rf.acda63af21f49842bf4c43c4089dd453.jpg",
+      "reason": "very large adult box may be crop/padded/species-identification style",
+      "severity": "medium"
+    },
+    {
+      "annotation_index": 2,
+      "area": 0.3630683333333333,
+      "class_name": "queen_camponotus_cinctellus",
+      "filename": "PA060472_JPG.rf.1ee46fde67355d7e54de6a9f8cff201e.jpg",
+      "reason": "very large adult box may be crop/padded/species-identification style",
+      "severity": "medium"
+    },
+    {
+      "annotation_index": 1,
+      "area": 0.47381566666666664,
+      "class_name": "queen_camponotus_cinctellus",
+      "filename": "PA060474_JPG.rf.5d1a5aeb2534adb63fc789e568b29643.jpg",
+      "reason": "very large adult box may be crop/padded/species-identification style",
+      "severity": "medium"
+    },
+    {
+      "annotation_index": 1,
+      "area": 0.4859333333333334,
+      "class_name": "queen_camponotus_cinctellus",
+      "filename": "PA060475_JPG.rf.033c4a322d45e50b66d5e69213b74ef2.jpg",
+      "reason": "very large adult box may be crop/padded/species-identification style",
+      "severity": "medium"
+    },
+    {
+      "annotation_index": 1,
+      "area": 0.47846400000000006,
+      "class_name": "queen_camponotus_cinctellus",
+      "filename": "PA060476_JPG.rf.77fd306ae33aec30a6951b46ec6e7e75.jpg",
+      "reason": "very large adult box may be crop/padded/species-identification style",
+      "severity": "medium"
+    },
+    {
+      "annotation_index": 1,
+      "area": 0.49607416666666665,
+      "class_name": "queen_camponotus_cinctellus",
+      "filename": "PA060477_JPG.rf.b89ec448340105b6bbe7ded3e4b23a63.jpg",
+      "reason": "very large adult box may be crop/padded/species-identification style",
+      "severity": "medium"
+    },
+    {
+      "annotation_index": 1,
+      "area": 0.5080565833333334,
+      "class_name": "queen_camponotus_cinctellus",
+      "filename": "PA060478_JPG.rf.7c55aede671e893397944a962923ca10.jpg",
+      "reason": "very large adult box may be crop/padded/species-identification style",
+      "severity": "medium"
+    },
+    {
+      "annotation_index": 1,
+      "area": 0.51909425,
+      "class_name": "queen_camponotus_cinctellus",
+      "filename": "PA060479_JPG.rf.adb77c6f17d20df2dcc6fb03a51ac1bc.jpg",
+      "reason": "very large adult box may be crop/padded/species-identification style",
+      "severity": "medium"
+    },
+    {
+      "annotation_index": 1,
+      "area": 0.5459404999999999,
+      "class_name": "queen_camponotus_cinctellus",
+      "filename": "PA060480_JPG.rf.51d6646d0151c31d0ecb1d35e4448841.jpg",
+      "reason": "very large adult box may be crop/padded/species-identification style",
+      "severity": "medium"
+    },
+    {
+      "annotation_index": 1,
+      "area": 0.545566,
+      "class_name": "queen_camponotus_cinctellus",
+      "filename": "PA060481_JPG.rf.be5c2631f41c30b68b126c0c466f8250.jpg",
+      "reason": "very large adult box may be crop/padded/species-identification style",
+      "severity": "medium"
+    },
+    {
+      "annotation_index": 1,
+      "area": 0.5252660833333334,
+      "class_name": "queen_camponotus_cinctellus",
+      "filename": "PA060482_JPG.rf.648585d9a4a0b24b8bcdb9cfb6dbfec6.jpg",
+      "reason": "very large adult box may be crop/padded/species-identification style",
+      "severity": "medium"
+    },
+    {
+      "annotation_index": 1,
+      "area": 0.3631411666666666,
+      "class_name": "queen_camponotus_cinctellus",
+      "filename": "PA060483_JPG.rf.e5dac9f8880e8a49f892de9b22a5b789.jpg",
+      "reason": "very large adult box may be crop/padded/species-identification style",
+      "severity": "medium"
+    },
+    {
+      "annotation_index": 2,
+      "area": 0.42766167664670657,
+      "class_name": "queen_camponotus_nicobarensis",
+      "filename": "PA281452_JPG.rf.5a117441989641f95b57c2d111f4197a.jpg",
+      "reason": "very large adult box may be crop/padded/species-identification style",
+      "severity": "medium"
+    },
+    {
+      "annotation_index": 1,
+      "area": 0.5374708083832336,
+      "class_name": "queen_camponotus_nicobarensis",
+      "filename": "PA281455_JPG.rf.61fd401e1b154c7bc75576f84ffa29f9.jpg",
+      "reason": "very large adult box may be crop/padded/species-identification style",
+      "severity": "medium"
+    },
+    {
+      "annotation_index": 1,
+      "area": 0.5680373315868263,
+      "class_name": "queen_camponotus_nicobarensis",
+      "filename": "PA281456_JPG.rf.1c9885c93666d9ba5a3008b39878083d.jpg",
+      "reason": "very large adult box may be crop/padded/species-identification style",
+      "severity": "medium"
+    },
+    {
+      "annotation_index": 1,
+      "area": 0.6034695920658681,
+      "class_name": "queen_camponotus_nicobarensis",
+      "filename": "PA281458_JPG.rf.92234888e9dbd42a142f236b187b7233.jpg",
+      "reason": "very large adult box may be crop/padded/species-identification style",
+      "severity": "medium"
+    },
+    {
+      "annotation_index": 3,
+      "area": 0.45957793787425144,
+      "class_name": "queen_camponotus_nicobarensis",
+      "filename": "PA281459_JPG.rf.4f6b22fefb20380bdaf456712d0bffeb.jpg",
+      "reason": "very large adult box may be crop/padded/species-identification style",
+      "severity": "medium"
+    },
+    {
+      "annotation_index": 1,
+      "area": 0.4403349550898203,
+      "class_name": "queen_camponotus_nicobarensis",
+      "filename": "PA281462_JPG.rf.ce62501a404b27cd1e6db1c3f8be91aa.jpg",
+      "reason": "very large adult box may be crop/padded/species-identification style",
+      "severity": "medium"
+    },
+    {
+      "annotation_index": 3,
+      "area": 0.35355763473053897,
+      "class_name": "queen_camponotus_nicobarensis",
+      "filename": "PA281463_JPG.rf.e89ae3087c6943e8003d4ec998b65e82.jpg",
+      "reason": "very large adult box may be crop/padded/species-identification style",
+      "severity": "medium"
+    },
+    {
+      "annotation_index": 1,
+      "area": 0.35014895209580843,
+      "class_name": "queen_lasius_niger",
+      "filename": "PC261469_JPG.rf.efdbcfbd4b35b5745c2276a93963a6cb.jpg",
+      "reason": "very large adult box may be crop/padded/species-identification style",
+      "severity": "medium"
+    },
+    {
+      "annotation_index": 11,
+      "area": 9.645061728395062e-07,
+      "class_name": "worker_lasius_niger",
+      "filename": "PIC_0147_JPG.rf.df297f5404df1e90f8eb057f5268c84a.jpg",
+      "reason": "extremely small adult box",
+      "severity": "medium"
+    },
+    {
+      "annotation_index": 27,
+      "area": 2.893518518518519e-06,
+      "class_name": "worker_lasius_niger",
+      "filename": "PIC_0148_JPG.rf.b0b3f7d2abcd54461f44055abb9d58c5.jpg",
+      "reason": "extremely small adult box",
+      "severity": "medium"
+    },
+    {
+      "annotation_index": 6,
+      "area": 4.822530864197531e-07,
+      "class_name": "worker_lasius_niger",
+      "filename": "PIC_0155_JPG.rf.96c80bfabc0eefa852d275c33099aec5.jpg",
+      "reason": "extremely small adult box",
+      "severity": "medium"
+    },
+    {
+      "annotation_index": 14,
+      "area": 9.645061728395062e-07,
+      "class_name": "worker_lasius_niger",
+      "filename": "PIC_0156_JPG.rf.17424a9d03c5c51ab970010a0c5f72eb.jpg",
+      "reason": "extremely small adult box",
+      "severity": "medium"
+    },
+    {
+      "annotation_index": 1,
+      "area": 0.6601798705593349,
+      "class_name": "queen_pogonomyrmex_rugosus",
+      "filename": "pogo-rugo--2-_jpg.rf.c981734866ce9a7b445742d6f868da67.jpg",
+      "reason": "very large adult box may be crop/padded/species-identification style",
+      "severity": "medium"
+    },
+    {
+      "filename": "PXL_20200927_004437669_jpg.rf.7920441f9b3fc8c6798c063a09f156b8.jpg",
+      "reason": "empty label; could be valid negative but unusual for source dataset",
+      "severity": "medium"
+    },
+    {
+      "annotation_index": 4,
+      "area": 2.1324116066179555e-06,
+      "class_name": "worker_novomessor_cockerelli",
+      "filename": "PXL_20201026_005802482_jpg.rf.5e731b236c0b614c90dd962fe0ca81f2.jpg",
+      "reason": "extremely small adult box",
+      "severity": "medium"
+    },
+    {
+      "annotation_index": 4,
+      "aspect_ratio": 19.5,
+      "class_name": "worker_novomessor_cockerelli",
+      "filename": "PXL_20201026_005802482_jpg.rf.5e731b236c0b614c90dd962fe0ca81f2.jpg",
+      "reason": "extreme aspect ratio",
+      "severity": "low"
+    },
+    {
+      "annotation_index": 7,
+      "area": 4.920949861426051e-07,
+      "class_name": "worker_pogonomyrmex_occidentalis",
+      "filename": "PXL_20210308_084646058_jpg.rf.f31a3e66e81017859eae710e7a4b23dc.jpg",
+      "reason": "extremely small adult box",
+      "severity": "medium"
+    },
+    {
+      "annotation_index": 5,
+      "area": 2.1324116066179555e-06,
+      "class_name": "worker_pogonomyrmex_occidentalis",
+      "filename": "PXL_20210315_214320925_jpg.rf.2e05244f9dbcfc106e3f96152323ce8d.jpg",
+      "reason": "extremely small adult box",
+      "severity": "medium"
+    },
+    {
+      "annotation_index": 5,
+      "aspect_ratio": 34.666666666666664,
+      "class_name": "worker_pogonomyrmex_occidentalis",
+      "filename": "PXL_20210315_214320925_jpg.rf.2e05244f9dbcfc106e3f96152323ce8d.jpg",
+      "reason": "extreme aspect ratio",
+      "severity": "low"
+    },
+    {
+      "annotation_index": 1,
+      "area": 2.1324116066179555e-06,
+      "class_name": "worker_novomessor_cockerelli",
+      "filename": "PXL_20210322_152033139_jpg.rf.d8db80582700f8b13cb609cfdf033f8a.jpg",
+      "reason": "extremely small adult box",
+      "severity": "medium"
+    },
+    {
+      "annotation_index": 1,
+      "aspect_ratio": 19.5,
+      "class_name": "worker_novomessor_cockerelli",
+      "filename": "PXL_20210322_152033139_jpg.rf.d8db80582700f8b13cb609cfdf033f8a.jpg",
+      "reason": "extreme aspect ratio",
+      "severity": "low"
+    },
+    {
+      "annotation_index": 1,
+      "area": 0.4116801041404216,
+      "class_name": "worker_novomessor_cockerelli",
+      "filename": "PXL_20210408_195443581_jpg.rf.f7e5d32712a07e798ebd64263d1154e7.jpg",
+      "reason": "very large adult box may be crop/padded/species-identification style",
+      "severity": "medium"
+    }
+  ],
+  "versionInventory": [
+    {
+      "augmentations": {},
+      "created_unix": 1631394988.174,
+      "exports": [
+        "coco",
+        "voc",
+        "yolov5pytorch",
+        "yolov8"
+      ],
+      "image_count": 997,
+      "name": "2021-09-11 2:16pm",
+      "preprocessing": {},
+      "selected_for_audit": true,
+      "selection_rationale": "latest visible/exportable version, 997 images, no preprocessing, no augmentations, YOLOv8 export available",
+      "split_counts": {
+        "train": 997
+      },
+      "version_id": "v14"
+    },
+    {
+      "augmentations": {},
+      "created_unix": 1630863812.871,
+      "exports": [
+        "coco",
+        "yolov5pytorch"
+      ],
+      "image_count": 997,
+      "name": "Transfer to Public",
+      "preprocessing": {},
+      "selected_for_audit": false,
+      "selection_rationale": "same image count and no augmentation, but older and lacks YOLOv8 export",
+      "split_counts": {
+        "train": 829,
+        "valid": 168
+      },
+      "version_id": "v13"
+    },
+    {
+      "augmentations": {},
+      "created_unix": 1629685763.233,
+      "exports": [],
+      "image_count": 997,
+      "name": "Transfer to Public",
+      "preprocessing": {},
+      "selected_for_audit": false,
+      "selection_rationale": "same image count and no augmentation, but no listed export availability",
+      "split_counts": {
+        "train": 829,
+        "valid": 168
+      },
+      "version_id": "v12"
+    }
+  ],
+  "visualAudit": {
+    "categorySummaries": {
+      "artificial_nest_or_colony_context_candidates": {
+        "candidate_image_count": 212,
+        "domain_heuristic_counts": {
+          "brood_or_nest_context": 55,
+          "crowded_multi_ant_or_colony_context": 157
+        },
+        "montage": "artifacts/analysis/ants_v3_design/antsnet/montages/artificial_nest_or_colony_context_candidates_montage.jpg",
+        "sampled_in_montage": 16,
+        "typical_adult_median_area": 0.006869646006550769
+      },
+      "brood": {
+        "candidate_image_count": 55,
+        "domain_heuristic_counts": {
+          "brood_or_nest_context": 55
+        },
+        "montage": "artifacts/analysis/ants_v3_design/antsnet/montages/brood_montage.jpg",
+        "sampled_in_montage": 16,
+        "typical_adult_median_area": 0.040232035928143714
+      },
+      "large_scale_ants": {
+        "candidate_image_count": 710,
+        "domain_heuristic_counts": {
+          "brood_or_nest_context": 54,
+          "crowded_multi_ant_or_colony_context": 37,
+          "single_or_few_large_ant_closeup": 286,
+          "small_multi_ant_scene": 2,
+          "unknown_or_mixed": 331
+        },
+        "montage": "artifacts/analysis/ants_v3_design/antsnet/montages/large_scale_ants_montage.jpg",
+        "sampled_in_montage": 16,
+        "typical_adult_median_area": 0.06170245265718563
+      },
+      "majors_minors": {
+        "candidate_image_count": 275,
+        "domain_heuristic_counts": {
+          "brood_or_nest_context": 3,
+          "crowded_multi_ant_or_colony_context": 38,
+          "single_or_few_large_ant_closeup": 59,
+          "small_multi_ant_scene": 12,
+          "unknown_or_mixed": 163
+        },
+        "montage": "artifacts/analysis/ants_v3_design/antsnet/montages/majors_minors_montage.jpg",
+        "sampled_in_montage": 16,
+        "typical_adult_median_area": 0.04621895536764088
+      },
+      "multi_ant": {
+        "candidate_image_count": 215,
+        "domain_heuristic_counts": {
+          "brood_or_nest_context": 36,
+          "crowded_multi_ant_or_colony_context": 157,
+          "small_multi_ant_scene": 9,
+          "unknown_or_mixed": 13
+        },
+        "montage": "artifacts/analysis/ants_v3_design/antsnet/montages/multi_ant_montage.jpg",
+        "sampled_in_montage": 16,
+        "typical_adult_median_area": 0.0063704566510246075
+      },
+      "natural_or_textured_background_candidates": {
+        "candidate_image_count": 246,
+        "domain_heuristic_counts": {
+          "crowded_multi_ant_or_colony_context": 132,
+          "small_multi_ant_scene": 47,
+          "unknown_or_mixed": 67
+        },
+        "montage": "artifacts/analysis/ants_v3_design/antsnet/montages/natural_or_textured_background_candidates_montage.jpg",
+        "sampled_in_montage": 16,
+        "typical_adult_median_area": 0.005119756235827663
+      },
+      "queens": {
+        "candidate_image_count": 789,
+        "domain_heuristic_counts": {
+          "brood_or_nest_context": 50,
+          "crowded_multi_ant_or_colony_context": 124,
+          "single_or_few_large_ant_closeup": 227,
+          "small_multi_ant_scene": 26,
+          "unknown_or_mixed": 362
+        },
+        "montage": "artifacts/analysis/ants_v3_design/antsnet/montages/queens_montage.jpg",
+        "sampled_in_montage": 16,
+        "typical_adult_median_area": 0.03423750866087175
+      },
+      "single_ant_closeups": {
+        "candidate_image_count": 170,
+        "domain_heuristic_counts": {
+          "brood_or_nest_context": 1,
+          "single_or_few_large_ant_closeup": 160,
+          "unknown_or_mixed": 9
+        },
+        "montage": "artifacts/analysis/ants_v3_design/antsnet/montages/single_ant_closeups_montage.jpg",
+        "sampled_in_montage": 16,
+        "typical_adult_median_area": 0.1862904740518962
+      },
+      "small_scale_ants": {
+        "candidate_image_count": 50,
+        "domain_heuristic_counts": {
+          "crowded_multi_ant_or_colony_context": 42,
+          "small_multi_ant_scene": 6,
+          "unknown_or_mixed": 2
+        },
+        "montage": "artifacts/analysis/ants_v3_design/antsnet/montages/small_scale_ants_montage.jpg",
+        "sampled_in_montage": 16,
+        "typical_adult_median_area": 0.0013715507422104643
+      },
+      "workers": {
+        "candidate_image_count": 194,
+        "domain_heuristic_counts": {
+          "brood_or_nest_context": 4,
+          "crowded_multi_ant_or_colony_context": 33,
+          "single_or_few_large_ant_closeup": 59,
+          "small_multi_ant_scene": 21,
+          "unknown_or_mixed": 77
+        },
+        "montage": "artifacts/analysis/ants_v3_design/antsnet/montages/workers_montage.jpg",
+        "sampled_in_montage": 16,
+        "typical_adult_median_area": 0.020684823167307048
+      }
+    },
+    "montages": {
+      "artificial_nest_or_colony_context_candidates": "artifacts/analysis/ants_v3_design/antsnet/montages/artificial_nest_or_colony_context_candidates_montage.jpg",
+      "brood": "artifacts/analysis/ants_v3_design/antsnet/montages/brood_montage.jpg",
+      "candidate_subset_preview": "artifacts/analysis/ants_v3_design/antsnet/montages/candidate_subset_preview_montage.jpg",
+      "large_scale_ants": "artifacts/analysis/ants_v3_design/antsnet/montages/large_scale_ants_montage.jpg",
+      "majors_minors": "artifacts/analysis/ants_v3_design/antsnet/montages/majors_minors_montage.jpg",
+      "multi_ant": "artifacts/analysis/ants_v3_design/antsnet/montages/multi_ant_montage.jpg",
+      "natural_or_textured_background_candidates": "artifacts/analysis/ants_v3_design/antsnet/montages/natural_or_textured_background_candidates_montage.jpg",
+      "queens": "artifacts/analysis/ants_v3_design/antsnet/montages/queens_montage.jpg",
+      "single_ant_closeups": "artifacts/analysis/ants_v3_design/antsnet/montages/single_ant_closeups_montage.jpg",
+      "small_scale_ants": "artifacts/analysis/ants_v3_design/antsnet/montages/small_scale_ants_montage.jpg",
+      "workers": "artifacts/analysis/ants_v3_design/antsnet/montages/workers_montage.jpg"
+    },
+    "notes": "Montages use AntsNet source boxes without conversion. Green=adult-ant taxonomy by class name, cyan=brood, orange=ambiguous taxonomic-only."
+  }
+}

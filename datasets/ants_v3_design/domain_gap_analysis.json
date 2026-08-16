@@ -1,0 +1,60 @@
+{
+  "experimentClosed": "ants_v2_diverse_e01",
+  "conclusion": "ants_v2_diverse_e01 strongly improves external/public-domain generalization but is not a drop-in replacement for ants_v1 because it materially regresses on the original ant2/own-colony domain, especially large queen scale and local visual distractors.",
+  "doNotMinimizeRegression": true,
+  "externalBenchmarkSummary": {
+    "Seq0001": {
+      "v1_mAP50": 0.1074,
+      "v2_mAP50": 0.4923,
+      "v1_centerRecall": 0.6672,
+      "v2_centerRecall": 0.9997
+    },
+    "Seq0006": {
+      "v1_mAP50": 0.2868,
+      "v2_mAP50": 0.7164,
+      "v1_centerRecall": 0.6217,
+      "v2_centerRecall": 0.9722
+    },
+    "note": "Center metrics are diagnostic localization metrics, not substitutes for standard mAP."
+  },
+  "ant2RegressionSummary": {
+    "classification": "MATERIAL REGRESSION",
+    "v1": {
+      "precision": 0.812,
+      "recall": 0.8542,
+      "mAP50": 0.8104,
+      "mAP50_95": 0.4821
+    },
+    "v2": {
+      "precision": 0.0225,
+      "recall": 0.0417,
+      "mAP50": 0.0014,
+      "mAP50_95": 0.0005
+    },
+    "deltaV2MinusV1": {
+      "precision": -0.7895050523490845,
+      "recall": -0.8125,
+      "mAP50": -0.8090268979851325,
+      "mAP50_95": -0.48165270474271565,
+      "predictionCount": 19,
+      "GTCount": 0,
+      "centerPrecisionDiagnostic": -0.4415329768270945,
+      "centerRecallDiagnostic": -0.49999999999999994,
+      "centerF1Diagnostic": -0.4786967418546366,
+      "iou50MatchedDiagnostic": -42,
+      "iou50MissedDiagnostic": 42,
+      "iou50FalsePositivesDiagnostic": 61,
+      "duplicatePredictionPairsIoU70Diagnostic": 0
+    },
+    "artifact": "artifacts/analysis/ants_v2_ant2_regression/ant2_regression_metrics.json"
+  },
+  "likelyDrivers": [
+    "Scale gap: ant2 median normalized bbox area is about 13.6x ants_v2 TRAIN median area.",
+    "Class/domain gap: ant2 includes a large queen, large workers, brood, food, cotton, reflections and close-up plastic/acrylic artifacts absent or underrepresented in v2 TRAIN.",
+    "Density distribution differs: ant2 has fewer ants per frame but larger objects; v2 TRAIN often has many small ants and crowded public outdoor scenes.",
+    "The v2 model learned much better public-domain small/mixed ants but did not preserve own-colony close-up performance."
+  ],
+  "designImplicationForV3": "Use mixed-scale training: retain public TRAIN for generalization, add a small own-colony positive pack for queen/large-worker scale, and add verified hard negatives for nest materials and glare.",
+  "designGeneratedWithoutTrainingOrAnnotationChanges": true,
+  "contentSha256": "8ab4856688141f88695f4eb1e5be41783773c5816d09383cbae38df65fc4e241"
+}

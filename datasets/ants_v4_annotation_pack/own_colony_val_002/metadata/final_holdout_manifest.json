@@ -1,0 +1,1718 @@
+{
+  "checkpoint_selection_eligible": false,
+  "counts": {
+    "max_annotations_per_positive_frame": 1,
+    "mean_annotations_per_positive_frame": 1.0,
+    "median_annotations_per_positive_frame": 1.0,
+    "min_annotations_per_positive_frame": 1,
+    "positive_frames": 29,
+    "review_frames": 0,
+    "total_annotations": 29,
+    "total_frames": 30,
+    "verified_zero_frames": 1,
+    "zero_annotation_frames": 1
+  },
+  "development_selection_eligible": false,
+  "experiment": "ants_v4_domain_e01",
+  "frames": [
+    {
+      "annotation_count": 1,
+      "annotations_yolo": [
+        [
+          0.0,
+          0.7233796296,
+          0.4576822917,
+          0.0486111111,
+          0.0455729167
+        ]
+      ],
+      "filename": "ownval002_000086_t0001.433.jpg",
+      "image_path": "datasets/ants_v4_annotation_pack/own_colony_val_002/images/ownval002_000086_t0001.433.jpg",
+      "image_sha256": "9c4d58ade7286a1cdf9b953d2e7b5cf02bb1f67ba042e3e2aba686b3cbf3dace",
+      "source_frame_index": 86,
+      "source_video_sha256": "02ecfaf7a26865b6629f49756de3f3e558e0419f97b1404b8f094577dccc731e",
+      "split": "test",
+      "temporal_bin": 0,
+      "timestamp_seconds": 1.4328662838215684,
+      "verified_zero_adult": false
+    },
+    {
+      "annotation_count": 1,
+      "annotations_yolo": [
+        [
+          0.0,
+          0.7199074074,
+          0.4557291667,
+          0.0462962963,
+          0.0494791667
+        ]
+      ],
+      "filename": "ownval002_000258_t0004.299.jpg",
+      "image_path": "datasets/ants_v4_annotation_pack/own_colony_val_002/images/ownval002_000258_t0004.299.jpg",
+      "image_sha256": "198ec67f4e10808739ff657c53ac1104a1121a1ecfe19e3aa48755b8817270a1",
+      "source_frame_index": 258,
+      "source_video_sha256": "02ecfaf7a26865b6629f49756de3f3e558e0419f97b1404b8f094577dccc731e",
+      "split": "test",
+      "temporal_bin": 1,
+      "timestamp_seconds": 4.298598851464705,
+      "verified_zero_adult": false
+    },
+    {
+      "annotation_count": 1,
+      "annotations_yolo": [
+        [
+          0.0,
+          0.5381944444,
+          0.3313802083,
+          0.0625,
+          0.0377604167
+        ]
+      ],
+      "filename": "ownval002_000430_t0007.164.jpg",
+      "image_path": "datasets/ants_v4_annotation_pack/own_colony_val_002/images/ownval002_000430_t0007.164.jpg",
+      "image_sha256": "6b5bd24bc91dcdc02b25d36c2c97e09f903c40daa1e86dcad9847ca0e3e426e2",
+      "source_frame_index": 430,
+      "source_video_sha256": "02ecfaf7a26865b6629f49756de3f3e558e0419f97b1404b8f094577dccc731e",
+      "split": "test",
+      "temporal_bin": 2,
+      "timestamp_seconds": 7.1643314191078415,
+      "verified_zero_adult": false
+    },
+    {
+      "annotation_count": 1,
+      "annotations_yolo": [
+        [
+          0.0,
+          0.1377314815,
+          0.3704427083,
+          0.0625,
+          0.05078125
+        ]
+      ],
+      "filename": "ownval002_000602_t0010.030.jpg",
+      "image_path": "datasets/ants_v4_annotation_pack/own_colony_val_002/images/ownval002_000602_t0010.030.jpg",
+      "image_sha256": "cc0c7e8d2e85d1c98720036ef6663f7767030ccc349a6b19cab0438cc62a46e0",
+      "source_frame_index": 602,
+      "source_video_sha256": "02ecfaf7a26865b6629f49756de3f3e558e0419f97b1404b8f094577dccc731e",
+      "split": "test",
+      "temporal_bin": 3,
+      "timestamp_seconds": 10.030063986750978,
+      "verified_zero_adult": false
+    },
+    {
+      "annotation_count": 1,
+      "annotations_yolo": [
+        [
+          0.0,
+          0.1226851852,
+          0.7415364583,
+          0.0462962963,
+          0.0377604167
+        ]
+      ],
+      "filename": "ownval002_000774_t0012.896.jpg",
+      "image_path": "datasets/ants_v4_annotation_pack/own_colony_val_002/images/ownval002_000774_t0012.896.jpg",
+      "image_sha256": "74c1ce76f2d43f1fd89c678e8853b40228c11fd96e52bb3335e526ccea3421f8",
+      "source_frame_index": 774,
+      "source_video_sha256": "02ecfaf7a26865b6629f49756de3f3e558e0419f97b1404b8f094577dccc731e",
+      "split": "test",
+      "temporal_bin": 4,
+      "timestamp_seconds": 12.895796554394115,
+      "verified_zero_adult": false
+    },
+    {
+      "annotation_count": 1,
+      "annotations_yolo": [
+        [
+          0.0,
+          0.9525462963,
+          0.587890625,
+          0.0347222222,
+          0.05078125
+        ]
+      ],
+      "filename": "ownval002_000946_t0015.762.jpg",
+      "image_path": "datasets/ants_v4_annotation_pack/own_colony_val_002/images/ownval002_000946_t0015.762.jpg",
+      "image_sha256": "4ecb0eed90f195037a7a98d63529e85d4e70b68a3160f1605d724b11f59e9f2e",
+      "source_frame_index": 946,
+      "source_video_sha256": "02ecfaf7a26865b6629f49756de3f3e558e0419f97b1404b8f094577dccc731e",
+      "split": "test",
+      "temporal_bin": 5,
+      "timestamp_seconds": 15.761529122037253,
+      "verified_zero_adult": false
+    },
+    {
+      "annotation_count": 1,
+      "annotations_yolo": [
+        [
+          0.0,
+          0.2511574074,
+          0.3450520833,
+          0.0810185185,
+          0.0234375
+        ]
+      ],
+      "filename": "ownval002_001118_t0018.627.jpg",
+      "image_path": "datasets/ants_v4_annotation_pack/own_colony_val_002/images/ownval002_001118_t0018.627.jpg",
+      "image_sha256": "61aed4f03880f2d4073e67f22b1e96f1843719332654d1a74233da8bb7c8d199",
+      "source_frame_index": 1118,
+      "source_video_sha256": "02ecfaf7a26865b6629f49756de3f3e558e0419f97b1404b8f094577dccc731e",
+      "split": "test",
+      "temporal_bin": 6,
+      "timestamp_seconds": 18.627261689680388,
+      "verified_zero_adult": false
+    },
+    {
+      "annotation_count": 1,
+      "annotations_yolo": [
+        [
+          0.0,
+          0.0983796296,
+          0.6197916667,
+          0.0578703704,
+          0.0494791667
+        ]
+      ],
+      "filename": "ownval002_001290_t0021.493.jpg",
+      "image_path": "datasets/ants_v4_annotation_pack/own_colony_val_002/images/ownval002_001290_t0021.493.jpg",
+      "image_sha256": "9aefb2f8ed708386684190db5e9b364384e3f52d84b47dc008c5ddb47b7d1903",
+      "source_frame_index": 1290,
+      "source_video_sha256": "02ecfaf7a26865b6629f49756de3f3e558e0419f97b1404b8f094577dccc731e",
+      "split": "test",
+      "temporal_bin": 7,
+      "timestamp_seconds": 21.492994257323524,
+      "verified_zero_adult": false
+    },
+    {
+      "annotation_count": 1,
+      "annotations_yolo": [
+        [
+          0.0,
+          0.0196759259,
+          0.4368489583,
+          0.0393518519,
+          0.04296875
+        ]
+      ],
+      "filename": "ownval002_001462_t0024.359.jpg",
+      "image_path": "datasets/ants_v4_annotation_pack/own_colony_val_002/images/ownval002_001462_t0024.359.jpg",
+      "image_sha256": "244cc242f318eb2de0155b91bc0451abda0886a9dfd5c256bab041cf5a6b8fc2",
+      "source_frame_index": 1462,
+      "source_video_sha256": "02ecfaf7a26865b6629f49756de3f3e558e0419f97b1404b8f094577dccc731e",
+      "split": "test",
+      "temporal_bin": 8,
+      "timestamp_seconds": 24.358726824966663,
+      "verified_zero_adult": false
+    },
+    {
+      "annotation_count": 1,
+      "annotations_yolo": [
+        [
+          0.0,
+          0.1875,
+          0.1907552083,
+          0.0740740741,
+          0.02734375
+        ]
+      ],
+      "filename": "ownval002_001635_t0027.241.jpg",
+      "image_path": "datasets/ants_v4_annotation_pack/own_colony_val_002/images/ownval002_001635_t0027.241.jpg",
+      "image_sha256": "653a4f165812f0a130268b5566e3e66aa49952d8c8c8422396d7d7bfa7be88a1",
+      "source_frame_index": 1635,
+      "source_video_sha256": "02ecfaf7a26865b6629f49756de3f3e558e0419f97b1404b8f094577dccc731e",
+      "split": "test",
+      "temporal_bin": 9,
+      "timestamp_seconds": 27.241120628468188,
+      "verified_zero_adult": false
+    },
+    {
+      "annotation_count": 1,
+      "annotations_yolo": [
+        [
+          0.0,
+          0.9479166667,
+          0.4368489583,
+          0.0393518519,
+          0.0481770833
+        ]
+      ],
+      "filename": "ownval002_001808_t0030.124.jpg",
+      "image_path": "datasets/ants_v4_annotation_pack/own_colony_val_002/images/ownval002_001808_t0030.124.jpg",
+      "image_sha256": "33ed789419898b4453c8ae09bb208f3634377b484b7ad91940ffd4381208280f",
+      "source_frame_index": 1808,
+      "source_video_sha256": "02ecfaf7a26865b6629f49756de3f3e558e0419f97b1404b8f094577dccc731e",
+      "split": "test",
+      "temporal_bin": 10,
+      "timestamp_seconds": 30.123514431969717,
+      "verified_zero_adult": false
+    },
+    {
+      "annotation_count": 1,
+      "annotations_yolo": [
+        [
+          0.0,
+          0.2013888889,
+          0.3743489583,
+          0.0740740741,
+          0.0325520833
+        ]
+      ],
+      "filename": "ownval002_001980_t0032.989.jpg",
+      "image_path": "datasets/ants_v4_annotation_pack/own_colony_val_002/images/ownval002_001980_t0032.989.jpg",
+      "image_sha256": "e2d645d31904280052d9e6e5e901a578b592274991955599f954223a07ff9bba",
+      "source_frame_index": 1980,
+      "source_video_sha256": "02ecfaf7a26865b6629f49756de3f3e558e0419f97b1404b8f094577dccc731e",
+      "split": "test",
+      "temporal_bin": 11,
+      "timestamp_seconds": 32.98924699961285,
+      "verified_zero_adult": false
+    },
+    {
+      "annotation_count": 0,
+      "annotations_yolo": [],
+      "filename": "ownval002_002152_t0035.855.jpg",
+      "image_path": "datasets/ants_v4_annotation_pack/own_colony_val_002/images/ownval002_002152_t0035.855.jpg",
+      "image_sha256": "ee1fc0c03689f55ed15ef022ac6c4b56d09b7826a33a758f2e761f97cdf47e8d",
+      "source_frame_index": 2152,
+      "source_video_sha256": "02ecfaf7a26865b6629f49756de3f3e558e0419f97b1404b8f094577dccc731e",
+      "split": "test",
+      "temporal_bin": 12,
+      "timestamp_seconds": 35.85497956725599,
+      "verified_zero_adult": true
+    },
+    {
+      "annotation_count": 1,
+      "annotations_yolo": [
+        [
+          0.0,
+          0.7025462963,
+          0.3365885417,
+          0.0671296296,
+          0.03515625
+        ]
+      ],
+      "filename": "ownval002_002324_t0038.721.jpg",
+      "image_path": "datasets/ants_v4_annotation_pack/own_colony_val_002/images/ownval002_002324_t0038.721.jpg",
+      "image_sha256": "9e9fd8d2072156c400ee21963eb75c43ebdb182515a2dd9452b0992da2425cea",
+      "source_frame_index": 2324,
+      "source_video_sha256": "02ecfaf7a26865b6629f49756de3f3e558e0419f97b1404b8f094577dccc731e",
+      "split": "test",
+      "temporal_bin": 13,
+      "timestamp_seconds": 38.720712134899124,
+      "verified_zero_adult": false
+    },
+    {
+      "annotation_count": 1,
+      "annotations_yolo": [
+        [
+          0.0,
+          0.8472222222,
+          0.701171875,
+          0.0648148148,
+          0.0403645833
+        ]
+      ],
+      "filename": "ownval002_002496_t0041.586.jpg",
+      "image_path": "datasets/ants_v4_annotation_pack/own_colony_val_002/images/ownval002_002496_t0041.586.jpg",
+      "image_sha256": "20e712e24d0088672de54de4379ed518d2cd94426fbe24d6863b27d5f3b52b4c",
+      "source_frame_index": 2496,
+      "source_video_sha256": "02ecfaf7a26865b6629f49756de3f3e558e0419f97b1404b8f094577dccc731e",
+      "split": "test",
+      "temporal_bin": 14,
+      "timestamp_seconds": 41.586444702542266,
+      "verified_zero_adult": false
+    },
+    {
+      "annotation_count": 1,
+      "annotations_yolo": [
+        [
+          0.0,
+          0.0185185185,
+          0.7096354167,
+          0.037037037,
+          0.03125
+        ]
+      ],
+      "filename": "ownval002_002668_t0044.452.jpg",
+      "image_path": "datasets/ants_v4_annotation_pack/own_colony_val_002/images/ownval002_002668_t0044.452.jpg",
+      "image_sha256": "b1bf023c15e39bf47e22342206351894f41229f8ea0b42194a8685e7f65f2931",
+      "source_frame_index": 2668,
+      "source_video_sha256": "02ecfaf7a26865b6629f49756de3f3e558e0419f97b1404b8f094577dccc731e",
+      "split": "test",
+      "temporal_bin": 15,
+      "timestamp_seconds": 44.4521772701854,
+      "verified_zero_adult": false
+    },
+    {
+      "annotation_count": 1,
+      "annotations_yolo": [
+        [
+          0.0,
+          0.0798611111,
+          0.421875,
+          0.0439814815,
+          0.0572916667
+        ]
+      ],
+      "filename": "ownval002_002840_t0047.318.jpg",
+      "image_path": "datasets/ants_v4_annotation_pack/own_colony_val_002/images/ownval002_002840_t0047.318.jpg",
+      "image_sha256": "b2566aa1eb567d5e72eeccb865567c92997b843399d3b2ad9cb5b537eb4b91ec",
+      "source_frame_index": 2840,
+      "source_video_sha256": "02ecfaf7a26865b6629f49756de3f3e558e0419f97b1404b8f094577dccc731e",
+      "split": "test",
+      "temporal_bin": 16,
+      "timestamp_seconds": 47.31790983782854,
+      "verified_zero_adult": false
+    },
+    {
+      "annotation_count": 1,
+      "annotations_yolo": [
+        [
+          0.0,
+          0.150462963,
+          0.380859375,
+          0.0787037037,
+          0.0325520833
+        ]
+      ],
+      "filename": "ownval002_003012_t0050.184.jpg",
+      "image_path": "datasets/ants_v4_annotation_pack/own_colony_val_002/images/ownval002_003012_t0050.184.jpg",
+      "image_sha256": "56714536525c9f7de27f438a8e2503e135a4030ce08edf0eb9dd3a3929aa019b",
+      "source_frame_index": 3012,
+      "source_video_sha256": "02ecfaf7a26865b6629f49756de3f3e558e0419f97b1404b8f094577dccc731e",
+      "split": "test",
+      "temporal_bin": 17,
+      "timestamp_seconds": 50.18364240547167,
+      "verified_zero_adult": false
+    },
+    {
+      "annotation_count": 1,
+      "annotations_yolo": [
+        [
+          0.0,
+          0.6863425926,
+          0.2962239583,
+          0.0532407407,
+          0.0455729167
+        ]
+      ],
+      "filename": "ownval002_003184_t0053.049.jpg",
+      "image_path": "datasets/ants_v4_annotation_pack/own_colony_val_002/images/ownval002_003184_t0053.049.jpg",
+      "image_sha256": "1aa40e3155d102e837614092ea03a1e7ea12141da2c9ae985cded30be22d57d7",
+      "source_frame_index": 3184,
+      "source_video_sha256": "02ecfaf7a26865b6629f49756de3f3e558e0419f97b1404b8f094577dccc731e",
+      "split": "test",
+      "temporal_bin": 18,
+      "timestamp_seconds": 53.04937497311481,
+      "verified_zero_adult": false
+    },
+    {
+      "annotation_count": 1,
+      "annotations_yolo": [
+        [
+          0.0,
+          0.9166666667,
+          0.400390625,
+          0.0509259259,
+          0.0403645833
+        ]
+      ],
+      "filename": "ownval002_003357_t0055.932.jpg",
+      "image_path": "datasets/ants_v4_annotation_pack/own_colony_val_002/images/ownval002_003357_t0055.932.jpg",
+      "image_sha256": "034b585f2e62e59724db8645a4ac180e979a77fa7b09e939bcb2da4dd5841c76",
+      "source_frame_index": 3357,
+      "source_video_sha256": "02ecfaf7a26865b6629f49756de3f3e558e0419f97b1404b8f094577dccc731e",
+      "split": "test",
+      "temporal_bin": 19,
+      "timestamp_seconds": 55.93176877661634,
+      "verified_zero_adult": false
+    },
+    {
+      "annotation_count": 1,
+      "annotations_yolo": [
+        [
+          0.0,
+          0.5486111111,
+          0.8248697917,
+          0.0231481481,
+          0.0481770833
+        ]
+      ],
+      "filename": "ownval002_003530_t0058.814.jpg",
+      "image_path": "datasets/ants_v4_annotation_pack/own_colony_val_002/images/ownval002_003530_t0058.814.jpg",
+      "image_sha256": "98e7d2068e6acea1df48c602a6aef80b96cd4c3c1a73ee8c56f099d7ab475bf7",
+      "source_frame_index": 3530,
+      "source_video_sha256": "02ecfaf7a26865b6629f49756de3f3e558e0419f97b1404b8f094577dccc731e",
+      "split": "test",
+      "temporal_bin": 20,
+      "timestamp_seconds": 58.814162580117866,
+      "verified_zero_adult": false
+    },
+    {
+      "annotation_count": 1,
+      "annotations_yolo": [
+        [
+          0.0,
+          0.0358796296,
+          0.736328125,
+          0.0717592593,
+          0.0403645833
+        ]
+      ],
+      "filename": "ownval002_003702_t0061.680.jpg",
+      "image_path": "datasets/ants_v4_annotation_pack/own_colony_val_002/images/ownval002_003702_t0061.680.jpg",
+      "image_sha256": "6948e82de34a682261d7c4d667236de5344fa13408fd2f12fa3585059222a175",
+      "source_frame_index": 3702,
+      "source_video_sha256": "02ecfaf7a26865b6629f49756de3f3e558e0419f97b1404b8f094577dccc731e",
+      "split": "test",
+      "temporal_bin": 21,
+      "timestamp_seconds": 61.679895147761,
+      "verified_zero_adult": false
+    },
+    {
+      "annotation_count": 1,
+      "annotations_yolo": [
+        [
+          0.0,
+          0.4849537037,
+          0.8053385417,
+          0.0763888889,
+          0.0325520833
+        ]
+      ],
+      "filename": "ownval002_003874_t0064.546.jpg",
+      "image_path": "datasets/ants_v4_annotation_pack/own_colony_val_002/images/ownval002_003874_t0064.546.jpg",
+      "image_sha256": "0d442788e9184eb9f00519b604c528f60908b443300e96ec3fc4a586ecfbb283",
+      "source_frame_index": 3874,
+      "source_video_sha256": "02ecfaf7a26865b6629f49756de3f3e558e0419f97b1404b8f094577dccc731e",
+      "split": "test",
+      "temporal_bin": 22,
+      "timestamp_seconds": 64.54562771540414,
+      "verified_zero_adult": false
+    },
+    {
+      "annotation_count": 1,
+      "annotations_yolo": [
+        [
+          0.0,
+          0.974537037,
+          0.7838541667,
+          0.0277777778,
+          0.0572916667
+        ]
+      ],
+      "filename": "ownval002_004046_t0067.411.jpg",
+      "image_path": "datasets/ants_v4_annotation_pack/own_colony_val_002/images/ownval002_004046_t0067.411.jpg",
+      "image_sha256": "3190d7803cc89361c0a3090639e024e42c231fbf857567c6c3dd9c9f56b39c15",
+      "source_frame_index": 4046,
+      "source_video_sha256": "02ecfaf7a26865b6629f49756de3f3e558e0419f97b1404b8f094577dccc731e",
+      "split": "test",
+      "temporal_bin": 23,
+      "timestamp_seconds": 67.41136028304727,
+      "verified_zero_adult": false
+    },
+    {
+      "annotation_count": 1,
+      "annotations_yolo": [
+        [
+          0.0,
+          0.7847222222,
+          0.3001302083,
+          0.0462962963,
+          0.0377604167
+        ]
+      ],
+      "filename": "ownval002_004218_t0070.277.jpg",
+      "image_path": "datasets/ants_v4_annotation_pack/own_colony_val_002/images/ownval002_004218_t0070.277.jpg",
+      "image_sha256": "ac7ba7260c2e0a6ef88b4e848b20b75291417ba0d62908f6b5f1492c7fa51583",
+      "source_frame_index": 4218,
+      "source_video_sha256": "02ecfaf7a26865b6629f49756de3f3e558e0419f97b1404b8f094577dccc731e",
+      "split": "test",
+      "temporal_bin": 24,
+      "timestamp_seconds": 70.27709285069041,
+      "verified_zero_adult": false
+    },
+    {
+      "annotation_count": 1,
+      "annotations_yolo": [
+        [
+          0.0,
+          0.443287037,
+          0.2200520833,
+          0.0763888889,
+          0.0182291667
+        ]
+      ],
+      "filename": "ownval002_004390_t0073.143.jpg",
+      "image_path": "datasets/ants_v4_annotation_pack/own_colony_val_002/images/ownval002_004390_t0073.143.jpg",
+      "image_sha256": "775acdc319490377aceb0fb841a65000071a2735f487fa781892497505b37569",
+      "source_frame_index": 4390,
+      "source_video_sha256": "02ecfaf7a26865b6629f49756de3f3e558e0419f97b1404b8f094577dccc731e",
+      "split": "test",
+      "temporal_bin": 25,
+      "timestamp_seconds": 73.14282541833354,
+      "verified_zero_adult": false
+    },
+    {
+      "annotation_count": 1,
+      "annotations_yolo": [
+        [
+          0.0,
+          0.7280092593,
+          0.2467447917,
+          0.0856481481,
+          0.0221354167
+        ]
+      ],
+      "filename": "ownval002_004562_t0076.009.jpg",
+      "image_path": "datasets/ants_v4_annotation_pack/own_colony_val_002/images/ownval002_004562_t0076.009.jpg",
+      "image_sha256": "f3002bdcde48883c9d1d2075d35feb014c91a1336db4a9983649fea8b6194dc2",
+      "source_frame_index": 4562,
+      "source_video_sha256": "02ecfaf7a26865b6629f49756de3f3e558e0419f97b1404b8f094577dccc731e",
+      "split": "test",
+      "temporal_bin": 26,
+      "timestamp_seconds": 76.00855798597668,
+      "verified_zero_adult": false
+    },
+    {
+      "annotation_count": 1,
+      "annotations_yolo": [
+        [
+          0.0,
+          0.6377314815,
+          0.8151041667,
+          0.0532407407,
+          0.0651041667
+        ]
+      ],
+      "filename": "ownval002_004734_t0078.874.jpg",
+      "image_path": "datasets/ants_v4_annotation_pack/own_colony_val_002/images/ownval002_004734_t0078.874.jpg",
+      "image_sha256": "f477a0f189d56ed7ab438bc370c01e132cc753aa6c11409505e8c2af049e3f40",
+      "source_frame_index": 4734,
+      "source_video_sha256": "02ecfaf7a26865b6629f49756de3f3e558e0419f97b1404b8f094577dccc731e",
+      "split": "test",
+      "temporal_bin": 27,
+      "timestamp_seconds": 78.87429055361982,
+      "verified_zero_adult": false
+    },
+    {
+      "annotation_count": 1,
+      "annotations_yolo": [
+        [
+          0.0,
+          0.5347222222,
+          0.806640625,
+          0.0694444444,
+          0.0299479167
+        ]
+      ],
+      "filename": "ownval002_004906_t0081.740.jpg",
+      "image_path": "datasets/ants_v4_annotation_pack/own_colony_val_002/images/ownval002_004906_t0081.740.jpg",
+      "image_sha256": "0661385d11c55491cfb2a5fe96cd90ad299d505f1d2d12af4491d7404dfa1fd9",
+      "source_frame_index": 4906,
+      "source_video_sha256": "02ecfaf7a26865b6629f49756de3f3e558e0419f97b1404b8f094577dccc731e",
+      "split": "test",
+      "temporal_bin": 28,
+      "timestamp_seconds": 81.74002312126296,
+      "verified_zero_adult": false
+    },
+    {
+      "annotation_count": 1,
+      "annotations_yolo": [
+        [
+          0.0,
+          0.1412037037,
+          0.6484375,
+          0.0694444444,
+          0.0286458333
+        ]
+      ],
+      "filename": "ownval002_005079_t0084.622.jpg",
+      "image_path": "datasets/ants_v4_annotation_pack/own_colony_val_002/images/ownval002_005079_t0084.622.jpg",
+      "image_sha256": "2e380c832374a22cd828820421485ec2bd3006391c1a1a73238cc832467d423a",
+      "source_frame_index": 5079,
+      "source_video_sha256": "02ecfaf7a26865b6629f49756de3f3e558e0419f97b1404b8f094577dccc731e",
+      "split": "test",
+      "temporal_bin": 29,
+      "timestamp_seconds": 84.62241692476448,
+      "verified_zero_adult": false
+    }
+  ],
+  "hash_inputs": {
+    "annotation_content": [
+      {
+        "annotation_count": 1,
+        "annotations_yolo": [
+          [
+            0.0,
+            0.7233796296,
+            0.4576822917,
+            0.0486111111,
+            0.0455729167
+          ]
+        ],
+        "filename": "ownval002_000086_t0001.433.jpg"
+      },
+      {
+        "annotation_count": 1,
+        "annotations_yolo": [
+          [
+            0.0,
+            0.7199074074,
+            0.4557291667,
+            0.0462962963,
+            0.0494791667
+          ]
+        ],
+        "filename": "ownval002_000258_t0004.299.jpg"
+      },
+      {
+        "annotation_count": 1,
+        "annotations_yolo": [
+          [
+            0.0,
+            0.5381944444,
+            0.3313802083,
+            0.0625,
+            0.0377604167
+          ]
+        ],
+        "filename": "ownval002_000430_t0007.164.jpg"
+      },
+      {
+        "annotation_count": 1,
+        "annotations_yolo": [
+          [
+            0.0,
+            0.1377314815,
+            0.3704427083,
+            0.0625,
+            0.05078125
+          ]
+        ],
+        "filename": "ownval002_000602_t0010.030.jpg"
+      },
+      {
+        "annotation_count": 1,
+        "annotations_yolo": [
+          [
+            0.0,
+            0.1226851852,
+            0.7415364583,
+            0.0462962963,
+            0.0377604167
+          ]
+        ],
+        "filename": "ownval002_000774_t0012.896.jpg"
+      },
+      {
+        "annotation_count": 1,
+        "annotations_yolo": [
+          [
+            0.0,
+            0.9525462963,
+            0.587890625,
+            0.0347222222,
+            0.05078125
+          ]
+        ],
+        "filename": "ownval002_000946_t0015.762.jpg"
+      },
+      {
+        "annotation_count": 1,
+        "annotations_yolo": [
+          [
+            0.0,
+            0.2511574074,
+            0.3450520833,
+            0.0810185185,
+            0.0234375
+          ]
+        ],
+        "filename": "ownval002_001118_t0018.627.jpg"
+      },
+      {
+        "annotation_count": 1,
+        "annotations_yolo": [
+          [
+            0.0,
+            0.0983796296,
+            0.6197916667,
+            0.0578703704,
+            0.0494791667
+          ]
+        ],
+        "filename": "ownval002_001290_t0021.493.jpg"
+      },
+      {
+        "annotation_count": 1,
+        "annotations_yolo": [
+          [
+            0.0,
+            0.0196759259,
+            0.4368489583,
+            0.0393518519,
+            0.04296875
+          ]
+        ],
+        "filename": "ownval002_001462_t0024.359.jpg"
+      },
+      {
+        "annotation_count": 1,
+        "annotations_yolo": [
+          [
+            0.0,
+            0.1875,
+            0.1907552083,
+            0.0740740741,
+            0.02734375
+          ]
+        ],
+        "filename": "ownval002_001635_t0027.241.jpg"
+      },
+      {
+        "annotation_count": 1,
+        "annotations_yolo": [
+          [
+            0.0,
+            0.9479166667,
+            0.4368489583,
+            0.0393518519,
+            0.0481770833
+          ]
+        ],
+        "filename": "ownval002_001808_t0030.124.jpg"
+      },
+      {
+        "annotation_count": 1,
+        "annotations_yolo": [
+          [
+            0.0,
+            0.2013888889,
+            0.3743489583,
+            0.0740740741,
+            0.0325520833
+          ]
+        ],
+        "filename": "ownval002_001980_t0032.989.jpg"
+      },
+      {
+        "annotation_count": 0,
+        "annotations_yolo": [],
+        "filename": "ownval002_002152_t0035.855.jpg"
+      },
+      {
+        "annotation_count": 1,
+        "annotations_yolo": [
+          [
+            0.0,
+            0.7025462963,
+            0.3365885417,
+            0.0671296296,
+            0.03515625
+          ]
+        ],
+        "filename": "ownval002_002324_t0038.721.jpg"
+      },
+      {
+        "annotation_count": 1,
+        "annotations_yolo": [
+          [
+            0.0,
+            0.8472222222,
+            0.701171875,
+            0.0648148148,
+            0.0403645833
+          ]
+        ],
+        "filename": "ownval002_002496_t0041.586.jpg"
+      },
+      {
+        "annotation_count": 1,
+        "annotations_yolo": [
+          [
+            0.0,
+            0.0185185185,
+            0.7096354167,
+            0.037037037,
+            0.03125
+          ]
+        ],
+        "filename": "ownval002_002668_t0044.452.jpg"
+      },
+      {
+        "annotation_count": 1,
+        "annotations_yolo": [
+          [
+            0.0,
+            0.0798611111,
+            0.421875,
+            0.0439814815,
+            0.0572916667
+          ]
+        ],
+        "filename": "ownval002_002840_t0047.318.jpg"
+      },
+      {
+        "annotation_count": 1,
+        "annotations_yolo": [
+          [
+            0.0,
+            0.150462963,
+            0.380859375,
+            0.0787037037,
+            0.0325520833
+          ]
+        ],
+        "filename": "ownval002_003012_t0050.184.jpg"
+      },
+      {
+        "annotation_count": 1,
+        "annotations_yolo": [
+          [
+            0.0,
+            0.6863425926,
+            0.2962239583,
+            0.0532407407,
+            0.0455729167
+          ]
+        ],
+        "filename": "ownval002_003184_t0053.049.jpg"
+      },
+      {
+        "annotation_count": 1,
+        "annotations_yolo": [
+          [
+            0.0,
+            0.9166666667,
+            0.400390625,
+            0.0509259259,
+            0.0403645833
+          ]
+        ],
+        "filename": "ownval002_003357_t0055.932.jpg"
+      },
+      {
+        "annotation_count": 1,
+        "annotations_yolo": [
+          [
+            0.0,
+            0.5486111111,
+            0.8248697917,
+            0.0231481481,
+            0.0481770833
+          ]
+        ],
+        "filename": "ownval002_003530_t0058.814.jpg"
+      },
+      {
+        "annotation_count": 1,
+        "annotations_yolo": [
+          [
+            0.0,
+            0.0358796296,
+            0.736328125,
+            0.0717592593,
+            0.0403645833
+          ]
+        ],
+        "filename": "ownval002_003702_t0061.680.jpg"
+      },
+      {
+        "annotation_count": 1,
+        "annotations_yolo": [
+          [
+            0.0,
+            0.4849537037,
+            0.8053385417,
+            0.0763888889,
+            0.0325520833
+          ]
+        ],
+        "filename": "ownval002_003874_t0064.546.jpg"
+      },
+      {
+        "annotation_count": 1,
+        "annotations_yolo": [
+          [
+            0.0,
+            0.974537037,
+            0.7838541667,
+            0.0277777778,
+            0.0572916667
+          ]
+        ],
+        "filename": "ownval002_004046_t0067.411.jpg"
+      },
+      {
+        "annotation_count": 1,
+        "annotations_yolo": [
+          [
+            0.0,
+            0.7847222222,
+            0.3001302083,
+            0.0462962963,
+            0.0377604167
+          ]
+        ],
+        "filename": "ownval002_004218_t0070.277.jpg"
+      },
+      {
+        "annotation_count": 1,
+        "annotations_yolo": [
+          [
+            0.0,
+            0.443287037,
+            0.2200520833,
+            0.0763888889,
+            0.0182291667
+          ]
+        ],
+        "filename": "ownval002_004390_t0073.143.jpg"
+      },
+      {
+        "annotation_count": 1,
+        "annotations_yolo": [
+          [
+            0.0,
+            0.7280092593,
+            0.2467447917,
+            0.0856481481,
+            0.0221354167
+          ]
+        ],
+        "filename": "ownval002_004562_t0076.009.jpg"
+      },
+      {
+        "annotation_count": 1,
+        "annotations_yolo": [
+          [
+            0.0,
+            0.6377314815,
+            0.8151041667,
+            0.0532407407,
+            0.0651041667
+          ]
+        ],
+        "filename": "ownval002_004734_t0078.874.jpg"
+      },
+      {
+        "annotation_count": 1,
+        "annotations_yolo": [
+          [
+            0.0,
+            0.5347222222,
+            0.806640625,
+            0.0694444444,
+            0.0299479167
+          ]
+        ],
+        "filename": "ownval002_004906_t0081.740.jpg"
+      },
+      {
+        "annotation_count": 1,
+        "annotations_yolo": [
+          [
+            0.0,
+            0.1412037037,
+            0.6484375,
+            0.0694444444,
+            0.0286458333
+          ]
+        ],
+        "filename": "ownval002_005079_t0084.622.jpg"
+      }
+    ],
+    "combined_content": [
+      {
+        "annotation_count": 1,
+        "annotations_yolo": [
+          [
+            0.0,
+            0.7233796296,
+            0.4576822917,
+            0.0486111111,
+            0.0455729167
+          ]
+        ],
+        "filename": "ownval002_000086_t0001.433.jpg",
+        "image_sha256": "9c4d58ade7286a1cdf9b953d2e7b5cf02bb1f67ba042e3e2aba686b3cbf3dace",
+        "source_frame_index": 86,
+        "source_video_sha256": "02ecfaf7a26865b6629f49756de3f3e558e0419f97b1404b8f094577dccc731e",
+        "split": "test",
+        "timestamp_seconds": 1.432866284,
+        "verified_zero_adult": false
+      },
+      {
+        "annotation_count": 1,
+        "annotations_yolo": [
+          [
+            0.0,
+            0.7199074074,
+            0.4557291667,
+            0.0462962963,
+            0.0494791667
+          ]
+        ],
+        "filename": "ownval002_000258_t0004.299.jpg",
+        "image_sha256": "198ec67f4e10808739ff657c53ac1104a1121a1ecfe19e3aa48755b8817270a1",
+        "source_frame_index": 258,
+        "source_video_sha256": "02ecfaf7a26865b6629f49756de3f3e558e0419f97b1404b8f094577dccc731e",
+        "split": "test",
+        "timestamp_seconds": 4.298598851,
+        "verified_zero_adult": false
+      },
+      {
+        "annotation_count": 1,
+        "annotations_yolo": [
+          [
+            0.0,
+            0.5381944444,
+            0.3313802083,
+            0.0625,
+            0.0377604167
+          ]
+        ],
+        "filename": "ownval002_000430_t0007.164.jpg",
+        "image_sha256": "6b5bd24bc91dcdc02b25d36c2c97e09f903c40daa1e86dcad9847ca0e3e426e2",
+        "source_frame_index": 430,
+        "source_video_sha256": "02ecfaf7a26865b6629f49756de3f3e558e0419f97b1404b8f094577dccc731e",
+        "split": "test",
+        "timestamp_seconds": 7.164331419,
+        "verified_zero_adult": false
+      },
+      {
+        "annotation_count": 1,
+        "annotations_yolo": [
+          [
+            0.0,
+            0.1377314815,
+            0.3704427083,
+            0.0625,
+            0.05078125
+          ]
+        ],
+        "filename": "ownval002_000602_t0010.030.jpg",
+        "image_sha256": "cc0c7e8d2e85d1c98720036ef6663f7767030ccc349a6b19cab0438cc62a46e0",
+        "source_frame_index": 602,
+        "source_video_sha256": "02ecfaf7a26865b6629f49756de3f3e558e0419f97b1404b8f094577dccc731e",
+        "split": "test",
+        "timestamp_seconds": 10.030063987,
+        "verified_zero_adult": false
+      },
+      {
+        "annotation_count": 1,
+        "annotations_yolo": [
+          [
+            0.0,
+            0.1226851852,
+            0.7415364583,
+            0.0462962963,
+            0.0377604167
+          ]
+        ],
+        "filename": "ownval002_000774_t0012.896.jpg",
+        "image_sha256": "74c1ce76f2d43f1fd89c678e8853b40228c11fd96e52bb3335e526ccea3421f8",
+        "source_frame_index": 774,
+        "source_video_sha256": "02ecfaf7a26865b6629f49756de3f3e558e0419f97b1404b8f094577dccc731e",
+        "split": "test",
+        "timestamp_seconds": 12.895796554,
+        "verified_zero_adult": false
+      },
+      {
+        "annotation_count": 1,
+        "annotations_yolo": [
+          [
+            0.0,
+            0.9525462963,
+            0.587890625,
+            0.0347222222,
+            0.05078125
+          ]
+        ],
+        "filename": "ownval002_000946_t0015.762.jpg",
+        "image_sha256": "4ecb0eed90f195037a7a98d63529e85d4e70b68a3160f1605d724b11f59e9f2e",
+        "source_frame_index": 946,
+        "source_video_sha256": "02ecfaf7a26865b6629f49756de3f3e558e0419f97b1404b8f094577dccc731e",
+        "split": "test",
+        "timestamp_seconds": 15.761529122,
+        "verified_zero_adult": false
+      },
+      {
+        "annotation_count": 1,
+        "annotations_yolo": [
+          [
+            0.0,
+            0.2511574074,
+            0.3450520833,
+            0.0810185185,
+            0.0234375
+          ]
+        ],
+        "filename": "ownval002_001118_t0018.627.jpg",
+        "image_sha256": "61aed4f03880f2d4073e67f22b1e96f1843719332654d1a74233da8bb7c8d199",
+        "source_frame_index": 1118,
+        "source_video_sha256": "02ecfaf7a26865b6629f49756de3f3e558e0419f97b1404b8f094577dccc731e",
+        "split": "test",
+        "timestamp_seconds": 18.62726169,
+        "verified_zero_adult": false
+      },
+      {
+        "annotation_count": 1,
+        "annotations_yolo": [
+          [
+            0.0,
+            0.0983796296,
+            0.6197916667,
+            0.0578703704,
+            0.0494791667
+          ]
+        ],
+        "filename": "ownval002_001290_t0021.493.jpg",
+        "image_sha256": "9aefb2f8ed708386684190db5e9b364384e3f52d84b47dc008c5ddb47b7d1903",
+        "source_frame_index": 1290,
+        "source_video_sha256": "02ecfaf7a26865b6629f49756de3f3e558e0419f97b1404b8f094577dccc731e",
+        "split": "test",
+        "timestamp_seconds": 21.492994257,
+        "verified_zero_adult": false
+      },
+      {
+        "annotation_count": 1,
+        "annotations_yolo": [
+          [
+            0.0,
+            0.0196759259,
+            0.4368489583,
+            0.0393518519,
+            0.04296875
+          ]
+        ],
+        "filename": "ownval002_001462_t0024.359.jpg",
+        "image_sha256": "244cc242f318eb2de0155b91bc0451abda0886a9dfd5c256bab041cf5a6b8fc2",
+        "source_frame_index": 1462,
+        "source_video_sha256": "02ecfaf7a26865b6629f49756de3f3e558e0419f97b1404b8f094577dccc731e",
+        "split": "test",
+        "timestamp_seconds": 24.358726825,
+        "verified_zero_adult": false
+      },
+      {
+        "annotation_count": 1,
+        "annotations_yolo": [
+          [
+            0.0,
+            0.1875,
+            0.1907552083,
+            0.0740740741,
+            0.02734375
+          ]
+        ],
+        "filename": "ownval002_001635_t0027.241.jpg",
+        "image_sha256": "653a4f165812f0a130268b5566e3e66aa49952d8c8c8422396d7d7bfa7be88a1",
+        "source_frame_index": 1635,
+        "source_video_sha256": "02ecfaf7a26865b6629f49756de3f3e558e0419f97b1404b8f094577dccc731e",
+        "split": "test",
+        "timestamp_seconds": 27.241120628,
+        "verified_zero_adult": false
+      },
+      {
+        "annotation_count": 1,
+        "annotations_yolo": [
+          [
+            0.0,
+            0.9479166667,
+            0.4368489583,
+            0.0393518519,
+            0.0481770833
+          ]
+        ],
+        "filename": "ownval002_001808_t0030.124.jpg",
+        "image_sha256": "33ed789419898b4453c8ae09bb208f3634377b484b7ad91940ffd4381208280f",
+        "source_frame_index": 1808,
+        "source_video_sha256": "02ecfaf7a26865b6629f49756de3f3e558e0419f97b1404b8f094577dccc731e",
+        "split": "test",
+        "timestamp_seconds": 30.123514432,
+        "verified_zero_adult": false
+      },
+      {
+        "annotation_count": 1,
+        "annotations_yolo": [
+          [
+            0.0,
+            0.2013888889,
+            0.3743489583,
+            0.0740740741,
+            0.0325520833
+          ]
+        ],
+        "filename": "ownval002_001980_t0032.989.jpg",
+        "image_sha256": "e2d645d31904280052d9e6e5e901a578b592274991955599f954223a07ff9bba",
+        "source_frame_index": 1980,
+        "source_video_sha256": "02ecfaf7a26865b6629f49756de3f3e558e0419f97b1404b8f094577dccc731e",
+        "split": "test",
+        "timestamp_seconds": 32.989247,
+        "verified_zero_adult": false
+      },
+      {
+        "annotation_count": 0,
+        "annotations_yolo": [],
+        "filename": "ownval002_002152_t0035.855.jpg",
+        "image_sha256": "ee1fc0c03689f55ed15ef022ac6c4b56d09b7826a33a758f2e761f97cdf47e8d",
+        "source_frame_index": 2152,
+        "source_video_sha256": "02ecfaf7a26865b6629f49756de3f3e558e0419f97b1404b8f094577dccc731e",
+        "split": "test",
+        "timestamp_seconds": 35.854979567,
+        "verified_zero_adult": true
+      },
+      {
+        "annotation_count": 1,
+        "annotations_yolo": [
+          [
+            0.0,
+            0.7025462963,
+            0.3365885417,
+            0.0671296296,
+            0.03515625
+          ]
+        ],
+        "filename": "ownval002_002324_t0038.721.jpg",
+        "image_sha256": "9e9fd8d2072156c400ee21963eb75c43ebdb182515a2dd9452b0992da2425cea",
+        "source_frame_index": 2324,
+        "source_video_sha256": "02ecfaf7a26865b6629f49756de3f3e558e0419f97b1404b8f094577dccc731e",
+        "split": "test",
+        "timestamp_seconds": 38.720712135,
+        "verified_zero_adult": false
+      },
+      {
+        "annotation_count": 1,
+        "annotations_yolo": [
+          [
+            0.0,
+            0.8472222222,
+            0.701171875,
+            0.0648148148,
+            0.0403645833
+          ]
+        ],
+        "filename": "ownval002_002496_t0041.586.jpg",
+        "image_sha256": "20e712e24d0088672de54de4379ed518d2cd94426fbe24d6863b27d5f3b52b4c",
+        "source_frame_index": 2496,
+        "source_video_sha256": "02ecfaf7a26865b6629f49756de3f3e558e0419f97b1404b8f094577dccc731e",
+        "split": "test",
+        "timestamp_seconds": 41.586444703,
+        "verified_zero_adult": false
+      },
+      {
+        "annotation_count": 1,
+        "annotations_yolo": [
+          [
+            0.0,
+            0.0185185185,
+            0.7096354167,
+            0.037037037,
+            0.03125
+          ]
+        ],
+        "filename": "ownval002_002668_t0044.452.jpg",
+        "image_sha256": "b1bf023c15e39bf47e22342206351894f41229f8ea0b42194a8685e7f65f2931",
+        "source_frame_index": 2668,
+        "source_video_sha256": "02ecfaf7a26865b6629f49756de3f3e558e0419f97b1404b8f094577dccc731e",
+        "split": "test",
+        "timestamp_seconds": 44.45217727,
+        "verified_zero_adult": false
+      },
+      {
+        "annotation_count": 1,
+        "annotations_yolo": [
+          [
+            0.0,
+            0.0798611111,
+            0.421875,
+            0.0439814815,
+            0.0572916667
+          ]
+        ],
+        "filename": "ownval002_002840_t0047.318.jpg",
+        "image_sha256": "b2566aa1eb567d5e72eeccb865567c92997b843399d3b2ad9cb5b537eb4b91ec",
+        "source_frame_index": 2840,
+        "source_video_sha256": "02ecfaf7a26865b6629f49756de3f3e558e0419f97b1404b8f094577dccc731e",
+        "split": "test",
+        "timestamp_seconds": 47.317909838,
+        "verified_zero_adult": false
+      },
+      {
+        "annotation_count": 1,
+        "annotations_yolo": [
+          [
+            0.0,
+            0.150462963,
+            0.380859375,
+            0.0787037037,
+            0.0325520833
+          ]
+        ],
+        "filename": "ownval002_003012_t0050.184.jpg",
+        "image_sha256": "56714536525c9f7de27f438a8e2503e135a4030ce08edf0eb9dd3a3929aa019b",
+        "source_frame_index": 3012,
+        "source_video_sha256": "02ecfaf7a26865b6629f49756de3f3e558e0419f97b1404b8f094577dccc731e",
+        "split": "test",
+        "timestamp_seconds": 50.183642405,
+        "verified_zero_adult": false
+      },
+      {
+        "annotation_count": 1,
+        "annotations_yolo": [
+          [
+            0.0,
+            0.6863425926,
+            0.2962239583,
+            0.0532407407,
+            0.0455729167
+          ]
+        ],
+        "filename": "ownval002_003184_t0053.049.jpg",
+        "image_sha256": "1aa40e3155d102e837614092ea03a1e7ea12141da2c9ae985cded30be22d57d7",
+        "source_frame_index": 3184,
+        "source_video_sha256": "02ecfaf7a26865b6629f49756de3f3e558e0419f97b1404b8f094577dccc731e",
+        "split": "test",
+        "timestamp_seconds": 53.049374973,
+        "verified_zero_adult": false
+      },
+      {
+        "annotation_count": 1,
+        "annotations_yolo": [
+          [
+            0.0,
+            0.9166666667,
+            0.400390625,
+            0.0509259259,
+            0.0403645833
+          ]
+        ],
+        "filename": "ownval002_003357_t0055.932.jpg",
+        "image_sha256": "034b585f2e62e59724db8645a4ac180e979a77fa7b09e939bcb2da4dd5841c76",
+        "source_frame_index": 3357,
+        "source_video_sha256": "02ecfaf7a26865b6629f49756de3f3e558e0419f97b1404b8f094577dccc731e",
+        "split": "test",
+        "timestamp_seconds": 55.931768777,
+        "verified_zero_adult": false
+      },
+      {
+        "annotation_count": 1,
+        "annotations_yolo": [
+          [
+            0.0,
+            0.5486111111,
+            0.8248697917,
+            0.0231481481,
+            0.0481770833
+          ]
+        ],
+        "filename": "ownval002_003530_t0058.814.jpg",
+        "image_sha256": "98e7d2068e6acea1df48c602a6aef80b96cd4c3c1a73ee8c56f099d7ab475bf7",
+        "source_frame_index": 3530,
+        "source_video_sha256": "02ecfaf7a26865b6629f49756de3f3e558e0419f97b1404b8f094577dccc731e",
+        "split": "test",
+        "timestamp_seconds": 58.81416258,
+        "verified_zero_adult": false
+      },
+      {
+        "annotation_count": 1,
+        "annotations_yolo": [
+          [
+            0.0,
+            0.0358796296,
+            0.736328125,
+            0.0717592593,
+            0.0403645833
+          ]
+        ],
+        "filename": "ownval002_003702_t0061.680.jpg",
+        "image_sha256": "6948e82de34a682261d7c4d667236de5344fa13408fd2f12fa3585059222a175",
+        "source_frame_index": 3702,
+        "source_video_sha256": "02ecfaf7a26865b6629f49756de3f3e558e0419f97b1404b8f094577dccc731e",
+        "split": "test",
+        "timestamp_seconds": 61.679895148,
+        "verified_zero_adult": false
+      },
+      {
+        "annotation_count": 1,
+        "annotations_yolo": [
+          [
+            0.0,
+            0.4849537037,
+            0.8053385417,
+            0.0763888889,
+            0.0325520833
+          ]
+        ],
+        "filename": "ownval002_003874_t0064.546.jpg",
+        "image_sha256": "0d442788e9184eb9f00519b604c528f60908b443300e96ec3fc4a586ecfbb283",
+        "source_frame_index": 3874,
+        "source_video_sha256": "02ecfaf7a26865b6629f49756de3f3e558e0419f97b1404b8f094577dccc731e",
+        "split": "test",
+        "timestamp_seconds": 64.545627715,
+        "verified_zero_adult": false
+      },
+      {
+        "annotation_count": 1,
+        "annotations_yolo": [
+          [
+            0.0,
+            0.974537037,
+            0.7838541667,
+            0.0277777778,
+            0.0572916667
+          ]
+        ],
+        "filename": "ownval002_004046_t0067.411.jpg",
+        "image_sha256": "3190d7803cc89361c0a3090639e024e42c231fbf857567c6c3dd9c9f56b39c15",
+        "source_frame_index": 4046,
+        "source_video_sha256": "02ecfaf7a26865b6629f49756de3f3e558e0419f97b1404b8f094577dccc731e",
+        "split": "test",
+        "timestamp_seconds": 67.411360283,
+        "verified_zero_adult": false
+      },
+      {
+        "annotation_count": 1,
+        "annotations_yolo": [
+          [
+            0.0,
+            0.7847222222,
+            0.3001302083,
+            0.0462962963,
+            0.0377604167
+          ]
+        ],
+        "filename": "ownval002_004218_t0070.277.jpg",
+        "image_sha256": "ac7ba7260c2e0a6ef88b4e848b20b75291417ba0d62908f6b5f1492c7fa51583",
+        "source_frame_index": 4218,
+        "source_video_sha256": "02ecfaf7a26865b6629f49756de3f3e558e0419f97b1404b8f094577dccc731e",
+        "split": "test",
+        "timestamp_seconds": 70.277092851,
+        "verified_zero_adult": false
+      },
+      {
+        "annotation_count": 1,
+        "annotations_yolo": [
+          [
+            0.0,
+            0.443287037,
+            0.2200520833,
+            0.0763888889,
+            0.0182291667
+          ]
+        ],
+        "filename": "ownval002_004390_t0073.143.jpg",
+        "image_sha256": "775acdc319490377aceb0fb841a65000071a2735f487fa781892497505b37569",
+        "source_frame_index": 4390,
+        "source_video_sha256": "02ecfaf7a26865b6629f49756de3f3e558e0419f97b1404b8f094577dccc731e",
+        "split": "test",
+        "timestamp_seconds": 73.142825418,
+        "verified_zero_adult": false
+      },
+      {
+        "annotation_count": 1,
+        "annotations_yolo": [
+          [
+            0.0,
+            0.7280092593,
+            0.2467447917,
+            0.0856481481,
+            0.0221354167
+          ]
+        ],
+        "filename": "ownval002_004562_t0076.009.jpg",
+        "image_sha256": "f3002bdcde48883c9d1d2075d35feb014c91a1336db4a9983649fea8b6194dc2",
+        "source_frame_index": 4562,
+        "source_video_sha256": "02ecfaf7a26865b6629f49756de3f3e558e0419f97b1404b8f094577dccc731e",
+        "split": "test",
+        "timestamp_seconds": 76.008557986,
+        "verified_zero_adult": false
+      },
+      {
+        "annotation_count": 1,
+        "annotations_yolo": [
+          [
+            0.0,
+            0.6377314815,
+            0.8151041667,
+            0.0532407407,
+            0.0651041667
+          ]
+        ],
+        "filename": "ownval002_004734_t0078.874.jpg",
+        "image_sha256": "f477a0f189d56ed7ab438bc370c01e132cc753aa6c11409505e8c2af049e3f40",
+        "source_frame_index": 4734,
+        "source_video_sha256": "02ecfaf7a26865b6629f49756de3f3e558e0419f97b1404b8f094577dccc731e",
+        "split": "test",
+        "timestamp_seconds": 78.874290554,
+        "verified_zero_adult": false
+      },
+      {
+        "annotation_count": 1,
+        "annotations_yolo": [
+          [
+            0.0,
+            0.5347222222,
+            0.806640625,
+            0.0694444444,
+            0.0299479167
+          ]
+        ],
+        "filename": "ownval002_004906_t0081.740.jpg",
+        "image_sha256": "0661385d11c55491cfb2a5fe96cd90ad299d505f1d2d12af4491d7404dfa1fd9",
+        "source_frame_index": 4906,
+        "source_video_sha256": "02ecfaf7a26865b6629f49756de3f3e558e0419f97b1404b8f094577dccc731e",
+        "split": "test",
+        "timestamp_seconds": 81.740023121,
+        "verified_zero_adult": false
+      },
+      {
+        "annotation_count": 1,
+        "annotations_yolo": [
+          [
+            0.0,
+            0.1412037037,
+            0.6484375,
+            0.0694444444,
+            0.0286458333
+          ]
+        ],
+        "filename": "ownval002_005079_t0084.622.jpg",
+        "image_sha256": "2e380c832374a22cd828820421485ec2bd3006391c1a1a73238cc832467d423a",
+        "source_frame_index": 5079,
+        "source_video_sha256": "02ecfaf7a26865b6629f49756de3f3e558e0419f97b1404b8f094577dccc731e",
+        "split": "test",
+        "timestamp_seconds": 84.622416925,
+        "verified_zero_adult": false
+      }
+    ],
+    "image_content": [
+      {
+        "filename": "ownval002_000086_t0001.433.jpg",
+        "image_sha256": "9c4d58ade7286a1cdf9b953d2e7b5cf02bb1f67ba042e3e2aba686b3cbf3dace"
+      },
+      {
+        "filename": "ownval002_000258_t0004.299.jpg",
+        "image_sha256": "198ec67f4e10808739ff657c53ac1104a1121a1ecfe19e3aa48755b8817270a1"
+      },
+      {
+        "filename": "ownval002_000430_t0007.164.jpg",
+        "image_sha256": "6b5bd24bc91dcdc02b25d36c2c97e09f903c40daa1e86dcad9847ca0e3e426e2"
+      },
+      {
+        "filename": "ownval002_000602_t0010.030.jpg",
+        "image_sha256": "cc0c7e8d2e85d1c98720036ef6663f7767030ccc349a6b19cab0438cc62a46e0"
+      },
+      {
+        "filename": "ownval002_000774_t0012.896.jpg",
+        "image_sha256": "74c1ce76f2d43f1fd89c678e8853b40228c11fd96e52bb3335e526ccea3421f8"
+      },
+      {
+        "filename": "ownval002_000946_t0015.762.jpg",
+        "image_sha256": "4ecb0eed90f195037a7a98d63529e85d4e70b68a3160f1605d724b11f59e9f2e"
+      },
+      {
+        "filename": "ownval002_001118_t0018.627.jpg",
+        "image_sha256": "61aed4f03880f2d4073e67f22b1e96f1843719332654d1a74233da8bb7c8d199"
+      },
+      {
+        "filename": "ownval002_001290_t0021.493.jpg",
+        "image_sha256": "9aefb2f8ed708386684190db5e9b364384e3f52d84b47dc008c5ddb47b7d1903"
+      },
+      {
+        "filename": "ownval002_001462_t0024.359.jpg",
+        "image_sha256": "244cc242f318eb2de0155b91bc0451abda0886a9dfd5c256bab041cf5a6b8fc2"
+      },
+      {
+        "filename": "ownval002_001635_t0027.241.jpg",
+        "image_sha256": "653a4f165812f0a130268b5566e3e66aa49952d8c8c8422396d7d7bfa7be88a1"
+      },
+      {
+        "filename": "ownval002_001808_t0030.124.jpg",
+        "image_sha256": "33ed789419898b4453c8ae09bb208f3634377b484b7ad91940ffd4381208280f"
+      },
+      {
+        "filename": "ownval002_001980_t0032.989.jpg",
+        "image_sha256": "e2d645d31904280052d9e6e5e901a578b592274991955599f954223a07ff9bba"
+      },
+      {
+        "filename": "ownval002_002152_t0035.855.jpg",
+        "image_sha256": "ee1fc0c03689f55ed15ef022ac6c4b56d09b7826a33a758f2e761f97cdf47e8d"
+      },
+      {
+        "filename": "ownval002_002324_t0038.721.jpg",
+        "image_sha256": "9e9fd8d2072156c400ee21963eb75c43ebdb182515a2dd9452b0992da2425cea"
+      },
+      {
+        "filename": "ownval002_002496_t0041.586.jpg",
+        "image_sha256": "20e712e24d0088672de54de4379ed518d2cd94426fbe24d6863b27d5f3b52b4c"
+      },
+      {
+        "filename": "ownval002_002668_t0044.452.jpg",
+        "image_sha256": "b1bf023c15e39bf47e22342206351894f41229f8ea0b42194a8685e7f65f2931"
+      },
+      {
+        "filename": "ownval002_002840_t0047.318.jpg",
+        "image_sha256": "b2566aa1eb567d5e72eeccb865567c92997b843399d3b2ad9cb5b537eb4b91ec"
+      },
+      {
+        "filename": "ownval002_003012_t0050.184.jpg",
+        "image_sha256": "56714536525c9f7de27f438a8e2503e135a4030ce08edf0eb9dd3a3929aa019b"
+      },
+      {
+        "filename": "ownval002_003184_t0053.049.jpg",
+        "image_sha256": "1aa40e3155d102e837614092ea03a1e7ea12141da2c9ae985cded30be22d57d7"
+      },
+      {
+        "filename": "ownval002_003357_t0055.932.jpg",
+        "image_sha256": "034b585f2e62e59724db8645a4ac180e979a77fa7b09e939bcb2da4dd5841c76"
+      },
+      {
+        "filename": "ownval002_003530_t0058.814.jpg",
+        "image_sha256": "98e7d2068e6acea1df48c602a6aef80b96cd4c3c1a73ee8c56f099d7ab475bf7"
+      },
+      {
+        "filename": "ownval002_003702_t0061.680.jpg",
+        "image_sha256": "6948e82de34a682261d7c4d667236de5344fa13408fd2f12fa3585059222a175"
+      },
+      {
+        "filename": "ownval002_003874_t0064.546.jpg",
+        "image_sha256": "0d442788e9184eb9f00519b604c528f60908b443300e96ec3fc4a586ecfbb283"
+      },
+      {
+        "filename": "ownval002_004046_t0067.411.jpg",
+        "image_sha256": "3190d7803cc89361c0a3090639e024e42c231fbf857567c6c3dd9c9f56b39c15"
+      },
+      {
+        "filename": "ownval002_004218_t0070.277.jpg",
+        "image_sha256": "ac7ba7260c2e0a6ef88b4e848b20b75291417ba0d62908f6b5f1492c7fa51583"
+      },
+      {
+        "filename": "ownval002_004390_t0073.143.jpg",
+        "image_sha256": "775acdc319490377aceb0fb841a65000071a2735f487fa781892497505b37569"
+      },
+      {
+        "filename": "ownval002_004562_t0076.009.jpg",
+        "image_sha256": "f3002bdcde48883c9d1d2075d35feb014c91a1336db4a9983649fea8b6194dc2"
+      },
+      {
+        "filename": "ownval002_004734_t0078.874.jpg",
+        "image_sha256": "f477a0f189d56ed7ab438bc370c01e132cc753aa6c11409505e8c2af049e3f40"
+      },
+      {
+        "filename": "ownval002_004906_t0081.740.jpg",
+        "image_sha256": "0661385d11c55491cfb2a5fe96cd90ad299d505f1d2d12af4491d7404dfa1fd9"
+      },
+      {
+        "filename": "ownval002_005079_t0084.622.jpg",
+        "image_sha256": "2e380c832374a22cd828820421485ec2bd3006391c1a1a73238cc832467d423a"
+      }
+    ]
+  },
+  "role": "CLEAN_OWN_COLONY_HOLDOUT",
+  "schema_version": "1.0",
+  "source": "Roboflow manual annotation refresh for clean holdout own_colony_val_002",
+  "split": "test",
+  "train_eligible": false
+}

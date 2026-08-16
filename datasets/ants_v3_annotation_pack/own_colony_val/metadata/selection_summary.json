@@ -1,0 +1,79 @@
+{
+  "ant4": {
+    "exists": true,
+    "fileSizeBytes": 2346772,
+    "modifiedTimeLocal": "2026-08-07T01:11:32.988086",
+    "path": "C:\\Dev\\Ants\\samples\\ant4.mp4",
+    "sha256": "1f550cde40f1bfbb0cb3b513a43dd033d029e8a187fabc303e88a7c69e650d6f",
+    "status": "untouched_by_this_validation_pack_preparation"
+  },
+  "contactSheet": "artifacts/analysis/ants_v3_design/own_colony_validation/own_colony_val_contact_sheet.jpg",
+  "createdAtUtc": "2026-08-13T08:02:55.733327+00:00",
+  "experiment": "ants_v3_mixedscale_e01",
+  "leakageCheck": {
+    "passed": true,
+    "referenceOverlaps": [],
+    "selectedFrameDuplicateSha256": {}
+  },
+  "manifestCsv": "datasets/ants_v3_annotation_pack/own_colony_val/metadata/manifest.csv",
+  "manifestJsonl": "datasets/ants_v3_annotation_pack/own_colony_val/metadata/manifest.jsonl",
+  "noCommit": true,
+  "noLabelsGenerated": true,
+  "noModelInferencePerformed": true,
+  "noPseudoLabeling": true,
+  "noPush": true,
+  "noTrainingPerformed": true,
+  "referenceHashGroups": {
+    "ants_v2_train_val": {
+      "count": 215
+    },
+    "ants_v3_ant2_targeted_pack": {
+      "count": 69
+    },
+    "ants_v3_antsnet_pack": {
+      "count": 40
+    },
+    "ants_v3_hard_negative_review_candidates": {
+      "count": 12
+    },
+    "ants_v3_train_candidate_data": {
+      "count": 67
+    }
+  },
+  "schemaVersion": "1.0",
+  "selectedFrameHashUniqueness": {
+    "passed": true,
+    "selectedImageCount": 30,
+    "uniqueImageSha256Count": 30
+  },
+  "selectedVideo": {
+    "avgFrameRate": "54555000/908951",
+    "codec": "h264",
+    "codecLongName": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+    "durationSeconds": 121.193467,
+    "fileSizeBytes": 307393123,
+    "filename": "own_colony_val_001.mp4",
+    "fps": 60.01973703753008,
+    "frameCount": 7274,
+    "modifiedTimeLocal": "2026-08-13T01:58:46.627721",
+    "originalPath": "C:\\Dev\\Ants\\samples\\own_colony_val_001.mp4",
+    "pixFmt": "yuv420p",
+    "rFrameRate": "60/1",
+    "resolution": {
+      "height": 1080,
+      "width": 1920
+    },
+    "sha256": "8d5921d1af58d47ba2ce7c2c7fbaa06127ca7c8fe46c5de8d58e37188be13510"
+  },
+  "selection": {
+    "excludedInterval": null,
+    "excludedIntervalReason": "No intro/outro was excluded before selection; full video interval was treated as colony scene candidate.",
+    "replacedInitialCenterFrames": [],
+    "selectedFrames": 30,
+    "strategy": "temporal stratification over full usable video interval; 30 equal bins; initial center frame per bin",
+    "targetFrames": 30
+  },
+  "sourceMetadataPath": "datasets/ants_v3_design/own_colony_validation_source.json",
+  "sourceRole": "FROZEN_OWN_COLONY_VALIDATION_SOURCE",
+  "status": "PASS"
+}

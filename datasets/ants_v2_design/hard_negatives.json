@@ -1,0 +1,17 @@
+{
+  "needed": true,
+  "recommendation": "Add a small curated hard-negative set later, not during design.",
+  "candidateSources": [
+    "ANTS outdoor distractors",
+    "local ant3/ant4/nest videos after manual review"
+  ],
+  "distractors": [
+    "rocks",
+    "shadows",
+    "nest entrances",
+    "food",
+    "substrate",
+    "brood-like blobs"
+  ],
+  "doNotGenerateNow": true
+}

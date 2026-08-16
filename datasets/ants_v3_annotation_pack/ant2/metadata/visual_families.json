@@ -1,0 +1,345 @@
+{
+  "experiment": "ants_v3_mixedscale_e01",
+  "families": [
+    {
+      "dhash_distances_to_representative": {
+        "ant2_frame_000000_t0000-000_jpg.rf.6a638ed7ff141c5a131c28a222ae0f44.jpg": 7,
+        "ant2_frame_000014_t0000-467_jpg.rf.3c6b865d00726160687fc9fa9503bbec.jpg": 3,
+        "ant2_frame_000021_t0000-701_jpg.rf.66f848fdc841c4468c97684a14a0092d.jpg": 0,
+        "ant2_frame_000035_t0001-168_jpg.rf.ee6ea1d4bf4969594480c4a0b9cf155c.jpg": 1,
+        "ant2_frame_000042_t0001-401_jpg.rf.a36b5834a343fae7c6de92229d4dd626.jpg": 1
+      },
+      "family_id": "ant2_fam_01_initial_queen_brood",
+      "important_semantic_differences": [
+        "queen large and mostly fully visible",
+        "nearby small workers vary slightly",
+        "early brood/food/cotton context"
+      ],
+      "member_frames": [
+        0,
+        14,
+        21,
+        35,
+        42
+      ],
+      "members": [
+        "ant2_frame_000000_t0000-000_jpg.rf.6a638ed7ff141c5a131c28a222ae0f44.jpg",
+        "ant2_frame_000014_t0000-467_jpg.rf.3c6b865d00726160687fc9fa9503bbec.jpg",
+        "ant2_frame_000021_t0000-701_jpg.rf.66f848fdc841c4468c97684a14a0092d.jpg",
+        "ant2_frame_000035_t0001-168_jpg.rf.ee6ea1d4bf4969594480c4a0b9cf155c.jpg",
+        "ant2_frame_000042_t0001-401_jpg.rf.a36b5834a343fae7c6de92229d4dd626.jpg"
+      ],
+      "removed_frames": [
+        14,
+        35
+      ],
+      "removed_members": [
+        "ant2_frame_000014_t0000-467_jpg.rf.3c6b865d00726160687fc9fa9503bbec.jpg",
+        "ant2_frame_000035_t0001-168_jpg.rf.ee6ea1d4bf4969594480c4a0b9cf155c.jpg"
+      ],
+      "representative_frame": 21,
+      "representative_image": "ant2_frame_000021_t0000-701_jpg.rf.66f848fdc841c4468c97684a14a0092d.jpg",
+      "selected_frames": [
+        0,
+        21,
+        42
+      ],
+      "selected_members": [
+        "ant2_frame_000000_t0000-000_jpg.rf.6a638ed7ff141c5a131c28a222ae0f44.jpg",
+        "ant2_frame_000021_t0000-701_jpg.rf.66f848fdc841c4468c97684a14a0092d.jpg",
+        "ant2_frame_000042_t0001-401_jpg.rf.a36b5834a343fae7c6de92229d4dd626.jpg"
+      ],
+      "similarity_reason": "early close-up frames share the same queen pose, cotton, brood/food and background; retained only count/worker-position variants"
+    },
+    {
+      "dhash_distances_to_representative": {
+        "ant2_frame_000056_t0001-868_jpg.rf.1cbf90fa3fcd5c8f127389875fbad6c4.jpg": 6,
+        "ant2_frame_000070_t0002-336_jpg.rf.a88dc47647063e77374898fb2970caa1.jpg": 4,
+        "ant2_frame_000077_t0002-569_jpg.rf.7b2f20ff6a5212929d96537e27b81523.jpg": 3,
+        "ant2_frame_000091_t0003-036_jpg.rf.44cd5d3798ae8d537b116d49fac4f52e.jpg": 0,
+        "ant2_frame_000098_t0003-270_jpg.rf.68fc599f9ff29d6d0d6693b597aac668.jpg": 0,
+        "ant2_frame_000112_t0003-737_jpg.rf.adae2bf15862175313b8974d592d2459.jpg": 5
+      },
+      "family_id": "ant2_fam_02_queen_worker_transition",
+      "important_semantic_differences": [
+        "medium-to-large bbox scale bridge",
+        "workers farther from queen",
+        "queen orientation remains comparable but visible workers change"
+      ],
+      "member_frames": [
+        56,
+        70,
+        77,
+        91,
+        98,
+        112
+      ],
+      "members": [
+        "ant2_frame_000056_t0001-868_jpg.rf.1cbf90fa3fcd5c8f127389875fbad6c4.jpg",
+        "ant2_frame_000070_t0002-336_jpg.rf.a88dc47647063e77374898fb2970caa1.jpg",
+        "ant2_frame_000077_t0002-569_jpg.rf.7b2f20ff6a5212929d96537e27b81523.jpg",
+        "ant2_frame_000091_t0003-036_jpg.rf.44cd5d3798ae8d537b116d49fac4f52e.jpg",
+        "ant2_frame_000098_t0003-270_jpg.rf.68fc599f9ff29d6d0d6693b597aac668.jpg",
+        "ant2_frame_000112_t0003-737_jpg.rf.adae2bf15862175313b8974d592d2459.jpg"
+      ],
+      "removed_frames": [
+        70,
+        98
+      ],
+      "removed_members": [
+        "ant2_frame_000070_t0002-336_jpg.rf.a88dc47647063e77374898fb2970caa1.jpg",
+        "ant2_frame_000098_t0003-270_jpg.rf.68fc599f9ff29d6d0d6693b597aac668.jpg"
+      ],
+      "representative_frame": 91,
+      "representative_image": "ant2_frame_000091_t0003-036_jpg.rf.44cd5d3798ae8d537b116d49fac4f52e.jpg",
+      "selected_frames": [
+        56,
+        77,
+        91,
+        112
+      ],
+      "selected_members": [
+        "ant2_frame_000056_t0001-868_jpg.rf.1cbf90fa3fcd5c8f127389875fbad6c4.jpg",
+        "ant2_frame_000077_t0002-569_jpg.rf.7b2f20ff6a5212929d96537e27b81523.jpg",
+        "ant2_frame_000091_t0003-036_jpg.rf.44cd5d3798ae8d537b116d49fac4f52e.jpg",
+        "ant2_frame_000112_t0003-737_jpg.rf.adae2bf15862175313b8974d592d2459.jpg"
+      ],
+      "similarity_reason": "same queen region with gradual worker movement; retained temporal endpoints and scale/pose shifts"
+    },
+    {
+      "dhash_distances_to_representative": {
+        "ant2_frame_000126_t0004-204_jpg.rf.6b8da0815be50475e796ed91ea025b24.jpg": 9,
+        "ant2_frame_000133_t0004-438_jpg.rf.eb3ae7a968ce6e9eea48726402e856d3.jpg": 10,
+        "ant2_frame_000147_t0004-905_jpg.rf.36c30cce6d2e2c37164e8811c26dd0cb.jpg": 9,
+        "ant2_frame_000161_t0005-372_jpg.rf.466084ce20be5598a63ea1bbd0c520d2.jpg": 5,
+        "ant2_frame_000168_t0005-605_jpg.rf.afb9a3b34bfcf2cdbbdef7684c5e8cf4.jpg": 2,
+        "ant2_frame_000182_t0006-072_jpg.rf.1f1bf5ee0305e5595449b9740e90ae9e.jpg": 2,
+        "ant2_frame_000189_t0006-306_jpg.rf.5b13381c521daf6ba26755bcfba51678.jpg": 1,
+        "ant2_frame_000203_t0006-773_jpg.rf.4e6ae3f3247bedd2711775f00306d7a9.jpg": 0,
+        "ant2_frame_000217_t0007-240_jpg.rf.c65de929855eacd964ef2761c90c1322.jpg": 7,
+        "ant2_frame_000224_t0007-474_jpg.rf.3498aa79a5968f826e1dd63b5a3f0706.jpg": 6,
+        "ant2_frame_000238_t0007-941_jpg.rf.8bc910f58d0601d8d118a6ab93504bd3.jpg": 7,
+        "ant2_frame_000245_t0008-174_jpg.rf.432d1f28cda5b99ebf1bb7ac806ef9f5.jpg": 13,
+        "ant2_frame_000259_t0008-642_jpg.rf.a44dcc08b193958e74aca2369a095fd3.jpg": 20,
+        "ant2_frame_000273_t0009-109_jpg.rf.4b1c040decf46efa81e82e021672bd93.jpg": 20,
+        "ant2_frame_000280_t0009-342_jpg.rf.1a2d65cd4052cc07a0eedb5d92d32bee.jpg": 19
+      },
+      "family_id": "ant2_fam_03_queen_workers_brood_food",
+      "important_semantic_differences": [
+        "workers close to/touching queen",
+        "multiple adult counts from 3 to 6",
+        "brood/food distractors near adult ants",
+        "medium and large reference scale"
+      ],
+      "member_frames": [
+        126,
+        133,
+        147,
+        161,
+        168,
+        182,
+        189,
+        203,
+        217,
+        224,
+        238,
+        245,
+        259,
+        273,
+        280
+      ],
+      "members": [
+        "ant2_frame_000126_t0004-204_jpg.rf.6b8da0815be50475e796ed91ea025b24.jpg",
+        "ant2_frame_000133_t0004-438_jpg.rf.eb3ae7a968ce6e9eea48726402e856d3.jpg",
+        "ant2_frame_000147_t0004-905_jpg.rf.36c30cce6d2e2c37164e8811c26dd0cb.jpg",
+        "ant2_frame_000161_t0005-372_jpg.rf.466084ce20be5598a63ea1bbd0c520d2.jpg",
+        "ant2_frame_000168_t0005-605_jpg.rf.afb9a3b34bfcf2cdbbdef7684c5e8cf4.jpg",
+        "ant2_frame_000182_t0006-072_jpg.rf.1f1bf5ee0305e5595449b9740e90ae9e.jpg",
+        "ant2_frame_000189_t0006-306_jpg.rf.5b13381c521daf6ba26755bcfba51678.jpg",
+        "ant2_frame_000203_t0006-773_jpg.rf.4e6ae3f3247bedd2711775f00306d7a9.jpg",
+        "ant2_frame_000217_t0007-240_jpg.rf.c65de929855eacd964ef2761c90c1322.jpg",
+        "ant2_frame_000224_t0007-474_jpg.rf.3498aa79a5968f826e1dd63b5a3f0706.jpg",
+        "ant2_frame_000238_t0007-941_jpg.rf.8bc910f58d0601d8d118a6ab93504bd3.jpg",
+        "ant2_frame_000245_t0008-174_jpg.rf.432d1f28cda5b99ebf1bb7ac806ef9f5.jpg",
+        "ant2_frame_000259_t0008-642_jpg.rf.a44dcc08b193958e74aca2369a095fd3.jpg",
+        "ant2_frame_000273_t0009-109_jpg.rf.4b1c040decf46efa81e82e021672bd93.jpg",
+        "ant2_frame_000280_t0009-342_jpg.rf.1a2d65cd4052cc07a0eedb5d92d32bee.jpg"
+      ],
+      "removed_frames": [
+        147,
+        168,
+        189,
+        217,
+        259,
+        280
+      ],
+      "removed_members": [
+        "ant2_frame_000147_t0004-905_jpg.rf.36c30cce6d2e2c37164e8811c26dd0cb.jpg",
+        "ant2_frame_000168_t0005-605_jpg.rf.afb9a3b34bfcf2cdbbdef7684c5e8cf4.jpg",
+        "ant2_frame_000189_t0006-306_jpg.rf.5b13381c521daf6ba26755bcfba51678.jpg",
+        "ant2_frame_000217_t0007-240_jpg.rf.c65de929855eacd964ef2761c90c1322.jpg",
+        "ant2_frame_000259_t0008-642_jpg.rf.a44dcc08b193958e74aca2369a095fd3.jpg",
+        "ant2_frame_000280_t0009-342_jpg.rf.1a2d65cd4052cc07a0eedb5d92d32bee.jpg"
+      ],
+      "representative_frame": 203,
+      "representative_image": "ant2_frame_000203_t0006-773_jpg.rf.4e6ae3f3247bedd2711775f00306d7a9.jpg",
+      "selected_frames": [
+        126,
+        133,
+        161,
+        182,
+        203,
+        224,
+        238,
+        245,
+        273
+      ],
+      "selected_members": [
+        "ant2_frame_000126_t0004-204_jpg.rf.6b8da0815be50475e796ed91ea025b24.jpg",
+        "ant2_frame_000133_t0004-438_jpg.rf.eb3ae7a968ce6e9eea48726402e856d3.jpg",
+        "ant2_frame_000161_t0005-372_jpg.rf.466084ce20be5598a63ea1bbd0c520d2.jpg",
+        "ant2_frame_000182_t0006-072_jpg.rf.1f1bf5ee0305e5595449b9740e90ae9e.jpg",
+        "ant2_frame_000203_t0006-773_jpg.rf.4e6ae3f3247bedd2711775f00306d7a9.jpg",
+        "ant2_frame_000224_t0007-474_jpg.rf.3498aa79a5968f826e1dd63b5a3f0706.jpg",
+        "ant2_frame_000238_t0007-941_jpg.rf.8bc910f58d0601d8d118a6ab93504bd3.jpg",
+        "ant2_frame_000245_t0008-174_jpg.rf.432d1f28cda5b99ebf1bb7ac806ef9f5.jpg",
+        "ant2_frame_000273_t0009-109_jpg.rf.4b1c040decf46efa81e82e021672bd93.jpg"
+      ],
+      "similarity_reason": "long middle segment with queen plus brood/food distractors; reduced near-consecutive variants while preserving ant-count and worker-configuration changes"
+    },
+    {
+      "dhash_distances_to_representative": {
+        "ant2_frame_000294_t0009-809_jpg.rf.5e3a3faae93421c7cba0bb4dac921fa9.jpg": 9,
+        "ant2_frame_000301_t0010-043_jpg.rf.e69be6b35f337a3951b808082e104bf2.jpg": 9,
+        "ant2_frame_000315_t0010-510_jpg.rf.23653084add308d50951ab748e0b782c.jpg": 0,
+        "ant2_frame_000329_t0010-977_jpg.rf.44a724eba8384e947c7e1bb4808f2f91.jpg": 7,
+        "ant2_frame_000336_t0011-211_jpg.rf.14bf06a9112d8bd2fe7a7a3774c1f4db.jpg": 10,
+        "ant2_frame_000350_t0011-678_jpg.rf.ede1e027d3016584084111ed00c40dab.jpg": 14,
+        "ant2_frame_000364_t0012-145_jpg.rf.bc1608cb7027dfd577c0407c5c6d8548.jpg": 11,
+        "ant2_frame_000371_t0012-378_jpg.rf.28dc60ef4e6d2b637bd254f2708ab571.jpg": 8
+      },
+      "family_id": "ant2_fam_04_glare_workers",
+      "important_semantic_differences": [
+        "strong local glare/reflections",
+        "workers separated from queen area",
+        "transition away from brood-heavy region"
+      ],
+      "member_frames": [
+        294,
+        301,
+        315,
+        329,
+        336,
+        350,
+        364,
+        371
+      ],
+      "members": [
+        "ant2_frame_000294_t0009-809_jpg.rf.5e3a3faae93421c7cba0bb4dac921fa9.jpg",
+        "ant2_frame_000301_t0010-043_jpg.rf.e69be6b35f337a3951b808082e104bf2.jpg",
+        "ant2_frame_000315_t0010-510_jpg.rf.23653084add308d50951ab748e0b782c.jpg",
+        "ant2_frame_000329_t0010-977_jpg.rf.44a724eba8384e947c7e1bb4808f2f91.jpg",
+        "ant2_frame_000336_t0011-211_jpg.rf.14bf06a9112d8bd2fe7a7a3774c1f4db.jpg",
+        "ant2_frame_000350_t0011-678_jpg.rf.ede1e027d3016584084111ed00c40dab.jpg",
+        "ant2_frame_000364_t0012-145_jpg.rf.bc1608cb7027dfd577c0407c5c6d8548.jpg",
+        "ant2_frame_000371_t0012-378_jpg.rf.28dc60ef4e6d2b637bd254f2708ab571.jpg"
+      ],
+      "removed_frames": [
+        336,
+        371
+      ],
+      "removed_members": [
+        "ant2_frame_000336_t0011-211_jpg.rf.14bf06a9112d8bd2fe7a7a3774c1f4db.jpg",
+        "ant2_frame_000371_t0012-378_jpg.rf.28dc60ef4e6d2b637bd254f2708ab571.jpg"
+      ],
+      "representative_frame": 315,
+      "representative_image": "ant2_frame_000315_t0010-510_jpg.rf.23653084add308d50951ab748e0b782c.jpg",
+      "selected_frames": [
+        294,
+        301,
+        315,
+        329,
+        350,
+        364
+      ],
+      "selected_members": [
+        "ant2_frame_000294_t0009-809_jpg.rf.5e3a3faae93421c7cba0bb4dac921fa9.jpg",
+        "ant2_frame_000301_t0010-043_jpg.rf.e69be6b35f337a3951b808082e104bf2.jpg",
+        "ant2_frame_000315_t0010-510_jpg.rf.23653084add308d50951ab748e0b782c.jpg",
+        "ant2_frame_000329_t0010-977_jpg.rf.44a724eba8384e947c7e1bb4808f2f91.jpg",
+        "ant2_frame_000350_t0011-678_jpg.rf.ede1e027d3016584084111ed00c40dab.jpg",
+        "ant2_frame_000364_t0012-145_jpg.rf.bc1608cb7027dfd577c0407c5c6d8548.jpg"
+      ],
+      "similarity_reason": "glare/reflection segment with similar container background; kept examples with different counts and glare/worker placement"
+    },
+    {
+      "dhash_distances_to_representative": {
+        "ant2_frame_000392_t0013-079_jpg.rf.55a39f21c6487873eb5d364976564ed6.jpg": 7,
+        "ant2_frame_000399_t0013-313_jpg.rf.84e5da119ad9a984fbf44a0daf9cb3c2.jpg": 8,
+        "ant2_frame_000413_t0013-780_jpg.rf.a4ae5e62bbec2da9c5d013f2ce979dbc.jpg": 3,
+        "ant2_frame_000427_t0014-247_jpg.rf.5e24f7e93d62f2e9b844be1d8b325e17.jpg": 0,
+        "ant2_frame_000434_t0014-480_jpg.rf.86c3c14f091264ef849a1baec3e7f181.jpg": 1,
+        "ant2_frame_000448_t0014-948_jpg.rf.3241a34f56a26f90002f899a36206737.jpg": 7,
+        "ant2_frame_000455_t0015-181_jpg.rf.dc0c7d308d5e2704147627e297c8884f.jpg": 5,
+        "ant2_frame_000469_t0015-648_jpg.rf.bd623f91d6aa6a2a6443756d0a1f2bf3.jpg": 4
+      },
+      "family_id": "ant2_fam_05_late_reflection_edge",
+      "important_semantic_differences": [
+        "late queen/worker positions",
+        "strongest large-box reference frame",
+        "edge/reflection distractor coverage"
+      ],
+      "member_frames": [
+        392,
+        399,
+        413,
+        427,
+        434,
+        448,
+        455,
+        469
+      ],
+      "members": [
+        "ant2_frame_000392_t0013-079_jpg.rf.55a39f21c6487873eb5d364976564ed6.jpg",
+        "ant2_frame_000399_t0013-313_jpg.rf.84e5da119ad9a984fbf44a0daf9cb3c2.jpg",
+        "ant2_frame_000413_t0013-780_jpg.rf.a4ae5e62bbec2da9c5d013f2ce979dbc.jpg",
+        "ant2_frame_000427_t0014-247_jpg.rf.5e24f7e93d62f2e9b844be1d8b325e17.jpg",
+        "ant2_frame_000434_t0014-480_jpg.rf.86c3c14f091264ef849a1baec3e7f181.jpg",
+        "ant2_frame_000448_t0014-948_jpg.rf.3241a34f56a26f90002f899a36206737.jpg",
+        "ant2_frame_000455_t0015-181_jpg.rf.dc0c7d308d5e2704147627e297c8884f.jpg",
+        "ant2_frame_000469_t0015-648_jpg.rf.bd623f91d6aa6a2a6443756d0a1f2bf3.jpg"
+      ],
+      "removed_frames": [
+        399,
+        434,
+        455
+      ],
+      "removed_members": [
+        "ant2_frame_000399_t0013-313_jpg.rf.84e5da119ad9a984fbf44a0daf9cb3c2.jpg",
+        "ant2_frame_000434_t0014-480_jpg.rf.86c3c14f091264ef849a1baec3e7f181.jpg",
+        "ant2_frame_000455_t0015-181_jpg.rf.dc0c7d308d5e2704147627e297c8884f.jpg"
+      ],
+      "representative_frame": 427,
+      "representative_image": "ant2_frame_000427_t0014-247_jpg.rf.5e24f7e93d62f2e9b844be1d8b325e17.jpg",
+      "selected_frames": [
+        392,
+        413,
+        427,
+        448,
+        469
+      ],
+      "selected_members": [
+        "ant2_frame_000392_t0013-079_jpg.rf.55a39f21c6487873eb5d364976564ed6.jpg",
+        "ant2_frame_000413_t0013-780_jpg.rf.a4ae5e62bbec2da9c5d013f2ce979dbc.jpg",
+        "ant2_frame_000427_t0014-247_jpg.rf.5e24f7e93d62f2e9b844be1d8b325e17.jpg",
+        "ant2_frame_000448_t0014-948_jpg.rf.3241a34f56a26f90002f899a36206737.jpg",
+        "ant2_frame_000469_t0015-648_jpg.rf.bd623f91d6aa6a2a6443756d0a1f2bf3.jpg"
+      ],
+      "similarity_reason": "late segment has repeated reflection/edge background; retained the clearest lighting and scale extrema"
+    }
+  ],
+  "schemaVersion": "1.0",
+  "selection_policy": "visual-diversity pruning using temporal distance, dHash similarity, historical count/scale metadata and manual visual review; labels are not copied",
+  "source": "ant2",
+  "visual_family_count": 5
+}

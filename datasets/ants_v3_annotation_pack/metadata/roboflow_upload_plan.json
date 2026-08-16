@@ -1,0 +1,96 @@
+{
+  "annotation_policy": {
+    "adult_ant_positive": [
+      "queen",
+      "worker",
+      "major",
+      "minor",
+      "replete"
+    ],
+    "box_policy": "one physical adult ant = one tight visible body box around head + thorax + abdomen; no intentional leg/antenna-tip padding; overlapping boxes allowed",
+    "class_mapping": {
+      "0": "ant"
+    },
+    "forbidden": [
+      "training",
+      "pseudo-labeling",
+      "copying historical ant2 labels as new FormicAI ground truth",
+      "remapping AntsNet labels automatically",
+      "declaring hard negatives before full-resolution human zero-ant verification"
+    ],
+    "not_ant": [
+      "brood",
+      "food",
+      "cotton",
+      "substrate",
+      "reflection"
+    ]
+  },
+  "contact_sheets": {
+    "ant2_distractor_context": "artifacts/analysis/ants_v3_design/annotation_pack/ant2_distractor_context_contact_sheet.jpg",
+    "ant2_queen_large": "artifacts/analysis/ants_v3_design/annotation_pack/ant2_queen_large_contact_sheet.jpg",
+    "combined_scale_diversity": "artifacts/analysis/ants_v3_design/annotation_pack/combined_antsnet_ant2_scale_diversity_contact_sheet.jpg",
+    "hard_negative_candidates": "artifacts/analysis/ants_v3_design/annotation_pack/hard_negative_candidates_contact_sheet.jpg"
+  },
+  "experiment": "ants_v3_mixedscale_e01",
+  "no_pseudo_labeling": true,
+  "no_training_performed": true,
+  "no_upload_performed": true,
+  "roboflow_project_plan": {
+    "batches": [
+      {
+        "batch": "ants_v3_antsnet",
+        "image_count": 40,
+        "labels_to_upload": "none_until_manual_FormicAI_relabel",
+        "source": "AntsNet v14",
+        "tags": [
+          "ants_v3",
+          "antsnet",
+          "public_source",
+          "manual_relabel",
+          "scale_diversity"
+        ]
+      },
+      {
+        "batch": "ants_v3_ant2",
+        "image_count": 42,
+        "labels_to_upload": "none_until_manual_FormicAI_relabel",
+        "source": "ant2",
+        "tags": [
+          "ants_v3",
+          "ant2",
+          "own_colony",
+          "manual_relabel",
+          "queen_large",
+          "distractor_context"
+        ]
+      },
+      {
+        "batch": "ants_v3_hard_negative",
+        "image_count": 12,
+        "labels_to_upload": "empty labels only after human zero-ant verification",
+        "source": "nest_test_001",
+        "tags": [
+          "ants_v3",
+          "hard_negative_candidate",
+          "UNVERIFIED",
+          "zero_ant_review_required"
+        ]
+      }
+    ],
+    "class_mapping": {
+      "0": "ant"
+    },
+    "project_name": "FormicAI Ants v3",
+    "status": "planned_only_not_uploaded",
+    "task": "Object Detection"
+  },
+  "schemaVersion": "1.0",
+  "workload_summary": {
+    "ant2_adult_annotations": 182,
+    "antsnet_adult_annotations": 316,
+    "confirmed_zero_label_negatives": 0,
+    "possible_zero_label_negatives": 12,
+    "total_positive_annotations": 498
+  }
+}

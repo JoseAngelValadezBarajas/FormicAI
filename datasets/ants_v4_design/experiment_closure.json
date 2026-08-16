@@ -1,0 +1,185 @@
+{
+  "schemaVersion": "1.0",
+  "experiment": "ants_v4_domain_e01",
+  "status": "CLOSED",
+  "finalClassification": "MIXED",
+  "currentChampion": "ants_v3_mixedscale_e01",
+  "v4PromotedToChampion": false,
+  "detectorLineage": [
+    {
+      "version": "v1",
+      "experiment": "ants_v1_baseline",
+      "summary": "original own-domain baseline"
+    },
+    {
+      "version": "v2",
+      "experiment": "ants_v2_diverse_e01",
+      "summary": "public/diverse generalization"
+    },
+    {
+      "version": "v3",
+      "experiment": "ants_v3_mixedscale_e01",
+      "summary": "mixed-scale plus queen/large examples plus AntsNet plus ant2",
+      "status": "CURRENT_CHAMPION"
+    },
+    {
+      "version": "v4",
+      "experiment": "ants_v4_domain_e01",
+      "summary": "real-camera own-domain exposure",
+      "status": "CLOSED_MIXED_NOT_PROMOTED"
+    }
+  ],
+  "selectedModels": {
+    "ants_v3_mixedscale_e01": {
+      "status": "CURRENT_CHAMPION",
+      "path": "artifacts/models/ants_v3_mixedscale_e01/selected.pt",
+      "sha256": "424d508ef2b881740134c3c3a320f0dba4ea12d2f4a9f77a057451539347daaf"
+    },
+    "ants_v4_domain_e01": {
+      "status": "CLOSED_MIXED_NOT_PROMOTED",
+      "path": "artifacts/models/ants_v4_domain_e01/selected.pt",
+      "sha256": "689249476dc61912050a5106ac712c9e24dd494da892a2d113f72ba20198e0e9"
+    }
+  },
+  "canonicalInference": {
+    "end2end": false,
+    "confidence": 0.25,
+    "nmsIou": 0.70,
+    "imgsz": 640
+  },
+  "v4DatasetHashes": {
+    "datasetRoot": "datasets/prepared/ants_v4_domain_e01",
+    "fullTrainDevDatasetSha256": "7af79305b19b25579d99bdb48e9da668cb31651f9924d7f2a02b34f0c74c4bb7",
+    "datasetManifestSha256": "064ba8f2773cf1bb6a47be73ae19253d981d17c55de7c7b64a547736e4ad6ae4",
+    "trainCombinedSha256": "63030020c02725af3023698e27381615f645574ebba4ddd4cb0522b1c6e0a557",
+    "validationCombinedSha256": "946125b5b5f9810d45f015d00ad36f1374e0435865e9e4487864f052bdd126b5"
+  },
+  "testRoleChanges": {
+    "Seq0001": "OBSERVED_PUBLIC_REFERENCE",
+    "Seq0006": "OBSERVED_PUBLIC_REFERENCE",
+    "own_colony_val_001": "DEVELOPMENT_PATHOLOGICAL_FAILURE_SOURCE",
+    "own_colony_val_002": "OBSERVED_OWN_COLONY_REFERENCE_FOR_FUTURE_EXPERIMENTS",
+    "ant4": "OBSERVED_OWN_COLONY_FINAL_TEST_NOT_UNBIASED_FOR_V5_PLUS"
+  },
+  "ownColonyVal002Freeze": {
+    "sourceVideoSha256": "02ecfaf7a26865b6629f49756de3f3e558e0419f97b1404b8f094577dccc731e",
+    "imageContentSha256": "9de3ea752bc889b90b6bb9528f4727daa551857c7f86486af80be91535c7af37",
+    "annotationContentSha256": "57f9e49ca0e7b65192985236e75ae3135c0c201cfa7f8af0ea8a63f277a6a4f0",
+    "combinedHoldoutSha256": "46a954cf00e21f196af3a33d97d34b91df953ee5eac015778e5ffaad8d327173",
+    "finalManifestSha256": "a73eff32f7cb58c74b6af0c640e0d947f1f79a313679f66795a8e71ac0ab349c"
+  },
+  "ant4FinalTestFreeze": {
+    "sourceVideoSha256": "1f550cde40f1bfbb0cb3b513a43dd033d029e8a187fabc303e88a7c69e650d6f",
+    "imageContentSha256": "213848a0cad11a00f12bd97a4b8cd3b44104336fdf3bf9f7b3a29dcdec50a36a",
+    "annotationContentSha256": "2029980d1c87429da3546fbbe0e44e1cbbeca3bddc7175411759732f04b94b3e",
+    "combinedFinalTestSha256": "79cef95f320a9796c87aa1be1c5f3a0b3b262ef68332ae1f1eec18fc0792550c",
+    "finalGtManifestSha256": "598b4962977cf230694c6fd84e414aba87a6c56fb5876ea58665ff4fcbe6e60b"
+  },
+  "publicReferenceResults": {
+    "role": "OBSERVED_PUBLIC_REFERENCE",
+    "v4VersusV2Interpretation": "v4 regressed in standard public-reference metrics relative to v2",
+    "seq0001": {
+      "v2": {
+        "precision": 0.5638,
+        "recall": 0.6726,
+        "mAP50": 0.4923,
+        "mAP50-95": 0.1139
+      },
+      "v4": {
+        "precision": 0.4663,
+        "recall": 0.4960,
+        "mAP50": 0.3442,
+        "mAP50-95": 0.0807
+      }
+    },
+    "seq0006": {
+      "v2": {
+        "precision": 0.7821,
+        "recall": 0.7225,
+        "mAP50": 0.7164,
+        "mAP50-95": 0.2212
+      },
+      "v4": {
+        "precision": 0.6845,
+        "recall": 0.5861,
+        "mAP50": 0.5605,
+        "mAP50-95": 0.1773
+      }
+    }
+  },
+  "ownColonyVal002Results": {
+    "role": "OBSERVED_OWN_COLONY_REFERENCE",
+    "v3": {
+      "precision": 0.9444,
+      "recall": 0.5862,
+      "mAP50": 0.5833,
+      "mAP50-95": 0.3226,
+      "predictions": 19,
+      "GT": 29
+    },
+    "v4": {
+      "precision": 1.0000,
+      "recall": 0.6897,
+      "mAP50": 0.6850,
+      "mAP50-95": 0.3560,
+      "predictions": 19,
+      "GT": 29
+    }
+  },
+  "ant4FinalResults": {
+    "role": "OBSERVED_OWN_COLONY_FINAL_TEST",
+    "GT": 567,
+    "models": {
+      "ants_v1_baseline": {
+        "precision": 0.1092,
+        "recall": 0.0741,
+        "mAP50": 0.0098,
+        "mAP50-95": 0.0016,
+        "predictions": 397
+      },
+      "ants_v2_diverse_e01": {
+        "precision": 0.4396,
+        "recall": 0.3527,
+        "mAP50": 0.1738,
+        "mAP50-95": 0.0459,
+        "predictions": 466
+      },
+      "ants_v3_mixedscale_e01": {
+        "precision": 0.8664,
+        "recall": 0.8466,
+        "mAP50": 0.8200,
+        "mAP50-95": 0.4434,
+        "predictions": 579
+      },
+      "ants_v4_domain_e01": {
+        "precision": 0.8680,
+        "recall": 0.7654,
+        "mAP50": 0.7511,
+        "mAP50-95": 0.3786,
+        "predictions": 559
+      }
+    },
+    "v3ToV4Delta": {
+      "precision": 0.0016,
+      "recall": -0.0812,
+      "mAP50": -0.0689,
+      "mAP50-95": -0.0648,
+      "predictions": -20
+    }
+  },
+  "conclusion": [
+    "v3 remains current champion",
+    "v4 improved clean own_colony_val_002 versus v3",
+    "v4 preserved public development sources",
+    "v4 regressed versus v3 on ANT4 final test",
+    "v4 has persistent own_colony_val_001 failure",
+    "v4 regressed in standard public-reference metrics versus v2",
+    "overall result is MIXED"
+  ],
+  "artifactReferences": {
+    "ant4Benchmark": "artifacts/analysis/ant4_final_model_benchmark/benchmark_metrics.json",
+    "v4PublicReference": "artifacts/analysis/ants_v4_final_evaluation/public_reference_benchmark.json",
+    "v4TrainingSelection": "artifacts/analysis/ants_v4_training/checkpoint_selection.json",
+    "v4DatasetPreflight": "artifacts/analysis/ants_v4_preflight/dataset_preflight.json"
+  }
+}

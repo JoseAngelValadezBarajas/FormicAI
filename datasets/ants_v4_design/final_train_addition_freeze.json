@@ -1,0 +1,131 @@
+{
+  "artifacts": {
+    "design_freeze": "datasets/ants_v4_design/final_train_addition_freeze.json",
+    "design_manifest": "datasets/ants_v4_design/final_train_addition_manifest.json",
+    "pack_freeze_copy": "datasets/ants_v4_annotation_pack/own_colony_train/metadata/final_train_addition_freeze.json",
+    "pack_manifest_copy": "datasets/ants_v4_annotation_pack/own_colony_train/metadata/final_train_addition_manifest.json"
+  },
+  "authorized_final_state": {
+    "domain_groups": {
+      "block_nest_entry": {
+        "annotations": 22,
+        "included_images": 24,
+        "intentionally_excluded": 0,
+        "positive_images": 22,
+        "verified_zero_adult_images": 2
+      },
+      "lateral_chamber": {
+        "annotations": 78,
+        "included_images": 23,
+        "intentionally_excluded": 1,
+        "positive_images": 23,
+        "verified_zero_adult_images": 0
+      },
+      "topdown_arena": {
+        "annotations": 55,
+        "included_images": 24,
+        "intentionally_excluded": 0,
+        "positive_images": 24,
+        "verified_zero_adult_images": 0
+      }
+    },
+    "final_included_images": 71,
+    "frozen_original_candidates": 72,
+    "intentionally_excluded_images": {
+      "Ants3_f001835_t0030p573s.jpg": {
+        "intentionally_excluded": true,
+        "reason": "ambiguous_review"
+      }
+    },
+    "positive_annotated_images": 69,
+    "total_manual_ant_annotations": 155,
+    "verified_zero_adult_images": 2
+  },
+  "constraints_observed": {
+    "no_annotation_changes": true,
+    "no_ant4": true,
+    "no_commit_push": true,
+    "no_full_v4_materialization": true,
+    "no_inference": true,
+    "no_recovery_of_excluded_image": true,
+    "no_replacements": true,
+    "no_training": true
+  },
+  "content_hashes": {
+    "annotation_content_sha256": "0e5a4cb24ba7ca0c7290db98a15a16d87ccf34f66ebc17d3f613bbe139aa9db7",
+    "combined_addition_sha256": "700ab0cf86c8667c83201ad8635713a5275f2565409b74b3577dde20f89ea9bf",
+    "image_content_sha256": "8bba817e3a3655c25bb62859d322213aa42f3fb694fc00888cc3bd3c8ebef68e",
+    "manifest_sha256": "98cd563ccf59fbfd785fd6611b731198db5f4466893573b70afea04eb1d8aad7"
+  },
+  "created_at_utc": "2026-08-14T08:03:18.201208+00:00",
+  "experiment": "ants_v4_domain_e01",
+  "integrity_leakage": {
+    "Ants11_absent": true,
+    "Ants2_absent": true,
+    "annotations": 155,
+    "ant4_absent_by_source_path_manifest_guard": true,
+    "ant4_note": "ant4 was not opened; verified only through established source/path/manifest guards.",
+    "ants_v3_existing_image_overlap": [],
+    "duplicate_image_hashes": [],
+    "duplicate_pack_filenames": [],
+    "excluded_present_images": [],
+    "included_image_hashes": 71,
+    "malformed_annotations": 0,
+    "missing_included_images": [],
+    "own_colony_val_001_overlap": 0,
+    "structural_errors": [],
+    "unexpected_classes": 0,
+    "unexpected_present_images": [],
+    "unique_image_hashes": 71
+  },
+  "observed_final_state": {
+    "annotation_count": 155,
+    "domain_summary": {
+      "block_nest_entry": {
+        "annotations": 22,
+        "included_images": 24,
+        "intentionally_excluded": 0,
+        "positive_images": 22,
+        "verified_zero_adult_images": 2
+      },
+      "lateral_chamber": {
+        "annotations": 78,
+        "included_images": 23,
+        "intentionally_excluded": 1,
+        "positive_images": 23,
+        "verified_zero_adult_images": 0
+      },
+      "topdown_arena": {
+        "annotations": 55,
+        "included_images": 24,
+        "intentionally_excluded": 0,
+        "positive_images": 24,
+        "verified_zero_adult_images": 0
+      }
+    },
+    "included_image_count": 71,
+    "intentionally_excluded_images": [
+      {
+        "domain_group": "lateral_chamber",
+        "excluded_from_content_hash": true,
+        "image_sha256": "4a248cc0262e4d93b9b1e655185b1bb707656051232921e2c9c2903ea353cfcd",
+        "intentionally_excluded": true,
+        "pack_filename": "Ants3_f001835_t0030p573s.jpg",
+        "present_in_roboflow": false,
+        "reason": "ambiguous_review",
+        "source_frame_index": 1835,
+        "source_video": "Ants3.mp4",
+        "source_video_sha256": "2692ad60fe3f4f406b2f4b20973e63382707856410ca382607cc6a27138cff69",
+        "timestamp_seconds": 30.573112
+      }
+    ],
+    "positive_image_count": 69,
+    "verified_zero_adult_count": 2
+  },
+  "project": "formicai-ants-v4",
+  "role": "V4_OWN_DOMAIN_TRAIN_ADDITION",
+  "schema_version": "1.0",
+  "status": "PASS",
+  "status_reasons": [],
+  "workspace": "jose-angel-valadez-barajas"
+}

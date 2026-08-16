@@ -1,0 +1,10 @@
+{
+  "pattern": "ants_v{major}_{theme}_e{number:02d}",
+  "examples": [
+    "ants_v1_baseline",
+    "ants_v2_diverse_e01",
+    "ants_v2_diverse_e02",
+    "ants_v2_tightbox_e01",
+    "ants_v2_mixedpolicy_e01"
+  ]
+}

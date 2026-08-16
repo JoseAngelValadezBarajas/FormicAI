@@ -1,0 +1,1811 @@
+{
+  "accepted": {
+    "items": [
+      {
+        "batch_name": "ants_v4_clean_holdout_own_colony_val_002",
+        "filename": "ownval002_000086_t0001.433.jpg",
+        "localImageSha256": "9c4d58ade7286a1cdf9b953d2e7b5cf02bb1f67ba042e3e2aba686b3cbf3dace",
+        "response": {
+          "annotation": null,
+          "image": {
+            "id": "HxebrbD5ju1rRy4vtOdt",
+            "success": true
+          },
+          "upload_retry_attempts": 0,
+          "upload_time": 1.2686967849731445
+        },
+        "split": "test",
+        "status": "accepted",
+        "tags": [
+          "ants_v4",
+          "clean_holdout",
+          "own_colony_val_002",
+          "own_colony",
+          "frozen_source",
+          "never_train"
+        ]
+      },
+      {
+        "batch_name": "ants_v4_clean_holdout_own_colony_val_002",
+        "filename": "ownval002_000258_t0004.299.jpg",
+        "localImageSha256": "198ec67f4e10808739ff657c53ac1104a1121a1ecfe19e3aa48755b8817270a1",
+        "response": {
+          "annotation": null,
+          "image": {
+            "id": "BborPQfADGE5PnF7ILMV",
+            "success": true
+          },
+          "upload_retry_attempts": 0,
+          "upload_time": 1.6077828407287598
+        },
+        "split": "test",
+        "status": "accepted",
+        "tags": [
+          "ants_v4",
+          "clean_holdout",
+          "own_colony_val_002",
+          "own_colony",
+          "frozen_source",
+          "never_train"
+        ]
+      },
+      {
+        "batch_name": "ants_v4_clean_holdout_own_colony_val_002",
+        "filename": "ownval002_000430_t0007.164.jpg",
+        "localImageSha256": "6b5bd24bc91dcdc02b25d36c2c97e09f903c40daa1e86dcad9847ca0e3e426e2",
+        "response": {
+          "annotation": null,
+          "image": {
+            "id": "aS3kf3awdJd8iWXjZk39",
+            "success": true
+          },
+          "upload_retry_attempts": 0,
+          "upload_time": 1.1898961067199707
+        },
+        "split": "test",
+        "status": "accepted",
+        "tags": [
+          "ants_v4",
+          "clean_holdout",
+          "own_colony_val_002",
+          "own_colony",
+          "frozen_source",
+          "never_train"
+        ]
+      },
+      {
+        "batch_name": "ants_v4_clean_holdout_own_colony_val_002",
+        "filename": "ownval002_000602_t0010.030.jpg",
+        "localImageSha256": "cc0c7e8d2e85d1c98720036ef6663f7767030ccc349a6b19cab0438cc62a46e0",
+        "response": {
+          "annotation": null,
+          "image": {
+            "id": "M1CS8i8lN9Kq5k6YVIAZ",
+            "success": true
+          },
+          "upload_retry_attempts": 0,
+          "upload_time": 1.2217848300933838
+        },
+        "split": "test",
+        "status": "accepted",
+        "tags": [
+          "ants_v4",
+          "clean_holdout",
+          "own_colony_val_002",
+          "own_colony",
+          "frozen_source",
+          "never_train"
+        ]
+      },
+      {
+        "batch_name": "ants_v4_clean_holdout_own_colony_val_002",
+        "filename": "ownval002_000774_t0012.896.jpg",
+        "localImageSha256": "74c1ce76f2d43f1fd89c678e8853b40228c11fd96e52bb3335e526ccea3421f8",
+        "response": {
+          "annotation": null,
+          "image": {
+            "id": "3z9i23DRHl0bp6alu3pr",
+            "success": true
+          },
+          "upload_retry_attempts": 0,
+          "upload_time": 1.179168939590454
+        },
+        "split": "test",
+        "status": "accepted",
+        "tags": [
+          "ants_v4",
+          "clean_holdout",
+          "own_colony_val_002",
+          "own_colony",
+          "frozen_source",
+          "never_train"
+        ]
+      },
+      {
+        "batch_name": "ants_v4_clean_holdout_own_colony_val_002",
+        "filename": "ownval002_000946_t0015.762.jpg",
+        "localImageSha256": "4ecb0eed90f195037a7a98d63529e85d4e70b68a3160f1605d724b11f59e9f2e",
+        "response": {
+          "annotation": null,
+          "image": {
+            "id": "m1YAhPNsa5zsAlktRzKM",
+            "success": true
+          },
+          "upload_retry_attempts": 0,
+          "upload_time": 1.2929985523223877
+        },
+        "split": "test",
+        "status": "accepted",
+        "tags": [
+          "ants_v4",
+          "clean_holdout",
+          "own_colony_val_002",
+          "own_colony",
+          "frozen_source",
+          "never_train"
+        ]
+      },
+      {
+        "batch_name": "ants_v4_clean_holdout_own_colony_val_002",
+        "filename": "ownval002_001118_t0018.627.jpg",
+        "localImageSha256": "61aed4f03880f2d4073e67f22b1e96f1843719332654d1a74233da8bb7c8d199",
+        "response": {
+          "annotation": null,
+          "image": {
+            "id": "fFSHkPgc5gcEX9W1SYaP",
+            "success": true
+          },
+          "upload_retry_attempts": 0,
+          "upload_time": 1.1204097270965576
+        },
+        "split": "test",
+        "status": "accepted",
+        "tags": [
+          "ants_v4",
+          "clean_holdout",
+          "own_colony_val_002",
+          "own_colony",
+          "frozen_source",
+          "never_train"
+        ]
+      },
+      {
+        "batch_name": "ants_v4_clean_holdout_own_colony_val_002",
+        "filename": "ownval002_001290_t0021.493.jpg",
+        "localImageSha256": "9aefb2f8ed708386684190db5e9b364384e3f52d84b47dc008c5ddb47b7d1903",
+        "response": {
+          "annotation": null,
+          "image": {
+            "id": "WnwQBRzAr6VEsuLK9N7E",
+            "success": true
+          },
+          "upload_retry_attempts": 0,
+          "upload_time": 1.4346652030944824
+        },
+        "split": "test",
+        "status": "accepted",
+        "tags": [
+          "ants_v4",
+          "clean_holdout",
+          "own_colony_val_002",
+          "own_colony",
+          "frozen_source",
+          "never_train"
+        ]
+      },
+      {
+        "batch_name": "ants_v4_clean_holdout_own_colony_val_002",
+        "filename": "ownval002_001462_t0024.359.jpg",
+        "localImageSha256": "244cc242f318eb2de0155b91bc0451abda0886a9dfd5c256bab041cf5a6b8fc2",
+        "response": {
+          "annotation": null,
+          "image": {
+            "id": "Y0jLWSujmDTlzc5ZpsvA",
+            "success": true
+          },
+          "upload_retry_attempts": 0,
+          "upload_time": 1.195296049118042
+        },
+        "split": "test",
+        "status": "accepted",
+        "tags": [
+          "ants_v4",
+          "clean_holdout",
+          "own_colony_val_002",
+          "own_colony",
+          "frozen_source",
+          "never_train"
+        ]
+      },
+      {
+        "batch_name": "ants_v4_clean_holdout_own_colony_val_002",
+        "filename": "ownval002_001635_t0027.241.jpg",
+        "localImageSha256": "653a4f165812f0a130268b5566e3e66aa49952d8c8c8422396d7d7bfa7be88a1",
+        "response": {
+          "annotation": null,
+          "image": {
+            "id": "DtS1Mp9Mk2PMcQ29m1cL",
+            "success": true
+          },
+          "upload_retry_attempts": 0,
+          "upload_time": 1.1349306106567383
+        },
+        "split": "test",
+        "status": "accepted",
+        "tags": [
+          "ants_v4",
+          "clean_holdout",
+          "own_colony_val_002",
+          "own_colony",
+          "frozen_source",
+          "never_train"
+        ]
+      },
+      {
+        "batch_name": "ants_v4_clean_holdout_own_colony_val_002",
+        "filename": "ownval002_001808_t0030.124.jpg",
+        "localImageSha256": "33ed789419898b4453c8ae09bb208f3634377b484b7ad91940ffd4381208280f",
+        "response": {
+          "annotation": null,
+          "image": {
+            "id": "T2knM0p3oA4sx8uKS04Y",
+            "success": true
+          },
+          "upload_retry_attempts": 0,
+          "upload_time": 1.1320765018463135
+        },
+        "split": "test",
+        "status": "accepted",
+        "tags": [
+          "ants_v4",
+          "clean_holdout",
+          "own_colony_val_002",
+          "own_colony",
+          "frozen_source",
+          "never_train"
+        ]
+      },
+      {
+        "batch_name": "ants_v4_clean_holdout_own_colony_val_002",
+        "filename": "ownval002_001980_t0032.989.jpg",
+        "localImageSha256": "e2d645d31904280052d9e6e5e901a578b592274991955599f954223a07ff9bba",
+        "response": {
+          "annotation": null,
+          "image": {
+            "id": "qDVqsCSUNS7BQCdeCjKv",
+            "success": true
+          },
+          "upload_retry_attempts": 0,
+          "upload_time": 1.2449193000793457
+        },
+        "split": "test",
+        "status": "accepted",
+        "tags": [
+          "ants_v4",
+          "clean_holdout",
+          "own_colony_val_002",
+          "own_colony",
+          "frozen_source",
+          "never_train"
+        ]
+      },
+      {
+        "batch_name": "ants_v4_clean_holdout_own_colony_val_002",
+        "filename": "ownval002_002152_t0035.855.jpg",
+        "localImageSha256": "ee1fc0c03689f55ed15ef022ac6c4b56d09b7826a33a758f2e761f97cdf47e8d",
+        "response": {
+          "annotation": null,
+          "image": {
+            "id": "itJbpMMXkaJr4STkNLHM",
+            "success": true
+          },
+          "upload_retry_attempts": 0,
+          "upload_time": 1.2284798622131348
+        },
+        "split": "test",
+        "status": "accepted",
+        "tags": [
+          "ants_v4",
+          "clean_holdout",
+          "own_colony_val_002",
+          "own_colony",
+          "frozen_source",
+          "never_train"
+        ]
+      },
+      {
+        "batch_name": "ants_v4_clean_holdout_own_colony_val_002",
+        "filename": "ownval002_002324_t0038.721.jpg",
+        "localImageSha256": "9e9fd8d2072156c400ee21963eb75c43ebdb182515a2dd9452b0992da2425cea",
+        "response": {
+          "annotation": null,
+          "image": {
+            "id": "zfZKhywt6yOUUFfXcXIa",
+            "success": true
+          },
+          "upload_retry_attempts": 0,
+          "upload_time": 1.2815415859222412
+        },
+        "split": "test",
+        "status": "accepted",
+        "tags": [
+          "ants_v4",
+          "clean_holdout",
+          "own_colony_val_002",
+          "own_colony",
+          "frozen_source",
+          "never_train"
+        ]
+      },
+      {
+        "batch_name": "ants_v4_clean_holdout_own_colony_val_002",
+        "filename": "ownval002_002496_t0041.586.jpg",
+        "localImageSha256": "20e712e24d0088672de54de4379ed518d2cd94426fbe24d6863b27d5f3b52b4c",
+        "response": {
+          "annotation": null,
+          "image": {
+            "id": "ynsY70OeR7wJL3WPuVGM",
+            "success": true
+          },
+          "upload_retry_attempts": 0,
+          "upload_time": 1.117387056350708
+        },
+        "split": "test",
+        "status": "accepted",
+        "tags": [
+          "ants_v4",
+          "clean_holdout",
+          "own_colony_val_002",
+          "own_colony",
+          "frozen_source",
+          "never_train"
+        ]
+      },
+      {
+        "batch_name": "ants_v4_clean_holdout_own_colony_val_002",
+        "filename": "ownval002_002668_t0044.452.jpg",
+        "localImageSha256": "b1bf023c15e39bf47e22342206351894f41229f8ea0b42194a8685e7f65f2931",
+        "response": {
+          "annotation": null,
+          "image": {
+            "id": "dM8QwyPqkeUt7sWCjI8L",
+            "success": true
+          },
+          "upload_retry_attempts": 0,
+          "upload_time": 1.0841755867004395
+        },
+        "split": "test",
+        "status": "accepted",
+        "tags": [
+          "ants_v4",
+          "clean_holdout",
+          "own_colony_val_002",
+          "own_colony",
+          "frozen_source",
+          "never_train"
+        ]
+      },
+      {
+        "batch_name": "ants_v4_clean_holdout_own_colony_val_002",
+        "filename": "ownval002_002840_t0047.318.jpg",
+        "localImageSha256": "b2566aa1eb567d5e72eeccb865567c92997b843399d3b2ad9cb5b537eb4b91ec",
+        "response": {
+          "annotation": null,
+          "image": {
+            "id": "S7ZxFsgBWZXvqc721ODP",
+            "success": true
+          },
+          "upload_retry_attempts": 0,
+          "upload_time": 1.1552424430847168
+        },
+        "split": "test",
+        "status": "accepted",
+        "tags": [
+          "ants_v4",
+          "clean_holdout",
+          "own_colony_val_002",
+          "own_colony",
+          "frozen_source",
+          "never_train"
+        ]
+      },
+      {
+        "batch_name": "ants_v4_clean_holdout_own_colony_val_002",
+        "filename": "ownval002_003012_t0050.184.jpg",
+        "localImageSha256": "56714536525c9f7de27f438a8e2503e135a4030ce08edf0eb9dd3a3929aa019b",
+        "response": {
+          "annotation": null,
+          "image": {
+            "id": "raKgUsMGNLZFyFscU0Pa",
+            "success": true
+          },
+          "upload_retry_attempts": 0,
+          "upload_time": 1.1842212677001953
+        },
+        "split": "test",
+        "status": "accepted",
+        "tags": [
+          "ants_v4",
+          "clean_holdout",
+          "own_colony_val_002",
+          "own_colony",
+          "frozen_source",
+          "never_train"
+        ]
+      },
+      {
+        "batch_name": "ants_v4_clean_holdout_own_colony_val_002",
+        "filename": "ownval002_003184_t0053.049.jpg",
+        "localImageSha256": "1aa40e3155d102e837614092ea03a1e7ea12141da2c9ae985cded30be22d57d7",
+        "response": {
+          "annotation": null,
+          "image": {
+            "id": "eM0qRRPy8Cdv3UZZ9VQl",
+            "success": true
+          },
+          "upload_retry_attempts": 0,
+          "upload_time": 1.170149564743042
+        },
+        "split": "test",
+        "status": "accepted",
+        "tags": [
+          "ants_v4",
+          "clean_holdout",
+          "own_colony_val_002",
+          "own_colony",
+          "frozen_source",
+          "never_train"
+        ]
+      },
+      {
+        "batch_name": "ants_v4_clean_holdout_own_colony_val_002",
+        "filename": "ownval002_003357_t0055.932.jpg",
+        "localImageSha256": "034b585f2e62e59724db8645a4ac180e979a77fa7b09e939bcb2da4dd5841c76",
+        "response": {
+          "annotation": null,
+          "image": {
+            "id": "nnrGVTkHIjTzAydMTwB4",
+            "success": true
+          },
+          "upload_retry_attempts": 0,
+          "upload_time": 1.589071273803711
+        },
+        "split": "test",
+        "status": "accepted",
+        "tags": [
+          "ants_v4",
+          "clean_holdout",
+          "own_colony_val_002",
+          "own_colony",
+          "frozen_source",
+          "never_train"
+        ]
+      },
+      {
+        "batch_name": "ants_v4_clean_holdout_own_colony_val_002",
+        "filename": "ownval002_003530_t0058.814.jpg",
+        "localImageSha256": "98e7d2068e6acea1df48c602a6aef80b96cd4c3c1a73ee8c56f099d7ab475bf7",
+        "response": {
+          "annotation": null,
+          "image": {
+            "id": "CpD1B6Xv1TqcSoWcty9I",
+            "success": true
+          },
+          "upload_retry_attempts": 0,
+          "upload_time": 1.2484300136566162
+        },
+        "split": "test",
+        "status": "accepted",
+        "tags": [
+          "ants_v4",
+          "clean_holdout",
+          "own_colony_val_002",
+          "own_colony",
+          "frozen_source",
+          "never_train"
+        ]
+      },
+      {
+        "batch_name": "ants_v4_clean_holdout_own_colony_val_002",
+        "filename": "ownval002_003702_t0061.680.jpg",
+        "localImageSha256": "6948e82de34a682261d7c4d667236de5344fa13408fd2f12fa3585059222a175",
+        "response": {
+          "annotation": null,
+          "image": {
+            "id": "ybGKsGCgZsPmSPPvA7cQ",
+            "success": true
+          },
+          "upload_retry_attempts": 0,
+          "upload_time": 1.5351216793060303
+        },
+        "split": "test",
+        "status": "accepted",
+        "tags": [
+          "ants_v4",
+          "clean_holdout",
+          "own_colony_val_002",
+          "own_colony",
+          "frozen_source",
+          "never_train"
+        ]
+      },
+      {
+        "batch_name": "ants_v4_clean_holdout_own_colony_val_002",
+        "filename": "ownval002_003874_t0064.546.jpg",
+        "localImageSha256": "0d442788e9184eb9f00519b604c528f60908b443300e96ec3fc4a586ecfbb283",
+        "response": {
+          "annotation": null,
+          "image": {
+            "id": "EZZGscV4AQaXLlxK008V",
+            "success": true
+          },
+          "upload_retry_attempts": 0,
+          "upload_time": 1.302008867263794
+        },
+        "split": "test",
+        "status": "accepted",
+        "tags": [
+          "ants_v4",
+          "clean_holdout",
+          "own_colony_val_002",
+          "own_colony",
+          "frozen_source",
+          "never_train"
+        ]
+      },
+      {
+        "batch_name": "ants_v4_clean_holdout_own_colony_val_002",
+        "filename": "ownval002_004046_t0067.411.jpg",
+        "localImageSha256": "3190d7803cc89361c0a3090639e024e42c231fbf857567c6c3dd9c9f56b39c15",
+        "response": {
+          "annotation": null,
+          "image": {
+            "id": "v9SRshbLrjWR7V6Vxae0",
+            "success": true
+          },
+          "upload_retry_attempts": 0,
+          "upload_time": 1.2717437744140625
+        },
+        "split": "test",
+        "status": "accepted",
+        "tags": [
+          "ants_v4",
+          "clean_holdout",
+          "own_colony_val_002",
+          "own_colony",
+          "frozen_source",
+          "never_train"
+        ]
+      },
+      {
+        "batch_name": "ants_v4_clean_holdout_own_colony_val_002",
+        "filename": "ownval002_004218_t0070.277.jpg",
+        "localImageSha256": "ac7ba7260c2e0a6ef88b4e848b20b75291417ba0d62908f6b5f1492c7fa51583",
+        "response": {
+          "annotation": null,
+          "image": {
+            "id": "TKNOFT1CFQWuxasX3LJP",
+            "success": true
+          },
+          "upload_retry_attempts": 0,
+          "upload_time": 1.1694388389587402
+        },
+        "split": "test",
+        "status": "accepted",
+        "tags": [
+          "ants_v4",
+          "clean_holdout",
+          "own_colony_val_002",
+          "own_colony",
+          "frozen_source",
+          "never_train"
+        ]
+      },
+      {
+        "batch_name": "ants_v4_clean_holdout_own_colony_val_002",
+        "filename": "ownval002_004390_t0073.143.jpg",
+        "localImageSha256": "775acdc319490377aceb0fb841a65000071a2735f487fa781892497505b37569",
+        "response": {
+          "annotation": null,
+          "image": {
+            "id": "155BytzElHEQNwXNxJKC",
+            "success": true
+          },
+          "upload_retry_attempts": 0,
+          "upload_time": 1.200704574584961
+        },
+        "split": "test",
+        "status": "accepted",
+        "tags": [
+          "ants_v4",
+          "clean_holdout",
+          "own_colony_val_002",
+          "own_colony",
+          "frozen_source",
+          "never_train"
+        ]
+      },
+      {
+        "batch_name": "ants_v4_clean_holdout_own_colony_val_002",
+        "filename": "ownval002_004562_t0076.009.jpg",
+        "localImageSha256": "f3002bdcde48883c9d1d2075d35feb014c91a1336db4a9983649fea8b6194dc2",
+        "response": {
+          "annotation": null,
+          "image": {
+            "id": "NWfJcqKmAGkit4rSOd4e",
+            "success": true
+          },
+          "upload_retry_attempts": 0,
+          "upload_time": 1.173546314239502
+        },
+        "split": "test",
+        "status": "accepted",
+        "tags": [
+          "ants_v4",
+          "clean_holdout",
+          "own_colony_val_002",
+          "own_colony",
+          "frozen_source",
+          "never_train"
+        ]
+      },
+      {
+        "batch_name": "ants_v4_clean_holdout_own_colony_val_002",
+        "filename": "ownval002_004734_t0078.874.jpg",
+        "localImageSha256": "f477a0f189d56ed7ab438bc370c01e132cc753aa6c11409505e8c2af049e3f40",
+        "response": {
+          "annotation": null,
+          "image": {
+            "id": "8wGbtMDq4G6yoOm6G9GC",
+            "success": true
+          },
+          "upload_retry_attempts": 0,
+          "upload_time": 1.225388526916504
+        },
+        "split": "test",
+        "status": "accepted",
+        "tags": [
+          "ants_v4",
+          "clean_holdout",
+          "own_colony_val_002",
+          "own_colony",
+          "frozen_source",
+          "never_train"
+        ]
+      },
+      {
+        "batch_name": "ants_v4_clean_holdout_own_colony_val_002",
+        "filename": "ownval002_004906_t0081.740.jpg",
+        "localImageSha256": "0661385d11c55491cfb2a5fe96cd90ad299d505f1d2d12af4491d7404dfa1fd9",
+        "response": {
+          "annotation": null,
+          "image": {
+            "id": "hyslxHugnZKAW2FvguvU",
+            "success": true
+          },
+          "upload_retry_attempts": 0,
+          "upload_time": 1.366478681564331
+        },
+        "split": "test",
+        "status": "accepted",
+        "tags": [
+          "ants_v4",
+          "clean_holdout",
+          "own_colony_val_002",
+          "own_colony",
+          "frozen_source",
+          "never_train"
+        ]
+      },
+      {
+        "batch_name": "ants_v4_clean_holdout_own_colony_val_002",
+        "filename": "ownval002_005079_t0084.622.jpg",
+        "localImageSha256": "2e380c832374a22cd828820421485ec2bd3006391c1a1a73238cc832467d423a",
+        "response": {
+          "annotation": null,
+          "image": {
+            "id": "JHuGoDkkwTcjplSF0FEv",
+            "success": true
+          },
+          "upload_retry_attempts": 0,
+          "upload_time": 1.4478235244750977
+        },
+        "split": "test",
+        "status": "accepted",
+        "tags": [
+          "ants_v4",
+          "clean_holdout",
+          "own_colony_val_002",
+          "own_colony",
+          "frozen_source",
+          "never_train"
+        ]
+      }
+    ],
+    "total": 30
+  },
+  "attempted": 30,
+  "batch": "ants_v4_clean_holdout_own_colony_val_002",
+  "closedSetVerification": {
+    "ant4AbsentBySourcePathManifestGuard": true,
+    "closedProjectTotal": 101,
+    "holdoutAnnotatedImagesCount": 0,
+    "holdoutAnnotationsUploadedCount": 0,
+    "holdoutSplitCounts": {
+      "test": 30
+    },
+    "holdoutTaggedCount": 30,
+    "metadataHashMismatches": [],
+    "method": "Closed-set verification by Roboflow tags source_own_colony_train and own_colony_val_002; avoids ants_v4 broad-tag search truncation after project exceeded 100 images.",
+    "missingExpectedHoldoutImages": [],
+    "ownColonyVal001Overlap": [],
+    "passed": true,
+    "selectedImageShaMatchesFrozen": 30,
+    "sourceVideoShaMatchesFrozen": 30,
+    "sourceVideoShaMismatches": [],
+    "trainAnnotatedImagesCount": 69,
+    "trainAnnotationsCount": 155,
+    "trainHoldoutImageShaOverlap": [],
+    "trainSplitCounts": {
+      "train": 71
+    },
+    "trainTaggedCount": 71,
+    "unexpectedHoldoutTaggedImages": []
+  },
+  "constraintsObserved": {
+    "apiKeySource": "ROBOFLOW_API_KEY environment variable; value not printed or stored",
+    "noAnt4": true,
+    "noCommitPush": true,
+    "noInference": true,
+    "noLabelAssist": true,
+    "noMaterialization": true,
+    "noPseudoLabeling": true,
+    "noSourceLabels": true,
+    "noTraining": true
+  },
+  "duplicates": {
+    "items": [],
+    "total": 0
+  },
+  "expected": {
+    "annotationsUploaded": 0,
+    "duplicates": 0,
+    "images": 30,
+    "projectState": {
+      "test": 30,
+      "total": 101,
+      "train": 71
+    },
+    "rejected": 0,
+    "split": "test"
+  },
+  "experiment": "ants_v4_domain_e01",
+  "localHashVerification": [
+    {
+      "currentLocalImageSha256": "9c4d58ade7286a1cdf9b953d2e7b5cf02bb1f67ba042e3e2aba686b3cbf3dace",
+      "filename": "ownval002_000086_t0001.433.jpg",
+      "manifestImageSha256": "9c4d58ade7286a1cdf9b953d2e7b5cf02bb1f67ba042e3e2aba686b3cbf3dace",
+      "matches": true
+    },
+    {
+      "currentLocalImageSha256": "198ec67f4e10808739ff657c53ac1104a1121a1ecfe19e3aa48755b8817270a1",
+      "filename": "ownval002_000258_t0004.299.jpg",
+      "manifestImageSha256": "198ec67f4e10808739ff657c53ac1104a1121a1ecfe19e3aa48755b8817270a1",
+      "matches": true
+    },
+    {
+      "currentLocalImageSha256": "6b5bd24bc91dcdc02b25d36c2c97e09f903c40daa1e86dcad9847ca0e3e426e2",
+      "filename": "ownval002_000430_t0007.164.jpg",
+      "manifestImageSha256": "6b5bd24bc91dcdc02b25d36c2c97e09f903c40daa1e86dcad9847ca0e3e426e2",
+      "matches": true
+    },
+    {
+      "currentLocalImageSha256": "cc0c7e8d2e85d1c98720036ef6663f7767030ccc349a6b19cab0438cc62a46e0",
+      "filename": "ownval002_000602_t0010.030.jpg",
+      "manifestImageSha256": "cc0c7e8d2e85d1c98720036ef6663f7767030ccc349a6b19cab0438cc62a46e0",
+      "matches": true
+    },
+    {
+      "currentLocalImageSha256": "74c1ce76f2d43f1fd89c678e8853b40228c11fd96e52bb3335e526ccea3421f8",
+      "filename": "ownval002_000774_t0012.896.jpg",
+      "manifestImageSha256": "74c1ce76f2d43f1fd89c678e8853b40228c11fd96e52bb3335e526ccea3421f8",
+      "matches": true
+    },
+    {
+      "currentLocalImageSha256": "4ecb0eed90f195037a7a98d63529e85d4e70b68a3160f1605d724b11f59e9f2e",
+      "filename": "ownval002_000946_t0015.762.jpg",
+      "manifestImageSha256": "4ecb0eed90f195037a7a98d63529e85d4e70b68a3160f1605d724b11f59e9f2e",
+      "matches": true
+    },
+    {
+      "currentLocalImageSha256": "61aed4f03880f2d4073e67f22b1e96f1843719332654d1a74233da8bb7c8d199",
+      "filename": "ownval002_001118_t0018.627.jpg",
+      "manifestImageSha256": "61aed4f03880f2d4073e67f22b1e96f1843719332654d1a74233da8bb7c8d199",
+      "matches": true
+    },
+    {
+      "currentLocalImageSha256": "9aefb2f8ed708386684190db5e9b364384e3f52d84b47dc008c5ddb47b7d1903",
+      "filename": "ownval002_001290_t0021.493.jpg",
+      "manifestImageSha256": "9aefb2f8ed708386684190db5e9b364384e3f52d84b47dc008c5ddb47b7d1903",
+      "matches": true
+    },
+    {
+      "currentLocalImageSha256": "244cc242f318eb2de0155b91bc0451abda0886a9dfd5c256bab041cf5a6b8fc2",
+      "filename": "ownval002_001462_t0024.359.jpg",
+      "manifestImageSha256": "244cc242f318eb2de0155b91bc0451abda0886a9dfd5c256bab041cf5a6b8fc2",
+      "matches": true
+    },
+    {
+      "currentLocalImageSha256": "653a4f165812f0a130268b5566e3e66aa49952d8c8c8422396d7d7bfa7be88a1",
+      "filename": "ownval002_001635_t0027.241.jpg",
+      "manifestImageSha256": "653a4f165812f0a130268b5566e3e66aa49952d8c8c8422396d7d7bfa7be88a1",
+      "matches": true
+    },
+    {
+      "currentLocalImageSha256": "33ed789419898b4453c8ae09bb208f3634377b484b7ad91940ffd4381208280f",
+      "filename": "ownval002_001808_t0030.124.jpg",
+      "manifestImageSha256": "33ed789419898b4453c8ae09bb208f3634377b484b7ad91940ffd4381208280f",
+      "matches": true
+    },
+    {
+      "currentLocalImageSha256": "e2d645d31904280052d9e6e5e901a578b592274991955599f954223a07ff9bba",
+      "filename": "ownval002_001980_t0032.989.jpg",
+      "manifestImageSha256": "e2d645d31904280052d9e6e5e901a578b592274991955599f954223a07ff9bba",
+      "matches": true
+    },
+    {
+      "currentLocalImageSha256": "ee1fc0c03689f55ed15ef022ac6c4b56d09b7826a33a758f2e761f97cdf47e8d",
+      "filename": "ownval002_002152_t0035.855.jpg",
+      "manifestImageSha256": "ee1fc0c03689f55ed15ef022ac6c4b56d09b7826a33a758f2e761f97cdf47e8d",
+      "matches": true
+    },
+    {
+      "currentLocalImageSha256": "9e9fd8d2072156c400ee21963eb75c43ebdb182515a2dd9452b0992da2425cea",
+      "filename": "ownval002_002324_t0038.721.jpg",
+      "manifestImageSha256": "9e9fd8d2072156c400ee21963eb75c43ebdb182515a2dd9452b0992da2425cea",
+      "matches": true
+    },
+    {
+      "currentLocalImageSha256": "20e712e24d0088672de54de4379ed518d2cd94426fbe24d6863b27d5f3b52b4c",
+      "filename": "ownval002_002496_t0041.586.jpg",
+      "manifestImageSha256": "20e712e24d0088672de54de4379ed518d2cd94426fbe24d6863b27d5f3b52b4c",
+      "matches": true
+    },
+    {
+      "currentLocalImageSha256": "b1bf023c15e39bf47e22342206351894f41229f8ea0b42194a8685e7f65f2931",
+      "filename": "ownval002_002668_t0044.452.jpg",
+      "manifestImageSha256": "b1bf023c15e39bf47e22342206351894f41229f8ea0b42194a8685e7f65f2931",
+      "matches": true
+    },
+    {
+      "currentLocalImageSha256": "b2566aa1eb567d5e72eeccb865567c92997b843399d3b2ad9cb5b537eb4b91ec",
+      "filename": "ownval002_002840_t0047.318.jpg",
+      "manifestImageSha256": "b2566aa1eb567d5e72eeccb865567c92997b843399d3b2ad9cb5b537eb4b91ec",
+      "matches": true
+    },
+    {
+      "currentLocalImageSha256": "56714536525c9f7de27f438a8e2503e135a4030ce08edf0eb9dd3a3929aa019b",
+      "filename": "ownval002_003012_t0050.184.jpg",
+      "manifestImageSha256": "56714536525c9f7de27f438a8e2503e135a4030ce08edf0eb9dd3a3929aa019b",
+      "matches": true
+    },
+    {
+      "currentLocalImageSha256": "1aa40e3155d102e837614092ea03a1e7ea12141da2c9ae985cded30be22d57d7",
+      "filename": "ownval002_003184_t0053.049.jpg",
+      "manifestImageSha256": "1aa40e3155d102e837614092ea03a1e7ea12141da2c9ae985cded30be22d57d7",
+      "matches": true
+    },
+    {
+      "currentLocalImageSha256": "034b585f2e62e59724db8645a4ac180e979a77fa7b09e939bcb2da4dd5841c76",
+      "filename": "ownval002_003357_t0055.932.jpg",
+      "manifestImageSha256": "034b585f2e62e59724db8645a4ac180e979a77fa7b09e939bcb2da4dd5841c76",
+      "matches": true
+    },
+    {
+      "currentLocalImageSha256": "98e7d2068e6acea1df48c602a6aef80b96cd4c3c1a73ee8c56f099d7ab475bf7",
+      "filename": "ownval002_003530_t0058.814.jpg",
+      "manifestImageSha256": "98e7d2068e6acea1df48c602a6aef80b96cd4c3c1a73ee8c56f099d7ab475bf7",
+      "matches": true
+    },
+    {
+      "currentLocalImageSha256": "6948e82de34a682261d7c4d667236de5344fa13408fd2f12fa3585059222a175",
+      "filename": "ownval002_003702_t0061.680.jpg",
+      "manifestImageSha256": "6948e82de34a682261d7c4d667236de5344fa13408fd2f12fa3585059222a175",
+      "matches": true
+    },
+    {
+      "currentLocalImageSha256": "0d442788e9184eb9f00519b604c528f60908b443300e96ec3fc4a586ecfbb283",
+      "filename": "ownval002_003874_t0064.546.jpg",
+      "manifestImageSha256": "0d442788e9184eb9f00519b604c528f60908b443300e96ec3fc4a586ecfbb283",
+      "matches": true
+    },
+    {
+      "currentLocalImageSha256": "3190d7803cc89361c0a3090639e024e42c231fbf857567c6c3dd9c9f56b39c15",
+      "filename": "ownval002_004046_t0067.411.jpg",
+      "manifestImageSha256": "3190d7803cc89361c0a3090639e024e42c231fbf857567c6c3dd9c9f56b39c15",
+      "matches": true
+    },
+    {
+      "currentLocalImageSha256": "ac7ba7260c2e0a6ef88b4e848b20b75291417ba0d62908f6b5f1492c7fa51583",
+      "filename": "ownval002_004218_t0070.277.jpg",
+      "manifestImageSha256": "ac7ba7260c2e0a6ef88b4e848b20b75291417ba0d62908f6b5f1492c7fa51583",
+      "matches": true
+    },
+    {
+      "currentLocalImageSha256": "775acdc319490377aceb0fb841a65000071a2735f487fa781892497505b37569",
+      "filename": "ownval002_004390_t0073.143.jpg",
+      "manifestImageSha256": "775acdc319490377aceb0fb841a65000071a2735f487fa781892497505b37569",
+      "matches": true
+    },
+    {
+      "currentLocalImageSha256": "f3002bdcde48883c9d1d2075d35feb014c91a1336db4a9983649fea8b6194dc2",
+      "filename": "ownval002_004562_t0076.009.jpg",
+      "manifestImageSha256": "f3002bdcde48883c9d1d2075d35feb014c91a1336db4a9983649fea8b6194dc2",
+      "matches": true
+    },
+    {
+      "currentLocalImageSha256": "f477a0f189d56ed7ab438bc370c01e132cc753aa6c11409505e8c2af049e3f40",
+      "filename": "ownval002_004734_t0078.874.jpg",
+      "manifestImageSha256": "f477a0f189d56ed7ab438bc370c01e132cc753aa6c11409505e8c2af049e3f40",
+      "matches": true
+    },
+    {
+      "currentLocalImageSha256": "0661385d11c55491cfb2a5fe96cd90ad299d505f1d2d12af4491d7404dfa1fd9",
+      "filename": "ownval002_004906_t0081.740.jpg",
+      "manifestImageSha256": "0661385d11c55491cfb2a5fe96cd90ad299d505f1d2d12af4491d7404dfa1fd9",
+      "matches": true
+    },
+    {
+      "currentLocalImageSha256": "2e380c832374a22cd828820421485ec2bd3006391c1a1a73238cc832467d423a",
+      "filename": "ownval002_005079_t0084.622.jpg",
+      "manifestImageSha256": "2e380c832374a22cd828820421485ec2bd3006391c1a1a73238cc832467d423a",
+      "matches": true
+    }
+  ],
+  "phase": "V4 CLEAN OWN-COLONY HOLDOUT ROBOFLOW UPLOAD",
+  "preflight": {
+    "ant4AbsentBySourcePathManifestGuard": true,
+    "manifestRows": 30,
+    "ownColonyVal001Overlap": 0,
+    "sourceVideoSha256MatchesFrozen": true,
+    "trainOverlap": 0,
+    "uniqueManifestImageSha256": 30
+  },
+  "project": {
+    "id": "jose-angel-valadez-barajas/formicai-ants-v4",
+    "name": "FormicAI Ants v4",
+    "slug": "formicai-ants-v4",
+    "type": "object-detection"
+  },
+  "rejected": {
+    "items": [],
+    "total": 0
+  },
+  "schemaVersion": "1.0",
+  "source": {
+    "filename": "own_colony_val_002.mp4",
+    "manifest": "datasets/ants_v4_annotation_pack/own_colony_val_002/metadata/manifest.jsonl",
+    "sha256": "02ecfaf7a26865b6629f49756de3f3e558e0419f97b1404b8f094577dccc731e",
+    "sourceMetadata": "datasets/ants_v4_design/own_colony_val_002_source.json"
+  },
+  "status": "PASS",
+  "statusReasons": [],
+  "tags": [
+    "ants_v4",
+    "clean_holdout",
+    "own_colony_val_002",
+    "own_colony",
+    "frozen_source",
+    "never_train"
+  ],
+  "uploadDateUtc": "2026-08-14T08:19:32.068205+00:00",
+  "uploadResults": [
+    {
+      "batch_name": "ants_v4_clean_holdout_own_colony_val_002",
+      "filename": "ownval002_000086_t0001.433.jpg",
+      "localImageSha256": "9c4d58ade7286a1cdf9b953d2e7b5cf02bb1f67ba042e3e2aba686b3cbf3dace",
+      "response": {
+        "annotation": null,
+        "image": {
+          "id": "HxebrbD5ju1rRy4vtOdt",
+          "success": true
+        },
+        "upload_retry_attempts": 0,
+        "upload_time": 1.2686967849731445
+      },
+      "split": "test",
+      "status": "accepted",
+      "tags": [
+        "ants_v4",
+        "clean_holdout",
+        "own_colony_val_002",
+        "own_colony",
+        "frozen_source",
+        "never_train"
+      ]
+    },
+    {
+      "batch_name": "ants_v4_clean_holdout_own_colony_val_002",
+      "filename": "ownval002_000258_t0004.299.jpg",
+      "localImageSha256": "198ec67f4e10808739ff657c53ac1104a1121a1ecfe19e3aa48755b8817270a1",
+      "response": {
+        "annotation": null,
+        "image": {
+          "id": "BborPQfADGE5PnF7ILMV",
+          "success": true
+        },
+        "upload_retry_attempts": 0,
+        "upload_time": 1.6077828407287598
+      },
+      "split": "test",
+      "status": "accepted",
+      "tags": [
+        "ants_v4",
+        "clean_holdout",
+        "own_colony_val_002",
+        "own_colony",
+        "frozen_source",
+        "never_train"
+      ]
+    },
+    {
+      "batch_name": "ants_v4_clean_holdout_own_colony_val_002",
+      "filename": "ownval002_000430_t0007.164.jpg",
+      "localImageSha256": "6b5bd24bc91dcdc02b25d36c2c97e09f903c40daa1e86dcad9847ca0e3e426e2",
+      "response": {
+        "annotation": null,
+        "image": {
+          "id": "aS3kf3awdJd8iWXjZk39",
+          "success": true
+        },
+        "upload_retry_attempts": 0,
+        "upload_time": 1.1898961067199707
+      },
+      "split": "test",
+      "status": "accepted",
+      "tags": [
+        "ants_v4",
+        "clean_holdout",
+        "own_colony_val_002",
+        "own_colony",
+        "frozen_source",
+        "never_train"
+      ]
+    },
+    {
+      "batch_name": "ants_v4_clean_holdout_own_colony_val_002",
+      "filename": "ownval002_000602_t0010.030.jpg",
+      "localImageSha256": "cc0c7e8d2e85d1c98720036ef6663f7767030ccc349a6b19cab0438cc62a46e0",
+      "response": {
+        "annotation": null,
+        "image": {
+          "id": "M1CS8i8lN9Kq5k6YVIAZ",
+          "success": true
+        },
+        "upload_retry_attempts": 0,
+        "upload_time": 1.2217848300933838
+      },
+      "split": "test",
+      "status": "accepted",
+      "tags": [
+        "ants_v4",
+        "clean_holdout",
+        "own_colony_val_002",
+        "own_colony",
+        "frozen_source",
+        "never_train"
+      ]
+    },
+    {
+      "batch_name": "ants_v4_clean_holdout_own_colony_val_002",
+      "filename": "ownval002_000774_t0012.896.jpg",
+      "localImageSha256": "74c1ce76f2d43f1fd89c678e8853b40228c11fd96e52bb3335e526ccea3421f8",
+      "response": {
+        "annotation": null,
+        "image": {
+          "id": "3z9i23DRHl0bp6alu3pr",
+          "success": true
+        },
+        "upload_retry_attempts": 0,
+        "upload_time": 1.179168939590454
+      },
+      "split": "test",
+      "status": "accepted",
+      "tags": [
+        "ants_v4",
+        "clean_holdout",
+        "own_colony_val_002",
+        "own_colony",
+        "frozen_source",
+        "never_train"
+      ]
+    },
+    {
+      "batch_name": "ants_v4_clean_holdout_own_colony_val_002",
+      "filename": "ownval002_000946_t0015.762.jpg",
+      "localImageSha256": "4ecb0eed90f195037a7a98d63529e85d4e70b68a3160f1605d724b11f59e9f2e",
+      "response": {
+        "annotation": null,
+        "image": {
+          "id": "m1YAhPNsa5zsAlktRzKM",
+          "success": true
+        },
+        "upload_retry_attempts": 0,
+        "upload_time": 1.2929985523223877
+      },
+      "split": "test",
+      "status": "accepted",
+      "tags": [
+        "ants_v4",
+        "clean_holdout",
+        "own_colony_val_002",
+        "own_colony",
+        "frozen_source",
+        "never_train"
+      ]
+    },
+    {
+      "batch_name": "ants_v4_clean_holdout_own_colony_val_002",
+      "filename": "ownval002_001118_t0018.627.jpg",
+      "localImageSha256": "61aed4f03880f2d4073e67f22b1e96f1843719332654d1a74233da8bb7c8d199",
+      "response": {
+        "annotation": null,
+        "image": {
+          "id": "fFSHkPgc5gcEX9W1SYaP",
+          "success": true
+        },
+        "upload_retry_attempts": 0,
+        "upload_time": 1.1204097270965576
+      },
+      "split": "test",
+      "status": "accepted",
+      "tags": [
+        "ants_v4",
+        "clean_holdout",
+        "own_colony_val_002",
+        "own_colony",
+        "frozen_source",
+        "never_train"
+      ]
+    },
+    {
+      "batch_name": "ants_v4_clean_holdout_own_colony_val_002",
+      "filename": "ownval002_001290_t0021.493.jpg",
+      "localImageSha256": "9aefb2f8ed708386684190db5e9b364384e3f52d84b47dc008c5ddb47b7d1903",
+      "response": {
+        "annotation": null,
+        "image": {
+          "id": "WnwQBRzAr6VEsuLK9N7E",
+          "success": true
+        },
+        "upload_retry_attempts": 0,
+        "upload_time": 1.4346652030944824
+      },
+      "split": "test",
+      "status": "accepted",
+      "tags": [
+        "ants_v4",
+        "clean_holdout",
+        "own_colony_val_002",
+        "own_colony",
+        "frozen_source",
+        "never_train"
+      ]
+    },
+    {
+      "batch_name": "ants_v4_clean_holdout_own_colony_val_002",
+      "filename": "ownval002_001462_t0024.359.jpg",
+      "localImageSha256": "244cc242f318eb2de0155b91bc0451abda0886a9dfd5c256bab041cf5a6b8fc2",
+      "response": {
+        "annotation": null,
+        "image": {
+          "id": "Y0jLWSujmDTlzc5ZpsvA",
+          "success": true
+        },
+        "upload_retry_attempts": 0,
+        "upload_time": 1.195296049118042
+      },
+      "split": "test",
+      "status": "accepted",
+      "tags": [
+        "ants_v4",
+        "clean_holdout",
+        "own_colony_val_002",
+        "own_colony",
+        "frozen_source",
+        "never_train"
+      ]
+    },
+    {
+      "batch_name": "ants_v4_clean_holdout_own_colony_val_002",
+      "filename": "ownval002_001635_t0027.241.jpg",
+      "localImageSha256": "653a4f165812f0a130268b5566e3e66aa49952d8c8c8422396d7d7bfa7be88a1",
+      "response": {
+        "annotation": null,
+        "image": {
+          "id": "DtS1Mp9Mk2PMcQ29m1cL",
+          "success": true
+        },
+        "upload_retry_attempts": 0,
+        "upload_time": 1.1349306106567383
+      },
+      "split": "test",
+      "status": "accepted",
+      "tags": [
+        "ants_v4",
+        "clean_holdout",
+        "own_colony_val_002",
+        "own_colony",
+        "frozen_source",
+        "never_train"
+      ]
+    },
+    {
+      "batch_name": "ants_v4_clean_holdout_own_colony_val_002",
+      "filename": "ownval002_001808_t0030.124.jpg",
+      "localImageSha256": "33ed789419898b4453c8ae09bb208f3634377b484b7ad91940ffd4381208280f",
+      "response": {
+        "annotation": null,
+        "image": {
+          "id": "T2knM0p3oA4sx8uKS04Y",
+          "success": true
+        },
+        "upload_retry_attempts": 0,
+        "upload_time": 1.1320765018463135
+      },
+      "split": "test",
+      "status": "accepted",
+      "tags": [
+        "ants_v4",
+        "clean_holdout",
+        "own_colony_val_002",
+        "own_colony",
+        "frozen_source",
+        "never_train"
+      ]
+    },
+    {
+      "batch_name": "ants_v4_clean_holdout_own_colony_val_002",
+      "filename": "ownval002_001980_t0032.989.jpg",
+      "localImageSha256": "e2d645d31904280052d9e6e5e901a578b592274991955599f954223a07ff9bba",
+      "response": {
+        "annotation": null,
+        "image": {
+          "id": "qDVqsCSUNS7BQCdeCjKv",
+          "success": true
+        },
+        "upload_retry_attempts": 0,
+        "upload_time": 1.2449193000793457
+      },
+      "split": "test",
+      "status": "accepted",
+      "tags": [
+        "ants_v4",
+        "clean_holdout",
+        "own_colony_val_002",
+        "own_colony",
+        "frozen_source",
+        "never_train"
+      ]
+    },
+    {
+      "batch_name": "ants_v4_clean_holdout_own_colony_val_002",
+      "filename": "ownval002_002152_t0035.855.jpg",
+      "localImageSha256": "ee1fc0c03689f55ed15ef022ac6c4b56d09b7826a33a758f2e761f97cdf47e8d",
+      "response": {
+        "annotation": null,
+        "image": {
+          "id": "itJbpMMXkaJr4STkNLHM",
+          "success": true
+        },
+        "upload_retry_attempts": 0,
+        "upload_time": 1.2284798622131348
+      },
+      "split": "test",
+      "status": "accepted",
+      "tags": [
+        "ants_v4",
+        "clean_holdout",
+        "own_colony_val_002",
+        "own_colony",
+        "frozen_source",
+        "never_train"
+      ]
+    },
+    {
+      "batch_name": "ants_v4_clean_holdout_own_colony_val_002",
+      "filename": "ownval002_002324_t0038.721.jpg",
+      "localImageSha256": "9e9fd8d2072156c400ee21963eb75c43ebdb182515a2dd9452b0992da2425cea",
+      "response": {
+        "annotation": null,
+        "image": {
+          "id": "zfZKhywt6yOUUFfXcXIa",
+          "success": true
+        },
+        "upload_retry_attempts": 0,
+        "upload_time": 1.2815415859222412
+      },
+      "split": "test",
+      "status": "accepted",
+      "tags": [
+        "ants_v4",
+        "clean_holdout",
+        "own_colony_val_002",
+        "own_colony",
+        "frozen_source",
+        "never_train"
+      ]
+    },
+    {
+      "batch_name": "ants_v4_clean_holdout_own_colony_val_002",
+      "filename": "ownval002_002496_t0041.586.jpg",
+      "localImageSha256": "20e712e24d0088672de54de4379ed518d2cd94426fbe24d6863b27d5f3b52b4c",
+      "response": {
+        "annotation": null,
+        "image": {
+          "id": "ynsY70OeR7wJL3WPuVGM",
+          "success": true
+        },
+        "upload_retry_attempts": 0,
+        "upload_time": 1.117387056350708
+      },
+      "split": "test",
+      "status": "accepted",
+      "tags": [
+        "ants_v4",
+        "clean_holdout",
+        "own_colony_val_002",
+        "own_colony",
+        "frozen_source",
+        "never_train"
+      ]
+    },
+    {
+      "batch_name": "ants_v4_clean_holdout_own_colony_val_002",
+      "filename": "ownval002_002668_t0044.452.jpg",
+      "localImageSha256": "b1bf023c15e39bf47e22342206351894f41229f8ea0b42194a8685e7f65f2931",
+      "response": {
+        "annotation": null,
+        "image": {
+          "id": "dM8QwyPqkeUt7sWCjI8L",
+          "success": true
+        },
+        "upload_retry_attempts": 0,
+        "upload_time": 1.0841755867004395
+      },
+      "split": "test",
+      "status": "accepted",
+      "tags": [
+        "ants_v4",
+        "clean_holdout",
+        "own_colony_val_002",
+        "own_colony",
+        "frozen_source",
+        "never_train"
+      ]
+    },
+    {
+      "batch_name": "ants_v4_clean_holdout_own_colony_val_002",
+      "filename": "ownval002_002840_t0047.318.jpg",
+      "localImageSha256": "b2566aa1eb567d5e72eeccb865567c92997b843399d3b2ad9cb5b537eb4b91ec",
+      "response": {
+        "annotation": null,
+        "image": {
+          "id": "S7ZxFsgBWZXvqc721ODP",
+          "success": true
+        },
+        "upload_retry_attempts": 0,
+        "upload_time": 1.1552424430847168
+      },
+      "split": "test",
+      "status": "accepted",
+      "tags": [
+        "ants_v4",
+        "clean_holdout",
+        "own_colony_val_002",
+        "own_colony",
+        "frozen_source",
+        "never_train"
+      ]
+    },
+    {
+      "batch_name": "ants_v4_clean_holdout_own_colony_val_002",
+      "filename": "ownval002_003012_t0050.184.jpg",
+      "localImageSha256": "56714536525c9f7de27f438a8e2503e135a4030ce08edf0eb9dd3a3929aa019b",
+      "response": {
+        "annotation": null,
+        "image": {
+          "id": "raKgUsMGNLZFyFscU0Pa",
+          "success": true
+        },
+        "upload_retry_attempts": 0,
+        "upload_time": 1.1842212677001953
+      },
+      "split": "test",
+      "status": "accepted",
+      "tags": [
+        "ants_v4",
+        "clean_holdout",
+        "own_colony_val_002",
+        "own_colony",
+        "frozen_source",
+        "never_train"
+      ]
+    },
+    {
+      "batch_name": "ants_v4_clean_holdout_own_colony_val_002",
+      "filename": "ownval002_003184_t0053.049.jpg",
+      "localImageSha256": "1aa40e3155d102e837614092ea03a1e7ea12141da2c9ae985cded30be22d57d7",
+      "response": {
+        "annotation": null,
+        "image": {
+          "id": "eM0qRRPy8Cdv3UZZ9VQl",
+          "success": true
+        },
+        "upload_retry_attempts": 0,
+        "upload_time": 1.170149564743042
+      },
+      "split": "test",
+      "status": "accepted",
+      "tags": [
+        "ants_v4",
+        "clean_holdout",
+        "own_colony_val_002",
+        "own_colony",
+        "frozen_source",
+        "never_train"
+      ]
+    },
+    {
+      "batch_name": "ants_v4_clean_holdout_own_colony_val_002",
+      "filename": "ownval002_003357_t0055.932.jpg",
+      "localImageSha256": "034b585f2e62e59724db8645a4ac180e979a77fa7b09e939bcb2da4dd5841c76",
+      "response": {
+        "annotation": null,
+        "image": {
+          "id": "nnrGVTkHIjTzAydMTwB4",
+          "success": true
+        },
+        "upload_retry_attempts": 0,
+        "upload_time": 1.589071273803711
+      },
+      "split": "test",
+      "status": "accepted",
+      "tags": [
+        "ants_v4",
+        "clean_holdout",
+        "own_colony_val_002",
+        "own_colony",
+        "frozen_source",
+        "never_train"
+      ]
+    },
+    {
+      "batch_name": "ants_v4_clean_holdout_own_colony_val_002",
+      "filename": "ownval002_003530_t0058.814.jpg",
+      "localImageSha256": "98e7d2068e6acea1df48c602a6aef80b96cd4c3c1a73ee8c56f099d7ab475bf7",
+      "response": {
+        "annotation": null,
+        "image": {
+          "id": "CpD1B6Xv1TqcSoWcty9I",
+          "success": true
+        },
+        "upload_retry_attempts": 0,
+        "upload_time": 1.2484300136566162
+      },
+      "split": "test",
+      "status": "accepted",
+      "tags": [
+        "ants_v4",
+        "clean_holdout",
+        "own_colony_val_002",
+        "own_colony",
+        "frozen_source",
+        "never_train"
+      ]
+    },
+    {
+      "batch_name": "ants_v4_clean_holdout_own_colony_val_002",
+      "filename": "ownval002_003702_t0061.680.jpg",
+      "localImageSha256": "6948e82de34a682261d7c4d667236de5344fa13408fd2f12fa3585059222a175",
+      "response": {
+        "annotation": null,
+        "image": {
+          "id": "ybGKsGCgZsPmSPPvA7cQ",
+          "success": true
+        },
+        "upload_retry_attempts": 0,
+        "upload_time": 1.5351216793060303
+      },
+      "split": "test",
+      "status": "accepted",
+      "tags": [
+        "ants_v4",
+        "clean_holdout",
+        "own_colony_val_002",
+        "own_colony",
+        "frozen_source",
+        "never_train"
+      ]
+    },
+    {
+      "batch_name": "ants_v4_clean_holdout_own_colony_val_002",
+      "filename": "ownval002_003874_t0064.546.jpg",
+      "localImageSha256": "0d442788e9184eb9f00519b604c528f60908b443300e96ec3fc4a586ecfbb283",
+      "response": {
+        "annotation": null,
+        "image": {
+          "id": "EZZGscV4AQaXLlxK008V",
+          "success": true
+        },
+        "upload_retry_attempts": 0,
+        "upload_time": 1.302008867263794
+      },
+      "split": "test",
+      "status": "accepted",
+      "tags": [
+        "ants_v4",
+        "clean_holdout",
+        "own_colony_val_002",
+        "own_colony",
+        "frozen_source",
+        "never_train"
+      ]
+    },
+    {
+      "batch_name": "ants_v4_clean_holdout_own_colony_val_002",
+      "filename": "ownval002_004046_t0067.411.jpg",
+      "localImageSha256": "3190d7803cc89361c0a3090639e024e42c231fbf857567c6c3dd9c9f56b39c15",
+      "response": {
+        "annotation": null,
+        "image": {
+          "id": "v9SRshbLrjWR7V6Vxae0",
+          "success": true
+        },
+        "upload_retry_attempts": 0,
+        "upload_time": 1.2717437744140625
+      },
+      "split": "test",
+      "status": "accepted",
+      "tags": [
+        "ants_v4",
+        "clean_holdout",
+        "own_colony_val_002",
+        "own_colony",
+        "frozen_source",
+        "never_train"
+      ]
+    },
+    {
+      "batch_name": "ants_v4_clean_holdout_own_colony_val_002",
+      "filename": "ownval002_004218_t0070.277.jpg",
+      "localImageSha256": "ac7ba7260c2e0a6ef88b4e848b20b75291417ba0d62908f6b5f1492c7fa51583",
+      "response": {
+        "annotation": null,
+        "image": {
+          "id": "TKNOFT1CFQWuxasX3LJP",
+          "success": true
+        },
+        "upload_retry_attempts": 0,
+        "upload_time": 1.1694388389587402
+      },
+      "split": "test",
+      "status": "accepted",
+      "tags": [
+        "ants_v4",
+        "clean_holdout",
+        "own_colony_val_002",
+        "own_colony",
+        "frozen_source",
+        "never_train"
+      ]
+    },
+    {
+      "batch_name": "ants_v4_clean_holdout_own_colony_val_002",
+      "filename": "ownval002_004390_t0073.143.jpg",
+      "localImageSha256": "775acdc319490377aceb0fb841a65000071a2735f487fa781892497505b37569",
+      "response": {
+        "annotation": null,
+        "image": {
+          "id": "155BytzElHEQNwXNxJKC",
+          "success": true
+        },
+        "upload_retry_attempts": 0,
+        "upload_time": 1.200704574584961
+      },
+      "split": "test",
+      "status": "accepted",
+      "tags": [
+        "ants_v4",
+        "clean_holdout",
+        "own_colony_val_002",
+        "own_colony",
+        "frozen_source",
+        "never_train"
+      ]
+    },
+    {
+      "batch_name": "ants_v4_clean_holdout_own_colony_val_002",
+      "filename": "ownval002_004562_t0076.009.jpg",
+      "localImageSha256": "f3002bdcde48883c9d1d2075d35feb014c91a1336db4a9983649fea8b6194dc2",
+      "response": {
+        "annotation": null,
+        "image": {
+          "id": "NWfJcqKmAGkit4rSOd4e",
+          "success": true
+        },
+        "upload_retry_attempts": 0,
+        "upload_time": 1.173546314239502
+      },
+      "split": "test",
+      "status": "accepted",
+      "tags": [
+        "ants_v4",
+        "clean_holdout",
+        "own_colony_val_002",
+        "own_colony",
+        "frozen_source",
+        "never_train"
+      ]
+    },
+    {
+      "batch_name": "ants_v4_clean_holdout_own_colony_val_002",
+      "filename": "ownval002_004734_t0078.874.jpg",
+      "localImageSha256": "f477a0f189d56ed7ab438bc370c01e132cc753aa6c11409505e8c2af049e3f40",
+      "response": {
+        "annotation": null,
+        "image": {
+          "id": "8wGbtMDq4G6yoOm6G9GC",
+          "success": true
+        },
+        "upload_retry_attempts": 0,
+        "upload_time": 1.225388526916504
+      },
+      "split": "test",
+      "status": "accepted",
+      "tags": [
+        "ants_v4",
+        "clean_holdout",
+        "own_colony_val_002",
+        "own_colony",
+        "frozen_source",
+        "never_train"
+      ]
+    },
+    {
+      "batch_name": "ants_v4_clean_holdout_own_colony_val_002",
+      "filename": "ownval002_004906_t0081.740.jpg",
+      "localImageSha256": "0661385d11c55491cfb2a5fe96cd90ad299d505f1d2d12af4491d7404dfa1fd9",
+      "response": {
+        "annotation": null,
+        "image": {
+          "id": "hyslxHugnZKAW2FvguvU",
+          "success": true
+        },
+        "upload_retry_attempts": 0,
+        "upload_time": 1.366478681564331
+      },
+      "split": "test",
+      "status": "accepted",
+      "tags": [
+        "ants_v4",
+        "clean_holdout",
+        "own_colony_val_002",
+        "own_colony",
+        "frozen_source",
+        "never_train"
+      ]
+    },
+    {
+      "batch_name": "ants_v4_clean_holdout_own_colony_val_002",
+      "filename": "ownval002_005079_t0084.622.jpg",
+      "localImageSha256": "2e380c832374a22cd828820421485ec2bd3006391c1a1a73238cc832467d423a",
+      "response": {
+        "annotation": null,
+        "image": {
+          "id": "JHuGoDkkwTcjplSF0FEv",
+          "success": true
+        },
+        "upload_retry_attempts": 0,
+        "upload_time": 1.4478235244750977
+      },
+      "split": "test",
+      "status": "accepted",
+      "tags": [
+        "ants_v4",
+        "clean_holdout",
+        "own_colony_val_002",
+        "own_colony",
+        "frozen_source",
+        "never_train"
+      ]
+    }
+  ],
+  "uploadRole": {
+    "checkpointSelectionEligible": false,
+    "developmentSelectionEligible": false,
+    "reason": "TRAIN=v4 own-domain training additions; TEST=clean own-domain holdout annotation set.",
+    "roboflowSemanticSplit": "test",
+    "trainEligible": false
+  },
+  "verification": {
+    "allAntsV4AnnotatedImagesCount": 69,
+    "allAntsV4AnnotationsCount": 155,
+    "allAntsV4Count": 100,
+    "expectedHoldoutFoundCount": 30,
+    "holdoutAnnotatedImagesCount": 0,
+    "holdoutAnnotationsUploadedCount": 0,
+    "holdoutSplitCounts": {
+      "test": 30
+    },
+    "holdoutTaggedCount": 30,
+    "metadataHashMismatches": [],
+    "method": "Roboflow SDK project.search/detail with ants_v4 and own_colony_val_002 tags, split fields, metadata hashes, and annotation payload counts.",
+    "missingExpectedHoldoutImages": [],
+    "ownColonyVal001Overlap": [],
+    "projectSplitCounts": {
+      "test": 29,
+      "train": 71
+    },
+    "sampleHoldoutImages": [
+      {
+        "id": "HxebrbD5ju1rRy4vtOdt",
+        "metadata": {
+          "checkpoint_selection_eligible": false,
+          "image_sha256": "9c4d58ade7286a1cdf9b953d2e7b5cf02bb1f67ba042e3e2aba686b3cbf3dace",
+          "pack_filename": "ownval002_000086_t0001.433.jpg",
+          "roboflow_split": "test",
+          "source_frame_index": 86,
+          "source_video_filename": "own_colony_val_002.mp4",
+          "source_video_sha256": "02ecfaf7a26865b6629f49756de3f3e558e0419f97b1404b8f094577dccc731e",
+          "temporal_bin": 0,
+          "timestamp": 1.4328662838215684,
+          "train_eligible": false
+        },
+        "name": "ownval002_000086_t0001-433.jpg",
+        "split": "test"
+      },
+      {
+        "id": "BborPQfADGE5PnF7ILMV",
+        "metadata": {
+          "checkpoint_selection_eligible": false,
+          "image_sha256": "198ec67f4e10808739ff657c53ac1104a1121a1ecfe19e3aa48755b8817270a1",
+          "pack_filename": "ownval002_000258_t0004.299.jpg",
+          "roboflow_split": "test",
+          "source_frame_index": 258,
+          "source_video_filename": "own_colony_val_002.mp4",
+          "source_video_sha256": "02ecfaf7a26865b6629f49756de3f3e558e0419f97b1404b8f094577dccc731e",
+          "temporal_bin": 1,
+          "timestamp": 4.298598851464705,
+          "train_eligible": false
+        },
+        "name": "ownval002_000258_t0004-299.jpg",
+        "split": "test"
+      },
+      {
+        "id": "aS3kf3awdJd8iWXjZk39",
+        "metadata": {
+          "checkpoint_selection_eligible": false,
+          "image_sha256": "6b5bd24bc91dcdc02b25d36c2c97e09f903c40daa1e86dcad9847ca0e3e426e2",
+          "pack_filename": "ownval002_000430_t0007.164.jpg",
+          "roboflow_split": "test",
+          "source_frame_index": 430,
+          "source_video_filename": "own_colony_val_002.mp4",
+          "source_video_sha256": "02ecfaf7a26865b6629f49756de3f3e558e0419f97b1404b8f094577dccc731e",
+          "temporal_bin": 2,
+          "timestamp": 7.1643314191078415,
+          "train_eligible": false
+        },
+        "name": "ownval002_000430_t0007-164.jpg",
+        "split": "test"
+      }
+    ],
+    "selectedImageShaMatchesFrozen": 30,
+    "sourceVideoShaMatchesFrozen": 30,
+    "sourceVideoShaMismatches": [],
+    "trainHoldoutImageShaOverlap": [],
+    "unexpectedHoldoutTaggedImages": []
+  },
+  "verificationRefreshedAtUtc": "2026-08-14T08:21:27.403682+00:00",
+  "workspace": "jose-angel-valadez-barajas"
+}
