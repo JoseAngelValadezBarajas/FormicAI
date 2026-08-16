@@ -6,6 +6,7 @@ from pathlib import Path
 from statistics import mean
 from typing import Any
 
+from formicai.dataset.paths import read_image_size
 from formicai.dataset.yolo import find_images, matching_label_path, parse_yolo_label_file
 
 
@@ -160,7 +161,12 @@ class ExternalEvaluator:
                 errors.append(f"Missing label for image: {image_path}")
                 continue
             try:
-                boxes = parse_yolo_label_file(label_path)
+                image_width, image_height = read_image_size(image_path)
+                boxes = parse_yolo_label_file(
+                    label_path,
+                    image_width=image_width,
+                    image_height=image_height,
+                )
             except ValueError as exc:
                 errors.append(str(exc))
                 continue

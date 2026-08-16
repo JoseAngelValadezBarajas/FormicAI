@@ -2,15 +2,34 @@ from __future__ import annotations
 
 from pathlib import Path
 
+import cv2
+import numpy as np
+import pytest
+
+from formicai.dataset.yolo import parse_yolo_label_file
 from formicai.detection.public_ants import (
     FrameEvaluation,
     PixelBox,
     PredictionBox,
     _collect_duplicate_yolo_label_rows,
+    _load_ground_truth,
     density_analysis,
     match_center_based,
     match_iou_threshold,
 )
+
+
+def write_image(path: Path, *, width: int = 400, height: int = 472) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    image = np.zeros((height, width, 3), dtype=np.uint8)
+    cv2.imwrite(str(path), image)
+
+
+def yolo_label_from_edges(x_min: float, y_min: float, x_max: float, y_max: float) -> str:
+    return (
+        f"0 {(x_min + x_max) / 2:.12g} {(y_min + y_max) / 2:.12g} "
+        f"{x_max - x_min:.12g} {y_max - y_min:.12g}\n"
+    )
 
 
 def test_center_based_match_accepts_tight_prediction_inside_fixed_gt() -> None:
@@ -86,3 +105,55 @@ def test_collect_duplicate_yolo_label_rows_reports_extra_rows(tmp_path: Path) ->
             "note": "Ultralytics removes exact duplicate label rows during standard validation cache creation.",
         }
     ]
+
+
+def test_load_ground_truth_accepts_half_pixel_boundary_rounding(tmp_path: Path) -> None:
+    images_dir = tmp_path / "images"
+    labels_dir = tmp_path / "labels"
+    image_path = images_dir / "ant4_frame_000016_t0000.533.jpg"
+    label_path = labels_dir / "ant4_frame_000016_t0000.533.txt"
+    write_image(image_path, width=400, height=472)
+    label_path.parent.mkdir(parents=True, exist_ok=True)
+    label_path.write_text(yolo_label_from_edges(0.2, 0.2, 1.0 + 0.49 / 400, 0.8), encoding="utf-8")
+
+    ground_truth = _load_ground_truth(images_dir, labels_dir)
+
+    assert len(ground_truth[image_path]) == 1
+
+
+def test_load_ground_truth_rejects_boundary_overshoot_over_half_pixel(tmp_path: Path) -> None:
+    images_dir = tmp_path / "images"
+    labels_dir = tmp_path / "labels"
+    image_path = images_dir / "ant4_frame_000016_t0000.533.jpg"
+    label_path = labels_dir / "ant4_frame_000016_t0000.533.txt"
+    write_image(image_path, width=400, height=472)
+    label_path.parent.mkdir(parents=True, exist_ok=True)
+    label_path.write_text(yolo_label_from_edges(0.2, 0.2, 1.0 + 0.51 / 400, 0.8), encoding="utf-8")
+
+    with pytest.raises(ValueError, match="more than 0.5 pixels"):
+        _load_ground_truth(images_dir, labels_dir)
+
+
+def test_load_ground_truth_preserves_pixel_coordinates_without_clamping(tmp_path: Path) -> None:
+    images_dir = tmp_path / "images"
+    labels_dir = tmp_path / "labels"
+    image_path = images_dir / "ant4_frame_000016_t0000.533.jpg"
+    label_path = labels_dir / "ant4_frame_000016_t0000.533.txt"
+    write_image(image_path, width=400, height=472)
+    label_path.parent.mkdir(parents=True, exist_ok=True)
+    label_path.write_text(yolo_label_from_edges(0.2, 0.2, 1.0 + 0.49 / 400, 0.8), encoding="utf-8")
+
+    box = _load_ground_truth(images_dir, labels_dir)[image_path][0]
+
+    assert box.x1 == pytest.approx(80.0)
+    assert box.y1 == pytest.approx(94.4)
+    assert box.x2 == pytest.approx(400.49)
+    assert box.y2 == pytest.approx(377.6)
+
+
+def test_strict_low_level_label_parse_without_image_dimensions_remains_strict(tmp_path: Path) -> None:
+    label_path = tmp_path / "label.txt"
+    label_path.write_text(yolo_label_from_edges(0.2, 0.2, 1.0 + 0.49 / 400, 0.8), encoding="utf-8")
+
+    with pytest.raises(ValueError, match="outside normalized image bounds"):
+        parse_yolo_label_file(label_path)

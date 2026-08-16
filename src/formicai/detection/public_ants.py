@@ -419,7 +419,11 @@ def _load_ground_truth(images_dir: Path, labels_dir: Path) -> dict[Path, list[Pi
             raise RuntimeError(f"Could not read image: {image_path}")
         image_height, image_width = image.shape[:2]
         label_path = matching_label_path(image_path, labels_dir)
-        boxes = parse_yolo_label_file(label_path)
+        boxes = parse_yolo_label_file(
+            label_path,
+            image_width=image_width,
+            image_height=image_height,
+        )
         ground_truth[image_path] = [_yolo_box_to_pixel_box(box, image_width, image_height) for box in boxes]
     return ground_truth
 

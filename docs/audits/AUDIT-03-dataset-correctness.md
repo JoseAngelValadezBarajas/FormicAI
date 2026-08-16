@@ -25,6 +25,7 @@ Implemented behavior:
 - Dataset statistics now reads image dimensions before parsing labels, distinguishes an intentionally empty label file from a missing label file, and applies the same `0.5` physical-pixel boundary policy as validation. Empty `.txt` labels remain valid zero-ant images; missing labels raise `ValueError`.
 - Image-aware YOLO validation accepts boundary overshoot up to `0.5` physical pixels when image dimensions are known, using axis-specific normalized tolerances derived from image width/height.
 - Segmentation polygons follow the same image-aware boundary policy for their source points when image dimensions are known; without image dimensions, normalized segmentation coordinates remain strictly bounded.
+- The same `0.5` physical-pixel image-aware boundary policy is applied when validating external-test labels and loading ground truth for custom public diagnostics whenever real image dimensions are known.
 - Validation never clamps, rewrites, or mutates annotation coordinates.
 
 No training, real model inference, benchmark evaluation, dataset mutation, annotation mutation, model-weight mutation, final-test freeze, v5 design, tracking work, push, or merge occurred as part of AUDIT-03.
