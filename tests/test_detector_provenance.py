@@ -144,6 +144,84 @@ def _assert_output_collision_rejected(
     assert writer_calls == []
 
 
+def _assert_protected_path_collision_rejected(
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
+    *,
+    output_role: str,
+    protected_role: str,
+    normalized_alias: bool = False,
+) -> None:
+    data_dir = tmp_path / "data"
+    model_dir = tmp_path / "models"
+    output_dir = tmp_path / "output"
+    data_dir.mkdir()
+    model_dir.mkdir()
+    output_dir.mkdir()
+    (data_dir / "nested").mkdir()
+    video_path = data_dir / "video.mp4"
+    model_path = model_dir / "model.pt"
+    video_bytes = b"protected video bytes"
+    model_bytes = b"protected model bytes"
+    video_path.write_bytes(video_bytes)
+    model_path.write_bytes(model_bytes)
+    output_video_path = output_dir / "detections.mp4"
+    output_jsonl_path = output_dir / "detections.jsonl"
+    output_metadata_path = output_dir / "detections.run.json"
+    protected_path = video_path if protected_role == "input video" else model_path
+    colliding_path = protected_path
+    if normalized_alias:
+        colliding_path = data_dir / "nested" / ".." / "video.mp4"
+
+    if output_role == "output video":
+        output_video_path = colliding_path
+    elif output_role == "output JSONL":
+        output_jsonl_path = colliding_path
+    elif output_role == "run metadata":
+        output_metadata_path = colliding_path
+    else:
+        raise AssertionError(f"Unexpected output role: {output_role}")
+
+    capture_calls: list[object] = []
+    writer_calls: list[object] = []
+
+    class FailingCapture:
+        def __init__(self, path: str) -> None:
+            capture_calls.append(path)
+            raise AssertionError("VideoCapture must not be opened for protected-path collisions")
+
+    class FailingYOLO:
+        def __init__(self, model_path: str) -> None:
+            raise AssertionError("YOLO must not be instantiated for protected-path collisions")
+
+    def failing_writer(*args: object, **kwargs: object) -> _FakeWriter:
+        writer_calls.append(args)
+        raise AssertionError("VideoWriter must not be created for protected-path collisions")
+
+    monkeypatch.setattr(cv2, "VideoCapture", FailingCapture)
+    monkeypatch.setattr(cv2, "VideoWriter", failing_writer)
+    monkeypatch.setitem(sys.modules, "ultralytics", SimpleNamespace(YOLO=FailingYOLO, __version__="test-ultra"))
+
+    with pytest.raises(ValueError, match="cannot overwrite"):
+        VideoDetector(
+            VideoDetectionConfig(
+                input_path=video_path,
+                model_path=model_path,
+                output_video_path=output_video_path,
+                output_jsonl_path=output_jsonl_path,
+                output_metadata_path=output_metadata_path,
+            )
+        ).detect()
+
+    assert video_path.read_bytes() == video_bytes
+    assert model_path.read_bytes() == model_bytes
+    assert capture_calls == []
+    assert writer_calls == []
+    for path in {output_video_path, output_jsonl_path, output_metadata_path}:
+        if path.resolve() not in {video_path.resolve(), model_path.resolve()}:
+            assert not path.exists()
+
+
 def test_current_champion_spec_is_canonical() -> None:
     assert CURRENT_CHAMPION.experiment == "ants_v3_mixedscale_e01"
     assert CURRENT_CHAMPION.sha256 == "424d508ef2b881740134c3c3a320f0dba4ea12d2f4a9f77a057451539347daaf"
@@ -255,6 +333,44 @@ def test_normalized_equivalent_output_path_collision_is_rejected(
         monkeypatch,
         output_jsonl_path=output_dir / "file.json",
         output_metadata_path=output_dir / "." / "file.json",
+    )
+
+
+@pytest.mark.parametrize(
+    ("output_role", "protected_role"),
+    [
+        ("output video", "input video"),
+        ("output JSONL", "input video"),
+        ("run metadata", "input video"),
+        ("output video", "model"),
+        ("output JSONL", "model"),
+        ("run metadata", "model"),
+    ],
+)
+def test_output_paths_cannot_overwrite_protected_inputs(
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
+    output_role: str,
+    protected_role: str,
+) -> None:
+    _assert_protected_path_collision_rejected(
+        tmp_path,
+        monkeypatch,
+        output_role=output_role,
+        protected_role=protected_role,
+    )
+
+
+def test_normalized_equivalent_output_path_cannot_overwrite_input_video(
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    _assert_protected_path_collision_rejected(
+        tmp_path,
+        monkeypatch,
+        output_role="output video",
+        protected_role="input video",
+        normalized_alias=True,
     )
 
 
@@ -416,6 +532,37 @@ def test_distinct_default_output_paths_continue_working(
     assert result.output_metadata_path == tmp_path / "detections.run.json"
     assert result.output_jsonl_path.exists()
     assert result.output_metadata_path.exists()
+
+
+def test_valid_nearby_outputs_do_not_conflict_with_protected_inputs(
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    _install_fake_video_io(monkeypatch)
+    calls: list[dict[str, object]] = []
+    _install_fake_yolo(monkeypatch, calls)
+    data_dir = tmp_path / "data"
+    output_dir = tmp_path / "output"
+    data_dir.mkdir()
+    output_dir.mkdir()
+    video_path = data_dir / "video.mp4"
+    model_path = data_dir / "model.pt"
+    video_path.write_bytes(b"video")
+    model_path.write_bytes(b"model")
+
+    result = VideoDetector(
+        VideoDetectionConfig(
+            input_path=video_path,
+            model_path=model_path,
+            output_video_path=output_dir / "detections.mp4",
+            output_jsonl_path=output_dir / "detections.jsonl",
+            output_metadata_path=output_dir / "detections.run.json",
+        )
+    ).detect()
+
+    assert result.processed_frames == 1
+    assert (output_dir / "detections.jsonl").exists()
+    assert (output_dir / "detections.run.json").exists()
 
 
 def test_inference_override_marks_metadata_noncanonical(

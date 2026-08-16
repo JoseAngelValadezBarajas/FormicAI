@@ -63,6 +63,13 @@ class VideoDetector:
             output_jsonl_path=self._config.output_jsonl_path,
             output_metadata_path=metadata_path,
         )
+        _validate_outputs_do_not_overwrite_protected_inputs(
+            input_path=self._config.input_path,
+            model_path=self._config.model_path,
+            output_video_path=self._config.output_video_path,
+            output_jsonl_path=self._config.output_jsonl_path,
+            output_metadata_path=metadata_path,
+        )
 
         model_sha256 = sha256_file(self._config.model_path)
         if (
@@ -240,6 +247,33 @@ def _validate_distinct_output_paths(
                 raise ValueError(
                     "Output paths must be distinct: "
                     f"{left_name} and {right_name} both resolve to {resolved[left_name]}."
+                )
+
+
+def _validate_outputs_do_not_overwrite_protected_inputs(
+    *,
+    input_path: Path,
+    model_path: Path,
+    output_video_path: Path,
+    output_jsonl_path: Path,
+    output_metadata_path: Path,
+) -> None:
+    protected_inputs = {
+        "input video": input_path,
+        "model": model_path,
+    }
+    outputs = {
+        "output video": output_video_path,
+        "output JSONL": output_jsonl_path,
+        "run metadata": output_metadata_path,
+    }
+    resolved_inputs = {name: path.resolve() for name, path in protected_inputs.items()}
+    resolved_outputs = {name: path.resolve() for name, path in outputs.items()}
+    for output_name, output_path in resolved_outputs.items():
+        for input_name, protected_path in resolved_inputs.items():
+            if output_path == protected_path:
+                raise ValueError(
+                    f"{output_name} cannot overwrite {input_name}: {output_path}."
                 )
 
 

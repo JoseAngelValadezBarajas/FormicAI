@@ -46,5 +46,6 @@ Implementation notes:
 - `detect-video` writes frame JSONL as before and also writes a separate human-readable run metadata JSON artifact.
 - The metadata records source SHA256, model SHA256, model identity, inference configuration, canonical/noncanonical status, overrides, class policy, environment versions, and result counts.
 - `detect-video` rejects colliding output destinations after path resolution, so the annotated video, JSONL detections, and run provenance metadata cannot overwrite one another.
+- `detect-video` also rejects output destinations that resolve to the source video or model weights, protecting both input files from accidental overwrite.
 
 No real training, real model inference, benchmark evaluation, dataset mutation, annotation mutation, champion change, v5 design, tracking, push, or merge occurred as part of AUDIT-02.
