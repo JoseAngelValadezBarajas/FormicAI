@@ -160,9 +160,10 @@ class ExternalEvaluator:
             details = "\n".join(f"- {error}" for error in errors)
             raise ValueError(f"External test labels are not valid for {root_dir.name}.\n{details}")
 
-        dataset_yaml = root_dir / "dataset.yaml"
+        dataset_yaml = self._evaluation_dataset_yaml(root_dir)
+        dataset_yaml.parent.mkdir(parents=True, exist_ok=True)
         dataset_yaml.write_text(
-            "path: .\ntrain: images\nval: images\nnames:\n  0: ant\n",
+            f"path: {root_dir.resolve().as_posix()}\ntrain: images\nval: images\nnames:\n  0: ant\n",
             encoding="utf-8",
         )
         return ExternalVideoDataset(
@@ -173,6 +174,9 @@ class ExternalEvaluator:
             annotations=annotations,
             images_without_annotations=images_without_annotations,
         )
+
+    def _evaluation_dataset_yaml(self, root_dir: Path) -> Path:
+        return self._config.output_path.parent / "external_test_dataset_yamls" / f"{root_dir.name}.yaml"
 
     def _evaluate_video(self, model: Any, dataset: ExternalVideoDataset) -> ExternalVideoMetrics:
         validation_kwargs: dict[str, Any] = {

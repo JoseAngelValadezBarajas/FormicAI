@@ -45,6 +45,8 @@ def test_external_evaluator_writes_metrics_by_video(tmp_path: Path, monkeypatch)
             )
 
     monkeypatch.setitem(sys.modules, "ultralytics", SimpleNamespace(YOLO=FakeYOLO))
+    assert not (external_test_dir / "ant3" / "dataset.yaml").exists()
+    assert not (external_test_dir / "ant4" / "dataset.yaml").exists()
 
     result = ExternalEvaluator(
         ExternalEvaluationConfig(
@@ -63,9 +65,59 @@ def test_external_evaluator_writes_metrics_by_video(tmp_path: Path, monkeypatch)
     assert calls[0]["conf"] == 0.25
     assert calls[0]["iou"] == 0.70
     assert calls[0]["end2end"] is False
-    assert (external_test_dir / "ant3" / "dataset.yaml").exists()
+    assert not (external_test_dir / "ant3" / "dataset.yaml").exists()
+    assert not (external_test_dir / "ant4" / "dataset.yaml").exists()
+    generated_yaml = output_path.parent / "external_test_dataset_yamls" / "ant3.yaml"
+    assert generated_yaml.exists()
+    assert calls[0]["data"] == str(generated_yaml)
+    generated_yaml_text = generated_yaml.read_text(encoding="utf-8")
+    assert f"path: {(external_test_dir / 'ant3').resolve().as_posix()}" in generated_yaml_text
+    assert "train: images" in generated_yaml_text
+    assert "val: images" in generated_yaml_text
 
     data = json.loads(output_path.read_text(encoding="utf-8"))
     assert data["macroAverage"]["videos"] == 2
     assert data["macroAverage"]["precision"] == 0.8
     assert data["videos"][0]["video"] == "ant3"
+
+
+def test_external_evaluator_does_not_touch_existing_dataset_yaml(tmp_path: Path, monkeypatch) -> None:
+    external_test_dir = tmp_path / "external_test"
+    write_external_test_record(external_test_dir, "ant3", "ant3_frame_000000_t0000.000")
+    model_path = tmp_path / "best.pt"
+    model_path.write_bytes(b"weights")
+    output_path = tmp_path / "metrics.json"
+    sentinel = external_test_dir / "ant3" / "dataset.yaml"
+    sentinel.write_text("sentinel: keep me exactly\n", encoding="utf-8")
+    calls: list[dict[str, object]] = []
+
+    class FakeYOLO:
+        def __init__(self, path: str) -> None:
+            assert path == str(model_path)
+
+        def val(self, **kwargs: object) -> object:
+            calls.append(kwargs)
+            return SimpleNamespace(
+                box=SimpleNamespace(mp=0.8, mr=0.7, map50=0.6, map=0.5),
+                results_dict={},
+            )
+
+    monkeypatch.setitem(sys.modules, "ultralytics", SimpleNamespace(YOLO=FakeYOLO))
+
+    ExternalEvaluator(
+        ExternalEvaluationConfig(
+            external_test_dir=external_test_dir,
+            model_path=model_path,
+            output_path=output_path,
+        )
+    ).evaluate()
+
+    assert sentinel.read_text(encoding="utf-8") == "sentinel: keep me exactly\n"
+    generated_yaml = output_path.parent / "external_test_dataset_yamls" / "ant3.yaml"
+    assert generated_yaml.exists()
+    assert calls[0]["data"] == str(generated_yaml)
+    assert calls[0]["data"] != str(sentinel)
+
+    data = json.loads(output_path.read_text(encoding="utf-8"))
+    assert data["videos"][0]["datasetYaml"] == str(generated_yaml)
+    assert data["videos"][0]["precision"] == 0.8

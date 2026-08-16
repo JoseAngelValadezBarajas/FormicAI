@@ -1,12 +1,18 @@
 from __future__ import annotations
 
+import json
 from pathlib import Path
 
 import cv2
 import numpy as np
 import pytest
 
-from formicai.dataset.roboflow import RoboflowDatasetPreparer, inspect_roboflow_export
+from formicai.dataset.roboflow import (
+    DEFAULT_PREPARATION_SOURCE_SPLITS,
+    ROBOFLOW_SPLITS,
+    RoboflowDatasetPreparer,
+    inspect_roboflow_export,
+)
 from formicai.dataset.validation import DatasetValidator
 
 
@@ -43,6 +49,20 @@ def create_roboflow_export(root: Path) -> None:
     write_roboflow_record(root, "train", 14, "0000-467", label)
 
 
+def create_test_only_roboflow_export(root: Path) -> None:
+    root.mkdir(parents=True, exist_ok=True)
+    (root / "data.yaml").write_text(
+        "train: ../train/images\nval: ../valid/images\ntest: ../test/images\nnc: 1\nnames: ['Ant']\n",
+        encoding="utf-8",
+    )
+    for split in ROBOFLOW_SPLITS:
+        (root / split / "images").mkdir(parents=True, exist_ok=True)
+        (root / split / "labels").mkdir(parents=True, exist_ok=True)
+
+    label = "0 0.500000 0.500000 0.250000 0.250000\n"
+    write_roboflow_record(root, "test", 0, "0000-000", label)
+
+
 def test_inspect_roboflow_export_counts_detection_annotations(tmp_path: Path) -> None:
     export_dir = tmp_path / "exported_dataset"
     create_roboflow_export(export_dir)
@@ -50,6 +70,9 @@ def test_inspect_roboflow_export_counts_detection_annotations(tmp_path: Path) ->
     result = inspect_roboflow_export(export_dir)
 
     assert result.ok
+    assert result.split_counts["train"].images == 3
+    assert result.split_counts["valid"].images == 2
+    assert result.split_counts["test"].images == 1
     assert result.total_images == 6
     assert result.images_with_labels == 6
     assert result.valid_annotations == 6
@@ -72,20 +95,82 @@ def test_prepare_roboflow_temporal_split_and_normalized_dataset_yaml(tmp_path: P
         gap_count=1,
     ).prepare()
 
-    assert result.train_images == 4
+    assert result.inspected_source_splits == ROBOFLOW_SPLITS
+    assert result.included_source_splits == DEFAULT_PREPARATION_SOURCE_SPLITS
+    assert result.excluded_source_splits == ("test",)
+    assert not result.allow_test_as_training_source
+    assert result.inspected_image_count == 6
+    assert result.eligible_image_count == 5
+    assert result.excluded_image_count == 1
+    assert result.inspected_annotation_count == 6
+    assert result.eligible_annotation_count == 5
+    assert result.excluded_annotation_count == 1
+    assert result.train_images == 3
     assert result.gap_images == 1
     assert result.val_images == 1
-    assert result.train_annotations == 4
+    assert result.train_annotations == 3
     assert result.val_annotations == 1
     assert result.gap_annotations == 1
-    assert result.source_total_annotations == 6
-    assert result.total_prepared_annotations == 5
-    assert result.train_last_frame == 21
-    assert result.val_first_frame == 35
+    assert result.source_total_annotations == 5
+    assert result.total_prepared_annotations == 4
+    assert result.train_last_frame == 14
+    assert result.val_first_frame == 28
+    prepared_images = {
+        image_path.name
+        for split in ("train", "val")
+        for image_path in (output_dir / "images" / split).glob("*.jpg")
+    }
+    assert not any("frame_000035" in image_name for image_name in prepared_images)
+    metadata = json.loads((output_dir / "split_metadata.json").read_text(encoding="utf-8"))
+    assert metadata["sourceSplitPolicy"]["inspectedSourceSplits"] == ["train", "valid", "test"]
+    assert metadata["sourceSplitPolicy"]["includedSourceSplits"] == ["train", "valid"]
+    assert metadata["sourceSplitPolicy"]["excludedSourceSplits"] == ["test"]
+    assert metadata["sourceSplitPolicy"]["allowTestAsTrainingSource"] is False
+    assert metadata["sourceSplitPolicy"]["holdoutProtection"] == "enabled"
+    assert metadata["sourceSplitPolicy"]["eligibleImageCount"] == 5
+    assert metadata["sourceSplitPolicy"]["excludedImageCount"] == 1
+    assert metadata["sourceSplitPolicy"]["excludedAnnotationCount"] == 1
+    for split_name in ("train", "gap", "val"):
+        assert all(record["sourceSplit"] != "test" for record in metadata[split_name])
     assert (output_dir / "dataset.yaml").read_text(encoding="utf-8") == (
         "path: .\ntrain: images/train\nval: images/val\nnames:\n  0: ant\n"
     )
     assert DatasetValidator(output_dir).validate().ok
+
+
+def test_prepare_roboflow_can_explicitly_override_test_holdout_protection(tmp_path: Path) -> None:
+    export_dir = tmp_path / "exported_dataset"
+    output_dir = tmp_path / "datasets" / "prepared" / "legacy"
+    create_roboflow_export(export_dir)
+
+    result = RoboflowDatasetPreparer(
+        export_dir=export_dir,
+        output_dir=output_dir,
+        train_fraction=0.67,
+        gap_count=1,
+        allow_test_as_training_source=True,
+    ).prepare()
+
+    assert result.allow_test_as_training_source
+    assert result.included_source_splits == ROBOFLOW_SPLITS
+    assert result.excluded_source_splits == ()
+    assert result.eligible_image_count == 6
+    assert result.excluded_image_count == 0
+    assert result.eligible_annotation_count == 6
+    assert result.excluded_annotation_count == 0
+    metadata = json.loads((output_dir / "split_metadata.json").read_text(encoding="utf-8"))
+    assert metadata["sourceSplitPolicy"]["allowTestAsTrainingSource"] is True
+    assert metadata["sourceSplitPolicy"]["holdoutProtection"] == "overridden"
+    assert metadata["sourceSplitPolicy"]["includedSourceSplits"] == ["train", "valid", "test"]
+    assert any(record["sourceSplit"] == "test" for record in metadata["train"] + metadata["gap"] + metadata["val"])
+
+
+def test_prepare_roboflow_fails_when_test_filtering_leaves_too_few_records(tmp_path: Path) -> None:
+    export_dir = tmp_path / "exported_dataset"
+    create_test_only_roboflow_export(export_dir)
+
+    with pytest.raises(ValueError, match="at least two eligible timestamped images"):
+        RoboflowDatasetPreparer(export_dir=export_dir, output_dir=tmp_path / "prepared").prepare()
 
 
 def test_prepare_roboflow_converts_polygon_labels(tmp_path: Path) -> None:
@@ -97,10 +182,10 @@ def test_prepare_roboflow_converts_polygon_labels(tmp_path: Path) -> None:
 
     result = RoboflowDatasetPreparer(export_dir, output_dir, train_fraction=0.67, gap_count=1).prepare()
 
-    assert result.source_detection_annotations == 5
+    assert result.source_detection_annotations == 4
     assert result.converted_segmentation_annotations == 1
-    assert result.source_total_annotations == 6
-    assert result.total_prepared_annotations == 5
+    assert result.source_total_annotations == 5
+    assert result.total_prepared_annotations == 4
     prepared_label = output_dir / "labels" / "train" / polygon_label.name
     assert prepared_label.read_text(encoding="utf-8") == "0 0.25 0.4 0.3 0.4\n"
     assert DatasetValidator(output_dir).validate().ok

@@ -179,6 +179,15 @@ def build_dataset_parser() -> argparse.ArgumentParser:
         help="Number of boundary frames to omit between train and val.",
     )
     prepare_roboflow.add_argument(
+        "--allow-test-as-training-source",
+        action="store_true",
+        help=(
+            "Dangerous legacy override: allow Roboflow test split records to be used as source data "
+            "for prepared train/val construction. By default Roboflow test is inspected but excluded "
+            "to protect true holdouts."
+        ),
+    )
+    prepare_roboflow.add_argument(
         "--log-level",
         default="INFO",
         choices=["DEBUG", "INFO", "WARNING", "ERROR"],
@@ -504,6 +513,7 @@ def run_dataset(args: argparse.Namespace) -> int:
                 output_dir=args.output,
                 train_fraction=args.train_fraction,
                 gap_count=args.gap_count,
+                allow_test_as_training_source=args.allow_test_as_training_source,
             ).prepare()
             print(result.to_text())
             return 0

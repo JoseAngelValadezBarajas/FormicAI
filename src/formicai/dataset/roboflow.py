@@ -20,6 +20,7 @@ from formicai.dataset.yolo import (
 
 
 ROBOFLOW_SPLITS = ("train", "valid", "test")
+DEFAULT_PREPARATION_SOURCE_SPLITS = ("train", "valid")
 FRAME_PATTERN = re.compile(r"_frame_(?P<frame>\d+)_t(?P<seconds>\d+)[-.](?P<fraction>\d+)")
 
 
@@ -129,6 +130,16 @@ class PreparedDatasetResult:
     converted_segmentation_annotations: int
     source_total_annotations: int
     total_prepared_annotations: int
+    inspected_source_splits: tuple[str, ...]
+    included_source_splits: tuple[str, ...]
+    excluded_source_splits: tuple[str, ...]
+    allow_test_as_training_source: bool
+    inspected_image_count: int
+    eligible_image_count: int
+    excluded_image_count: int
+    inspected_annotation_count: int
+    eligible_annotation_count: int
+    excluded_annotation_count: int
     train_first_frame: int | None
     train_last_frame: int | None
     val_first_frame: int | None
@@ -148,11 +159,21 @@ class PreparedDatasetResult:
                 f"Train images: {self.train_images}",
                 f"Val images: {self.val_images}",
                 f"Gap images omitted: {self.gap_images}",
+                f"Inspected source splits: {', '.join(self.inspected_source_splits)}",
+                f"Included source splits: {', '.join(self.included_source_splits)}",
+                f"Excluded source splits: {', '.join(self.excluded_source_splits) or '(none)'}",
+                f"Allow test as training source: {self.allow_test_as_training_source}",
+                f"Inspected images: {self.inspected_image_count}",
+                f"Eligible images: {self.eligible_image_count}",
+                f"Excluded images: {self.excluded_image_count}",
                 f"Train annotations: {self.train_annotations}",
                 f"Val annotations: {self.val_annotations}",
                 f"Gap annotations omitted: {self.gap_annotations}",
                 f"Detection annotations preserved: {self.source_detection_annotations}",
                 f"Segmentation annotations converted: {self.converted_segmentation_annotations}",
+                f"Inspected annotations after conversion: {self.inspected_annotation_count}",
+                f"Eligible annotations after conversion: {self.eligible_annotation_count}",
+                f"Excluded annotations after conversion: {self.excluded_annotation_count}",
                 f"Source annotations after conversion: {self.source_total_annotations}",
                 f"Prepared train+val annotations: {self.total_prepared_annotations}",
                 f"Train first frame: {self.train_first_frame}",
@@ -171,26 +192,47 @@ class RoboflowDatasetPreparer:
         output_dir: Path,
         train_fraction: float = 0.8,
         gap_count: int = 1,
+        allow_test_as_training_source: bool = False,
     ) -> None:
         self._export_dir = export_dir
         self._output_dir = output_dir
         self._train_fraction = train_fraction
         self._gap_count = gap_count
+        self._allow_test_as_training_source = allow_test_as_training_source
 
     def prepare(self) -> PreparedDatasetResult:
         inspection = inspect_roboflow_export(self._export_dir)
+        included_source_splits = _included_preparation_source_splits(self._allow_test_as_training_source)
+        excluded_source_splits = tuple(split for split in ROBOFLOW_SPLITS if split not in included_source_splits)
+        eligible_records = [
+            record for record in inspection.records if record.source_split in included_source_splits
+        ]
+        excluded_records = [
+            record for record in inspection.records if record.source_split not in included_source_splits
+        ]
+        eligible_detection_annotations = _annotation_format_count(eligible_records, "detection")
+        eligible_converted_annotations = _annotation_format_count(eligible_records, "segmentation")
+        eligible_annotations = _annotation_count(eligible_records)
+        excluded_annotations = _annotation_count(excluded_records)
+
         errors = list(inspection.errors)
         if _normalized_classes(inspection.classes) != {0: "ant"}:
             errors.append("data.yaml must contain exactly one class, 0 = ant.")
-        if len(inspection.records) < 2:
-            errors.append("Roboflow export must contain at least two timestamped images.")
+        if len(eligible_records) < 2:
+            excluded = ", ".join(excluded_source_splits) or "(none)"
+            included = ", ".join(included_source_splits)
+            errors.append(
+                "Roboflow export must contain at least two eligible timestamped images "
+                f"after applying source split protection. Included source splits: {included}. "
+                f"Excluded source splits: {excluded}."
+            )
         if errors:
             message = "Roboflow export is not a valid YOLO detection dataset."
             details = "\n".join(f"- {error}" for error in errors)
             raise ValueError(f"{message}\n{details}")
 
         split = temporal_split(
-            inspection.records,
+            eligible_records,
             train_fraction=self._train_fraction,
             gap_count=self._gap_count,
             timestamp_key="timestamp_seconds",
@@ -220,16 +262,27 @@ class RoboflowDatasetPreparer:
                 {
                     "sourceExport": str(self._export_dir),
                     "strategy": (
-                        "Merged Roboflow train/valid/test, sorted by timestamp from filename, "
+                        f"Merged eligible Roboflow source splits ({', '.join(included_source_splits)}), "
+                        "sorted by timestamp from filename, "
                         f"used first {self._train_fraction:.0%} for train and last "
                         f"{1.0 - self._train_fraction:.0%} for val with {len(gap_records)} "
                         "boundary frame(s) omitted as temporal gap."
                     ),
+                    "sourceSplitPolicy": _source_split_policy_json(
+                        inspection=inspection,
+                        eligible_records=eligible_records,
+                        excluded_records=excluded_records,
+                        included_source_splits=included_source_splits,
+                        excluded_source_splits=excluded_source_splits,
+                        allow_test_as_training_source=self._allow_test_as_training_source,
+                    ),
                     "trainFraction": self._train_fraction,
                     "gapCountRequested": self._gap_count,
-                    "sourceDetectionAnnotations": inspection.source_detection_annotations,
-                    "convertedSegmentationAnnotations": inspection.converted_segmentation_annotations,
-                    "sourceTotalAnnotations": inspection.total_prepared_annotations,
+                    "sourceDetectionAnnotations": eligible_detection_annotations,
+                    "convertedSegmentationAnnotations": eligible_converted_annotations,
+                    "sourceTotalAnnotations": eligible_annotations,
+                    "inspectedAnnotations": inspection.total_prepared_annotations,
+                    "excludedAnnotations": excluded_annotations,
                     "gapAnnotations": gap_annotations,
                     "totalPreparedAnnotations": prepared_annotations,
                     "invalidAnnotations": inspection.invalid_annotation_lines,
@@ -262,10 +315,20 @@ class RoboflowDatasetPreparer:
             train_annotations=train_annotations,
             val_annotations=val_annotations,
             gap_annotations=gap_annotations,
-            source_detection_annotations=inspection.source_detection_annotations,
-            converted_segmentation_annotations=inspection.converted_segmentation_annotations,
-            source_total_annotations=inspection.total_prepared_annotations,
+            source_detection_annotations=eligible_detection_annotations,
+            converted_segmentation_annotations=eligible_converted_annotations,
+            source_total_annotations=eligible_annotations,
             total_prepared_annotations=prepared_annotations,
+            inspected_source_splits=ROBOFLOW_SPLITS,
+            included_source_splits=included_source_splits,
+            excluded_source_splits=excluded_source_splits,
+            allow_test_as_training_source=self._allow_test_as_training_source,
+            inspected_image_count=inspection.total_images,
+            eligible_image_count=len(eligible_records),
+            excluded_image_count=len(excluded_records),
+            inspected_annotation_count=inspection.total_prepared_annotations,
+            eligible_annotation_count=eligible_annotations,
+            excluded_annotation_count=excluded_annotations,
             train_first_frame=train_records[0].frame_index if train_records else None,
             train_last_frame=train_records[-1].frame_index if train_records else None,
             val_first_frame=val_records[0].frame_index if val_records else None,
@@ -446,6 +509,54 @@ def _write_prepared_label(record: ExportRecord, target_path: Path) -> None:
 
 def _annotation_count(records: list[ExportRecord]) -> int:
     return sum(len(record.annotations) for record in records)
+
+
+def _annotation_format_count(records: list[ExportRecord], annotation_format: str) -> int:
+    return sum(
+        1
+        for record in records
+        for annotation in record.annotations
+        if annotation.annotation_format == annotation_format
+    )
+
+
+def _included_preparation_source_splits(allow_test_as_training_source: bool) -> tuple[str, ...]:
+    if allow_test_as_training_source:
+        return ROBOFLOW_SPLITS
+    return DEFAULT_PREPARATION_SOURCE_SPLITS
+
+
+def _source_split_policy_json(
+    *,
+    inspection: RoboflowExportInspection,
+    eligible_records: list[ExportRecord],
+    excluded_records: list[ExportRecord],
+    included_source_splits: tuple[str, ...],
+    excluded_source_splits: tuple[str, ...],
+    allow_test_as_training_source: bool,
+) -> dict[str, object]:
+    return {
+        "inspectedSourceSplits": list(ROBOFLOW_SPLITS),
+        "includedSourceSplits": list(included_source_splits),
+        "excludedSourceSplits": list(excluded_source_splits),
+        "allowTestAsTrainingSource": allow_test_as_training_source,
+        "holdoutProtection": "overridden" if allow_test_as_training_source else "enabled",
+        "inspectedImageCount": inspection.total_images,
+        "inspectedRecordCount": len(inspection.records),
+        "eligibleImageCount": len(eligible_records),
+        "excludedImageCount": len(excluded_records),
+        "inspectedAnnotationCount": inspection.total_prepared_annotations,
+        "eligibleAnnotationCount": _annotation_count(eligible_records),
+        "excludedAnnotationCount": _annotation_count(excluded_records),
+        "sourceSplitCounts": {
+            split: {
+                "images": inspection.split_counts.get(split, ExportSplitCount(images=0, labels=0)).images,
+                "labels": inspection.split_counts.get(split, ExportSplitCount(images=0, labels=0)).labels,
+            }
+            for split in ROBOFLOW_SPLITS
+        },
+        "excludedRecords": [_record_to_json(record) for record in excluded_records],
+    }
 
 
 def _temporal_range(records: list[ExportRecord]) -> dict[str, object] | None:

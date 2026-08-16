@@ -192,6 +192,8 @@ python -m formicai dataset validate datasets/prepared/ants_v1
 python -m formicai dataset stats datasets/prepared/ants_v1
 ```
 
+Roboflow `test` split records are inspected but excluded from prepared train/val construction by default. This protects holdout/test data from becoming training data accidentally. Historical reconstruction can opt in with `--allow-test-as-training-source`; new experiments should not use that override for true holdouts.
+
 The initial baseline uses Ultralytics YOLO26 nano (`yolo26n.pt`) with transfer learning. This is a proof of concept from temporally separated frames of one source video, not evidence of generalization to new colonies, cameras, lighting, or videos.
 
 Run video detection with global-frame JSONL boxes:
