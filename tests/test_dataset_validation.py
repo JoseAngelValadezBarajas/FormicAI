@@ -47,6 +47,13 @@ def create_prepared_dataset(root: Path) -> None:
     )
 
 
+def rewrite_dataset_yaml(dataset_dir: Path, root: str | Path, train: str = "images/train", val: str = "images/val") -> None:
+    (dataset_dir / "dataset.yaml").write_text(
+        f"path: {root}\ntrain: {train}\nval: {val}\nnames:\n  0: ant\n",
+        encoding="utf-8",
+    )
+
+
 def test_parse_yolo_label_file() -> None:
     path = Path("label.txt")
     tmp = Path.cwd() / path
@@ -144,6 +151,74 @@ def test_dataset_validator_accepts_valid_prepared_dataset(tmp_path: Path) -> Non
     assert result.train.images_without_annotations == 1
 
 
+def test_dataset_validator_uses_yaml_target_instead_of_local_hardcoded_dirs(tmp_path: Path) -> None:
+    dataset_dir = tmp_path / "wrapper"
+    target_dir = tmp_path / "target_invalid"
+    create_prepared_dataset(dataset_dir)
+    create_prepared_dataset(target_dir)
+    (target_dir / "labels" / "train" / "train_001.txt").unlink()
+    rewrite_dataset_yaml(dataset_dir, "../target_invalid")
+
+    result = DatasetValidator(dataset_dir).validate()
+
+    assert not result.ok
+    assert any(str(target_dir / "images" / "train" / "train_001.jpg") in error for error in result.errors)
+
+
+def test_dataset_validator_accepts_yaml_target_when_local_hardcoded_dirs_are_invalid(tmp_path: Path) -> None:
+    dataset_dir = tmp_path / "wrapper"
+    target_dir = tmp_path / "target_valid"
+    create_prepared_dataset(dataset_dir)
+    create_prepared_dataset(target_dir)
+    (dataset_dir / "labels" / "train" / "train_001.txt").unlink()
+    rewrite_dataset_yaml(dataset_dir, "../target_valid")
+
+    result = DatasetValidator(dataset_dir).validate()
+
+    assert result.ok
+    assert result.train.images == 2
+    assert result.val.images == 1
+
+
+def test_dataset_validator_resolves_relative_yaml_path_from_yaml_location(tmp_path: Path) -> None:
+    dataset_dir = tmp_path / "configs" / "dataset"
+    target_dir = tmp_path / "actual_dataset"
+    dataset_dir.mkdir(parents=True)
+    create_prepared_dataset(target_dir)
+    rewrite_dataset_yaml(dataset_dir, "../../actual_dataset")
+
+    result = DatasetValidator(dataset_dir).validate()
+
+    assert result.ok
+    assert result.train.annotations == 1
+
+
+def test_dataset_validator_supports_absolute_yaml_path_root(tmp_path: Path) -> None:
+    dataset_dir = tmp_path / "wrapper"
+    target_dir = tmp_path / "absolute_target"
+    dataset_dir.mkdir()
+    create_prepared_dataset(target_dir)
+    rewrite_dataset_yaml(dataset_dir, target_dir.resolve())
+
+    result = DatasetValidator(dataset_dir).validate()
+
+    assert result.ok
+    assert result.val.annotations == 1
+
+
+def test_dataset_validator_rejects_unsupported_image_to_label_layout(tmp_path: Path) -> None:
+    dataset_dir = tmp_path / "bad_layout"
+    dataset_dir.mkdir()
+    write_image(dataset_dir / "train_images" / "sample.jpg")
+    write_image(dataset_dir / "val_images" / "sample.jpg")
+    rewrite_dataset_yaml(dataset_dir, ".", train="train_images", val="val_images")
+
+    result = DatasetValidator(dataset_dir).validate()
+
+    assert not result.ok
+    assert any("Cannot map YOLO image directory to labels directory" in error for error in result.errors)
+
+
 def test_dataset_validator_rejects_missing_label(tmp_path: Path) -> None:
     dataset_dir = tmp_path / "ants_v1"
     create_prepared_dataset(dataset_dir)
@@ -188,3 +263,85 @@ def test_dataset_statistics_calculates_box_ratios(tmp_path: Path) -> None:
     assert stats.median_box_area_ratio == 0.04125
     assert stats.p25_box_area_ratio == pytest.approx(0.030625)
     assert stats.p75_box_area_ratio == pytest.approx(0.051875)
+
+
+def test_dataset_statistics_counts_existing_empty_label_as_zero_annotations(tmp_path: Path) -> None:
+    dataset_dir = tmp_path / "ants_v1"
+    create_prepared_dataset(dataset_dir)
+
+    stats = DatasetStatisticsCalculator(dataset_dir).calculate()
+
+    assert stats.images_without_annotations == 1
+    assert stats.min_annotations_per_image == 0
+
+
+def test_dataset_statistics_rejects_missing_label_file(tmp_path: Path) -> None:
+    dataset_dir = tmp_path / "ants_v1"
+    create_prepared_dataset(dataset_dir)
+    missing_label = dataset_dir / "labels" / "train" / "train_001.txt"
+    missing_label.unlink()
+
+    with pytest.raises(ValueError) as exc_info:
+        DatasetStatisticsCalculator(dataset_dir).calculate()
+
+    message = str(exc_info.value)
+    assert "Missing label for image" in message
+    assert str(dataset_dir / "images" / "train" / "train_001.jpg") in message
+    assert str(missing_label) in message
+
+
+def _box_from_edges(x_min: float, y_min: float, x_max: float, y_max: float) -> YoloBox:
+    return YoloBox(
+        class_id=0,
+        x_center=(x_min + x_max) / 2,
+        y_center=(y_min + y_max) / 2,
+        width=x_max - x_min,
+        height=y_max - y_min,
+    )
+
+
+def test_validate_yolo_box_with_image_size_accepts_in_bounds_box() -> None:
+    validate_yolo_box(YoloBox(0, 0.5, 0.5, 0.25, 0.25), image_width=400, image_height=472)
+
+
+def test_validate_yolo_box_with_image_size_accepts_subpixel_right_rounding() -> None:
+    validate_yolo_box(_box_from_edges(0.2, 0.2, 1.0 + 0.005 / 400, 0.8), image_width=400, image_height=472)
+
+
+def test_validate_yolo_box_with_image_size_accepts_edge_overshoot_under_half_pixel() -> None:
+    validate_yolo_box(_box_from_edges(0.2, 0.2, 1.0 + 0.49 / 400, 0.8), image_width=400, image_height=472)
+
+
+def test_validate_yolo_box_with_image_size_rejects_edge_overshoot_over_half_pixel() -> None:
+    with pytest.raises(ValueError, match="more than 0.5 pixels"):
+        validate_yolo_box(_box_from_edges(0.2, 0.2, 1.0 + 0.51 / 400, 0.8), image_width=400, image_height=472)
+
+
+def test_validate_yolo_box_with_image_size_applies_left_top_bottom_tolerance() -> None:
+    validate_yolo_box(_box_from_edges(-0.49 / 400, 0.2, 0.8, 0.9), image_width=400, image_height=472)
+    validate_yolo_box(_box_from_edges(0.2, -0.49 / 472, 0.8, 0.9), image_width=400, image_height=472)
+    validate_yolo_box(_box_from_edges(0.2, 0.2, 0.8, 1.0 + 0.49 / 472), image_width=400, image_height=472)
+    with pytest.raises(ValueError, match="more than 0.5 pixels"):
+        validate_yolo_box(_box_from_edges(-0.51 / 400, 0.2, 0.8, 0.9), image_width=400, image_height=472)
+
+
+def test_image_aware_yolo_validation_does_not_mutate_coordinates() -> None:
+    box = _box_from_edges(0.2, 0.2, 1.0 + 0.49 / 400, 0.8)
+    original = YoloBox(box.class_id, box.x_center, box.y_center, box.width, box.height)
+
+    validate_yolo_box(box, image_width=400, image_height=472)
+
+    assert box == original
+
+
+def test_strict_yolo_validation_without_image_size_still_rejects_out_of_bounds_box() -> None:
+    with pytest.raises(ValueError, match="outside normalized image bounds"):
+        validate_yolo_box(_box_from_edges(0.2, 0.2, 1.0002, 0.8))
+
+
+def test_image_aware_yolo_tolerance_scales_by_physical_pixels() -> None:
+    box = _box_from_edges(0.2, 0.2, 1.0002, 0.8)
+
+    validate_yolo_box(box, image_width=400, image_height=472)
+    with pytest.raises(ValueError, match="more than 0.5 pixels"):
+        validate_yolo_box(box, image_width=4000, image_height=472)

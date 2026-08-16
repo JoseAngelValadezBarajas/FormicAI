@@ -138,6 +138,11 @@ def build_dataset_parser() -> argparse.ArgumentParser:
         help="Optional crop region to write as extracted images.",
     )
     extract.add_argument(
+        "--overwrite",
+        action="store_true",
+        help="Delete prior extractor-owned images and metadata.json in the output directory before extraction.",
+    )
+    extract.add_argument(
         "--log-level",
         default="INFO",
         choices=["DEBUG", "INFO", "WARNING", "ERROR"],
@@ -520,6 +525,7 @@ def run_dataset(args: argparse.Namespace) -> int:
                     every_seconds=args.every_seconds,
                     every_frames=args.every_frames,
                     target_frame_count=args.count,
+                    overwrite=args.overwrite,
                 )
             ).extract()
             logger.info("Extracted %s frames", result.extracted_frames)

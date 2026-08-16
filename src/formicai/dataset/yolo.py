@@ -1,12 +1,14 @@
 from __future__ import annotations
 
 from dataclasses import dataclass
+from math import isfinite
 from pathlib import Path
 from typing import Literal
 
 
 IMAGE_EXTENSIONS = {".jpg", ".jpeg", ".png", ".bmp", ".webp"}
 YOLO_BOUNDS_TOLERANCE = 1e-9
+YOLO_BOUNDARY_TOLERANCE_PIXELS = 0.5
 YOLO_POLYGON_AREA_TOLERANCE = 1e-12
 
 
@@ -63,14 +65,24 @@ def parse_dataset_yaml(path: Path) -> dict[str, object]:
     return parsed
 
 
-def parse_yolo_label_file(path: Path) -> list[YoloBox]:
-    boxes, errors = collect_yolo_label_errors(path)
+def parse_yolo_label_file(
+    path: Path,
+    *,
+    image_width: int | None = None,
+    image_height: int | None = None,
+) -> list[YoloBox]:
+    boxes, errors = collect_yolo_label_errors(path, image_width=image_width, image_height=image_height)
     if errors:
         raise ValueError(errors[0])
     return boxes
 
 
-def collect_yolo_label_errors(path: Path) -> tuple[list[YoloBox], list[str]]:
+def collect_yolo_label_errors(
+    path: Path,
+    *,
+    image_width: int | None = None,
+    image_height: int | None = None,
+) -> tuple[list[YoloBox], list[str]]:
     boxes: list[YoloBox] = []
     errors: list[str] = []
     for line_number, raw_line in enumerate(path.read_text(encoding="utf-8").splitlines(), start=1):
@@ -78,13 +90,28 @@ def collect_yolo_label_errors(path: Path) -> tuple[list[YoloBox], list[str]]:
         if not line:
             continue
         try:
-            boxes.append(_parse_yolo_label_line(line, path, line_number))
+            boxes.append(
+                _parse_yolo_label_line(
+                    line,
+                    path,
+                    line_number,
+                    image_width=image_width,
+                    image_height=image_height,
+                )
+            )
         except ValueError as exc:
             errors.append(str(exc))
     return boxes, errors
 
 
-def _parse_yolo_label_line(line: str, path: Path, line_number: int) -> YoloBox:
+def _parse_yolo_label_line(
+    line: str,
+    path: Path,
+    line_number: int,
+    *,
+    image_width: int | None = None,
+    image_height: int | None = None,
+) -> YoloBox:
     parts = line.split()
     if len(parts) != 5:
         raise ValueError(f"{path}:{line_number} must contain 5 values; found {len(parts)}.")
@@ -104,7 +131,7 @@ def _parse_yolo_label_line(line: str, path: Path, line_number: int) -> YoloBox:
         width=width,
         height=height,
     )
-    validate_yolo_box(box, path, line_number)
+    validate_yolo_box(box, path, line_number, image_width=image_width, image_height=image_height)
     return box
 
 
@@ -112,21 +139,41 @@ def parse_yolo_detection_or_segmentation_line(
     line: str,
     path: Path | None = None,
     line_number: int | None = None,
+    *,
+    image_width: int | None = None,
+    image_height: int | None = None,
 ) -> ParsedYoloAnnotation:
     location_path = path or Path("<label>")
     location_line = line_number or 1
     parts = line.split()
     if len(parts) == 5:
         return ParsedYoloAnnotation(
-            box=_parse_yolo_label_line(line, location_path, location_line),
+            box=_parse_yolo_label_line(
+                line,
+                location_path,
+                location_line,
+                image_width=image_width,
+                image_height=image_height,
+            ),
             annotation_format="detection",
         )
 
-    box = _parse_yolo_segmentation_line(line, location_path, location_line)
+    box = _parse_yolo_segmentation_line(
+        line,
+        location_path,
+        location_line,
+        image_width=image_width,
+        image_height=image_height,
+    )
     return ParsedYoloAnnotation(box=box, annotation_format="segmentation")
 
 
-def collect_yolo_detection_or_segmentation_errors(path: Path) -> tuple[list[ParsedYoloAnnotation], list[str]]:
+def collect_yolo_detection_or_segmentation_errors(
+    path: Path,
+    *,
+    image_width: int | None = None,
+    image_height: int | None = None,
+) -> tuple[list[ParsedYoloAnnotation], list[str]]:
     annotations: list[ParsedYoloAnnotation] = []
     errors: list[str] = []
     for line_number, raw_line in enumerate(path.read_text(encoding="utf-8").splitlines(), start=1):
@@ -134,7 +181,15 @@ def collect_yolo_detection_or_segmentation_errors(path: Path) -> tuple[list[Pars
         if not line:
             continue
         try:
-            annotations.append(parse_yolo_detection_or_segmentation_line(line, path, line_number))
+            annotations.append(
+                parse_yolo_detection_or_segmentation_line(
+                    line,
+                    path,
+                    line_number,
+                    image_width=image_width,
+                    image_height=image_height,
+                )
+            )
         except ValueError as exc:
             errors.append(str(exc))
     return annotations, errors
@@ -155,6 +210,9 @@ def segmentation_points_to_box(
     points: list[tuple[float, float]],
     path: Path | None = None,
     line_number: int | None = None,
+    *,
+    image_width: int | None = None,
+    image_height: int | None = None,
 ) -> YoloBox:
     location = _format_location(path, line_number)
     if class_id != 0:
@@ -186,11 +244,18 @@ def segmentation_points_to_box(
         width=x_max - x_min,
         height=y_max - y_min,
     )
-    validate_yolo_box(box, path, line_number)
+    validate_yolo_box(box, path, line_number, image_width=image_width, image_height=image_height)
     return box
 
 
-def _parse_yolo_segmentation_line(line: str, path: Path, line_number: int) -> YoloBox:
+def _parse_yolo_segmentation_line(
+    line: str,
+    path: Path,
+    line_number: int,
+    *,
+    image_width: int | None = None,
+    image_height: int | None = None,
+) -> YoloBox:
     parts = line.split()
     try:
         class_id = int(parts[0])
@@ -211,10 +276,25 @@ def _parse_yolo_segmentation_line(line: str, path: Path, line_number: int) -> Yo
         raise ValueError(f"{path}:{line_number} contains non-numeric coordinate values.") from exc
 
     points = list(zip(coordinates[0::2], coordinates[1::2]))
-    return segmentation_points_to_box(class_id, points, path, line_number)
+    return segmentation_points_to_box(
+        class_id,
+        points,
+        path,
+        line_number,
+        image_width=image_width,
+        image_height=image_height,
+    )
 
 
-def validate_yolo_box(box: YoloBox, path: Path | None = None, line_number: int | None = None) -> None:
+def validate_yolo_box(
+    box: YoloBox,
+    path: Path | None = None,
+    line_number: int | None = None,
+    *,
+    image_width: int | None = None,
+    image_height: int | None = None,
+    boundary_tolerance_pixels: float = YOLO_BOUNDARY_TOLERANCE_PIXELS,
+) -> None:
     location = _format_location(path, line_number)
 
     if box.class_id != 0:
@@ -225,10 +305,26 @@ def validate_yolo_box(box: YoloBox, path: Path | None = None, line_number: int |
         ("width", box.width),
         ("height", box.height),
     ]:
-        if value < -YOLO_BOUNDS_TOLERANCE or value > 1.0 + YOLO_BOUNDS_TOLERANCE:
+        if not isfinite(value):
+            raise ValueError(f"{location}{name} must be finite.")
+        if image_width is None and image_height is None and (
+            value < -YOLO_BOUNDS_TOLERANCE or value > 1.0 + YOLO_BOUNDS_TOLERANCE
+        ):
             raise ValueError(f"{location}{name} must be normalized between 0 and 1.")
     if box.width <= 0.0 or box.height <= 0.0:
         raise ValueError(f"{location}width and height must be greater than 0.")
+
+    if (image_width is None) != (image_height is None):
+        raise ValueError(f"{location}image_width and image_height must be provided together.")
+    if image_width is not None and image_height is not None:
+        _validate_yolo_box_in_image(
+            box,
+            location=location,
+            image_width=image_width,
+            image_height=image_height,
+            boundary_tolerance_pixels=boundary_tolerance_pixels,
+        )
+        return
 
     x_min = box.x_center - box.width / 2
     x_max = box.x_center + box.width / 2
@@ -243,6 +339,37 @@ def validate_yolo_box(box: YoloBox, path: Path | None = None, line_number: int |
         raise ValueError(f"{location}bounding box extends outside normalized image bounds.")
 
 
+def _validate_yolo_box_in_image(
+    box: YoloBox,
+    *,
+    location: str,
+    image_width: int,
+    image_height: int,
+    boundary_tolerance_pixels: float,
+) -> None:
+    if image_width <= 0 or image_height <= 0:
+        raise ValueError(f"{location}image dimensions must be greater than 0.")
+    if boundary_tolerance_pixels < 0:
+        raise ValueError(f"{location}boundary_tolerance_pixels must be non-negative.")
+
+    x_min = box.x_center - box.width / 2
+    x_max = box.x_center + box.width / 2
+    y_min = box.y_center - box.height / 2
+    y_max = box.y_center + box.height / 2
+    exceedances = [
+        max(0.0, -x_min * image_width),
+        max(0.0, (x_max - 1.0) * image_width),
+        max(0.0, -y_min * image_height),
+        max(0.0, (y_max - 1.0) * image_height),
+    ]
+    max_exceedance = max(exceedances)
+    if max_exceedance > boundary_tolerance_pixels + 1e-12:
+        raise ValueError(
+            f"{location}bounding box exceeds image bounds by more than "
+            f"{boundary_tolerance_pixels:g} pixels."
+        )
+
+
 def find_images(path: Path) -> list[Path]:
     if not path.exists():
         return []
@@ -255,6 +382,15 @@ def find_images(path: Path) -> list[Path]:
 
 def matching_label_path(image_path: Path, labels_dir: Path) -> Path:
     return labels_dir / f"{image_path.stem}.txt"
+
+
+def yolo_labels_dir_for_images_dir(images_dir: Path) -> Path:
+    parts = list(images_dir.parts)
+    image_indexes = [index for index, part in enumerate(parts) if part.lower() == "images"]
+    if not image_indexes:
+        raise ValueError(f"Cannot map YOLO image directory to labels directory: {images_dir}")
+    parts[image_indexes[-1]] = "labels"
+    return Path(*parts)
 
 
 def _format_location(path: Path | None, line_number: int | None) -> str:

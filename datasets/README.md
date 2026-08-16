@@ -24,6 +24,14 @@ For `ant2.mp4`, `0.25` seconds samples roughly 4 frames per second and should pr
 
 Each image name includes the source video stem, frame index, and timestamp. `metadata.json` records source video metadata and the ROI used.
 
+Extraction is fail-fast by default if the output directory already contains extractor-owned images or `metadata.json`, preventing stale frames from earlier runs. Use `--overwrite` only when replacing prior extraction outputs intentionally:
+
+```bash
+python -m formicai dataset extract-frames samples/ant2.mp4 --output datasets/raw/ant2 --count 30 --overwrite
+```
+
+`--overwrite` removes supported extracted image files and `metadata.json` in that directory, but preserves unrelated files such as notes.
+
 ## Manual Annotation
 
 Use an external annotation tool instead of a custom GUI:
@@ -40,6 +48,8 @@ class x_center y_center width height
 ```
 
 Coordinates must be normalized between `0` and `1`. Images with no visible ants are valid hard negatives and should have an empty `.txt` label file.
+
+A missing label file is not the same as an empty label file. Empty `.txt` files are valid zero-ant annotations; missing `.txt` files are dataset errors.
 
 Roboflow can export multiple YOLO variants. The preparer preserves YOLO detection rows and converts valid YOLO segmentation polygons to tight bounding boxes without padding. Invalid polygons still fail validation and are not silently fixed.
 
@@ -79,6 +89,8 @@ val: images/val
 names:
   0: ant
 ```
+
+Validation resolves `path`, `train`, and `val` from `dataset.yaml` and validates the dataset those entries actually reference. The supported YOLO structure maps `images/...` split directories to corresponding `labels/...` split directories.
 
 Because early frames come from the same source video, avoid random frame-by-frame splitting. Prefer a temporal block split, such as earlier timestamps for train and later timestamps for validation. A single video does not provide truly independent validation; later datasets should split by source video.
 

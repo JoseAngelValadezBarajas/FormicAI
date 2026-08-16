@@ -58,6 +58,26 @@ def test_dataset_extract_frames_parser_accepts_count() -> None:
     assert args.output == Path("datasets/external_test/ant4/images")
     assert args.count == 20
     assert args.roi.to_dict() == {"x": 40, "y": 122, "width": 400, "height": 472}
+    assert args.overwrite is False
+
+
+def test_dataset_extract_frames_parser_accepts_overwrite() -> None:
+    parser = build_dataset_parser()
+
+    args = parser.parse_args(
+        [
+            "extract-frames",
+            "samples/ant4.mp4",
+            "--output",
+            "datasets/external_test/ant4/images",
+            "--count",
+            "20",
+            "--overwrite",
+        ]
+    )
+
+    assert args.dataset_command == "extract-frames"
+    assert args.overwrite is True
 
 
 def test_dataset_prepare_roboflow_parser() -> None:

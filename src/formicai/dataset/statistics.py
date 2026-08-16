@@ -72,7 +72,9 @@ class DatasetStatisticsCalculator:
             labels_dir = self._dataset_dir / "labels" / split
             for image_path in find_images(images_dir):
                 label_path = matching_label_path(image_path, labels_dir)
-                boxes = parse_yolo_label_file(label_path) if label_path.exists() else []
+                if not label_path.exists():
+                    raise ValueError(f"Missing label for image: {image_path}; expected label: {label_path}")
+                boxes = parse_yolo_label_file(label_path)
                 annotation_counts.append(len(boxes))
                 split_annotation_counts.append(len(boxes))
                 widths.extend(box.width for box in boxes)

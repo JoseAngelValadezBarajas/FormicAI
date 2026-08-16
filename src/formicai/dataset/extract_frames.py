@@ -7,6 +7,7 @@ from pathlib import Path
 
 import cv2
 
+from formicai.dataset.yolo import IMAGE_EXTENSIONS
 from formicai.utils.video import ROI, full_frame_roi
 
 
@@ -22,6 +23,7 @@ class FrameExtractionConfig:
     every_frames: int | None = None
     target_frame_count: int | None = None
     image_extension: str = ".jpg"
+    overwrite: bool = False
 
     def validate(self) -> None:
         if not self.input_path.exists():
@@ -57,6 +59,7 @@ class FrameExtractor:
 
     def extract(self) -> FrameExtractionResult:
         self._config.validate()
+        self._prepare_output_dir()
         capture = cv2.VideoCapture(str(self._config.input_path))
         if not capture.isOpened():
             capture.release()
@@ -82,7 +85,6 @@ class FrameExtractor:
             selected_frame_index_set = set(selected_frame_indexes)
             interval_frames = None if selected_frame_indexes else self._resolve_interval_frames(fps)
 
-            self._config.output_dir.mkdir(parents=True, exist_ok=True)
             records = []
             extracted = 0
             frame_index = 0
@@ -140,6 +142,7 @@ class FrameExtractor:
                         "intervalFrames": interval_frames,
                         "everySeconds": self._config.every_seconds,
                         "requestedFrameCount": self._config.target_frame_count,
+                        "overwrite": self._config.overwrite,
                         "selectedFrameIndexes": list(selected_frame_indexes),
                         "roi": roi.to_dict(),
                         "frames": records,
@@ -187,3 +190,30 @@ class FrameExtractor:
             int(round(index * (source_frames - 1) / (frame_count - 1)))
             for index in range(frame_count)
         )
+
+    def _prepare_output_dir(self) -> None:
+        owned_outputs = _extractor_owned_outputs(self._config.output_dir)
+        if owned_outputs and not self._config.overwrite:
+            raise ValueError(
+                "Extraction output already contains prior generated frames. "
+                "Use --overwrite to replace extractor-owned outputs."
+            )
+
+        self._config.output_dir.mkdir(parents=True, exist_ok=True)
+        if self._config.overwrite:
+            for path in owned_outputs:
+                path.unlink(missing_ok=True)
+
+
+def _extractor_owned_outputs(output_dir: Path) -> list[Path]:
+    if not output_dir.exists():
+        return []
+    outputs = [
+        path
+        for path in output_dir.iterdir()
+        if path.is_file() and path.suffix.lower() in IMAGE_EXTENSIONS
+    ]
+    metadata = output_dir / "metadata.json"
+    if metadata.exists() and metadata.is_file():
+        outputs.append(metadata)
+    return sorted(outputs)

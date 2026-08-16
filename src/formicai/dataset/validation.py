@@ -3,11 +3,14 @@ from __future__ import annotations
 from dataclasses import dataclass
 from pathlib import Path
 
+import cv2
+
 from formicai.dataset.yolo import (
     find_images,
     matching_label_path,
     parse_dataset_yaml,
     parse_yolo_label_file,
+    yolo_labels_dir_for_images_dir,
 )
 
 
@@ -58,6 +61,13 @@ class DatasetValidationResult:
         return "\n".join(lines)
 
 
+@dataclass(frozen=True)
+class ResolvedSplitPaths:
+    name: str
+    images_dir: Path
+    labels_dir: Path
+
+
 class DatasetValidator:
     def __init__(self, dataset_dir: Path) -> None:
         self._dataset_dir = dataset_dir
@@ -66,15 +76,17 @@ class DatasetValidator:
         errors: list[str] = []
         dataset_yaml = self._dataset_dir / "dataset.yaml"
         classes: dict[int, str] = {}
+        split_paths: dict[str, ResolvedSplitPaths] = {}
 
         try:
             yaml_data = parse_dataset_yaml(dataset_yaml)
             classes = self._validate_yaml(yaml_data, errors)
+            split_paths = self._resolve_split_paths(dataset_yaml, yaml_data, errors)
         except ValueError as exc:
             errors.append(str(exc))
 
-        train = self._validate_split("train", errors)
-        val = self._validate_split("val", errors)
+        train = self._validate_split(split_paths.get("train"), errors)
+        val = self._validate_split(split_paths.get("val"), errors)
 
         if train.images == 0:
             errors.append("train split must contain at least one image.")
@@ -100,13 +112,41 @@ class DatasetValidator:
             return {}
         return names
 
-    def _validate_split(self, split: str, errors: list[str]) -> SplitSummary:
-        images_dir = self._dataset_dir / "images" / split
-        labels_dir = self._dataset_dir / "labels" / split
+    def _resolve_split_paths(
+        self,
+        dataset_yaml: Path,
+        yaml_data: dict[str, object],
+        errors: list[str],
+    ) -> dict[str, ResolvedSplitPaths]:
+        dataset_root = _resolve_dataset_root(dataset_yaml, yaml_data.get("path", "."))
+        split_paths: dict[str, ResolvedSplitPaths] = {}
+        for split_name in ["train", "val"]:
+            split_value = yaml_data.get(split_name)
+            if not split_value:
+                continue
+            images_dir = _resolve_dataset_path(dataset_root, split_value)
+            try:
+                labels_dir = yolo_labels_dir_for_images_dir(images_dir)
+            except ValueError as exc:
+                errors.append(str(exc))
+                continue
+            split_paths[split_name] = ResolvedSplitPaths(
+                name=split_name,
+                images_dir=images_dir,
+                labels_dir=labels_dir,
+            )
+        return split_paths
+
+    def _validate_split(self, split_paths: ResolvedSplitPaths | None, errors: list[str]) -> SplitSummary:
+        if split_paths is None:
+            return SplitSummary(images=0, annotations=0, images_without_annotations=0)
+
+        images_dir = split_paths.images_dir
+        labels_dir = split_paths.labels_dir
         if not images_dir.exists():
-            errors.append(f"Missing images/{split} directory.")
+            errors.append(f"Missing image directory: {images_dir}")
         if not labels_dir.exists():
-            errors.append(f"Missing labels/{split} directory.")
+            errors.append(f"Missing label directory: {labels_dir}")
 
         images = find_images(images_dir)
         annotations = 0
@@ -119,8 +159,15 @@ class DatasetValidator:
             if not label_path.exists():
                 errors.append(f"Missing label for image: {image_path}")
                 continue
+            image_size = _read_image_size(image_path, errors)
+            if image_size is None:
+                continue
             try:
-                boxes = parse_yolo_label_file(label_path)
+                boxes = parse_yolo_label_file(
+                    label_path,
+                    image_width=image_size[0],
+                    image_height=image_size[1],
+                )
             except ValueError as exc:
                 errors.append(str(exc))
                 continue
@@ -138,3 +185,26 @@ class DatasetValidator:
             annotations=annotations,
             images_without_annotations=images_without_annotations,
         )
+
+
+def _resolve_dataset_root(dataset_yaml: Path, raw_root: object) -> Path:
+    root = Path(str(raw_root))
+    if root.is_absolute():
+        return root.resolve()
+    return (dataset_yaml.parent / root).resolve()
+
+
+def _resolve_dataset_path(dataset_root: Path, raw_path: object) -> Path:
+    path = Path(str(raw_path))
+    if path.is_absolute():
+        return path.resolve()
+    return (dataset_root / path).resolve()
+
+
+def _read_image_size(image_path: Path, errors: list[str]) -> tuple[int, int] | None:
+    image = cv2.imread(str(image_path))
+    if image is None:
+        errors.append(f"Could not read image dimensions: {image_path}")
+        return None
+    height, width = image.shape[:2]
+    return width, height

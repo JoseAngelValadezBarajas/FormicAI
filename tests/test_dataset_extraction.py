@@ -105,3 +105,92 @@ def test_frame_extractor_count_selects_temporally_distributed_frames(tmp_path: P
     assert metadata["samplingStrategy"] == "fixed_count"
     assert metadata["requestedFrameCount"] == 4
     assert metadata["selectedFrameIndexes"] == [0, 3, 6, 9]
+
+
+def test_frame_extractor_refuses_existing_extraction_outputs_without_overwrite(tmp_path: Path) -> None:
+    video_path = tmp_path / "source.mp4"
+    output_dir = tmp_path / "raw"
+    create_test_video(video_path, frames=10, fps=10.0)
+    first = FrameExtractor(
+        FrameExtractionConfig(
+            input_path=video_path,
+            output_dir=output_dir,
+            target_frame_count=10,
+        )
+    ).extract()
+    image_bytes = {path.name: path.read_bytes() for path in sorted(output_dir.glob("*.jpg"))}
+    metadata_before = first.metadata_path.read_bytes()
+
+    try:
+        FrameExtractor(
+            FrameExtractionConfig(
+                input_path=video_path,
+                output_dir=output_dir,
+                target_frame_count=4,
+            )
+        ).extract()
+    except ValueError as exc:
+        assert "Use --overwrite" in str(exc)
+    else:
+        raise AssertionError("Expected extraction into populated output_dir to fail.")
+
+    assert {path.name: path.read_bytes() for path in sorted(output_dir.glob("*.jpg"))} == image_bytes
+    assert first.metadata_path.read_bytes() == metadata_before
+
+
+def test_frame_extractor_overwrite_removes_stale_generated_images(tmp_path: Path) -> None:
+    video_path = tmp_path / "source.mp4"
+    output_dir = tmp_path / "raw"
+    create_test_video(video_path, frames=10, fps=10.0)
+    FrameExtractor(
+        FrameExtractionConfig(
+            input_path=video_path,
+            output_dir=output_dir,
+            target_frame_count=10,
+        )
+    ).extract()
+
+    result = FrameExtractor(
+        FrameExtractionConfig(
+            input_path=video_path,
+            output_dir=output_dir,
+            target_frame_count=4,
+            overwrite=True,
+        )
+    ).extract()
+
+    images = sorted(output_dir.glob("*.jpg"))
+    assert result.extracted_frames == 4
+    assert len(images) == 4
+    assert [image.name for image in images] == [
+        "source_frame_000000_t0000.000.jpg",
+        "source_frame_000003_t0000.300.jpg",
+        "source_frame_000006_t0000.600.jpg",
+        "source_frame_000009_t0000.900.jpg",
+    ]
+
+
+def test_frame_extractor_overwrite_preserves_unrelated_files(tmp_path: Path) -> None:
+    video_path = tmp_path / "source.mp4"
+    output_dir = tmp_path / "raw"
+    create_test_video(video_path, frames=10, fps=10.0)
+    FrameExtractor(
+        FrameExtractionConfig(
+            input_path=video_path,
+            output_dir=output_dir,
+            target_frame_count=10,
+        )
+    ).extract()
+    notes = output_dir / "notes.txt"
+    notes.write_text("keep me\n", encoding="utf-8")
+
+    FrameExtractor(
+        FrameExtractionConfig(
+            input_path=video_path,
+            output_dir=output_dir,
+            target_frame_count=4,
+            overwrite=True,
+        )
+    ).extract()
+
+    assert notes.read_text(encoding="utf-8") == "keep me\n"

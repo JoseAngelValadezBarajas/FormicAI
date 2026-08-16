@@ -176,6 +176,8 @@ Extract candidate frames from a real local video:
 python -m formicai dataset extract-frames samples/ant2.mp4 --output datasets/raw/ant2 --every-seconds 0.25 --roi 60,180,600,700
 ```
 
+Frame extraction refuses to write into a directory that already contains extractor-owned images or `metadata.json`. Use `--overwrite` only when you intentionally want to replace those prior extraction outputs; unrelated files are preserved.
+
 The first detector uses one class:
 
 ```text
@@ -191,6 +193,8 @@ python -m formicai dataset prepare-roboflow exported_dataset --output datasets/p
 python -m formicai dataset validate datasets/prepared/ants_v1
 python -m formicai dataset stats datasets/prepared/ants_v1
 ```
+
+Dataset validation follows the `path`, `train`, and `val` entries in `dataset.yaml` instead of assuming local hardcoded directories. Empty `.txt` labels represent intentional zero-ant images; missing label files are treated as dataset errors.
 
 Roboflow `test` split records are inspected but excluded from prepared train/val construction by default. This protects holdout/test data from becoming training data accidentally. Historical reconstruction can opt in with `--allow-test-as-training-source`; new experiments should not use that override for true holdouts.
 
