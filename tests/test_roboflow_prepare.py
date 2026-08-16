@@ -199,3 +199,30 @@ def test_prepare_roboflow_rejects_invalid_polygon_labels(tmp_path: Path) -> None
 
     with pytest.raises(ValueError, match="coordinate count must be even"):
         RoboflowDatasetPreparer(export_dir, tmp_path / "prepared").prepare()
+
+
+def test_inspect_roboflow_export_accepts_subpixel_segmentation_boundary_rounding(tmp_path: Path) -> None:
+    export_dir = tmp_path / "exported_dataset"
+    create_roboflow_export(export_dir)
+    polygon_label = next((export_dir / "train" / "labels").glob("*.txt"))
+    x_edge = 1.0 + 0.49 / 32
+    polygon_label.write_text(f"0 0.2 0.2 {x_edge} 0.2 {x_edge} 0.8 0.2 0.8\n", encoding="utf-8")
+
+    result = inspect_roboflow_export(export_dir)
+
+    assert result.ok
+    assert result.converted_segmentation_annotations == 1
+
+
+def test_inspect_roboflow_export_rejects_segmentation_boundary_overshoot_over_half_pixel(tmp_path: Path) -> None:
+    export_dir = tmp_path / "exported_dataset"
+    create_roboflow_export(export_dir)
+    polygon_label = next((export_dir / "train" / "labels").glob("*.txt"))
+    x_edge = 1.0 + 0.51 / 32
+    polygon_label.write_text(f"0 0.2 0.2 {x_edge} 0.2 {x_edge} 0.8 0.2 0.8\n", encoding="utf-8")
+
+    result = inspect_roboflow_export(export_dir)
+
+    assert not result.ok
+    assert result.invalid_annotation_lines == 1
+    assert any("segmentation point" in error and "normalized between 0 and 1" in error for error in result.errors)

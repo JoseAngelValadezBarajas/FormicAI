@@ -7,8 +7,7 @@ import shutil
 from dataclasses import dataclass
 from pathlib import Path
 
-import cv2
-
+from formicai.dataset.paths import read_image_size
 from formicai.dataset.split import temporal_split
 from formicai.dataset.yolo import (
     IMAGE_EXTENSIONS,
@@ -393,9 +392,10 @@ def inspect_roboflow_export(export_dir: Path) -> RoboflowExportInspection:
                 errors.append(f"Missing label for image: {image_path}")
                 continue
 
-            image_size = _read_image_size(image_path)
-            if image_size is None:
-                errors.append(f"Could not read image dimensions: {image_path}")
+            try:
+                image_size = read_image_size(image_path)
+            except ValueError as exc:
+                errors.append(str(exc))
                 continue
 
             annotations, label_errors = collect_yolo_detection_or_segmentation_errors(
@@ -500,14 +500,6 @@ def _class_ids_from_label_file(label_path: Path) -> set[int]:
 
 def _has_nonempty_lines(label_path: Path) -> bool:
     return any(line.strip() for line in label_path.read_text(encoding="utf-8").splitlines())
-
-
-def _read_image_size(image_path: Path) -> tuple[int, int] | None:
-    image = cv2.imread(str(image_path))
-    if image is None:
-        return None
-    height, width = image.shape[:2]
-    return width, height
 
 
 def _clear_prepared_files(output_dir: Path) -> None:

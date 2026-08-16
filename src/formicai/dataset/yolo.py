@@ -213,17 +213,34 @@ def segmentation_points_to_box(
     *,
     image_width: int | None = None,
     image_height: int | None = None,
+    boundary_tolerance_pixels: float = YOLO_BOUNDARY_TOLERANCE_PIXELS,
 ) -> YoloBox:
     location = _format_location(path, line_number)
     if class_id != 0:
         raise ValueError(f"{location}class id must be 0 for 'ant'.")
     if len(points) < 3:
         raise ValueError(f"{location}segmentation polygon must contain at least 3 points.")
+    if (image_width is None) != (image_height is None):
+        raise ValueError(f"{location}image_width and image_height must be provided together.")
+    if image_width is not None and image_height is not None:
+        if image_width <= 0 or image_height <= 0:
+            raise ValueError(f"{location}image dimensions must be greater than 0.")
+        if boundary_tolerance_pixels < 0:
+            raise ValueError(f"{location}boundary_tolerance_pixels must be non-negative.")
+        x_tolerance = boundary_tolerance_pixels / image_width
+        y_tolerance = boundary_tolerance_pixels / image_height
+    else:
+        x_tolerance = YOLO_BOUNDS_TOLERANCE
+        y_tolerance = YOLO_BOUNDS_TOLERANCE
 
     for point_index, (x, y) in enumerate(points, start=1):
-        if x < -YOLO_BOUNDS_TOLERANCE or x > 1.0 + YOLO_BOUNDS_TOLERANCE:
+        if not isfinite(x):
+            raise ValueError(f"{location}segmentation point {point_index} x must be finite.")
+        if not isfinite(y):
+            raise ValueError(f"{location}segmentation point {point_index} y must be finite.")
+        if x < -x_tolerance or x > 1.0 + x_tolerance:
             raise ValueError(f"{location}segmentation point {point_index} x must be normalized between 0 and 1.")
-        if y < -YOLO_BOUNDS_TOLERANCE or y > 1.0 + YOLO_BOUNDS_TOLERANCE:
+        if y < -y_tolerance or y > 1.0 + y_tolerance:
             raise ValueError(f"{location}segmentation point {point_index} y must be normalized between 0 and 1.")
 
     polygon_area = abs(_shoelace_area(points))
@@ -244,7 +261,14 @@ def segmentation_points_to_box(
         width=x_max - x_min,
         height=y_max - y_min,
     )
-    validate_yolo_box(box, path, line_number, image_width=image_width, image_height=image_height)
+    validate_yolo_box(
+        box,
+        path,
+        line_number,
+        image_width=image_width,
+        image_height=image_height,
+        boundary_tolerance_pixels=boundary_tolerance_pixels,
+    )
     return box
 
 

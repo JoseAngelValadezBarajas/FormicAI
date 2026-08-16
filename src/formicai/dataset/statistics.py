@@ -5,6 +5,7 @@ from math import ceil, floor
 from pathlib import Path
 from statistics import median
 
+from formicai.dataset.paths import read_image_size, resolve_dataset_split_paths
 from formicai.dataset.yolo import find_images, matching_label_path, parse_yolo_label_file
 
 
@@ -65,16 +66,23 @@ class DatasetStatisticsCalculator:
         heights: list[float] = []
         areas: list[float] = []
         split_statistics: dict[str, SplitStatistics] = {}
+        resolved_paths = resolve_dataset_split_paths(self._dataset_dir / "dataset.yaml")
 
         for split in ["train", "val"]:
             split_annotation_counts: list[int] = []
-            images_dir = self._dataset_dir / "images" / split
-            labels_dir = self._dataset_dir / "labels" / split
+            split_paths = resolved_paths.splits[split]
+            images_dir = split_paths.images_dir
+            labels_dir = split_paths.labels_dir
             for image_path in find_images(images_dir):
                 label_path = matching_label_path(image_path, labels_dir)
                 if not label_path.exists():
                     raise ValueError(f"Missing label for image: {image_path}; expected label: {label_path}")
-                boxes = parse_yolo_label_file(label_path)
+                image_width, image_height = read_image_size(image_path)
+                boxes = parse_yolo_label_file(
+                    label_path,
+                    image_width=image_width,
+                    image_height=image_height,
+                )
                 annotation_counts.append(len(boxes))
                 split_annotation_counts.append(len(boxes))
                 widths.extend(box.width for box in boxes)
