@@ -395,6 +395,7 @@ def test_detect_video_parser_defaults_are_canonical() -> None:
         ({"image_size": -math.inf}, "image_size must be finite and greater than 0"),
         ({"image_size": 0}, "image_size must be finite and greater than 0"),
         ({"image_size": -1}, "image_size must be finite and greater than 0"),
+        ({"image_size": True}, "image_size must be numeric, not boolean"),
     ],
 )
 def test_video_detector_rejects_invalid_inference_parameters_before_yolo(

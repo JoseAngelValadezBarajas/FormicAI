@@ -357,6 +357,7 @@ def test_external_evaluator_rejects_unreadable_external_test_image_before_yolo(
         ({"image_size": -math.inf}, "image_size must be finite and greater than 0"),
         ({"image_size": 0}, "image_size must be finite and greater than 0"),
         ({"image_size": -1}, "image_size must be finite and greater than 0"),
+        ({"confidence": True}, "confidence must be numeric, not boolean"),
     ],
 )
 def test_external_evaluator_rejects_invalid_inference_parameters_before_yolo(

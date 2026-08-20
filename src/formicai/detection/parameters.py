@@ -9,6 +9,12 @@ def validate_inference_parameters(
     iou: float,
     image_size: int | float,
 ) -> None:
+    if isinstance(confidence, bool):
+        raise ValueError("confidence must be numeric, not boolean.")
+    if isinstance(iou, bool):
+        raise ValueError("iou must be numeric, not boolean.")
+    if isinstance(image_size, bool):
+        raise ValueError("image_size must be numeric, not boolean.")
     if not isfinite(confidence) or not 0.0 <= confidence <= 1.0:
         raise ValueError("confidence must be between 0 and 1.")
     if not isfinite(iou) or not 0.0 <= iou <= 1.0:

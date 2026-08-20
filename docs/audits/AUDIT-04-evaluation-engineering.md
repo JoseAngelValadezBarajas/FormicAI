@@ -23,7 +23,7 @@ Implemented behavior:
 - Custom diagnostic matching now uses deterministic maximum-cardinality bipartite matching over valid prediction/GT pairs.
 - Candidate quality still orders edge exploration, but the algorithm guarantees maximum match count, not globally maximum total IoU.
 - Existing diagnostic keys such as `standardIou50...` remain compatible; newly generated metadata identifies fixed-IoU50 as a custom one-to-one localization diagnostic.
-- Shared inference validation enforces finite `0.0 <= confidence <= 1.0`, finite `0.0 <= iou <= 1.0`, and finite `image_size > 0` before model construction.
+- Shared inference validation rejects boolean values and enforces finite `0.0 <= confidence <= 1.0`, finite `0.0 <= iou <= 1.0`, and finite `image_size > 0` before model construction.
 - `formicai.utils.environment.collect_environment_metadata()` records Python, platform, NumPy, OpenCV, Ultralytics, PyTorch, CUDA availability, and PyTorch CUDA version when available. Missing optional ML packages are recorded as `null`.
 - Detector run metadata now uses the shared environment collector.
 - GitHub Actions CI runs `python -m pytest -q` on push and pull requests with Python 3.11 and no GPU requirements.
