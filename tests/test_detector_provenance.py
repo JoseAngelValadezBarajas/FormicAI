@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+import math
 import sys
 from pathlib import Path
 from types import SimpleNamespace
@@ -389,7 +390,11 @@ def test_detect_video_parser_defaults_are_canonical() -> None:
     [
         ({"iou": -0.01}, "iou must be between 0 and 1"),
         ({"iou": 1.01}, "iou must be between 0 and 1"),
-        ({"image_size": 0}, "image_size must be greater than 0"),
+        ({"image_size": math.nan}, "image_size must be finite and greater than 0"),
+        ({"image_size": math.inf}, "image_size must be finite and greater than 0"),
+        ({"image_size": -math.inf}, "image_size must be finite and greater than 0"),
+        ({"image_size": 0}, "image_size must be finite and greater than 0"),
+        ({"image_size": -1}, "image_size must be finite and greater than 0"),
     ],
 )
 def test_video_detector_rejects_invalid_inference_parameters_before_yolo(
