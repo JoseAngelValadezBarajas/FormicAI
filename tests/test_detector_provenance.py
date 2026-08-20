@@ -384,6 +384,43 @@ def test_detect_video_parser_defaults_are_canonical() -> None:
     assert args.end2end is CURRENT_CHAMPION.end2end
 
 
+@pytest.mark.parametrize(
+    ("kwargs", "message"),
+    [
+        ({"iou": -0.01}, "iou must be between 0 and 1"),
+        ({"iou": 1.01}, "iou must be between 0 and 1"),
+        ({"image_size": 0}, "image_size must be greater than 0"),
+    ],
+)
+def test_video_detector_rejects_invalid_inference_parameters_before_yolo(
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
+    kwargs: dict[str, object],
+    message: str,
+) -> None:
+    video_path = tmp_path / "source.mp4"
+    model_path = tmp_path / "custom.pt"
+    video_path.write_bytes(b"video")
+    model_path.write_bytes(b"model")
+
+    class FakeYOLO:
+        def __init__(self, model_path: str) -> None:
+            raise AssertionError("YOLO must not be instantiated when inference parameters are invalid")
+
+    monkeypatch.setitem(sys.modules, "ultralytics", SimpleNamespace(YOLO=FakeYOLO, __version__="test-ultra"))
+
+    with pytest.raises(ValueError, match=message):
+        VideoDetector(
+            VideoDetectionConfig(
+                input_path=video_path,
+                model_path=model_path,
+                output_video_path=tmp_path / "detections.mp4",
+                output_jsonl_path=tmp_path / "detections.jsonl",
+                **kwargs,
+            )
+        ).detect()
+
+
 def test_model_class_map_exact_ant_passes() -> None:
     assert validate_model_classes({0: "Ant"}, {0: "ant"}) == {0: "ant"}
 

@@ -8,6 +8,7 @@ from typing import Any
 
 from formicai.dataset.paths import read_image_size
 from formicai.dataset.yolo import find_images, matching_label_path, parse_yolo_label_file
+from formicai.detection.parameters import validate_inference_parameters
 
 
 @dataclass(frozen=True)
@@ -85,8 +86,11 @@ class ExternalEvaluator:
             raise FileNotFoundError(f"External test directory does not exist: {self._config.external_test_dir}")
         if not self._config.model_path.exists():
             raise FileNotFoundError(f"Model does not exist: {self._config.model_path}")
-        if not 0.0 <= self._config.confidence <= 1.0:
-            raise ValueError("confidence must be between 0 and 1.")
+        validate_inference_parameters(
+            confidence=self._config.confidence,
+            iou=self._config.iou,
+            image_size=self._config.image_size,
+        )
         self._validate_output_boundary()
 
         video_datasets = self._discover_video_datasets()

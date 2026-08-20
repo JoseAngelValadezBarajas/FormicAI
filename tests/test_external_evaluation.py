@@ -344,3 +344,39 @@ def test_external_evaluator_rejects_unreadable_external_test_image_before_yolo(
                 output_path=tmp_path / "metrics.json",
             )
         ).evaluate()
+
+
+@pytest.mark.parametrize(
+    ("kwargs", "message"),
+    [
+        ({"iou": -0.01}, "iou must be between 0 and 1"),
+        ({"iou": 1.01}, "iou must be between 0 and 1"),
+        ({"image_size": 0}, "image_size must be greater than 0"),
+    ],
+)
+def test_external_evaluator_rejects_invalid_inference_parameters_before_yolo(
+    tmp_path: Path,
+    monkeypatch,
+    kwargs: dict[str, object],
+    message: str,
+) -> None:
+    external_test_dir = tmp_path / "external_test"
+    write_external_test_record(external_test_dir, "ant4", "ant4_frame_000016_t0000.533")
+    model_path = tmp_path / "best.pt"
+    model_path.write_bytes(b"weights")
+
+    class FakeYOLO:
+        def __init__(self, path: str) -> None:
+            raise AssertionError("YOLO must not be constructed when inference parameters are invalid")
+
+    monkeypatch.setitem(sys.modules, "ultralytics", SimpleNamespace(YOLO=FakeYOLO))
+
+    with pytest.raises(ValueError, match=message):
+        ExternalEvaluator(
+            ExternalEvaluationConfig(
+                external_test_dir=external_test_dir,
+                model_path=model_path,
+                output_path=tmp_path / "metrics.json",
+                **kwargs,
+            )
+        ).evaluate()

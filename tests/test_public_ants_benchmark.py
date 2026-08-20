@@ -55,6 +55,102 @@ def test_center_based_match_keeps_one_prediction_per_gt_by_confidence() -> None:
     assert matches == [(1, 0)]
 
 
+def test_iou_match_uses_maximum_cardinality_for_greedy_failure_counterexample() -> None:
+    gt = [
+        PixelBox(0, 0, 3, 1),
+        PixelBox(0, 0, 2, 1),
+    ]
+    predictions = [
+        PredictionBox(PixelBox(0, 0, 3, 1), confidence=0.9),
+        PredictionBox(PixelBox(0, 0, 5, 1), confidence=0.8),
+    ]
+
+    matches = match_iou_threshold(gt, predictions, threshold=0.50)
+
+    assert len(matches) == 2
+    assert set(matches) == {(0, 1), (1, 0)}
+
+
+def test_center_match_uses_maximum_cardinality_for_overlapping_gt_counterexample() -> None:
+    gt = [
+        PixelBox(0, 0, 10, 10),
+        PixelBox(4, 0, 10, 10),
+    ]
+    predictions = [
+        PredictionBox(PixelBox(5.0, 4.9, 5.2, 5.1), confidence=0.9),
+        PredictionBox(PixelBox(1.9, 4.9, 2.1, 5.1), confidence=0.8),
+    ]
+
+    matches = match_center_based(gt, predictions)
+
+    assert len(matches) == 2
+    assert set(matches) == {(0, 1), (1, 0)}
+
+
+def test_matchers_return_zero_when_no_valid_edges_exist() -> None:
+    gt = [PixelBox(0, 0, 1, 1)]
+    predictions = [PredictionBox(PixelBox(10, 10, 11, 11), confidence=0.9)]
+
+    assert match_center_based(gt, predictions) == []
+    assert match_iou_threshold(gt, predictions, threshold=0.50) == []
+
+
+def test_one_gt_with_multiple_predictions_returns_one_match() -> None:
+    gt = [PixelBox(0, 0, 10, 10)]
+    predictions = [
+        PredictionBox(PixelBox(1, 1, 2, 2), confidence=0.7),
+        PredictionBox(PixelBox(3, 3, 4, 4), confidence=0.9),
+    ]
+
+    matches = match_center_based(gt, predictions)
+
+    assert len(matches) == 1
+    assert matches == [(1, 0)]
+
+
+def test_multiple_gt_with_one_prediction_returns_one_match() -> None:
+    gt = [
+        PixelBox(0, 0, 10, 10),
+        PixelBox(4, 0, 10, 10),
+    ]
+    predictions = [PredictionBox(PixelBox(5.0, 4.9, 5.2, 5.1), confidence=0.9)]
+
+    matches = match_center_based(gt, predictions)
+
+    assert len(matches) == 1
+    assert matches == [(0, 0)]
+
+
+def test_perfect_independent_matches_preserve_expected_pairs() -> None:
+    gt = [
+        PixelBox(0, 0, 2, 2),
+        PixelBox(10, 10, 12, 12),
+    ]
+    predictions = [
+        PredictionBox(PixelBox(0, 0, 2, 2), confidence=0.8),
+        PredictionBox(PixelBox(10, 10, 12, 12), confidence=0.7),
+    ]
+
+    assert match_iou_threshold(gt, predictions, threshold=0.50) == [(0, 0), (1, 1)]
+    assert match_center_based(gt, predictions) == [(0, 0), (1, 1)]
+
+
+def test_matching_results_are_deterministic() -> None:
+    gt = [
+        PixelBox(0, 0, 10, 10),
+        PixelBox(4, 0, 10, 10),
+    ]
+    predictions = [
+        PredictionBox(PixelBox(5.0, 4.9, 5.2, 5.1), confidence=0.9),
+        PredictionBox(PixelBox(1.9, 4.9, 2.1, 5.1), confidence=0.8),
+    ]
+
+    first = match_center_based(gt, predictions)
+
+    for _ in range(10):
+        assert match_center_based(gt, predictions) == first
+
+
 def test_density_analysis_splits_ranked_frames_into_terciles() -> None:
     frames = [
         FrameEvaluation(
@@ -78,6 +174,29 @@ def test_density_analysis_splits_ranked_frames_into_terciles() -> None:
     assert result["highDensity"]["frames"] == 3
     assert result["lowDensity"]["gtAnts"] == 6
     assert result["highDensity"]["gtAnts"] == 24
+
+
+def test_density_analysis_reports_corrected_match_counts() -> None:
+    frames = [
+        FrameEvaluation(
+            image="crowded.jpg",
+            gt_count=2,
+            prediction_count=2,
+            center_matched=2,
+            center_missed=0,
+            center_unmatched_predictions=0,
+            iou50_matched=2,
+            iou50_missed=0,
+            iou50_unmatched_predictions=0,
+        )
+    ]
+
+    result = density_analysis(frames)
+
+    assert result["highDensity"]["centerMatchedAnts"] == 2
+    assert result["highDensity"]["standardIou50MatchedAnts"] == 2
+    assert result["highDensity"]["centerRecall"] == 1.0
+    assert result["highDensity"]["standardIou50Recall"] == 1.0
 
 
 def test_collect_duplicate_yolo_label_rows_reports_extra_rows(tmp_path: Path) -> None:

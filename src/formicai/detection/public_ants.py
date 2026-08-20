@@ -196,6 +196,8 @@ class PublicAntsBenchmarkEvaluator:
                 "iou50TruePositives": total_iou50_matches,
                 "iou50FalsePositives": total_predictions - total_iou50_matches,
                 "iou50FalseNegatives": total_gt - total_iou50_matches,
+                "customIou50Diagnostic": "custom fixed-IoU50 one-to-one localization diagnostic",
+                "customIou50MatchingAlgorithm": "maximum-cardinality bipartite matching over valid prediction/GT pairs",
             }
         )
         center_metrics = _center_metrics(total_gt, total_predictions, total_center_matches)
@@ -365,7 +367,7 @@ def match_center_based(gt_boxes: list[PixelBox], predictions: list[PredictionBox
                 distance = math.dist(pred_center, gt_center)
                 candidates.append((-prediction.confidence, distance, pred_index, gt_index))
 
-    return _greedy_one_to_one_matches(candidates)
+    return _maximum_cardinality_one_to_one_matches(candidates)
 
 
 def match_iou_threshold(
@@ -379,7 +381,7 @@ def match_iou_threshold(
             iou_value = _iou(gt_box, prediction.box)
             if iou_value >= threshold:
                 candidates.append((-iou_value, -prediction.confidence, pred_index, gt_index))
-    return _greedy_one_to_one_matches(candidates)
+    return _maximum_cardinality_one_to_one_matches(candidates)
 
 
 def density_analysis(frames: list[FrameEvaluation]) -> dict[str, dict[str, float | int]]:
@@ -462,19 +464,41 @@ def _yolo_box_to_pixel_box(box: YoloBox, image_width: int, image_height: int) ->
     )
 
 
-def _greedy_one_to_one_matches(candidates: list[tuple[float, ...]]) -> list[tuple[int, int]]:
-    matched_predictions = set()
-    matched_ground_truth = set()
-    matches = []
-    for candidate in sorted(candidates):
+def _maximum_cardinality_one_to_one_matches(candidates: list[tuple[float, ...]]) -> list[tuple[int, int]]:
+    sorted_candidates = sorted(candidates)
+    edges_by_prediction: dict[int, list[int]] = defaultdict(list)
+    candidate_rank: dict[tuple[int, int], int] = {}
+    for rank, candidate in enumerate(sorted_candidates):
         pred_index = int(candidate[-2])
         gt_index = int(candidate[-1])
-        if pred_index in matched_predictions or gt_index in matched_ground_truth:
+        edge = (pred_index, gt_index)
+        if edge in candidate_rank:
             continue
-        matched_predictions.add(pred_index)
-        matched_ground_truth.add(gt_index)
-        matches.append((pred_index, gt_index))
-    return matches
+        candidate_rank[edge] = rank
+        edges_by_prediction[pred_index].append(gt_index)
+
+    gt_to_prediction: dict[int, int] = {}
+
+    def try_assign(pred_index: int, seen_gt: set[int]) -> bool:
+        for gt_index in edges_by_prediction.get(pred_index, []):
+            if gt_index in seen_gt:
+                continue
+            seen_gt.add(gt_index)
+            previous_prediction = gt_to_prediction.get(gt_index)
+            if previous_prediction is None or try_assign(previous_prediction, seen_gt):
+                gt_to_prediction[gt_index] = pred_index
+                return True
+        return False
+
+    prediction_order = sorted(
+        edges_by_prediction,
+        key=lambda pred_index: (min(candidate_rank[(pred_index, gt)] for gt in edges_by_prediction[pred_index]), pred_index),
+    )
+    for pred_index in prediction_order:
+        try_assign(pred_index, set())
+
+    matches = [(pred_index, gt_index) for gt_index, pred_index in gt_to_prediction.items()]
+    return sorted(matches, key=lambda match: (candidate_rank[match], match[0], match[1]))
 
 
 def _iou(a: PixelBox, b: PixelBox) -> float:
@@ -493,6 +517,7 @@ def _center_metrics(total_gt: int, total_predictions: int, total_matches: int) -
     return {
         "name": "center-based localization metrics",
         "matchingRule": "Prediction center lies inside GT bounding box; one prediction per GT and one GT per prediction.",
+        "matchingAlgorithm": "maximum-cardinality bipartite matching over valid prediction/GT pairs",
         "gtAnts": total_gt,
         "centerMatchedAnts": total_matches,
         "centerMissedAnts": total_gt - total_matches,

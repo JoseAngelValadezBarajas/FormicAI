@@ -1,7 +1,6 @@
 from __future__ import annotations
 
 import json
-import platform
 from datetime import datetime, timezone
 from dataclasses import dataclass
 from pathlib import Path
@@ -9,8 +8,10 @@ from typing import Any
 
 import cv2
 
+from formicai.detection.parameters import validate_inference_parameters
 from formicai.detection.spec import CURRENT_CHAMPION, identify_detector_by_sha256, validate_model_classes
 from formicai.utils.hashing import sha256_file
+from formicai.utils.environment import collect_environment_metadata
 from formicai.utils.video import ROI, full_frame_roi
 
 
@@ -54,8 +55,11 @@ class VideoDetector:
             raise FileNotFoundError(f"Input video does not exist: {self._config.input_path}")
         if not self._config.model_path.exists():
             raise FileNotFoundError(f"Model does not exist: {self._config.model_path}")
-        if not 0.0 <= self._config.confidence <= 1.0:
-            raise ValueError("confidence must be between 0 and 1.")
+        validate_inference_parameters(
+            confidence=self._config.confidence,
+            iou=self._config.iou,
+            image_size=self._config.image_size,
+        )
 
         metadata_path = self._config.output_metadata_path or default_run_metadata_path(self._config.output_jsonl_path)
         _validate_distinct_output_paths(
@@ -195,7 +199,7 @@ class VideoDetector:
                         classes=class_names,
                         processed_frames=frame_index,
                         total_detections=total_detections,
-                        ultralytics_version=str(getattr(ultralytics, "__version__", "unknown")),
+                        environment=collect_environment_metadata(),
                     ),
                     indent=2,
                     sort_keys=True,
@@ -286,7 +290,7 @@ def _build_run_metadata(
     classes: dict[int, str],
     processed_frames: int,
     total_detections: int,
-    ultralytics_version: str,
+    environment: dict[str, Any],
 ) -> dict[str, Any]:
     inference = _inference_metadata(config)
     detector_spec = identify_detector_by_sha256(model_sha256)
@@ -315,11 +319,7 @@ def _build_run_metadata(
         },
         "inference": inference,
         "classes": {str(class_id): class_name for class_id, class_name in sorted(classes.items())},
-        "environment": {
-            "python": platform.python_version(),
-            "ultralytics": ultralytics_version,
-            "opencv": cv2.__version__,
-        },
+        "environment": environment,
         "result": {
             "processedFrames": processed_frames,
             "totalDetections": total_detections,
