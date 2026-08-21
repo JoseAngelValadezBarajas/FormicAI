@@ -1,0 +1,1811 @@
+{
+  "schema_version": "1.0",
+  "status": "FROZEN_UNOBSERVED",
+  "role": "FINAL_TEST",
+  "experiment_target": "ants_v5",
+  "train_eligible": false,
+  "development_validation_eligible": false,
+  "checkpoint_selection_eligible": false,
+  "tuning_eligible": false,
+  "autopsy_input_eligible": false,
+  "source_video": {
+    "filename": "videonuevoants.mp4",
+    "sha256": "97c8411cd7ea4bfe1f821fe2023258d0caef529327bdfe9c30576d9276a1baf2"
+  },
+  "dataset_root": "datasets/external_test/v5_final_test",
+  "counts": {
+    "total_frames": 30,
+    "positive_frames": 30,
+    "verified_zero_frames": 0,
+    "zero_annotation_frames": 0,
+    "total_annotations": 141,
+    "min_annotations_per_frame": 1,
+    "max_annotations_per_frame": 7,
+    "mean_annotations_per_frame": 4.7,
+    "median_annotations_per_frame": 5.0
+  },
+  "geometry": {
+    "median_normalized_width": 0.0416666666667,
+    "median_normalized_height": 0.0489444444444,
+    "median_normalized_area": 0.0019634934413566385,
+    "area_p10": 0.001204846354167725,
+    "area_p25": 0.0014515798128862546,
+    "area_p50": 0.0019634934413566385,
+    "area_p75": 0.0030262296489189785,
+    "area_p90": 0.009094328703737435,
+    "min_normalized_area": 0.0006908226273161844,
+    "max_normalized_area": 0.012211499469467263
+  },
+  "hashes": {
+    "image_content_sha256": "2ad51b67334de6ea0310d534b79f0b9510b0f6b9da9ff5512245d4cae584cca4",
+    "annotation_content_sha256": "9c92753691a16327271ef72c2caef9139009cdab32d7238cd3fa7cedb4c96360",
+    "combined_final_test_sha256": "10b7b81894d43d5ae1974ca7ea165631f156ab4b854bc9c65feda283b6289e5b",
+    "manifest_sha256": "a3ceefa2ad649ecce1b4f56c27c77e64ff3b3951a12e7b46ad11e1ff8fbb41cb"
+  },
+  "frames": [
+    {
+      "filename": "videonuevoants_f000061_t0001p016s.jpg",
+      "height": 1080,
+      "image_sha256": "3b60a43e358ddc4d32971b03fd0cde82f6fe6cf179a678f52757045720056b00",
+      "label_path": "datasets/external_test/v5_final_test/labels/videonuevoants_f000061_t0001p016s.txt",
+      "label_status": "MANUAL_ANNOTATION_COMPLETE",
+      "relative_path": "datasets/external_test/v5_final_test/images/videonuevoants_f000061_t0001p016s.jpg",
+      "source_frame_index": 61,
+      "source_video_filename": "videonuevoants.mp4",
+      "source_video_path": "samples/v2/videonuevoants.mp4",
+      "source_video_sha256": "97c8411cd7ea4bfe1f821fe2023258d0caef529327bdfe9c30576d9276a1baf2",
+      "temporal_bin": 0,
+      "timestamp_seconds": 1.016331,
+      "width": 1920,
+      "annotation_count": 5,
+      "verified_zero_adult": false,
+      "roboflow": {
+        "workspace": "jose-angel-valadez-barajas",
+        "project": "formi-ants-4",
+        "image_id": "XaSgiyQwVx8d0xoBXeBo",
+        "split_transport": "train"
+      },
+      "annotations_yolo": [
+        [
+          0,
+          0.455729166667,
+          0.593916666667,
+          0.05878125,
+          0.0582037037037
+        ],
+        [
+          0,
+          0.375369791667,
+          0.52712037037,
+          0.0379479166667,
+          0.0462962962963
+        ],
+        [
+          0,
+          0.510046875,
+          0.432537037037,
+          0.0260416666667,
+          0.0873055555556
+        ],
+        [
+          0,
+          0.438614583333,
+          0.544972222222,
+          0.029015625,
+          0.0740740740741
+        ],
+        [
+          0,
+          0.437130208333,
+          0.469574074074,
+          0.104911458333,
+          0.116398148148
+        ]
+      ]
+    },
+    {
+      "filename": "videonuevoants_f000183_t0003p049s.jpg",
+      "height": 1080,
+      "image_sha256": "aa2361a2e1be77cf640581eef4a2b045cf354c8d98d5ab545daebe336c3b79cf",
+      "label_path": "datasets/external_test/v5_final_test/labels/videonuevoants_f000183_t0003p049s.txt",
+      "label_status": "MANUAL_ANNOTATION_COMPLETE",
+      "relative_path": "datasets/external_test/v5_final_test/images/videonuevoants_f000183_t0003p049s.jpg",
+      "source_frame_index": 183,
+      "source_video_filename": "videonuevoants.mp4",
+      "source_video_path": "samples/v2/videonuevoants.mp4",
+      "source_video_sha256": "97c8411cd7ea4bfe1f821fe2023258d0caef529327bdfe9c30576d9276a1baf2",
+      "temporal_bin": 1,
+      "timestamp_seconds": 3.048994,
+      "width": 1920,
+      "annotation_count": 5,
+      "verified_zero_adult": false,
+      "roboflow": {
+        "workspace": "jose-angel-valadez-barajas",
+        "project": "formi-ants-4",
+        "image_id": "HlkANJySOkjuS57WzkcT",
+        "split_transport": "train"
+      },
+      "annotations_yolo": [
+        [
+          0,
+          0.451265625,
+          0.470898148148,
+          0.101932291667,
+          0.108462962963
+        ],
+        [
+          0,
+          0.520463541667,
+          0.446425925926,
+          0.0230677083333,
+          0.0859814814815
+        ],
+        [
+          0,
+          0.430432291667,
+          0.582675925926,
+          0.046875,
+          0.0383611111111
+        ],
+        [
+          0,
+          0.387276041667,
+          0.526453703704,
+          0.02753125,
+          0.0423240740741
+        ],
+        [
+          0,
+          0.453869791667,
+          0.522490740741,
+          0.0282760416667,
+          0.0740740740741
+        ]
+      ]
+    },
+    {
+      "filename": "videonuevoants_f000305_t0005p082s.jpg",
+      "height": 1080,
+      "image_sha256": "8ffb484301d8a61dc13b5990ff3c79a728e03782379d9bc5d408131baef28472",
+      "label_path": "datasets/external_test/v5_final_test/labels/videonuevoants_f000305_t0005p082s.txt",
+      "label_status": "MANUAL_ANNOTATION_COMPLETE",
+      "relative_path": "datasets/external_test/v5_final_test/images/videonuevoants_f000305_t0005p082s.jpg",
+      "source_frame_index": 305,
+      "source_video_filename": "videonuevoants.mp4",
+      "source_video_path": "samples/v2/videonuevoants.mp4",
+      "source_video_sha256": "97c8411cd7ea4bfe1f821fe2023258d0caef529327bdfe9c30576d9276a1baf2",
+      "temporal_bin": 2,
+      "timestamp_seconds": 5.081657,
+      "width": 1920,
+      "annotation_count": 4,
+      "verified_zero_adult": false,
+      "roboflow": {
+        "workspace": "jose-angel-valadez-barajas",
+        "project": "formi-ants-4",
+        "image_id": "yKTxELpQ1KOAKuJkhkU7",
+        "split_transport": "train"
+      },
+      "annotations_yolo": [
+        [
+          0,
+          0.640625,
+          0.414018518519,
+          0.0535729166667,
+          0.037037037037
+        ],
+        [
+          0,
+          0.455359375,
+          0.461638888889,
+          0.102677083333,
+          0.0978796296296
+        ],
+        [
+          0,
+          0.521203125,
+          0.437166666667,
+          0.0245520833333,
+          0.0648148148148
+        ],
+        [
+          0,
+          0.387651041667,
+          0.525796296296,
+          0.0327395833333,
+          0.0436481481481
+        ]
+      ]
+    },
+    {
+      "filename": "videonuevoants_f000427_t0007p114s.jpg",
+      "height": 1080,
+      "image_sha256": "59a1e749abb1470af294313505a91a1c45a105062030cd05c7a07ca742711c7e",
+      "label_path": "datasets/external_test/v5_final_test/labels/videonuevoants_f000427_t0007p114s.txt",
+      "label_status": "MANUAL_ANNOTATION_COMPLETE",
+      "relative_path": "datasets/external_test/v5_final_test/images/videonuevoants_f000427_t0007p114s.jpg",
+      "source_frame_index": 427,
+      "source_video_filename": "videonuevoants.mp4",
+      "source_video_path": "samples/v2/videonuevoants.mp4",
+      "source_video_sha256": "97c8411cd7ea4bfe1f821fe2023258d0caef529327bdfe9c30576d9276a1baf2",
+      "temporal_bin": 3,
+      "timestamp_seconds": 7.11432,
+      "width": 1920,
+      "annotation_count": 3,
+      "verified_zero_adult": false,
+      "roboflow": {
+        "workspace": "jose-angel-valadez-barajas",
+        "project": "formi-ants-4",
+        "image_id": "pE2XKAO0Y4Fcxj4QLux7",
+        "split_transport": "train"
+      },
+      "annotations_yolo": [
+        [
+          0,
+          0.46503125,
+          0.468916666667,
+          0.09375,
+          0.0939166666667
+        ],
+        [
+          0,
+          0.52715625,
+          0.439814814815,
+          0.02753125,
+          0.0701018518519
+        ],
+        [
+          0,
+          0.403645833333,
+          0.525796296296,
+          0.0364583333333,
+          0.0410092592593
+        ]
+      ]
+    },
+    {
+      "filename": "videonuevoants_f000549_t0009p147s.jpg",
+      "height": 1080,
+      "image_sha256": "a3e7905ac2e4253317cad8940933504aecd676208a6ae1bdbce090f89c56d1bd",
+      "label_path": "datasets/external_test/v5_final_test/labels/videonuevoants_f000549_t0009p147s.txt",
+      "label_status": "MANUAL_ANNOTATION_COMPLETE",
+      "relative_path": "datasets/external_test/v5_final_test/images/videonuevoants_f000549_t0009p147s.jpg",
+      "source_frame_index": 549,
+      "source_video_filename": "videonuevoants.mp4",
+      "source_video_path": "samples/v2/videonuevoants.mp4",
+      "source_video_sha256": "97c8411cd7ea4bfe1f821fe2023258d0caef529327bdfe9c30576d9276a1baf2",
+      "temporal_bin": 4,
+      "timestamp_seconds": 9.146983,
+      "width": 1920,
+      "annotation_count": 4,
+      "verified_zero_adult": false,
+      "roboflow": {
+        "workspace": "jose-angel-valadez-barajas",
+        "project": "formi-ants-4",
+        "image_id": "BPYfMunYoaF7PwJN3E9Q",
+        "split_transport": "train"
+      },
+      "annotations_yolo": [
+        [
+          0,
+          0.529760416667,
+          0.441138888889,
+          0.0416666666667,
+          0.0489444444444
+        ],
+        [
+          0,
+          0.466890625,
+          0.455027777778,
+          0.103421875,
+          0.0978796296296
+        ],
+        [
+          0,
+          0.399182291667,
+          0.516537037037,
+          0.03496875,
+          0.035712962963
+        ],
+        [
+          0,
+          0.460192708333,
+          0.516537037037,
+          0.0260416666667,
+          0.067462962963
+        ]
+      ]
+    },
+    {
+      "filename": "videonuevoants_f000671_t0011p180s.jpg",
+      "height": 1080,
+      "image_sha256": "7da4641c608b7db79845b8804dc307a9dd07ca71370d8685f7944ada21d96360",
+      "label_path": "datasets/external_test/v5_final_test/labels/videonuevoants_f000671_t0011p180s.txt",
+      "label_status": "MANUAL_ANNOTATION_COMPLETE",
+      "relative_path": "datasets/external_test/v5_final_test/images/videonuevoants_f000671_t0011p180s.jpg",
+      "source_frame_index": 671,
+      "source_video_filename": "videonuevoants.mp4",
+      "source_video_path": "samples/v2/videonuevoants.mp4",
+      "source_video_sha256": "97c8411cd7ea4bfe1f821fe2023258d0caef529327bdfe9c30576d9276a1baf2",
+      "temporal_bin": 5,
+      "timestamp_seconds": 11.179646,
+      "width": 1920,
+      "annotation_count": 4,
+      "verified_zero_adult": false,
+      "roboflow": {
+        "workspace": "jose-angel-valadez-barajas",
+        "project": "formi-ants-4",
+        "image_id": "IiPWHKskTO8b7eHi9Vbo",
+        "split_transport": "train"
+      },
+      "annotations_yolo": [
+        [
+          0,
+          0.461307291667,
+          0.470898148148,
+          0.09375,
+          0.0978796296296
+        ],
+        [
+          0,
+          0.53125,
+          0.472222222222,
+          0.0282760416667,
+          0.068787037037
+        ],
+        [
+          0,
+          0.398807291667,
+          0.532407407407,
+          0.0357135416667,
+          0.0568796296296
+        ],
+        [
+          0,
+          0.458703125,
+          0.525796296296,
+          0.0245520833333,
+          0.0806851851852
+        ]
+      ]
+    },
+    {
+      "filename": "videonuevoants_f000793_t0013p212s.jpg",
+      "height": 1080,
+      "image_sha256": "fe6f1bdc1db6abf77433956af8d384406daa836897f046156b17e1d9f928b36c",
+      "label_path": "datasets/external_test/v5_final_test/labels/videonuevoants_f000793_t0013p212s.txt",
+      "label_status": "MANUAL_ANNOTATION_COMPLETE",
+      "relative_path": "datasets/external_test/v5_final_test/images/videonuevoants_f000793_t0013p212s.jpg",
+      "source_frame_index": 793,
+      "source_video_filename": "videonuevoants.mp4",
+      "source_video_path": "samples/v2/videonuevoants.mp4",
+      "source_video_sha256": "97c8411cd7ea4bfe1f821fe2023258d0caef529327bdfe9c30576d9276a1baf2",
+      "temporal_bin": 6,
+      "timestamp_seconds": 13.212309,
+      "width": 1920,
+      "annotation_count": 4,
+      "verified_zero_adult": false,
+      "roboflow": {
+        "workspace": "jose-angel-valadez-barajas",
+        "project": "formi-ants-4",
+        "image_id": "CBBXqU9NFotlq5n9QjWU",
+        "split_transport": "train"
+      },
+      "annotations_yolo": [
+        [
+          0,
+          0.397692708333,
+          0.526453703704,
+          0.03496875,
+          0.037037037037
+        ],
+        [
+          0,
+          0.46465625,
+          0.52712037037,
+          0.02753125,
+          0.0701018518519
+        ],
+        [
+          0,
+          0.530135416667,
+          0.458990740741,
+          0.0424114583333,
+          0.0343888888889
+        ],
+        [
+          0,
+          0.466515625,
+          0.474203703704,
+          0.0982135416667,
+          0.0965648148148
+        ]
+      ]
+    },
+    {
+      "filename": "videonuevoants_f000916_t0015p262s.jpg",
+      "height": 1080,
+      "image_sha256": "9368b8e4a43697526771681c0eb8f6eddc2883cc6775692c47f8e08d772872b2",
+      "label_path": "datasets/external_test/v5_final_test/labels/videonuevoants_f000916_t0015p262s.txt",
+      "label_status": "MANUAL_ANNOTATION_COMPLETE",
+      "relative_path": "datasets/external_test/v5_final_test/images/videonuevoants_f000916_t0015p262s.jpg",
+      "source_frame_index": 916,
+      "source_video_filename": "videonuevoants.mp4",
+      "source_video_path": "samples/v2/videonuevoants.mp4",
+      "source_video_sha256": "97c8411cd7ea4bfe1f821fe2023258d0caef529327bdfe9c30576d9276a1baf2",
+      "temporal_bin": 7,
+      "timestamp_seconds": 15.261633,
+      "width": 1920,
+      "annotation_count": 3,
+      "verified_zero_adult": false,
+      "roboflow": {
+        "workspace": "jose-angel-valadez-barajas",
+        "project": "formi-ants-4",
+        "image_id": "9MLtvZhU621FGjIS7ram",
+        "split_transport": "train"
+      },
+      "annotations_yolo": [
+        [
+          0,
+          0.466890625,
+          0.449074074074,
+          0.0989583333333,
+          0.0965648148148
+        ],
+        [
+          0,
+          0.404015625,
+          0.509916666667,
+          0.0282760416667,
+          0.0436481481481
+        ],
+        [
+          0,
+          0.42559375,
+          0.939814814815,
+          0.0416666666667,
+          0.0462962962963
+        ]
+      ]
+    },
+    {
+      "filename": "videonuevoants_f001038_t0017p294s.jpg",
+      "height": 1080,
+      "image_sha256": "5a5be0e84b895332f187bf311b9f6e33c545d64624e5b04971bcb9e81514578f",
+      "label_path": "datasets/external_test/v5_final_test/labels/videonuevoants_f001038_t0017p294s.txt",
+      "label_status": "MANUAL_ANNOTATION_COMPLETE",
+      "relative_path": "datasets/external_test/v5_final_test/images/videonuevoants_f001038_t0017p294s.jpg",
+      "source_frame_index": 1038,
+      "source_video_filename": "videonuevoants.mp4",
+      "source_video_path": "samples/v2/videonuevoants.mp4",
+      "source_video_sha256": "97c8411cd7ea4bfe1f821fe2023258d0caef529327bdfe9c30576d9276a1baf2",
+      "temporal_bin": 8,
+      "timestamp_seconds": 17.294296,
+      "width": 1920,
+      "annotation_count": 5,
+      "verified_zero_adult": false,
+      "roboflow": {
+        "workspace": "jose-angel-valadez-barajas",
+        "project": "formi-ants-4",
+        "image_id": "GIUssKm8yJNITx3gV6fr",
+        "split_transport": "train"
+      },
+      "annotations_yolo": [
+        [
+          0,
+          0.464286458333,
+          0.445768518519,
+          0.0952395833333,
+          0.0873055555556
+        ],
+        [
+          0,
+          0.562130208333,
+          0.496694444444,
+          0.052828125,
+          0.0515833333333
+        ],
+        [
+          0,
+          0.524927083333,
+          0.438490740741,
+          0.0483645833333,
+          0.0436481481481
+        ],
+        [
+          0,
+          0.460567708333,
+          0.505953703704,
+          0.0654739583333,
+          0.0410092592593
+        ],
+        [
+          0,
+          0.395463541667,
+          0.507277777778,
+          0.0394322916667,
+          0.035712962963
+        ]
+      ]
+    },
+    {
+      "filename": "videonuevoants_f001160_t0019p327s.jpg",
+      "height": 1080,
+      "image_sha256": "16758ed9e927df6c64dbe936e684644a3a45cfb050b5ba93d505c88e3f6ada78",
+      "label_path": "datasets/external_test/v5_final_test/labels/videonuevoants_f001160_t0019p327s.txt",
+      "label_status": "MANUAL_ANNOTATION_COMPLETE",
+      "relative_path": "datasets/external_test/v5_final_test/images/videonuevoants_f001160_t0019p327s.jpg",
+      "source_frame_index": 1160,
+      "source_video_filename": "videonuevoants.mp4",
+      "source_video_path": "samples/v2/videonuevoants.mp4",
+      "source_video_sha256": "97c8411cd7ea4bfe1f821fe2023258d0caef529327bdfe9c30576d9276a1baf2",
+      "temporal_bin": 9,
+      "timestamp_seconds": 19.326959,
+      "width": 1920,
+      "annotation_count": 5,
+      "verified_zero_adult": false,
+      "roboflow": {
+        "workspace": "jose-angel-valadez-barajas",
+        "project": "formi-ants-4",
+        "image_id": "v7W55ZU9gKJuGfqes9D5",
+        "split_transport": "train"
+      },
+      "annotations_yolo": [
+        [
+          0,
+          0.552828125,
+          0.503972222222,
+          0.0476197916667,
+          0.0449722222222
+        ],
+        [
+          0,
+          0.454239583333,
+          0.445101851852,
+          0.100447916667,
+          0.0859814814815
+        ],
+        [
+          0,
+          0.387276041667,
+          0.507935185185,
+          0.03496875,
+          0.0449722222222
+        ],
+        [
+          0,
+          0.522692708333,
+          0.441796296296,
+          0.0379479166667,
+          0.03175
+        ],
+        [
+          0,
+          0.569942708333,
+          0.982805555556,
+          0.05059375,
+          0.0343888888889
+        ]
+      ]
+    },
+    {
+      "filename": "videonuevoants_f001282_t0021p360s.jpg",
+      "height": 1080,
+      "image_sha256": "6aecd964bece10c96dba5d3f6ac641c766fa97ef2718c8f04f6a5b801cf03179",
+      "label_path": "datasets/external_test/v5_final_test/labels/videonuevoants_f001282_t0021p360s.txt",
+      "label_status": "MANUAL_ANNOTATION_COMPLETE",
+      "relative_path": "datasets/external_test/v5_final_test/images/videonuevoants_f001282_t0021p360s.jpg",
+      "source_frame_index": 1282,
+      "source_video_filename": "videonuevoants.mp4",
+      "source_video_path": "samples/v2/videonuevoants.mp4",
+      "source_video_sha256": "97c8411cd7ea4bfe1f821fe2023258d0caef529327bdfe9c30576d9276a1baf2",
+      "temporal_bin": 10,
+      "timestamp_seconds": 21.359622,
+      "width": 1920,
+      "annotation_count": 6,
+      "verified_zero_adult": false,
+      "roboflow": {
+        "workspace": "jose-angel-valadez-barajas",
+        "project": "formi-ants-4",
+        "image_id": "juxVaR9uHDex7oAlM63Y",
+        "split_transport": "train"
+      },
+      "annotations_yolo": [
+        [
+          0,
+          0.443453125,
+          0.437166666667,
+          0.110119791667,
+          0.0992037037037
+        ],
+        [
+          0,
+          0.55096875,
+          0.469574074074,
+          0.0379479166667,
+          0.0714259259259
+        ],
+        [
+          0,
+          0.37128125,
+          0.506611111111,
+          0.0327395833333,
+          0.0502685185185
+        ],
+        [
+          0,
+          0.450151041667,
+          0.496027777778,
+          0.04315625,
+          0.0502685185185
+        ],
+        [
+          0,
+          0.510046875,
+          0.416666666667,
+          0.0513385416667,
+          0.0449722222222
+        ],
+        [
+          0,
+          0.40253125,
+          0.492064814815,
+          0.0327395833333,
+          0.0343888888889
+        ]
+      ]
+    },
+    {
+      "filename": "videonuevoants_f001404_t0023p392s.jpg",
+      "height": 1080,
+      "image_sha256": "fa412623ab8ac2b34e56525d3713085209529a8f06242deb805544bcd4422869",
+      "label_path": "datasets/external_test/v5_final_test/labels/videonuevoants_f001404_t0023p392s.txt",
+      "label_status": "MANUAL_ANNOTATION_COMPLETE",
+      "relative_path": "datasets/external_test/v5_final_test/images/videonuevoants_f001404_t0023p392s.jpg",
+      "source_frame_index": 1404,
+      "source_video_filename": "videonuevoants.mp4",
+      "source_video_path": "samples/v2/videonuevoants.mp4",
+      "source_video_sha256": "97c8411cd7ea4bfe1f821fe2023258d0caef529327bdfe9c30576d9276a1baf2",
+      "temporal_bin": 11,
+      "timestamp_seconds": 23.392285,
+      "width": 1920,
+      "annotation_count": 1,
+      "verified_zero_adult": false,
+      "roboflow": {
+        "workspace": "jose-angel-valadez-barajas",
+        "project": "formi-ants-4",
+        "image_id": "QFwAA1yQr7N1ys5edH0D",
+        "split_transport": "train"
+      },
+      "annotations_yolo": [
+        [
+          0,
+          0.524927083333,
+          0.496027777778,
+          0.05878125,
+          0.0582037037037
+        ]
+      ]
+    },
+    {
+      "filename": "videonuevoants_f001526_t0025p425s.jpg",
+      "height": 1080,
+      "image_sha256": "164ee0e58b6a1ad74a23c85b79a23b37c59678dcb14896e2aaf7c818f69da6f5",
+      "label_path": "datasets/external_test/v5_final_test/labels/videonuevoants_f001526_t0025p425s.txt",
+      "label_status": "MANUAL_ANNOTATION_COMPLETE",
+      "relative_path": "datasets/external_test/v5_final_test/images/videonuevoants_f001526_t0025p425s.jpg",
+      "source_frame_index": 1526,
+      "source_video_filename": "videonuevoants.mp4",
+      "source_video_path": "samples/v2/videonuevoants.mp4",
+      "source_video_sha256": "97c8411cd7ea4bfe1f821fe2023258d0caef529327bdfe9c30576d9276a1baf2",
+      "temporal_bin": 12,
+      "timestamp_seconds": 25.424948,
+      "width": 1920,
+      "annotation_count": 1,
+      "verified_zero_adult": false,
+      "roboflow": {
+        "workspace": "jose-angel-valadez-barajas",
+        "project": "formi-ants-4",
+        "image_id": "AElX2zeXo5EwglOqaD7C",
+        "split_transport": "train"
+      },
+      "annotations_yolo": [
+        [
+          0,
+          0.726192708333,
+          0.900796296296,
+          0.0163697916667,
+          0.0740740740741
+        ]
+      ]
+    },
+    {
+      "filename": "videonuevoants_f001648_t0027p458s.jpg",
+      "height": 1080,
+      "image_sha256": "53d6565015c268c79200a8a69a95f38dd983cdb4b11e4bf26338b88b487e5b7d",
+      "label_path": "datasets/external_test/v5_final_test/labels/videonuevoants_f001648_t0027p458s.txt",
+      "label_status": "MANUAL_ANNOTATION_COMPLETE",
+      "relative_path": "datasets/external_test/v5_final_test/images/videonuevoants_f001648_t0027p458s.jpg",
+      "source_frame_index": 1648,
+      "source_video_filename": "videonuevoants.mp4",
+      "source_video_path": "samples/v2/videonuevoants.mp4",
+      "source_video_sha256": "97c8411cd7ea4bfe1f821fe2023258d0caef529327bdfe9c30576d9276a1baf2",
+      "temporal_bin": 13,
+      "timestamp_seconds": 27.457611,
+      "width": 1920,
+      "annotation_count": 4,
+      "verified_zero_adult": false,
+      "roboflow": {
+        "workspace": "jose-angel-valadez-barajas",
+        "project": "formi-ants-4",
+        "image_id": "jAGxz81mcSFIMLCUrCoS",
+        "split_transport": "train"
+      },
+      "annotations_yolo": [
+        [
+          0,
+          0.4296875,
+          0.571425925926,
+          0.0558020833333,
+          0.0529074074074
+        ],
+        [
+          0,
+          0.543901041667,
+          0.523148148148,
+          0.0535729166667,
+          0.035712962963
+        ],
+        [
+          0,
+          0.474703125,
+          0.462962962963,
+          0.108630208333,
+          0.0846574074074
+        ],
+        [
+          0,
+          0.795015625,
+          0.986768518519,
+          0.0558020833333,
+          0.0238055555556
+        ]
+      ]
+    },
+    {
+      "filename": "videonuevoants_f001770_t0029p490s.jpg",
+      "height": 1080,
+      "image_sha256": "71d9a944e855a1b049ccba752227a8acd9b8f47a7a043bcaf60428c1344e7e77",
+      "label_path": "datasets/external_test/v5_final_test/labels/videonuevoants_f001770_t0029p490s.txt",
+      "label_status": "MANUAL_ANNOTATION_COMPLETE",
+      "relative_path": "datasets/external_test/v5_final_test/images/videonuevoants_f001770_t0029p490s.jpg",
+      "source_frame_index": 1770,
+      "source_video_filename": "videonuevoants.mp4",
+      "source_video_path": "samples/v2/videonuevoants.mp4",
+      "source_video_sha256": "97c8411cd7ea4bfe1f821fe2023258d0caef529327bdfe9c30576d9276a1baf2",
+      "temporal_bin": 14,
+      "timestamp_seconds": 29.490274,
+      "width": 1920,
+      "annotation_count": 4,
+      "verified_zero_adult": false,
+      "roboflow": {
+        "workspace": "jose-angel-valadez-barajas",
+        "project": "formi-ants-4",
+        "image_id": "LKO5P7f3etttL2aNDSD7",
+        "split_transport": "train"
+      },
+      "annotations_yolo": [
+        [
+          0,
+          0.348213541667,
+          0.59987037037,
+          0.0639895833333,
+          0.0410092592593
+        ],
+        [
+          0,
+          0.397692708333,
+          0.541666666667,
+          0.0319947916667,
+          0.0304259259259
+        ],
+        [
+          0,
+          0.468380208333,
+          0.474203703704,
+          0.106401041667,
+          0.0753981481481
+        ],
+        [
+          0,
+          0.788317708333,
+          0.961638888889,
+          0.0230677083333,
+          0.0767222222222
+        ]
+      ]
+    },
+    {
+      "filename": "videonuevoants_f001893_t0031p540s.jpg",
+      "height": 1080,
+      "image_sha256": "42d327826c4c2d2f1851579f6b5fe860ca88b9fb38f86515c1c668fcfa6174a9",
+      "label_path": "datasets/external_test/v5_final_test/labels/videonuevoants_f001893_t0031p540s.txt",
+      "label_status": "MANUAL_ANNOTATION_COMPLETE",
+      "relative_path": "datasets/external_test/v5_final_test/images/videonuevoants_f001893_t0031p540s.jpg",
+      "source_frame_index": 1893,
+      "source_video_filename": "videonuevoants.mp4",
+      "source_video_path": "samples/v2/videonuevoants.mp4",
+      "source_video_sha256": "97c8411cd7ea4bfe1f821fe2023258d0caef529327bdfe9c30576d9276a1baf2",
+      "temporal_bin": 15,
+      "timestamp_seconds": 31.539598,
+      "width": 1920,
+      "annotation_count": 5,
+      "verified_zero_adult": false,
+      "roboflow": {
+        "workspace": "jose-angel-valadez-barajas",
+        "project": "formi-ants-4",
+        "image_id": "qQu72Tgid23HuxcEZ2zC",
+        "split_transport": "train"
+      },
+      "annotations_yolo": [
+        [
+          0,
+          0.430802083333,
+          0.659388888889,
+          0.0669635416667,
+          0.0330648148148
+        ],
+        [
+          0,
+          0.391369791667,
+          0.615083333333,
+          0.0610104166667,
+          0.0396851851852
+        ],
+        [
+          0,
+          0.401041666667,
+          0.564157407407,
+          0.0357135416667,
+          0.0277777777778
+        ],
+        [
+          0,
+          0.483630208333,
+          0.570101851852,
+          0.0386927083333,
+          0.0449722222222
+        ],
+        [
+          0,
+          0.470984375,
+          0.509916666667,
+          0.10565625,
+          0.0939166666667
+        ]
+      ]
+    },
+    {
+      "filename": "videonuevoants_f002015_t0033p572s.jpg",
+      "height": 1080,
+      "image_sha256": "5862b1c8951b7353e84f596656aee07ed0740a1d1d20e4e9e90ace6c09242da1",
+      "label_path": "datasets/external_test/v5_final_test/labels/videonuevoants_f002015_t0033p572s.txt",
+      "label_status": "MANUAL_ANNOTATION_COMPLETE",
+      "relative_path": "datasets/external_test/v5_final_test/images/videonuevoants_f002015_t0033p572s.jpg",
+      "source_frame_index": 2015,
+      "source_video_filename": "videonuevoants.mp4",
+      "source_video_path": "samples/v2/videonuevoants.mp4",
+      "source_video_sha256": "97c8411cd7ea4bfe1f821fe2023258d0caef529327bdfe9c30576d9276a1baf2",
+      "temporal_bin": 16,
+      "timestamp_seconds": 33.572261,
+      "width": 1920,
+      "annotation_count": 7,
+      "verified_zero_adult": false,
+      "roboflow": {
+        "workspace": "jose-angel-valadez-barajas",
+        "project": "formi-ants-4",
+        "image_id": "vhMVra0bWl6yT6PywfJP",
+        "split_transport": "train"
+      },
+      "annotations_yolo": [
+        [
+          0,
+          0.328494791667,
+          0.462305555556,
+          0.0305052083333,
+          0.0648148148148
+        ],
+        [
+          0,
+          0.374630208333,
+          0.642194444444,
+          0.0558020833333,
+          0.0542314814815
+        ],
+        [
+          0,
+          0.536458333333,
+          0.566796296296,
+          0.0357135416667,
+          0.0542314814815
+        ],
+        [
+          0,
+          0.53496875,
+          0.967592592593,
+          0.044640625,
+          0.0330648148148
+        ],
+        [
+          0,
+          0.4765625,
+          0.553574074074,
+          0.0424114583333,
+          0.0462962962963
+        ],
+        [
+          0,
+          0.433036458333,
+          0.554231481481,
+          0.0327395833333,
+          0.0396851851852
+        ],
+        [
+          0,
+          0.470984375,
+          0.501324074074,
+          0.107140625,
+          0.0793611111111
+        ]
+      ]
+    },
+    {
+      "filename": "videonuevoants_f002137_t0035p605s.jpg",
+      "height": 1080,
+      "image_sha256": "1a06c1486668dda58259de5e475631c75b43d4bccd56651a21825478eb8107db",
+      "label_path": "datasets/external_test/v5_final_test/labels/videonuevoants_f002137_t0035p605s.txt",
+      "label_status": "MANUAL_ANNOTATION_COMPLETE",
+      "relative_path": "datasets/external_test/v5_final_test/images/videonuevoants_f002137_t0035p605s.jpg",
+      "source_frame_index": 2137,
+      "source_video_filename": "videonuevoants.mp4",
+      "source_video_path": "samples/v2/videonuevoants.mp4",
+      "source_video_sha256": "97c8411cd7ea4bfe1f821fe2023258d0caef529327bdfe9c30576d9276a1baf2",
+      "temporal_bin": 17,
+      "timestamp_seconds": 35.604924,
+      "width": 1920,
+      "annotation_count": 6,
+      "verified_zero_adult": false,
+      "roboflow": {
+        "workspace": "jose-angel-valadez-barajas",
+        "project": "formi-ants-4",
+        "image_id": "mFJDCSg0lVDFr8IjmjOo",
+        "split_transport": "train"
+      },
+      "annotations_yolo": [
+        [
+          0,
+          0.291296875,
+          0.363092592593,
+          0.0498489583333,
+          0.0277777777778
+        ],
+        [
+          0,
+          0.296130208333,
+          0.701055555556,
+          0.0654739583333,
+          0.0634907407407
+        ],
+        [
+          0,
+          0.434895833333,
+          0.565472222222,
+          0.02753125,
+          0.0489444444444
+        ],
+        [
+          0,
+          0.484375,
+          0.570768518519,
+          0.0342239583333,
+          0.0489444444444
+        ],
+        [
+          0,
+          0.557661458333,
+          0.556212962963,
+          0.029015625,
+          0.0621666666667
+        ],
+        [
+          0,
+          0.469864583333,
+          0.517861111111,
+          0.107885416667,
+          0.0886203703704
+        ]
+      ]
+    },
+    {
+      "filename": "videonuevoants_f002259_t0037p638s.jpg",
+      "height": 1080,
+      "image_sha256": "d7ef3a6fd1877474c843c3c0c97be0e40f7e9ec527c6bcef5fc35055f971e77b",
+      "label_path": "datasets/external_test/v5_final_test/labels/videonuevoants_f002259_t0037p638s.txt",
+      "label_status": "MANUAL_ANNOTATION_COMPLETE",
+      "relative_path": "datasets/external_test/v5_final_test/images/videonuevoants_f002259_t0037p638s.jpg",
+      "source_frame_index": 2259,
+      "source_video_filename": "videonuevoants.mp4",
+      "source_video_path": "samples/v2/videonuevoants.mp4",
+      "source_video_sha256": "97c8411cd7ea4bfe1f821fe2023258d0caef529327bdfe9c30576d9276a1baf2",
+      "temporal_bin": 18,
+      "timestamp_seconds": 37.637587,
+      "width": 1920,
+      "annotation_count": 6,
+      "verified_zero_adult": false,
+      "roboflow": {
+        "workspace": "jose-angel-valadez-barajas",
+        "project": "formi-ants-4",
+        "image_id": "DLzik0YRtTxaMgLAKQxa",
+        "split_transport": "train"
+      },
+      "annotations_yolo": [
+        [
+          0,
+          0.28534375,
+          0.389546296296,
+          0.0424114583333,
+          0.0462962962963
+        ],
+        [
+          0,
+          0.600817708333,
+          0.518518518519,
+          0.0483645833333,
+          0.068787037037
+        ],
+        [
+          0,
+          0.418901041667,
+          0.648805555556,
+          0.0714270833333,
+          0.0489444444444
+        ],
+        [
+          0,
+          0.434895833333,
+          0.569444444444,
+          0.0260416666667,
+          0.0383611111111
+        ],
+        [
+          0,
+          0.484005208333,
+          0.582009259259,
+          0.0379479166667,
+          0.0502685185185
+        ],
+        [
+          0,
+          0.474328125,
+          0.522490740741,
+          0.106401041667,
+          0.0978796296296
+        ]
+      ]
+    },
+    {
+      "filename": "videonuevoants_f002381_t0039p670s.jpg",
+      "height": 1080,
+      "image_sha256": "d7cb028cc259f821749f639002e3a6a297d50ea90a78fb7f1df1ebd5c23da122",
+      "label_path": "datasets/external_test/v5_final_test/labels/videonuevoants_f002381_t0039p670s.txt",
+      "label_status": "MANUAL_ANNOTATION_COMPLETE",
+      "relative_path": "datasets/external_test/v5_final_test/images/videonuevoants_f002381_t0039p670s.jpg",
+      "source_frame_index": 2381,
+      "source_video_filename": "videonuevoants.mp4",
+      "source_video_path": "samples/v2/videonuevoants.mp4",
+      "source_video_sha256": "97c8411cd7ea4bfe1f821fe2023258d0caef529327bdfe9c30576d9276a1baf2",
+      "temporal_bin": 19,
+      "timestamp_seconds": 39.67025,
+      "width": 1920,
+      "annotation_count": 6,
+      "verified_zero_adult": false,
+      "roboflow": {
+        "workspace": "jose-angel-valadez-barajas",
+        "project": "formi-ants-4",
+        "image_id": "p4fxrUZu1dVnusC9aUF0",
+        "split_transport": "train"
+      },
+      "annotations_yolo": [
+        [
+          0,
+          0.473213541667,
+          0.52712037037,
+          0.10565625,
+          0.07275
+        ],
+        [
+          0,
+          0.557291666667,
+          0.501324074074,
+          0.0461302083333,
+          0.0396851851852
+        ],
+        [
+          0,
+          0.546505208333,
+          0.571425925926,
+          0.052828125,
+          0.0529074074074
+        ],
+        [
+          0,
+          0.390994791667,
+          0.555555555556,
+          0.040921875,
+          0.03175
+        ],
+        [
+          0,
+          0.438244791667,
+          0.579361111111,
+          0.0297604166667,
+          0.037037037037
+        ],
+        [
+          0,
+          0.486234375,
+          0.585314814815,
+          0.0439010416667,
+          0.0410092592593
+        ]
+      ]
+    },
+    {
+      "filename": "videonuevoants_f002503_t0041p703s.jpg",
+      "height": 1080,
+      "image_sha256": "7d8a1e6758f1b3824dc961151a3eaaf6607b5703455f8782fec38424bd68ba40",
+      "label_path": "datasets/external_test/v5_final_test/labels/videonuevoants_f002503_t0041p703s.txt",
+      "label_status": "MANUAL_ANNOTATION_COMPLETE",
+      "relative_path": "datasets/external_test/v5_final_test/images/videonuevoants_f002503_t0041p703s.jpg",
+      "source_frame_index": 2503,
+      "source_video_filename": "videonuevoants.mp4",
+      "source_video_path": "samples/v2/videonuevoants.mp4",
+      "source_video_sha256": "97c8411cd7ea4bfe1f821fe2023258d0caef529327bdfe9c30576d9276a1baf2",
+      "temporal_bin": 20,
+      "timestamp_seconds": 41.702913,
+      "width": 1920,
+      "annotation_count": 6,
+      "verified_zero_adult": false,
+      "roboflow": {
+        "workspace": "jose-angel-valadez-barajas",
+        "project": "formi-ants-4",
+        "image_id": "dyu78G2HdxoierQIBJYK",
+        "split_transport": "train"
+      },
+      "annotations_yolo": [
+        [
+          0,
+          0.478796875,
+          0.529759259259,
+          0.104911458333,
+          0.0780462962963
+        ],
+        [
+          0,
+          0.637276041667,
+          0.54762037037,
+          0.0498489583333,
+          0.0502685185185
+        ],
+        [
+          0,
+          0.553942708333,
+          0.5,
+          0.0439010416667,
+          0.0449722222222
+        ],
+        [
+          0,
+          0.392114583333,
+          0.564157407407,
+          0.0357135416667,
+          0.0568796296296
+        ],
+        [
+          0,
+          0.440104166667,
+          0.580685185185,
+          0.0319947916667,
+          0.0449722222222
+        ],
+        [
+          0,
+          0.486609375,
+          0.580685185185,
+          0.0401770833333,
+          0.0502685185185
+        ]
+      ]
+    },
+    {
+      "filename": "videonuevoants_f002625_t0043p736s.jpg",
+      "height": 1080,
+      "image_sha256": "0cb4f8d466a013e3f0f43d0f9e3b86c2c00ea8ab85ff97f2e5253dee46988000",
+      "label_path": "datasets/external_test/v5_final_test/labels/videonuevoants_f002625_t0043p736s.txt",
+      "label_status": "MANUAL_ANNOTATION_COMPLETE",
+      "relative_path": "datasets/external_test/v5_final_test/images/videonuevoants_f002625_t0043p736s.jpg",
+      "source_frame_index": 2625,
+      "source_video_filename": "videonuevoants.mp4",
+      "source_video_path": "samples/v2/videonuevoants.mp4",
+      "source_video_sha256": "97c8411cd7ea4bfe1f821fe2023258d0caef529327bdfe9c30576d9276a1baf2",
+      "temporal_bin": 21,
+      "timestamp_seconds": 43.735576,
+      "width": 1920,
+      "annotation_count": 5,
+      "verified_zero_adult": false,
+      "roboflow": {
+        "workspace": "jose-angel-valadez-barajas",
+        "project": "formi-ants-4",
+        "image_id": "lJTRFbWUnreHnR2pzp2A",
+        "split_transport": "train"
+      },
+      "annotations_yolo": [
+        [
+          0,
+          0.483260416667,
+          0.537694444444,
+          0.107885416667,
+          0.0939166666667
+        ],
+        [
+          0,
+          0.562130208333,
+          0.501981481481,
+          0.0379479166667,
+          0.0383611111111
+        ],
+        [
+          0,
+          0.408484375,
+          0.570101851852,
+          0.0327395833333,
+          0.0582037037037
+        ],
+        [
+          0,
+          0.448286458333,
+          0.578703703704,
+          0.0319947916667,
+          0.0489444444444
+        ],
+        [
+          0,
+          0.498510416667,
+          0.591268518519,
+          0.0357135416667,
+          0.0423240740741
+        ]
+      ]
+    },
+    {
+      "filename": "videonuevoants_f002748_t0045p785s.jpg",
+      "height": 1080,
+      "image_sha256": "1e995d131c3c3f58489c475f97a9e04367689919ba334e4b2b4e4c3c65a61915",
+      "label_path": "datasets/external_test/v5_final_test/labels/videonuevoants_f002748_t0045p785s.txt",
+      "label_status": "MANUAL_ANNOTATION_COMPLETE",
+      "relative_path": "datasets/external_test/v5_final_test/images/videonuevoants_f002748_t0045p785s.jpg",
+      "source_frame_index": 2748,
+      "source_video_filename": "videonuevoants.mp4",
+      "source_video_path": "samples/v2/videonuevoants.mp4",
+      "source_video_sha256": "97c8411cd7ea4bfe1f821fe2023258d0caef529327bdfe9c30576d9276a1baf2",
+      "temporal_bin": 22,
+      "timestamp_seconds": 45.7849,
+      "width": 1920,
+      "annotation_count": 5,
+      "verified_zero_adult": false,
+      "roboflow": {
+        "workspace": "jose-angel-valadez-barajas",
+        "project": "formi-ants-4",
+        "image_id": "KOYUK6ISayKkuhBsJcGR",
+        "split_transport": "train"
+      },
+      "annotations_yolo": [
+        [
+          0,
+          0.565848958333,
+          0.50462962963,
+          0.0439010416667,
+          0.0277777777778
+        ],
+        [
+          0,
+          0.490328125,
+          0.53637962963,
+          0.10565625,
+          0.0859814814815
+        ],
+        [
+          0,
+          0.418901041667,
+          0.596564814815,
+          0.0282760416667,
+          0.0343888888889
+        ],
+        [
+          0,
+          0.452380208333,
+          0.583333333333,
+          0.0267864583333,
+          0.0423240740741
+        ],
+        [
+          0,
+          0.501859375,
+          0.590611111111,
+          0.0394322916667,
+          0.0515833333333
+        ]
+      ]
+    },
+    {
+      "filename": "videonuevoants_f002870_t0047p818s.jpg",
+      "height": 1080,
+      "image_sha256": "39d8ef0ccad9cc6f705d37ee677f91f0734db4394f07721a9917a5ae375bb75d",
+      "label_path": "datasets/external_test/v5_final_test/labels/videonuevoants_f002870_t0047p818s.txt",
+      "label_status": "MANUAL_ANNOTATION_COMPLETE",
+      "relative_path": "datasets/external_test/v5_final_test/images/videonuevoants_f002870_t0047p818s.jpg",
+      "source_frame_index": 2870,
+      "source_video_filename": "videonuevoants.mp4",
+      "source_video_path": "samples/v2/videonuevoants.mp4",
+      "source_video_sha256": "97c8411cd7ea4bfe1f821fe2023258d0caef529327bdfe9c30576d9276a1baf2",
+      "temporal_bin": 23,
+      "timestamp_seconds": 47.817563,
+      "width": 1920,
+      "annotation_count": 5,
+      "verified_zero_adult": false,
+      "roboflow": {
+        "workspace": "jose-angel-valadez-barajas",
+        "project": "formi-ants-4",
+        "image_id": "AkaklpatxcpzpmbjGmek",
+        "split_transport": "train"
+      },
+      "annotations_yolo": [
+        [
+          0,
+          0.494791666667,
+          0.54762037037,
+          0.104166666667,
+          0.0873055555556
+        ],
+        [
+          0,
+          0.565473958333,
+          0.521824074074,
+          0.0416666666667,
+          0.0542314814815
+        ],
+        [
+          0,
+          0.458333333333,
+          0.593916666667,
+          0.0342239583333,
+          0.0396851851852
+        ],
+        [
+          0,
+          0.505578125,
+          0.600527777778,
+          0.0364583333333,
+          0.0423240740741
+        ],
+        [
+          0,
+          0.446057291667,
+          0.626981481481,
+          0.0394322916667,
+          0.03175
+        ]
+      ]
+    },
+    {
+      "filename": "videonuevoants_f002992_t0049p850s.jpg",
+      "height": 1080,
+      "image_sha256": "bc698b12e5cbc0b52c23135bc23c66e7f8fe264e7bfa28ca967fcb28680cc432",
+      "label_path": "datasets/external_test/v5_final_test/labels/videonuevoants_f002992_t0049p850s.txt",
+      "label_status": "MANUAL_ANNOTATION_COMPLETE",
+      "relative_path": "datasets/external_test/v5_final_test/images/videonuevoants_f002992_t0049p850s.jpg",
+      "source_frame_index": 2992,
+      "source_video_filename": "videonuevoants.mp4",
+      "source_video_path": "samples/v2/videonuevoants.mp4",
+      "source_video_sha256": "97c8411cd7ea4bfe1f821fe2023258d0caef529327bdfe9c30576d9276a1baf2",
+      "temporal_bin": 24,
+      "timestamp_seconds": 49.850226,
+      "width": 1920,
+      "annotation_count": 5,
+      "verified_zero_adult": false,
+      "roboflow": {
+        "workspace": "jose-angel-valadez-barajas",
+        "project": "formi-ants-4",
+        "image_id": "Xl3aUnZUYBAzIkT416CF",
+        "split_transport": "train"
+      },
+      "annotations_yolo": [
+        [
+          0,
+          0.498510416667,
+          0.541009259259,
+          0.10565625,
+          0.0899444444444
+        ],
+        [
+          0,
+          0.559151041667,
+          0.511907407407,
+          0.0424114583333,
+          0.0502685185185
+        ],
+        [
+          0,
+          0.459447916667,
+          0.581351851852,
+          0.02753125,
+          0.0383611111111
+        ],
+        [
+          0,
+          0.526786458333,
+          0.614416666667,
+          0.05059375,
+          0.0277777777778
+        ],
+        [
+          0,
+          0.957588541667,
+          0.926583333333,
+          0.0401770833333,
+          0.0939166666667
+        ]
+      ]
+    },
+    {
+      "filename": "videonuevoants_f003114_t0051p883s.jpg",
+      "height": 1080,
+      "image_sha256": "d59a6337dd358a2818944d845aaa8534de0a3d7a3f5a92ec55db67f1ba9e74e4",
+      "label_path": "datasets/external_test/v5_final_test/labels/videonuevoants_f003114_t0051p883s.txt",
+      "label_status": "MANUAL_ANNOTATION_COMPLETE",
+      "relative_path": "datasets/external_test/v5_final_test/images/videonuevoants_f003114_t0051p883s.jpg",
+      "source_frame_index": 3114,
+      "source_video_filename": "videonuevoants.mp4",
+      "source_video_path": "samples/v2/videonuevoants.mp4",
+      "source_video_sha256": "97c8411cd7ea4bfe1f821fe2023258d0caef529327bdfe9c30576d9276a1baf2",
+      "temporal_bin": 25,
+      "timestamp_seconds": 51.882889,
+      "width": 1920,
+      "annotation_count": 6,
+      "verified_zero_adult": false,
+      "roboflow": {
+        "workspace": "jose-angel-valadez-barajas",
+        "project": "formi-ants-4",
+        "image_id": "zIFBzmaX7mgdQnJLDVcV",
+        "split_transport": "train"
+      },
+      "annotations_yolo": [
+        [
+          0,
+          0.571427083333,
+          0.471564814815,
+          0.0386927083333,
+          0.07275
+        ],
+        [
+          0,
+          0.914807291667,
+          0.818787037037,
+          0.0364583333333,
+          0.0978796296296
+        ],
+        [
+          0,
+          0.55840625,
+          0.582009259259,
+          0.0439010416667,
+          0.0449722222222
+        ],
+        [
+          0,
+          0.489213541667,
+          0.528435185185,
+          0.0989583333333,
+          0.0701018518519
+        ],
+        [
+          0,
+          0.452010416667,
+          0.576055555556,
+          0.0319947916667,
+          0.0436481481481
+        ],
+        [
+          0,
+          0.50409375,
+          0.593916666667,
+          0.040921875,
+          0.037037037037
+        ]
+      ]
+    },
+    {
+      "filename": "videonuevoants_f003236_t0053p916s.jpg",
+      "height": 1080,
+      "image_sha256": "1a2921a9370f831f16e2e7004e1cc0249f0b2211621ec01070f69bbab7a6fbb0",
+      "label_path": "datasets/external_test/v5_final_test/labels/videonuevoants_f003236_t0053p916s.txt",
+      "label_status": "MANUAL_ANNOTATION_COMPLETE",
+      "relative_path": "datasets/external_test/v5_final_test/images/videonuevoants_f003236_t0053p916s.jpg",
+      "source_frame_index": 3236,
+      "source_video_filename": "videonuevoants.mp4",
+      "source_video_path": "samples/v2/videonuevoants.mp4",
+      "source_video_sha256": "97c8411cd7ea4bfe1f821fe2023258d0caef529327bdfe9c30576d9276a1baf2",
+      "temporal_bin": 26,
+      "timestamp_seconds": 53.915552,
+      "width": 1920,
+      "annotation_count": 6,
+      "verified_zero_adult": false,
+      "roboflow": {
+        "workspace": "jose-angel-valadez-barajas",
+        "project": "formi-ants-4",
+        "image_id": "m2mpewdoNPefkNMQ15S2",
+        "split_transport": "train"
+      },
+      "annotations_yolo": [
+        [
+          0,
+          0.555432291667,
+          0.409388888889,
+          0.0305052083333,
+          0.0806851851852
+        ],
+        [
+          0,
+          0.587052083333,
+          0.555555555556,
+          0.0416666666667,
+          0.0423240740741
+        ],
+        [
+          0,
+          0.896578125,
+          0.782407407407,
+          0.0297604166667,
+          0.0383611111111
+        ],
+        [
+          0,
+          0.487723958333,
+          0.53175,
+          0.09003125,
+          0.0767222222222
+        ],
+        [
+          0,
+          0.500369791667,
+          0.590611111111,
+          0.0439010416667,
+          0.0330648148148
+        ],
+        [
+          0,
+          0.454239583333,
+          0.583990740741,
+          0.0305052083333,
+          0.0330648148148
+        ]
+      ]
+    },
+    {
+      "filename": "videonuevoants_f003358_t0055p948s.jpg",
+      "height": 1080,
+      "image_sha256": "9960b0ac6ac035ead9a9c58cd08bcbac63d2fc1f3f9eae3f8e146995bc29c214",
+      "label_path": "datasets/external_test/v5_final_test/labels/videonuevoants_f003358_t0055p948s.txt",
+      "label_status": "MANUAL_ANNOTATION_COMPLETE",
+      "relative_path": "datasets/external_test/v5_final_test/images/videonuevoants_f003358_t0055p948s.jpg",
+      "source_frame_index": 3358,
+      "source_video_filename": "videonuevoants.mp4",
+      "source_video_path": "samples/v2/videonuevoants.mp4",
+      "source_video_sha256": "97c8411cd7ea4bfe1f821fe2023258d0caef529327bdfe9c30576d9276a1baf2",
+      "temporal_bin": 27,
+      "timestamp_seconds": 55.948215,
+      "width": 1920,
+      "annotation_count": 5,
+      "verified_zero_adult": false,
+      "roboflow": {
+        "workspace": "jose-angel-valadez-barajas",
+        "project": "formi-ants-4",
+        "image_id": "IOzVZda3QoPfdRjFJ5H6",
+        "split_transport": "train"
+      },
+      "annotations_yolo": [
+        [
+          0,
+          0.500744791667,
+          0.413361111111,
+          0.049109375,
+          0.0330648148148
+        ],
+        [
+          0,
+          0.623885416667,
+          0.485453703704,
+          0.0394322916667,
+          0.0582037037037
+        ],
+        [
+          0,
+          0.484744791667,
+          0.5205,
+          0.0989583333333,
+          0.0859814814815
+        ],
+        [
+          0,
+          0.452755208333,
+          0.574074074074,
+          0.0319947916667,
+          0.0291018518519
+        ],
+        [
+          0,
+          0.494046875,
+          0.583990740741,
+          0.037203125,
+          0.0383611111111
+        ]
+      ]
+    },
+    {
+      "filename": "videonuevoants_f003480_t0057p981s.jpg",
+      "height": 1080,
+      "image_sha256": "f7bbb8298493362396b2bc0675329bf3a7cf87a4568f4326921759113cff0e4d",
+      "label_path": "datasets/external_test/v5_final_test/labels/videonuevoants_f003480_t0057p981s.txt",
+      "label_status": "MANUAL_ANNOTATION_COMPLETE",
+      "relative_path": "datasets/external_test/v5_final_test/images/videonuevoants_f003480_t0057p981s.jpg",
+      "source_frame_index": 3480,
+      "source_video_filename": "videonuevoants.mp4",
+      "source_video_path": "samples/v2/videonuevoants.mp4",
+      "source_video_sha256": "97c8411cd7ea4bfe1f821fe2023258d0caef529327bdfe9c30576d9276a1baf2",
+      "temporal_bin": 28,
+      "timestamp_seconds": 57.980878,
+      "width": 1920,
+      "annotation_count": 5,
+      "verified_zero_adult": false,
+      "roboflow": {
+        "workspace": "jose-angel-valadez-barajas",
+        "project": "formi-ants-4",
+        "image_id": "kCtG4DLroEgrKIRolsgI",
+        "split_transport": "train"
+      },
+      "annotations_yolo": [
+        [
+          0,
+          0.499630208333,
+          0.394842592593,
+          0.0424114583333,
+          0.035712962963
+        ],
+        [
+          0,
+          0.662572916667,
+          0.484787037037,
+          0.040921875,
+          0.0330648148148
+        ],
+        [
+          0,
+          0.44121875,
+          0.560185185185,
+          0.0282760416667,
+          0.0277777777778
+        ],
+        [
+          0,
+          0.496651041667,
+          0.566796296296,
+          0.033484375,
+          0.0410092592593
+        ],
+        [
+          0,
+          0.483260416667,
+          0.517194444444,
+          0.095984375,
+          0.0873055555556
+        ]
+      ]
+    },
+    {
+      "filename": "videonuevoants_f003602_t0060p014s.jpg",
+      "height": 1080,
+      "image_sha256": "ae7f394404ae4b58141fdd34c5dec5fbbc801a804046a158eae99223011061fc",
+      "label_path": "datasets/external_test/v5_final_test/labels/videonuevoants_f003602_t0060p014s.txt",
+      "label_status": "MANUAL_ANNOTATION_COMPLETE",
+      "relative_path": "datasets/external_test/v5_final_test/images/videonuevoants_f003602_t0060p014s.jpg",
+      "source_frame_index": 3602,
+      "source_video_filename": "videonuevoants.mp4",
+      "source_video_path": "samples/v2/videonuevoants.mp4",
+      "source_video_sha256": "97c8411cd7ea4bfe1f821fe2023258d0caef529327bdfe9c30576d9276a1baf2",
+      "temporal_bin": 29,
+      "timestamp_seconds": 60.013541,
+      "width": 1920,
+      "annotation_count": 5,
+      "verified_zero_adult": false,
+      "roboflow": {
+        "workspace": "jose-angel-valadez-barajas",
+        "project": "formi-ants-4",
+        "image_id": "WUDgj5HNWrD6WtGgP422",
+        "split_transport": "train"
+      },
+      "annotations_yolo": [
+        [
+          0,
+          0.5,
+          0.401453703704,
+          0.049109375,
+          0.0489444444444
+        ],
+        [
+          0,
+          0.659598958333,
+          0.4795,
+          0.0558020833333,
+          0.0277777777778
+        ],
+        [
+          0,
+          0.483260416667,
+          0.511240740741,
+          0.095984375,
+          0.0780462962963
+        ],
+        [
+          0,
+          0.444567708333,
+          0.558203703704,
+          0.0200885416667,
+          0.0343888888889
+        ],
+        [
+          0,
+          0.493302083333,
+          0.565472222222,
+          0.0461302083333,
+          0.0462962962963
+        ]
+      ]
+    }
+  ],
+  "model_observation": {
+    "modelInferencePerformed": false,
+    "modelsObserved": [],
+    "detectorPredictionsGenerated": false,
+    "labelAssistUsed": false,
+    "pseudoLabelingUsed": false
+  },
+  "roboflow": {
+    "workspace": "jose-angel-valadez-barajas",
+    "project": "formi-ants-4",
+    "project_name": "Formi Ants 4",
+    "split_transport_counts": {
+      "train": 30
+    },
+    "annotations_fetched_via_official_sdk": true
+  },
+  "leakage_guard": {
+    "notes": [
+      "No training/dev dataset YAML references videonuevoants or v5_final_test outside the new v5 freeze records.",
+      "No model inference, detector evaluation, pseudo-labeling, or label assist was run."
+    ],
+    "result": "PASS",
+    "selected_image_hash_overlap_checked_against_local_images": 5802,
+    "selected_image_hash_overlaps": [],
+    "selected_image_hashes_unique": true,
+    "training_or_dev_yaml_mentions_outside_v5_records": []
+  }
+}
