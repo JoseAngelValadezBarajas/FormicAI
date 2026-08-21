@@ -1,0 +1,2334 @@
+{
+  "createdAtUtc": "2026-08-21T06:16:35.586571+00:00",
+  "crowdingProxy": {
+    "compatibleWithAnt4Autopsy": "Same idea as ant4 autopsy; radius derived only from train-eligible data here, not from ant4 or final test.",
+    "definition": "For each annotation, count same-image GT centers within radius = 1.5 * median(max(width,height)) from train annotations, in normalized coordinates."
+  },
+  "datasets": {
+    "ants_v3_mixedscale_e01": {
+      "counts": {
+        "totalAnnotations": 5234,
+        "totalImages": 312,
+        "trainAnnotations": 3731,
+        "trainImages": 222,
+        "trainLabels": 222,
+        "valAnnotations": 1503,
+        "valImages": 90,
+        "valLabels": 90
+      },
+      "splits": {
+        "train": {
+          "annotations": 3731,
+          "annotationsPerImage": {
+            "count": 222,
+            "max": 56,
+            "mean": 16.806306306306308,
+            "median": 10.0,
+            "min": 1,
+            "p10": 4.0,
+            "p25": 8.0,
+            "p75": 21.75,
+            "p90": 40.0
+          },
+          "bboxAreaRatio": {
+            "count": 3731,
+            "max": 0.4699874968875,
+            "mean": 0.004220824200512673,
+            "median": 0.0021969858052392002,
+            "min": 0.0002737693411632,
+            "p10": 0.0010329860625,
+            "p25": 0.0014458550078125,
+            "p75": 0.00330946165625,
+            "p90": 0.0055893133765432
+          },
+          "bboxHeightRatio": {
+            "count": 3731,
+            "max": 0.53422465,
+            "mean": 0.06789728881533101,
+            "median": 0.06216667,
+            "min": 0.01193056,
+            "p10": 0.03611111,
+            "p25": 0.04722222,
+            "p75": 0.08055556,
+            "p90": 0.1
+          },
+          "bboxWidthRatio": {
+            "count": 3731,
+            "max": 0.93375,
+            "mean": 0.04655392331546502,
+            "median": 0.0375,
+            "min": 0.00859375,
+            "p10": 0.02109375,
+            "p25": 0.02734375,
+            "p75": 0.04921875,
+            "p90": 0.06484375
+          },
+          "images": 222,
+          "neighborCountWithinRadius": {
+            "count": 3731,
+            "max": 9,
+            "mean": 1.3406593406593406,
+            "median": 1.0,
+            "min": 0,
+            "p10": 0.0,
+            "p25": 0.0,
+            "p75": 2.0,
+            "p90": 3.0
+          },
+          "zeroAdultImages": 0
+        },
+        "val": {
+          "annotations": 1503,
+          "annotationsPerImage": {
+            "count": 90,
+            "max": 41,
+            "mean": 16.7,
+            "median": 10.0,
+            "min": 4,
+            "p10": 4.0,
+            "p25": 5.0,
+            "p75": 34.0,
+            "p90": 38.0
+          },
+          "bboxAreaRatio": {
+            "count": 1503,
+            "max": 0.01992910890625,
+            "mean": 0.002761182027665034,
+            "median": 0.0022135415625,
+            "min": 0.00039496537499999996,
+            "p10": 0.00117187509375,
+            "p25": 0.00156629782421875,
+            "p75": 0.00310572681158565,
+            "p90": 0.004487413115625
+          },
+          "bboxHeightRatio": {
+            "count": 1503,
+            "max": 0.18229167,
+            "mean": 0.05648776791084498,
+            "median": 0.05138889,
+            "min": 0.01388889,
+            "p10": 0.02916667,
+            "p25": 0.03888889,
+            "p75": 0.06901042,
+            "p90": 0.08862037
+          },
+          "bboxWidthRatio": {
+            "count": 1503,
+            "max": 0.13425926,
+            "mean": 0.04682116744510978,
+            "median": 0.04390104,
+            "min": 0.01265104,
+            "p10": 0.02901562,
+            "p25": 0.03671875,
+            "p75": 0.0546875,
+            "p90": 0.06534791799999998
+          },
+          "images": 90,
+          "neighborCountWithinRadius": {
+            "count": 1503,
+            "max": 6,
+            "mean": 1.3493013972055887,
+            "median": 1.0,
+            "min": 0,
+            "p10": 0.0,
+            "p25": 0.0,
+            "p75": 2.0,
+            "p90": 3.0
+          },
+          "zeroAdultImages": 0
+        }
+      },
+      "strataBoundariesDerivedFromTrain": {
+        "densityFromTrainAnnotationCounts": {
+          "crowdedAbove": 14.0,
+          "mediumMaxInclusive": 14.0,
+          "sparseMaxInclusive": 10.0
+        },
+        "localCrowdingFromTrainNeighborCounts": {
+          "crowdedNeighborAbove": 2.0,
+          "isolatedDominantMaxMedianNeighbors": 0.0,
+          "moderateMaxMedianNeighbors": 2.0,
+          "radiusNormalized": 0.095833335
+        },
+        "scaleFromTrainBboxArea": {
+          "mediumLargeHeavyAboveMedianArea": 0.0028342706837898657,
+          "mixedMaxMedianArea": 0.0028342706837898657,
+          "smallHeavyMaxMedianArea": 0.0016861978203125002
+        }
+      },
+      "trainSources": {
+        "AntsNet": {
+          "annotations": 229,
+          "annotationsPerImage": {
+            "count": 40,
+            "max": 22,
+            "mean": 5.725,
+            "median": 2.5,
+            "min": 1,
+            "p10": 1.0,
+            "p25": 1.75,
+            "p75": 9.25,
+            "p90": 13.100000000000001
+          },
+          "bboxAreaRatio": {
+            "count": 229,
+            "max": 0.4699874968875,
+            "mean": 0.02089311454853326,
+            "median": 0.0077520835875,
+            "min": 0.0003428917793229,
+            "p10": 0.0008329445699896799,
+            "p25": 0.002296443259939,
+            "p75": 0.016571180843750002,
+            "p90": 0.04152552728348504
+          },
+          "bboxHeightRatio": {
+            "count": 229,
+            "max": 0.53422465,
+            "mean": 0.11493541104803494,
+            "median": 0.08928571,
+            "min": 0.01566667,
+            "p10": 0.03264815,
+            "p25": 0.05125661,
+            "p75": 0.14583333,
+            "p90": 0.22136892600000005
+          },
+          "bboxWidthRatio": {
+            "count": 229,
+            "max": 0.93375,
+            "mean": 0.11287365868995633,
+            "median": 0.08625,
+            "min": 0.00954687,
+            "p10": 0.022390608,
+            "p25": 0.04298942,
+            "p75": 0.13029762,
+            "p90": 0.2296250000000002
+          },
+          "images": 40,
+          "neighborCountWithinRadius": {
+            "count": 229,
+            "max": 4,
+            "mean": 0.5502183406113537,
+            "median": 0.0,
+            "min": 0,
+            "p10": 0.0,
+            "p25": 0.0,
+            "p75": 1.0,
+            "p90": 2.0
+          },
+          "roles": {
+            "v3_targeted_train_public_relabel": 40
+          },
+          "source": "AntsNet",
+          "split": "train",
+          "trainAnnotationShare": 0.0613776467435004,
+          "trainImageShare": 0.18018018018018017,
+          "zeroAdultImages": 0
+        },
+        "Seq0002": {
+          "annotations": 247,
+          "annotationsPerImage": {
+            "count": 25,
+            "max": 10,
+            "mean": 9.88,
+            "median": 10.0,
+            "min": 9,
+            "p10": 9.4,
+            "p25": 10.0,
+            "p75": 10.0,
+            "p90": 10.0
+          },
+          "bboxAreaRatio": {
+            "count": 247,
+            "max": 0.0114969128734568,
+            "mean": 0.0029937808064565054,
+            "median": 0.0025391419485706,
+            "min": 0.001141642490625,
+            "p10": 0.0017175324683703797,
+            "p25": 0.0020925528012066003,
+            "p75": 0.0033181880481114997,
+            "p90": 0.0042775610645887415
+          },
+          "bboxHeightRatio": {
+            "count": 247,
+            "max": 0.13796296,
+            "mean": 0.0716472485020243,
+            "median": 0.06944444,
+            "min": 0.0264537,
+            "p10": 0.03968519,
+            "p25": 0.05290741,
+            "p75": 0.08862037,
+            "p90": 0.10052778
+          },
+          "bboxWidthRatio": {
+            "count": 247,
+            "max": 0.08802083,
+            "mean": 0.04252640024291498,
+            "median": 0.04375,
+            "min": 0.01265104,
+            "p10": 0.02380729,
+            "p25": 0.03422396,
+            "p75": 0.04984896,
+            "p90": 0.05729167
+          },
+          "images": 25,
+          "neighborCountWithinRadius": {
+            "count": 247,
+            "max": 4,
+            "mean": 0.7854251012145749,
+            "median": 1.0,
+            "min": 0,
+            "p10": 0.0,
+            "p25": 0.0,
+            "p75": 1.0,
+            "p90": 2.0
+          },
+          "roles": {
+            "ants_v2_diverse_e01_train_base": 25
+          },
+          "source": "Seq0002",
+          "split": "train",
+          "trainAnnotationShare": 0.06620209059233449,
+          "trainImageShare": 0.11261261261261261,
+          "zeroAdultImages": 0
+        },
+        "Seq0003": {
+          "annotations": 250,
+          "annotationsPerImage": {
+            "count": 25,
+            "max": 10,
+            "mean": 10,
+            "median": 10.0,
+            "min": 10,
+            "p10": 10.0,
+            "p25": 10.0,
+            "p75": 10.0,
+            "p90": 10.0
+          },
+          "bboxAreaRatio": {
+            "count": 250,
+            "max": 0.0099305557517361,
+            "mean": 0.0038565853408478084,
+            "median": 0.0034719809769483,
+            "min": 0.0010362336764352,
+            "p10": 0.00212664249976795,
+            "p25": 0.002642626246624225,
+            "p75": 0.004879075300829474,
+            "p90": 0.006206886549884249
+          },
+          "bboxHeightRatio": {
+            "count": 250,
+            "max": 0.14907407,
+            "mean": 0.07918785176,
+            "median": 0.07685185,
+            "min": 0.0287037,
+            "p10": 0.056296295,
+            "p25": 0.06481481,
+            "p75": 0.09351852,
+            "p90": 0.10555556
+          },
+          "bboxWidthRatio": {
+            "count": 250,
+            "max": 0.08125,
+            "mean": 0.04790297916,
+            "median": 0.045572915,
+            "min": 0.01859896,
+            "p10": 0.03385417,
+            "p25": 0.03947005,
+            "p75": 0.0561197925,
+            "p90": 0.065677083
+          },
+          "images": 25,
+          "neighborCountWithinRadius": {
+            "count": 250,
+            "max": 4,
+            "mean": 1.136,
+            "median": 1.0,
+            "min": 0,
+            "p10": 0.0,
+            "p25": 0.0,
+            "p75": 2.0,
+            "p90": 3.0
+          },
+          "roles": {
+            "ants_v2_diverse_e01_train_base": 25
+          },
+          "source": "Seq0003",
+          "split": "train",
+          "trainAnnotationShare": 0.06700616456714018,
+          "trainImageShare": 0.11261261261261261,
+          "zeroAdultImages": 0
+        },
+        "Seq0004": {
+          "annotations": 250,
+          "annotationsPerImage": {
+            "count": 25,
+            "max": 10,
+            "mean": 10,
+            "median": 10.0,
+            "min": 10,
+            "p10": 10.0,
+            "p25": 10.0,
+            "p75": 10.0,
+            "p90": 10.0
+          },
+          "bboxAreaRatio": {
+            "count": 250,
+            "max": 0.0093827164691358,
+            "mean": 0.003528990309085409,
+            "median": 0.00320143715576775,
+            "min": 0.0007972173258371999,
+            "p10": 0.00158017492931733,
+            "p25": 0.00221408429778645,
+            "p75": 0.0046518135779321,
+            "p90": 0.005774932349922841
+          },
+          "bboxHeightRatio": {
+            "count": 250,
+            "max": 0.15,
+            "mean": 0.07604559292,
+            "median": 0.07592593,
+            "min": 0.01984259,
+            "p10": 0.051824998,
+            "p25": 0.06481481,
+            "p75": 0.08703704,
+            "p90": 0.1
+          },
+          "bboxWidthRatio": {
+            "count": 250,
+            "max": 0.07447917,
+            "mean": 0.04548333384,
+            "median": 0.0453125,
+            "min": 0.01116146,
+            "p10": 0.029151564999999997,
+            "p25": 0.037611979999999996,
+            "p75": 0.0550781225,
+            "p90": 0.062552083
+          },
+          "images": 25,
+          "neighborCountWithinRadius": {
+            "count": 250,
+            "max": 3,
+            "mean": 0.768,
+            "median": 1.0,
+            "min": 0,
+            "p10": 0.0,
+            "p25": 0.0,
+            "p75": 1.0,
+            "p90": 2.0
+          },
+          "roles": {
+            "ants_v2_diverse_e01_train_base": 25
+          },
+          "source": "Seq0004",
+          "split": "train",
+          "trainAnnotationShare": 0.06700616456714018,
+          "trainImageShare": 0.11261261261261261,
+          "zeroAdultImages": 0
+        },
+        "Seq0007": {
+          "annotations": 1089,
+          "annotationsPerImage": {
+            "count": 30,
+            "max": 42,
+            "mean": 36.3,
+            "median": 37.0,
+            "min": 25,
+            "p10": 32.9,
+            "p25": 35.0,
+            "p75": 38.75,
+            "p90": 40.1
+          },
+          "bboxAreaRatio": {
+            "count": 1089,
+            "max": 0.0051432289609375,
+            "mean": 0.001394933562937224,
+            "median": 0.0012538680809375,
+            "min": 0.0002737693411632,
+            "p10": 0.0007634548375000001,
+            "p25": 0.00099826390625,
+            "p75": 0.0016406250468750001,
+            "p90": 0.0020887586484375
+          },
+          "bboxHeightRatio": {
+            "count": 1089,
+            "max": 0.10416667,
+            "mean": 0.04843990399449036,
+            "median": 0.04722222,
+            "min": 0.01193056,
+            "p10": 0.03055556,
+            "p25": 0.0375,
+            "p75": 0.05726389,
+            "p90": 0.06805556
+          },
+          "bboxWidthRatio": {
+            "count": 1089,
+            "max": 0.07265625,
+            "mean": 0.029113435555555556,
+            "median": 0.028125,
+            "min": 0.00859375,
+            "p10": 0.01796875,
+            "p25": 0.02265625,
+            "p75": 0.034375,
+            "p90": 0.040625
+          },
+          "images": 30,
+          "neighborCountWithinRadius": {
+            "count": 1089,
+            "max": 9,
+            "mean": 2.150596877869605,
+            "median": 2.0,
+            "min": 0,
+            "p10": 0.0,
+            "p25": 1.0,
+            "p75": 4.0,
+            "p90": 5.0
+          },
+          "roles": {
+            "ants_v2_diverse_e01_train_base": 30
+          },
+          "source": "Seq0007",
+          "split": "train",
+          "trainAnnotationShare": 0.29187885285446263,
+          "trainImageShare": 0.13513513513513514,
+          "zeroAdultImages": 0
+        },
+        "Seq0008": {
+          "annotations": 541,
+          "annotationsPerImage": {
+            "count": 30,
+            "max": 33,
+            "mean": 18.033333333333335,
+            "median": 18.0,
+            "min": 8,
+            "p10": 10.9,
+            "p25": 13.0,
+            "p75": 20.75,
+            "p90": 29.1
+          },
+          "bboxAreaRatio": {
+            "count": 541,
+            "max": 0.008452690687499998,
+            "mean": 0.0028623289527928606,
+            "median": 0.0026736111875000006,
+            "min": 0.000694444375,
+            "p10": 0.0016286893046875003,
+            "p25": 0.002031250125,
+            "p75": 0.0034570310625,
+            "p90": 0.0042426216875
+          },
+          "bboxHeightRatio": {
+            "count": 541,
+            "max": 0.13611111,
+            "mean": 0.07174471140480591,
+            "median": 0.07083333,
+            "min": 0.01944444,
+            "p10": 0.04444444,
+            "p25": 0.05555556,
+            "p75": 0.0875,
+            "p90": 0.10138889
+          },
+          "bboxWidthRatio": {
+            "count": 541,
+            "max": 0.0875,
+            "mean": 0.04122862754158965,
+            "median": 0.040625,
+            "min": 0.01484375,
+            "p10": 0.0234375,
+            "p25": 0.03046875,
+            "p75": 0.05,
+            "p90": 0.0609375
+          },
+          "images": 30,
+          "neighborCountWithinRadius": {
+            "count": 541,
+            "max": 3,
+            "mean": 0.5619223659889094,
+            "median": 0.0,
+            "min": 0,
+            "p10": 0.0,
+            "p25": 0.0,
+            "p75": 1.0,
+            "p90": 2.0
+          },
+          "roles": {
+            "ants_v2_diverse_e01_train_base": 30
+          },
+          "source": "Seq0008",
+          "split": "train",
+          "trainAnnotationShare": 0.14500134012329136,
+          "trainImageShare": 0.13513513513513514,
+          "zeroAdultImages": 0
+        },
+        "Seq0009": {
+          "annotations": 987,
+          "annotationsPerImage": {
+            "count": 20,
+            "max": 56,
+            "mean": 49.35,
+            "median": 51.0,
+            "min": 39,
+            "p10": 42.9,
+            "p25": 46.5,
+            "p75": 52.25,
+            "p90": 54.1
+          },
+          "bboxAreaRatio": {
+            "count": 987,
+            "max": 0.006158854390625,
+            "mean": 0.0023355355353191576,
+            "median": 0.0022330730625000003,
+            "min": 0.0006119792890625001,
+            "p10": 0.001358940971875,
+            "p25": 0.00175184464453125,
+            "p75": 0.00280436205859375,
+            "p90": 0.0034303383562499998
+          },
+          "bboxHeightRatio": {
+            "count": 987,
+            "max": 0.12638889,
+            "mean": 0.06365806873353597,
+            "median": 0.0625,
+            "min": 0.01666667,
+            "p10": 0.04027778,
+            "p25": 0.05,
+            "p75": 0.07638889,
+            "p90": 0.0875
+          },
+          "bboxWidthRatio": {
+            "count": 987,
+            "max": 0.071875,
+            "mean": 0.03811977583586626,
+            "median": 0.0375,
+            "min": 0.01015625,
+            "p10": 0.02265625,
+            "p25": 0.02890625,
+            "p75": 0.046875,
+            "p90": 0.05499999999999998
+          },
+          "images": 20,
+          "neighborCountWithinRadius": {
+            "count": 987,
+            "max": 7,
+            "mean": 1.580547112462006,
+            "median": 1.0,
+            "min": 0,
+            "p10": 0.0,
+            "p25": 1.0,
+            "p75": 2.0,
+            "p90": 3.0
+          },
+          "roles": {
+            "ants_v2_diverse_e01_train_base": 20
+          },
+          "source": "Seq0009",
+          "split": "train",
+          "trainAnnotationShare": 0.26454033771106944,
+          "trainImageShare": 0.09009009009009009,
+          "zeroAdultImages": 0
+        },
+        "ant2": {
+          "annotations": 138,
+          "annotationsPerImage": {
+            "count": 27,
+            "max": 7,
+            "mean": 5.111111111111111,
+            "median": 5.0,
+            "min": 4,
+            "p10": 4.6,
+            "p25": 5.0,
+            "p75": 5.0,
+            "p90": 6.0
+          },
+          "bboxAreaRatio": {
+            "count": 138,
+            "max": 0.08630580967099999,
+            "mean": 0.021773463057688576,
+            "median": 0.01142474720238095,
+            "min": 0.004451636974,
+            "p10": 0.007333010852171431,
+            "p25": 0.008860966049797626,
+            "p75": 0.01460896116935715,
+            "p90": 0.06923772441860002
+          },
+          "bboxHeightRatio": {
+            "count": 138,
+            "max": 0.23635714,
+            "mean": 0.11669482413043478,
+            "median": 0.11298571,
+            "min": 0.04415714,
+            "p10": 0.061042860000000004,
+            "p25": 0.08051429,
+            "p75": 0.13507143,
+            "p90": 0.18441429
+          },
+          "bboxWidthRatio": {
+            "count": 138,
+            "max": 0.38788333,
+            "mean": 0.16203321282608696,
+            "median": 0.12878333,
+            "min": 0.03636667,
+            "p10": 0.066211669,
+            "p25": 0.09734583499999999,
+            "p75": 0.1697,
+            "p90": 0.36666667
+          },
+          "images": 27,
+          "neighborCountWithinRadius": {
+            "count": 138,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "p10": 0.0,
+            "p25": 0.0,
+            "p75": 0.0,
+            "p90": 0.0
+          },
+          "roles": {
+            "v3_targeted_train_own_colony_relabel": 27
+          },
+          "source": "ant2",
+          "split": "train",
+          "trainAnnotationShare": 0.036987402841061376,
+          "trainImageShare": 0.12162162162162163,
+          "zeroAdultImages": 0
+        }
+      },
+      "validationSources": {
+        "Seq0005": {
+          "annotations": 300,
+          "annotationsPerImage": {
+            "count": 30,
+            "max": 10,
+            "mean": 10,
+            "median": 10.0,
+            "min": 10,
+            "p10": 10.0,
+            "p25": 10.0,
+            "p75": 10.0,
+            "p90": 10.0
+          },
+          "bboxAreaRatio": {
+            "count": 300,
+            "max": 0.0062948062395216,
+            "mean": 0.0024080949241134836,
+            "median": 0.0022469385974672,
+            "min": 0.0008238162045216001,
+            "p10": 0.00151561315325076,
+            "p25": 0.0018384370420678998,
+            "p75": 0.002694936337566075,
+            "p90": 0.0033661096370486
+          },
+          "bboxHeightRatio": {
+            "count": 300,
+            "max": 0.12698148,
+            "mean": 0.0633598456,
+            "median": 0.06216667,
+            "min": 0.02116667,
+            "p10": 0.035580553,
+            "p25": 0.04364815,
+            "p75": 0.07936111,
+            "p90": 0.09524073999999999
+          },
+          "bboxWidthRatio": {
+            "count": 300,
+            "max": 0.07663542,
+            "mean": 0.040131440733333336,
+            "median": 0.04092187,
+            "min": 0.01265104,
+            "p10": 0.02380729,
+            "p25": 0.03199479,
+            "p75": 0.04836458,
+            "p90": 0.05364739900000002
+          },
+          "images": 30,
+          "neighborCountWithinRadius": {
+            "count": 300,
+            "max": 3,
+            "mean": 0.6133333333333333,
+            "median": 0.0,
+            "min": 0,
+            "p10": 0.0,
+            "p25": 0.0,
+            "p75": 1.0,
+            "p90": 2.0
+          },
+          "roles": {
+            "ants_v2_diverse_e01_validation_base": 30
+          },
+          "source": "Seq0005",
+          "split": "val",
+          "zeroAdultImages": 0
+        },
+        "Seq0010": {
+          "annotations": 1068,
+          "annotationsPerImage": {
+            "count": 30,
+            "max": 41,
+            "mean": 35.6,
+            "median": 35.0,
+            "min": 27,
+            "p10": 31.8,
+            "p25": 34.0,
+            "p75": 38.0,
+            "p90": 39.1
+          },
+          "bboxAreaRatio": {
+            "count": 1068,
+            "max": 0.009586588789062501,
+            "mean": 0.002333383929811856,
+            "median": 0.0020160590078125004,
+            "min": 0.00039496537499999996,
+            "p10": 0.0010937499999999999,
+            "p25": 0.0014355469980468747,
+            "p75": 0.0028125000000000003,
+            "p90": 0.003949652726562501
+          },
+          "bboxHeightRatio": {
+            "count": 1068,
+            "max": 0.14444444,
+            "mean": 0.050830992537453185,
+            "median": 0.04722222,
+            "min": 0.01388889,
+            "p10": 0.027777779999999995,
+            "p25": 0.03611111,
+            "p75": 0.06111111,
+            "p90": 0.08055556
+          },
+          "bboxWidthRatio": {
+            "count": 1068,
+            "max": 0.10390625,
+            "mean": 0.04545587546816479,
+            "median": 0.04375,
+            "min": 0.01328125,
+            "p10": 0.03046875,
+            "p25": 0.03671875,
+            "p75": 0.053125,
+            "p90": 0.06328125
+          },
+          "images": 30,
+          "neighborCountWithinRadius": {
+            "count": 1068,
+            "max": 6,
+            "mean": 1.6741573033707866,
+            "median": 2.0,
+            "min": 0,
+            "p10": 0.0,
+            "p25": 1.0,
+            "p75": 3.0,
+            "p90": 3.0
+          },
+          "roles": {
+            "ants_v2_diverse_e01_validation_base": 30
+          },
+          "source": "Seq0010",
+          "split": "val",
+          "zeroAdultImages": 0
+        },
+        "own_colony_val_001": {
+          "annotations": 135,
+          "annotationsPerImage": {
+            "count": 30,
+            "max": 5,
+            "mean": 4.5,
+            "median": 4.5,
+            "min": 4,
+            "p10": 4.0,
+            "p25": 4.0,
+            "p75": 5.0,
+            "p90": 5.0
+          },
+          "bboxAreaRatio": {
+            "count": 135,
+            "max": 0.01992910890625,
+            "mean": 0.006930178320795841,
+            "median": 0.0043885036381173005,
+            "min": 0.0021701390625,
+            "p10": 0.00294174424459878,
+            "p25": 0.0036621095059317,
+            "p75": 0.005812373474557301,
+            "p90": 0.01693070031712962
+          },
+          "bboxHeightRatio": {
+            "count": 135,
+            "max": 0.18229167,
+            "mean": 0.08596786266666667,
+            "median": 0.07291667,
+            "min": 0.03776042,
+            "p10": 0.05729167,
+            "p25": 0.06640625,
+            "p75": 0.08203125,
+            "p90": 0.1484375
+          },
+          "bboxWidthRatio": {
+            "count": 135,
+            "max": 0.13425926,
+            "mean": 0.07248820333333333,
+            "median": 0.0625,
+            "min": 0.03240741,
+            "p10": 0.0462963,
+            "p25": 0.05555556,
+            "p75": 0.086805555,
+            "p90": 0.11712963200000001
+          },
+          "images": 30,
+          "neighborCountWithinRadius": {
+            "count": 135,
+            "max": 2,
+            "mean": 0.4148148148148148,
+            "median": 0.0,
+            "min": 0,
+            "p10": 0.0,
+            "p25": 0.0,
+            "p75": 1.0,
+            "p90": 1.0
+          },
+          "roles": {
+            "frozen_own_colony_validation": 30
+          },
+          "source": "own_colony_val_001",
+          "split": "val",
+          "zeroAdultImages": 0
+        }
+      }
+    },
+    "ants_v4_domain_e01": {
+      "counts": {
+        "totalAnnotations": 5389,
+        "totalImages": 383,
+        "trainAnnotations": 3886,
+        "trainImages": 293,
+        "trainIntentionalEmptyLabels": 2,
+        "trainLabels": 293,
+        "valAnnotations": 1503,
+        "valImages": 90,
+        "valLabels": 90
+      },
+      "splits": {
+        "train": {
+          "annotations": 3886,
+          "annotationsPerImage": {
+            "count": 293,
+            "max": 56,
+            "mean": 13.262798634812286,
+            "median": 10.0,
+            "min": 0,
+            "p10": 1.0,
+            "p25": 3.0,
+            "p75": 14.0,
+            "p90": 38.0
+          },
+          "bboxAreaRatio": {
+            "count": 3886,
+            "max": 0.4699874968875,
+            "mean": 0.004183100536299292,
+            "median": 0.002196180515625,
+            "min": 0.0002737693411632,
+            "p10": 0.00104166675,
+            "p25": 0.0014583332031250001,
+            "p75": 0.00328125,
+            "p90": 0.00570167859346065
+          },
+          "bboxHeightRatio": {
+            "count": 3886,
+            "max": 0.53422465,
+            "mean": 0.06760078048116315,
+            "median": 0.06111111,
+            "min": 0.01193056,
+            "p10": 0.03611111,
+            "p25": 0.0462963,
+            "p75": 0.08055556,
+            "p90": 0.10052778
+          },
+          "bboxWidthRatio": {
+            "count": 3886,
+            "max": 0.93375,
+            "mean": 0.04675015155205867,
+            "median": 0.03767969,
+            "min": 0.00859375,
+            "p10": 0.02109375,
+            "p25": 0.028125,
+            "p75": 0.05,
+            "p90": 0.06696429
+          },
+          "images": 293,
+          "neighborCountWithinRadius": {
+            "count": 3886,
+            "max": 9,
+            "mean": 1.3082861554297478,
+            "median": 1.0,
+            "min": 0,
+            "p10": 0.0,
+            "p25": 0.0,
+            "p75": 2.0,
+            "p90": 3.0
+          },
+          "zeroAdultImages": 2
+        },
+        "val": {
+          "annotations": 1503,
+          "annotationsPerImage": {
+            "count": 90,
+            "max": 41,
+            "mean": 16.7,
+            "median": 10.0,
+            "min": 4,
+            "p10": 4.0,
+            "p25": 5.0,
+            "p75": 34.0,
+            "p90": 38.0
+          },
+          "bboxAreaRatio": {
+            "count": 1503,
+            "max": 0.01992910890625,
+            "mean": 0.002761182027665034,
+            "median": 0.0022135415625,
+            "min": 0.00039496537499999996,
+            "p10": 0.00117187509375,
+            "p25": 0.00156629782421875,
+            "p75": 0.00310572681158565,
+            "p90": 0.004487413115625
+          },
+          "bboxHeightRatio": {
+            "count": 1503,
+            "max": 0.18229167,
+            "mean": 0.05648776791084498,
+            "median": 0.05138889,
+            "min": 0.01388889,
+            "p10": 0.02916667,
+            "p25": 0.03888889,
+            "p75": 0.06901042,
+            "p90": 0.08862037
+          },
+          "bboxWidthRatio": {
+            "count": 1503,
+            "max": 0.13425926,
+            "mean": 0.04682116744510978,
+            "median": 0.04390104,
+            "min": 0.01265104,
+            "p10": 0.02901562,
+            "p25": 0.03671875,
+            "p75": 0.0546875,
+            "p90": 0.06534791799999998
+          },
+          "images": 90,
+          "neighborCountWithinRadius": {
+            "count": 1503,
+            "max": 6,
+            "mean": 1.3493013972055887,
+            "median": 1.0,
+            "min": 0,
+            "p10": 0.0,
+            "p25": 0.0,
+            "p75": 2.0,
+            "p90": 3.0
+          },
+          "zeroAdultImages": 0
+        }
+      },
+      "strataBoundariesDerivedFromTrain": {
+        "densityFromTrainAnnotationCounts": {
+          "crowdedAbove": 10.0,
+          "mediumMaxInclusive": 10.0,
+          "sparseMaxInclusive": 5.0
+        },
+        "localCrowdingFromTrainNeighborCounts": {
+          "crowdedNeighborAbove": 2.0,
+          "isolatedDominantMaxMedianNeighbors": 0.0,
+          "moderateMaxMedianNeighbors": 2.0,
+          "radiusNormalized": 0.095833335
+        },
+        "scaleFromTrainBboxArea": {
+          "mediumLargeHeavyAboveMedianArea": 0.002816840125,
+          "mixedMaxMedianArea": 0.002816840125,
+          "smallHeavyMaxMedianArea": 0.0016905380624999999
+        }
+      },
+      "trainSources": {
+        "Ants10": {
+          "annotations": 17,
+          "annotationsPerImage": {
+            "count": 8,
+            "max": 3,
+            "mean": 2.125,
+            "median": 2.0,
+            "min": 1,
+            "p10": 1.0,
+            "p25": 1.75,
+            "p75": 3.0,
+            "p90": 3.0
+          },
+          "bboxAreaRatio": {
+            "count": 17,
+            "max": 0.003680193863729745,
+            "mean": 0.002417825492371607,
+            "median": 0.0023509837971064816,
+            "min": 0.0012598861909529323,
+            "p10": 0.0014756944440972222,
+            "p25": 0.0018807870351562502,
+            "p75": 0.0028935185189814814,
+            "p90": 0.0033757716034818674
+          },
+          "bboxHeightRatio": {
+            "count": 17,
+            "max": 0.05078125,
+            "mean": 0.04067095588823529,
+            "median": 0.04296875,
+            "min": 0.0208333333,
+            "p10": 0.02942708334,
+            "p25": 0.0325520833,
+            "p75": 0.0494791667,
+            "p90": 0.050000000020000004
+          },
+          "bboxWidthRatio": {
+            "count": 17,
+            "max": 0.0856481481,
+            "mean": 0.06209150326470588,
+            "median": 0.0694444444,
+            "min": 0.025462963,
+            "p10": 0.030555555559999996,
+            "p25": 0.0601851852,
+            "p75": 0.0763888889,
+            "p90": 0.0763888889
+          },
+          "images": 8,
+          "neighborCountWithinRadius": {
+            "count": 17,
+            "max": 1,
+            "mean": 0.11764705882352941,
+            "median": 0.0,
+            "min": 0,
+            "p10": 0.0,
+            "p25": 0.0,
+            "p75": 0.0,
+            "p90": 0.40000000000000036
+          },
+          "roles": {
+            "V4_OWN_DOMAIN_TRAIN_ADDITION": 8
+          },
+          "source": "Ants10",
+          "split": "train",
+          "trainAnnotationShare": 0.004374678332475553,
+          "trainImageShare": 0.027303754266211604,
+          "zeroAdultImages": 0
+        },
+        "Ants3": {
+          "annotations": 18,
+          "annotationsPerImage": {
+            "count": 7,
+            "max": 4,
+            "mean": 2.5714285714285716,
+            "median": 2.0,
+            "min": 1,
+            "p10": 1.6,
+            "p25": 2.0,
+            "p75": 3.5,
+            "p90": 4.0
+          },
+          "bboxAreaRatio": {
+            "count": 18,
+            "max": 0.013227623453042285,
+            "mean": 0.005470829757193204,
+            "median": 0.0029574327979524882,
+            "min": 0.00154123755946875,
+            "p10": 0.001962042543679464,
+            "p25": 0.0022837043188200954,
+            "p75": 0.009637423924903535,
+            "p90": 0.010629383390704933
+          },
+          "bboxHeightRatio": {
+            "count": 18,
+            "max": 0.1587314815,
+            "mean": 0.08869701646111111,
+            "median": 0.0621666667,
+            "min": 0.035712963,
+            "p10": 0.0432509259,
+            "p25": 0.0515833333,
+            "p75": 0.14186805554999998,
+            "p90": 0.14854259258000002
+          },
+          "bboxWidthRatio": {
+            "count": 18,
+            "max": 0.0833333333,
+            "mean": 0.055638599544444445,
+            "median": 0.056919270849999995,
+            "min": 0.03496875,
+            "p10": 0.0386927083,
+            "p25": 0.043342447925,
+            "p75": 0.0669635417,
+            "p90": 0.07076041669000001
+          },
+          "images": 7,
+          "neighborCountWithinRadius": {
+            "count": 18,
+            "max": 3,
+            "mean": 1.2222222222222223,
+            "median": 1.0,
+            "min": 0,
+            "p10": 0.0,
+            "p25": 1.0,
+            "p75": 2.0,
+            "p90": 2.0
+          },
+          "roles": {
+            "V4_OWN_DOMAIN_TRAIN_ADDITION": 7
+          },
+          "source": "Ants3",
+          "split": "train",
+          "trainAnnotationShare": 0.004632012352032939,
+          "trainImageShare": 0.023890784982935155,
+          "zeroAdultImages": 0
+        },
+        "Ants4": {
+          "annotations": 10,
+          "annotationsPerImage": {
+            "count": 12,
+            "max": 1,
+            "mean": 0.8333333333333334,
+            "median": 1.0,
+            "min": 0,
+            "p10": 0.10000000000000009,
+            "p25": 1.0,
+            "p75": 1.0,
+            "p90": 1.0
+          },
+          "bboxAreaRatio": {
+            "count": 10,
+            "max": 0.0025332252587796874,
+            "mean": 0.0018398889223958314,
+            "median": 0.001853643565204726,
+            "min": 0.0009764227438876737,
+            "p10": 0.00112174409545033,
+            "p25": 0.0015333827424093606,
+            "p75": 0.002309061487114236,
+            "p90": 0.002383782422170156
+          },
+          "bboxHeightRatio": {
+            "count": 10,
+            "max": 0.0925925926,
+            "mean": 0.050926851849999996,
+            "median": 0.044314814800000005,
+            "min": 0.0211666667,
+            "p10": 0.0223583333,
+            "p25": 0.0343888889,
+            "p75": 0.07143055555,
+            "p90": 0.08664259261
+          },
+          "bboxWidthRatio": {
+            "count": 10,
+            "max": 0.056546875,
+            "mean": 0.04166666666,
+            "median": 0.046875,
+            "min": 0.0163697917,
+            "p10": 0.02373385414,
+            "p25": 0.032180989575,
+            "p75": 0.05022265625,
+            "p90": 0.052529687469999996
+          },
+          "images": 12,
+          "neighborCountWithinRadius": {
+            "count": 10,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "p10": 0.0,
+            "p25": 0.0,
+            "p75": 0.0,
+            "p90": 0.0
+          },
+          "roles": {
+            "V4_OWN_DOMAIN_TRAIN_ADDITION": 12
+          },
+          "source": "Ants4",
+          "split": "train",
+          "trainAnnotationShare": 0.0025733401955738548,
+          "trainImageShare": 0.040955631399317405,
+          "zeroAdultImages": 2
+        },
+        "Ants5": {
+          "annotations": 23,
+          "annotationsPerImage": {
+            "count": 8,
+            "max": 3,
+            "mean": 2.875,
+            "median": 3.0,
+            "min": 2,
+            "p10": 2.7,
+            "p25": 3.0,
+            "p75": 3.0,
+            "p90": 3.0
+          },
+          "bboxAreaRatio": {
+            "count": 23,
+            "max": 0.0028844762718750003,
+            "mean": 0.0020027918256464287,
+            "median": 0.0018566743801311726,
+            "min": 0.001410590278125,
+            "p10": 0.0015389901623668982,
+            "p25": 0.0016743224352695797,
+            "p75": 0.0023359133870466823,
+            "p90": 0.0025227864590625
+          },
+          "bboxHeightRatio": {
+            "count": 23,
+            "max": 0.0598958333,
+            "mean": 0.03872282608695652,
+            "median": 0.0390625,
+            "min": 0.0182291667,
+            "p10": 0.02421875,
+            "p25": 0.0325520833,
+            "p75": 0.0455729167,
+            "p90": 0.05026041666
+          },
+          "bboxWidthRatio": {
+            "count": 23,
+            "max": 0.0856481481,
+            "mean": 0.05555555554782609,
+            "median": 0.0625,
+            "min": 0.0300925926,
+            "p10": 0.0347222222,
+            "p25": 0.037037037,
+            "p75": 0.0694444444,
+            "p90": 0.07546296297999999
+          },
+          "images": 8,
+          "neighborCountWithinRadius": {
+            "count": 23,
+            "max": 1,
+            "mean": 0.17391304347826086,
+            "median": 0.0,
+            "min": 0,
+            "p10": 0.0,
+            "p25": 0.0,
+            "p75": 0.0,
+            "p90": 1.0
+          },
+          "roles": {
+            "V4_OWN_DOMAIN_TRAIN_ADDITION": 8
+          },
+          "source": "Ants5",
+          "split": "train",
+          "trainAnnotationShare": 0.005918682449819866,
+          "trainImageShare": 0.027303754266211604,
+          "zeroAdultImages": 0
+        },
+        "Ants6": {
+          "annotations": 12,
+          "annotationsPerImage": {
+            "count": 12,
+            "max": 1,
+            "mean": 1,
+            "median": 1.0,
+            "min": 1,
+            "p10": 1.0,
+            "p25": 1.0,
+            "p75": 1.0,
+            "p90": 1.0
+          },
+          "bboxAreaRatio": {
+            "count": 12,
+            "max": 0.0026415993459078316,
+            "mean": 0.0019268733729896604,
+            "median": 0.002003767481949836,
+            "min": 0.0013088348741623458,
+            "p10": 0.0013333341233751814,
+            "p25": 0.0015836940349137343,
+            "p75": 0.002266784374689231,
+            "p90": 0.002393092078346983
+          },
+          "bboxHeightRatio": {
+            "count": 12,
+            "max": 0.0820092593,
+            "mean": 0.051036265441666666,
+            "median": 0.0496064815,
+            "min": 0.0251296296,
+            "p10": 0.029234259300000003,
+            "p25": 0.031418981475,
+            "p75": 0.0704328704,
+            "p90": 0.07619259257
+          },
+          "bboxWidthRatio": {
+            "count": 12,
+            "max": 0.0520833333,
+            "mean": 0.041294270833333334,
+            "median": 0.04427083335,
+            "min": 0.0238072917,
+            "p10": 0.02730729164,
+            "p25": 0.032553385399999996,
+            "p75": 0.05059375,
+            "p90": 0.05193437497
+          },
+          "images": 12,
+          "neighborCountWithinRadius": {
+            "count": 12,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "p10": 0.0,
+            "p25": 0.0,
+            "p75": 0.0,
+            "p90": 0.0
+          },
+          "roles": {
+            "V4_OWN_DOMAIN_TRAIN_ADDITION": 12
+          },
+          "source": "Ants6",
+          "split": "train",
+          "trainAnnotationShare": 0.003088008234688626,
+          "trainImageShare": 0.040955631399317405,
+          "zeroAdultImages": 0
+        },
+        "Ants7": {
+          "annotations": 37,
+          "annotationsPerImage": {
+            "count": 8,
+            "max": 5,
+            "mean": 4.625,
+            "median": 5.0,
+            "min": 4,
+            "p10": 4.0,
+            "p25": 4.0,
+            "p75": 5.0,
+            "p90": 5.0
+          },
+          "bboxAreaRatio": {
+            "count": 37,
+            "max": 0.01057463801735,
+            "mean": 0.003514552020146101,
+            "median": 0.0020393518516314815,
+            "min": 0.0006928362771934992,
+            "p10": 0.0010646571487687732,
+            "p25": 0.0013541499347248648,
+            "p75": 0.0023738258583001545,
+            "p90": 0.010073058386027407
+          },
+          "bboxHeightRatio": {
+            "count": 37,
+            "max": 0.1045,
+            "mean": 0.0657087087054054,
+            "median": 0.0542314815,
+            "min": 0.0291018519,
+            "p10": 0.03862592592,
+            "p25": 0.0462962963,
+            "p75": 0.0886203704,
+            "p90": 0.10079259258
+          },
+          "bboxWidthRatio": {
+            "count": 37,
+            "max": 0.1026770833,
+            "mean": 0.047699042791891896,
+            "median": 0.0416666667,
+            "min": 0.01190625,
+            "p10": 0.015624999980000002,
+            "p25": 0.025296875,
+            "p75": 0.0498489583,
+            "p90": 0.0998520833
+          },
+          "images": 8,
+          "neighborCountWithinRadius": {
+            "count": 37,
+            "max": 2,
+            "mean": 0.7567567567567568,
+            "median": 1.0,
+            "min": 0,
+            "p10": 0.0,
+            "p25": 0.0,
+            "p75": 1.0,
+            "p90": 2.0
+          },
+          "roles": {
+            "V4_OWN_DOMAIN_TRAIN_ADDITION": 8
+          },
+          "source": "Ants7",
+          "split": "train",
+          "trainAnnotationShare": 0.009521358723623263,
+          "trainImageShare": 0.027303754266211604,
+          "zeroAdultImages": 0
+        },
+        "Ants8": {
+          "annotations": 23,
+          "annotationsPerImage": {
+            "count": 8,
+            "max": 4,
+            "mean": 2.875,
+            "median": 3.0,
+            "min": 2,
+            "p10": 2.0,
+            "p25": 2.75,
+            "p75": 3.0,
+            "p90": 3.3
+          },
+          "bboxAreaRatio": {
+            "count": 23,
+            "max": 0.012046231338210938,
+            "mean": 0.005291888922635572,
+            "median": 0.0028149978759671682,
+            "min": 0.0009093364176091821,
+            "p10": 0.0016607865250981445,
+            "p25": 0.002139643761953057,
+            "p75": 0.010191060306318818,
+            "p90": 0.011451159772976218
+          },
+          "bboxHeightRatio": {
+            "count": 23,
+            "max": 0.1587314815,
+            "mean": 0.0897749597478261,
+            "median": 0.0595277778,
+            "min": 0.037037037,
+            "p10": 0.0476203704,
+            "p25": 0.05489351855,
+            "p75": 0.14682407405,
+            "p90": 0.1558185185
+          },
+          "bboxWidthRatio": {
+            "count": 23,
+            "max": 0.075890625,
+            "mean": 0.05108016303913043,
+            "median": 0.0483645833,
+            "min": 0.01934375,
+            "p10": 0.026189583300000003,
+            "p25": 0.0405494792,
+            "p75": 0.07068489585,
+            "p90": 0.073959375
+          },
+          "images": 8,
+          "neighborCountWithinRadius": {
+            "count": 23,
+            "max": 2,
+            "mean": 1.1304347826086956,
+            "median": 1.0,
+            "min": 0,
+            "p10": 0.20000000000000018,
+            "p25": 1.0,
+            "p75": 1.5,
+            "p90": 2.0
+          },
+          "roles": {
+            "V4_OWN_DOMAIN_TRAIN_ADDITION": 8
+          },
+          "source": "Ants8",
+          "split": "train",
+          "trainAnnotationShare": 0.005918682449819866,
+          "trainImageShare": 0.027303754266211604,
+          "zeroAdultImages": 0
+        },
+        "Ants9": {
+          "annotations": 15,
+          "annotationsPerImage": {
+            "count": 8,
+            "max": 3,
+            "mean": 1.875,
+            "median": 1.5,
+            "min": 1,
+            "p10": 1.0,
+            "p25": 1.0,
+            "p75": 3.0,
+            "p90": 3.0
+          },
+          "bboxAreaRatio": {
+            "count": 15,
+            "max": 0.0030743634216435184,
+            "mean": 0.0019145447527160492,
+            "median": 0.0018325617306327161,
+            "min": 0.0013714072158468363,
+            "p10": 0.0013967255017843364,
+            "p25": 0.0014467592578920716,
+            "p75": 0.0021234206247130595,
+            "p90": 0.0026988088333150073
+          },
+          "bboxHeightRatio": {
+            "count": 15,
+            "max": 0.05078125,
+            "mean": 0.038368055553333336,
+            "median": 0.0390625,
+            "min": 0.01953125,
+            "p10": 0.024479166660000003,
+            "p25": 0.03580729165,
+            "p75": 0.044921875,
+            "p90": 0.04713541666
+          },
+          "bboxWidthRatio": {
+            "count": 15,
+            "max": 0.0856481481,
+            "mean": 0.05277777777333333,
+            "median": 0.0509259259,
+            "min": 0.0300925926,
+            "p10": 0.031018518519999996,
+            "p25": 0.038194444450000004,
+            "p75": 0.0694444444,
+            "p90": 0.07314814818
+          },
+          "images": 8,
+          "neighborCountWithinRadius": {
+            "count": 15,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "p10": 0.0,
+            "p25": 0.0,
+            "p75": 0.0,
+            "p90": 0.0
+          },
+          "roles": {
+            "V4_OWN_DOMAIN_TRAIN_ADDITION": 8
+          },
+          "source": "Ants9",
+          "split": "train",
+          "trainAnnotationShare": 0.0038600102933607824,
+          "trainImageShare": 0.027303754266211604,
+          "zeroAdultImages": 0
+        },
+        "AntsNet": {
+          "annotations": 229,
+          "annotationsPerImage": {
+            "count": 40,
+            "max": 22,
+            "mean": 5.725,
+            "median": 2.5,
+            "min": 1,
+            "p10": 1.0,
+            "p25": 1.75,
+            "p75": 9.25,
+            "p90": 13.100000000000001
+          },
+          "bboxAreaRatio": {
+            "count": 229,
+            "max": 0.4699874968875,
+            "mean": 0.02089311454853326,
+            "median": 0.0077520835875,
+            "min": 0.0003428917793229,
+            "p10": 0.0008329445699896799,
+            "p25": 0.002296443259939,
+            "p75": 0.016571180843750002,
+            "p90": 0.04152552728348504
+          },
+          "bboxHeightRatio": {
+            "count": 229,
+            "max": 0.53422465,
+            "mean": 0.11493541104803494,
+            "median": 0.08928571,
+            "min": 0.01566667,
+            "p10": 0.03264815,
+            "p25": 0.05125661,
+            "p75": 0.14583333,
+            "p90": 0.22136892600000005
+          },
+          "bboxWidthRatio": {
+            "count": 229,
+            "max": 0.93375,
+            "mean": 0.11287365868995633,
+            "median": 0.08625,
+            "min": 0.00954687,
+            "p10": 0.022390608,
+            "p25": 0.04298942,
+            "p75": 0.13029762,
+            "p90": 0.2296250000000002
+          },
+          "images": 40,
+          "neighborCountWithinRadius": {
+            "count": 229,
+            "max": 4,
+            "mean": 0.5502183406113537,
+            "median": 0.0,
+            "min": 0,
+            "p10": 0.0,
+            "p25": 0.0,
+            "p75": 1.0,
+            "p90": 2.0
+          },
+          "roles": {
+            "v3_targeted_train_public_relabel": 40
+          },
+          "source": "AntsNet",
+          "split": "train",
+          "trainAnnotationShare": 0.058929490478641273,
+          "trainImageShare": 0.13651877133105803,
+          "zeroAdultImages": 0
+        },
+        "Seq0002": {
+          "annotations": 247,
+          "annotationsPerImage": {
+            "count": 25,
+            "max": 10,
+            "mean": 9.88,
+            "median": 10.0,
+            "min": 9,
+            "p10": 9.4,
+            "p25": 10.0,
+            "p75": 10.0,
+            "p90": 10.0
+          },
+          "bboxAreaRatio": {
+            "count": 247,
+            "max": 0.0114969128734568,
+            "mean": 0.0029937808064565054,
+            "median": 0.0025391419485706,
+            "min": 0.001141642490625,
+            "p10": 0.0017175324683703797,
+            "p25": 0.0020925528012066003,
+            "p75": 0.0033181880481114997,
+            "p90": 0.0042775610645887415
+          },
+          "bboxHeightRatio": {
+            "count": 247,
+            "max": 0.13796296,
+            "mean": 0.0716472485020243,
+            "median": 0.06944444,
+            "min": 0.0264537,
+            "p10": 0.03968519,
+            "p25": 0.05290741,
+            "p75": 0.08862037,
+            "p90": 0.10052778
+          },
+          "bboxWidthRatio": {
+            "count": 247,
+            "max": 0.08802083,
+            "mean": 0.04252640024291498,
+            "median": 0.04375,
+            "min": 0.01265104,
+            "p10": 0.02380729,
+            "p25": 0.03422396,
+            "p75": 0.04984896,
+            "p90": 0.05729167
+          },
+          "images": 25,
+          "neighborCountWithinRadius": {
+            "count": 247,
+            "max": 4,
+            "mean": 0.7854251012145749,
+            "median": 1.0,
+            "min": 0,
+            "p10": 0.0,
+            "p25": 0.0,
+            "p75": 1.0,
+            "p90": 2.0
+          },
+          "roles": {
+            "ants_v2_diverse_e01_train_base": 25
+          },
+          "source": "Seq0002",
+          "split": "train",
+          "trainAnnotationShare": 0.06356150283067422,
+          "trainImageShare": 0.08532423208191127,
+          "zeroAdultImages": 0
+        },
+        "Seq0003": {
+          "annotations": 250,
+          "annotationsPerImage": {
+            "count": 25,
+            "max": 10,
+            "mean": 10,
+            "median": 10.0,
+            "min": 10,
+            "p10": 10.0,
+            "p25": 10.0,
+            "p75": 10.0,
+            "p90": 10.0
+          },
+          "bboxAreaRatio": {
+            "count": 250,
+            "max": 0.0099305557517361,
+            "mean": 0.0038565853408478084,
+            "median": 0.0034719809769483,
+            "min": 0.0010362336764352,
+            "p10": 0.00212664249976795,
+            "p25": 0.002642626246624225,
+            "p75": 0.004879075300829474,
+            "p90": 0.006206886549884249
+          },
+          "bboxHeightRatio": {
+            "count": 250,
+            "max": 0.14907407,
+            "mean": 0.07918785176,
+            "median": 0.07685185,
+            "min": 0.0287037,
+            "p10": 0.056296295,
+            "p25": 0.06481481,
+            "p75": 0.09351852,
+            "p90": 0.10555556
+          },
+          "bboxWidthRatio": {
+            "count": 250,
+            "max": 0.08125,
+            "mean": 0.04790297916,
+            "median": 0.045572915,
+            "min": 0.01859896,
+            "p10": 0.03385417,
+            "p25": 0.03947005,
+            "p75": 0.0561197925,
+            "p90": 0.065677083
+          },
+          "images": 25,
+          "neighborCountWithinRadius": {
+            "count": 250,
+            "max": 4,
+            "mean": 1.136,
+            "median": 1.0,
+            "min": 0,
+            "p10": 0.0,
+            "p25": 0.0,
+            "p75": 2.0,
+            "p90": 3.0
+          },
+          "roles": {
+            "ants_v2_diverse_e01_train_base": 25
+          },
+          "source": "Seq0003",
+          "split": "train",
+          "trainAnnotationShare": 0.06433350488934637,
+          "trainImageShare": 0.08532423208191127,
+          "zeroAdultImages": 0
+        },
+        "Seq0004": {
+          "annotations": 250,
+          "annotationsPerImage": {
+            "count": 25,
+            "max": 10,
+            "mean": 10,
+            "median": 10.0,
+            "min": 10,
+            "p10": 10.0,
+            "p25": 10.0,
+            "p75": 10.0,
+            "p90": 10.0
+          },
+          "bboxAreaRatio": {
+            "count": 250,
+            "max": 0.0093827164691358,
+            "mean": 0.003528990309085409,
+            "median": 0.00320143715576775,
+            "min": 0.0007972173258371999,
+            "p10": 0.00158017492931733,
+            "p25": 0.00221408429778645,
+            "p75": 0.0046518135779321,
+            "p90": 0.005774932349922841
+          },
+          "bboxHeightRatio": {
+            "count": 250,
+            "max": 0.15,
+            "mean": 0.07604559292,
+            "median": 0.07592593,
+            "min": 0.01984259,
+            "p10": 0.051824998,
+            "p25": 0.06481481,
+            "p75": 0.08703704,
+            "p90": 0.1
+          },
+          "bboxWidthRatio": {
+            "count": 250,
+            "max": 0.07447917,
+            "mean": 0.04548333384,
+            "median": 0.0453125,
+            "min": 0.01116146,
+            "p10": 0.029151564999999997,
+            "p25": 0.037611979999999996,
+            "p75": 0.0550781225,
+            "p90": 0.062552083
+          },
+          "images": 25,
+          "neighborCountWithinRadius": {
+            "count": 250,
+            "max": 3,
+            "mean": 0.768,
+            "median": 1.0,
+            "min": 0,
+            "p10": 0.0,
+            "p25": 0.0,
+            "p75": 1.0,
+            "p90": 2.0
+          },
+          "roles": {
+            "ants_v2_diverse_e01_train_base": 25
+          },
+          "source": "Seq0004",
+          "split": "train",
+          "trainAnnotationShare": 0.06433350488934637,
+          "trainImageShare": 0.08532423208191127,
+          "zeroAdultImages": 0
+        },
+        "Seq0007": {
+          "annotations": 1089,
+          "annotationsPerImage": {
+            "count": 30,
+            "max": 42,
+            "mean": 36.3,
+            "median": 37.0,
+            "min": 25,
+            "p10": 32.9,
+            "p25": 35.0,
+            "p75": 38.75,
+            "p90": 40.1
+          },
+          "bboxAreaRatio": {
+            "count": 1089,
+            "max": 0.0051432289609375,
+            "mean": 0.001394933562937224,
+            "median": 0.0012538680809375,
+            "min": 0.0002737693411632,
+            "p10": 0.0007634548375000001,
+            "p25": 0.00099826390625,
+            "p75": 0.0016406250468750001,
+            "p90": 0.0020887586484375
+          },
+          "bboxHeightRatio": {
+            "count": 1089,
+            "max": 0.10416667,
+            "mean": 0.04843990399449036,
+            "median": 0.04722222,
+            "min": 0.01193056,
+            "p10": 0.03055556,
+            "p25": 0.0375,
+            "p75": 0.05726389,
+            "p90": 0.06805556
+          },
+          "bboxWidthRatio": {
+            "count": 1089,
+            "max": 0.07265625,
+            "mean": 0.029113435555555556,
+            "median": 0.028125,
+            "min": 0.00859375,
+            "p10": 0.01796875,
+            "p25": 0.02265625,
+            "p75": 0.034375,
+            "p90": 0.040625
+          },
+          "images": 30,
+          "neighborCountWithinRadius": {
+            "count": 1089,
+            "max": 9,
+            "mean": 2.150596877869605,
+            "median": 2.0,
+            "min": 0,
+            "p10": 0.0,
+            "p25": 1.0,
+            "p75": 4.0,
+            "p90": 5.0
+          },
+          "roles": {
+            "ants_v2_diverse_e01_train_base": 30
+          },
+          "source": "Seq0007",
+          "split": "train",
+          "trainAnnotationShare": 0.2802367472979928,
+          "trainImageShare": 0.10238907849829351,
+          "zeroAdultImages": 0
+        },
+        "Seq0008": {
+          "annotations": 541,
+          "annotationsPerImage": {
+            "count": 30,
+            "max": 33,
+            "mean": 18.033333333333335,
+            "median": 18.0,
+            "min": 8,
+            "p10": 10.9,
+            "p25": 13.0,
+            "p75": 20.75,
+            "p90": 29.1
+          },
+          "bboxAreaRatio": {
+            "count": 541,
+            "max": 0.008452690687499998,
+            "mean": 0.0028623289527928606,
+            "median": 0.0026736111875000006,
+            "min": 0.000694444375,
+            "p10": 0.0016286893046875003,
+            "p25": 0.002031250125,
+            "p75": 0.0034570310625,
+            "p90": 0.0042426216875
+          },
+          "bboxHeightRatio": {
+            "count": 541,
+            "max": 0.13611111,
+            "mean": 0.07174471140480591,
+            "median": 0.07083333,
+            "min": 0.01944444,
+            "p10": 0.04444444,
+            "p25": 0.05555556,
+            "p75": 0.0875,
+            "p90": 0.10138889
+          },
+          "bboxWidthRatio": {
+            "count": 541,
+            "max": 0.0875,
+            "mean": 0.04122862754158965,
+            "median": 0.040625,
+            "min": 0.01484375,
+            "p10": 0.0234375,
+            "p25": 0.03046875,
+            "p75": 0.05,
+            "p90": 0.0609375
+          },
+          "images": 30,
+          "neighborCountWithinRadius": {
+            "count": 541,
+            "max": 3,
+            "mean": 0.5619223659889094,
+            "median": 0.0,
+            "min": 0,
+            "p10": 0.0,
+            "p25": 0.0,
+            "p75": 1.0,
+            "p90": 2.0
+          },
+          "roles": {
+            "ants_v2_diverse_e01_train_base": 30
+          },
+          "source": "Seq0008",
+          "split": "train",
+          "trainAnnotationShare": 0.13921770458054555,
+          "trainImageShare": 0.10238907849829351,
+          "zeroAdultImages": 0
+        },
+        "Seq0009": {
+          "annotations": 987,
+          "annotationsPerImage": {
+            "count": 20,
+            "max": 56,
+            "mean": 49.35,
+            "median": 51.0,
+            "min": 39,
+            "p10": 42.9,
+            "p25": 46.5,
+            "p75": 52.25,
+            "p90": 54.1
+          },
+          "bboxAreaRatio": {
+            "count": 987,
+            "max": 0.006158854390625,
+            "mean": 0.0023355355353191576,
+            "median": 0.0022330730625000003,
+            "min": 0.0006119792890625001,
+            "p10": 0.001358940971875,
+            "p25": 0.00175184464453125,
+            "p75": 0.00280436205859375,
+            "p90": 0.0034303383562499998
+          },
+          "bboxHeightRatio": {
+            "count": 987,
+            "max": 0.12638889,
+            "mean": 0.06365806873353597,
+            "median": 0.0625,
+            "min": 0.01666667,
+            "p10": 0.04027778,
+            "p25": 0.05,
+            "p75": 0.07638889,
+            "p90": 0.0875
+          },
+          "bboxWidthRatio": {
+            "count": 987,
+            "max": 0.071875,
+            "mean": 0.03811977583586626,
+            "median": 0.0375,
+            "min": 0.01015625,
+            "p10": 0.02265625,
+            "p25": 0.02890625,
+            "p75": 0.046875,
+            "p90": 0.05499999999999998
+          },
+          "images": 20,
+          "neighborCountWithinRadius": {
+            "count": 987,
+            "max": 7,
+            "mean": 1.580547112462006,
+            "median": 1.0,
+            "min": 0,
+            "p10": 0.0,
+            "p25": 1.0,
+            "p75": 2.0,
+            "p90": 3.0
+          },
+          "roles": {
+            "ants_v2_diverse_e01_train_base": 20
+          },
+          "source": "Seq0009",
+          "split": "train",
+          "trainAnnotationShare": 0.25398867730313945,
+          "trainImageShare": 0.06825938566552901,
+          "zeroAdultImages": 0
+        },
+        "ant2": {
+          "annotations": 138,
+          "annotationsPerImage": {
+            "count": 27,
+            "max": 7,
+            "mean": 5.111111111111111,
+            "median": 5.0,
+            "min": 4,
+            "p10": 4.6,
+            "p25": 5.0,
+            "p75": 5.0,
+            "p90": 6.0
+          },
+          "bboxAreaRatio": {
+            "count": 138,
+            "max": 0.08630580967099999,
+            "mean": 0.021773463057688576,
+            "median": 0.01142474720238095,
+            "min": 0.004451636974,
+            "p10": 0.007333010852171431,
+            "p25": 0.008860966049797626,
+            "p75": 0.01460896116935715,
+            "p90": 0.06923772441860002
+          },
+          "bboxHeightRatio": {
+            "count": 138,
+            "max": 0.23635714,
+            "mean": 0.11669482413043478,
+            "median": 0.11298571,
+            "min": 0.04415714,
+            "p10": 0.061042860000000004,
+            "p25": 0.08051429,
+            "p75": 0.13507143,
+            "p90": 0.18441429
+          },
+          "bboxWidthRatio": {
+            "count": 138,
+            "max": 0.38788333,
+            "mean": 0.16203321282608696,
+            "median": 0.12878333,
+            "min": 0.03636667,
+            "p10": 0.066211669,
+            "p25": 0.09734583499999999,
+            "p75": 0.1697,
+            "p90": 0.36666667
+          },
+          "images": 27,
+          "neighborCountWithinRadius": {
+            "count": 138,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "p10": 0.0,
+            "p25": 0.0,
+            "p75": 0.0,
+            "p90": 0.0
+          },
+          "roles": {
+            "v3_targeted_train_own_colony_relabel": 27
+          },
+          "source": "ant2",
+          "split": "train",
+          "trainAnnotationShare": 0.035512094698919194,
+          "trainImageShare": 0.09215017064846416,
+          "zeroAdultImages": 0
+        }
+      },
+      "validationSources": {
+        "Seq0005": {
+          "annotations": 300,
+          "annotationsPerImage": {
+            "count": 30,
+            "max": 10,
+            "mean": 10,
+            "median": 10.0,
+            "min": 10,
+            "p10": 10.0,
+            "p25": 10.0,
+            "p75": 10.0,
+            "p90": 10.0
+          },
+          "bboxAreaRatio": {
+            "count": 300,
+            "max": 0.0062948062395216,
+            "mean": 0.0024080949241134836,
+            "median": 0.0022469385974672,
+            "min": 0.0008238162045216001,
+            "p10": 0.00151561315325076,
+            "p25": 0.0018384370420678998,
+            "p75": 0.002694936337566075,
+            "p90": 0.0033661096370486
+          },
+          "bboxHeightRatio": {
+            "count": 300,
+            "max": 0.12698148,
+            "mean": 0.0633598456,
+            "median": 0.06216667,
+            "min": 0.02116667,
+            "p10": 0.035580553,
+            "p25": 0.04364815,
+            "p75": 0.07936111,
+            "p90": 0.09524073999999999
+          },
+          "bboxWidthRatio": {
+            "count": 300,
+            "max": 0.07663542,
+            "mean": 0.040131440733333336,
+            "median": 0.04092187,
+            "min": 0.01265104,
+            "p10": 0.02380729,
+            "p25": 0.03199479,
+            "p75": 0.04836458,
+            "p90": 0.05364739900000002
+          },
+          "images": 30,
+          "neighborCountWithinRadius": {
+            "count": 300,
+            "max": 3,
+            "mean": 0.6133333333333333,
+            "median": 0.0,
+            "min": 0,
+            "p10": 0.0,
+            "p25": 0.0,
+            "p75": 1.0,
+            "p90": 2.0
+          },
+          "roles": {
+            "ants_v2_diverse_e01_validation_base": 30
+          },
+          "source": "Seq0005",
+          "split": "val",
+          "zeroAdultImages": 0
+        },
+        "Seq0010": {
+          "annotations": 1068,
+          "annotationsPerImage": {
+            "count": 30,
+            "max": 41,
+            "mean": 35.6,
+            "median": 35.0,
+            "min": 27,
+            "p10": 31.8,
+            "p25": 34.0,
+            "p75": 38.0,
+            "p90": 39.1
+          },
+          "bboxAreaRatio": {
+            "count": 1068,
+            "max": 0.009586588789062501,
+            "mean": 0.002333383929811856,
+            "median": 0.0020160590078125004,
+            "min": 0.00039496537499999996,
+            "p10": 0.0010937499999999999,
+            "p25": 0.0014355469980468747,
+            "p75": 0.0028125000000000003,
+            "p90": 0.003949652726562501
+          },
+          "bboxHeightRatio": {
+            "count": 1068,
+            "max": 0.14444444,
+            "mean": 0.050830992537453185,
+            "median": 0.04722222,
+            "min": 0.01388889,
+            "p10": 0.027777779999999995,
+            "p25": 0.03611111,
+            "p75": 0.06111111,
+            "p90": 0.08055556
+          },
+          "bboxWidthRatio": {
+            "count": 1068,
+            "max": 0.10390625,
+            "mean": 0.04545587546816479,
+            "median": 0.04375,
+            "min": 0.01328125,
+            "p10": 0.03046875,
+            "p25": 0.03671875,
+            "p75": 0.053125,
+            "p90": 0.06328125
+          },
+          "images": 30,
+          "neighborCountWithinRadius": {
+            "count": 1068,
+            "max": 6,
+            "mean": 1.6741573033707866,
+            "median": 2.0,
+            "min": 0,
+            "p10": 0.0,
+            "p25": 1.0,
+            "p75": 3.0,
+            "p90": 3.0
+          },
+          "roles": {
+            "ants_v2_diverse_e01_validation_base": 30
+          },
+          "source": "Seq0010",
+          "split": "val",
+          "zeroAdultImages": 0
+        },
+        "own_colony_val_001": {
+          "annotations": 135,
+          "annotationsPerImage": {
+            "count": 30,
+            "max": 5,
+            "mean": 4.5,
+            "median": 4.5,
+            "min": 4,
+            "p10": 4.0,
+            "p25": 4.0,
+            "p75": 5.0,
+            "p90": 5.0
+          },
+          "bboxAreaRatio": {
+            "count": 135,
+            "max": 0.01992910890625,
+            "mean": 0.006930178320795841,
+            "median": 0.0043885036381173005,
+            "min": 0.0021701390625,
+            "p10": 0.00294174424459878,
+            "p25": 0.0036621095059317,
+            "p75": 0.005812373474557301,
+            "p90": 0.01693070031712962
+          },
+          "bboxHeightRatio": {
+            "count": 135,
+            "max": 0.18229167,
+            "mean": 0.08596786266666667,
+            "median": 0.07291667,
+            "min": 0.03776042,
+            "p10": 0.05729167,
+            "p25": 0.06640625,
+            "p75": 0.08203125,
+            "p90": 0.1484375
+          },
+          "bboxWidthRatio": {
+            "count": 135,
+            "max": 0.13425926,
+            "mean": 0.07248820333333333,
+            "median": 0.0625,
+            "min": 0.03240741,
+            "p10": 0.0462963,
+            "p25": 0.05555556,
+            "p75": 0.086805555,
+            "p90": 0.11712963200000001
+          },
+          "images": 30,
+          "neighborCountWithinRadius": {
+            "count": 135,
+            "max": 2,
+            "mean": 0.4148148148148148,
+            "median": 0.0,
+            "min": 0,
+            "p10": 0.0,
+            "p25": 0.0,
+            "p75": 1.0,
+            "p90": 1.0
+          },
+          "roles": {
+            "frozen_own_colony_validation": 30
+          },
+          "source": "own_colony_val_001",
+          "split": "val",
+          "zeroAdultImages": 0
+        }
+      }
+    }
+  },
+  "experimentCandidate": "ants_v5_crowdedscale_e01",
+  "inputs": {
+    "ants_v3_mixedscale_e01": "datasets/prepared/ants_v3_mixedscale_e01/dataset_manifest.json",
+    "ants_v4_domain_e01": "datasets/prepared/ants_v4_domain_e01/dataset_manifest.json",
+    "v5FinalTestAccessed": false
+  },
+  "keyFindings": [
+    "v3 train has 222 images / 3731 annotations / 16.81 ants per image mean.",
+    "v4 train has 293 images / 3886 annotations / 13.26 ants per image mean.",
+    "v4 own-domain addition contributes 71 images / 155 annotations / about 2.18 ants per image plus 2 intentional negatives.",
+    "The v4 addition improved domain exposure but materially shifted added own-domain data toward sparse images.",
+    "Historical public Seq0007 and Seq0009 remain the strongest crowded/small-ant train sources and should be preserved, not replaced."
+  ],
+  "schemaVersion": "1.0"
+}

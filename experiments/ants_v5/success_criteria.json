@@ -1,0 +1,55 @@
+{
+  "canonicalInference": {
+    "conf": 0.25,
+    "end2end": false,
+    "imgsz": 640,
+    "iou": 0.7
+  },
+  "checkpointSelection": {
+    "forbiddenForSelection": [
+      "Seq0001",
+      "Seq0006",
+      "own_colony_val_002",
+      "ant4",
+      "v5_final_test"
+    ],
+    "primaryMetric": "macro_source_mAP50_95",
+    "sourceWeighting": "equal_source_weight",
+    "sources": [
+      "Seq0005",
+      "Seq0010",
+      "own_colony_val_001"
+    ],
+    "tieBreakers": [
+      "overall_validation_mAP50_95",
+      "macro_source_mAP50",
+      "overall_validation_recall",
+      "earlier_epoch_if_effectively_tied"
+    ]
+  },
+  "createdAtUtc": "2026-08-21T06:16:35.586571+00:00",
+  "experimentCandidate": "ants_v5_crowdedscale_e01",
+  "finalTestPolicy": {
+    "contentAccessedDuringDesign": false,
+    "role": "FROZEN_UNOBSERVED",
+    "use": "Evaluate exactly once after selected.pt is frozen."
+  },
+  "promotionRules": {
+    "MIXED": [
+      "Some desired recovery appears, but one or more observed references or DEV sources regress materially.",
+      "Final test is not catastrophic but does not support promotion over v3."
+    ],
+    "PROMOTE": [
+      "No material macro DEV regression relative to current champion v3 under canonical inference.",
+      "Own-domain development behavior on own_colony_val_001 improves or has a scientifically acceptable explanation without harming Seq0005/Seq0010.",
+      "Post-selection observed references show recovery on ant4 crowded/small behavior toward v3 and no severe regression on Seq0001/Seq0006/own_colony_val_002.",
+      "One-time frozen v5 final test result is consistent with improved generalization and no catastrophic failure."
+    ],
+    "REJECT": [
+      "Material DEV regression before observed references are opened.",
+      "Severe regression on observed references after model freeze.",
+      "Frozen v5 final test shows catastrophic failure or clear overfitting to development/reference sources."
+    ]
+  },
+  "schemaVersion": "1.0"
+}

@@ -1,0 +1,62 @@
+{
+  "availableTrainEligibleSupply": [
+    {
+      "evidence": "30 images / 1089 annotations; high-density small public outdoor source; preserve as base.",
+      "source": "Seq0007",
+      "status": "already_in_train"
+    },
+    {
+      "evidence": "20 images / 987 annotations; highest ants/image public source; preserve as base.",
+      "source": "Seq0009",
+      "status": "already_in_train"
+    },
+    {
+      "evidence": "30 images / 541 annotations; medium/high density public outdoor source; preserve as base.",
+      "source": "Seq0008",
+      "status": "already_in_train"
+    },
+    {
+      "evidence": "75 images / 747 annotations; indoor public baseline around 10 ants/image.",
+      "source": "Seq0002-Seq0004",
+      "status": "already_in_train"
+    },
+    {
+      "evidence": "40 images / 229 annotations; medium/large and morphology diversity; not primary crowded-small supply.",
+      "source": "AntsNet",
+      "status": "already_in_train"
+    },
+    {
+      "evidence": "27 images / 138 annotations; queen/large/own-colony scale gap coverage; not primary crowded-small supply.",
+      "source": "ant2",
+      "status": "already_in_train"
+    },
+    {
+      "evidence": "71 included v4 images / 155 annotations; current selected pack sparse, but unused portions may be audited later without model inference.",
+      "source": "Ants3-Ants10",
+      "status": "train_eligible_source_videos_already_partly_used"
+    }
+  ],
+  "candidateSupplyStatus": "DESIGN_ONLY_NO_IMAGE_SELECTION",
+  "createdAtUtc": "2026-08-21T06:16:35.586571+00:00",
+  "experimentCandidate": "ants_v5_crowdedscale_e01",
+  "forbiddenSupply": [
+    "Seq0001",
+    "Seq0006",
+    "own_colony_val_001",
+    "own_colony_val_002",
+    "ant4",
+    "ant3",
+    "Ants2",
+    "Ants11",
+    "v5_final_test"
+  ],
+  "missingRecordingDescription": "A never-holdout own-colony training recording, separate from all observed references and final tests, showing real camera/tube/plastic/glare conditions with sustained clusters of many small workers, nearby/overlapping ants, partial occlusions, and several density regimes. It must be source-frozen before any frame selection and must never be used as dev/reference/final test.",
+  "needNewTrainingRecording": true,
+  "schemaVersion": "1.0",
+  "supplyInterpretation": {
+    "currentLabeledPool": "Insufficient as a new v5 addition because the only own-domain real-camera addition is sparse-dominated.",
+    "currentTrainEligibleVideoPool": "Potentially useful but unproven; requires deterministic visual/source audit before candidate selection.",
+    "recommendation": "Plan for a new training-source recording if Ants3-Ants10 unused portions cannot produce meaningful small-ant crowded-neighbor supply without redundancy."
+  },
+  "v5FinalTestAccessed": false
+}

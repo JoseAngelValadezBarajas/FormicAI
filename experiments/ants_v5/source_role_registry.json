@@ -1,0 +1,90 @@
+{
+  "createdAtUtc": "2026-08-21T06:16:35.586571+00:00",
+  "doNotTrainOn": [
+    "Seq0001",
+    "Seq0006",
+    "own_colony_val_001",
+    "own_colony_val_002",
+    "ant4",
+    "ant3",
+    "Ants2",
+    "Ants11",
+    "v5_final_test"
+  ],
+  "experimentCandidate": "ants_v5_crowdedscale_e01",
+  "observedButNotOptimizationTargets": [
+    "Seq0001",
+    "Seq0006",
+    "own_colony_val_002",
+    "ant4"
+  ],
+  "roles": {
+    "DEVELOPMENT_VALIDATION": {
+      "policy": "Allowed for checkpoint selection with predeclared equal-source macro weighting; never train.",
+      "sources": [
+        "Seq0005",
+        "Seq0010",
+        "own_colony_val_001"
+      ]
+    },
+    "EXCLUDED_OR_AMBIGUOUS": {
+      "policy": "Not train eligible for v5_e01 design. Ants11 is an alias of own_colony_val_001 and remains never-train; Ants2 is too short/auxiliary; ant3 is qualitative stress only.",
+      "sources": [
+        "ant3",
+        "Ants2",
+        "Ants11",
+        "nest_test_001 hard-negative candidates",
+        "synthetic_motion",
+        "v4 excluded Ants3_f001835_t0030p573s.jpg"
+      ]
+    },
+    "FINAL_TEST": {
+      "policy": "FROZEN_UNOBSERVED and completely forbidden until one-time final evaluation after model freeze.",
+      "sources": [
+        "v5_final_test"
+      ]
+    },
+    "OBSERVED_REFERENCE": {
+      "policy": "Observed references only. Never train, never checkpoint-select, never threshold-tune. May be rerun only after selected.pt is frozen.",
+      "sources": [
+        "Seq0001",
+        "Seq0006",
+        "own_colony_val_002",
+        "ant4"
+      ]
+    },
+    "TRAIN_ELIGIBLE_EXISTING": {
+      "ownDomainV4Sources": [
+        "Ants3",
+        "Ants4",
+        "Ants5",
+        "Ants6",
+        "Ants7",
+        "Ants8",
+        "Ants9",
+        "Ants10"
+      ],
+      "policy": "May be used as historical train base or future candidate-supply source only if manifests/source-role freezes preserve train eligibility.",
+      "publicANTS": [
+        "Seq0002",
+        "Seq0003",
+        "Seq0004",
+        "Seq0007",
+        "Seq0008",
+        "Seq0009"
+      ],
+      "targetedV3": [
+        "ant2",
+        "AntsNet"
+      ]
+    }
+  },
+  "schemaVersion": "1.0",
+  "scientificBoundary": {
+    "note": "Only the already-recorded fact that a frozen final test exists is used here.",
+    "v5FinalTestAccessed": false,
+    "v5FinalTestContentPermittedForDesign": false,
+    "v5FinalTestRole": "FINAL_TEST_FROZEN_UNOBSERVED"
+  },
+  "unresolvedRoleAmbiguity": false
+}
