@@ -9,7 +9,7 @@
     "ant3",
     "Ants2",
     "Ants11",
-    "v5_final_test"
+    "former_v5_final_test_001"
   ],
   "experimentCandidate": "ants_v5_crowdedscale_e01",
   "forbiddenForTrainingSourceAudit": {
@@ -18,11 +18,17 @@
       "decode",
       "hash",
       "image_extraction",
-      "stat_metadata_collection",
+      "semantic_inventory_stat_collection",
       "video_probe",
       "content_derived_inspection"
     ],
-    "policy": "Training-source audit/design must exclude final-test sources before any filesystem metadata inspection. Alias checks may use already-recorded registry identifiers and SHA values only.",
+    "allowedNonSemanticOperations": [
+      "Test-Path / existence checks",
+      "Git path metadata",
+      "path-role classification",
+      "policy enforcement based on path names and roles"
+    ],
+    "policy": "Training-source audit/design must exclude final-test sources before semantic content access, sealed-record search/read, hashing, probing, decoding, extraction, or content-derived inspection. Non-semantic existence/path-role checks are allowed for policy enforcement. Alias checks may use already-recorded registry identifiers and SHA values only.",
     "sources": [
       {
         "filename": "videonuevoants.mp4",
@@ -30,23 +36,38 @@
         "forbiddenForTrainingSourceAudit": true,
         "identifiers": [
           "v5_final_test",
+          "former_v5_final_test_001",
           "videonuevoants.mp4"
         ],
         "pathAliases": [
           "samples/v2/videonuevoants.mp4",
           "datasets/external_test/v5_final_test"
         ],
-        "role": "FINAL_TEST",
-        "sourceId": "v5_final_test",
-        "trainEligible": false
+        "autopsyInputEligibilityCondition": "only after v5 selected.pt is frozen",
+        "autopsyInputEligible": false,
+        "checkpointSelectionEligible": false,
+        "developmentValidationEligible": false,
+        "formerSourceId": "v5_final_test",
+        "reason": "DEVELOPMENT_GT_METADATA_EXPOSURE",
+        "role": "OBSERVED_REFERENCE",
+        "sourceId": "former_v5_final_test_001",
+        "strictFinalTest": false,
+        "trainEligible": false,
+        "tuningEligible": false
       }
+    ],
+    "sealedDetailedMetadataPaths": [
+      "experiments/ants_v5/final_test_ground_truth_manifest.json",
+      "experiments/ants_v5/final_test_source_frame_manifest.json",
+      "datasets/external_test/v5_final_test/metadata.json"
     ]
   },
   "observedButNotOptimizationTargets": [
     "Seq0001",
     "Seq0006",
     "own_colony_val_002",
-    "ant4"
+    "ant4",
+    "former_v5_final_test_001"
   ],
   "roles": {
     "DEVELOPMENT_VALIDATION": {
@@ -69,18 +90,28 @@
       ]
     },
     "FINAL_TEST": {
-      "policy": "FROZEN_UNOBSERVED and completely forbidden until one-time final evaluation after model freeze.",
-      "sources": [
-        "v5_final_test"
-      ]
+      "policy": "No active strict V5 final test is registered after DEVELOPMENT_GT_METADATA_EXPOSURE. A replacement strict final test is required before any V5 final evaluation.",
+      "sources": []
     },
     "OBSERVED_REFERENCE": {
-      "policy": "Observed references only. Never train, never checkpoint-select, never threshold-tune. May be rerun only after selected.pt is frozen.",
+      "policy": "Observed references only. Never train, never checkpoint-select, never threshold-tune. May be rerun only after selected.pt is frozen. former_v5_final_test_001 remains sealed from V5 development until v5 selected.pt is frozen.",
       "sources": [
         "Seq0001",
         "Seq0006",
         "own_colony_val_002",
-        "ant4"
+        "ant4",
+        {
+          "autopsyInputEligibilityCondition": "only after v5 selected.pt is frozen",
+          "autopsyInputEligible": false,
+          "checkpointSelectionEligible": false,
+          "developmentValidationEligible": false,
+          "formerSourceId": "v5_final_test",
+          "reason": "DEVELOPMENT_GT_METADATA_EXPOSURE",
+          "sourceId": "former_v5_final_test_001",
+          "strictFinalTest": false,
+          "trainEligible": false,
+          "tuningEligible": false
+        }
       ]
     },
     "TRAINING_SOURCE": {
@@ -128,10 +159,15 @@
   },
   "schemaVersion": "1.0",
   "scientificBoundary": {
-    "note": "Only the already-recorded fact that a frozen final test exists is used here.",
+    "gtDerivedMetadataExposure": true,
+    "gtUsedForTrainingTuningCheckpointSelection": false,
+    "modelObservation": false,
+    "newStrictFinalTestRequired": true,
+    "note": "Strict final-test blindness is retired for the former V5 final test after categorical GT-derived metadata exposure.",
+    "retirementReason": "DEVELOPMENT_GT_METADATA_EXPOSURE",
     "v5FinalTestAccessed": false,
     "v5FinalTestContentPermittedForDesign": false,
-    "v5FinalTestRole": "FINAL_TEST_FROZEN_UNOBSERVED"
+    "v5FinalTestRole": "RETIRED_OBSERVED_REFERENCE"
   },
   "unresolvedRoleAmbiguity": false
 }

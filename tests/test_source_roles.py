@@ -7,8 +7,15 @@ import pytest
 from formicai.dataset.source_roles import (
     ForbiddenSourceError,
     assert_training_source_audit_allowed,
+    classify_v5_development_path,
+    assert_v5_development_path_allowed,
+    filter_v5_development_paths,
     inspect_training_source_file,
+    load_source_role_registry,
 )
+
+
+V5_SOURCE_ROLE_REGISTRY = Path("experiments/ants_v5/source_role_registry.json")
 
 
 def make_registry() -> dict:
@@ -19,16 +26,29 @@ def make_registry() -> dict:
                 "datasets/external_test/v5_final_test",
                 "samples/v2/videonuevoants.mp4",
             ],
+            "sealedDetailedMetadataPaths": [
+                "experiments/ants_v5/final_test_ground_truth_manifest.json",
+                "experiments/ants_v5/final_test_source_frame_manifest.json",
+                "datasets/external_test/v5_final_test/metadata.json",
+            ],
         },
         "roles": {
             "FINAL_TEST": {
+                "sources": [],
+            },
+            "OBSERVED_REFERENCE": {
                 "sources": [
                     {
-                        "sourceId": "v5_final_test",
+                        "sourceId": "former_v5_final_test_001",
+                        "formerSourceId": "v5_final_test",
                         "filename": "videonuevoants.mp4",
                         "path": "samples/v2/videonuevoants.mp4",
                         "pathAliases": ["datasets/external_test/v5_final_test"],
                         "trainEligible": False,
+                        "developmentValidationEligible": False,
+                        "checkpointSelectionEligible": False,
+                        "tuningEligible": False,
+                        "autopsyInputEligible": False,
                         "forbiddenForDesign": True,
                     }
                 ]
@@ -73,12 +93,100 @@ def test_forbidden_final_test_video_is_rejected_before_filesystem_inspection() -
     assert calls == []
 
 
+def test_final_test_video_path_role_check_is_allowed_as_non_semantic_metadata() -> None:
+    policy = classify_v5_development_path(
+        Path("samples/v2/videonuevoants.mp4"),
+        make_registry(),
+    )
+
+    assert policy.protected is True
+    assert policy.semantic_access_allowed is False
+    assert policy.non_semantic_metadata_allowed is True
+    assert "samples/v2/videonuevoants.mp4" in policy.matched_tokens
+
+
 def test_forbidden_final_test_dataset_child_path_is_rejected() -> None:
     with pytest.raises(ForbiddenSourceError):
         assert_training_source_audit_allowed(
             Path("datasets/external_test/v5_final_test/images/frame.jpg"),
             make_registry(),
         )
+
+
+def test_final_test_image_and_label_semantic_paths_are_rejected() -> None:
+    for path in [
+        Path("datasets/external_test/v5_final_test/images/frame.jpg"),
+        Path("datasets/external_test/v5_final_test/labels/frame.txt"),
+    ]:
+        with pytest.raises(ForbiddenSourceError):
+            assert_v5_development_path_allowed(path, make_registry())
+
+
+def test_sealed_final_test_metadata_path_is_rejected_before_file_read() -> None:
+    with pytest.raises(ForbiddenSourceError):
+        assert_v5_development_path_allowed(
+            Path("experiments/ants_v5/final_test_ground_truth_manifest.json"),
+            make_registry(),
+        )
+
+
+def test_annotation_pool_records_remain_allowed_for_v5_development() -> None:
+    allowed = filter_v5_development_paths(
+        [
+            Path("experiments/ants_v5/training_source_001_annotation_pool_manifest.json"),
+            Path("experiments/ants_v5/final_test_source_frame_manifest.json"),
+        ],
+        make_registry(),
+    )
+
+    assert allowed == [
+        Path("experiments/ants_v5/training_source_001_annotation_pool_manifest.json")
+    ]
+
+
+def test_active_registry_retires_exposed_v5_final_test_role() -> None:
+    registry = load_source_role_registry(V5_SOURCE_ROLE_REGISTRY)
+
+    assert registry["roles"].get("FINAL_TEST", {}).get("sources", []) == []
+    assert registry["scientificBoundary"]["v5FinalTestRole"] == (
+        "RETIRED_OBSERVED_REFERENCE"
+    )
+    assert registry["scientificBoundary"]["newStrictFinalTestRequired"] is True
+
+
+def test_active_registry_records_former_final_test_as_observed_reference() -> None:
+    registry = load_source_role_registry(V5_SOURCE_ROLE_REGISTRY)
+    observed_sources = registry["roles"]["OBSERVED_REFERENCE"]["sources"]
+
+    former_source = next(
+        source
+        for source in observed_sources
+        if isinstance(source, dict)
+        and source.get("sourceId") == "former_v5_final_test_001"
+    )
+
+    assert former_source["formerSourceId"] == "v5_final_test"
+    assert former_source["reason"] == "DEVELOPMENT_GT_METADATA_EXPOSURE"
+    assert former_source["trainEligible"] is False
+    assert former_source["developmentValidationEligible"] is False
+    assert former_source["checkpointSelectionEligible"] is False
+    assert former_source["tuningEligible"] is False
+    assert former_source["autopsyInputEligible"] is False
+    assert former_source["autopsyInputEligibilityCondition"] == (
+        "only after v5 selected.pt is frozen"
+    )
+
+
+def test_active_registry_keeps_former_final_test_paths_semantically_blocked() -> None:
+    registry = load_source_role_registry(V5_SOURCE_ROLE_REGISTRY)
+
+    policy = classify_v5_development_path(
+        Path("datasets/external_test/v5_final_test/images/frame.jpg"),
+        registry,
+    )
+
+    assert policy.protected is True
+    assert policy.semantic_access_allowed is False
 
 
 def test_training_source_remains_inspectable_after_guard_passes() -> None:

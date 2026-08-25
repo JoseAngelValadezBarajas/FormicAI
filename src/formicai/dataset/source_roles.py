@@ -20,6 +20,15 @@ class SourceFileInspection:
     video_metadata: Mapping[str, Any] | None = None
 
 
+@dataclass(frozen=True)
+class V5DevelopmentPathPolicy:
+    path: str
+    protected: bool
+    semantic_access_allowed: bool
+    non_semantic_metadata_allowed: bool
+    matched_tokens: tuple[str, ...]
+
+
 def load_source_role_registry(registry_path: Path) -> dict[str, Any]:
     return json.loads(registry_path.read_text(encoding="utf-8"))
 
@@ -28,16 +37,63 @@ def assert_training_source_audit_allowed(
     source_path: Path | str,
     source_role_registry: Mapping[str, Any] | Path,
 ) -> None:
-    """Reject forbidden sources before any filesystem metadata is inspected."""
+    """Reject forbidden sources before semantic filesystem inspection."""
 
     registry = _coerce_registry(source_role_registry)
     matches = forbidden_training_source_audit_matches(source_path, registry)
     if matches:
         match_list = ", ".join(sorted(matches))
         raise ForbiddenSourceError(
-            "Source is forbidden for training-source audit/design before "
-            f"filesystem inspection: {source_path} matched {match_list}"
+            "Source is forbidden for semantic training-source audit/design "
+            f"inspection: {source_path} matched {match_list}"
         )
+
+
+def classify_v5_development_path(
+    path: Path | str,
+    source_role_registry: Mapping[str, Any] | Path,
+) -> V5DevelopmentPathPolicy:
+    """Classify a path without touching the filesystem.
+
+    Non-semantic path metadata checks are allowed for protected paths so guards
+    can be enforced. Semantic access remains blocked for matched protected paths.
+    """
+
+    registry = _coerce_registry(source_role_registry)
+    matches = forbidden_training_source_audit_matches(path, registry)
+    protected = bool(matches)
+    return V5DevelopmentPathPolicy(
+        path=str(path),
+        protected=protected,
+        semantic_access_allowed=not protected,
+        non_semantic_metadata_allowed=True,
+        matched_tokens=tuple(sorted(matches)),
+    )
+
+
+def assert_v5_development_path_allowed(
+    path: Path | str,
+    source_role_registry: Mapping[str, Any] | Path,
+) -> None:
+    """Reject sealed V5 final-test paths before semantic read/search operations."""
+
+    assert_training_source_audit_allowed(path, source_role_registry)
+
+
+def filter_v5_development_paths(
+    paths: list[Path],
+    source_role_registry: Mapping[str, Any] | Path,
+) -> list[Path]:
+    """Return only paths allowed for V5 development search/read workflows."""
+
+    allowed: list[Path] = []
+    for path in paths:
+        try:
+            assert_v5_development_path_allowed(path, source_role_registry)
+        except ForbiddenSourceError:
+            continue
+        allowed.append(path)
+    return allowed
 
 
 def forbidden_training_source_audit_matches(
@@ -67,7 +123,7 @@ def inspect_training_source_file(
     """Inspect an allowed training source after role guards have passed.
 
     The role guard intentionally runs before stat/hash/probe callbacks, so tests
-    can prove final-test sources are blocked before filesystem metadata access.
+    can prove final-test sources are blocked before semantic file inspection.
     """
 
     path = Path(source_path)
@@ -100,6 +156,9 @@ def _iter_forbidden_training_audit_tokens(registry: Mapping[str, Any]) -> set[st
     if isinstance(explicit_guard, Mapping):
         tokens.update(str(value) for value in explicit_guard.get("identifiers", []))
         tokens.update(str(value) for value in explicit_guard.get("paths", []))
+        tokens.update(
+            str(value) for value in explicit_guard.get("sealedDetailedMetadataPaths", [])
+        )
         for source in explicit_guard.get("sources", []):
             tokens.update(_forbidden_tokens_from_source("FINAL_TEST", source))
 
