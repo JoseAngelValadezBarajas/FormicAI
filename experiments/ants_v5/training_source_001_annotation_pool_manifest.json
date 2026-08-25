@@ -1,0 +1,1716 @@
+{
+  "candidatePoolVerification": {
+    "candidateCount": 120,
+    "extractionAlgorithmUnchanged": true,
+    "modelDerivedMetadataExists": false,
+    "status": "PASS",
+    "uniqueCandidateIndexes": 120,
+    "uniqueFilenames": 120,
+    "uniqueImageSha256": 120
+  },
+  "createdAtUtc": "2026-08-25T05:36:29.454112+00:00",
+  "derivedFrom": "TRAINING_SOURCE",
+  "experiment": "ants_v5_crowdedscale_e01",
+  "finalTestContentAccessed": false,
+  "imageContentSha256": "0aa74dca929cf992beea89d8fd19168e5cc73e013ca7561b74d7f816b24323ca",
+  "leakageCheck": {
+    "checkedLocalImages": 1480,
+    "checkedRecordedJsonShaValues": 5184,
+    "forbiddenPathsOpened": false,
+    "forbiddenTermsExcludedBeforeInspection": [
+      "v5_final_test",
+      "videonuevoants"
+    ],
+    "overlapCount": 0,
+    "overlaps": []
+  },
+  "learnedEmbeddingsUsed": false,
+  "manifestSha256": "7500a713419d631910429b6d97b6300d77cd489119ac02a04906465b59dd04f9",
+  "manualAntCountsUsed": false,
+  "modelInferenceUsed": false,
+  "notFinalTrainAddition": true,
+  "pseudoLabelingUsed": false,
+  "redundancy": {
+    "adjacentDhashDistanceSummary": {
+      "count": 119,
+      "max": 13.0,
+      "mean": 2.4873949579831933,
+      "median": 2.0,
+      "min": 0.0,
+      "p25": 1.0,
+      "p75": 3.0
+    },
+    "clusters": [
+      {
+        "candidateCount": 3,
+        "clusterId": "cluster_000",
+        "endCandidateIndex": 2,
+        "endTimestampSeconds": 1.250506009725663,
+        "startCandidateIndex": 0,
+        "startTimestampSeconds": 0.2501012019451326
+      },
+      {
+        "candidateCount": 1,
+        "clusterId": "cluster_001",
+        "endCandidateIndex": 3,
+        "endTimestampSeconds": 1.750708413615928,
+        "startCandidateIndex": 3,
+        "startTimestampSeconds": 1.750708413615928
+      },
+      {
+        "candidateCount": 1,
+        "clusterId": "cluster_002",
+        "endCandidateIndex": 4,
+        "endTimestampSeconds": 2.2675842309692023,
+        "startCandidateIndex": 4,
+        "startTimestampSeconds": 2.2675842309692023
+      },
+      {
+        "candidateCount": 1,
+        "clusterId": "cluster_003",
+        "endCandidateIndex": 5,
+        "endTimestampSeconds": 2.7677866348594673,
+        "startCandidateIndex": 5,
+        "startTimestampSeconds": 2.7677866348594673
+      },
+      {
+        "candidateCount": 12,
+        "clusterId": "cluster_004",
+        "endCandidateIndex": 17,
+        "endTimestampSeconds": 8.820235721931676,
+        "startCandidateIndex": 6,
+        "startTimestampSeconds": 3.2679890387497323
+      },
+      {
+        "candidateCount": 1,
+        "clusterId": "cluster_005",
+        "endCandidateIndex": 18,
+        "endTimestampSeconds": 9.33711153928495,
+        "startCandidateIndex": 18,
+        "startTimestampSeconds": 9.33711153928495
+      },
+      {
+        "candidateCount": 4,
+        "clusterId": "cluster_006",
+        "endCandidateIndex": 22,
+        "endTimestampSeconds": 11.35459456830902,
+        "startCandidateIndex": 19,
+        "startTimestampSeconds": 9.837313943175216
+      },
+      {
+        "candidateCount": 3,
+        "clusterId": "cluster_007",
+        "endCandidateIndex": 25,
+        "endTimestampSeconds": 12.871875193442824,
+        "startCandidateIndex": 23,
+        "startTimestampSeconds": 11.854796972199285
+      },
+      {
+        "candidateCount": 2,
+        "clusterId": "cluster_008",
+        "endCandidateIndex": 27,
+        "endTimestampSeconds": 13.872280001223354,
+        "startCandidateIndex": 26,
+        "startTimestampSeconds": 13.372077597333089
+      },
+      {
+        "candidateCount": 22,
+        "clusterId": "cluster_009",
+        "endCandidateIndex": 49,
+        "endTimestampSeconds": 24.976773367587242,
+        "startCandidateIndex": 28,
+        "startTimestampSeconds": 14.372482405113619
+      },
+      {
+        "candidateCount": 1,
+        "clusterId": "cluster_010",
+        "endCandidateIndex": 50,
+        "endTimestampSeconds": 25.476975771477505,
+        "startCandidateIndex": 50,
+        "startTimestampSeconds": 25.476975771477505
+      },
+      {
+        "candidateCount": 1,
+        "clusterId": "cluster_011",
+        "endCandidateIndex": 51,
+        "endTimestampSeconds": 25.99385158883078,
+        "startCandidateIndex": 51,
+        "startTimestampSeconds": 25.99385158883078
+      },
+      {
+        "candidateCount": 28,
+        "clusterId": "cluster_012",
+        "endCandidateIndex": 79,
+        "endTimestampSeconds": 40.116232791999266,
+        "startCandidateIndex": 52,
+        "startTimestampSeconds": 26.494053992721046
+      },
+      {
+        "candidateCount": 14,
+        "clusterId": "cluster_013",
+        "endCandidateIndex": 93,
+        "endTimestampSeconds": 47.185760100315015,
+        "startCandidateIndex": 80,
+        "startTimestampSeconds": 40.63310860935254
+      },
+      {
+        "candidateCount": 18,
+        "clusterId": "cluster_014",
+        "endCandidateIndex": 111,
+        "endTimestampSeconds": 56.272770437654835,
+        "startCandidateIndex": 94,
+        "startTimestampSeconds": 47.68596250420528
+      },
+      {
+        "candidateCount": 8,
+        "clusterId": "cluster_015",
+        "endCandidateIndex": 119,
+        "endTimestampSeconds": 60.307736495702976,
+        "startCandidateIndex": 112,
+        "startTimestampSeconds": 56.7729728415451
+      }
+    ],
+    "effectivelyDistinctVisualStates": 16,
+    "nearDuplicateAdjacentPairCount": 104,
+    "nearDuplicateAdjacentPairs": [
+      {
+        "a": "training_source_001_f000015_t0000p250s.jpg",
+        "b": "training_source_001_f000045_t0000p750s.jpg",
+        "hamming": 1
+      },
+      {
+        "a": "training_source_001_f000045_t0000p750s.jpg",
+        "b": "training_source_001_f000075_t0001p251s.jpg",
+        "hamming": 3
+      },
+      {
+        "a": "training_source_001_f000196_t0003p268s.jpg",
+        "b": "training_source_001_f000227_t0003p785s.jpg",
+        "hamming": 1
+      },
+      {
+        "a": "training_source_001_f000227_t0003p785s.jpg",
+        "b": "training_source_001_f000257_t0004p285s.jpg",
+        "hamming": 3
+      },
+      {
+        "a": "training_source_001_f000257_t0004p285s.jpg",
+        "b": "training_source_001_f000287_t0004p785s.jpg",
+        "hamming": 2
+      },
+      {
+        "a": "training_source_001_f000287_t0004p785s.jpg",
+        "b": "training_source_001_f000317_t0005p285s.jpg",
+        "hamming": 2
+      },
+      {
+        "a": "training_source_001_f000317_t0005p285s.jpg",
+        "b": "training_source_001_f000348_t0005p802s.jpg",
+        "hamming": 0
+      },
+      {
+        "a": "training_source_001_f000348_t0005p802s.jpg",
+        "b": "training_source_001_f000378_t0006p303s.jpg",
+        "hamming": 1
+      },
+      {
+        "a": "training_source_001_f000378_t0006p303s.jpg",
+        "b": "training_source_001_f000408_t0006p803s.jpg",
+        "hamming": 2
+      },
+      {
+        "a": "training_source_001_f000408_t0006p803s.jpg",
+        "b": "training_source_001_f000438_t0007p303s.jpg",
+        "hamming": 1
+      },
+      {
+        "a": "training_source_001_f000438_t0007p303s.jpg",
+        "b": "training_source_001_f000469_t0007p820s.jpg",
+        "hamming": 3
+      },
+      {
+        "a": "training_source_001_f000469_t0007p820s.jpg",
+        "b": "training_source_001_f000499_t0008p320s.jpg",
+        "hamming": 2
+      },
+      {
+        "a": "training_source_001_f000499_t0008p320s.jpg",
+        "b": "training_source_001_f000529_t0008p820s.jpg",
+        "hamming": 2
+      },
+      {
+        "a": "training_source_001_f000590_t0009p837s.jpg",
+        "b": "training_source_001_f000620_t0010p338s.jpg",
+        "hamming": 4
+      },
+      {
+        "a": "training_source_001_f000620_t0010p338s.jpg",
+        "b": "training_source_001_f000650_t0010p838s.jpg",
+        "hamming": 3
+      },
+      {
+        "a": "training_source_001_f000650_t0010p838s.jpg",
+        "b": "training_source_001_f000681_t0011p355s.jpg",
+        "hamming": 2
+      },
+      {
+        "a": "training_source_001_f000711_t0011p855s.jpg",
+        "b": "training_source_001_f000741_t0012p355s.jpg",
+        "hamming": 1
+      },
+      {
+        "a": "training_source_001_f000741_t0012p355s.jpg",
+        "b": "training_source_001_f000772_t0012p872s.jpg",
+        "hamming": 2
+      },
+      {
+        "a": "training_source_001_f000802_t0013p372s.jpg",
+        "b": "training_source_001_f000832_t0013p872s.jpg",
+        "hamming": 2
+      },
+      {
+        "a": "training_source_001_f000862_t0014p372s.jpg",
+        "b": "training_source_001_f000893_t0014p889s.jpg",
+        "hamming": 3
+      },
+      {
+        "a": "training_source_001_f000893_t0014p889s.jpg",
+        "b": "training_source_001_f000923_t0015p390s.jpg",
+        "hamming": 1
+      },
+      {
+        "a": "training_source_001_f000923_t0015p390s.jpg",
+        "b": "training_source_001_f000953_t0015p890s.jpg",
+        "hamming": 0
+      },
+      {
+        "a": "training_source_001_f000953_t0015p890s.jpg",
+        "b": "training_source_001_f000983_t0016p390s.jpg",
+        "hamming": 2
+      },
+      {
+        "a": "training_source_001_f000983_t0016p390s.jpg",
+        "b": "training_source_001_f001014_t0016p907s.jpg",
+        "hamming": 4
+      },
+      {
+        "a": "training_source_001_f001014_t0016p907s.jpg",
+        "b": "training_source_001_f001044_t0017p407s.jpg",
+        "hamming": 0
+      },
+      {
+        "a": "training_source_001_f001044_t0017p407s.jpg",
+        "b": "training_source_001_f001074_t0017p907s.jpg",
+        "hamming": 3
+      },
+      {
+        "a": "training_source_001_f001074_t0017p907s.jpg",
+        "b": "training_source_001_f001105_t0018p424s.jpg",
+        "hamming": 2
+      },
+      {
+        "a": "training_source_001_f001105_t0018p424s.jpg",
+        "b": "training_source_001_f001135_t0018p924s.jpg",
+        "hamming": 1
+      },
+      {
+        "a": "training_source_001_f001135_t0018p924s.jpg",
+        "b": "training_source_001_f001165_t0019p425s.jpg",
+        "hamming": 2
+      },
+      {
+        "a": "training_source_001_f001165_t0019p425s.jpg",
+        "b": "training_source_001_f001195_t0019p925s.jpg",
+        "hamming": 4
+      },
+      {
+        "a": "training_source_001_f001195_t0019p925s.jpg",
+        "b": "training_source_001_f001226_t0020p442s.jpg",
+        "hamming": 0
+      },
+      {
+        "a": "training_source_001_f001226_t0020p442s.jpg",
+        "b": "training_source_001_f001256_t0020p942s.jpg",
+        "hamming": 2
+      },
+      {
+        "a": "training_source_001_f001256_t0020p942s.jpg",
+        "b": "training_source_001_f001286_t0021p442s.jpg",
+        "hamming": 3
+      },
+      {
+        "a": "training_source_001_f001286_t0021p442s.jpg",
+        "b": "training_source_001_f001316_t0021p942s.jpg",
+        "hamming": 0
+      },
+      {
+        "a": "training_source_001_f001316_t0021p942s.jpg",
+        "b": "training_source_001_f001347_t0022p459s.jpg",
+        "hamming": 0
+      },
+      {
+        "a": "training_source_001_f001347_t0022p459s.jpg",
+        "b": "training_source_001_f001377_t0022p959s.jpg",
+        "hamming": 0
+      },
+      {
+        "a": "training_source_001_f001377_t0022p959s.jpg",
+        "b": "training_source_001_f001407_t0023p459s.jpg",
+        "hamming": 2
+      },
+      {
+        "a": "training_source_001_f001407_t0023p459s.jpg",
+        "b": "training_source_001_f001438_t0023p976s.jpg",
+        "hamming": 1
+      },
+      {
+        "a": "training_source_001_f001438_t0023p976s.jpg",
+        "b": "training_source_001_f001468_t0024p477s.jpg",
+        "hamming": 1
+      },
+      {
+        "a": "training_source_001_f001468_t0024p477s.jpg",
+        "b": "training_source_001_f001498_t0024p977s.jpg",
+        "hamming": 1
+      },
+      {
+        "a": "training_source_001_f001589_t0026p494s.jpg",
+        "b": "training_source_001_f001619_t0026p994s.jpg",
+        "hamming": 1
+      },
+      {
+        "a": "training_source_001_f001619_t0026p994s.jpg",
+        "b": "training_source_001_f001649_t0027p494s.jpg",
+        "hamming": 2
+      },
+      {
+        "a": "training_source_001_f001649_t0027p494s.jpg",
+        "b": "training_source_001_f001680_t0028p011s.jpg",
+        "hamming": 3
+      },
+      {
+        "a": "training_source_001_f001680_t0028p011s.jpg",
+        "b": "training_source_001_f001710_t0028p512s.jpg",
+        "hamming": 3
+      },
+      {
+        "a": "training_source_001_f001710_t0028p512s.jpg",
+        "b": "training_source_001_f001740_t0029p012s.jpg",
+        "hamming": 0
+      },
+      {
+        "a": "training_source_001_f001740_t0029p012s.jpg",
+        "b": "training_source_001_f001771_t0029p529s.jpg",
+        "hamming": 2
+      },
+      {
+        "a": "training_source_001_f001771_t0029p529s.jpg",
+        "b": "training_source_001_f001801_t0030p029s.jpg",
+        "hamming": 2
+      },
+      {
+        "a": "training_source_001_f001801_t0030p029s.jpg",
+        "b": "training_source_001_f001831_t0030p529s.jpg",
+        "hamming": 2
+      },
+      {
+        "a": "training_source_001_f001831_t0030p529s.jpg",
+        "b": "training_source_001_f001861_t0031p029s.jpg",
+        "hamming": 2
+      },
+      {
+        "a": "training_source_001_f001861_t0031p029s.jpg",
+        "b": "training_source_001_f001892_t0031p546s.jpg",
+        "hamming": 0
+      },
+      {
+        "a": "training_source_001_f001892_t0031p546s.jpg",
+        "b": "training_source_001_f001922_t0032p046s.jpg",
+        "hamming": 4
+      },
+      {
+        "a": "training_source_001_f001922_t0032p046s.jpg",
+        "b": "training_source_001_f001952_t0032p547s.jpg",
+        "hamming": 3
+      },
+      {
+        "a": "training_source_001_f001952_t0032p547s.jpg",
+        "b": "training_source_001_f001983_t0033p063s.jpg",
+        "hamming": 1
+      },
+      {
+        "a": "training_source_001_f001983_t0033p063s.jpg",
+        "b": "training_source_001_f002013_t0033p564s.jpg",
+        "hamming": 1
+      },
+      {
+        "a": "training_source_001_f002013_t0033p564s.jpg",
+        "b": "training_source_001_f002043_t0034p064s.jpg",
+        "hamming": 1
+      },
+      {
+        "a": "training_source_001_f002043_t0034p064s.jpg",
+        "b": "training_source_001_f002073_t0034p564s.jpg",
+        "hamming": 3
+      },
+      {
+        "a": "training_source_001_f002073_t0034p564s.jpg",
+        "b": "training_source_001_f002104_t0035p081s.jpg",
+        "hamming": 4
+      },
+      {
+        "a": "training_source_001_f002104_t0035p081s.jpg",
+        "b": "training_source_001_f002134_t0035p581s.jpg",
+        "hamming": 3
+      },
+      {
+        "a": "training_source_001_f002134_t0035p581s.jpg",
+        "b": "training_source_001_f002164_t0036p081s.jpg",
+        "hamming": 0
+      },
+      {
+        "a": "training_source_001_f002164_t0036p081s.jpg",
+        "b": "training_source_001_f002194_t0036p581s.jpg",
+        "hamming": 1
+      },
+      {
+        "a": "training_source_001_f002194_t0036p581s.jpg",
+        "b": "training_source_001_f002225_t0037p098s.jpg",
+        "hamming": 2
+      },
+      {
+        "a": "training_source_001_f002225_t0037p098s.jpg",
+        "b": "training_source_001_f002255_t0037p599s.jpg",
+        "hamming": 2
+      },
+      {
+        "a": "training_source_001_f002255_t0037p599s.jpg",
+        "b": "training_source_001_f002285_t0038p099s.jpg",
+        "hamming": 2
+      },
+      {
+        "a": "training_source_001_f002285_t0038p099s.jpg",
+        "b": "training_source_001_f002316_t0038p616s.jpg",
+        "hamming": 2
+      },
+      {
+        "a": "training_source_001_f002316_t0038p616s.jpg",
+        "b": "training_source_001_f002346_t0039p116s.jpg",
+        "hamming": 2
+      },
+      {
+        "a": "training_source_001_f002346_t0039p116s.jpg",
+        "b": "training_source_001_f002376_t0039p616s.jpg",
+        "hamming": 3
+      },
+      {
+        "a": "training_source_001_f002376_t0039p616s.jpg",
+        "b": "training_source_001_f002406_t0040p116s.jpg",
+        "hamming": 4
+      },
+      {
+        "a": "training_source_001_f002437_t0040p633s.jpg",
+        "b": "training_source_001_f002467_t0041p133s.jpg",
+        "hamming": 4
+      },
+      {
+        "a": "training_source_001_f002467_t0041p133s.jpg",
+        "b": "training_source_001_f002497_t0041p634s.jpg",
+        "hamming": 3
+      },
+      {
+        "a": "training_source_001_f002497_t0041p634s.jpg",
+        "b": "training_source_001_f002527_t0042p134s.jpg",
+        "hamming": 1
+      },
+      {
+        "a": "training_source_001_f002527_t0042p134s.jpg",
+        "b": "training_source_001_f002558_t0042p651s.jpg",
+        "hamming": 3
+      },
+      {
+        "a": "training_source_001_f002558_t0042p651s.jpg",
+        "b": "training_source_001_f002588_t0043p151s.jpg",
+        "hamming": 4
+      },
+      {
+        "a": "training_source_001_f002588_t0043p151s.jpg",
+        "b": "training_source_001_f002618_t0043p651s.jpg",
+        "hamming": 4
+      },
+      {
+        "a": "training_source_001_f002618_t0043p651s.jpg",
+        "b": "training_source_001_f002649_t0044p168s.jpg",
+        "hamming": 3
+      },
+      {
+        "a": "training_source_001_f002649_t0044p168s.jpg",
+        "b": "training_source_001_f002679_t0044p668s.jpg",
+        "hamming": 1
+      },
+      {
+        "a": "training_source_001_f002679_t0044p668s.jpg",
+        "b": "training_source_001_f002709_t0045p168s.jpg",
+        "hamming": 2
+      },
+      {
+        "a": "training_source_001_f002709_t0045p168s.jpg",
+        "b": "training_source_001_f002739_t0045p668s.jpg",
+        "hamming": 0
+      },
+      {
+        "a": "training_source_001_f002739_t0045p668s.jpg",
+        "b": "training_source_001_f002770_t0046p185s.jpg",
+        "hamming": 0
+      },
+      {
+        "a": "training_source_001_f002770_t0046p185s.jpg",
+        "b": "training_source_001_f002800_t0046p686s.jpg",
+        "hamming": 1
+      },
+      {
+        "a": "training_source_001_f002800_t0046p686s.jpg",
+        "b": "training_source_001_f002830_t0047p186s.jpg",
+        "hamming": 1
+      },
+      {
+        "a": "training_source_001_f002860_t0047p686s.jpg",
+        "b": "training_source_001_f002891_t0048p203s.jpg",
+        "hamming": 2
+      },
+      {
+        "a": "training_source_001_f002891_t0048p203s.jpg",
+        "b": "training_source_001_f002921_t0048p703s.jpg",
+        "hamming": 3
+      },
+      {
+        "a": "training_source_001_f002921_t0048p703s.jpg",
+        "b": "training_source_001_f002951_t0049p203s.jpg",
+        "hamming": 0
+      },
+      {
+        "a": "training_source_001_f002951_t0049p203s.jpg",
+        "b": "training_source_001_f002982_t0049p720s.jpg",
+        "hamming": 4
+      },
+      {
+        "a": "training_source_001_f002982_t0049p720s.jpg",
+        "b": "training_source_001_f003012_t0050p220s.jpg",
+        "hamming": 1
+      },
+      {
+        "a": "training_source_001_f003012_t0050p220s.jpg",
+        "b": "training_source_001_f003042_t0050p721s.jpg",
+        "hamming": 0
+      },
+      {
+        "a": "training_source_001_f003042_t0050p721s.jpg",
+        "b": "training_source_001_f003072_t0051p221s.jpg",
+        "hamming": 4
+      },
+      {
+        "a": "training_source_001_f003072_t0051p221s.jpg",
+        "b": "training_source_001_f003103_t0051p738s.jpg",
+        "hamming": 1
+      },
+      {
+        "a": "training_source_001_f003103_t0051p738s.jpg",
+        "b": "training_source_001_f003133_t0052p238s.jpg",
+        "hamming": 0
+      },
+      {
+        "a": "training_source_001_f003133_t0052p238s.jpg",
+        "b": "training_source_001_f003163_t0052p738s.jpg",
+        "hamming": 0
+      },
+      {
+        "a": "training_source_001_f003163_t0052p738s.jpg",
+        "b": "training_source_001_f003194_t0053p255s.jpg",
+        "hamming": 1
+      },
+      {
+        "a": "training_source_001_f003194_t0053p255s.jpg",
+        "b": "training_source_001_f003224_t0053p755s.jpg",
+        "hamming": 1
+      },
+      {
+        "a": "training_source_001_f003224_t0053p755s.jpg",
+        "b": "training_source_001_f003254_t0054p255s.jpg",
+        "hamming": 1
+      },
+      {
+        "a": "training_source_001_f003254_t0054p255s.jpg",
+        "b": "training_source_001_f003284_t0054p755s.jpg",
+        "hamming": 2
+      },
+      {
+        "a": "training_source_001_f003284_t0054p755s.jpg",
+        "b": "training_source_001_f003315_t0055p272s.jpg",
+        "hamming": 0
+      },
+      {
+        "a": "training_source_001_f003315_t0055p272s.jpg",
+        "b": "training_source_001_f003345_t0055p773s.jpg",
+        "hamming": 2
+      },
+      {
+        "a": "training_source_001_f003345_t0055p773s.jpg",
+        "b": "training_source_001_f003375_t0056p273s.jpg",
+        "hamming": 0
+      },
+      {
+        "a": "training_source_001_f003405_t0056p773s.jpg",
+        "b": "training_source_001_f003436_t0057p290s.jpg",
+        "hamming": 3
+      },
+      {
+        "a": "training_source_001_f003436_t0057p290s.jpg",
+        "b": "training_source_001_f003466_t0057p790s.jpg",
+        "hamming": 1
+      },
+      {
+        "a": "training_source_001_f003466_t0057p790s.jpg",
+        "b": "training_source_001_f003496_t0058p290s.jpg",
+        "hamming": 2
+      },
+      {
+        "a": "training_source_001_f003496_t0058p290s.jpg",
+        "b": "training_source_001_f003527_t0058p807s.jpg",
+        "hamming": 3
+      },
+      {
+        "a": "training_source_001_f003527_t0058p807s.jpg",
+        "b": "training_source_001_f003557_t0059p307s.jpg",
+        "hamming": 1
+      },
+      {
+        "a": "training_source_001_f003557_t0059p307s.jpg",
+        "b": "training_source_001_f003587_t0059p808s.jpg",
+        "hamming": 3
+      },
+      {
+        "a": "training_source_001_f003587_t0059p808s.jpg",
+        "b": "training_source_001_f003617_t0060p308s.jpg",
+        "hamming": 2
+      }
+    ],
+    "nearDuplicateThreshold": 4
+  },
+  "redundancyClusterSummary": {
+    "clusterCount": 16,
+    "largestClusterCandidateCount": 28,
+    "medianClusterCandidateCount": 3
+  },
+  "roboflowUploadPlan": "experiments/ants_v5/training_source_001_roboflow_upload_plan.json",
+  "role": "ANNOTATION_POOL",
+  "schemaVersion": "1.0",
+  "selectedFrameIndexes": [
+    15,
+    105,
+    136,
+    196,
+    317,
+    469,
+    560,
+    590,
+    620,
+    711,
+    802,
+    862,
+    923,
+    983,
+    1074,
+    1195,
+    1226,
+    1286,
+    1377,
+    1498,
+    1528,
+    1559,
+    1589,
+    1710,
+    1831,
+    1952,
+    2013,
+    2104,
+    2134,
+    2255,
+    2316,
+    2406,
+    2437,
+    2497,
+    2588,
+    2709,
+    2739,
+    2860,
+    2921,
+    2982,
+    3042,
+    3103,
+    3194,
+    3315,
+    3345,
+    3405,
+    3527,
+    3617
+  ],
+  "selectedImageCount": 48,
+  "selectedImages": [
+    {
+      "candidateFramePath": "artifacts/analysis/ants_v5_training_source_001/candidate_frames/training_source_001_f000015_t0000p250s.jpg",
+      "candidateIndex": 0,
+      "frameIndex": 15,
+      "height": 1080,
+      "imageFilename": "training_source_001_f000015_t0000p250s.jpg",
+      "imageSha256": "185d0dd69e084e47f65aa391888d6f49e490d62a7b8e3024e5e3b120cab6f445",
+      "manualStrataStatus": "requires_manual_annotation_for_exact_density_scale_crowding",
+      "modelInferenceUsed": false,
+      "regionId": "region_00",
+      "regionSelectionRank": 0,
+      "selectionOrder": 0,
+      "selectionStage": "strict_temporal_and_perceptual",
+      "stagedImagePath": "datasets/ants_v5_annotation_pack/training_source_001/images/training_source_001_f000015_t0000p250s.jpg",
+      "temporalBin": 0,
+      "timestampSeconds": 0.2501012019451326,
+      "width": 1920
+    },
+    {
+      "candidateFramePath": "artifacts/analysis/ants_v5_training_source_001/candidate_frames/training_source_001_f000105_t0001p751s.jpg",
+      "candidateIndex": 3,
+      "frameIndex": 105,
+      "height": 1080,
+      "imageFilename": "training_source_001_f000105_t0001p751s.jpg",
+      "imageSha256": "f86ecb25cdad82c0201fb5d0c7a085ccb88a91f2dccf6bbbf74265b41a052d85",
+      "manualStrataStatus": "requires_manual_annotation_for_exact_density_scale_crowding",
+      "modelInferenceUsed": false,
+      "regionId": "region_00",
+      "regionSelectionRank": 1,
+      "selectionOrder": 1,
+      "selectionStage": "strict_temporal_and_perceptual",
+      "stagedImagePath": "datasets/ants_v5_annotation_pack/training_source_001/images/training_source_001_f000105_t0001p751s.jpg",
+      "temporalBin": 3,
+      "timestampSeconds": 1.750708413615928,
+      "width": 1920
+    },
+    {
+      "candidateFramePath": "artifacts/analysis/ants_v5_training_source_001/candidate_frames/training_source_001_f000136_t0002p268s.jpg",
+      "candidateIndex": 4,
+      "frameIndex": 136,
+      "height": 1080,
+      "imageFilename": "training_source_001_f000136_t0002p268s.jpg",
+      "imageSha256": "9091390d9dc0d3fe85763ac280c53129c0fb490ca57a2793a4c664ef895b82b9",
+      "manualStrataStatus": "requires_manual_annotation_for_exact_density_scale_crowding",
+      "modelInferenceUsed": false,
+      "regionId": "region_00",
+      "regionSelectionRank": 3,
+      "selectionOrder": 2,
+      "selectionStage": "relaxed_temporal_perceptual",
+      "stagedImagePath": "datasets/ants_v5_annotation_pack/training_source_001/images/training_source_001_f000136_t0002p268s.jpg",
+      "temporalBin": 4,
+      "timestampSeconds": 2.2675842309692023,
+      "width": 1920
+    },
+    {
+      "candidateFramePath": "artifacts/analysis/ants_v5_training_source_001/candidate_frames/training_source_001_f000196_t0003p268s.jpg",
+      "candidateIndex": 6,
+      "frameIndex": 196,
+      "height": 1080,
+      "imageFilename": "training_source_001_f000196_t0003p268s.jpg",
+      "imageSha256": "0f13c1d749be843b65d9ff914fbf10f16ba7148a25d80249268499e0ddf0483f",
+      "manualStrataStatus": "requires_manual_annotation_for_exact_density_scale_crowding",
+      "modelInferenceUsed": false,
+      "regionId": "region_00",
+      "regionSelectionRank": 2,
+      "selectionOrder": 3,
+      "selectionStage": "strict_temporal_and_perceptual",
+      "stagedImagePath": "datasets/ants_v5_annotation_pack/training_source_001/images/training_source_001_f000196_t0003p268s.jpg",
+      "temporalBin": 6,
+      "timestampSeconds": 3.2679890387497323,
+      "width": 1920
+    },
+    {
+      "candidateFramePath": "artifacts/analysis/ants_v5_training_source_001/candidate_frames/training_source_001_f000317_t0005p285s.jpg",
+      "candidateIndex": 10,
+      "frameIndex": 317,
+      "height": 1080,
+      "imageFilename": "training_source_001_f000317_t0005p285s.jpg",
+      "imageSha256": "a1e1f89486c78cef501ed145091380d12e2bf72feef12485d3a6c9b234202cc5",
+      "manualStrataStatus": "requires_manual_annotation_for_exact_density_scale_crowding",
+      "modelInferenceUsed": false,
+      "regionId": "region_01",
+      "regionSelectionRank": 0,
+      "selectionOrder": 4,
+      "selectionStage": "strict_temporal_and_perceptual",
+      "stagedImagePath": "datasets/ants_v5_annotation_pack/training_source_001/images/training_source_001_f000317_t0005p285s.jpg",
+      "temporalBin": 10,
+      "timestampSeconds": 5.285472067773802,
+      "width": 1920
+    },
+    {
+      "candidateFramePath": "artifacts/analysis/ants_v5_training_source_001/candidate_frames/training_source_001_f000469_t0007p820s.jpg",
+      "candidateIndex": 15,
+      "frameIndex": 469,
+      "height": 1080,
+      "imageFilename": "training_source_001_f000469_t0007p820s.jpg",
+      "imageSha256": "74fbe337ae39cd160e813350d3db939318607d77e915d3cc37977d2d091af81c",
+      "manualStrataStatus": "requires_manual_annotation_for_exact_density_scale_crowding",
+      "modelInferenceUsed": false,
+      "regionId": "region_01",
+      "regionSelectionRank": 1,
+      "selectionOrder": 5,
+      "selectionStage": "strict_temporal_and_perceptual",
+      "stagedImagePath": "datasets/ants_v5_annotation_pack/training_source_001/images/training_source_001_f000469_t0007p820s.jpg",
+      "temporalBin": 15,
+      "timestampSeconds": 7.8198309141511455,
+      "width": 1920
+    },
+    {
+      "candidateFramePath": "artifacts/analysis/ants_v5_training_source_001/candidate_frames/training_source_001_f000560_t0009p337s.jpg",
+      "candidateIndex": 18,
+      "frameIndex": 560,
+      "height": 1080,
+      "imageFilename": "training_source_001_f000560_t0009p337s.jpg",
+      "imageSha256": "b76aab7e434c1d4028c4b1546e0b4557dcf22403de3499b2dc234ca5e98724d3",
+      "manualStrataStatus": "requires_manual_annotation_for_exact_density_scale_crowding",
+      "modelInferenceUsed": false,
+      "regionId": "region_01",
+      "regionSelectionRank": 2,
+      "selectionOrder": 6,
+      "selectionStage": "strict_temporal_and_perceptual",
+      "stagedImagePath": "datasets/ants_v5_annotation_pack/training_source_001/images/training_source_001_f000560_t0009p337s.jpg",
+      "temporalBin": 18,
+      "timestampSeconds": 9.33711153928495,
+      "width": 1920
+    },
+    {
+      "candidateFramePath": "artifacts/analysis/ants_v5_training_source_001/candidate_frames/training_source_001_f000590_t0009p837s.jpg",
+      "candidateIndex": 19,
+      "frameIndex": 590,
+      "height": 1080,
+      "imageFilename": "training_source_001_f000590_t0009p837s.jpg",
+      "imageSha256": "26d12ef4ff4fb1ba05b5af37ff8f14c4250dadf208513ebdc6f3d98ecd94561a",
+      "manualStrataStatus": "requires_manual_annotation_for_exact_density_scale_crowding",
+      "modelInferenceUsed": false,
+      "regionId": "region_01",
+      "regionSelectionRank": 3,
+      "selectionOrder": 7,
+      "selectionStage": "relaxed_temporal_perceptual",
+      "stagedImagePath": "datasets/ants_v5_annotation_pack/training_source_001/images/training_source_001_f000590_t0009p837s.jpg",
+      "temporalBin": 19,
+      "timestampSeconds": 9.837313943175216,
+      "width": 1920
+    },
+    {
+      "candidateFramePath": "artifacts/analysis/ants_v5_training_source_001/candidate_frames/training_source_001_f000620_t0010p338s.jpg",
+      "candidateIndex": 20,
+      "frameIndex": 620,
+      "height": 1080,
+      "imageFilename": "training_source_001_f000620_t0010p338s.jpg",
+      "imageSha256": "8165fea3499305b990a95b0cc442b7c1bc253f06accd610d4e1eac9b2a3f012f",
+      "manualStrataStatus": "requires_manual_annotation_for_exact_density_scale_crowding",
+      "modelInferenceUsed": false,
+      "regionId": "region_02",
+      "regionSelectionRank": 0,
+      "selectionOrder": 8,
+      "selectionStage": "strict_temporal_and_perceptual",
+      "stagedImagePath": "datasets/ants_v5_annotation_pack/training_source_001/images/training_source_001_f000620_t0010p338s.jpg",
+      "temporalBin": 20,
+      "timestampSeconds": 10.337516347065481,
+      "width": 1920
+    },
+    {
+      "candidateFramePath": "artifacts/analysis/ants_v5_training_source_001/candidate_frames/training_source_001_f000711_t0011p855s.jpg",
+      "candidateIndex": 23,
+      "frameIndex": 711,
+      "height": 1080,
+      "imageFilename": "training_source_001_f000711_t0011p855s.jpg",
+      "imageSha256": "508ac0c731b360882996d240878e8bfcc3d0f53366c1198fe7b6be4e7e133880",
+      "manualStrataStatus": "requires_manual_annotation_for_exact_density_scale_crowding",
+      "modelInferenceUsed": false,
+      "regionId": "region_02",
+      "regionSelectionRank": 1,
+      "selectionOrder": 9,
+      "selectionStage": "strict_temporal_and_perceptual",
+      "stagedImagePath": "datasets/ants_v5_annotation_pack/training_source_001/images/training_source_001_f000711_t0011p855s.jpg",
+      "temporalBin": 23,
+      "timestampSeconds": 11.854796972199285,
+      "width": 1920
+    },
+    {
+      "candidateFramePath": "artifacts/analysis/ants_v5_training_source_001/candidate_frames/training_source_001_f000802_t0013p372s.jpg",
+      "candidateIndex": 26,
+      "frameIndex": 802,
+      "height": 1080,
+      "imageFilename": "training_source_001_f000802_t0013p372s.jpg",
+      "imageSha256": "8d007cc830e000b0853a975ec820da2a4dbf4da1a9fca25d8a6b3b0efb61129b",
+      "manualStrataStatus": "requires_manual_annotation_for_exact_density_scale_crowding",
+      "modelInferenceUsed": false,
+      "regionId": "region_02",
+      "regionSelectionRank": 2,
+      "selectionOrder": 10,
+      "selectionStage": "strict_temporal_and_perceptual",
+      "stagedImagePath": "datasets/ants_v5_annotation_pack/training_source_001/images/training_source_001_f000802_t0013p372s.jpg",
+      "temporalBin": 26,
+      "timestampSeconds": 13.372077597333089,
+      "width": 1920
+    },
+    {
+      "candidateFramePath": "artifacts/analysis/ants_v5_training_source_001/candidate_frames/training_source_001_f000862_t0014p372s.jpg",
+      "candidateIndex": 28,
+      "frameIndex": 862,
+      "height": 1080,
+      "imageFilename": "training_source_001_f000862_t0014p372s.jpg",
+      "imageSha256": "9b448e9ace8b946c1866ac70e76a2e8fad59c50bbd56210e79971c5c6bb9dd57",
+      "manualStrataStatus": "requires_manual_annotation_for_exact_density_scale_crowding",
+      "modelInferenceUsed": false,
+      "regionId": "region_02",
+      "regionSelectionRank": 3,
+      "selectionOrder": 11,
+      "selectionStage": "strict_temporal_and_perceptual",
+      "stagedImagePath": "datasets/ants_v5_annotation_pack/training_source_001/images/training_source_001_f000862_t0014p372s.jpg",
+      "temporalBin": 28,
+      "timestampSeconds": 14.372482405113619,
+      "width": 1920
+    },
+    {
+      "candidateFramePath": "artifacts/analysis/ants_v5_training_source_001/candidate_frames/training_source_001_f000923_t0015p390s.jpg",
+      "candidateIndex": 30,
+      "frameIndex": 923,
+      "height": 1080,
+      "imageFilename": "training_source_001_f000923_t0015p390s.jpg",
+      "imageSha256": "75ad0b67093d8a46831b0aacc9276461e40f7129c51134e4111b953939237cbc",
+      "manualStrataStatus": "requires_manual_annotation_for_exact_density_scale_crowding",
+      "modelInferenceUsed": false,
+      "regionId": "region_03",
+      "regionSelectionRank": 0,
+      "selectionOrder": 12,
+      "selectionStage": "strict_temporal_and_perceptual",
+      "stagedImagePath": "datasets/ants_v5_annotation_pack/training_source_001/images/training_source_001_f000923_t0015p390s.jpg",
+      "temporalBin": 30,
+      "timestampSeconds": 15.38956062635716,
+      "width": 1920
+    },
+    {
+      "candidateFramePath": "artifacts/analysis/ants_v5_training_source_001/candidate_frames/training_source_001_f000983_t0016p390s.jpg",
+      "candidateIndex": 32,
+      "frameIndex": 983,
+      "height": 1080,
+      "imageFilename": "training_source_001_f000983_t0016p390s.jpg",
+      "imageSha256": "7beefc0564fd2a7d573ebf616df787e0e0e9358c770ca419b02cbd02b2ac30ea",
+      "manualStrataStatus": "requires_manual_annotation_for_exact_density_scale_crowding",
+      "modelInferenceUsed": false,
+      "regionId": "region_03",
+      "regionSelectionRank": 3,
+      "selectionOrder": 13,
+      "selectionStage": "temporal_spread_fill",
+      "stagedImagePath": "datasets/ants_v5_annotation_pack/training_source_001/images/training_source_001_f000983_t0016p390s.jpg",
+      "temporalBin": 32,
+      "timestampSeconds": 16.38996543413769,
+      "width": 1920
+    },
+    {
+      "candidateFramePath": "artifacts/analysis/ants_v5_training_source_001/candidate_frames/training_source_001_f001074_t0017p907s.jpg",
+      "candidateIndex": 35,
+      "frameIndex": 1074,
+      "height": 1080,
+      "imageFilename": "training_source_001_f001074_t0017p907s.jpg",
+      "imageSha256": "55bd3fa5db1d4e1bcb981b374bf88f1243012f5d5fb8ca4ebc602c4cb1caf81e",
+      "manualStrataStatus": "requires_manual_annotation_for_exact_density_scale_crowding",
+      "modelInferenceUsed": false,
+      "regionId": "region_03",
+      "regionSelectionRank": 1,
+      "selectionOrder": 14,
+      "selectionStage": "strict_temporal_and_perceptual",
+      "stagedImagePath": "datasets/ants_v5_annotation_pack/training_source_001/images/training_source_001_f001074_t0017p907s.jpg",
+      "temporalBin": 35,
+      "timestampSeconds": 17.907246059271493,
+      "width": 1920
+    },
+    {
+      "candidateFramePath": "artifacts/analysis/ants_v5_training_source_001/candidate_frames/training_source_001_f001195_t0019p925s.jpg",
+      "candidateIndex": 39,
+      "frameIndex": 1195,
+      "height": 1080,
+      "imageFilename": "training_source_001_f001195_t0019p925s.jpg",
+      "imageSha256": "68aab8663de5c9ec331a454317e70a2c713471b5e0d7a05aef9dd4088c2ca504",
+      "manualStrataStatus": "requires_manual_annotation_for_exact_density_scale_crowding",
+      "modelInferenceUsed": false,
+      "regionId": "region_03",
+      "regionSelectionRank": 2,
+      "selectionOrder": 15,
+      "selectionStage": "temporal_spread_fill",
+      "stagedImagePath": "datasets/ants_v5_annotation_pack/training_source_001/images/training_source_001_f001195_t0019p925s.jpg",
+      "temporalBin": 39,
+      "timestampSeconds": 19.924729088295564,
+      "width": 1920
+    },
+    {
+      "candidateFramePath": "artifacts/analysis/ants_v5_training_source_001/candidate_frames/training_source_001_f001226_t0020p442s.jpg",
+      "candidateIndex": 40,
+      "frameIndex": 1226,
+      "height": 1080,
+      "imageFilename": "training_source_001_f001226_t0020p442s.jpg",
+      "imageSha256": "6084cde1cdca793ac697dcf05e5872d232fb95d2d47f7bbfe202a47e875bb228",
+      "manualStrataStatus": "requires_manual_annotation_for_exact_density_scale_crowding",
+      "modelInferenceUsed": false,
+      "regionId": "region_04",
+      "regionSelectionRank": 0,
+      "selectionOrder": 16,
+      "selectionStage": "strict_temporal_and_perceptual",
+      "stagedImagePath": "datasets/ants_v5_annotation_pack/training_source_001/images/training_source_001_f001226_t0020p442s.jpg",
+      "temporalBin": 40,
+      "timestampSeconds": 20.441604905648838,
+      "width": 1920
+    },
+    {
+      "candidateFramePath": "artifacts/analysis/ants_v5_training_source_001/candidate_frames/training_source_001_f001286_t0021p442s.jpg",
+      "candidateIndex": 42,
+      "frameIndex": 1286,
+      "height": 1080,
+      "imageFilename": "training_source_001_f001286_t0021p442s.jpg",
+      "imageSha256": "232361183cd4682fa8431380fdb929354515d5daac4d4fbd636fa009c1168da6",
+      "manualStrataStatus": "requires_manual_annotation_for_exact_density_scale_crowding",
+      "modelInferenceUsed": false,
+      "regionId": "region_04",
+      "regionSelectionRank": 1,
+      "selectionOrder": 17,
+      "selectionStage": "strict_temporal_and_perceptual",
+      "stagedImagePath": "datasets/ants_v5_annotation_pack/training_source_001/images/training_source_001_f001286_t0021p442s.jpg",
+      "temporalBin": 42,
+      "timestampSeconds": 21.442009713429368,
+      "width": 1920
+    },
+    {
+      "candidateFramePath": "artifacts/analysis/ants_v5_training_source_001/candidate_frames/training_source_001_f001377_t0022p959s.jpg",
+      "candidateIndex": 45,
+      "frameIndex": 1377,
+      "height": 1080,
+      "imageFilename": "training_source_001_f001377_t0022p959s.jpg",
+      "imageSha256": "802398e9673b4b2a92d48de558cf67e5be211808c03f82a83ed2adaf4f8ac5a6",
+      "manualStrataStatus": "requires_manual_annotation_for_exact_density_scale_crowding",
+      "modelInferenceUsed": false,
+      "regionId": "region_04",
+      "regionSelectionRank": 3,
+      "selectionOrder": 18,
+      "selectionStage": "temporal_spread_fill",
+      "stagedImagePath": "datasets/ants_v5_annotation_pack/training_source_001/images/training_source_001_f001377_t0022p959s.jpg",
+      "temporalBin": 45,
+      "timestampSeconds": 22.95929033856317,
+      "width": 1920
+    },
+    {
+      "candidateFramePath": "artifacts/analysis/ants_v5_training_source_001/candidate_frames/training_source_001_f001498_t0024p977s.jpg",
+      "candidateIndex": 49,
+      "frameIndex": 1498,
+      "height": 1080,
+      "imageFilename": "training_source_001_f001498_t0024p977s.jpg",
+      "imageSha256": "2ea8d609ae5737cb8e9a49a4e8f6382334fe324fd33e8c63e0a7856493d9645e",
+      "manualStrataStatus": "requires_manual_annotation_for_exact_density_scale_crowding",
+      "modelInferenceUsed": false,
+      "regionId": "region_04",
+      "regionSelectionRank": 2,
+      "selectionOrder": 19,
+      "selectionStage": "strict_temporal_and_perceptual",
+      "stagedImagePath": "datasets/ants_v5_annotation_pack/training_source_001/images/training_source_001_f001498_t0024p977s.jpg",
+      "temporalBin": 49,
+      "timestampSeconds": 24.976773367587242,
+      "width": 1920
+    },
+    {
+      "candidateFramePath": "artifacts/analysis/ants_v5_training_source_001/candidate_frames/training_source_001_f001528_t0025p477s.jpg",
+      "candidateIndex": 50,
+      "frameIndex": 1528,
+      "height": 1080,
+      "imageFilename": "training_source_001_f001528_t0025p477s.jpg",
+      "imageSha256": "1b337b36fd65fe3db38174b5f0f1f7dfbafb0fa191305a42d48eedb543349270",
+      "manualStrataStatus": "requires_manual_annotation_for_exact_density_scale_crowding",
+      "modelInferenceUsed": false,
+      "regionId": "region_05",
+      "regionSelectionRank": 0,
+      "selectionOrder": 20,
+      "selectionStage": "strict_temporal_and_perceptual",
+      "stagedImagePath": "datasets/ants_v5_annotation_pack/training_source_001/images/training_source_001_f001528_t0025p477s.jpg",
+      "temporalBin": 50,
+      "timestampSeconds": 25.476975771477505,
+      "width": 1920
+    },
+    {
+      "candidateFramePath": "artifacts/analysis/ants_v5_training_source_001/candidate_frames/training_source_001_f001559_t0025p994s.jpg",
+      "candidateIndex": 51,
+      "frameIndex": 1559,
+      "height": 1080,
+      "imageFilename": "training_source_001_f001559_t0025p994s.jpg",
+      "imageSha256": "6247e4131a10113b9f5a154bec624eec55976057746bf77c4609e6d5bce56308",
+      "manualStrataStatus": "requires_manual_annotation_for_exact_density_scale_crowding",
+      "modelInferenceUsed": false,
+      "regionId": "region_05",
+      "regionSelectionRank": 3,
+      "selectionOrder": 21,
+      "selectionStage": "relaxed_temporal_perceptual",
+      "stagedImagePath": "datasets/ants_v5_annotation_pack/training_source_001/images/training_source_001_f001559_t0025p994s.jpg",
+      "temporalBin": 51,
+      "timestampSeconds": 25.99385158883078,
+      "width": 1920
+    },
+    {
+      "candidateFramePath": "artifacts/analysis/ants_v5_training_source_001/candidate_frames/training_source_001_f001589_t0026p494s.jpg",
+      "candidateIndex": 52,
+      "frameIndex": 1589,
+      "height": 1080,
+      "imageFilename": "training_source_001_f001589_t0026p494s.jpg",
+      "imageSha256": "291588dea8484279cd8440593d52c29f6a890f34814450cac3ab84dd1a4a39fb",
+      "manualStrataStatus": "requires_manual_annotation_for_exact_density_scale_crowding",
+      "modelInferenceUsed": false,
+      "regionId": "region_05",
+      "regionSelectionRank": 1,
+      "selectionOrder": 22,
+      "selectionStage": "strict_temporal_and_perceptual",
+      "stagedImagePath": "datasets/ants_v5_annotation_pack/training_source_001/images/training_source_001_f001589_t0026p494s.jpg",
+      "temporalBin": 52,
+      "timestampSeconds": 26.494053992721046,
+      "width": 1920
+    },
+    {
+      "candidateFramePath": "artifacts/analysis/ants_v5_training_source_001/candidate_frames/training_source_001_f001710_t0028p512s.jpg",
+      "candidateIndex": 56,
+      "frameIndex": 1710,
+      "height": 1080,
+      "imageFilename": "training_source_001_f001710_t0028p512s.jpg",
+      "imageSha256": "6df562d99f4e1cd018038f8c5f0b9358c5201a150b6b0b239ec38670eae55ad9",
+      "manualStrataStatus": "requires_manual_annotation_for_exact_density_scale_crowding",
+      "modelInferenceUsed": false,
+      "regionId": "region_05",
+      "regionSelectionRank": 2,
+      "selectionOrder": 23,
+      "selectionStage": "strict_temporal_and_perceptual",
+      "stagedImagePath": "datasets/ants_v5_annotation_pack/training_source_001/images/training_source_001_f001710_t0028p512s.jpg",
+      "temporalBin": 56,
+      "timestampSeconds": 28.511537021745117,
+      "width": 1920
+    },
+    {
+      "candidateFramePath": "artifacts/analysis/ants_v5_training_source_001/candidate_frames/training_source_001_f001831_t0030p529s.jpg",
+      "candidateIndex": 60,
+      "frameIndex": 1831,
+      "height": 1080,
+      "imageFilename": "training_source_001_f001831_t0030p529s.jpg",
+      "imageSha256": "f70855f56eb8d03473fc3cbbbd741d0db1631a3375a97524c9b8e8b8470dac08",
+      "manualStrataStatus": "requires_manual_annotation_for_exact_density_scale_crowding",
+      "modelInferenceUsed": false,
+      "regionId": "region_06",
+      "regionSelectionRank": 0,
+      "selectionOrder": 24,
+      "selectionStage": "strict_temporal_and_perceptual",
+      "stagedImagePath": "datasets/ants_v5_annotation_pack/training_source_001/images/training_source_001_f001831_t0030p529s.jpg",
+      "temporalBin": 60,
+      "timestampSeconds": 30.529020050769184,
+      "width": 1920
+    },
+    {
+      "candidateFramePath": "artifacts/analysis/ants_v5_training_source_001/candidate_frames/training_source_001_f001952_t0032p547s.jpg",
+      "candidateIndex": 64,
+      "frameIndex": 1952,
+      "height": 1080,
+      "imageFilename": "training_source_001_f001952_t0032p547s.jpg",
+      "imageSha256": "c7378cd13ebc2370765ccc4bab0defef01c96ec4ba7b308e7bcdac7f1dd603f1",
+      "manualStrataStatus": "requires_manual_annotation_for_exact_density_scale_crowding",
+      "modelInferenceUsed": false,
+      "regionId": "region_06",
+      "regionSelectionRank": 1,
+      "selectionOrder": 25,
+      "selectionStage": "strict_temporal_and_perceptual",
+      "stagedImagePath": "datasets/ants_v5_annotation_pack/training_source_001/images/training_source_001_f001952_t0032p547s.jpg",
+      "temporalBin": 64,
+      "timestampSeconds": 32.546503079793254,
+      "width": 1920
+    },
+    {
+      "candidateFramePath": "artifacts/analysis/ants_v5_training_source_001/candidate_frames/training_source_001_f002013_t0033p564s.jpg",
+      "candidateIndex": 66,
+      "frameIndex": 2013,
+      "height": 1080,
+      "imageFilename": "training_source_001_f002013_t0033p564s.jpg",
+      "imageSha256": "abdc2afcca415638ff41d02699accad709a280efb55a40a136c4c0370f73e224",
+      "manualStrataStatus": "requires_manual_annotation_for_exact_density_scale_crowding",
+      "modelInferenceUsed": false,
+      "regionId": "region_06",
+      "regionSelectionRank": 3,
+      "selectionOrder": 26,
+      "selectionStage": "temporal_spread_fill",
+      "stagedImagePath": "datasets/ants_v5_annotation_pack/training_source_001/images/training_source_001_f002013_t0033p564s.jpg",
+      "temporalBin": 66,
+      "timestampSeconds": 33.56358130103679,
+      "width": 1920
+    },
+    {
+      "candidateFramePath": "artifacts/analysis/ants_v5_training_source_001/candidate_frames/training_source_001_f002104_t0035p081s.jpg",
+      "candidateIndex": 69,
+      "frameIndex": 2104,
+      "height": 1080,
+      "imageFilename": "training_source_001_f002104_t0035p081s.jpg",
+      "imageSha256": "e0811a7ef047f3ab8652b6e7f8a0e77eec25f0387c4ec69b11d14e33301f7942",
+      "manualStrataStatus": "requires_manual_annotation_for_exact_density_scale_crowding",
+      "modelInferenceUsed": false,
+      "regionId": "region_06",
+      "regionSelectionRank": 2,
+      "selectionOrder": 27,
+      "selectionStage": "temporal_spread_fill",
+      "stagedImagePath": "datasets/ants_v5_annotation_pack/training_source_001/images/training_source_001_f002104_t0035p081s.jpg",
+      "temporalBin": 69,
+      "timestampSeconds": 35.0808619261706,
+      "width": 1920
+    },
+    {
+      "candidateFramePath": "artifacts/analysis/ants_v5_training_source_001/candidate_frames/training_source_001_f002134_t0035p581s.jpg",
+      "candidateIndex": 70,
+      "frameIndex": 2134,
+      "height": 1080,
+      "imageFilename": "training_source_001_f002134_t0035p581s.jpg",
+      "imageSha256": "c7b2a3846105f1fefbc6933312e79b13ba7b496215eaeafba6484c923a077e3c",
+      "manualStrataStatus": "requires_manual_annotation_for_exact_density_scale_crowding",
+      "modelInferenceUsed": false,
+      "regionId": "region_07",
+      "regionSelectionRank": 0,
+      "selectionOrder": 28,
+      "selectionStage": "strict_temporal_and_perceptual",
+      "stagedImagePath": "datasets/ants_v5_annotation_pack/training_source_001/images/training_source_001_f002134_t0035p581s.jpg",
+      "temporalBin": 70,
+      "timestampSeconds": 35.58106433006086,
+      "width": 1920
+    },
+    {
+      "candidateFramePath": "artifacts/analysis/ants_v5_training_source_001/candidate_frames/training_source_001_f002255_t0037p599s.jpg",
+      "candidateIndex": 74,
+      "frameIndex": 2255,
+      "height": 1080,
+      "imageFilename": "training_source_001_f002255_t0037p599s.jpg",
+      "imageSha256": "d599a9e514d2a6b0345f0c56c1e043402f920c51373b2d5bacbdbc85ee9e5a34",
+      "manualStrataStatus": "requires_manual_annotation_for_exact_density_scale_crowding",
+      "modelInferenceUsed": false,
+      "regionId": "region_07",
+      "regionSelectionRank": 2,
+      "selectionOrder": 29,
+      "selectionStage": "temporal_spread_fill",
+      "stagedImagePath": "datasets/ants_v5_annotation_pack/training_source_001/images/training_source_001_f002255_t0037p599s.jpg",
+      "temporalBin": 74,
+      "timestampSeconds": 37.59854735908493,
+      "width": 1920
+    },
+    {
+      "candidateFramePath": "artifacts/analysis/ants_v5_training_source_001/candidate_frames/training_source_001_f002316_t0038p616s.jpg",
+      "candidateIndex": 76,
+      "frameIndex": 2316,
+      "height": 1080,
+      "imageFilename": "training_source_001_f002316_t0038p616s.jpg",
+      "imageSha256": "21cb17760ed8a0bc4cf8b88f29a04e2fbb824b917cdd397fb0bd5c485eeb7b7b",
+      "manualStrataStatus": "requires_manual_annotation_for_exact_density_scale_crowding",
+      "modelInferenceUsed": false,
+      "regionId": "region_07",
+      "regionSelectionRank": 3,
+      "selectionOrder": 30,
+      "selectionStage": "temporal_spread_fill",
+      "stagedImagePath": "datasets/ants_v5_annotation_pack/training_source_001/images/training_source_001_f002316_t0038p616s.jpg",
+      "temporalBin": 76,
+      "timestampSeconds": 38.61562558032847,
+      "width": 1920
+    },
+    {
+      "candidateFramePath": "artifacts/analysis/ants_v5_training_source_001/candidate_frames/training_source_001_f002406_t0040p116s.jpg",
+      "candidateIndex": 79,
+      "frameIndex": 2406,
+      "height": 1080,
+      "imageFilename": "training_source_001_f002406_t0040p116s.jpg",
+      "imageSha256": "786f84d204d9c6aa0987b2b778aea97559d0dd8f35f73a4f0434ef8d655fc320",
+      "manualStrataStatus": "requires_manual_annotation_for_exact_density_scale_crowding",
+      "modelInferenceUsed": false,
+      "regionId": "region_07",
+      "regionSelectionRank": 1,
+      "selectionOrder": 31,
+      "selectionStage": "strict_temporal_and_perceptual",
+      "stagedImagePath": "datasets/ants_v5_annotation_pack/training_source_001/images/training_source_001_f002406_t0040p116s.jpg",
+      "temporalBin": 79,
+      "timestampSeconds": 40.116232791999266,
+      "width": 1920
+    },
+    {
+      "candidateFramePath": "artifacts/analysis/ants_v5_training_source_001/candidate_frames/training_source_001_f002437_t0040p633s.jpg",
+      "candidateIndex": 80,
+      "frameIndex": 2437,
+      "height": 1080,
+      "imageFilename": "training_source_001_f002437_t0040p633s.jpg",
+      "imageSha256": "41481b955890e4adc01c8914a265a9695854dfd6f305a744fc20de382371f638",
+      "manualStrataStatus": "requires_manual_annotation_for_exact_density_scale_crowding",
+      "modelInferenceUsed": false,
+      "regionId": "region_08",
+      "regionSelectionRank": 0,
+      "selectionOrder": 32,
+      "selectionStage": "strict_temporal_and_perceptual",
+      "stagedImagePath": "datasets/ants_v5_annotation_pack/training_source_001/images/training_source_001_f002437_t0040p633s.jpg",
+      "temporalBin": 80,
+      "timestampSeconds": 40.63310860935254,
+      "width": 1920
+    },
+    {
+      "candidateFramePath": "artifacts/analysis/ants_v5_training_source_001/candidate_frames/training_source_001_f002497_t0041p634s.jpg",
+      "candidateIndex": 82,
+      "frameIndex": 2497,
+      "height": 1080,
+      "imageFilename": "training_source_001_f002497_t0041p634s.jpg",
+      "imageSha256": "a8e8b493f2c85442af610b234a495c948d29c5c363aa8e89d8c50b052633ac36",
+      "manualStrataStatus": "requires_manual_annotation_for_exact_density_scale_crowding",
+      "modelInferenceUsed": false,
+      "regionId": "region_08",
+      "regionSelectionRank": 1,
+      "selectionOrder": 33,
+      "selectionStage": "strict_temporal_and_perceptual",
+      "stagedImagePath": "datasets/ants_v5_annotation_pack/training_source_001/images/training_source_001_f002497_t0041p634s.jpg",
+      "temporalBin": 82,
+      "timestampSeconds": 41.633513417133074,
+      "width": 1920
+    },
+    {
+      "candidateFramePath": "artifacts/analysis/ants_v5_training_source_001/candidate_frames/training_source_001_f002588_t0043p151s.jpg",
+      "candidateIndex": 85,
+      "frameIndex": 2588,
+      "height": 1080,
+      "imageFilename": "training_source_001_f002588_t0043p151s.jpg",
+      "imageSha256": "4938f934b7cc93aaa20695e651b9aa02ee23906bff99b224ad23d3ba44e5d6c0",
+      "manualStrataStatus": "requires_manual_annotation_for_exact_density_scale_crowding",
+      "modelInferenceUsed": false,
+      "regionId": "region_08",
+      "regionSelectionRank": 3,
+      "selectionOrder": 34,
+      "selectionStage": "temporal_spread_fill",
+      "stagedImagePath": "datasets/ants_v5_annotation_pack/training_source_001/images/training_source_001_f002588_t0043p151s.jpg",
+      "temporalBin": 85,
+      "timestampSeconds": 43.150794042266874,
+      "width": 1920
+    },
+    {
+      "candidateFramePath": "artifacts/analysis/ants_v5_training_source_001/candidate_frames/training_source_001_f002709_t0045p168s.jpg",
+      "candidateIndex": 89,
+      "frameIndex": 2709,
+      "height": 1080,
+      "imageFilename": "training_source_001_f002709_t0045p168s.jpg",
+      "imageSha256": "d9c22ff9a83c993a80654485788ba417e7a84c00ce2ff887d15bc4aa31090f1f",
+      "manualStrataStatus": "requires_manual_annotation_for_exact_density_scale_crowding",
+      "modelInferenceUsed": false,
+      "regionId": "region_08",
+      "regionSelectionRank": 2,
+      "selectionOrder": 35,
+      "selectionStage": "temporal_spread_fill",
+      "stagedImagePath": "datasets/ants_v5_annotation_pack/training_source_001/images/training_source_001_f002709_t0045p168s.jpg",
+      "temporalBin": 89,
+      "timestampSeconds": 45.168277071290944,
+      "width": 1920
+    },
+    {
+      "candidateFramePath": "artifacts/analysis/ants_v5_training_source_001/candidate_frames/training_source_001_f002739_t0045p668s.jpg",
+      "candidateIndex": 90,
+      "frameIndex": 2739,
+      "height": 1080,
+      "imageFilename": "training_source_001_f002739_t0045p668s.jpg",
+      "imageSha256": "4ddf52810d52e66e8277de3b5338d1455e7dcb48d8820883f05638d4ef074756",
+      "manualStrataStatus": "requires_manual_annotation_for_exact_density_scale_crowding",
+      "modelInferenceUsed": false,
+      "regionId": "region_09",
+      "regionSelectionRank": 0,
+      "selectionOrder": 36,
+      "selectionStage": "strict_temporal_and_perceptual",
+      "stagedImagePath": "datasets/ants_v5_annotation_pack/training_source_001/images/training_source_001_f002739_t0045p668s.jpg",
+      "temporalBin": 90,
+      "timestampSeconds": 45.66847947518121,
+      "width": 1920
+    },
+    {
+      "candidateFramePath": "artifacts/analysis/ants_v5_training_source_001/candidate_frames/training_source_001_f002860_t0047p686s.jpg",
+      "candidateIndex": 94,
+      "frameIndex": 2860,
+      "height": 1080,
+      "imageFilename": "training_source_001_f002860_t0047p686s.jpg",
+      "imageSha256": "612c0b68849747b6b0d35a1a2b8faa07681bb9c74a8dded55c6987a9b24a7366",
+      "manualStrataStatus": "requires_manual_annotation_for_exact_density_scale_crowding",
+      "modelInferenceUsed": false,
+      "regionId": "region_09",
+      "regionSelectionRank": 1,
+      "selectionOrder": 37,
+      "selectionStage": "strict_temporal_and_perceptual",
+      "stagedImagePath": "datasets/ants_v5_annotation_pack/training_source_001/images/training_source_001_f002860_t0047p686s.jpg",
+      "temporalBin": 94,
+      "timestampSeconds": 47.68596250420528,
+      "width": 1920
+    },
+    {
+      "candidateFramePath": "artifacts/analysis/ants_v5_training_source_001/candidate_frames/training_source_001_f002921_t0048p703s.jpg",
+      "candidateIndex": 96,
+      "frameIndex": 2921,
+      "height": 1080,
+      "imageFilename": "training_source_001_f002921_t0048p703s.jpg",
+      "imageSha256": "78840fbcba836cbad1c8353ea34900998c21bb6faddde6b9d66eb8d9204d111a",
+      "manualStrataStatus": "requires_manual_annotation_for_exact_density_scale_crowding",
+      "modelInferenceUsed": false,
+      "regionId": "region_09",
+      "regionSelectionRank": 3,
+      "selectionOrder": 38,
+      "selectionStage": "temporal_spread_fill",
+      "stagedImagePath": "datasets/ants_v5_annotation_pack/training_source_001/images/training_source_001_f002921_t0048p703s.jpg",
+      "temporalBin": 96,
+      "timestampSeconds": 48.70304072544882,
+      "width": 1920
+    },
+    {
+      "candidateFramePath": "artifacts/analysis/ants_v5_training_source_001/candidate_frames/training_source_001_f002982_t0049p720s.jpg",
+      "candidateIndex": 98,
+      "frameIndex": 2982,
+      "height": 1080,
+      "imageFilename": "training_source_001_f002982_t0049p720s.jpg",
+      "imageSha256": "33281c8b2e53623d5d9049f4d0c0e0411e4fa2bdd4f040d8caa90fd440ab3306",
+      "manualStrataStatus": "requires_manual_annotation_for_exact_density_scale_crowding",
+      "modelInferenceUsed": false,
+      "regionId": "region_09",
+      "regionSelectionRank": 2,
+      "selectionOrder": 39,
+      "selectionStage": "strict_temporal_and_perceptual",
+      "stagedImagePath": "datasets/ants_v5_annotation_pack/training_source_001/images/training_source_001_f002982_t0049p720s.jpg",
+      "temporalBin": 98,
+      "timestampSeconds": 49.72011894669236,
+      "width": 1920
+    },
+    {
+      "candidateFramePath": "artifacts/analysis/ants_v5_training_source_001/candidate_frames/training_source_001_f003042_t0050p721s.jpg",
+      "candidateIndex": 100,
+      "frameIndex": 3042,
+      "height": 1080,
+      "imageFilename": "training_source_001_f003042_t0050p721s.jpg",
+      "imageSha256": "e3a6c1e0de9503f63f200f90673a79b561c267c09ffa41dd8ad5154b6c0f6bdf",
+      "manualStrataStatus": "requires_manual_annotation_for_exact_density_scale_crowding",
+      "modelInferenceUsed": false,
+      "regionId": "region_10",
+      "regionSelectionRank": 0,
+      "selectionOrder": 40,
+      "selectionStage": "strict_temporal_and_perceptual",
+      "stagedImagePath": "datasets/ants_v5_annotation_pack/training_source_001/images/training_source_001_f003042_t0050p721s.jpg",
+      "temporalBin": 100,
+      "timestampSeconds": 50.72052375447289,
+      "width": 1920
+    },
+    {
+      "candidateFramePath": "artifacts/analysis/ants_v5_training_source_001/candidate_frames/training_source_001_f003103_t0051p738s.jpg",
+      "candidateIndex": 102,
+      "frameIndex": 3103,
+      "height": 1080,
+      "imageFilename": "training_source_001_f003103_t0051p738s.jpg",
+      "imageSha256": "96b83dc4301cb8e9989752a6428af578477e16a2db6d7f8acc533cf330ce4ea7",
+      "manualStrataStatus": "requires_manual_annotation_for_exact_density_scale_crowding",
+      "modelInferenceUsed": false,
+      "regionId": "region_10",
+      "regionSelectionRank": 3,
+      "selectionOrder": 41,
+      "selectionStage": "temporal_spread_fill",
+      "stagedImagePath": "datasets/ants_v5_annotation_pack/training_source_001/images/training_source_001_f003103_t0051p738s.jpg",
+      "temporalBin": 102,
+      "timestampSeconds": 51.73760197571643,
+      "width": 1920
+    },
+    {
+      "candidateFramePath": "artifacts/analysis/ants_v5_training_source_001/candidate_frames/training_source_001_f003194_t0053p255s.jpg",
+      "candidateIndex": 105,
+      "frameIndex": 3194,
+      "height": 1080,
+      "imageFilename": "training_source_001_f003194_t0053p255s.jpg",
+      "imageSha256": "7c69fc1b180fd0a5efca7aa091ba190a0466293541384fab25c49cac009ca245",
+      "manualStrataStatus": "requires_manual_annotation_for_exact_density_scale_crowding",
+      "modelInferenceUsed": false,
+      "regionId": "region_10",
+      "regionSelectionRank": 2,
+      "selectionOrder": 42,
+      "selectionStage": "temporal_spread_fill",
+      "stagedImagePath": "datasets/ants_v5_annotation_pack/training_source_001/images/training_source_001_f003194_t0053p255s.jpg",
+      "temporalBin": 105,
+      "timestampSeconds": 53.25488260085023,
+      "width": 1920
+    },
+    {
+      "candidateFramePath": "artifacts/analysis/ants_v5_training_source_001/candidate_frames/training_source_001_f003315_t0055p272s.jpg",
+      "candidateIndex": 109,
+      "frameIndex": 3315,
+      "height": 1080,
+      "imageFilename": "training_source_001_f003315_t0055p272s.jpg",
+      "imageSha256": "e0b6ac235f67064ab46a72258bd3cfa52c271ef85caad03f59ee489b465052c0",
+      "manualStrataStatus": "requires_manual_annotation_for_exact_density_scale_crowding",
+      "modelInferenceUsed": false,
+      "regionId": "region_10",
+      "regionSelectionRank": 1,
+      "selectionOrder": 43,
+      "selectionStage": "temporal_spread_fill",
+      "stagedImagePath": "datasets/ants_v5_annotation_pack/training_source_001/images/training_source_001_f003315_t0055p272s.jpg",
+      "temporalBin": 109,
+      "timestampSeconds": 55.2723656298743,
+      "width": 1920
+    },
+    {
+      "candidateFramePath": "artifacts/analysis/ants_v5_training_source_001/candidate_frames/training_source_001_f003345_t0055p773s.jpg",
+      "candidateIndex": 110,
+      "frameIndex": 3345,
+      "height": 1080,
+      "imageFilename": "training_source_001_f003345_t0055p773s.jpg",
+      "imageSha256": "fff94d4d1c8c1e913da7edae3023a9b91160560a6fa48fd509849df952fb63e8",
+      "manualStrataStatus": "requires_manual_annotation_for_exact_density_scale_crowding",
+      "modelInferenceUsed": false,
+      "regionId": "region_11",
+      "regionSelectionRank": 0,
+      "selectionOrder": 44,
+      "selectionStage": "strict_temporal_and_perceptual",
+      "stagedImagePath": "datasets/ants_v5_annotation_pack/training_source_001/images/training_source_001_f003345_t0055p773s.jpg",
+      "temporalBin": 110,
+      "timestampSeconds": 55.77256803376457,
+      "width": 1920
+    },
+    {
+      "candidateFramePath": "artifacts/analysis/ants_v5_training_source_001/candidate_frames/training_source_001_f003405_t0056p773s.jpg",
+      "candidateIndex": 112,
+      "frameIndex": 3405,
+      "height": 1080,
+      "imageFilename": "training_source_001_f003405_t0056p773s.jpg",
+      "imageSha256": "dd8f7d6ad65c6617e9dd8fdaab32c1d8d36e2bea3fc2147117613692835da98c",
+      "manualStrataStatus": "requires_manual_annotation_for_exact_density_scale_crowding",
+      "modelInferenceUsed": false,
+      "regionId": "region_11",
+      "regionSelectionRank": 1,
+      "selectionOrder": 45,
+      "selectionStage": "strict_temporal_and_perceptual",
+      "stagedImagePath": "datasets/ants_v5_annotation_pack/training_source_001/images/training_source_001_f003405_t0056p773s.jpg",
+      "temporalBin": 112,
+      "timestampSeconds": 56.7729728415451,
+      "width": 1920
+    },
+    {
+      "candidateFramePath": "artifacts/analysis/ants_v5_training_source_001/candidate_frames/training_source_001_f003527_t0058p807s.jpg",
+      "candidateIndex": 116,
+      "frameIndex": 3527,
+      "height": 1080,
+      "imageFilename": "training_source_001_f003527_t0058p807s.jpg",
+      "imageSha256": "c66f56a0eba0179509b197c621db3e72f07b27e17ad20b98dd891dd97f3bd2fd",
+      "manualStrataStatus": "requires_manual_annotation_for_exact_density_scale_crowding",
+      "modelInferenceUsed": false,
+      "regionId": "region_11",
+      "regionSelectionRank": 2,
+      "selectionOrder": 46,
+      "selectionStage": "strict_temporal_and_perceptual",
+      "stagedImagePath": "datasets/ants_v5_annotation_pack/training_source_001/images/training_source_001_f003527_t0058p807s.jpg",
+      "temporalBin": 116,
+      "timestampSeconds": 58.80712928403218,
+      "width": 1920
+    },
+    {
+      "candidateFramePath": "artifacts/analysis/ants_v5_training_source_001/candidate_frames/training_source_001_f003617_t0060p308s.jpg",
+      "candidateIndex": 119,
+      "frameIndex": 3617,
+      "height": 1080,
+      "imageFilename": "training_source_001_f003617_t0060p308s.jpg",
+      "imageSha256": "6380f5247c8078708bb0a95ab89c51a4b86eb39eeb933e64bdf2b07d41914329",
+      "manualStrataStatus": "requires_manual_annotation_for_exact_density_scale_crowding",
+      "modelInferenceUsed": false,
+      "regionId": "region_11",
+      "regionSelectionRank": 3,
+      "selectionOrder": 47,
+      "selectionStage": "temporal_spread_fill",
+      "stagedImagePath": "datasets/ants_v5_annotation_pack/training_source_001/images/training_source_001_f003617_t0060p308s.jpg",
+      "temporalBin": 119,
+      "timestampSeconds": 60.307736495702976,
+      "width": 1920
+    }
+  ],
+  "selectedTimestampsSeconds": [
+    0.2501012019451326,
+    1.750708413615928,
+    2.2675842309692023,
+    3.2679890387497323,
+    5.285472067773802,
+    7.8198309141511455,
+    9.33711153928495,
+    9.837313943175216,
+    10.337516347065481,
+    11.854796972199285,
+    13.372077597333089,
+    14.372482405113619,
+    15.38956062635716,
+    16.38996543413769,
+    17.907246059271493,
+    19.924729088295564,
+    20.441604905648838,
+    21.442009713429368,
+    22.95929033856317,
+    24.976773367587242,
+    25.476975771477505,
+    25.99385158883078,
+    26.494053992721046,
+    28.511537021745117,
+    30.529020050769184,
+    32.546503079793254,
+    33.56358130103679,
+    35.0808619261706,
+    35.58106433006086,
+    37.59854735908493,
+    38.61562558032847,
+    40.116232791999266,
+    40.63310860935254,
+    41.633513417133074,
+    43.150794042266874,
+    45.168277071290944,
+    45.66847947518121,
+    47.68596250420528,
+    48.70304072544882,
+    49.72011894669236,
+    50.72052375447289,
+    51.73760197571643,
+    53.25488260085023,
+    55.2723656298743,
+    55.77256803376457,
+    56.7729728415451,
+    58.80712928403218,
+    60.307736495702976
+  ],
+  "selectionAlgorithm": {
+    "minTemporalSpacingSeconds": 1.0,
+    "name": "deterministic_temporal_region_perceptual_pruning",
+    "nearDuplicateRule": "dHash Hamming distance <= 4",
+    "nearDuplicateThreshold": 4,
+    "regionCount": 12,
+    "targetCount": 48,
+    "tieBreakers": [
+      "earliest candidate in strict pass",
+      "maximum minimum timestamp distance during fill",
+      "lower candidateIndex"
+    ],
+    "usesFinalTestContent": false,
+    "usesModelInference": false,
+    "usesPseudoLabeling": false
+  },
+  "source": {
+    "candidatePool": "experiments/ants_v5/training_source_001_candidate_pool.json",
+    "fileSizeBytes": 153755857,
+    "path": "samples/v2/ants_v5_training_source_001.mp4",
+    "sha256": "53a659c615fb1ae5e6ab1ae96ba84531cb8e7d8aae6c396a19b8f7e7cf623e7b"
+  },
+  "sourceId": "training_source_001",
+  "temporalCoverage": {
+    "durationCoveredSeconds": 60.05763529375784,
+    "firstTimestampSeconds": 0.2501012019451326,
+    "lastTimestampSeconds": 60.307736495702976,
+    "regionCounts": {
+      "region_00": 4,
+      "region_01": 4,
+      "region_02": 4,
+      "region_03": 4,
+      "region_04": 4,
+      "region_05": 4,
+      "region_06": 4,
+      "region_07": 4,
+      "region_08": 4,
+      "region_09": 4,
+      "region_10": 4,
+      "region_11": 4
+    }
+  }
+}

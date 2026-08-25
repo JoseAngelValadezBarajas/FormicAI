@@ -56,6 +56,8 @@ datasets/ants_v3_annotation_pack/**/final_images/**
 datasets/ants_v3_annotation_pack/**/labels/**
 datasets/ants_v4_annotation_pack/**/images/**
 datasets/ants_v4_annotation_pack/**/labels/**
+datasets/ants_v5_annotation_pack/**/images/**
+datasets/ants_v5_annotation_pack/**/labels/**
 datasets/public/**/raw/**
 datasets/public/**/prepared/**/images/**
 datasets/public/**/prepared/**/labels/**
