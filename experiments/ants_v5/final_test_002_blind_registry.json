@@ -1,0 +1,25 @@
+{
+  "finalTestId": "v5_final_test_002",
+  "role": "FINAL_TEST",
+  "status": "FROZEN_MODEL_UNOBSERVED",
+  "targetExperiment": "ants_v5_crowdedscale_e01",
+  "trainEligible": false,
+  "developmentValidationEligible": false,
+  "checkpointSelectionEligible": false,
+  "tuningEligible": false,
+  "autopsyInputEligible": false,
+  "sourceSha256": "489f48cd4d4513d201c2afe19512f3e36ebc5b748823975190347350e276a13d",
+  "frozenImageContentSha256": "8fc4371e70864de5848617fd0668e7fd855b23ef2c690259205e74c0fc4bbe7c",
+  "sealedFreezeCommit": "eed41ea02b471c7d7653dda2129a0d9917124c0b",
+  "archivalTag": "ants-v5-final-test-002-frozen",
+  "protectedPaths": {
+    "sourceVideo": "samples/v2/ants_v5_final_test_002.mp4",
+    "frozenImageDirectory": "datasets/external_test/v5_final_test_002/images",
+    "labelDirectory": "datasets/external_test/v5_final_test_002/labels",
+    "sealedRecordDirectory": "sealed/ants_v5_final_test_002",
+    "sealedFreeze": "sealed/ants_v5_final_test_002/freeze.md",
+    "sealedSourceFrameManifest": "sealed/ants_v5_final_test_002/source_frame_manifest.json",
+    "sealedGroundTruthManifest": "sealed/ants_v5_final_test_002/ground_truth_manifest.json"
+  },
+  "semanticAccessForbidden": true
+}

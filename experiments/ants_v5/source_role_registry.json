@@ -9,7 +9,8 @@
     "ant3",
     "Ants2",
     "Ants11",
-    "former_v5_final_test_001"
+    "former_v5_final_test_001",
+    "v5_final_test_002"
   ],
   "experimentCandidate": "ants_v5_crowdedscale_e01",
   "forbiddenForTrainingSourceAudit": {
@@ -54,12 +55,39 @@
         "strictFinalTest": false,
         "trainEligible": false,
         "tuningEligible": false
+      },
+      {
+        "archivalTag": "ants-v5-final-test-002-frozen",
+        "checkpointSelectionEligible": false,
+        "developmentValidationEligible": false,
+        "filename": "ants_v5_final_test_002.mp4",
+        "finalTest": true,
+        "forbiddenForDesign": true,
+        "forbiddenForTrainingSourceAudit": true,
+        "frozenImageContentSha256": "8fc4371e70864de5848617fd0668e7fd855b23ef2c690259205e74c0fc4bbe7c",
+        "path": "samples/v2/ants_v5_final_test_002.mp4",
+        "pathAliases": [
+          "datasets/external_test/v5_final_test_002",
+          "sealed/ants_v5_final_test_002"
+        ],
+        "role": "FINAL_TEST",
+        "sealedFreezeCommit": "eed41ea02b471c7d7653dda2129a0d9917124c0b",
+        "semanticAccessForbidden": true,
+        "sourceId": "v5_final_test_002",
+        "sourceSha256": "489f48cd4d4513d201c2afe19512f3e36ebc5b748823975190347350e276a13d",
+        "status": "FROZEN_MODEL_UNOBSERVED",
+        "strictFinalTest": true,
+        "trainEligible": false,
+        "tuningEligible": false
       }
     ],
     "sealedDetailedMetadataPaths": [
       "experiments/ants_v5/final_test_ground_truth_manifest.json",
       "experiments/ants_v5/final_test_source_frame_manifest.json",
-      "datasets/external_test/v5_final_test/metadata.json"
+      "datasets/external_test/v5_final_test/metadata.json",
+      "sealed/ants_v5_final_test_002/freeze.md",
+      "sealed/ants_v5_final_test_002/source_frame_manifest.json",
+      "sealed/ants_v5_final_test_002/ground_truth_manifest.json"
     ]
   },
   "observedButNotOptimizationTargets": [
@@ -90,8 +118,33 @@
       ]
     },
     "FINAL_TEST": {
-      "policy": "No active strict V5 final test is registered after DEVELOPMENT_GT_METADATA_EXPOSURE. A replacement strict final test is required before any V5 final evaluation.",
-      "sources": []
+      "policy": "Active strict V5 final-test sources are frozen and model-unobserved. They are never train, development-validation, checkpoint-selection, or threshold-tuning sources.",
+      "sources": [
+        {
+          "archivalTag": "ants-v5-final-test-002-frozen",
+          "checkpointSelectionEligible": false,
+          "developmentValidationEligible": false,
+          "filename": "ants_v5_final_test_002.mp4",
+          "finalTest": true,
+          "forbiddenForDesign": true,
+          "forbiddenForTrainingSourceAudit": true,
+          "frozenImageContentSha256": "8fc4371e70864de5848617fd0668e7fd855b23ef2c690259205e74c0fc4bbe7c",
+          "path": "samples/v2/ants_v5_final_test_002.mp4",
+          "pathAliases": [
+            "datasets/external_test/v5_final_test_002",
+            "sealed/ants_v5_final_test_002"
+          ],
+          "role": "FINAL_TEST",
+          "sealedFreezeCommit": "eed41ea02b471c7d7653dda2129a0d9917124c0b",
+          "semanticAccessForbidden": true,
+          "sourceId": "v5_final_test_002",
+          "sourceSha256": "489f48cd4d4513d201c2afe19512f3e36ebc5b748823975190347350e276a13d",
+          "status": "FROZEN_MODEL_UNOBSERVED",
+          "strictFinalTest": true,
+          "trainEligible": false,
+          "tuningEligible": false
+        }
+      ]
     },
     "OBSERVED_REFERENCE": {
       "policy": "Observed references only. Never train, never checkpoint-select, never threshold-tune. May be rerun only after selected.pt is frozen. former_v5_final_test_001 remains sealed from V5 development until v5 selected.pt is frozen.",
@@ -162,12 +215,13 @@
     "gtDerivedMetadataExposure": true,
     "gtUsedForTrainingTuningCheckpointSelection": false,
     "modelObservation": false,
-    "newStrictFinalTestRequired": true,
-    "note": "Strict final-test blindness is retired for the former V5 final test after categorical GT-derived metadata exposure.",
+    "activeStrictFinalTestId": "v5_final_test_002",
+    "newStrictFinalTestRequired": false,
+    "note": "Strict final-test blindness is restored by v5_final_test_002. The former V5 final test remains an observed reference after categorical GT-derived metadata exposure.",
     "retirementReason": "DEVELOPMENT_GT_METADATA_EXPOSURE",
     "v5FinalTestAccessed": false,
     "v5FinalTestContentPermittedForDesign": false,
-    "v5FinalTestRole": "RETIRED_OBSERVED_REFERENCE"
+    "v5FinalTestRole": "FINAL_TEST_FROZEN_MODEL_UNOBSERVED"
   },
   "unresolvedRoleAmbiguity": false
 }
