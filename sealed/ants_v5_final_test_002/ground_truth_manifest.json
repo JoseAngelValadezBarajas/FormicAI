@@ -1,0 +1,2622 @@
+{
+  "annotationContentSha256": "88c282eb36deb8f061517678f17d67ea04ad3fd558a345330ded2a88eaaf157d",
+  "annotationPolicy": {
+    "classes": [
+      {
+        "id": 0,
+        "name": "ant"
+      }
+    ],
+    "excludedObjects": [
+      "brood",
+      "larvae",
+      "pupae",
+      "food",
+      "debris",
+      "reflections",
+      "shadows"
+    ],
+    "forbiddenAssistance": [
+      "Auto Label",
+      "Label Assist",
+      "model assist",
+      "SAM",
+      "YOLO inference",
+      "pseudo-labeling",
+      "pretrained detector predictions"
+    ],
+    "manualPolicy": "tight-body bounding boxes around every visible adult ant",
+    "modelAssistance": "disabled",
+    "scientificMapping": {
+      "0": "ant"
+    },
+    "taskType": "object_detection"
+  },
+  "closedSetMatch": {
+    "duplicates": [],
+    "expectedFrozenImages": 30,
+    "extras": [],
+    "matchedAnnotationRecords": 30,
+    "missing": [],
+    "trainTxtEntries": 30,
+    "trainTxtExtras": [],
+    "trainTxtMissing": []
+  },
+  "combinedFinalTestSha256": "2dcfb490d2e70d422102efb862ebc2bb302d84e03b657cba7fe8451fac195332",
+  "createdAtUtc": "2026-08-25T07:05:39.968625+00:00",
+  "finalTestId": "v5_final_test_002",
+  "frames": [
+    {
+      "annotationCount": 5,
+      "annotations": [
+        {
+          "areaRatio": 0.014597127906999999,
+          "classId": 0,
+          "className": "ant",
+          "height": 0.156241,
+          "line": 1,
+          "pixelBox": {
+            "maxBoundaryOverrunPixels": 0.0,
+            "xMax": 964.82976,
+            "xMin": 785.4499199999999,
+            "yMax": 563.35014,
+            "yMin": 394.60986
+          },
+          "width": 0.093427,
+          "xCenter": 0.455802,
+          "yCenter": 0.4435
+        },
+        {
+          "areaRatio": 0.002899724836,
+          "classId": 0,
+          "className": "ant",
+          "height": 0.062074,
+          "line": 2,
+          "pixelBox": {
+            "maxBoundaryOverrunPixels": 0.0,
+            "xMax": 771.77088,
+            "xMin": 682.08,
+            "yMax": 423.48959999999994,
+            "yMin": 356.44968
+          },
+          "width": 0.046714,
+          "xCenter": 0.378607,
+          "yCenter": 0.361083
+        },
+        {
+          "areaRatio": 0.003194749956,
+          "classId": 0,
+          "className": "ant",
+          "height": 0.066148,
+          "line": 3,
+          "pixelBox": {
+            "maxBoundaryOverrunPixels": 0.0,
+            "xMax": 645.58944,
+            "xMin": 552.8592,
+            "yMax": 529.8998399999999,
+            "yMin": 458.46
+          },
+          "width": 0.048297,
+          "xCenter": 0.312096,
+          "yCenter": 0.457574
+        },
+        {
+          "areaRatio": 0.001767332121,
+          "classId": 0,
+          "className": "ant",
+          "height": 0.036593,
+          "line": 4,
+          "pixelBox": {
+            "maxBoundaryOverrunPixels": 0.0,
+            "xMax": 565.02048,
+            "xMin": 472.29024000000004,
+            "yMax": 590.7097800000001,
+            "yMin": 551.18934
+          },
+          "width": 0.048297,
+          "xCenter": 0.270133,
+          "yCenter": 0.528657
+        },
+        {
+          "areaRatio": 0.0009998944,
+          "classId": 0,
+          "className": "ant",
+          "height": 0.03238,
+          "line": 5,
+          "pixelBox": {
+            "maxBoundaryOverrunPixels": 0.0,
+            "xMax": 388.67904,
+            "xMin": 329.38944,
+            "yMax": 648.4806,
+            "yMin": 613.5101999999999
+          },
+          "width": 0.03088,
+          "xCenter": 0.186997,
+          "yCenter": 0.584255
+        }
+      ],
+      "frameIndex": 61,
+      "height": 1080,
+      "imageFilename": "ants_v5_final_test_002_frame_000061.png",
+      "imagePath": "datasets/external_test/v5_final_test_002/images/ants_v5_final_test_002_frame_000061.png",
+      "imageSha256": "88525b5728a6c610b973b5bccc53d12ec241e69688269415ca7dd417a79b7e08",
+      "labelFilename": "ants_v5_final_test_002_frame_000061.txt",
+      "labelPath": "datasets/external_test/v5_final_test_002/labels/ants_v5_final_test_002_frame_000061.txt",
+      "labelSha256": "052c97d96b4a196fa57711c879771ff19cf495ee89a42df1ae6e0195b9a37e9d",
+      "sequenceIndex": 0,
+      "timestampSeconds": 1.017071,
+      "verifiedZeroAdult": false,
+      "width": 1920
+    },
+    {
+      "annotationCount": 4,
+      "annotations": [
+        {
+          "areaRatio": 0.010575810654,
+          "classId": 0,
+          "className": "ant",
+          "height": 0.091491,
+          "line": 1,
+          "pixelBox": {
+            "maxBoundaryOverrunPixels": 0.0,
+            "xMax": 1042.65984,
+            "xMin": 820.71936,
+            "yMax": 579.31038,
+            "yMin": 480.50010000000003
+          },
+          "width": 0.115594,
+          "xCenter": 0.485255,
+          "yCenter": 0.490653
+        },
+        {
+          "areaRatio": 0.0031829637930000003,
+          "classId": 0,
+          "className": "ant",
+          "height": 0.071787,
+          "line": 2,
+          "pixelBox": {
+            "maxBoundaryOverrunPixels": 0.0,
+            "xMax": 805.51008,
+            "xMin": 720.3792000000001,
+            "yMax": 475.94034,
+            "yMin": 398.41038
+          },
+          "width": 0.044339,
+          "xCenter": 0.397367,
+          "yCenter": 0.404792
+        },
+        {
+          "areaRatio": 0.00149805012,
+          "classId": 0,
+          "className": "ant",
+          "height": 0.078824,
+          "line": 3,
+          "pixelBox": {
+            "maxBoundaryOverrunPixels": 0.0,
+            "xMax": 423.9504,
+            "xMin": 387.4608,
+            "yMax": 684.19944,
+            "yMin": 599.06952
+          },
+          "width": 0.019005,
+          "xCenter": 0.211305,
+          "yCenter": 0.594106
+        },
+        {
+          "areaRatio": 0.002220993125,
+          "classId": 0,
+          "className": "ant",
+          "height": 0.071935,
+          "line": 4,
+          "pixelBox": {
+            "maxBoundaryOverrunPixels": 0.0,
+            "xMax": 302.32992,
+            "xMin": 243.04992000000004,
+            "yMax": 783.01998,
+            "yMin": 705.3301799999999
+          },
+          "width": 0.030875,
+          "xCenter": 0.142026,
+          "yCenter": 0.689051
+        }
+      ],
+      "frameIndex": 183,
+      "height": 1080,
+      "imageFilename": "ants_v5_final_test_002_frame_000183.png",
+      "imagePath": "datasets/external_test/v5_final_test_002/images/ants_v5_final_test_002_frame_000183.png",
+      "imageSha256": "46a7d21eacf61199bb8e37675501af8bb4ca87f6120ecb9ce061a25a91077747",
+      "labelFilename": "ants_v5_final_test_002_frame_000183.txt",
+      "labelPath": "datasets/external_test/v5_final_test_002/labels/ants_v5_final_test_002_frame_000183.txt",
+      "labelSha256": "4f7301da28e5db8d6e15d5ccb3a7485d5fc9283b6828e8b57b149b1b78b8cd05",
+      "sequenceIndex": 1,
+      "timestampSeconds": 3.051214,
+      "verifiedZeroAdult": false,
+      "width": 1920
+    },
+    {
+      "annotationCount": 4,
+      "annotations": [
+        {
+          "areaRatio": 0.011710083495,
+          "classId": 0,
+          "className": "ant",
+          "height": 0.099935,
+          "line": 1,
+          "pixelBox": {
+            "maxBoundaryOverrunPixels": 0.0,
+            "xMax": 1051.7808,
+            "xMin": 826.80096,
+            "yMax": 644.67954,
+            "yMin": 536.7497400000001
+          },
+          "width": 0.117177,
+          "xCenter": 0.489214,
+          "yCenter": 0.546958
+        },
+        {
+          "areaRatio": 0.002068160787,
+          "classId": 0,
+          "className": "ant",
+          "height": 0.081639,
+          "line": 2,
+          "pixelBox": {
+            "maxBoundaryOverrunPixels": 0.0,
+            "xMax": 700.62048,
+            "xMin": 651.9811199999999,
+            "yMax": 714.6095399999999,
+            "yMin": 626.4394199999999
+          },
+          "width": 0.025333,
+          "xCenter": 0.35224,
+          "yCenter": 0.620856
+        },
+        {
+          "areaRatio": 0.0030548418999999994,
+          "classId": 0,
+          "className": "ant",
+          "height": 0.08038,
+          "line": 3,
+          "pixelBox": {
+            "maxBoundaryOverrunPixels": 0.0,
+            "xMax": 390.50016,
+            "xMin": 317.53056,
+            "yMax": 474.42024,
+            "yMin": 387.60984
+          },
+          "width": 0.038005,
+          "xCenter": 0.184383,
+          "yCenter": 0.399088
+        },
+        {
+          "areaRatio": 0.002745736914,
+          "classId": 0,
+          "className": "ant",
+          "height": 0.061926,
+          "line": 4,
+          "pixelBox": {
+            "maxBoundaryOverrunPixels": 0.0,
+            "xMax": 411.79104,
+            "xMin": 326.66016,
+            "yMax": 697.8798,
+            "yMin": 630.9997200000001
+          },
+          "width": 0.044339,
+          "xCenter": 0.192305,
+          "yCenter": 0.615222
+        }
+      ],
+      "frameIndex": 306,
+      "height": 1080,
+      "imageFilename": "ants_v5_final_test_002_frame_000306.png",
+      "imagePath": "datasets/external_test/v5_final_test_002/images/ants_v5_final_test_002_frame_000306.png",
+      "imageSha256": "9451455c1dddbf166113182483d50ac33e0061a1292d4af20fedc02da64381f2",
+      "labelFilename": "ants_v5_final_test_002_frame_000306.txt",
+      "labelPath": "datasets/external_test/v5_final_test_002/labels/ants_v5_final_test_002_frame_000306.txt",
+      "labelSha256": "8d8393f617a86859f031175b4563dd30204bb6e7f58db5561e420ae7d185f1aa",
+      "sequenceIndex": 2,
+      "timestampSeconds": 5.102029,
+      "verifiedZeroAdult": false,
+      "width": 1920
+    },
+    {
+      "annotationCount": 4,
+      "annotations": [
+        {
+          "areaRatio": 0.00892361658,
+          "classId": 0,
+          "className": "ant",
+          "height": 0.220991,
+          "line": 1,
+          "pixelBox": {
+            "maxBoundaryOverrunPixels": 0.0,
+            "xMax": 864.80064,
+            "xMin": 787.2710400000001,
+            "yMax": 635.56002,
+            "yMin": 396.8897400000001
+          },
+          "width": 0.04038,
+          "xCenter": 0.430227,
+          "yCenter": 0.477986
+        },
+        {
+          "areaRatio": 0.0033121888,
+          "classId": 0,
+          "className": "ant",
+          "height": 0.05363,
+          "line": 2,
+          "pixelBox": {
+            "maxBoundaryOverrunPixels": 0.0,
+            "xMax": 930.1689600000001,
+            "xMin": 811.58976,
+            "yMax": 703.9699200000001,
+            "yMin": 646.04952
+          },
+          "width": 0.06176,
+          "xCenter": 0.453583,
+          "yCenter": 0.625009
+        },
+        {
+          "areaRatio": 0.002117655199,
+          "classId": 0,
+          "className": "ant",
+          "height": 0.053491,
+          "line": 3,
+          "pixelBox": {
+            "maxBoundaryOverrunPixels": 0.0,
+            "xMax": 471.07104,
+            "xMin": 395.06016,
+            "yMax": 644.68062,
+            "yMin": 586.9103400000001
+          },
+          "width": 0.039589,
+          "xCenter": 0.225555,
+          "yCenter": 0.570181
+        },
+        {
+          "areaRatio": 0.002658125652,
+          "classId": 0,
+          "className": "ant",
+          "height": 0.063343,
+          "line": 4,
+          "pixelBox": {
+            "maxBoundaryOverrunPixels": 0.0,
+            "xMax": 385.94112,
+            "xMin": 305.37023999999997,
+            "yMax": 731.3301,
+            "yMin": 662.91966
+          },
+          "width": 0.041964,
+          "xCenter": 0.180029,
+          "yCenter": 0.645486
+        }
+      ],
+      "frameIndex": 428,
+      "height": 1080,
+      "imageFilename": "ants_v5_final_test_002_frame_000428.png",
+      "imagePath": "datasets/external_test/v5_final_test_002/images/ants_v5_final_test_002_frame_000428.png",
+      "imageSha256": "21167747d2a024b793bc69f8140937be1958422c56850c66acf1270bb015395d",
+      "labelFilename": "ants_v5_final_test_002_frame_000428.txt",
+      "labelPath": "datasets/external_test/v5_final_test_002/labels/ants_v5_final_test_002_frame_000428.txt",
+      "labelSha256": "5bd6509fa5518af0d805dac8941b751f36b0258010505db2c6eed47ce6a16260",
+      "sequenceIndex": 3,
+      "timestampSeconds": 7.136172,
+      "verifiedZeroAdult": false,
+      "width": 1920
+    },
+    {
+      "annotationCount": 4,
+      "annotations": [
+        {
+          "areaRatio": 0.011731102119,
+          "classId": 0,
+          "className": "ant",
+          "height": 0.101481,
+          "line": 1,
+          "pixelBox": {
+            "maxBoundaryOverrunPixels": 0.0,
+            "xMax": 767.50944,
+            "xMin": 545.55936,
+            "yMax": 614.26998,
+            "yMin": 504.6705
+          },
+          "width": 0.115599,
+          "xCenter": 0.341945,
+          "yCenter": 0.518028
+        },
+        {
+          "areaRatio": 0.00182020932,
+          "classId": 0,
+          "className": "ant",
+          "height": 0.03238,
+          "line": 2,
+          "pixelBox": {
+            "maxBoundaryOverrunPixels": 0.0,
+            "xMax": 770.54976,
+            "xMin": 662.6188800000001,
+            "yMax": 699.41016,
+            "yMin": 664.43976
+          },
+          "width": 0.056214,
+          "xCenter": 0.373221,
+          "yCenter": 0.631412
+        },
+        {
+          "areaRatio": 0.001186018113,
+          "classId": 0,
+          "className": "ant",
+          "height": 0.039417,
+          "line": 3,
+          "pixelBox": {
+            "maxBoundaryOverrunPixels": 0.0,
+            "xMax": 521.2406400000001,
+            "xMin": 463.46976000000006,
+            "yMax": 703.97046,
+            "yMin": 661.4001
+          },
+          "width": 0.030089,
+          "xCenter": 0.256435,
+          "yCenter": 0.632116
+        },
+        {
+          "areaRatio": 0.001948249202,
+          "classId": 0,
+          "className": "ant",
+          "height": 0.053491,
+          "line": 4,
+          "pixelBox": {
+            "maxBoundaryOverrunPixels": 0.0,
+            "xMax": 360.09984,
+            "xMin": 290.16959999999995,
+            "yMax": 723.73014,
+            "yMin": 665.95986
+          },
+          "width": 0.036422,
+          "xCenter": 0.169341,
+          "yCenter": 0.643375
+        }
+      ],
+      "frameIndex": 551,
+      "height": 1080,
+      "imageFilename": "ants_v5_final_test_002_frame_000551.png",
+      "imagePath": "datasets/external_test/v5_final_test_002/images/ants_v5_final_test_002_frame_000551.png",
+      "imageSha256": "154a2b09bb948949e69fb04ded489dd8f273c5fb111955aa743723b577bf45f4",
+      "labelFilename": "ants_v5_final_test_002_frame_000551.txt",
+      "labelPath": "datasets/external_test/v5_final_test_002/labels/ants_v5_final_test_002_frame_000551.txt",
+      "labelSha256": "07f254e5e970871d02438123e53d6b8754eeadcb2f801268da5e294eb82d9248",
+      "sequenceIndex": 4,
+      "timestampSeconds": 9.186988,
+      "verifiedZeroAdult": false,
+      "width": 1920
+    },
+    {
+      "annotationCount": 3,
+      "annotations": [
+        {
+          "areaRatio": 0.010418126,
+          "classId": 0,
+          "className": "ant",
+          "height": 0.086,
+          "line": 1,
+          "pixelBox": {
+            "maxBoundaryOverrunPixels": 0.0,
+            "xMax": 658.0598399999999,
+            "xMin": 425.46912000000003,
+            "yMax": 614.27052,
+            "yMin": 521.39052
+          },
+          "width": 0.121141,
+          "xCenter": 0.282169,
+          "yCenter": 0.525769
+        },
+        {
+          "areaRatio": 0.00244278078,
+          "classId": 0,
+          "className": "ant",
+          "height": 0.039556,
+          "line": 2,
+          "pixelBox": {
+            "maxBoundaryOverrunPixels": 0.0,
+            "xMax": 633.7296,
+            "xMin": 515.16,
+            "yMax": 700.92972,
+            "yMin": 658.20924
+          },
+          "width": 0.061755,
+          "xCenter": 0.29919,
+          "yCenter": 0.629231
+        },
+        {
+          "areaRatio": 0.0024343969120000004,
+          "classId": 0,
+          "className": "ant",
+          "height": 0.054898,
+          "line": 3,
+          "pixelBox": {
+            "maxBoundaryOverrunPixels": 0.0,
+            "xMax": 325.14047999999997,
+            "xMin": 240.0,
+            "yMax": 708.5296799999999,
+            "yMin": 649.2398400000001
+          },
+          "width": 0.044344,
+          "xCenter": 0.147172,
+          "yCenter": 0.628597
+        }
+      ],
+      "frameIndex": 673,
+      "height": 1080,
+      "imageFilename": "ants_v5_final_test_002_frame_000673.png",
+      "imagePath": "datasets/external_test/v5_final_test_002/images/ants_v5_final_test_002_frame_000673.png",
+      "imageSha256": "3c41d94656bf8fe4c7ee97e9c47d13ce2c786b89164425e3fa0271a158803e31",
+      "labelFilename": "ants_v5_final_test_002_frame_000673.txt",
+      "labelPath": "datasets/external_test/v5_final_test_002/labels/ants_v5_final_test_002_frame_000673.txt",
+      "labelSha256": "809a325c2c975e038c53b0da03c1d0bc0ee0387b7cae1810cfb5477d02fb55f6",
+      "sequenceIndex": 5,
+      "timestampSeconds": 11.22113,
+      "verifiedZeroAdult": false,
+      "width": 1920
+    },
+    {
+      "annotationCount": 4,
+      "annotations": [
+        {
+          "areaRatio": 0.010865301949,
+          "classId": 0,
+          "className": "ant",
+          "height": 0.087407,
+          "line": 1,
+          "pixelBox": {
+            "maxBoundaryOverrunPixels": 0.0,
+            "xMax": 693.0192,
+            "xMin": 454.34976,
+            "yMax": 605.14938,
+            "yMin": 510.74981999999994
+          },
+          "width": 0.124307,
+          "xCenter": 0.298794,
+          "yCenter": 0.51662
+        },
+        {
+          "areaRatio": 0.002204922406,
+          "classId": 0,
+          "className": "ant",
+          "height": 0.040954,
+          "line": 2,
+          "pixelBox": {
+            "maxBoundaryOverrunPixels": 0.0,
+            "xMax": 645.8908799999999,
+            "xMin": 542.52,
+            "yMax": 696.36024,
+            "yMin": 652.1299200000001
+          },
+          "width": 0.053839,
+          "xCenter": 0.309482,
+          "yCenter": 0.624301
+        },
+        {
+          "areaRatio": 0.0035897242699999997,
+          "classId": 0,
+          "className": "ant",
+          "height": 0.094454,
+          "line": 3,
+          "pixelBox": {
+            "maxBoundaryOverrunPixels": 0.0,
+            "xMax": 572.92896,
+            "xMin": 499.95936,
+            "yMax": 488.10060000000004,
+            "yMin": 386.09028
+          },
+          "width": 0.038005,
+          "xCenter": 0.279398,
+          "yCenter": 0.404718
+        },
+        {
+          "areaRatio": 0.003133944033,
+          "classId": 0,
+          "className": "ant",
+          "height": 0.064889,
+          "line": 4,
+          "pixelBox": {
+            "maxBoundaryOverrunPixels": 0.0,
+            "xMax": 440.66976,
+            "xMin": 347.93952,
+            "yMax": 444.01014,
+            "yMin": 373.93002
+          },
+          "width": 0.048297,
+          "xCenter": 0.205367,
+          "yCenter": 0.378676
+        }
+      ],
+      "frameIndex": 796,
+      "height": 1080,
+      "imageFilename": "ants_v5_final_test_002_frame_000796.png",
+      "imagePath": "datasets/external_test/v5_final_test_002/images/ants_v5_final_test_002_frame_000796.png",
+      "imageSha256": "dc381e942774d38608f10be0792c5d7ad22cd5a49240f051711c02a6043edaca",
+      "labelFilename": "ants_v5_final_test_002_frame_000796.txt",
+      "labelPath": "datasets/external_test/v5_final_test_002/labels/ants_v5_final_test_002_frame_000796.txt",
+      "labelSha256": "6fee24933d62d53a1d8a9e1cd4fc80cd1861047e41fe8afee2c77174ff183644",
+      "sequenceIndex": 6,
+      "timestampSeconds": 13.271946,
+      "verifiedZeroAdult": false,
+      "width": 1920
+    },
+    {
+      "annotationCount": 4,
+      "annotations": [
+        {
+          "areaRatio": 0.00306440239,
+          "classId": 0,
+          "className": "ant",
+          "height": 0.07037,
+          "line": 1,
+          "pixelBox": {
+            "maxBoundaryOverrunPixels": 0.0,
+            "xMax": 718.8604799999999,
+            "xMin": 635.25024,
+            "yMax": 450.09000000000003,
+            "yMin": 374.0904
+          },
+          "width": 0.043547,
+          "xCenter": 0.352633,
+          "yCenter": 0.381565
+        },
+        {
+          "areaRatio": 0.011459777564,
+          "classId": 0,
+          "className": "ant",
+          "height": 0.095852,
+          "line": 2,
+          "pixelBox": {
+            "maxBoundaryOverrunPixels": 0.0,
+            "xMax": 691.5004799999999,
+            "xMin": 461.9510399999999,
+            "yMax": 586.9098,
+            "yMin": 483.38963999999993
+          },
+          "width": 0.119557,
+          "xCenter": 0.300378,
+          "yCenter": 0.495509
+        },
+        {
+          "areaRatio": 0.001760572956,
+          "classId": 0,
+          "className": "ant",
+          "height": 0.028148,
+          "line": 3,
+          "pixelBox": {
+            "maxBoundaryOverrunPixels": 0.0,
+            "xMax": 458.90976000000006,
+            "xMin": 338.81952,
+            "yMax": 497.22012,
+            "yMin": 466.82028
+          },
+          "width": 0.062547,
+          "xCenter": 0.207742,
+          "yCenter": 0.446315
+        },
+        {
+          "areaRatio": 0.001952267066,
+          "classId": 0,
+          "className": "ant",
+          "height": 0.033778,
+          "line": 4,
+          "pixelBox": {
+            "maxBoundaryOverrunPixels": 0.0,
+            "xMax": 644.37024,
+            "xMin": 533.4000000000001,
+            "yMax": 662.9202,
+            "yMin": 626.4399599999999
+          },
+          "width": 0.057797,
+          "xCenter": 0.306711,
+          "yCenter": 0.596926
+        }
+      ],
+      "frameIndex": 918,
+      "height": 1080,
+      "imageFilename": "ants_v5_final_test_002_frame_000918.png",
+      "imagePath": "datasets/external_test/v5_final_test_002/images/ants_v5_final_test_002_frame_000918.png",
+      "imageSha256": "4c765945612e4dea84d2bfe1ddfe2c0745a02418fcaf92a14c96a96aa943e93e",
+      "labelFilename": "ants_v5_final_test_002_frame_000918.txt",
+      "labelPath": "datasets/external_test/v5_final_test_002/labels/ants_v5_final_test_002_frame_000918.txt",
+      "labelSha256": "7726b954242bcb508420ebbdea5420b848213ae166bec6713616a65459f82beb",
+      "sequenceIndex": 7,
+      "timestampSeconds": 15.306088,
+      "verifiedZeroAdult": false,
+      "width": 1920
+    },
+    {
+      "annotationCount": 4,
+      "annotations": [
+        {
+          "areaRatio": 0.01357873146,
+          "classId": 0,
+          "className": "ant",
+          "height": 0.109935,
+          "line": 1,
+          "pixelBox": {
+            "maxBoundaryOverrunPixels": 0.0,
+            "xMax": 686.9395199999999,
+            "xMin": 449.7887999999999,
+            "yMax": 580.82994,
+            "yMin": 462.10014
+          },
+          "width": 0.123516,
+          "xCenter": 0.296023,
+          "yCenter": 0.482838
+        },
+        {
+          "areaRatio": 0.0019890784199999996,
+          "classId": 0,
+          "className": "ant",
+          "height": 0.049259,
+          "line": 2,
+          "pixelBox": {
+            "maxBoundaryOverrunPixels": 0.0,
+            "xMax": 1022.8992000000001,
+            "xMin": 945.3696,
+            "yMax": 612.74934,
+            "yMin": 559.54962
+          },
+          "width": 0.04038,
+          "xCenter": 0.51257,
+          "yCenter": 0.542731
+        },
+        {
+          "areaRatio": 0.001354790717,
+          "classId": 0,
+          "className": "ant",
+          "height": 0.031111,
+          "line": 3,
+          "pixelBox": {
+            "maxBoundaryOverrunPixels": 0.0,
+            "xMax": 647.4096,
+            "xMin": 563.79936,
+            "yMax": 643.15998,
+            "yMin": 609.5600999999999
+          },
+          "width": 0.043547,
+          "xCenter": 0.315419,
+          "yCenter": 0.579963
+        },
+        {
+          "areaRatio": 0.002060423586,
+          "classId": 0,
+          "className": "ant",
+          "height": 0.100074,
+          "line": 4,
+          "pixelBox": {
+            "maxBoundaryOverrunPixels": 0.0,
+            "xMax": 344.90016,
+            "xMin": 305.36927999999995,
+            "yMax": 678.12012,
+            "yMin": 570.0402
+          },
+          "width": 0.020589,
+          "xCenter": 0.169341,
+          "yCenter": 0.577852
+        }
+      ],
+      "frameIndex": 1040,
+      "height": 1080,
+      "imageFilename": "ants_v5_final_test_002_frame_001040.png",
+      "imagePath": "datasets/external_test/v5_final_test_002/images/ants_v5_final_test_002_frame_001040.png",
+      "imageSha256": "6a6fa4f8e393676a3451db5d073dffebd1c3f455f61b048930c56a8460c751b2",
+      "labelFilename": "ants_v5_final_test_002_frame_001040.txt",
+      "labelPath": "datasets/external_test/v5_final_test_002/labels/ants_v5_final_test_002_frame_001040.txt",
+      "labelSha256": "c80700789ecac7912da02a87ce353e4ecd51c80f2c3ec4f2e23af4c66239e9eb",
+      "sequenceIndex": 8,
+      "timestampSeconds": 17.340231,
+      "verifiedZeroAdult": false,
+      "width": 1920
+    },
+    {
+      "annotationCount": 5,
+      "annotations": [
+        {
+          "areaRatio": 0.014632495368000003,
+          "classId": 0,
+          "className": "ant",
+          "height": 0.116972,
+          "line": 1,
+          "pixelBox": {
+            "maxBoundaryOverrunPixels": 0.0,
+            "xMax": 645.88992,
+            "xMin": 405.7094399999999,
+            "yMax": 588.4293600000001,
+            "yMin": 462.0996
+          },
+          "width": 0.125094,
+          "xCenter": 0.273854,
+          "yCenter": 0.486356
+        },
+        {
+          "areaRatio": 0.003493883316,
+          "classId": 0,
+          "className": "ant",
+          "height": 0.064889,
+          "line": 2,
+          "pixelBox": {
+            "maxBoundaryOverrunPixels": 0.0,
+            "xMax": 1149.07968,
+            "xMin": 1045.6992,
+            "yMax": 629.47962,
+            "yMin": 559.3995
+          },
+          "width": 0.053844,
+          "xCenter": 0.571557,
+          "yCenter": 0.550407
+        },
+        {
+          "areaRatio": 0.0015838487279999998,
+          "classId": 0,
+          "className": "ant",
+          "height": 0.040824,
+          "line": 3,
+          "pixelBox": {
+            "maxBoundaryOverrunPixels": 0.0,
+            "xMax": 689.97984,
+            "xMin": 615.4896,
+            "yMax": 714.6100799999999,
+            "yMin": 670.5201599999999
+          },
+          "width": 0.038797,
+          "xCenter": 0.339966,
+          "yCenter": 0.641264
+        },
+        {
+          "areaRatio": 0.0031146938279999997,
+          "classId": 0,
+          "className": "ant",
+          "height": 0.057852,
+          "line": 4,
+          "pixelBox": {
+            "maxBoundaryOverrunPixels": 0.0,
+            "xMax": 610.9295999999999,
+            "xMin": 507.55872000000005,
+            "yMax": 653.7995999999999,
+            "yMin": 591.31944
+          },
+          "width": 0.053839,
+          "xCenter": 0.291273,
+          "yCenter": 0.576444
+        },
+        {
+          "areaRatio": 0.002189857868,
+          "classId": 0,
+          "className": "ant",
+          "height": 0.056444,
+          "line": 5,
+          "pixelBox": {
+            "maxBoundaryOverrunPixels": 0.0,
+            "xMax": 279.52992,
+            "xMin": 205.03968,
+            "yMax": 702.44928,
+            "yMin": 641.48976
+          },
+          "width": 0.038797,
+          "xCenter": 0.12619,
+          "yCenter": 0.622194
+        }
+      ],
+      "frameIndex": 1163,
+      "height": 1080,
+      "imageFilename": "ants_v5_final_test_002_frame_001163.png",
+      "imagePath": "datasets/external_test/v5_final_test_002/images/ants_v5_final_test_002_frame_001163.png",
+      "imageSha256": "8a407c3885eb53400b0215b3ff8c7299714f5418ad645a99d69ccbf19c994234",
+      "labelFilename": "ants_v5_final_test_002_frame_001163.txt",
+      "labelPath": "datasets/external_test/v5_final_test_002/labels/ants_v5_final_test_002_frame_001163.txt",
+      "labelSha256": "437e588e13e240f7b9661d01fb612ac92c09b1855780f7ad7c4b7e76be0fe567",
+      "sequenceIndex": 9,
+      "timestampSeconds": 19.391047,
+      "verifiedZeroAdult": false,
+      "width": 1920
+    },
+    {
+      "annotationCount": 5,
+      "annotations": [
+        {
+          "areaRatio": 0.016869621183999997,
+          "classId": 0,
+          "className": "ant",
+          "height": 0.126824,
+          "line": 1,
+          "pixelBox": {
+            "maxBoundaryOverrunPixels": 0.0,
+            "xMax": 648.9312000000001,
+            "xMin": 393.54048,
+            "yMax": 573.2294400000001,
+            "yMin": 436.25951999999995
+          },
+          "width": 0.133016,
+          "xCenter": 0.271477,
+          "yCenter": 0.467356
+        },
+        {
+          "areaRatio": 0.00247755148,
+          "classId": 0,
+          "className": "ant",
+          "height": 0.104296,
+          "line": 2,
+          "pixelBox": {
+            "maxBoundaryOverrunPixels": 0.0,
+            "xMax": 1138.44,
+            "xMin": 1092.8304,
+            "yMax": 530.66016,
+            "yMin": 418.02047999999996
+          },
+          "width": 0.023755,
+          "xCenter": 0.58106,
+          "yCenter": 0.439204
+        },
+        {
+          "areaRatio": 0.001921141889,
+          "classId": 0,
+          "className": "ant",
+          "height": 0.060667,
+          "line": 3,
+          "pixelBox": {
+            "maxBoundaryOverrunPixels": 0.0,
+            "xMax": 1048.7395199999999,
+            "xMin": 987.9388800000002,
+            "yMax": 637.0806600000001,
+            "yMin": 571.5603000000001
+          },
+          "width": 0.031667,
+          "xCenter": 0.530385,
+          "yCenter": 0.559556
+        },
+        {
+          "areaRatio": 0.002904834016,
+          "classId": 0,
+          "className": "ant",
+          "height": 0.056444,
+          "line": 4,
+          "pixelBox": {
+            "maxBoundaryOverrunPixels": 0.0,
+            "xMax": 635.2511999999999,
+            "xMin": 536.44032,
+            "yMax": 641.63988,
+            "yMin": 580.68036
+          },
+          "width": 0.051464,
+          "xCenter": 0.305128,
+          "yCenter": 0.565889
+        },
+        {
+          "areaRatio": 0.004154657819999999,
+          "classId": 0,
+          "className": "ant",
+          "height": 0.102889,
+          "line": 5,
+          "pixelBox": {
+            "maxBoundaryOverrunPixels": 0.0,
+            "xMax": 268.89024,
+            "xMin": 191.36064000000002,
+            "yMax": 752.61042,
+            "yMin": 641.4903
+          },
+          "width": 0.04038,
+          "xCenter": 0.119857,
+          "yCenter": 0.645417
+        }
+      ],
+      "frameIndex": 1285,
+      "height": 1080,
+      "imageFilename": "ants_v5_final_test_002_frame_001285.png",
+      "imagePath": "datasets/external_test/v5_final_test_002/images/ants_v5_final_test_002_frame_001285.png",
+      "imageSha256": "adcefeb7c48cd6a88e8903013e32e02fb8bf44aec57023b553568fea7f068eb7",
+      "labelFilename": "ants_v5_final_test_002_frame_001285.txt",
+      "labelPath": "datasets/external_test/v5_final_test_002/labels/ants_v5_final_test_002_frame_001285.txt",
+      "labelSha256": "6b7adc4f64d8b2aaa12db5b01ecad109cafb8a782fcfa0a5e4db18ede57738be",
+      "sequenceIndex": 10,
+      "timestampSeconds": 21.425189,
+      "verifiedZeroAdult": false,
+      "width": 1920
+    },
+    {
+      "annotationCount": 5,
+      "annotations": [
+        {
+          "areaRatio": 0.017801934912,
+          "classId": 0,
+          "className": "ant",
+          "height": 0.169056,
+          "line": 1,
+          "pixelBox": {
+            "maxBoundaryOverrunPixels": 0.0,
+            "xMax": 706.70016,
+            "xMin": 504.52031999999997,
+            "yMax": 635.56056,
+            "yMin": 452.98008000000004
+          },
+          "width": 0.105302,
+          "xCenter": 0.315422,
+          "yCenter": 0.503954
+        },
+        {
+          "areaRatio": 0.0031885259400000004,
+          "classId": 0,
+          "className": "ant",
+          "height": 0.078963,
+          "line": 2,
+          "pixelBox": {
+            "maxBoundaryOverrunPixels": 0.0,
+            "xMax": 667.1788799999999,
+            "xMin": 589.6492800000001,
+            "yMax": 676.6000199999999,
+            "yMin": 591.31998
+          },
+          "width": 0.04038,
+          "xCenter": 0.327299,
+          "yCenter": 0.587
+        },
+        {
+          "areaRatio": 0.00262224,
+          "classId": 0,
+          "className": "ant",
+          "height": 0.048,
+          "line": 3,
+          "pixelBox": {
+            "maxBoundaryOverrunPixels": 0.0,
+            "xMax": 1326.93888,
+            "xMin": 1222.0492800000002,
+            "yMax": 672.03972,
+            "yMin": 620.19972
+          },
+          "width": 0.05463,
+          "xCenter": 0.663799,
+          "yCenter": 0.598259
+        },
+        {
+          "areaRatio": 0.002287077548,
+          "classId": 0,
+          "className": "ant",
+          "height": 0.038009,
+          "line": 4,
+          "pixelBox": {
+            "maxBoundaryOverrunPixels": 0.0,
+            "xMax": 1606.65024,
+            "xMin": 1491.12,
+            "yMax": 536.74974,
+            "yMin": 495.70002000000005
+          },
+          "width": 0.060172,
+          "xCenter": 0.806711,
+          "yCenter": 0.477986
+        },
+        {
+          "areaRatio": 0.004557565467000001,
+          "classId": 0,
+          "className": "ant",
+          "height": 0.133861,
+          "line": 5,
+          "pixelBox": {
+            "maxBoundaryOverrunPixels": 0.0,
+            "xMax": 361.61951999999997,
+            "xMin": 296.24928,
+            "yMax": 667.47942,
+            "yMin": 522.90954
+          },
+          "width": 0.034047,
+          "xCenter": 0.17132,
+          "yCenter": 0.551106
+        }
+      ],
+      "frameIndex": 1408,
+      "height": 1080,
+      "imageFilename": "ants_v5_final_test_002_frame_001408.png",
+      "imagePath": "datasets/external_test/v5_final_test_002/images/ants_v5_final_test_002_frame_001408.png",
+      "imageSha256": "0c906692c0283b550c52487a9951ef100761d4c49cd5666284b3eb5515e82aef",
+      "labelFilename": "ants_v5_final_test_002_frame_001408.txt",
+      "labelPath": "datasets/external_test/v5_final_test_002/labels/ants_v5_final_test_002_frame_001408.txt",
+      "labelSha256": "69da5da732da050cade58ade26bd1818673590cfa3db190bacd524863e5764d6",
+      "sequenceIndex": 11,
+      "timestampSeconds": 23.476005,
+      "verifiedZeroAdult": false,
+      "width": 1920
+    },
+    {
+      "annotationCount": 4,
+      "annotations": [
+        {
+          "areaRatio": 0.01426604076,
+          "classId": 0,
+          "className": "ant",
+          "height": 0.12963,
+          "line": 1,
+          "pixelBox": {
+            "maxBoundaryOverrunPixels": 0.0,
+            "xMax": 705.17952,
+            "xMin": 493.87967999999995,
+            "yMax": 614.2705199999999,
+            "yMin": 474.27012
+          },
+          "width": 0.110052,
+          "xCenter": 0.312255,
+          "yCenter": 0.503954
+        },
+        {
+          "areaRatio": 0.002517777984,
+          "classId": 0,
+          "className": "ant",
+          "height": 0.077556,
+          "line": 2,
+          "pixelBox": {
+            "maxBoundaryOverrunPixels": 0.0,
+            "xMax": 668.69952,
+            "xMin": 606.3686399999999,
+            "yMax": 673.56036,
+            "yMin": 589.79988
+          },
+          "width": 0.032464,
+          "xCenter": 0.332049,
+          "yCenter": 0.584889
+        },
+        {
+          "areaRatio": 0.002290545,
+          "classId": 0,
+          "className": "ant",
+          "height": 0.08037,
+          "line": 3,
+          "pixelBox": {
+            "maxBoundaryOverrunPixels": 0.0,
+            "xMax": 1361.9001600000001,
+            "xMin": 1307.1801600000001,
+            "yMax": 559.5501599999999,
+            "yMin": 472.75056
+          },
+          "width": 0.0285,
+          "xCenter": 0.695073,
+          "yCenter": 0.477917
+        },
+        {
+          "areaRatio": 0.003209209776,
+          "classId": 0,
+          "className": "ant",
+          "height": 0.063333,
+          "line": 4,
+          "pixelBox": {
+            "maxBoundaryOverrunPixels": 0.0,
+            "xMax": 468.03072000000003,
+            "xMin": 370.74048000000005,
+            "yMax": 603.62982,
+            "yMin": 535.23018
+          },
+          "width": 0.050672,
+          "xCenter": 0.21843,
+          "yCenter": 0.52725
+        }
+      ],
+      "frameIndex": 1530,
+      "height": 1080,
+      "imageFilename": "ants_v5_final_test_002_frame_001530.png",
+      "imagePath": "datasets/external_test/v5_final_test_002/images/ants_v5_final_test_002_frame_001530.png",
+      "imageSha256": "a64fc67270b2a4f4d48568023be3b2f5042d85c2dba7e6ccd9cc190578bb20e7",
+      "labelFilename": "ants_v5_final_test_002_frame_001530.txt",
+      "labelPath": "datasets/external_test/v5_final_test_002/labels/ants_v5_final_test_002_frame_001530.txt",
+      "labelSha256": "762a01f056cbb1eb68c89ff9d5f50c9513b1521309007d0bd837a7991d00bd47",
+      "sequenceIndex": 12,
+      "timestampSeconds": 25.510147,
+      "verifiedZeroAdult": false,
+      "width": 1920
+    },
+    {
+      "annotationCount": 5,
+      "annotations": [
+        {
+          "areaRatio": 0.019574948829999998,
+          "classId": 0,
+          "className": "ant",
+          "height": 0.18313,
+          "line": 1,
+          "pixelBox": {
+            "maxBoundaryOverrunPixels": 0.0,
+            "xMax": 658.0598399999999,
+            "xMin": 452.82912,
+            "yMax": 702.45036,
+            "yMin": 504.66996
+          },
+          "width": 0.106891,
+          "xCenter": 0.289294,
+          "yCenter": 0.558852
+        },
+        {
+          "areaRatio": 0.002653233723,
+          "classId": 0,
+          "className": "ant",
+          "height": 0.076157,
+          "line": 2,
+          "pixelBox": {
+            "maxBoundaryOverrunPixels": 0.0,
+            "xMax": 673.2604799999999,
+            "xMin": 606.3696000000001,
+            "yMax": 700.93026,
+            "yMin": 618.6807
+          },
+          "width": 0.034839,
+          "xCenter": 0.333237,
+          "yCenter": 0.610931
+        },
+        {
+          "areaRatio": 0.00279512655,
+          "classId": 0,
+          "className": "ant",
+          "height": 0.061935,
+          "line": 3,
+          "pixelBox": {
+            "maxBoundaryOverrunPixels": 0.0,
+            "xMax": 452.83008,
+            "xMin": 366.18048,
+            "yMax": 617.3199000000001,
+            "yMin": 550.4301
+          },
+          "width": 0.04513,
+          "xCenter": 0.213284,
+          "yCenter": 0.540625
+        },
+        {
+          "areaRatio": 0.002028091548,
+          "classId": 0,
+          "className": "ant",
+          "height": 0.049259,
+          "line": 4,
+          "pixelBox": {
+            "maxBoundaryOverrunPixels": 0.0,
+            "xMax": 1257.01056,
+            "xMin": 1177.96032,
+            "yMax": 439.45038000000005,
+            "yMin": 386.25066
+          },
+          "width": 0.041172,
+          "xCenter": 0.634107,
+          "yCenter": 0.382269
+        },
+        {
+          "areaRatio": 0.00260458769,
+          "classId": 0,
+          "className": "ant",
+          "height": 0.057713,
+          "line": 5,
+          "pixelBox": {
+            "maxBoundaryOverrunPixels": 0.0,
+            "xMax": 1722.1900799999999,
+            "xMin": 1635.5404800000001,
+            "yMax": 1032.33042,
+            "yMin": 970.0003800000001
+          },
+          "width": 0.04513,
+          "xCenter": 0.874409,
+          "yCenter": 0.927005
+        }
+      ],
+      "frameIndex": 1653,
+      "height": 1080,
+      "imageFilename": "ants_v5_final_test_002_frame_001653.png",
+      "imagePath": "datasets/external_test/v5_final_test_002/images/ants_v5_final_test_002_frame_001653.png",
+      "imageSha256": "95e82233c3e99adef6afcb5e324ee4e38419c22e536df504e443f7fc82238f85",
+      "labelFilename": "ants_v5_final_test_002_frame_001653.txt",
+      "labelPath": "datasets/external_test/v5_final_test_002/labels/ants_v5_final_test_002_frame_001653.txt",
+      "labelSha256": "206bb344b175a6d7db1e3769ee52bbd96577af1df785904e77ab53e5e5bec7b2",
+      "sequenceIndex": 13,
+      "timestampSeconds": 27.560963,
+      "verifiedZeroAdult": false,
+      "width": 1920
+    },
+    {
+      "annotationCount": 4,
+      "annotations": [
+        {
+          "areaRatio": 0.015397755749999999,
+          "classId": 0,
+          "className": "ant",
+          "height": 0.15075,
+          "line": 1,
+          "pixelBox": {
+            "maxBoundaryOverrunPixels": 0.0,
+            "xMax": 665.66112,
+            "xMin": 469.5504,
+            "yMax": 694.8396,
+            "yMin": 532.0296000000001
+          },
+          "width": 0.102141,
+          "xCenter": 0.295628,
+          "yCenter": 0.567995
+        },
+        {
+          "areaRatio": 0.0029280419999999996,
+          "classId": 0,
+          "className": "ant",
+          "height": 0.086,
+          "line": 2,
+          "pixelBox": {
+            "maxBoundaryOverrunPixels": 0.0,
+            "xMax": 661.0992000000001,
+            "xMin": 595.7289599999999,
+            "yMax": 740.4501600000001,
+            "yMin": 647.57016
+          },
+          "width": 0.034047,
+          "xCenter": 0.327299,
+          "yCenter": 0.642602
+        },
+        {
+          "areaRatio": 0.001183405762,
+          "classId": 0,
+          "className": "ant",
+          "height": 0.025333,
+          "line": 3,
+          "pixelBox": {
+            "maxBoundaryOverrunPixels": 0.0,
+            "xMax": 987.93984,
+            "xMin": 898.2489599999999,
+            "yMax": 512.4195,
+            "yMin": 485.05985999999996
+          },
+          "width": 0.046714,
+          "xCenter": 0.491195,
+          "yCenter": 0.461796
+        },
+        {
+          "areaRatio": 0.002453122746,
+          "classId": 0,
+          "className": "ant",
+          "height": 0.043639,
+          "line": 4,
+          "pixelBox": {
+            "maxBoundaryOverrunPixels": 0.0,
+            "xMax": 472.59072,
+            "xMin": 364.65984000000003,
+            "yMax": 629.47962,
+            "yMin": 582.3495
+          },
+          "width": 0.056214,
+          "xCenter": 0.218034,
+          "yCenter": 0.561032
+        }
+      ],
+      "frameIndex": 1775,
+      "height": 1080,
+      "imageFilename": "ants_v5_final_test_002_frame_001775.png",
+      "imagePath": "datasets/external_test/v5_final_test_002/images/ants_v5_final_test_002_frame_001775.png",
+      "imageSha256": "42bc9a10dfdc35e036fa49030802d156abbea0562198f2c195d8b67932938409",
+      "labelFilename": "ants_v5_final_test_002_frame_001775.txt",
+      "labelPath": "datasets/external_test/v5_final_test_002/labels/ants_v5_final_test_002_frame_001775.txt",
+      "labelSha256": "5b12c16b916f6a36b84d81babe8179dfcd8f02bcf1625d46502e35c95217119c",
+      "sequenceIndex": 14,
+      "timestampSeconds": 29.595105,
+      "verifiedZeroAdult": false,
+      "width": 1920
+    },
+    {
+      "annotationCount": 4,
+      "annotations": [
+        {
+          "areaRatio": 0.00197592003,
+          "classId": 0,
+          "className": "ant",
+          "height": 0.043778,
+          "line": 1,
+          "pixelBox": {
+            "maxBoundaryOverrunPixels": 0.0,
+            "xMax": 975.77952,
+            "xMin": 889.12032,
+            "yMax": 536.75028,
+            "yMin": 489.47004000000004
+          },
+          "width": 0.045135,
+          "xCenter": 0.485651,
+          "yCenter": 0.475102
+        },
+        {
+          "areaRatio": 0.002857060074,
+          "classId": 0,
+          "className": "ant",
+          "height": 0.090222,
+          "line": 2,
+          "pixelBox": {
+            "maxBoundaryOverrunPixels": 0.0,
+            "xMax": 645.89088,
+            "xMin": 585.09024,
+            "yMax": 743.49036,
+            "yMin": 646.0506
+          },
+          "width": 0.031667,
+          "xCenter": 0.320568,
+          "yCenter": 0.643306
+        },
+        {
+          "areaRatio": 0.012993204080000001,
+          "classId": 0,
+          "className": "ant",
+          "height": 0.115565,
+          "line": 3,
+          "pixelBox": {
+            "maxBoundaryOverrunPixels": 0.0,
+            "xMax": 659.57952,
+            "xMin": 443.71008,
+            "yMax": 667.4804999999999,
+            "yMin": 542.6703
+          },
+          "width": 0.112432,
+          "xCenter": 0.287315,
+          "yCenter": 0.560255
+        },
+        {
+          "areaRatio": 0.002842263228,
+          "classId": 0,
+          "className": "ant",
+          "height": 0.105574,
+          "line": 4,
+          "pixelBox": {
+            "maxBoundaryOverrunPixels": 0.0,
+            "xMax": 410.26944000000003,
+            "xMin": 358.5792,
+            "yMax": 717.6502800000001,
+            "yMin": 603.63036
+          },
+          "width": 0.026922,
+          "xCenter": 0.200221,
+          "yCenter": 0.611704
+        }
+      ],
+      "frameIndex": 1898,
+      "height": 1080,
+      "imageFilename": "ants_v5_final_test_002_frame_001898.png",
+      "imagePath": "datasets/external_test/v5_final_test_002/images/ants_v5_final_test_002_frame_001898.png",
+      "imageSha256": "22f0356b24a09c11415c999f570b2d1c424dc876ffd3ef64a4d57dbd90bd0f85",
+      "labelFilename": "ants_v5_final_test_002_frame_001898.txt",
+      "labelPath": "datasets/external_test/v5_final_test_002/labels/ants_v5_final_test_002_frame_001898.txt",
+      "labelSha256": "8ab2dea148b761ea742cb8ec664394df4a5946e233a7d20bcfbea018d0e24654",
+      "sequenceIndex": 15,
+      "timestampSeconds": 31.645921,
+      "verifiedZeroAdult": false,
+      "width": 1920
+    },
+    {
+      "annotationCount": 4,
+      "annotations": [
+        {
+          "areaRatio": 0.001819362258,
+          "classId": 0,
+          "className": "ant",
+          "height": 0.052222,
+          "line": 1,
+          "pixelBox": {
+            "maxBoundaryOverrunPixels": 0.0,
+            "xMax": 914.9712,
+            "xMin": 848.08032,
+            "yMax": 717.65028,
+            "yMin": 661.2505199999999
+          },
+          "width": 0.034839,
+          "xCenter": 0.459128,
+          "yCenter": 0.63838
+        },
+        {
+          "areaRatio": 0.014642461761999999,
+          "classId": 0,
+          "className": "ant",
+          "height": 0.114157,
+          "line": 2,
+          "pixelBox": {
+            "maxBoundaryOverrunPixels": 0.0,
+            "xMax": 658.0608,
+            "xMin": 411.79008,
+            "yMax": 646.20018,
+            "yMin": 522.9106200000001
+          },
+          "width": 0.128266,
+          "xCenter": 0.278607,
+          "yCenter": 0.541255
+        },
+        {
+          "areaRatio": 0.00260421525,
+          "classId": 0,
+          "className": "ant",
+          "height": 0.07475,
+          "line": 3,
+          "pixelBox": {
+            "maxBoundaryOverrunPixels": 0.0,
+            "xMax": 656.54112,
+            "xMin": 589.65024,
+            "yMax": 707.0101200000001,
+            "yMin": 626.28012
+          },
+          "width": 0.034839,
+          "xCenter": 0.324529,
+          "yCenter": 0.617264
+        },
+        {
+          "areaRatio": 0.00419287206,
+          "classId": 0,
+          "className": "ant",
+          "height": 0.080231,
+          "line": 4,
+          "pixelBox": {
+            "maxBoundaryOverrunPixels": 0.0,
+            "xMax": 411.79008,
+            "xMin": 311.45088000000004,
+            "yMax": 830.1392999999999,
+            "yMin": 743.48982
+          },
+          "width": 0.05226,
+          "xCenter": 0.188344,
+          "yCenter": 0.728532
+        }
+      ],
+      "frameIndex": 2020,
+      "height": 1080,
+      "imageFilename": "ants_v5_final_test_002_frame_002020.png",
+      "imagePath": "datasets/external_test/v5_final_test_002/images/ants_v5_final_test_002_frame_002020.png",
+      "imageSha256": "c1dab28b23ea29061386b8e3625dc58dba43c953930a7b4a3f21104cb1f3e017",
+      "labelFilename": "ants_v5_final_test_002_frame_002020.txt",
+      "labelPath": "datasets/external_test/v5_final_test_002/labels/ants_v5_final_test_002_frame_002020.txt",
+      "labelSha256": "0d57288839efc86a9a1d178886f45b357c76233809aafeb8c4ca1ed91975f844",
+      "sequenceIndex": 16,
+      "timestampSeconds": 33.680064,
+      "verifiedZeroAdult": false,
+      "width": 1920
+    },
+    {
+      "annotationCount": 4,
+      "annotations": [
+        {
+          "areaRatio": 0.01144168529,
+          "classId": 0,
+          "className": "ant",
+          "height": 0.094454,
+          "line": 1,
+          "pixelBox": {
+            "maxBoundaryOverrunPixels": 0.0,
+            "xMax": 647.4096,
+            "xMin": 414.83040000000005,
+            "yMax": 626.43996,
+            "yMin": 524.42964
+          },
+          "width": 0.121135,
+          "xCenter": 0.276625,
+          "yCenter": 0.53281
+        },
+        {
+          "areaRatio": 0.0029959514970000004,
+          "classId": 0,
+          "className": "ant",
+          "height": 0.086009,
+          "line": 2,
+          "pixelBox": {
+            "maxBoundaryOverrunPixels": 0.0,
+            "xMax": 648.93024,
+            "xMin": 582.05088,
+            "yMax": 714.6095399999999,
+            "yMin": 621.7198199999999
+          },
+          "width": 0.034833,
+          "xCenter": 0.320568,
+          "yCenter": 0.618671
+        },
+        {
+          "areaRatio": 0.002581762785,
+          "classId": 0,
+          "className": "ant",
+          "height": 0.049407,
+          "line": 3,
+          "pixelBox": {
+            "maxBoundaryOverrunPixels": 0.0,
+            "xMax": 788.7907200000001,
+            "xMin": 688.4611199999999,
+            "yMax": 754.1299799999999,
+            "yMin": 700.77042
+          },
+          "width": 0.052255,
+          "xCenter": 0.384701,
+          "yCenter": 0.673565
+        },
+        {
+          "areaRatio": 0.003323860176,
+          "classId": 0,
+          "className": "ant",
+          "height": 0.067704,
+          "line": 4,
+          "pixelBox": {
+            "maxBoundaryOverrunPixels": 0.0,
+            "xMax": 416.35008000000005,
+            "xMin": 322.08959999999996,
+            "yMax": 802.7801999999999,
+            "yMin": 729.6598799999999
+          },
+          "width": 0.049094,
+          "xCenter": 0.192302,
+          "yCenter": 0.709463
+        }
+      ],
+      "frameIndex": 2143,
+      "height": 1080,
+      "imageFilename": "ants_v5_final_test_002_frame_002143.png",
+      "imagePath": "datasets/external_test/v5_final_test_002/images/ants_v5_final_test_002_frame_002143.png",
+      "imageSha256": "53b7b2fb0b9a2cf79b7add13e97d8f88d94c2b39ef093bae4263522d8cf09c8e",
+      "labelFilename": "ants_v5_final_test_002_frame_002143.txt",
+      "labelPath": "datasets/external_test/v5_final_test_002/labels/ants_v5_final_test_002_frame_002143.txt",
+      "labelSha256": "6e63d69fb51f1f3f55bab52dedc416f6d2d9fd678b53b054f27a6617195a3165",
+      "sequenceIndex": 17,
+      "timestampSeconds": 35.730879,
+      "verifiedZeroAdult": false,
+      "width": 1920
+    },
+    {
+      "annotationCount": 4,
+      "annotations": [
+        {
+          "areaRatio": 0.015005005303999999,
+          "classId": 0,
+          "className": "ant",
+          "height": 0.139352,
+          "line": 1,
+          "pixelBox": {
+            "maxBoundaryOverrunPixels": 0.0,
+            "xMax": 644.37024,
+            "xMin": 437.63039999999995,
+            "yMax": 626.4399599999999,
+            "yMin": 475.93979999999993
+          },
+          "width": 0.107677,
+          "xCenter": 0.281771,
+          "yCenter": 0.510361
+        },
+        {
+          "areaRatio": 0.001953940452,
+          "classId": 0,
+          "className": "ant",
+          "height": 0.070519,
+          "line": 2,
+          "pixelBox": {
+            "maxBoundaryOverrunPixels": 0.0,
+            "xMax": 632.2099199999999,
+            "xMin": 579.01056,
+            "yMax": 719.1703799999999,
+            "yMin": 643.0098599999999
+          },
+          "width": 0.027708,
+          "xCenter": 0.315422,
+          "yCenter": 0.630639
+        },
+        {
+          "areaRatio": 0.002091681185,
+          "classId": 0,
+          "className": "ant",
+          "height": 0.055037,
+          "line": 3,
+          "pixelBox": {
+            "maxBoundaryOverrunPixels": 0.0,
+            "xMax": 1176.44064,
+            "xMin": 1103.47104,
+            "yMax": 735.88986,
+            "yMin": 676.4499000000001
+          },
+          "width": 0.038005,
+          "xCenter": 0.593727,
+          "yCenter": 0.653861
+        },
+        {
+          "areaRatio": 0.003169828776,
+          "classId": 0,
+          "className": "ant",
+          "height": 0.100083,
+          "line": 4,
+          "pixelBox": {
+            "maxBoundaryOverrunPixels": 0.0,
+            "xMax": 425.47008,
+            "xMin": 364.65984000000003,
+            "yMax": 723.73014,
+            "yMin": 615.6405000000001
+          },
+          "width": 0.031672,
+          "xCenter": 0.205763,
+          "yCenter": 0.620079
+        }
+      ],
+      "frameIndex": 2265,
+      "height": 1080,
+      "imageFilename": "ants_v5_final_test_002_frame_002265.png",
+      "imagePath": "datasets/external_test/v5_final_test_002/images/ants_v5_final_test_002_frame_002265.png",
+      "imageSha256": "0c466680a81abf48798496bee4a0fdf17b881faf94c4f19c75d5220071340112",
+      "labelFilename": "ants_v5_final_test_002_frame_002265.txt",
+      "labelPath": "datasets/external_test/v5_final_test_002/labels/ants_v5_final_test_002_frame_002265.txt",
+      "labelSha256": "3768cea712343a1e13ab9f24eb912ed3a64f60752b244d469928ee05c10eff57",
+      "sequenceIndex": 18,
+      "timestampSeconds": 37.765022,
+      "verifiedZeroAdult": false,
+      "width": 1920
+    },
+    {
+      "annotationCount": 4,
+      "annotations": [
+        {
+          "areaRatio": 0.010716865035,
+          "classId": 0,
+          "className": "ant",
+          "height": 0.218315,
+          "line": 1,
+          "pixelBox": {
+            "maxBoundaryOverrunPixels": 0.0,
+            "xMax": 632.2108800000001,
+            "xMin": 537.9599999999999,
+            "yMax": 629.47962,
+            "yMin": 393.69942
+          },
+          "width": 0.049089,
+          "xCenter": 0.304732,
+          "yCenter": 0.473694
+        },
+        {
+          "areaRatio": 0.0026720923919999998,
+          "classId": 0,
+          "className": "ant",
+          "height": 0.088824,
+          "line": 2,
+          "pixelBox": {
+            "maxBoundaryOverrunPixels": 0.0,
+            "xMax": 647.4096,
+            "xMin": 589.65024,
+            "yMax": 717.6502800000001,
+            "yMin": 621.72036
+          },
+          "width": 0.030083,
+          "xCenter": 0.322151,
+          "yCenter": 0.620079
+        },
+        {
+          "areaRatio": 0.001896977964,
+          "classId": 0,
+          "className": "ant",
+          "height": 0.035231,
+          "line": 3,
+          "pixelBox": {
+            "maxBoundaryOverrunPixels": 0.0,
+            "xMax": 825.27936,
+            "xMin": 721.8988800000001,
+            "yMax": 710.04978,
+            "yMin": 672.0003
+          },
+          "width": 0.053844,
+          "xCenter": 0.402911,
+          "yCenter": 0.639838
+        },
+        {
+          "areaRatio": 0.00268137222,
+          "classId": 0,
+          "className": "ant",
+          "height": 0.056444,
+          "line": 4,
+          "pixelBox": {
+            "maxBoundaryOverrunPixels": 0.0,
+            "xMax": 515.16,
+            "xMin": 423.9504,
+            "yMax": 672.03972,
+            "yMin": 611.0802000000001
+          },
+          "width": 0.047505,
+          "xCenter": 0.24456,
+          "yCenter": 0.594037
+        }
+      ],
+      "frameIndex": 2388,
+      "height": 1080,
+      "imageFilename": "ants_v5_final_test_002_frame_002388.png",
+      "imagePath": "datasets/external_test/v5_final_test_002/images/ants_v5_final_test_002_frame_002388.png",
+      "imageSha256": "4e468433edc4d969e32e828a0496d785a4e2bbd5b54827e823c916c15b1868a3",
+      "labelFilename": "ants_v5_final_test_002_frame_002388.txt",
+      "labelPath": "datasets/external_test/v5_final_test_002/labels/ants_v5_final_test_002_frame_002388.txt",
+      "labelSha256": "7052e234dc71c00e2bc73d888f205cb1c04a48bbdf1a38f743562ec9153061cf",
+      "sequenceIndex": 19,
+      "timestampSeconds": 39.815838,
+      "verifiedZeroAdult": false,
+      "width": 1920
+    },
+    {
+      "annotationCount": 4,
+      "annotations": [
+        {
+          "areaRatio": 0.010666882086,
+          "classId": 0,
+          "className": "ant",
+          "height": 0.111343,
+          "line": 1,
+          "pixelBox": {
+            "maxBoundaryOverrunPixels": 0.0,
+            "xMax": 755.3491199999999,
+            "xMin": 571.4092800000001,
+            "yMax": 589.9505399999999,
+            "yMin": 469.7001
+          },
+          "width": 0.095802,
+          "xCenter": 0.34551,
+          "yCenter": 0.490579
+        },
+        {
+          "areaRatio": 0.00176520063,
+          "classId": 0,
+          "className": "ant",
+          "height": 0.061926,
+          "line": 2,
+          "pixelBox": {
+            "maxBoundaryOverrunPixels": 0.0,
+            "xMax": 765.99072,
+            "xMin": 711.26112,
+            "yMax": 690.2798399999999,
+            "yMin": 623.39976
+          },
+          "width": 0.028505,
+          "xCenter": 0.384701,
+          "yCenter": 0.608185
+        },
+        {
+          "areaRatio": 0.0015539529999999998,
+          "classId": 0,
+          "className": "ant",
+          "height": 0.081787,
+          "line": 3,
+          "pixelBox": {
+            "maxBoundaryOverrunPixels": 0.0,
+            "xMax": 647.41056,
+            "xMin": 610.93056,
+            "yMax": 716.13018,
+            "yMin": 627.80022
+          },
+          "width": 0.019,
+          "xCenter": 0.327693,
+          "yCenter": 0.62219
+        },
+        {
+          "areaRatio": 0.00230679897,
+          "classId": 0,
+          "className": "ant",
+          "height": 0.042222,
+          "line": 4,
+          "pixelBox": {
+            "maxBoundaryOverrunPixels": 0.0,
+            "xMax": 572.9289600000001,
+            "xMin": 468.02976000000007,
+            "yMax": 687.23964,
+            "yMin": 641.6398800000001
+          },
+          "width": 0.054635,
+          "xCenter": 0.271083,
+          "yCenter": 0.615222
+        }
+      ],
+      "frameIndex": 2510,
+      "height": 1080,
+      "imageFilename": "ants_v5_final_test_002_frame_002510.png",
+      "imagePath": "datasets/external_test/v5_final_test_002/images/ants_v5_final_test_002_frame_002510.png",
+      "imageSha256": "09d5556fee0cee1bd9104b9ac84f3d6056097ed2b557f16450648beed94e2957",
+      "labelFilename": "ants_v5_final_test_002_frame_002510.txt",
+      "labelPath": "datasets/external_test/v5_final_test_002/labels/ants_v5_final_test_002_frame_002510.txt",
+      "labelSha256": "3435f507ce533305d7f4f85ff29a43364df950f3062cb809e439e73501e1d21a",
+      "sequenceIndex": 20,
+      "timestampSeconds": 41.84998,
+      "verifiedZeroAdult": false,
+      "width": 1920
+    },
+    {
+      "annotationCount": 4,
+      "annotations": [
+        {
+          "areaRatio": 0.007918123544,
+          "classId": 0,
+          "className": "ant",
+          "height": 0.068972,
+          "line": 1,
+          "pixelBox": {
+            "maxBoundaryOverrunPixels": 0.0,
+            "xMax": 791.82912,
+            "xMin": 571.4092800000001,
+            "yMax": 551.9502,
+            "yMin": 477.46043999999995
+          },
+          "width": 0.114802,
+          "xCenter": 0.35501,
+          "yCenter": 0.476579
+        },
+        {
+          "areaRatio": 0.00136824,
+          "classId": 0,
+          "className": "ant",
+          "height": 0.048,
+          "line": 2,
+          "pixelBox": {
+            "maxBoundaryOverrunPixels": 0.0,
+            "xMax": 731.02944,
+            "xMin": 676.29984,
+            "yMax": 729.8100000000001,
+            "yMin": 677.97
+          },
+          "width": 0.028505,
+          "xCenter": 0.366492,
+          "yCenter": 0.65175
+        },
+        {
+          "areaRatio": 0.0014665022189999997,
+          "classId": 0,
+          "className": "ant",
+          "height": 0.066157,
+          "line": 3,
+          "pixelBox": {
+            "maxBoundaryOverrunPixels": 0.0,
+            "xMax": 621.57024,
+            "xMin": 579.0096,
+            "yMax": 685.71954,
+            "yMin": 614.26998
+          },
+          "width": 0.022167,
+          "xCenter": 0.312651,
+          "yCenter": 0.601847
+        },
+        {
+          "areaRatio": 0.002376159636,
+          "classId": 0,
+          "className": "ant",
+          "height": 0.057713,
+          "line": 4,
+          "pixelBox": {
+            "maxBoundaryOverrunPixels": 0.0,
+            "xMax": 534.9196800000001,
+            "xMin": 455.86944000000005,
+            "yMax": 675.08046,
+            "yMin": 612.7504200000001
+          },
+          "width": 0.041172,
+          "xCenter": 0.258018,
+          "yCenter": 0.596218
+        }
+      ],
+      "frameIndex": 2633,
+      "height": 1080,
+      "imageFilename": "ants_v5_final_test_002_frame_002633.png",
+      "imagePath": "datasets/external_test/v5_final_test_002/images/ants_v5_final_test_002_frame_002633.png",
+      "imageSha256": "d949c303fd94f617a592338549034f447554af9e5f0635d0fd14a98d66a76e3a",
+      "labelFilename": "ants_v5_final_test_002_frame_002633.txt",
+      "labelPath": "datasets/external_test/v5_final_test_002/labels/ants_v5_final_test_002_frame_002633.txt",
+      "labelSha256": "03c7151b34919c1f88d1ea2a17679dfe039db8dc047f58cc41565c98390734c7",
+      "sequenceIndex": 21,
+      "timestampSeconds": 43.900796,
+      "verifiedZeroAdult": false,
+      "width": 1920
+    },
+    {
+      "annotationCount": 4,
+      "annotations": [
+        {
+          "areaRatio": 0.010272043488000001,
+          "classId": 0,
+          "className": "ant",
+          "height": 0.090093,
+          "line": 1,
+          "pixelBox": {
+            "maxBoundaryOverrunPixels": 0.0,
+            "xMax": 919.53024,
+            "xMin": 700.61952,
+            "yMax": 629.4807,
+            "yMin": 532.18026
+          },
+          "width": 0.114016,
+          "xCenter": 0.421914,
+          "yCenter": 0.537806
+        },
+        {
+          "areaRatio": 0.000997224432,
+          "classId": 0,
+          "className": "ant",
+          "height": 0.066296,
+          "line": 2,
+          "pixelBox": {
+            "maxBoundaryOverrunPixels": 0.0,
+            "xMax": 802.4697600000001,
+            "xMin": 773.5891200000001,
+            "yMax": 843.8202,
+            "yMin": 772.2205200000001
+          },
+          "width": 0.015042,
+          "xCenter": 0.410432,
+          "yCenter": 0.748167
+        },
+        {
+          "areaRatio": 0.0019428501849999998,
+          "classId": 0,
+          "className": "ant",
+          "height": 0.081787,
+          "line": 3,
+          "pixelBox": {
+            "maxBoundaryOverrunPixels": 0.0,
+            "xMax": 612.45024,
+            "xMin": 566.8406400000001,
+            "yMax": 705.4900200000001,
+            "yMin": 617.16006
+          },
+          "width": 0.023755,
+          "xCenter": 0.307107,
+          "yCenter": 0.612338
+        },
+        {
+          "areaRatio": 0.0024608524300000004,
+          "classId": 0,
+          "className": "ant",
+          "height": 0.067565,
+          "line": 4,
+          "pixelBox": {
+            "maxBoundaryOverrunPixels": 0.0,
+            "xMax": 507.55967999999996,
+            "xMin": 437.62944,
+            "yMax": 678.11958,
+            "yMin": 605.14938
+          },
+          "width": 0.036422,
+          "xCenter": 0.246143,
+          "yCenter": 0.594106
+        }
+      ],
+      "frameIndex": 2755,
+      "height": 1080,
+      "imageFilename": "ants_v5_final_test_002_frame_002755.png",
+      "imagePath": "datasets/external_test/v5_final_test_002/images/ants_v5_final_test_002_frame_002755.png",
+      "imageSha256": "0a6399fd2df31a2bcd31b21ca835ec9e8dc9987496cdeb1d6528031b2199a924",
+      "labelFilename": "ants_v5_final_test_002_frame_002755.txt",
+      "labelPath": "datasets/external_test/v5_final_test_002/labels/ants_v5_final_test_002_frame_002755.txt",
+      "labelSha256": "bc16ccec252a326f4bcf2eed745dda32f7dd7e1219e6e469b92dd17c3f2d170e",
+      "sequenceIndex": 22,
+      "timestampSeconds": 45.934938,
+      "verifiedZeroAdult": false,
+      "width": 1920
+    },
+    {
+      "annotationCount": 4,
+      "annotations": [
+        {
+          "areaRatio": 0.009444794985000001,
+          "classId": 0,
+          "className": "ant",
+          "height": 0.105565,
+          "line": 1,
+          "pixelBox": {
+            "maxBoundaryOverrunPixels": 0.0,
+            "xMax": 1030.49952,
+            "xMin": 858.71904,
+            "yMax": 693.32058,
+            "yMin": 579.31038
+          },
+          "width": 0.089469,
+          "xCenter": 0.491984,
+          "yCenter": 0.589181
+        },
+        {
+          "areaRatio": 0.001938130824,
+          "classId": 0,
+          "className": "ant",
+          "height": 0.078972,
+          "line": 2,
+          "pixelBox": {
+            "maxBoundaryOverrunPixels": 0.0,
+            "xMax": 618.52992,
+            "xMin": 571.4092800000001,
+            "yMax": 716.12964,
+            "yMin": 630.8398799999999
+          },
+          "width": 0.024542,
+          "xCenter": 0.30988,
+          "yCenter": 0.623597
+        },
+        {
+          "areaRatio": 0.00154488336,
+          "classId": 0,
+          "className": "ant",
+          "height": 0.030972,
+          "line": 3,
+          "pixelBox": {
+            "maxBoundaryOverrunPixels": 0.0,
+            "xMax": 626.1292800000001,
+            "xMin": 530.35968,
+            "yMax": 878.78952,
+            "yMin": 845.3397600000001
+          },
+          "width": 0.04988,
+          "xCenter": 0.301169,
+          "yCenter": 0.798208
+        },
+        {
+          "areaRatio": 0.002787509088,
+          "classId": 0,
+          "className": "ant",
+          "height": 0.067704,
+          "line": 4,
+          "pixelBox": {
+            "maxBoundaryOverrunPixels": 0.0,
+            "xMax": 463.47072,
+            "xMin": 384.42048,
+            "yMax": 646.19964,
+            "yMin": 573.07932
+          },
+          "width": 0.041172,
+          "xCenter": 0.220805,
+          "yCenter": 0.564481
+        }
+      ],
+      "frameIndex": 2877,
+      "height": 1080,
+      "imageFilename": "ants_v5_final_test_002_frame_002877.png",
+      "imagePath": "datasets/external_test/v5_final_test_002/images/ants_v5_final_test_002_frame_002877.png",
+      "imageSha256": "398e365149c8053bdf029ada50b2371514d14fd401655953cbdfca3db83c434e",
+      "labelFilename": "ants_v5_final_test_002_frame_002877.txt",
+      "labelPath": "datasets/external_test/v5_final_test_002/labels/ants_v5_final_test_002_frame_002877.txt",
+      "labelSha256": "5a537609b4a5c6f92c05413b41b0fecd7d50aa0f5e54c70b11901bb389923ebc",
+      "sequenceIndex": 23,
+      "timestampSeconds": 47.969081,
+      "verifiedZeroAdult": false,
+      "width": 1920
+    },
+    {
+      "annotationCount": 4,
+      "annotations": [
+        {
+          "areaRatio": 0.002812502835,
+          "classId": 0,
+          "className": "ant",
+          "height": 0.098667,
+          "line": 1,
+          "pixelBox": {
+            "maxBoundaryOverrunPixels": 0.0,
+            "xMax": 449.78976,
+            "xMin": 395.06016,
+            "yMax": 509.38038,
+            "yMin": 402.82001999999994
+          },
+          "width": 0.028505,
+          "xCenter": 0.220013,
+          "yCenter": 0.422315
+        },
+        {
+          "areaRatio": 0.0015648877199999998,
+          "classId": 0,
+          "className": "ant",
+          "height": 0.073194,
+          "line": 2,
+          "pixelBox": {
+            "maxBoundaryOverrunPixels": 0.0,
+            "xMax": 589.64928,
+            "xMin": 548.59968,
+            "yMax": 705.48948,
+            "yMin": 626.43996
+          },
+          "width": 0.02138,
+          "xCenter": 0.296419,
+          "yCenter": 0.616634
+        },
+        {
+          "areaRatio": 0.0016339999999999998,
+          "classId": 0,
+          "className": "ant",
+          "height": 0.086,
+          "line": 3,
+          "pixelBox": {
+            "maxBoundaryOverrunPixels": 0.0,
+            "xMax": 630.68928,
+            "xMin": 594.2092799999999,
+            "yMax": 859.02012,
+            "yMin": 766.1401199999999
+          },
+          "width": 0.019,
+          "xCenter": 0.318984,
+          "yCenter": 0.752389
+        },
+        {
+          "areaRatio": 0.008328641882,
+          "classId": 0,
+          "className": "ant",
+          "height": 0.074602,
+          "line": 4,
+          "pixelBox": {
+            "maxBoundaryOverrunPixels": 0.0,
+            "xMax": 1077.6297600000003,
+            "xMin": 863.2790400000001,
+            "yMax": 690.27984,
+            "yMin": 609.7096799999999
+          },
+          "width": 0.111641,
+          "xCenter": 0.505445,
+          "yCenter": 0.601847
+        }
+      ],
+      "frameIndex": 3000,
+      "height": 1080,
+      "imageFilename": "ants_v5_final_test_002_frame_003000.png",
+      "imagePath": "datasets/external_test/v5_final_test_002/images/ants_v5_final_test_002_frame_003000.png",
+      "imageSha256": "51eaca2f540ed29199c253bb9d9be88ae821929865bd8874040e6f5ca66d186e",
+      "labelFilename": "ants_v5_final_test_002_frame_003000.txt",
+      "labelPath": "datasets/external_test/v5_final_test_002/labels/ants_v5_final_test_002_frame_003000.txt",
+      "labelSha256": "742e1ab36a6f929e4f5ac1b4329935cfb82a272794e65546138a2abe23836320",
+      "sequenceIndex": 24,
+      "timestampSeconds": 50.019897,
+      "verifiedZeroAdult": false,
+      "width": 1920
+    },
+    {
+      "annotationCount": 3,
+      "annotations": [
+        {
+          "areaRatio": 0.009616102815,
+          "classId": 0,
+          "className": "ant",
+          "height": 0.083185,
+          "line": 1,
+          "pixelBox": {
+            "maxBoundaryOverrunPixels": 0.0,
+            "xMax": 1068.50976,
+            "xMin": 846.55968,
+            "yMax": 667.47942,
+            "yMin": 577.6396199999999
+          },
+          "width": 0.115599,
+          "xCenter": 0.498716,
+          "yCenter": 0.576444
+        },
+        {
+          "areaRatio": 0.0018390408349999998,
+          "classId": 0,
+          "className": "ant",
+          "height": 0.077417,
+          "line": 2,
+          "pixelBox": {
+            "maxBoundaryOverrunPixels": 0.0,
+            "xMax": 571.4102399999999,
+            "xMin": 525.80064,
+            "yMax": 690.28038,
+            "yMin": 606.6700199999999
+          },
+          "width": 0.023755,
+          "xCenter": 0.285732,
+          "yCenter": 0.60044
+        },
+        {
+          "areaRatio": 0.002042639246,
+          "classId": 0,
+          "className": "ant",
+          "height": 0.054889,
+          "line": 3,
+          "pixelBox": {
+            "maxBoundaryOverrunPixels": 0.0,
+            "xMax": 569.8905599999999,
+            "xMin": 498.43968,
+            "yMax": 770.8505399999999,
+            "yMin": 711.57042
+          },
+          "width": 0.037214,
+          "xCenter": 0.278211,
+          "yCenter": 0.686306
+        }
+      ],
+      "frameIndex": 3122,
+      "height": 1080,
+      "imageFilename": "ants_v5_final_test_002_frame_003122.png",
+      "imagePath": "datasets/external_test/v5_final_test_002/images/ants_v5_final_test_002_frame_003122.png",
+      "imageSha256": "bb71780e9ea87137198a240f9a8ae8bc1a7440e015ce289b3c8b95dd90b9310f",
+      "labelFilename": "ants_v5_final_test_002_frame_003122.txt",
+      "labelPath": "datasets/external_test/v5_final_test_002/labels/ants_v5_final_test_002_frame_003122.txt",
+      "labelSha256": "324bd0f91224da18026838f7cbeb3d8c56d49c30e7bdad584f6c26ab615cb32d",
+      "sequenceIndex": 25,
+      "timestampSeconds": 52.054039,
+      "verifiedZeroAdult": false,
+      "width": 1920
+    },
+    {
+      "annotationCount": 3,
+      "annotations": [
+        {
+          "areaRatio": 0.00871765353,
+          "classId": 0,
+          "className": "ant",
+          "height": 0.08037,
+          "line": 1,
+          "pixelBox": {
+            "maxBoundaryOverrunPixels": 0.0,
+            "xMax": 1042.6607999999999,
+            "xMin": 834.40032,
+            "yMax": 656.8398,
+            "yMin": 570.0401999999999
+          },
+          "width": 0.108469,
+          "xCenter": 0.488818,
+          "yCenter": 0.568
+        },
+        {
+          "areaRatio": 0.001100984148,
+          "classId": 0,
+          "className": "ant",
+          "height": 0.073194,
+          "line": 2,
+          "pixelBox": {
+            "maxBoundaryOverrunPixels": 0.0,
+            "xMax": 560.7609600000001,
+            "xMin": 531.88032,
+            "yMax": 682.67988,
+            "yMin": 603.63036
+          },
+          "width": 0.015042,
+          "xCenter": 0.284542,
+          "yCenter": 0.595514
+        },
+        {
+          "areaRatio": 0.0008201870180000001,
+          "classId": 0,
+          "className": "ant",
+          "height": 0.022519,
+          "line": 3,
+          "pixelBox": {
+            "maxBoundaryOverrunPixels": 0.0,
+            "xMax": 501.48096,
+            "xMin": 431.55072,
+            "yMax": 728.2899,
+            "yMin": 703.96938
+          },
+          "width": 0.036422,
+          "xCenter": 0.242977,
+          "yCenter": 0.663083
+        }
+      ],
+      "frameIndex": 3245,
+      "height": 1080,
+      "imageFilename": "ants_v5_final_test_002_frame_003245.png",
+      "imagePath": "datasets/external_test/v5_final_test_002/images/ants_v5_final_test_002_frame_003245.png",
+      "imageSha256": "5eab671fcebb2ca167538df1fab8e8ccc0938b21610efff8578f6f2aefd26f3c",
+      "labelFilename": "ants_v5_final_test_002_frame_003245.txt",
+      "labelPath": "datasets/external_test/v5_final_test_002/labels/ants_v5_final_test_002_frame_003245.txt",
+      "labelSha256": "e2a6fdf168e74d9a2d2cd78ec71f3f78d8df1652b82c7089f3513175bfff5075",
+      "sequenceIndex": 26,
+      "timestampSeconds": 54.104855,
+      "verifiedZeroAdult": false,
+      "width": 1920
+    },
+    {
+      "annotationCount": 3,
+      "annotations": [
+        {
+          "areaRatio": 0.007147020804,
+          "classId": 0,
+          "className": "ant",
+          "height": 0.074602,
+          "line": 1,
+          "pixelBox": {
+            "maxBoundaryOverrunPixels": 0.0,
+            "xMax": 1036.5792,
+            "xMin": 852.63936,
+            "yMax": 662.9202,
+            "yMin": 582.3500399999999
+          },
+          "width": 0.095802,
+          "xCenter": 0.491984,
+          "yCenter": 0.576514
+        },
+        {
+          "areaRatio": 0.0012663412399999997,
+          "classId": 0,
+          "className": "ant",
+          "height": 0.076148,
+          "line": 2,
+          "pixelBox": {
+            "maxBoundaryOverrunPixels": 0.0,
+            "xMax": 572.92992,
+            "xMin": 541.00032,
+            "yMax": 684.19944,
+            "yMin": 601.9595999999999
+          },
+          "width": 0.01663,
+          "xCenter": 0.290086,
+          "yCenter": 0.595444
+        },
+        {
+          "areaRatio": 0.000865879875,
+          "classId": 0,
+          "className": "ant",
+          "height": 0.052083,
+          "line": 3,
+          "pixelBox": {
+            "maxBoundaryOverrunPixels": 0.0,
+            "xMax": 521.24064,
+            "xMin": 489.32063999999997,
+            "yMax": 719.1693,
+            "yMin": 662.9196599999999
+          },
+          "width": 0.016625,
+          "xCenter": 0.263167,
+          "yCenter": 0.639856
+        }
+      ],
+      "frameIndex": 3367,
+      "height": 1080,
+      "imageFilename": "ants_v5_final_test_002_frame_003367.png",
+      "imagePath": "datasets/external_test/v5_final_test_002/images/ants_v5_final_test_002_frame_003367.png",
+      "imageSha256": "eb720c39373994b88aaa527db93820bd260733c93fc21927ba1bceff6d0bc8a8",
+      "labelFilename": "ants_v5_final_test_002_frame_003367.txt",
+      "labelPath": "datasets/external_test/v5_final_test_002/labels/ants_v5_final_test_002_frame_003367.txt",
+      "labelSha256": "c4efe9cd4fba5e682008793c8876dc39d61fc4e370e5ee9929a7e541d93b3da7",
+      "sequenceIndex": 27,
+      "timestampSeconds": 56.138997,
+      "verifiedZeroAdult": false,
+      "width": 1920
+    },
+    {
+      "annotationCount": 3,
+      "annotations": [
+        {
+          "areaRatio": 0.01015709387,
+          "classId": 0,
+          "className": "ant",
+          "height": 0.09163,
+          "line": 1,
+          "pixelBox": {
+            "maxBoundaryOverrunPixels": 0.0,
+            "xMax": 1019.8607999999999,
+            "xMin": 807.03072,
+            "yMax": 662.9202,
+            "yMin": 563.9597999999999
+          },
+          "width": 0.110849,
+          "xCenter": 0.475753,
+          "yCenter": 0.568
+        },
+        {
+          "areaRatio": 0.001365438684,
+          "classId": 0,
+          "className": "ant",
+          "height": 0.068972,
+          "line": 2,
+          "pixelBox": {
+            "maxBoundaryOverrunPixels": 0.0,
+            "xMax": 580.53024,
+            "xMin": 542.5200000000001,
+            "yMax": 681.1603200000001,
+            "yMin": 606.67056
+          },
+          "width": 0.019797,
+          "xCenter": 0.292461,
+          "yCenter": 0.596218
+        },
+        {
+          "areaRatio": 0.00152111792,
+          "classId": 0,
+          "className": "ant",
+          "height": 0.049259,
+          "line": 3,
+          "pixelBox": {
+            "maxBoundaryOverrunPixels": 0.0,
+            "xMax": 499.96032,
+            "xMin": 440.67072,
+            "yMax": 681.15978,
+            "yMin": 627.96006
+          },
+          "width": 0.03088,
+          "xCenter": 0.244956,
+          "yCenter": 0.606074
+        }
+      ],
+      "frameIndex": 3490,
+      "height": 1080,
+      "imageFilename": "ants_v5_final_test_002_frame_003490.png",
+      "imagePath": "datasets/external_test/v5_final_test_002/images/ants_v5_final_test_002_frame_003490.png",
+      "imageSha256": "7ed5c9e2832e8d7488c47da830046c928720b29573615eda18389a5eb82414f6",
+      "labelFilename": "ants_v5_final_test_002_frame_003490.txt",
+      "labelPath": "datasets/external_test/v5_final_test_002/labels/ants_v5_final_test_002_frame_003490.txt",
+      "labelSha256": "775f69e2ea4bfd760c5b0cf9b9656cfa1cae5be615227bec0e60c0934ed07896",
+      "sequenceIndex": 28,
+      "timestampSeconds": 58.189813,
+      "verifiedZeroAdult": false,
+      "width": 1920
+    },
+    {
+      "annotationCount": 2,
+      "annotations": [
+        {
+          "areaRatio": 0.013000610651999998,
+          "classId": 0,
+          "className": "ant",
+          "height": 0.174676,
+          "line": 1,
+          "pixelBox": {
+            "maxBoundaryOverrunPixels": 0.0,
+            "xMax": 914.96928,
+            "xMin": 772.06944,
+            "yMax": 673.56036,
+            "yMin": 484.9102799999999
+          },
+          "width": 0.074427,
+          "xCenter": 0.439333,
+          "yCenter": 0.536329
+        },
+        {
+          "areaRatio": 0.0017484136400000001,
+          "classId": 0,
+          "className": "ant",
+          "height": 0.081778,
+          "line": 2,
+          "pixelBox": {
+            "maxBoundaryOverrunPixels": 0.0,
+            "xMax": 579.01056,
+            "xMin": 537.9609600000001,
+            "yMax": 691.8004799999999,
+            "yMin": 603.48024
+          },
+          "width": 0.02138,
+          "xCenter": 0.290878,
+          "yCenter": 0.599667
+        }
+      ],
+      "frameIndex": 3612,
+      "height": 1080,
+      "imageFilename": "ants_v5_final_test_002_frame_003612.png",
+      "imagePath": "datasets/external_test/v5_final_test_002/images/ants_v5_final_test_002_frame_003612.png",
+      "imageSha256": "5f4145ad1668039ae8a1908ba8edf67c08e868ad16b06b6dbe1db1ebc341144a",
+      "labelFilename": "ants_v5_final_test_002_frame_003612.txt",
+      "labelPath": "datasets/external_test/v5_final_test_002/labels/ants_v5_final_test_002_frame_003612.txt",
+      "labelSha256": "827a35df19b86f1de2e6597cc0e36f5b92ecd7faf1b7cf3a53d72a692001e93e",
+      "sequenceIndex": 29,
+      "timestampSeconds": 60.223955,
+      "verifiedZeroAdult": false,
+      "width": 1920
+    }
+  ],
+  "hashAlgorithms": {
+    "annotationContentSha256": "sha256 over sorted entries: labelFilename + NUL + labelFileSha256 + LF",
+    "combinedFinalTestSha256": "sha256 over sourceSha256, imageContentSha256, and annotationContentSha256 key/value lines",
+    "detailedManifestSha256": "sha256 of UTF-8 ground_truth_manifest.json bytes as committed",
+    "imageContentSha256": "sha256 over sorted entries: imageFilename + NUL + imageSha256 + LF"
+  },
+  "imageContentSha256": "8fc4371e70864de5848617fd0668e7fd855b23ef2c690259205e74c0fc4bbe7c",
+  "manualAnnotation": {
+    "cvatExportPath": "samples/v2/v5_final_test_002_cvat_export.zip",
+    "cvatExportSha256": "3cbad519108b9048229d1cfec07937b60d4f027ff06fa5c2246430ac62306456",
+    "exportFormat": "CVAT YOLO",
+    "exportImagesAuthoritative": false,
+    "reviewStatus": "MANUAL_COMPLETE",
+    "tool": "LOCAL_CVAT",
+    "zeroAdultPolicy": "explicit empty .txt required for reviewed-zero frames; none were present because every frozen frame has at least one manual ant box"
+  },
+  "modelInference": false,
+  "modelsObserved": [],
+  "qa": {
+    "allImagesReadable": true,
+    "boundaryTolerancePixels": 0.5,
+    "boundaryViolations": 0,
+    "classesSeen": [
+      0
+    ],
+    "duplicateAnnotationRows": 0,
+    "extraImages": [],
+    "finiteCoordinates": true,
+    "imageCount": 30,
+    "labelFileCount": 30,
+    "malformedRows": 0,
+    "missingImages": [],
+    "missingLabels": [],
+    "pass": true,
+    "positiveWidthHeight": true,
+    "silentClamping": false,
+    "unmatchedLabels": []
+  },
+  "role": "FINAL_TEST",
+  "schemaVersion": "1.0",
+  "sourceSha256": "489f48cd4d4513d201c2afe19512f3e36ebc5b748823975190347350e276a13d",
+  "statistics": {
+    "bboxAreaRatioP25": 0.0019441999392499998,
+    "bboxAreaRatioP75": 0.00649965696975,
+    "maxAnnotationsPerImage": 5,
+    "meanAnnotationsPerImage": 3.933333333333333,
+    "medianAnnotationsPerImage": 4.0,
+    "medianBboxAreaRatio": 0.0026556796875,
+    "medianBboxHeightRatio": 0.0725645,
+    "medianBboxWidthRatio": 0.044339,
+    "minAnnotationsPerImage": 2,
+    "totalAnnotations": 118,
+    "verifiedZeroFrames": 0
+  },
+  "status": "FROZEN_MODEL_UNOBSERVED",
+  "targetExperiment": "ants_v5_crowdedscale_e01"
+}
