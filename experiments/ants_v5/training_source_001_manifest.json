@@ -1,0 +1,84 @@
+{
+  "aliasCheck": {
+    "knownHistoricalHashRecordsComparedTotal": 44,
+    "matches": [],
+    "newSourceSha256": "53a659c615fb1ae5e6ab1ae96ba84531cb8e7d8aae6c396a19b8f7e7cf623e7b",
+    "status": "PASS_NO_EXACT_ALIAS",
+    "uniqueKnownHistoricalHashesComparedTotal": 19,
+    "v5FinalTestCheck": "Compared against recorded v5 final-test source SHA from experiments/ants_v5/final_test_freeze.md only; final-test video/images/annotations were not opened, decoded, hashed, or used.",
+    "versionedRegistryHashRecordsCompared": 27
+  },
+  "candidatePool": {
+    "candidateFramesDirectory": "artifacts/analysis/ants_v5_training_source_001/candidate_frames/",
+    "contactSheetsDirectory": "artifacts/analysis/ants_v5_training_source_001/contact_sheets/",
+    "count": 120,
+    "extractionPolicy": {
+      "algorithm": "Divide full video frame interval into 120 equal bins and extract the center frame from each bin. Uses timing/frame count only.",
+      "candidateCountTarget": 120,
+      "purpose": "supply audit candidate pool only, not final training subset selection",
+      "usesFinalTestContent": false,
+      "usesModelInference": false,
+      "usesPseudoLabeling": false
+    },
+    "record": "experiments/ants_v5/training_source_001_candidate_pool.json",
+    "uniqueImageSha256": 120
+  },
+  "createdAtUtc": "2026-08-25T05:17:45.084251+00:00",
+  "experiment": "ants_v5_crowdedscale_e01",
+  "modelInferenceUsed": false,
+  "protocolIncident": {
+    "classification": [
+      "PROTOCOL_HYGIENE_DEVIATION",
+      "NO_SCIENTIFIC_CONTENT_LEAKAGE"
+    ],
+    "description": "An initial broad source inventory surfaced forbidden final-test filesystem metadata once: filename, file size, and filesystem modified time. The metadata did not influence source acceptance, candidate extraction, strata design, or selection policy.",
+    "finalTestContentAccessed": false,
+    "forbiddenSourceOpened": false,
+    "forbiddenSourceDecoded": false,
+    "forbiddenSourceHashedFromFilesystem": false,
+    "imagesLabelsPredictionsMetricsExposed": false,
+    "remediation": "A reusable source-role guard now blocks final-test/forbidden sources before stat, open, hash, probe, extraction, or content-derived inspection during training-source audit/design.",
+    "surfacedMetadata": [
+      "filename",
+      "file_size",
+      "filesystem_modified_time"
+    ]
+  },
+  "pseudoLabelingUsed": false,
+  "role": {
+    "checkpointSelectionEligible": false,
+    "developmentValidationEligible": false,
+    "finalTest": false,
+    "modelDesignEligible": true,
+    "notes": "New source captured specifically for V5 training supply audit. It is not validation, observed reference, or final test.",
+    "observedReference": false,
+    "role": "TRAINING_SOURCE",
+    "trainEligible": true
+  },
+  "schemaVersion": "1.0",
+  "source": {
+    "codec": "h264",
+    "codecLongName": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+    "containerDurationSeconds": 60.690729,
+    "durationSeconds": 60.574511,
+    "fileSizeBytes": 153755857,
+    "filename": "ants_v5_training_source_001.mp4",
+    "fps": 59.97574665722374,
+    "frameCount": 3633,
+    "path": "samples/v2/ants_v5_training_source_001.mp4",
+    "pixFmt": "yuv420p",
+    "recordingMetadata": {
+      "androidVersion": "16",
+      "creationTimeUtc": "2026-08-25T05:08:56.000000Z",
+      "deviceManufacturer": "motorola",
+      "deviceModel": "motorola edge 60 pro"
+    },
+    "resolution": {
+      "height": 1080,
+      "width": 1920
+    },
+    "sha256": "53a659c615fb1ae5e6ab1ae96ba84531cb8e7d8aae6c396a19b8f7e7cf623e7b"
+  },
+  "sourceId": "training_source_001",
+  "v5FinalTestAccessed": false
+}

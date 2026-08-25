@@ -12,6 +12,36 @@
     "v5_final_test"
   ],
   "experimentCandidate": "ants_v5_crowdedscale_e01",
+  "forbiddenForTrainingSourceAudit": {
+    "blockedOperations": [
+      "open",
+      "decode",
+      "hash",
+      "image_extraction",
+      "stat_metadata_collection",
+      "video_probe",
+      "content_derived_inspection"
+    ],
+    "policy": "Training-source audit/design must exclude final-test sources before any filesystem metadata inspection. Alias checks may use already-recorded registry identifiers and SHA values only.",
+    "sources": [
+      {
+        "filename": "videonuevoants.mp4",
+        "forbiddenForDesign": true,
+        "forbiddenForTrainingSourceAudit": true,
+        "identifiers": [
+          "v5_final_test",
+          "videonuevoants.mp4"
+        ],
+        "pathAliases": [
+          "samples/v2/videonuevoants.mp4",
+          "datasets/external_test/v5_final_test"
+        ],
+        "role": "FINAL_TEST",
+        "sourceId": "v5_final_test",
+        "trainEligible": false
+      }
+    ]
+  },
   "observedButNotOptimizationTargets": [
     "Seq0001",
     "Seq0006",
@@ -51,6 +81,23 @@
         "Seq0006",
         "own_colony_val_002",
         "ant4"
+      ]
+    },
+    "TRAINING_SOURCE": {
+      "policy": "New training-source videos captured for V5 may be train eligible only after source audit, exact alias checks, deterministic candidate-pool staging, manual annotation, QA, and freeze. They are never development validation, checkpoint-selection, observed-reference, or final-test sources.",
+      "sources": [
+        {
+          "auditManifest": "experiments/ants_v5/training_source_001_manifest.json",
+          "checkpointSelectionEligible": false,
+          "developmentValidationEligible": false,
+          "filename": "ants_v5_training_source_001.mp4",
+          "finalTest": false,
+          "observedReference": false,
+          "path": "samples/v2/ants_v5_training_source_001.mp4",
+          "sha256": "53a659c615fb1ae5e6ab1ae96ba84531cb8e7d8aae6c396a19b8f7e7cf623e7b",
+          "sourceId": "training_source_001",
+          "trainEligible": true
+        }
       ]
     },
     "TRAIN_ELIGIBLE_EXISTING": {
