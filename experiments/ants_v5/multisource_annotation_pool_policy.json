@@ -1,0 +1,365 @@
+{
+  "schemaVersion": "1.0",
+  "createdAtUtc": "2026-08-28T09:10:00Z",
+  "experiment": "ants_v5_crowdedscale_e01",
+  "policyType": "MULTI_SOURCE_ANNOTATION_POOL_PREREGISTRATION",
+  "inputRecords": [
+    "experiments/ants_v5/target_supply_feasibility_audit.md",
+    "experiments/ants_v5/target_supply_inventory.json",
+    "experiments/ants_v5/unused_train_candidate_supply.json"
+  ],
+  "feasibilityInputs": {
+    "overallFeasibilityClassification": "MULTI_SOURCE_COMBINATION_REQUIRED",
+    "newManualAnnotationRequired": true,
+    "newRecordingRequired": false,
+    "finalTrainAdditionSelected": false,
+    "trainingStarted": false
+  },
+  "boundary": {
+    "trainEligibleOnly": true,
+    "finalTestSemanticAccess": false,
+    "finalTestContentUsedForSelection": false,
+    "formerV5FinalTest001UsedForSelection": false,
+    "gtUsedForFrameSelection": false,
+    "modelInferenceUsedForFrameSelection": false,
+    "pretrainedDetectorUsed": false,
+    "learnedEmbeddingsUsed": false,
+    "pseudoLabelsUsed": false,
+    "publicTrackingGtImportedAsV5Gt": false
+  },
+  "absoluteExclusions": {
+    "developmentValidation": [
+      "Seq0005",
+      "Seq0010",
+      "own_colony_val_001"
+    ],
+    "observedReferences": [
+      "Seq0001",
+      "Seq0006",
+      "own_colony_val_002",
+      "ant4",
+      "former_v5_final_test_001"
+    ],
+    "finalTest": [
+      "v5_final_test_002"
+    ],
+    "otherExcluded": [
+      "Ants11",
+      "Ants2",
+      "ambiguous/excluded sources"
+    ]
+  },
+  "frozenPostAnnotationStrata": {
+    "density": {
+      "sparse": "<=5 adult annotations/image",
+      "medium": ">5 and <=10 adult annotations/image",
+      "crowded": ">10 adult annotations/image"
+    },
+    "scale": {
+      "smallHeavyMaxInclusiveMedianNormalizedBboxArea": 0.0016905381,
+      "mixedMinExclusiveMedianNormalizedBboxArea": 0.0016905381,
+      "mixedMaxInclusiveMedianNormalizedBboxArea": 0.0028168401,
+      "mediumLargeHeavyMinExclusiveMedianNormalizedBboxArea": 0.0028168401
+    },
+    "localCrowding": {
+      "neighborRadiusNormalizedImageUnits": 0.095833335,
+      "isolatedDominant": "median neighbor count <=0",
+      "moderate": "median neighbor count >0 and <=2",
+      "crowdedNeighbor": "median neighbor count >2"
+    }
+  },
+  "annotationPool": {
+    "targetNewManualAnnotationImages": 72,
+    "targetDerivation": "72 is within the preregistered 60-90 range, large enough to absorb failed strata candidates, and divisible into a balanced 36/36 public-vs-own-domain split without letting one source dominate.",
+    "poolPurpose": "manual annotation pool only; not a final train addition",
+    "doNotSelectConcreteFramesInThisTask": true,
+    "doNotAnnotateInThisTask": true,
+    "doNotTrainInThisTask": true
+  },
+  "sourceFamilies": {
+    "publicDiverse": {
+      "sources": [
+        "Seq0007",
+        "Seq0008",
+        "Seq0009"
+      ],
+      "allocationImages": 36,
+      "minimumImagesAfterRedistribution": 30,
+      "maximumImagesAfterRedistribution": 42,
+      "role": "primary label-blind target-supply family for public dense/small visual regimes"
+    },
+    "ownDomain": {
+      "sources": [
+        "Ants3",
+        "Ants4",
+        "Ants5",
+        "Ants6",
+        "Ants7",
+        "Ants8",
+        "Ants9",
+        "Ants10"
+      ],
+      "allocationImages": 36,
+      "minimumImagesAfterRedistribution": 30,
+      "maximumImagesAfterRedistribution": 42,
+      "role": "real-camera/domain-complement family"
+    },
+    "existingAnnotatedComplement": {
+      "sources": [
+        "training_source_001"
+      ],
+      "allocationImagesInNewManualAnnotationPool": 0,
+      "role": "bounded domain-complement candidate outside the new manual annotation queue"
+    }
+  },
+  "perSourceQuotas": {
+    "Seq0007": {
+      "family": "publicDiverse",
+      "target": 12,
+      "floor": 10,
+      "cap": 12,
+      "basis": "prior frozen label-blind source feasibility: likely_useful_candidate"
+    },
+    "Seq0008": {
+      "family": "publicDiverse",
+      "target": 12,
+      "floor": 10,
+      "cap": 12,
+      "basis": "prior frozen label-blind source feasibility: likely_useful_candidate"
+    },
+    "Seq0009": {
+      "family": "publicDiverse",
+      "target": 12,
+      "floor": 10,
+      "cap": 12,
+      "basis": "prior frozen label-blind source feasibility: likely_useful_candidate"
+    },
+    "Ants3": {
+      "family": "ownDomain",
+      "target": 6,
+      "floor": 3,
+      "cap": 6,
+      "basis": "prior frozen label-blind source feasibility: uncertain"
+    },
+    "Ants4": {
+      "family": "ownDomain",
+      "target": 3,
+      "floor": 3,
+      "cap": 6,
+      "basis": "prior frozen label-blind source feasibility: unlikely_useful_candidate"
+    },
+    "Ants5": {
+      "family": "ownDomain",
+      "target": 4,
+      "floor": 3,
+      "cap": 6,
+      "basis": "prior frozen label-blind source feasibility: unlikely_useful_candidate"
+    },
+    "Ants6": {
+      "family": "ownDomain",
+      "target": 3,
+      "floor": 3,
+      "cap": 6,
+      "basis": "prior frozen label-blind source feasibility: unlikely_useful_candidate"
+    },
+    "Ants7": {
+      "family": "ownDomain",
+      "target": 6,
+      "floor": 3,
+      "cap": 6,
+      "basis": "prior frozen label-blind source feasibility: uncertain"
+    },
+    "Ants8": {
+      "family": "ownDomain",
+      "target": 6,
+      "floor": 3,
+      "cap": 6,
+      "basis": "prior frozen label-blind source feasibility: uncertain"
+    },
+    "Ants9": {
+      "family": "ownDomain",
+      "target": 4,
+      "floor": 3,
+      "cap": 6,
+      "basis": "prior frozen label-blind source feasibility: unlikely_useful_candidate"
+    },
+    "Ants10": {
+      "family": "ownDomain",
+      "target": 4,
+      "floor": 3,
+      "cap": 6,
+      "basis": "prior frozen label-blind source feasibility: unlikely_useful_candidate"
+    }
+  },
+  "familyBalanceRules": {
+    "noSingleSourceDominates": {
+      "maximumImagesPerSource": 12,
+      "maximumFractionOfNewPoolPerSource": 0.166667
+    },
+    "minimumSourceCoverage": {
+      "publicSourcesRequired": 3,
+      "ownDomainSourcesRequired": 8,
+      "minimumTotalSourcesRequiredIfSupplyPermits": 11
+    },
+    "sourceFamilyBounds": {
+      "publicDiverseMinimumFraction": 0.416667,
+      "publicDiverseMaximumFraction": 0.583333,
+      "ownDomainMinimumFraction": 0.416667,
+      "ownDomainMaximumFraction": 0.583333
+    }
+  },
+  "allowedFrameSelectionSignals": [
+    "source identity",
+    "frame index",
+    "timestamp",
+    "deterministic temporal stratification",
+    "image SHA256",
+    "decode/readability checks",
+    "non-learned dHash/pHash similarity",
+    "prior frozen source-level feasibility category"
+  ],
+  "forbiddenFrameSelectionSignals": [
+    "manual adult count",
+    "exact density classification",
+    "bbox size measurement",
+    "exact local-crowding classification",
+    "GT boxes",
+    "public tracking boxes as labels",
+    "v1/v2/v3/v4 predictions",
+    "pretrained YOLO predictions",
+    "pseudo-labels",
+    "learned embeddings",
+    "final-test information"
+  ],
+  "eligibilityRules": {
+    "preserveOriginalSourceImagePixels": true,
+    "excludeAlreadyInV4Base": true,
+    "excludePreviousObservedReferenceOrFinalTestMaterial": true,
+    "excludeUnreadableImages": true,
+    "excludeImagesWithTechnicalDecodeFailure": true,
+    "excludeFramesWhoseOriginalSourceCannotBeVerifiedTrainEligible": true,
+    "publicSeq0007Seq0008Seq0009Labels": {
+      "originalPublicTrackingBoxesMayBeUsedForExactV5Gt": false,
+      "manualFormicaiRelabelRequired": true
+    }
+  },
+  "temporalSelectionPolicy": {
+    "candidateEnumeration": "For each source, enumerate unused eligible frames in ascending frame-index order after excluding frames already represented in v4 base.",
+    "binning": "For each source, split the eligible temporal span into target*3 equal bins; generate one center-nearest candidate per bin before hash pruning.",
+    "minimumTemporalSpacing": {
+      "seconds": 2.0,
+      "frameRule": "accepted frames from the same source must be at least max(round(fps*2.0), floor(totalEligibleFrames/(target*4))) frame indexes apart; if fps is unknown, use the frame-index term only"
+    },
+    "tieBreakersInOrder": [
+      "center-nearest frame within temporal bin",
+      "lower absolute frame-index distance to bin center",
+      "lower frame index",
+      "lexicographically smaller source-relative filename",
+      "lexicographically smaller image SHA256"
+    ]
+  },
+  "readabilityPolicy": {
+    "decodeRequired": true,
+    "minimumWidthPixels": 320,
+    "minimumHeightPixels": 240,
+    "minimumGrayscaleStandardDeviation": 8.0,
+    "minimumLaplacianVariance": 25.0,
+    "manualObjectContentJudgmentAllowed": false,
+    "reason": "Readability gates are image-technical only and do not estimate adult counts, bbox scale, or crowding."
+  },
+  "nearDuplicatePolicy": {
+    "hashes": [
+      "64-bit dHash",
+      "64-bit pHash"
+    ],
+    "sameSourceRejectIfDhashHammingDistanceLessOrEqual": 5,
+    "sameSourceRejectIfPhashHammingDistanceLessOrEqual": 8,
+    "crossSourceRejectAutomatically": false,
+    "crossSourceFlagIfDhashHammingDistanceLessOrEqual": 3,
+    "crossSourceFlagIfPhashHammingDistanceLessOrEqual": 6,
+    "tieBreakerAfterHashReject": "advance to the next center-nearest candidate in the same temporal bin, then to adjacent bins in alternating +1/-1 bin order",
+    "doNotLowerThresholdsToFillPool": true
+  },
+  "redistributionRules": {
+    "withinSourceShortfall": "If a source cannot meet its target after eligibility, temporal spacing, and hash pruning, keep all accepted images from that source if it meets its floor; otherwise record source floor shortfall.",
+    "withinFamilyRedistribution": "Redistribute source deficits within the same family to sources below cap using round-robin order by feasibility tier then source name.",
+    "feasibilityTierOrder": [
+      "likely_useful_candidate",
+      "uncertain",
+      "unlikely_useful_candidate"
+    ],
+    "publicRoundRobinOrder": [
+      "Seq0007",
+      "Seq0008",
+      "Seq0009"
+    ],
+    "ownDomainRoundRobinOrder": [
+      "Ants3",
+      "Ants7",
+      "Ants8",
+      "Ants5",
+      "Ants9",
+      "Ants10",
+      "Ants4",
+      "Ants6"
+    ],
+    "crossFamilyRedistribution": "If a whole family cannot reach 36 after all same-family redistribution, transfer at most 6 images to the other family while preserving the receiving source caps and the donor family minimum of 30.",
+    "unfillableShortfall": "If the target remains unfilled without violating caps, family bounds, temporal spacing, or hash thresholds, report the shortfall and do not fill with near-duplicates or forbidden sources."
+  },
+  "source001Policy": {
+    "choice": "B_BOUNDED_DOMAIN_COMPLEMENT_SUBSET",
+    "includeInNewManualAnnotationPool": false,
+    "automaticIncludeAll48": false,
+    "maximumImagesInAnyFutureFinalTrainAddition": 12,
+    "maximumFractionOfAnyFutureFinalTrainAddition": 0.2,
+    "allowedRole": "domain-complement candidate only",
+    "futureDeterministicUseRule": "In a separate final-train-addition preregistration, source001 may be considered only after new pool GT strata are measured; select at most the lower of 12 images or 20% of that future addition, prioritizing medium-density/moderate-local-crowding complement if preregistered, with ties by source001 image SHA256 then filename.",
+    "notSelectedNow": true
+  },
+  "manualAnnotationPolicy": {
+    "tool": "LOCAL_CVAT",
+    "taskType": "object_detection",
+    "classes": {
+      "0": "ant"
+    },
+    "boxPolicy": "manual tight-body boxes around every visible adult ant",
+    "include": [
+      "visible adult ants"
+    ],
+    "exclude": [
+      "brood",
+      "larvae",
+      "pupae",
+      "food",
+      "debris",
+      "shadows",
+      "reflections"
+    ],
+    "modelAssistanceAllowed": false,
+    "autoLabelAllowed": false,
+    "labelAssistAllowed": false,
+    "samAllowed": false,
+    "yoloInferenceAllowed": false,
+    "pseudoLabelingAllowed": false
+  },
+  "afterManualGt": {
+    "applyFrozenStrataDefinitions": true,
+    "measureDensityScaleLocalCrowdingOnlyAfterGt": true,
+    "finalTrainAdditionSelectionRequiresSeparatePreregistration": true,
+    "doNotDefineFinalSubsetHere": true
+  },
+  "trainingControls": {
+    "architecture": "YOLO26n",
+    "architectureChanged": false,
+    "imgsz": 640,
+    "maxEpochs": 50,
+    "seed": 42,
+    "pretrainedFamily": "same as v3/v4 controlled experiments",
+    "amp": true,
+    "canonicalConf": 0.25,
+    "canonicalIou": 0.7,
+    "end2end": false,
+    "trainNow": false,
+    "largerYoloStatus": "future controlled ablation only"
+  }
+}
