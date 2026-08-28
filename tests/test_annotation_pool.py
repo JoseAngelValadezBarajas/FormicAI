@@ -4,7 +4,10 @@ import pytest
 
 from formicai.dataset.annotation_pool import (
     CandidatePoolIntegrityError,
+    choose_largest_feasible_spacing,
+    remediated_redundancy_decision,
     select_annotation_pool_candidates,
+    select_maximum_cardinality_frames,
     summarize_adjacent_redundancy,
     verify_candidate_pool_document,
 )
@@ -163,3 +166,101 @@ def test_summarize_adjacent_redundancy_reports_runs_and_distances() -> None:
             "candidateCount": 2,
         },
     ]
+
+
+def test_select_maximum_cardinality_beats_greedy_order() -> None:
+    result = select_maximum_cardinality_frames(
+        [0, 4, 5, 9],
+        target_count=2,
+        spacing_frames=5,
+    )
+
+    assert result.selected_frame_indexes == [0, 9]
+    assert result.source_shortfall is False
+
+
+def test_select_maximum_cardinality_uses_deterministic_tie_breaks() -> None:
+    first = select_maximum_cardinality_frames(
+        [0, 10, 20, 30, 40],
+        target_count=3,
+        spacing_frames=10,
+    )
+    second = select_maximum_cardinality_frames(
+        [40, 30, 20, 10, 0],
+        target_count=3,
+        spacing_frames=10,
+    )
+
+    assert first.selected_frame_indexes == [0, 20, 40]
+    assert second.selected_frame_indexes == first.selected_frame_indexes
+
+
+def test_choose_largest_feasible_spacing_retains_preferred_when_possible() -> None:
+    result = choose_largest_feasible_spacing(
+        [0, 60, 120],
+        target_count=3,
+        preferred_spacing_frames=60,
+        minimum_allowed_spacing_frames=30,
+    )
+
+    assert result.spacing_frames == 60
+    assert result.selected_frame_indexes == [0, 60, 120]
+    assert result.source_shortfall is False
+
+
+def test_choose_largest_feasible_spacing_adapts_to_largest_working_value() -> None:
+    result = choose_largest_feasible_spacing(
+        [0, 48, 96],
+        target_count=3,
+        preferred_spacing_frames=60,
+        minimum_allowed_spacing_frames=30,
+    )
+
+    assert result.spacing_frames == 48
+    assert result.selected_frame_indexes == [0, 48, 96]
+    assert result.source_shortfall is False
+
+
+def test_choose_largest_feasible_spacing_respects_one_second_floor_shortfall() -> None:
+    result = choose_largest_feasible_spacing(
+        [0, 10, 20],
+        target_count=3,
+        preferred_spacing_frames=60,
+        minimum_allowed_spacing_frames=30,
+    )
+
+    assert result.spacing_frames == 30
+    assert result.selected_frame_indexes == [0]
+    assert result.source_shortfall is True
+
+
+def test_remediated_redundancy_decision_requires_exact_or_both_hashes() -> None:
+    assert remediated_redundancy_decision(
+        exact_sha_duplicate=True,
+        dhash_distance=64,
+        phash_distance=64,
+    ).reason == "EXACT_SHA_DUPLICATE"
+
+    dhash_only = remediated_redundancy_decision(
+        exact_sha_duplicate=False,
+        dhash_distance=5,
+        phash_distance=9,
+    )
+    assert dhash_only.hard_reject is False
+    assert dhash_only.flag == "PERCEPTUAL_SIMILARITY_FLAG"
+
+    phash_only = remediated_redundancy_decision(
+        exact_sha_duplicate=False,
+        dhash_distance=6,
+        phash_distance=8,
+    )
+    assert phash_only.hard_reject is False
+    assert phash_only.flag == "PERCEPTUAL_SIMILARITY_FLAG"
+
+    both = remediated_redundancy_decision(
+        exact_sha_duplicate=False,
+        dhash_distance=5,
+        phash_distance=8,
+    )
+    assert both.hard_reject is True
+    assert both.reason == "COMBINED_PERCEPTUAL_DUPLICATE"

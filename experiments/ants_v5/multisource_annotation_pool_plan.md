@@ -100,19 +100,29 @@ Forbidden:
 
 For each source, future selection must enumerate unused eligible frames in ascending frame-index order after excluding frames already represented in the v4 base.
 
-For each source, split the eligible temporal span into `target * 3` equal bins. Generate one center-nearest candidate per bin before hash pruning. Accepted frames from the same source must be at least:
+For each source, split the eligible temporal span into `target * 3` equal bins. Generate one center-nearest candidate per bin before hash pruning. Candidate-bin count remains unchanged in this remediation.
 
-`max(round(fps * 2.0), floor(totalEligibleFrames / (target * 4)))`
+Selection must use a deterministic maximum-cardinality valid subset over the candidate set, not a greedy accept/reject pass.
 
-frame indexes apart. If fps is unknown, use only the frame-index term.
+Preferred temporal spacing is `round(fps * 2.0)` frame indexes. The lower bound is `round(fps * 1.0)` frame indexes. For each source, choose the largest integer spacing `s` such that:
+
+`round(fps * 1.0) <= s <= round(fps * 2.0)`
+
+and the maximum-cardinality selector can select at least the source target count. If the source target is impossible at the one-second floor, record `SOURCE_SHORTFALL`, enter `REVIEW`, and stop.
+
+Own-domain sources use the same selector. If the preferred two-second spacing is feasible, retain it; relax spacing only when the same feasibility rule requires it.
 
 Tie-breakers:
 
-1. center-nearest frame within temporal bin
-2. lower absolute frame-index distance to bin center
-3. lower frame index
-4. lexicographically smaller source-relative filename
-5. lexicographically smaller image SHA256
+1. maximize selected count
+2. maximize temporal spread
+3. maximize minimum adjacent frame gap
+4. lower candidate-bin index
+5. lower frame index
+6. lexicographically smaller source-relative filename
+7. lexicographically smaller image SHA256
+
+Public-family dry-run feasibility under this remediated policy: `Seq0007` reaches `12/12` at `56` frames (`1.866667 s`), `Seq0008` reaches `12/12` at `46` frames (`1.533333 s`), and `Seq0009` reaches `12/12` at `43` frames (`1.433333 s`). This dry run does not freeze selected images.
 
 ## Readability And Near-Duplicates
 
@@ -131,13 +141,13 @@ Near-duplicate pruning:
 - reject a same-source candidate if dHash Hamming distance is `<=5` and pHash Hamming distance is `<=8` against the same already accepted same-source frame
 - if only dHash `<=5` or only pHash `<=8`, record `PERCEPTUAL_SIMILARITY_FLAG` and keep the candidate eligible subject to all other rules
 - do not automatically reject cross-source similarities, but flag cross-source dHash `<=3` or pHash `<=6`
-- do not lower hash or spacing thresholds to fill the target number
+- do not lower perceptual hash thresholds; temporal spacing may only follow the preregistered feasibility-aware rule above
 
 Remediation note: a label-blind policy-validation attempt under the prior `dHash <=5 OR pHash <=8` rule reached only `19 / 36` public-family images and produced `341` pHash-only hard rejections versus `4` dHash hard rejections. The diagnosis is `PERCEPTUAL_HASH_BACKGROUND_DOMINANCE`: pHash is retained as a useful audit signal, but no longer acts as a standalone hard-rejection criterion in this relatively static-background acquisition regime.
 
 ## Redistribution
 
-If a source cannot meet its target after eligibility, temporal spacing, readability, and hash pruning, keep accepted frames if the source meets its floor; otherwise record the floor shortfall.
+If a source cannot meet its target after eligibility, remediated temporal spacing, readability, and hash pruning, keep accepted frames if the source meets its floor; otherwise record the floor shortfall.
 
 Redistribute deficits within the same family first, below cap, using feasibility tier then source order:
 
@@ -146,7 +156,7 @@ Redistribute deficits within the same family first, below cap, using feasibility
 
 If a whole family cannot reach `36`, transfer at most `6` images to the other family while preserving source caps and the donor family minimum of `30`.
 
-If the pool still cannot reach `72` without violating caps, family bounds, temporal spacing, readability, or hash thresholds, report the shortfall. Do not fill with near-duplicates or forbidden sources.
+If the pool still cannot reach `72` without violating caps, family bounds, remediated temporal spacing, readability, or perceptual hash thresholds, report the shortfall. Do not fill with near-duplicates or forbidden sources.
 
 ## Source001 Policy
 

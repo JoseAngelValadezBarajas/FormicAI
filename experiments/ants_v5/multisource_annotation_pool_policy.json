@@ -244,19 +244,68 @@
     }
   },
   "temporalSelectionPolicy": {
+    "remediationStatus": "REMEDIATED_AFTER_PUBLIC_CONSTRAINT_DIAGNOSIS",
+    "diagnosis": "FIXED_TWO_SECOND_SPACING_AND_GREEDY_SELECTION_MAKE_SHORT_PUBLIC_SOURCE_TARGETS_INFEASIBLE",
+    "previousSelectionAlgorithm": "greedy center-nearest bin pass",
+    "previousMinimumTemporalSpacingRule": "accepted frames from the same source must be at least max(round(fps*2.0), floor(totalEligibleFrames/(target*4))) frame indexes apart",
+    "selectionAlgorithm": "deterministic maximum-cardinality valid subset",
     "candidateEnumeration": "For each source, enumerate unused eligible frames in ascending frame-index order after excluding frames already represented in v4 base.",
-    "binning": "For each source, split the eligible temporal span into target*3 equal bins; generate one center-nearest candidate per bin before hash pruning.",
-    "minimumTemporalSpacing": {
-      "seconds": 2.0,
-      "frameRule": "accepted frames from the same source must be at least max(round(fps*2.0), floor(totalEligibleFrames/(target*4))) frame indexes apart; if fps is unknown, use the frame-index term only"
-    },
+    "binning": "For each source, split the eligible temporal span into target*3 equal bins; generate one center-nearest candidate per bin before hash pruning. Do not increase candidate-bin count during this remediation.",
+    "preferredSpacingFrames": "round(fps*2.0)",
+    "minimumAllowedSpacingFrames": "round(fps*1.0)",
+    "selectedSpacingRule": "Choose the largest integer spacing s where minimumAllowedSpacingFrames <= s <= preferredSpacingFrames and maximum_feasible_cardinality(candidate_set, s) >= target_count.",
+    "sourceShortfallRule": "If target_count is impossible at minimumAllowedSpacingFrames, record SOURCE_SHORTFALL, enter REVIEW, and stop.",
+    "ownDomainSpacingRule": "Apply the same maximum-cardinality selector to own-domain sources. Retain preferred two-second spacing when feasible; relax only as required by the selectedSpacingRule.",
     "tieBreakersInOrder": [
-      "center-nearest frame within temporal bin",
-      "lower absolute frame-index distance to bin center",
+      "maximize selected count",
+      "maximize temporal spread",
+      "maximize minimum adjacent frame gap",
+      "lower candidate-bin index",
       "lower frame index",
       "lexicographically smaller source-relative filename",
       "lexicographically smaller image SHA256"
-    ]
+    ],
+    "dryRunPublicFeasibility": {
+      "doesNotFreezeImages": true,
+      "candidateBinsPerSource": "target*3",
+      "allPublicNominalTargetsFeasible": true,
+      "Seq0007": {
+        "target": 12,
+        "candidateBins": 36,
+        "preferredSpacingFrames": 60,
+        "minimumAllowedSpacingFrames": 30,
+        "selectedSpacingFrames": 56,
+        "selectedSpacingSeconds": 1.866667,
+        "selectedCount": 12,
+        "sourceShortfall": false,
+        "combinedPerceptualIncompatiblePairs": 19,
+        "singleHashSimilarityFlags": 292
+      },
+      "Seq0008": {
+        "target": 12,
+        "candidateBins": 36,
+        "preferredSpacingFrames": 60,
+        "minimumAllowedSpacingFrames": 30,
+        "selectedSpacingFrames": 46,
+        "selectedSpacingSeconds": 1.533333,
+        "selectedCount": 12,
+        "sourceShortfall": false,
+        "combinedPerceptualIncompatiblePairs": 3,
+        "singleHashSimilarityFlags": 409
+      },
+      "Seq0009": {
+        "target": 12,
+        "candidateBins": 36,
+        "preferredSpacingFrames": 60,
+        "minimumAllowedSpacingFrames": 30,
+        "selectedSpacingFrames": 43,
+        "selectedSpacingSeconds": 1.433333,
+        "selectedCount": 12,
+        "sourceShortfall": false,
+        "combinedPerceptualIncompatiblePairs": 2,
+        "singleHashSimilarityFlags": 17
+      }
+    }
   },
   "readabilityPolicy": {
     "decodeRequired": true,

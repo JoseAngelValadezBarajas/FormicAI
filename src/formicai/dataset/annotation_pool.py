@@ -23,6 +23,21 @@ class SelectionResult:
     algorithm: dict[str, Any]
 
 
+@dataclass(frozen=True)
+class RedundancyDecision:
+    hard_reject: bool
+    flag: str | None
+    reason: str
+
+
+@dataclass(frozen=True)
+class MaximumCardinalityResult:
+    spacing_frames: int
+    selected_frame_indexes: list[int]
+    target_count: int
+    source_shortfall: bool
+
+
 def verify_candidate_pool_document(
     document: Mapping[str, Any],
     *,
@@ -104,6 +119,162 @@ def dhash_file(path: Path, *, hash_size: int = 8) -> int:
 
 def hamming_distance(left: int, right: int) -> int:
     return int(left ^ right).bit_count()
+
+
+def remediated_redundancy_decision(
+    *,
+    exact_sha_duplicate: bool,
+    dhash_distance: int,
+    phash_distance: int,
+    dhash_threshold: int = 5,
+    phash_threshold: int = 8,
+) -> RedundancyDecision:
+    if exact_sha_duplicate:
+        return RedundancyDecision(
+            hard_reject=True,
+            flag=None,
+            reason="EXACT_SHA_DUPLICATE",
+        )
+
+    dhash_close = dhash_distance <= dhash_threshold
+    phash_close = phash_distance <= phash_threshold
+    if dhash_close and phash_close:
+        return RedundancyDecision(
+            hard_reject=True,
+            flag=None,
+            reason="COMBINED_PERCEPTUAL_DUPLICATE",
+        )
+    if dhash_close:
+        return RedundancyDecision(
+            hard_reject=False,
+            flag="PERCEPTUAL_SIMILARITY_FLAG",
+            reason="DHASH_ONLY_SIMILARITY",
+        )
+    if phash_close:
+        return RedundancyDecision(
+            hard_reject=False,
+            flag="PERCEPTUAL_SIMILARITY_FLAG",
+            reason="PHASH_ONLY_SIMILARITY",
+        )
+    return RedundancyDecision(
+        hard_reject=False,
+        flag=None,
+        reason="DISTINCT",
+    )
+
+
+def select_maximum_cardinality_frames(
+    frame_indexes: Sequence[int],
+    *,
+    target_count: int,
+    spacing_frames: int,
+    incompatible_pairs: set[tuple[int, int]] | None = None,
+) -> MaximumCardinalityResult:
+    if target_count <= 0:
+        raise ValueError("target_count must be positive")
+    if spacing_frames <= 0:
+        raise ValueError("spacing_frames must be positive")
+
+    frames = sorted(set(int(frame) for frame in frame_indexes))
+    incompatible = _normalize_incompatible_pairs(incompatible_pairs or set())
+    best: list[int] = []
+
+    def conflicts(candidate: int, selected: Sequence[int]) -> bool:
+        return any(
+            candidate - frame < spacing_frames or (frame, candidate) in incompatible
+            for frame in selected
+        )
+
+    def spacing_upper_bound(start: int, selected: Sequence[int]) -> int:
+        count = len(selected)
+        last = selected[-1] if selected else None
+        for frame in frames[start:]:
+            if last is None or frame - last >= spacing_frames:
+                count += 1
+                last = frame
+                if count >= target_count:
+                    return count
+        return count
+
+    def is_better(candidate: list[int]) -> bool:
+        if len(candidate) != len(best):
+            return len(candidate) > len(best)
+        candidate_spread = _temporal_spread_frames(candidate)
+        best_spread = _temporal_spread_frames(best)
+        if candidate_spread != best_spread:
+            return candidate_spread > best_spread
+        candidate_min_gap = _minimum_adjacent_frame_gap(candidate)
+        best_min_gap = _minimum_adjacent_frame_gap(best)
+        if candidate_min_gap != best_min_gap:
+            return candidate_min_gap > best_min_gap
+        return candidate < best
+
+    def search(start: int, selected: list[int]) -> bool:
+        nonlocal best
+        if is_better(selected):
+            best = selected[:]
+        if len(selected) >= target_count:
+            return False
+        if spacing_upper_bound(start, selected) < len(best):
+            return False
+
+        for index in range(start, len(frames)):
+            frame = frames[index]
+            if conflicts(frame, selected):
+                continue
+            search(index + 1, selected + [frame])
+        return False
+
+    search(0, [])
+    return MaximumCardinalityResult(
+        spacing_frames=spacing_frames,
+        selected_frame_indexes=best[:target_count],
+        target_count=target_count,
+        source_shortfall=len(best) < target_count,
+    )
+
+
+def choose_largest_feasible_spacing(
+    frame_indexes: Sequence[int],
+    *,
+    target_count: int,
+    preferred_spacing_frames: int,
+    minimum_allowed_spacing_frames: int,
+    incompatible_pairs: set[tuple[int, int]] | None = None,
+) -> MaximumCardinalityResult:
+    if minimum_allowed_spacing_frames <= 0:
+        raise ValueError("minimum_allowed_spacing_frames must be positive")
+    if preferred_spacing_frames < minimum_allowed_spacing_frames:
+        raise ValueError("preferred spacing must be >= minimum allowed spacing")
+
+    best_shortfall: MaximumCardinalityResult | None = None
+    for spacing in range(preferred_spacing_frames, minimum_allowed_spacing_frames - 1, -1):
+        result = select_maximum_cardinality_frames(
+            frame_indexes,
+            target_count=target_count,
+            spacing_frames=spacing,
+            incompatible_pairs=incompatible_pairs,
+        )
+        if not result.source_shortfall:
+            return result
+        if (
+            best_shortfall is None
+            or len(result.selected_frame_indexes) > len(best_shortfall.selected_frame_indexes)
+            or (
+                len(result.selected_frame_indexes) == len(best_shortfall.selected_frame_indexes)
+                and result.spacing_frames < best_shortfall.spacing_frames
+            )
+        ):
+            best_shortfall = result
+
+    if best_shortfall is None:
+        best_shortfall = select_maximum_cardinality_frames(
+            frame_indexes,
+            target_count=target_count,
+            spacing_frames=minimum_allowed_spacing_frames,
+            incompatible_pairs=incompatible_pairs,
+        )
+    return best_shortfall
 
 
 def summarize_adjacent_redundancy(
@@ -434,6 +605,33 @@ def _candidate_filename(candidate: Mapping[str, Any]) -> str:
     if "imageFilename" in candidate:
         return str(candidate["imageFilename"])
     return str(candidate["filename"])
+
+
+def _normalize_incompatible_pairs(
+    pairs: set[tuple[int, int]],
+) -> set[tuple[int, int]]:
+    normalized: set[tuple[int, int]] = set()
+    for left, right in pairs:
+        if left == right:
+            normalized.add((left, right))
+        else:
+            normalized.add(tuple(sorted((int(left), int(right)))))
+    return normalized
+
+
+def _temporal_spread_frames(frame_indexes: Sequence[int]) -> int:
+    if len(frame_indexes) < 2:
+        return 0
+    return int(frame_indexes[-1]) - int(frame_indexes[0])
+
+
+def _minimum_adjacent_frame_gap(frame_indexes: Sequence[int]) -> int:
+    if len(frame_indexes) < 2:
+        return 0
+    return min(
+        int(right) - int(left)
+        for left, right in zip(frame_indexes, frame_indexes[1:])
+    )
 
 
 def _cluster_record(cluster_index: int, candidates: Sequence[Mapping[str, Any]]) -> dict[str, Any]:
