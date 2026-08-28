@@ -1,0 +1,3447 @@
+{
+  "alreadyInV4Supply": {
+    "bySource": {
+      "Ants10": {
+        "annotations": 17,
+        "annotationsPerImage": {
+          "count": 8,
+          "max": 3.0,
+          "mean": 2.125,
+          "median": 2.0,
+          "min": 1.0,
+          "p25": 1.75,
+          "p75": 3.0
+        },
+        "bboxAreaMedianPerImage": {
+          "count": 8,
+          "max": 0.0033215181334876544,
+          "mean": 0.0024877477580087168,
+          "median": 0.00241051191222391,
+          "min": 0.0021490403199701004,
+          "p25": 0.0022692268294982154,
+          "p75": 0.002520525895167824
+        },
+        "density": {
+          "crowded": 0,
+          "medium": 0,
+          "sparse": 8
+        },
+        "images": 8,
+        "localCrowding": {
+          "crowded-neighbor": 0,
+          "isolated-dominant": 7,
+          "moderate": 1
+        },
+        "medianNeighborCountPerImage": {
+          "count": 8,
+          "max": 1.0,
+          "mean": 0.125,
+          "median": 0.0,
+          "min": 0.0,
+          "p25": 0.0,
+          "p75": 0.0
+        },
+        "scale": {
+          "medium-large-heavy": 1,
+          "mixed": 7,
+          "small-heavy": 0,
+          "zero-adult": 0
+        },
+        "targetCountsAndIntersections": {
+          "crowded": 0,
+          "crowded-neighbor": 0,
+          "crowded_and_crowded_neighbor": 0,
+          "crowded_and_small_heavy": 0,
+          "crowded_small_heavy_and_crowded_neighbor": 0,
+          "small-heavy": 0,
+          "small_heavy_and_crowded_neighbor": 0
+        }
+      },
+      "Ants3": {
+        "annotations": 18,
+        "annotationsPerImage": {
+          "count": 7,
+          "max": 4.0,
+          "mean": 2.5714285714285716,
+          "median": 2.0,
+          "min": 1.0,
+          "p25": 2.0,
+          "p75": 3.5
+        },
+        "bboxAreaMedianPerImage": {
+          "count": 7,
+          "max": 0.010629222180528029,
+          "mean": 0.005254040593187798,
+          "median": 0.005387811197860244,
+          "min": 0.0023411310765954862,
+          "p25": 0.0030514352452911506,
+          "p75": 0.006158624603374262
+        },
+        "density": {
+          "crowded": 0,
+          "medium": 0,
+          "sparse": 7
+        },
+        "images": 7,
+        "localCrowding": {
+          "crowded-neighbor": 0,
+          "isolated-dominant": 2,
+          "moderate": 5
+        },
+        "medianNeighborCountPerImage": {
+          "count": 7,
+          "max": 2.0,
+          "mean": 0.9285714285714286,
+          "median": 1.0,
+          "min": 0.0,
+          "p25": 0.5,
+          "p75": 1.25
+        },
+        "scale": {
+          "medium-large-heavy": 6,
+          "mixed": 1,
+          "small-heavy": 0,
+          "zero-adult": 0
+        },
+        "targetCountsAndIntersections": {
+          "crowded": 0,
+          "crowded-neighbor": 0,
+          "crowded_and_crowded_neighbor": 0,
+          "crowded_and_small_heavy": 0,
+          "crowded_small_heavy_and_crowded_neighbor": 0,
+          "small-heavy": 0,
+          "small_heavy_and_crowded_neighbor": 0
+        }
+      },
+      "Ants4": {
+        "annotations": 10,
+        "annotationsPerImage": {
+          "count": 12,
+          "max": 1.0,
+          "mean": 0.8333333333333334,
+          "median": 1.0,
+          "min": 0.0,
+          "p25": 1.0,
+          "p75": 1.0
+        },
+        "bboxAreaMedianPerImage": {
+          "count": 10,
+          "max": 0.0025332252587796874,
+          "mean": 0.0018398889223958316,
+          "median": 0.001853643565204726,
+          "min": 0.0009764227438876737,
+          "p25": 0.0015333827424093606,
+          "p75": 0.002309061487114236
+        },
+        "density": {
+          "crowded": 0,
+          "medium": 0,
+          "sparse": 12
+        },
+        "images": 12,
+        "localCrowding": {
+          "crowded-neighbor": 0,
+          "isolated-dominant": 12,
+          "moderate": 0
+        },
+        "medianNeighborCountPerImage": {
+          "count": 12,
+          "max": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "min": 0.0,
+          "p25": 0.0,
+          "p75": 0.0
+        },
+        "scale": {
+          "medium-large-heavy": 0,
+          "mixed": 6,
+          "small-heavy": 4,
+          "zero-adult": 2
+        },
+        "targetCountsAndIntersections": {
+          "crowded": 0,
+          "crowded-neighbor": 0,
+          "crowded_and_crowded_neighbor": 0,
+          "crowded_and_small_heavy": 0,
+          "crowded_small_heavy_and_crowded_neighbor": 0,
+          "small-heavy": 4,
+          "small_heavy_and_crowded_neighbor": 0
+        }
+      },
+      "Ants5": {
+        "annotations": 23,
+        "annotationsPerImage": {
+          "count": 8,
+          "max": 3.0,
+          "mean": 2.875,
+          "median": 3.0,
+          "min": 2.0,
+          "p25": 3.0,
+          "p75": 3.0
+        },
+        "bboxAreaMedianPerImage": {
+          "count": 8,
+          "max": 0.002411265435262346,
+          "mean": 0.0019339102286223238,
+          "median": 0.0018732518316092787,
+          "min": 0.0016607590685233412,
+          "p25": 0.0016878858022002798,
+          "p75": 0.0021091037307725694
+        },
+        "density": {
+          "crowded": 0,
+          "medium": 0,
+          "sparse": 8
+        },
+        "images": 8,
+        "localCrowding": {
+          "crowded-neighbor": 0,
+          "isolated-dominant": 6,
+          "moderate": 2
+        },
+        "medianNeighborCountPerImage": {
+          "count": 8,
+          "max": 1.0,
+          "mean": 0.25,
+          "median": 0.0,
+          "min": 0.0,
+          "p25": 0.0,
+          "p75": 0.25
+        },
+        "scale": {
+          "medium-large-heavy": 0,
+          "mixed": 5,
+          "small-heavy": 3,
+          "zero-adult": 0
+        },
+        "targetCountsAndIntersections": {
+          "crowded": 0,
+          "crowded-neighbor": 0,
+          "crowded_and_crowded_neighbor": 0,
+          "crowded_and_small_heavy": 0,
+          "crowded_small_heavy_and_crowded_neighbor": 0,
+          "small-heavy": 3,
+          "small_heavy_and_crowded_neighbor": 0
+        }
+      },
+      "Ants6": {
+        "annotations": 12,
+        "annotationsPerImage": {
+          "count": 12,
+          "max": 1.0,
+          "mean": 1.0,
+          "median": 1.0,
+          "min": 1.0,
+          "p25": 1.0,
+          "p75": 1.0
+        },
+        "bboxAreaMedianPerImage": {
+          "count": 12,
+          "max": 0.0026415993459078316,
+          "mean": 0.0019268733729896602,
+          "median": 0.002003767481949836,
+          "min": 0.0013088348741623458,
+          "p25": 0.0015836940349137345,
+          "p75": 0.002266784374689231
+        },
+        "density": {
+          "crowded": 0,
+          "medium": 0,
+          "sparse": 12
+        },
+        "images": 12,
+        "localCrowding": {
+          "crowded-neighbor": 0,
+          "isolated-dominant": 12,
+          "moderate": 0
+        },
+        "medianNeighborCountPerImage": {
+          "count": 12,
+          "max": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "min": 0.0,
+          "p25": 0.0,
+          "p75": 0.0
+        },
+        "scale": {
+          "medium-large-heavy": 0,
+          "mixed": 7,
+          "small-heavy": 5,
+          "zero-adult": 0
+        },
+        "targetCountsAndIntersections": {
+          "crowded": 0,
+          "crowded-neighbor": 0,
+          "crowded_and_crowded_neighbor": 0,
+          "crowded_and_small_heavy": 0,
+          "crowded_small_heavy_and_crowded_neighbor": 0,
+          "small-heavy": 5,
+          "small_heavy_and_crowded_neighbor": 0
+        }
+      },
+      "Ants7": {
+        "annotations": 37,
+        "annotationsPerImage": {
+          "count": 8,
+          "max": 5.0,
+          "mean": 4.625,
+          "median": 5.0,
+          "min": 4.0,
+          "p25": 4.0,
+          "p75": 5.0
+        },
+        "bboxAreaMedianPerImage": {
+          "count": 8,
+          "max": 0.002179497057270968,
+          "mean": 0.0019306716904365572,
+          "median": 0.0020678488250799,
+          "min": 0.001322916667725,
+          "p25": 0.0018548794707491513,
+          "p75": 0.002123276438964294
+        },
+        "density": {
+          "crowded": 0,
+          "medium": 0,
+          "sparse": 8
+        },
+        "images": 8,
+        "localCrowding": {
+          "crowded-neighbor": 0,
+          "isolated-dominant": 1,
+          "moderate": 7
+        },
+        "medianNeighborCountPerImage": {
+          "count": 8,
+          "max": 2.0,
+          "mean": 0.9375,
+          "median": 0.75,
+          "min": 0.0,
+          "p25": 0.5,
+          "p75": 1.25
+        },
+        "scale": {
+          "medium-large-heavy": 0,
+          "mixed": 6,
+          "small-heavy": 2,
+          "zero-adult": 0
+        },
+        "targetCountsAndIntersections": {
+          "crowded": 0,
+          "crowded-neighbor": 0,
+          "crowded_and_crowded_neighbor": 0,
+          "crowded_and_small_heavy": 0,
+          "crowded_small_heavy_and_crowded_neighbor": 0,
+          "small-heavy": 2,
+          "small_heavy_and_crowded_neighbor": 0
+        }
+      },
+      "Ants8": {
+        "annotations": 23,
+        "annotationsPerImage": {
+          "count": 8,
+          "max": 4.0,
+          "mean": 2.875,
+          "median": 3.0,
+          "min": 2.0,
+          "p25": 2.75,
+          "p75": 3.0
+        },
+        "bboxAreaMedianPerImage": {
+          "count": 8,
+          "max": 0.006463429471485041,
+          "mean": 0.003420282826111877,
+          "median": 0.0030296465084132134,
+          "min": 0.0010068627504048998,
+          "p25": 0.0026072939323722125,
+          "p75": 0.0037937259568379582
+        },
+        "density": {
+          "crowded": 0,
+          "medium": 0,
+          "sparse": 8
+        },
+        "images": 8,
+        "localCrowding": {
+          "crowded-neighbor": 0,
+          "isolated-dominant": 1,
+          "moderate": 7
+        },
+        "medianNeighborCountPerImage": {
+          "count": 8,
+          "max": 2.0,
+          "mean": 1.0,
+          "median": 1.0,
+          "min": 0.0,
+          "p25": 1.0,
+          "p75": 1.0
+        },
+        "scale": {
+          "medium-large-heavy": 5,
+          "mixed": 2,
+          "small-heavy": 1,
+          "zero-adult": 0
+        },
+        "targetCountsAndIntersections": {
+          "crowded": 0,
+          "crowded-neighbor": 0,
+          "crowded_and_crowded_neighbor": 0,
+          "crowded_and_small_heavy": 0,
+          "crowded_small_heavy_and_crowded_neighbor": 0,
+          "small-heavy": 1,
+          "small_heavy_and_crowded_neighbor": 0
+        }
+      },
+      "Ants9": {
+        "annotations": 15,
+        "annotationsPerImage": {
+          "count": 8,
+          "max": 3.0,
+          "mean": 1.875,
+          "median": 1.5,
+          "min": 1.0,
+          "p25": 1.0,
+          "p75": 3.0
+        },
+        "bboxAreaMedianPerImage": {
+          "count": 8,
+          "max": 0.0022545331761670523,
+          "mean": 0.0018713680302414881,
+          "median": 0.0018988715248263888,
+          "min": 0.0014467592560185184,
+          "p25": 0.0015959563077148436,
+          "p75": 0.002169385370809221
+        },
+        "density": {
+          "crowded": 0,
+          "medium": 0,
+          "sparse": 8
+        },
+        "images": 8,
+        "localCrowding": {
+          "crowded-neighbor": 0,
+          "isolated-dominant": 8,
+          "moderate": 0
+        },
+        "medianNeighborCountPerImage": {
+          "count": 8,
+          "max": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "min": 0.0,
+          "p25": 0.0,
+          "p75": 0.0
+        },
+        "scale": {
+          "medium-large-heavy": 0,
+          "mixed": 5,
+          "small-heavy": 3,
+          "zero-adult": 0
+        },
+        "targetCountsAndIntersections": {
+          "crowded": 0,
+          "crowded-neighbor": 0,
+          "crowded_and_crowded_neighbor": 0,
+          "crowded_and_small_heavy": 0,
+          "crowded_small_heavy_and_crowded_neighbor": 0,
+          "small-heavy": 3,
+          "small_heavy_and_crowded_neighbor": 0
+        }
+      },
+      "AntsNet": {
+        "annotations": 229,
+        "annotationsPerImage": {
+          "count": 40,
+          "max": 22.0,
+          "mean": 5.725,
+          "median": 2.5,
+          "min": 1.0,
+          "p25": 1.75,
+          "p75": 9.25
+        },
+        "bboxAreaMedianPerImage": {
+          "count": 40,
+          "max": 0.2686535401663483,
+          "mean": 0.0473667856184582,
+          "median": 0.014273955683181402,
+          "min": 0.0005837857547473,
+          "p25": 0.0057011559949712125,
+          "p75": 0.05677682409670937
+        },
+        "density": {
+          "crowded": 9,
+          "medium": 6,
+          "sparse": 25
+        },
+        "images": 40,
+        "localCrowding": {
+          "crowded-neighbor": 0,
+          "isolated-dominant": 33,
+          "moderate": 7
+        },
+        "medianNeighborCountPerImage": {
+          "count": 40,
+          "max": 2.0,
+          "mean": 0.2125,
+          "median": 0.0,
+          "min": 0.0,
+          "p25": 0.0,
+          "p75": 0.0
+        },
+        "scale": {
+          "medium-large-heavy": 35,
+          "mixed": 1,
+          "small-heavy": 4,
+          "zero-adult": 0
+        },
+        "targetCountsAndIntersections": {
+          "crowded": 9,
+          "crowded-neighbor": 0,
+          "crowded_and_crowded_neighbor": 0,
+          "crowded_and_small_heavy": 3,
+          "crowded_small_heavy_and_crowded_neighbor": 0,
+          "small-heavy": 4,
+          "small_heavy_and_crowded_neighbor": 0
+        }
+      },
+      "Seq0002": {
+        "annotations": 247,
+        "annotationsPerImage": {
+          "count": 25,
+          "max": 10.0,
+          "mean": 9.88,
+          "median": 10.0,
+          "min": 9.0,
+          "p25": 10.0,
+          "p75": 10.0
+        },
+        "bboxAreaMedianPerImage": {
+          "count": 25,
+          "max": 0.0063903353984375005,
+          "mean": 0.0029291026473878845,
+          "median": 0.0025086504927228004,
+          "min": 0.0019634420348206,
+          "p25": 0.0022719825293451,
+          "p75": 0.00285413431698495
+        },
+        "density": {
+          "crowded": 0,
+          "medium": 25,
+          "sparse": 0
+        },
+        "images": 25,
+        "localCrowding": {
+          "crowded-neighbor": 0,
+          "isolated-dominant": 7,
+          "moderate": 18
+        },
+        "medianNeighborCountPerImage": {
+          "count": 25,
+          "max": 2.0,
+          "mean": 0.72,
+          "median": 1.0,
+          "min": 0.0,
+          "p25": 0.0,
+          "p75": 1.0
+        },
+        "scale": {
+          "medium-large-heavy": 9,
+          "mixed": 16,
+          "small-heavy": 0,
+          "zero-adult": 0
+        },
+        "targetCountsAndIntersections": {
+          "crowded": 0,
+          "crowded-neighbor": 0,
+          "crowded_and_crowded_neighbor": 0,
+          "crowded_and_small_heavy": 0,
+          "crowded_small_heavy_and_crowded_neighbor": 0,
+          "small-heavy": 0,
+          "small_heavy_and_crowded_neighbor": 0
+        }
+      },
+      "Seq0003": {
+        "annotations": 250,
+        "annotationsPerImage": {
+          "count": 25,
+          "max": 10.0,
+          "mean": 10.0,
+          "median": 10.0,
+          "min": 10.0,
+          "p25": 10.0,
+          "p75": 10.0
+        },
+        "bboxAreaMedianPerImage": {
+          "count": 25,
+          "max": 0.00508367076514275,
+          "mean": 0.003578117218452006,
+          "median": 0.00374348947743055,
+          "min": 0.00207558475570505,
+          "p25": 0.0034027777644675995,
+          "p75": 0.00391396628192515
+        },
+        "density": {
+          "crowded": 0,
+          "medium": 25,
+          "sparse": 0
+        },
+        "images": 25,
+        "localCrowding": {
+          "crowded-neighbor": 1,
+          "isolated-dominant": 3,
+          "moderate": 21
+        },
+        "medianNeighborCountPerImage": {
+          "count": 25,
+          "max": 3.0,
+          "mean": 1.08,
+          "median": 1.0,
+          "min": 0.0,
+          "p25": 1.0,
+          "p75": 1.0
+        },
+        "scale": {
+          "medium-large-heavy": 21,
+          "mixed": 4,
+          "small-heavy": 0,
+          "zero-adult": 0
+        },
+        "targetCountsAndIntersections": {
+          "crowded": 0,
+          "crowded-neighbor": 1,
+          "crowded_and_crowded_neighbor": 0,
+          "crowded_and_small_heavy": 0,
+          "crowded_small_heavy_and_crowded_neighbor": 0,
+          "small-heavy": 0,
+          "small_heavy_and_crowded_neighbor": 0
+        }
+      },
+      "Seq0004": {
+        "annotations": 250,
+        "annotationsPerImage": {
+          "count": 25,
+          "max": 10.0,
+          "mean": 10.0,
+          "median": 10.0,
+          "min": 10.0,
+          "p25": 10.0,
+          "p75": 10.0
+        },
+        "bboxAreaMedianPerImage": {
+          "count": 25,
+          "max": 0.0046325230624999995,
+          "mean": 0.0033419036682724164,
+          "median": 0.0033977627561960003,
+          "min": 0.00160525164957755,
+          "p25": 0.0031134261250000002,
+          "p75": 0.00375361686805555
+        },
+        "density": {
+          "crowded": 0,
+          "medium": 25,
+          "sparse": 0
+        },
+        "images": 25,
+        "localCrowding": {
+          "crowded-neighbor": 0,
+          "isolated-dominant": 9,
+          "moderate": 16
+        },
+        "medianNeighborCountPerImage": {
+          "count": 25,
+          "max": 2.0,
+          "mean": 0.56,
+          "median": 0.5,
+          "min": 0.0,
+          "p25": 0.0,
+          "p75": 1.0
+        },
+        "scale": {
+          "medium-large-heavy": 22,
+          "mixed": 1,
+          "small-heavy": 2,
+          "zero-adult": 0
+        },
+        "targetCountsAndIntersections": {
+          "crowded": 0,
+          "crowded-neighbor": 0,
+          "crowded_and_crowded_neighbor": 0,
+          "crowded_and_small_heavy": 0,
+          "crowded_small_heavy_and_crowded_neighbor": 0,
+          "small-heavy": 2,
+          "small_heavy_and_crowded_neighbor": 0
+        }
+      },
+      "Seq0007": {
+        "annotations": 1089,
+        "annotationsPerImage": {
+          "count": 30,
+          "max": 42.0,
+          "mean": 36.3,
+          "median": 37.0,
+          "min": 25.0,
+          "p25": 35.0,
+          "p75": 38.75
+        },
+        "bboxAreaMedianPerImage": {
+          "count": 30,
+          "max": 0.0014843750625000002,
+          "mean": 0.0012733512685700232,
+          "median": 0.0012712791318749998,
+          "min": 0.0009689669726562498,
+          "p25": 0.001184624515625,
+          "p75": 0.001382378458984375
+        },
+        "density": {
+          "crowded": 30,
+          "medium": 0,
+          "sparse": 0
+        },
+        "images": 30,
+        "localCrowding": {
+          "crowded-neighbor": 5,
+          "isolated-dominant": 0,
+          "moderate": 25
+        },
+        "medianNeighborCountPerImage": {
+          "count": 30,
+          "max": 3.0,
+          "mean": 1.8333333333333333,
+          "median": 2.0,
+          "min": 1.0,
+          "p25": 1.0,
+          "p75": 2.0
+        },
+        "scale": {
+          "medium-large-heavy": 0,
+          "mixed": 0,
+          "small-heavy": 30,
+          "zero-adult": 0
+        },
+        "targetCountsAndIntersections": {
+          "crowded": 30,
+          "crowded-neighbor": 5,
+          "crowded_and_crowded_neighbor": 5,
+          "crowded_and_small_heavy": 30,
+          "crowded_small_heavy_and_crowded_neighbor": 5,
+          "small-heavy": 30,
+          "small_heavy_and_crowded_neighbor": 5
+        }
+      },
+      "Seq0008": {
+        "annotations": 541,
+        "annotationsPerImage": {
+          "count": 30,
+          "max": 33.0,
+          "mean": 18.033333333333335,
+          "median": 18.0,
+          "min": 8.0,
+          "p25": 13.0,
+          "p75": 20.75
+        },
+        "bboxAreaMedianPerImage": {
+          "count": 30,
+          "max": 0.0032845052773437505,
+          "mean": 0.002678150299088542,
+          "median": 0.0027110460390625,
+          "min": 0.0018608939687499999,
+          "p25": 0.002477349283203125,
+          "p75": 0.0028690592392578125
+        },
+        "density": {
+          "crowded": 27,
+          "medium": 3,
+          "sparse": 0
+        },
+        "images": 30,
+        "localCrowding": {
+          "crowded-neighbor": 0,
+          "isolated-dominant": 19,
+          "moderate": 11
+        },
+        "medianNeighborCountPerImage": {
+          "count": 30,
+          "max": 1.0,
+          "mean": 0.31666666666666665,
+          "median": 0.0,
+          "min": 0.0,
+          "p25": 0.0,
+          "p75": 0.875
+        },
+        "scale": {
+          "medium-large-heavy": 10,
+          "mixed": 20,
+          "small-heavy": 0,
+          "zero-adult": 0
+        },
+        "targetCountsAndIntersections": {
+          "crowded": 27,
+          "crowded-neighbor": 0,
+          "crowded_and_crowded_neighbor": 0,
+          "crowded_and_small_heavy": 0,
+          "crowded_small_heavy_and_crowded_neighbor": 0,
+          "small-heavy": 0,
+          "small_heavy_and_crowded_neighbor": 0
+        }
+      },
+      "Seq0009": {
+        "annotations": 987,
+        "annotationsPerImage": {
+          "count": 20,
+          "max": 56.0,
+          "mean": 49.35,
+          "median": 51.0,
+          "min": 39.0,
+          "p25": 46.5,
+          "p75": 52.25
+        },
+        "bboxAreaMedianPerImage": {
+          "count": 20,
+          "max": 0.00247341583203125,
+          "mean": 0.002249484580859375,
+          "median": 0.002272677943359375,
+          "min": 0.00185384112890625,
+          "p25": 0.002184787203125,
+          "p75": 0.0023421224863281248
+        },
+        "density": {
+          "crowded": 20,
+          "medium": 0,
+          "sparse": 0
+        },
+        "images": 20,
+        "localCrowding": {
+          "crowded-neighbor": 0,
+          "isolated-dominant": 0,
+          "moderate": 20
+        },
+        "medianNeighborCountPerImage": {
+          "count": 20,
+          "max": 2.0,
+          "mean": 1.375,
+          "median": 1.0,
+          "min": 1.0,
+          "p25": 1.0,
+          "p75": 2.0
+        },
+        "scale": {
+          "medium-large-heavy": 0,
+          "mixed": 20,
+          "small-heavy": 0,
+          "zero-adult": 0
+        },
+        "targetCountsAndIntersections": {
+          "crowded": 20,
+          "crowded-neighbor": 0,
+          "crowded_and_crowded_neighbor": 0,
+          "crowded_and_small_heavy": 0,
+          "crowded_small_heavy_and_crowded_neighbor": 0,
+          "small-heavy": 0,
+          "small_heavy_and_crowded_neighbor": 0
+        }
+      },
+      "ant2": {
+        "annotations": 138,
+        "annotationsPerImage": {
+          "count": 27,
+          "max": 7.0,
+          "mean": 5.111111111111111,
+          "median": 5.0,
+          "min": 4.0,
+          "p25": 5.0,
+          "p75": 5.0
+        },
+        "bboxAreaMedianPerImage": {
+          "count": 27,
+          "max": 0.015449248335499998,
+          "mean": 0.01145264125557143,
+          "median": 0.0115403283225,
+          "min": 0.007355104671,
+          "p25": 0.009816473120119051,
+          "p75": 0.0131700636645
+        },
+        "density": {
+          "crowded": 0,
+          "medium": 5,
+          "sparse": 22
+        },
+        "images": 27,
+        "localCrowding": {
+          "crowded-neighbor": 0,
+          "isolated-dominant": 27,
+          "moderate": 0
+        },
+        "medianNeighborCountPerImage": {
+          "count": 27,
+          "max": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "min": 0.0,
+          "p25": 0.0,
+          "p75": 0.0
+        },
+        "scale": {
+          "medium-large-heavy": 27,
+          "mixed": 0,
+          "small-heavy": 0,
+          "zero-adult": 0
+        },
+        "targetCountsAndIntersections": {
+          "crowded": 0,
+          "crowded-neighbor": 0,
+          "crowded_and_crowded_neighbor": 0,
+          "crowded_and_small_heavy": 0,
+          "crowded_small_heavy_and_crowded_neighbor": 0,
+          "small-heavy": 0,
+          "small_heavy_and_crowded_neighbor": 0
+        }
+      }
+    },
+    "category": "A_ALREADY_IN_V4_BASE",
+    "interpretation": "This is existing baseline exposure, useful evidence but not new information for a v5 addition.",
+    "summary": {
+      "annotations": 3886,
+      "annotationsPerImage": {
+        "count": 293,
+        "max": 56.0,
+        "mean": 13.262798634812286,
+        "median": 10.0,
+        "min": 0.0,
+        "p25": 3.0,
+        "p75": 14.0
+      },
+      "bboxAreaMedianPerImage": {
+        "count": 291,
+        "max": 0.2686535401663483,
+        "mean": 0.009570814652089433,
+        "median": 0.0026779513203125,
+        "min": 0.0005837857547473,
+        "p25": 0.0020751984842072124,
+        "p75": 0.004151596198591826
+      },
+      "density": {
+        "crowded": 86,
+        "medium": 89,
+        "sparse": 118
+      },
+      "images": 293,
+      "localCrowding": {
+        "crowded-neighbor": 6,
+        "isolated-dominant": 147,
+        "moderate": 140
+      },
+      "medianNeighborCountPerImage": {
+        "count": 293,
+        "max": 3.0,
+        "mean": 0.6296928327645052,
+        "median": 0.0,
+        "min": 0.0,
+        "p25": 0.0,
+        "p75": 1.0
+      },
+      "scale": {
+        "medium-large-heavy": 136,
+        "mixed": 101,
+        "small-heavy": 54,
+        "zero-adult": 2
+      },
+      "targetCountsAndIntersections": {
+        "crowded": 86,
+        "crowded-neighbor": 6,
+        "crowded_and_crowded_neighbor": 5,
+        "crowded_and_small_heavy": 33,
+        "crowded_small_heavy_and_crowded_neighbor": 5,
+        "small-heavy": 54,
+        "small_heavy_and_crowded_neighbor": 5
+      }
+    }
+  },
+  "auditType": "TARGET_SUPPLY_FEASIBILITY_ONLY",
+  "createdAtUtc": "2026-08-28T08:41:00Z",
+  "experiment": "ants_v5_crowdedscale_e01",
+  "finalTestBoundary": {
+    "finalTestContentUsedForDecision": false,
+    "finalTestSemanticAccess": false,
+    "formerV5FinalTest001UsedForDecision": false,
+    "v5FinalTest002UsedForDecision": false
+  },
+  "finalTrainAdditionSelected": false,
+  "frozenStrataDefinitions": {
+    "density": {
+      "crowded": ">10",
+      "medium": ">5 and <=10",
+      "sparse": "<=5 adult annotations/image"
+    },
+    "localCrowding": {
+      "crowded-neighbor": ">2",
+      "isolated-dominant": "median neighbor count <=0",
+      "moderate": ">0 and <=2",
+      "radiusNormalized": 0.095833335
+    },
+    "scale": {
+      "medium-large-heavy": "> 0.002816840125",
+      "mixed": "> 0.0016905380624999999 and <= 0.002816840125",
+      "small-heavy": "per-image median normalized bbox area <= 0.0016905380624999999"
+    },
+    "thresholdsChanged": false
+  },
+  "globalDensityVsLocalCrowding": {
+    "answer": "Greater than 10 ants/frame is not logically necessary for close-neighbor groups, but image-level crowded-neighbor under the frozen median-neighbor >2 threshold is rare in current exact labels.",
+    "descriptiveFeasibility": "Medium-density frames can contain close-neighbor groups/crossings, but should remain medium-density unless exact annotation count exceeds 10; unlabeled medium-looking candidates require manual GT before exact strata.",
+    "exactAlreadyInV4MediumDensityCrowdedNeighborBySource": {
+      "Ants10": 0,
+      "Ants3": 0,
+      "Ants4": 0,
+      "Ants5": 0,
+      "Ants6": 0,
+      "Ants7": 0,
+      "Ants8": 0,
+      "Ants9": 0,
+      "AntsNet": 0,
+      "Seq0002": 0,
+      "Seq0003": 1,
+      "Seq0004": 0,
+      "Seq0007": 0,
+      "Seq0008": 0,
+      "Seq0009": 0,
+      "ant2": 0
+    },
+    "exactAlreadyInV4MediumDensityCrowdedNeighborImages": 1,
+    "exactAlreadyInV4MediumDensityWithAnyAntHavingAtLeast3Neighbors": 25,
+    "exactAlreadyInV4MediumDensityWithAnyAntHavingAtLeast3NeighborsBySource": {
+      "Seq0002": 6,
+      "Seq0003": 13,
+      "Seq0004": 6
+    },
+    "exactTrainingSource001MediumDensityCrowdedNeighborFrames": 0,
+    "exactTrainingSource001MediumDensityFrames": 10,
+    "exactTrainingSource001MediumDensityModerateCrowdingFrames": 8,
+    "exactTrainingSource001MediumDensityWithAnyAntHavingAtLeast3Neighbors": 1,
+    "thresholdsReinterpreted": false
+  },
+  "materialCategoriesBySource": {
+    "Ants10": [
+      {
+        "annotations": 17,
+        "category": "A_ALREADY_IN_V4_BASE",
+        "images": 8,
+        "manualFormicaiGt": true
+      },
+      {
+        "broadFeasibilityForMissingH3H4": "unlikely_useful_candidate",
+        "category": "C_UNLABELED_UNUSED_SOURCE_SUPPLY",
+        "imagesOrFramesApprox": 5786,
+        "manualAnnotationRequired": true
+      }
+    ],
+    "Ants3": [
+      {
+        "annotations": 18,
+        "category": "A_ALREADY_IN_V4_BASE",
+        "images": 7,
+        "manualFormicaiGt": true
+      },
+      {
+        "broadFeasibilityForMissingH3H4": "uncertain",
+        "category": "C_UNLABELED_UNUSED_SOURCE_SUPPLY",
+        "imagesOrFramesApprox": 1876,
+        "manualAnnotationRequired": true
+      }
+    ],
+    "Ants4": [
+      {
+        "annotations": 10,
+        "category": "A_ALREADY_IN_V4_BASE",
+        "images": 12,
+        "manualFormicaiGt": true
+      },
+      {
+        "broadFeasibilityForMissingH3H4": "unlikely_useful_candidate",
+        "category": "C_UNLABELED_UNUSED_SOURCE_SUPPLY",
+        "imagesOrFramesApprox": 3054,
+        "manualAnnotationRequired": true
+      }
+    ],
+    "Ants5": [
+      {
+        "annotations": 23,
+        "category": "A_ALREADY_IN_V4_BASE",
+        "images": 8,
+        "manualFormicaiGt": true
+      },
+      {
+        "broadFeasibilityForMissingH3H4": "unlikely_useful_candidate",
+        "category": "C_UNLABELED_UNUSED_SOURCE_SUPPLY",
+        "imagesOrFramesApprox": 3681,
+        "manualAnnotationRequired": true
+      }
+    ],
+    "Ants6": [
+      {
+        "annotations": 12,
+        "category": "A_ALREADY_IN_V4_BASE",
+        "images": 12,
+        "manualFormicaiGt": true
+      },
+      {
+        "broadFeasibilityForMissingH3H4": "unlikely_useful_candidate",
+        "category": "C_UNLABELED_UNUSED_SOURCE_SUPPLY",
+        "imagesOrFramesApprox": 4390,
+        "manualAnnotationRequired": true
+      }
+    ],
+    "Ants7": [
+      {
+        "annotations": 37,
+        "category": "A_ALREADY_IN_V4_BASE",
+        "images": 8,
+        "manualFormicaiGt": true
+      },
+      {
+        "broadFeasibilityForMissingH3H4": "uncertain",
+        "category": "C_UNLABELED_UNUSED_SOURCE_SUPPLY",
+        "imagesOrFramesApprox": 4371,
+        "manualAnnotationRequired": true
+      }
+    ],
+    "Ants8": [
+      {
+        "annotations": 23,
+        "category": "A_ALREADY_IN_V4_BASE",
+        "images": 8,
+        "manualFormicaiGt": true
+      },
+      {
+        "broadFeasibilityForMissingH3H4": "uncertain",
+        "category": "C_UNLABELED_UNUSED_SOURCE_SUPPLY",
+        "imagesOrFramesApprox": 3668,
+        "manualAnnotationRequired": true
+      }
+    ],
+    "Ants9": [
+      {
+        "annotations": 15,
+        "category": "A_ALREADY_IN_V4_BASE",
+        "images": 8,
+        "manualFormicaiGt": true
+      },
+      {
+        "broadFeasibilityForMissingH3H4": "unlikely_useful_candidate",
+        "category": "C_UNLABELED_UNUSED_SOURCE_SUPPLY",
+        "imagesOrFramesApprox": 4586,
+        "manualAnnotationRequired": true
+      }
+    ],
+    "AntsNet": [
+      {
+        "annotations": 229,
+        "category": "A_ALREADY_IN_V4_BASE",
+        "images": 40,
+        "manualFormicaiGt": true
+      },
+      {
+        "category": "C_UNLABELED_UNUSED_SOURCE_SUPPLY",
+        "imagesOrFramesApprox": 957,
+        "manualAnnotationRequired": true,
+        "originalProviderLabelsDirectlyUsable": false,
+        "reason": "AntsNet audit records padded/adult/brood/taxonomic label compatibility issues; manual FormicAI review/relabel required."
+      }
+    ],
+    "Seq0002": [
+      {
+        "annotations": 247,
+        "category": "A_ALREADY_IN_V4_BASE",
+        "images": 25,
+        "manualFormicaiGt": true
+      },
+      {
+        "category": "C_UNLABELED_UNUSED_SOURCE_SUPPLY",
+        "imagesOrFramesApprox": 326,
+        "manualAnnotationRequired": true,
+        "originalProviderLabelsDirectlyUsable": false,
+        "reason": "Original public labels are fixed-size tracking/object boxes, not FormicAI tight-body GT."
+      }
+    ],
+    "Seq0003": [
+      {
+        "annotations": 250,
+        "category": "A_ALREADY_IN_V4_BASE",
+        "images": 25,
+        "manualFormicaiGt": true
+      },
+      {
+        "category": "C_UNLABELED_UNUSED_SOURCE_SUPPLY",
+        "imagesOrFramesApprox": 326,
+        "manualAnnotationRequired": true,
+        "originalProviderLabelsDirectlyUsable": false,
+        "reason": "Original public labels are fixed-size tracking/object boxes, not FormicAI tight-body GT."
+      }
+    ],
+    "Seq0004": [
+      {
+        "annotations": 250,
+        "category": "A_ALREADY_IN_V4_BASE",
+        "images": 25,
+        "manualFormicaiGt": true
+      },
+      {
+        "category": "C_UNLABELED_UNUSED_SOURCE_SUPPLY",
+        "imagesOrFramesApprox": 326,
+        "manualAnnotationRequired": true,
+        "originalProviderLabelsDirectlyUsable": false,
+        "reason": "Original public labels are fixed-size tracking/object boxes, not FormicAI tight-body GT."
+      }
+    ],
+    "Seq0007": [
+      {
+        "annotations": 1089,
+        "category": "A_ALREADY_IN_V4_BASE",
+        "images": 30,
+        "manualFormicaiGt": true
+      },
+      {
+        "category": "C_UNLABELED_UNUSED_SOURCE_SUPPLY",
+        "imagesOrFramesApprox": 647,
+        "manualAnnotationRequired": true,
+        "originalProviderLabelsDirectlyUsable": false,
+        "reason": "Original public labels are fixed-size tracking/object boxes, not FormicAI tight-body GT."
+      }
+    ],
+    "Seq0008": [
+      {
+        "annotations": 541,
+        "category": "A_ALREADY_IN_V4_BASE",
+        "images": 30,
+        "manualFormicaiGt": true
+      },
+      {
+        "category": "C_UNLABELED_UNUSED_SOURCE_SUPPLY",
+        "imagesOrFramesApprox": 547,
+        "manualAnnotationRequired": true,
+        "originalProviderLabelsDirectlyUsable": false,
+        "reason": "Original public labels are fixed-size tracking/object boxes, not FormicAI tight-body GT."
+      }
+    ],
+    "Seq0009": [
+      {
+        "annotations": 987,
+        "category": "A_ALREADY_IN_V4_BASE",
+        "images": 20,
+        "manualFormicaiGt": true
+      },
+      {
+        "category": "C_UNLABELED_UNUSED_SOURCE_SUPPLY",
+        "imagesOrFramesApprox": 506,
+        "manualAnnotationRequired": true,
+        "originalProviderLabelsDirectlyUsable": false,
+        "reason": "Original public labels are fixed-size tracking/object boxes, not FormicAI tight-body GT."
+      }
+    ],
+    "ant2": [
+      {
+        "annotations": 138,
+        "category": "A_ALREADY_IN_V4_BASE",
+        "images": 27,
+        "manualFormicaiGt": true
+      },
+      {
+        "broadFeasibilityForMissingH3H4": "unlikely_useful_candidate",
+        "category": "C_UNLABELED_UNUSED_SOURCE_SUPPLY",
+        "imagesOrFramesApprox": 43,
+        "manualAnnotationRequired": true,
+        "reason": "Historical ant2/Ants2 reference labels and raw frames are large-scale/queen/domain reference material, not primary small/crowded supply; older v1/export labels are not counted as unused train-eligible GT."
+      }
+    ],
+    "training_source_001": [
+      {
+        "annotations": 193,
+        "category": "B_LABELED_BUT_NOT_CURRENTLY_USED",
+        "exactTargetCombinations": {
+          "crowded": 0,
+          "crowded-neighbor": 0,
+          "crowded_and_crowded_neighbor": 0,
+          "crowded_and_small_heavy": 0,
+          "crowded_small_heavy_and_crowded_neighbor": 0,
+          "small-heavy": 0,
+          "small_heavy_and_crowded_neighbor": 0
+        },
+        "images": 48,
+        "manualFormicaiGt": true
+      },
+      {
+        "broadFeasibilityForMissingH3H4": "uncertain",
+        "category": "C_UNLABELED_UNUSED_SOURCE_SUPPLY",
+        "imagesOrFramesApprox": 3585,
+        "manualAnnotationRequired": true
+      }
+    ]
+  },
+  "modelPolicy": {
+    "architecture": "YOLO26n",
+    "architectureChanged": false,
+    "imgsz": 640,
+    "reason": "ants_v5_crowdedscale_e01 data intervention has not yet been tested; larger YOLO remains future controlled ablation."
+  },
+  "overallFeasibility": {
+    "classification": "MULTI_SOURCE_COMBINATION_REQUIRED",
+    "newManualAnnotationRequired": true,
+    "newRecordingRequired": false,
+    "nextPhase": "Preregister aggregate annotation/selection policy before any new annotation or final train addition selection.",
+    "reason": "Existing local unused manual GT is insufficient, but unused public Seq0007/8/9 archive frames plausibly provide crowded/small target phenomena and existing own-domain/training_source_001 videos can plausibly provide complementary domain/local-contact examples. No single source is sufficient without redundancy or target/domain tradeoffs."
+  },
+  "ownDomainAnts3ToAnts10Feasibility": {
+    "Ants10": {
+      "alreadyLabeledOrPoolImages": 8,
+      "contactSheetPathIgnored": "artifacts/analysis/ants_v5_target_supply_feasibility/contact_sheets/Ants10.jpg",
+      "domainComplementCandidate": true,
+      "durationSeconds": 96.5348,
+      "exactUnusedStrataAvailable": false,
+      "fps": 60.01980632890937,
+      "frameCount": 5794,
+      "frameIndexes": [
+        361,
+        1025,
+        1810,
+        2473,
+        3198,
+        3922,
+        4707,
+        5431
+      ],
+      "manualAnnotationRequiredForUnusedFrames": true,
+      "manualVisualSummary": "top-down own-domain arena with occasional pairs near entrance/white object, but sparse overall",
+      "medianDhashDistanceWithinSample": 0.0,
+      "minDhashDistanceWithinSample": 0,
+      "path": "samples/v2/Ants10.mp4",
+      "sampledFrames": 8,
+      "targetFeasibility": "unlikely_useful_candidate",
+      "unusedVideoFramesApprox": 5786,
+      "v4ExactTrainStrata": {
+        "annotations": 17,
+        "annotationsPerImage": {
+          "count": 8,
+          "max": 3.0,
+          "mean": 2.125,
+          "median": 2.0,
+          "min": 1.0,
+          "p25": 1.75,
+          "p75": 3.0
+        },
+        "bboxAreaMedianPerImage": {
+          "count": 8,
+          "max": 0.0033215181334876544,
+          "mean": 0.0024877477580087168,
+          "median": 0.00241051191222391,
+          "min": 0.0021490403199701004,
+          "p25": 0.0022692268294982154,
+          "p75": 0.002520525895167824
+        },
+        "density": {
+          "crowded": 0,
+          "medium": 0,
+          "sparse": 8
+        },
+        "images": 8,
+        "localCrowding": {
+          "crowded-neighbor": 0,
+          "isolated-dominant": 7,
+          "moderate": 1
+        },
+        "medianNeighborCountPerImage": {
+          "count": 8,
+          "max": 1.0,
+          "mean": 0.125,
+          "median": 0.0,
+          "min": 0.0,
+          "p25": 0.0,
+          "p75": 0.0
+        },
+        "scale": {
+          "medium-large-heavy": 1,
+          "mixed": 7,
+          "small-heavy": 0,
+          "zero-adult": 0
+        },
+        "targetCountsAndIntersections": {
+          "crowded": 0,
+          "crowded-neighbor": 0,
+          "crowded_and_crowded_neighbor": 0,
+          "crowded_and_small_heavy": 0,
+          "crowded_small_heavy_and_crowded_neighbor": 0,
+          "small-heavy": 0,
+          "small_heavy_and_crowded_neighbor": 0
+        }
+      }
+    },
+    "Ants3": {
+      "alreadyLabeledOrPoolImages": 7,
+      "contactSheetPathIgnored": "artifacts/analysis/ants_v5_target_supply_feasibility/contact_sheets/Ants3.jpg",
+      "domainComplementCandidate": true,
+      "durationSeconds": 31.372844444444446,
+      "exactUnusedStrataAvailable": false,
+      "fps": 60.020059811103444,
+      "frameCount": 1883,
+      "frameIndexes": [
+        57,
+        327,
+        588,
+        849,
+        1084,
+        1294,
+        1555,
+        1765
+      ],
+      "manualAnnotationRequiredForUnusedFrames": true,
+      "manualVisualSummary": "lateral chamber with a few medium/large ants and local group near tube/chamber edge; visually stable and not obviously small/crowded",
+      "medianDhashDistanceWithinSample": 3.0,
+      "minDhashDistanceWithinSample": 1,
+      "path": "samples/v2/Ants3.mp4",
+      "sampledFrames": 8,
+      "targetFeasibility": "uncertain",
+      "unusedVideoFramesApprox": 1876,
+      "v4ExactTrainStrata": {
+        "annotations": 18,
+        "annotationsPerImage": {
+          "count": 7,
+          "max": 4.0,
+          "mean": 2.5714285714285716,
+          "median": 2.0,
+          "min": 1.0,
+          "p25": 2.0,
+          "p75": 3.5
+        },
+        "bboxAreaMedianPerImage": {
+          "count": 7,
+          "max": 0.010629222180528029,
+          "mean": 0.005254040593187798,
+          "median": 0.005387811197860244,
+          "min": 0.0023411310765954862,
+          "p25": 0.0030514352452911506,
+          "p75": 0.006158624603374262
+        },
+        "density": {
+          "crowded": 0,
+          "medium": 0,
+          "sparse": 7
+        },
+        "images": 7,
+        "localCrowding": {
+          "crowded-neighbor": 0,
+          "isolated-dominant": 2,
+          "moderate": 5
+        },
+        "medianNeighborCountPerImage": {
+          "count": 7,
+          "max": 2.0,
+          "mean": 0.9285714285714286,
+          "median": 1.0,
+          "min": 0.0,
+          "p25": 0.5,
+          "p75": 1.25
+        },
+        "scale": {
+          "medium-large-heavy": 6,
+          "mixed": 1,
+          "small-heavy": 0,
+          "zero-adult": 0
+        },
+        "targetCountsAndIntersections": {
+          "crowded": 0,
+          "crowded-neighbor": 0,
+          "crowded_and_crowded_neighbor": 0,
+          "crowded_and_small_heavy": 0,
+          "crowded_small_heavy_and_crowded_neighbor": 0,
+          "small-heavy": 0,
+          "small_heavy_and_crowded_neighbor": 0
+        }
+      }
+    },
+    "Ants4": {
+      "alreadyLabeledOrPoolImages": 12,
+      "contactSheetPathIgnored": "artifacts/analysis/ants_v5_target_supply_feasibility/contact_sheets/Ants4.jpg",
+      "domainComplementCandidate": true,
+      "durationSeconds": 51.08308888888889,
+      "exactUnusedStrataAvailable": false,
+      "fps": 60.019863064053816,
+      "frameCount": 3066,
+      "frameIndexes": [
+        191,
+        574,
+        957,
+        1341,
+        1760,
+        2107,
+        2491,
+        2874
+      ],
+      "manualAnnotationRequiredForUnusedFrames": true,
+      "manualVisualSummary": "block entry/top area mostly sparse; useful mainly for sparse own-domain context",
+      "medianDhashDistanceWithinSample": 0.0,
+      "minDhashDistanceWithinSample": 0,
+      "path": "samples/v2/Ants4.mp4",
+      "sampledFrames": 8,
+      "targetFeasibility": "unlikely_useful_candidate",
+      "unusedVideoFramesApprox": 3054,
+      "v4ExactTrainStrata": {
+        "annotations": 10,
+        "annotationsPerImage": {
+          "count": 12,
+          "max": 1.0,
+          "mean": 0.8333333333333334,
+          "median": 1.0,
+          "min": 0.0,
+          "p25": 1.0,
+          "p75": 1.0
+        },
+        "bboxAreaMedianPerImage": {
+          "count": 10,
+          "max": 0.0025332252587796874,
+          "mean": 0.0018398889223958316,
+          "median": 0.001853643565204726,
+          "min": 0.0009764227438876737,
+          "p25": 0.0015333827424093606,
+          "p75": 0.002309061487114236
+        },
+        "density": {
+          "crowded": 0,
+          "medium": 0,
+          "sparse": 12
+        },
+        "images": 12,
+        "localCrowding": {
+          "crowded-neighbor": 0,
+          "isolated-dominant": 12,
+          "moderate": 0
+        },
+        "medianNeighborCountPerImage": {
+          "count": 12,
+          "max": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "min": 0.0,
+          "p25": 0.0,
+          "p75": 0.0
+        },
+        "scale": {
+          "medium-large-heavy": 0,
+          "mixed": 6,
+          "small-heavy": 4,
+          "zero-adult": 2
+        },
+        "targetCountsAndIntersections": {
+          "crowded": 0,
+          "crowded-neighbor": 0,
+          "crowded_and_crowded_neighbor": 0,
+          "crowded_and_small_heavy": 0,
+          "crowded_small_heavy_and_crowded_neighbor": 0,
+          "small-heavy": 4,
+          "small_heavy_and_crowded_neighbor": 0
+        }
+      }
+    },
+    "Ants5": {
+      "alreadyLabeledOrPoolImages": 8,
+      "contactSheetPathIgnored": "artifacts/analysis/ants_v5_target_supply_feasibility/contact_sheets/Ants5.jpg",
+      "domainComplementCandidate": true,
+      "durationSeconds": 61.46302222222222,
+      "exactUnusedStrataAvailable": false,
+      "fps": 60.019827639816675,
+      "frameCount": 3689,
+      "frameIndexes": [
+        169,
+        691,
+        1091,
+        1613,
+        2013,
+        2475,
+        2997,
+        3397
+      ],
+      "manualAnnotationRequiredForUnusedFrames": true,
+      "manualVisualSummary": "top-down own-domain arena, sparse-to-low-medium with occasional close pairs; not a primary target source",
+      "medianDhashDistanceWithinSample": 0.0,
+      "minDhashDistanceWithinSample": 0,
+      "path": "samples/v2/Ants5.mp4",
+      "sampledFrames": 8,
+      "targetFeasibility": "unlikely_useful_candidate",
+      "unusedVideoFramesApprox": 3681,
+      "v4ExactTrainStrata": {
+        "annotations": 23,
+        "annotationsPerImage": {
+          "count": 8,
+          "max": 3.0,
+          "mean": 2.875,
+          "median": 3.0,
+          "min": 2.0,
+          "p25": 3.0,
+          "p75": 3.0
+        },
+        "bboxAreaMedianPerImage": {
+          "count": 8,
+          "max": 0.002411265435262346,
+          "mean": 0.0019339102286223238,
+          "median": 0.0018732518316092787,
+          "min": 0.0016607590685233412,
+          "p25": 0.0016878858022002798,
+          "p75": 0.0021091037307725694
+        },
+        "density": {
+          "crowded": 0,
+          "medium": 0,
+          "sparse": 8
+        },
+        "images": 8,
+        "localCrowding": {
+          "crowded-neighbor": 0,
+          "isolated-dominant": 6,
+          "moderate": 2
+        },
+        "medianNeighborCountPerImage": {
+          "count": 8,
+          "max": 1.0,
+          "mean": 0.25,
+          "median": 0.0,
+          "min": 0.0,
+          "p25": 0.0,
+          "p75": 0.25
+        },
+        "scale": {
+          "medium-large-heavy": 0,
+          "mixed": 5,
+          "small-heavy": 3,
+          "zero-adult": 0
+        },
+        "targetCountsAndIntersections": {
+          "crowded": 0,
+          "crowded-neighbor": 0,
+          "crowded_and_crowded_neighbor": 0,
+          "crowded_and_small_heavy": 0,
+          "crowded_small_heavy_and_crowded_neighbor": 0,
+          "small-heavy": 3,
+          "small_heavy_and_crowded_neighbor": 0
+        }
+      }
+    },
+    "Ants6": {
+      "alreadyLabeledOrPoolImages": 12,
+      "contactSheetPathIgnored": "artifacts/analysis/ants_v5_target_supply_feasibility/contact_sheets/Ants6.jpg",
+      "domainComplementCandidate": true,
+      "durationSeconds": 73.34266666666667,
+      "exactUnusedStrataAvailable": false,
+      "fps": 60.01963386478084,
+      "frameCount": 4402,
+      "frameIndexes": [
+        232,
+        824,
+        1375,
+        1925,
+        2475,
+        3026,
+        3576,
+        4126
+      ],
+      "manualAnnotationRequiredForUnusedFrames": true,
+      "manualVisualSummary": "block entry footage like Ants4, sparse and highly redundant",
+      "medianDhashDistanceWithinSample": 0.0,
+      "minDhashDistanceWithinSample": 0,
+      "path": "samples/v2/Ants6.mp4",
+      "sampledFrames": 8,
+      "targetFeasibility": "unlikely_useful_candidate",
+      "unusedVideoFramesApprox": 4390,
+      "v4ExactTrainStrata": {
+        "annotations": 12,
+        "annotationsPerImage": {
+          "count": 12,
+          "max": 1.0,
+          "mean": 1.0,
+          "median": 1.0,
+          "min": 1.0,
+          "p25": 1.0,
+          "p75": 1.0
+        },
+        "bboxAreaMedianPerImage": {
+          "count": 12,
+          "max": 0.0026415993459078316,
+          "mean": 0.0019268733729896602,
+          "median": 0.002003767481949836,
+          "min": 0.0013088348741623458,
+          "p25": 0.0015836940349137345,
+          "p75": 0.002266784374689231
+        },
+        "density": {
+          "crowded": 0,
+          "medium": 0,
+          "sparse": 12
+        },
+        "images": 12,
+        "localCrowding": {
+          "crowded-neighbor": 0,
+          "isolated-dominant": 12,
+          "moderate": 0
+        },
+        "medianNeighborCountPerImage": {
+          "count": 12,
+          "max": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "min": 0.0,
+          "p25": 0.0,
+          "p75": 0.0
+        },
+        "scale": {
+          "medium-large-heavy": 0,
+          "mixed": 7,
+          "small-heavy": 5,
+          "zero-adult": 0
+        },
+        "targetCountsAndIntersections": {
+          "crowded": 0,
+          "crowded-neighbor": 0,
+          "crowded_and_crowded_neighbor": 0,
+          "crowded_and_small_heavy": 0,
+          "crowded_small_heavy_and_crowded_neighbor": 0,
+          "small-heavy": 5,
+          "small_heavy_and_crowded_neighbor": 0
+        }
+      }
+    },
+    "Ants7": {
+      "alreadyLabeledOrPoolImages": 8,
+      "contactSheetPathIgnored": "artifacts/analysis/ants_v5_target_supply_feasibility/contact_sheets/Ants7.jpg",
+      "domainComplementCandidate": true,
+      "durationSeconds": 73.01266666666666,
+      "exactUnusedStrataAvailable": false,
+      "fps": 59.975894593632155,
+      "frameCount": 4379,
+      "frameIndexes": [
+        213,
+        820,
+        1368,
+        1915,
+        2463,
+        3010,
+        3557,
+        4105
+      ],
+      "manualAnnotationRequiredForUnusedFrames": true,
+      "manualVisualSummary": "lateral chamber with small local groups around larger ants; possible local-contact support but not broad crowded/small supply",
+      "medianDhashDistanceWithinSample": 3.0,
+      "minDhashDistanceWithinSample": 0,
+      "path": "samples/v2/Ants7.mp4",
+      "sampledFrames": 8,
+      "targetFeasibility": "uncertain",
+      "unusedVideoFramesApprox": 4371,
+      "v4ExactTrainStrata": {
+        "annotations": 37,
+        "annotationsPerImage": {
+          "count": 8,
+          "max": 5.0,
+          "mean": 4.625,
+          "median": 5.0,
+          "min": 4.0,
+          "p25": 4.0,
+          "p75": 5.0
+        },
+        "bboxAreaMedianPerImage": {
+          "count": 8,
+          "max": 0.002179497057270968,
+          "mean": 0.0019306716904365572,
+          "median": 0.0020678488250799,
+          "min": 0.001322916667725,
+          "p25": 0.0018548794707491513,
+          "p75": 0.002123276438964294
+        },
+        "density": {
+          "crowded": 0,
+          "medium": 0,
+          "sparse": 8
+        },
+        "images": 8,
+        "localCrowding": {
+          "crowded-neighbor": 0,
+          "isolated-dominant": 1,
+          "moderate": 7
+        },
+        "medianNeighborCountPerImage": {
+          "count": 8,
+          "max": 2.0,
+          "mean": 0.9375,
+          "median": 0.75,
+          "min": 0.0,
+          "p25": 0.5,
+          "p75": 1.25
+        },
+        "scale": {
+          "medium-large-heavy": 0,
+          "mixed": 6,
+          "small-heavy": 2,
+          "zero-adult": 0
+        },
+        "targetCountsAndIntersections": {
+          "crowded": 0,
+          "crowded-neighbor": 0,
+          "crowded_and_crowded_neighbor": 0,
+          "crowded_and_small_heavy": 0,
+          "crowded_small_heavy_and_crowded_neighbor": 0,
+          "small-heavy": 2,
+          "small_heavy_and_crowded_neighbor": 0
+        }
+      }
+    },
+    "Ants8": {
+      "alreadyLabeledOrPoolImages": 8,
+      "contactSheetPathIgnored": "artifacts/analysis/ants_v5_target_supply_feasibility/contact_sheets/Ants8.jpg",
+      "domainComplementCandidate": true,
+      "durationSeconds": 61.29194444444445,
+      "exactUnusedStrataAvailable": false,
+      "fps": 59.97525504076573,
+      "frameCount": 3676,
+      "frameIndexes": [
+        229,
+        689,
+        1148,
+        1607,
+        2067,
+        2466,
+        2986,
+        3445
+      ],
+      "manualAnnotationRequiredForUnusedFrames": true,
+      "manualVisualSummary": "similar lateral chamber material with a few grouped ants; somewhat varied but still visually stable",
+      "medianDhashDistanceWithinSample": 6.0,
+      "minDhashDistanceWithinSample": 3,
+      "path": "samples/v2/Ants8.mp4",
+      "sampledFrames": 8,
+      "targetFeasibility": "uncertain",
+      "unusedVideoFramesApprox": 3668,
+      "v4ExactTrainStrata": {
+        "annotations": 23,
+        "annotationsPerImage": {
+          "count": 8,
+          "max": 4.0,
+          "mean": 2.875,
+          "median": 3.0,
+          "min": 2.0,
+          "p25": 2.75,
+          "p75": 3.0
+        },
+        "bboxAreaMedianPerImage": {
+          "count": 8,
+          "max": 0.006463429471485041,
+          "mean": 0.003420282826111877,
+          "median": 0.0030296465084132134,
+          "min": 0.0010068627504048998,
+          "p25": 0.0026072939323722125,
+          "p75": 0.0037937259568379582
+        },
+        "density": {
+          "crowded": 0,
+          "medium": 0,
+          "sparse": 8
+        },
+        "images": 8,
+        "localCrowding": {
+          "crowded-neighbor": 0,
+          "isolated-dominant": 1,
+          "moderate": 7
+        },
+        "medianNeighborCountPerImage": {
+          "count": 8,
+          "max": 2.0,
+          "mean": 1.0,
+          "median": 1.0,
+          "min": 0.0,
+          "p25": 1.0,
+          "p75": 1.0
+        },
+        "scale": {
+          "medium-large-heavy": 5,
+          "mixed": 2,
+          "small-heavy": 1,
+          "zero-adult": 0
+        },
+        "targetCountsAndIntersections": {
+          "crowded": 0,
+          "crowded-neighbor": 0,
+          "crowded_and_crowded_neighbor": 0,
+          "crowded_and_small_heavy": 0,
+          "crowded_small_heavy_and_crowded_neighbor": 0,
+          "small-heavy": 1,
+          "small_heavy_and_crowded_neighbor": 0
+        }
+      }
+    },
+    "Ants9": {
+      "alreadyLabeledOrPoolImages": 8,
+      "contactSheetPathIgnored": "artifacts/analysis/ants_v5_target_supply_feasibility/contact_sheets/Ants9.jpg",
+      "domainComplementCandidate": true,
+      "durationSeconds": 76.5414,
+      "exactUnusedStrataAvailable": false,
+      "fps": 60.019806274774176,
+      "frameCount": 4594,
+      "frameIndexes": [
+        286,
+        860,
+        1374,
+        1948,
+        2583,
+        3097,
+        3671,
+        4306
+      ],
+      "manualAnnotationRequiredForUnusedFrames": true,
+      "manualVisualSummary": "top-down own-domain arena mostly sparse in full-span sample",
+      "medianDhashDistanceWithinSample": 1.0,
+      "minDhashDistanceWithinSample": 0,
+      "path": "samples/v2/Ants9.mp4",
+      "sampledFrames": 8,
+      "targetFeasibility": "unlikely_useful_candidate",
+      "unusedVideoFramesApprox": 4586,
+      "v4ExactTrainStrata": {
+        "annotations": 15,
+        "annotationsPerImage": {
+          "count": 8,
+          "max": 3.0,
+          "mean": 1.875,
+          "median": 1.5,
+          "min": 1.0,
+          "p25": 1.0,
+          "p75": 3.0
+        },
+        "bboxAreaMedianPerImage": {
+          "count": 8,
+          "max": 0.0022545331761670523,
+          "mean": 0.0018713680302414881,
+          "median": 0.0018988715248263888,
+          "min": 0.0014467592560185184,
+          "p25": 0.0015959563077148436,
+          "p75": 0.002169385370809221
+        },
+        "density": {
+          "crowded": 0,
+          "medium": 0,
+          "sparse": 8
+        },
+        "images": 8,
+        "localCrowding": {
+          "crowded-neighbor": 0,
+          "isolated-dominant": 8,
+          "moderate": 0
+        },
+        "medianNeighborCountPerImage": {
+          "count": 8,
+          "max": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "min": 0.0,
+          "p25": 0.0,
+          "p75": 0.0
+        },
+        "scale": {
+          "medium-large-heavy": 0,
+          "mixed": 5,
+          "small-heavy": 3,
+          "zero-adult": 0
+        },
+        "targetCountsAndIntersections": {
+          "crowded": 0,
+          "crowded-neighbor": 0,
+          "crowded_and_crowded_neighbor": 0,
+          "crowded_and_small_heavy": 0,
+          "crowded_small_heavy_and_crowded_neighbor": 0,
+          "small-heavy": 3,
+          "small_heavy_and_crowded_neighbor": 0
+        }
+      }
+    }
+  },
+  "publicSeq0007Seq0008Seq0009Feasibility": {
+    "Seq0007": {
+      "alreadyInV4TrainAnnotations": 1089,
+      "alreadyInV4TrainImages": 30,
+      "contactSheetPathIgnored": "artifacts/analysis/ants_v5_target_supply_feasibility/contact_sheets/Seq0007.jpg",
+      "domainComplementCandidate": false,
+      "exactUnusedStrataAvailable": false,
+      "frameIndexes": [
+        42,
+        127,
+        217,
+        296,
+        381,
+        461,
+        550,
+        636
+      ],
+      "fullSourceFrames": 677,
+      "fullSourceTrackingDensityReferenceOnly": {
+        "max": 44,
+        "mean": 37.16100443131462,
+        "median": 37,
+        "min": 26
+      },
+      "manualRelabelRequiredForUnusedFrames": true,
+      "manualVisualSummary": "small ants and crowded nest-area visible across temporal sample; same-source redundancy with existing v4 public exposure is substantial",
+      "medianDhashDistanceWithinSample": 10.0,
+      "minDhashDistanceWithinSample": 5,
+      "originalPublicGtCompatibility": "INCOMPATIBLE_FOR_DIRECT_FORMICAI_IMPORT_FIXED_64PX_TRACKING_BOXES",
+      "representedFrameRange": [
+        1,
+        677
+      ],
+      "sampledFrames": 8,
+      "targetFeasibility": "likely_useful_candidate",
+      "unusedArchiveFramesApprox": 647,
+      "v4ExactTrainStrata": {
+        "annotations": 1089,
+        "annotationsPerImage": {
+          "count": 30,
+          "max": 42.0,
+          "mean": 36.3,
+          "median": 37.0,
+          "min": 25.0,
+          "p25": 35.0,
+          "p75": 38.75
+        },
+        "bboxAreaMedianPerImage": {
+          "count": 30,
+          "max": 0.0014843750625000002,
+          "mean": 0.0012733512685700232,
+          "median": 0.0012712791318749998,
+          "min": 0.0009689669726562498,
+          "p25": 0.001184624515625,
+          "p75": 0.001382378458984375
+        },
+        "density": {
+          "crowded": 30,
+          "medium": 0,
+          "sparse": 0
+        },
+        "images": 30,
+        "localCrowding": {
+          "crowded-neighbor": 5,
+          "isolated-dominant": 0,
+          "moderate": 25
+        },
+        "medianNeighborCountPerImage": {
+          "count": 30,
+          "max": 3.0,
+          "mean": 1.8333333333333333,
+          "median": 2.0,
+          "min": 1.0,
+          "p25": 1.0,
+          "p75": 2.0
+        },
+        "scale": {
+          "medium-large-heavy": 0,
+          "mixed": 0,
+          "small-heavy": 30,
+          "zero-adult": 0
+        },
+        "targetCountsAndIntersections": {
+          "crowded": 30,
+          "crowded-neighbor": 5,
+          "crowded_and_crowded_neighbor": 5,
+          "crowded_and_small_heavy": 30,
+          "crowded_small_heavy_and_crowded_neighbor": 5,
+          "small-heavy": 30,
+          "small_heavy_and_crowded_neighbor": 5
+        }
+      }
+    },
+    "Seq0008": {
+      "alreadyInV4TrainAnnotations": 541,
+      "alreadyInV4TrainImages": 30,
+      "contactSheetPathIgnored": "artifacts/analysis/ants_v5_target_supply_feasibility/contact_sheets/Seq0008.jpg",
+      "domainComplementCandidate": false,
+      "exactUnusedStrataAvailable": false,
+      "frameIndexes": [
+        33,
+        108,
+        180,
+        256,
+        321,
+        397,
+        469,
+        544
+      ],
+      "fullSourceFrames": 577,
+      "fullSourceTrackingDensityReferenceOnly": {
+        "max": 35,
+        "mean": 17.81629116117851,
+        "median": 17,
+        "min": 0
+      },
+      "manualRelabelRequiredForUnusedFrames": true,
+      "manualVisualSummary": "variable outdoor density with nest entrances, crossings, and close-neighbor groups; public-domain redundancy remains",
+      "medianDhashDistanceWithinSample": 13.0,
+      "minDhashDistanceWithinSample": 6,
+      "originalPublicGtCompatibility": "INCOMPATIBLE_FOR_DIRECT_FORMICAI_IMPORT_FIXED_64PX_TRACKING_BOXES",
+      "representedFrameRange": [
+        1,
+        557
+      ],
+      "sampledFrames": 8,
+      "targetFeasibility": "likely_useful_candidate",
+      "unusedArchiveFramesApprox": 547,
+      "v4ExactTrainStrata": {
+        "annotations": 541,
+        "annotationsPerImage": {
+          "count": 30,
+          "max": 33.0,
+          "mean": 18.033333333333335,
+          "median": 18.0,
+          "min": 8.0,
+          "p25": 13.0,
+          "p75": 20.75
+        },
+        "bboxAreaMedianPerImage": {
+          "count": 30,
+          "max": 0.0032845052773437505,
+          "mean": 0.002678150299088542,
+          "median": 0.0027110460390625,
+          "min": 0.0018608939687499999,
+          "p25": 0.002477349283203125,
+          "p75": 0.0028690592392578125
+        },
+        "density": {
+          "crowded": 27,
+          "medium": 3,
+          "sparse": 0
+        },
+        "images": 30,
+        "localCrowding": {
+          "crowded-neighbor": 0,
+          "isolated-dominant": 19,
+          "moderate": 11
+        },
+        "medianNeighborCountPerImage": {
+          "count": 30,
+          "max": 1.0,
+          "mean": 0.31666666666666665,
+          "median": 0.0,
+          "min": 0.0,
+          "p25": 0.0,
+          "p75": 0.875
+        },
+        "scale": {
+          "medium-large-heavy": 10,
+          "mixed": 20,
+          "small-heavy": 0,
+          "zero-adult": 0
+        },
+        "targetCountsAndIntersections": {
+          "crowded": 27,
+          "crowded-neighbor": 0,
+          "crowded_and_crowded_neighbor": 0,
+          "crowded_and_small_heavy": 0,
+          "crowded_small_heavy_and_crowded_neighbor": 0,
+          "small-heavy": 0,
+          "small_heavy_and_crowded_neighbor": 0
+        }
+      }
+    },
+    "Seq0009": {
+      "alreadyInV4TrainAnnotations": 987,
+      "alreadyInV4TrainImages": 20,
+      "contactSheetPathIgnored": "artifacts/analysis/ants_v5_target_supply_feasibility/contact_sheets/Seq0009.jpg",
+      "domainComplementCandidate": false,
+      "exactUnusedStrataAvailable": false,
+      "frameIndexes": [
+        35,
+        99,
+        161,
+        230,
+        296,
+        366,
+        427,
+        492
+      ],
+      "fullSourceFrames": 526,
+      "fullSourceTrackingDensityReferenceOnly": {
+        "max": 61,
+        "mean": 53.045627376425855,
+        "median": 53.0,
+        "min": 43
+      },
+      "manualRelabelRequiredForUnusedFrames": true,
+      "manualVisualSummary": "strongest public unused sample for many small ants and repeated close groups; already represented in v4 train by dense Seq0009 frames",
+      "medianDhashDistanceWithinSample": 14.0,
+      "minDhashDistanceWithinSample": 11,
+      "originalPublicGtCompatibility": "INCOMPATIBLE_FOR_DIRECT_FORMICAI_IMPORT_FIXED_64PX_TRACKING_BOXES",
+      "representedFrameRange": [
+        1,
+        526
+      ],
+      "sampledFrames": 8,
+      "targetFeasibility": "likely_useful_candidate",
+      "unusedArchiveFramesApprox": 506,
+      "v4ExactTrainStrata": {
+        "annotations": 987,
+        "annotationsPerImage": {
+          "count": 20,
+          "max": 56.0,
+          "mean": 49.35,
+          "median": 51.0,
+          "min": 39.0,
+          "p25": 46.5,
+          "p75": 52.25
+        },
+        "bboxAreaMedianPerImage": {
+          "count": 20,
+          "max": 0.00247341583203125,
+          "mean": 0.002249484580859375,
+          "median": 0.002272677943359375,
+          "min": 0.00185384112890625,
+          "p25": 0.002184787203125,
+          "p75": 0.0023421224863281248
+        },
+        "density": {
+          "crowded": 20,
+          "medium": 0,
+          "sparse": 0
+        },
+        "images": 20,
+        "localCrowding": {
+          "crowded-neighbor": 0,
+          "isolated-dominant": 0,
+          "moderate": 20
+        },
+        "medianNeighborCountPerImage": {
+          "count": 20,
+          "max": 2.0,
+          "mean": 1.375,
+          "median": 1.0,
+          "min": 1.0,
+          "p25": 1.0,
+          "p75": 2.0
+        },
+        "scale": {
+          "medium-large-heavy": 0,
+          "mixed": 20,
+          "small-heavy": 0,
+          "zero-adult": 0
+        },
+        "targetCountsAndIntersections": {
+          "crowded": 20,
+          "crowded-neighbor": 0,
+          "crowded_and_crowded_neighbor": 0,
+          "crowded_and_small_heavy": 0,
+          "crowded_small_heavy_and_crowded_neighbor": 0,
+          "small-heavy": 0,
+          "small_heavy_and_crowded_neighbor": 0
+        }
+      }
+    }
+  },
+  "schemaVersion": "1.0",
+  "source001FutureRole": {
+    "addsMediumDensityExamples": true,
+    "addsOwnDomainAppearanceDiversity": true,
+    "canComplementSeparateCrowdedSmallPack": true,
+    "evidence": {
+      "annotations": 193,
+      "category": "LABELED_BUT_NOT_CURRENTLY_USED",
+      "formicaiTightBodyCompatible": true,
+      "images": 48,
+      "interpretation": "Labeled unused domain-complement candidate; contributes medium-density own-domain examples but zero crowded, zero small-heavy, and zero crowded-neighbor image-level target supply under frozen thresholds.",
+      "manualGt": true,
+      "marginalCounts": {
+        "density": {
+          "crowded": 0,
+          "medium": 10,
+          "sparse": 38
+        },
+        "localCrowding": {
+          "crowded-neighbor": 0,
+          "isolated-dominant": 27,
+          "moderate": 21
+        },
+        "scale": {
+          "medium-large-heavy": 23,
+          "mixed": 25,
+          "small-heavy": 0,
+          "zero-adult": 0
+        }
+      },
+      "source": "training_source_001",
+      "targetCountsAndIntersections": {
+        "crowded": 0,
+        "crowded-neighbor": 0,
+        "crowded_and_crowded_neighbor": 0,
+        "crowded_and_small_heavy": 0,
+        "crowded_small_heavy_and_crowded_neighbor": 0,
+        "small-heavy": 0,
+        "small_heavy_and_crowded_neighbor": 0
+      },
+      "targetSupply": {
+        "crowded_and_crowded_neighbor": {
+          "filenames": [],
+          "imageCount": 0
+        },
+        "crowded_and_small_heavy": {
+          "filenames": [],
+          "imageCount": 0
+        },
+        "crowded_small_heavy_and_crowded_neighbor": {
+          "filenames": [],
+          "imageCount": 0
+        },
+        "small_heavy_and_crowded_neighbor": {
+          "filenames": [],
+          "imageCount": 0
+        }
+      }
+    },
+    "futureRole": "domain-complement candidate",
+    "mustNotBeSelectedNow": true,
+    "roleNow": "ANNOTATED_CANDIDATE / ANNOTATION_POOL, not FINAL_TRAIN_ADDITION",
+    "unlabeledVideoFeasibility": {
+      "alreadyLabeledOrPoolImages": 48,
+      "contactSheetPathIgnored": "artifacts/analysis/ants_v5_target_supply_feasibility/contact_sheets/training_source_001.jpg",
+      "domainComplementCandidate": true,
+      "durationSeconds": 60.574511111111114,
+      "exactUnusedStrataAvailable": false,
+      "fps": 59.975721361350004,
+      "frameCount": 3633,
+      "frameIndexes": [
+        227,
+        680,
+        1134,
+        1620,
+        2044,
+        2528,
+        2829,
+        3436
+      ],
+      "manualAnnotationRequiredForUnusedFrames": true,
+      "manualVisualSummary": "best own-domain complement: medium-density/local-contact-looking frames, but exact 48-frame GT already has zero frozen-threshold H3/H4 target combinations",
+      "medianDhashDistanceWithinSample": 7.0,
+      "minDhashDistanceWithinSample": 2,
+      "path": "samples/v2/ants_v5_training_source_001.mp4",
+      "sampledFrames": 8,
+      "targetFeasibility": "uncertain",
+      "unusedVideoFramesApprox": 3585,
+      "v4ExactTrainStrata": null
+    }
+  },
+  "sourceRoleAudit": {
+    "activeRegistry": "experiments/ants_v5/source_role_registry.json",
+    "forbiddenSourcesExcluded": [
+      "Seq0001",
+      "Seq0006",
+      "Seq0005",
+      "Seq0010",
+      "own_colony_val_001",
+      "own_colony_val_002",
+      "ant4",
+      "former_v5_final_test_001",
+      "v5_final_test_002",
+      "Ants11",
+      "Ants2",
+      "ant3",
+      "ambiguous/excluded sources"
+    ],
+    "notes": [
+      "Seq0005 and Seq0010 are treated as forbidden development-validation sources per active role policy and user boundary.",
+      "Ants2 is distinct from lowercase ant2 historical material and remains excluded/ambiguous."
+    ],
+    "roleMetadataConflicts": [],
+    "trainEligibleSourcesAudited": [
+      "Seq0002",
+      "Seq0003",
+      "Seq0004",
+      "Seq0007",
+      "Seq0008",
+      "Seq0009",
+      "ant2",
+      "AntsNet",
+      "Ants3",
+      "Ants4",
+      "Ants5",
+      "Ants6",
+      "Ants7",
+      "Ants8",
+      "Ants9",
+      "Ants10",
+      "training_source_001"
+    ],
+    "unresolvedRoleAmbiguity": false
+  },
+  "trainingRunStarted": false,
+  "unusedLabeledSupply": {
+    "category": "B_LABELED_BUT_NOT_CURRENTLY_USED",
+    "otherLocalManualFormicaiGtUnusedTrainEligibleSourcesFound": false,
+    "sources": [
+      "training_source_001"
+    ],
+    "sufficientForMissingH3H4Intervention": false,
+    "summary": {
+      "annotations": 193,
+      "category": "LABELED_BUT_NOT_CURRENTLY_USED",
+      "formicaiTightBodyCompatible": true,
+      "images": 48,
+      "interpretation": "Labeled unused domain-complement candidate; contributes medium-density own-domain examples but zero crowded, zero small-heavy, and zero crowded-neighbor image-level target supply under frozen thresholds.",
+      "manualGt": true,
+      "marginalCounts": {
+        "density": {
+          "crowded": 0,
+          "medium": 10,
+          "sparse": 38
+        },
+        "localCrowding": {
+          "crowded-neighbor": 0,
+          "isolated-dominant": 27,
+          "moderate": 21
+        },
+        "scale": {
+          "medium-large-heavy": 23,
+          "mixed": 25,
+          "small-heavy": 0,
+          "zero-adult": 0
+        }
+      },
+      "source": "training_source_001",
+      "targetCountsAndIntersections": {
+        "crowded": 0,
+        "crowded-neighbor": 0,
+        "crowded_and_crowded_neighbor": 0,
+        "crowded_and_small_heavy": 0,
+        "crowded_small_heavy_and_crowded_neighbor": 0,
+        "small-heavy": 0,
+        "small_heavy_and_crowded_neighbor": 0
+      },
+      "targetSupply": {
+        "crowded_and_crowded_neighbor": {
+          "filenames": [],
+          "imageCount": 0
+        },
+        "crowded_and_small_heavy": {
+          "filenames": [],
+          "imageCount": 0
+        },
+        "crowded_small_heavy_and_crowded_neighbor": {
+          "filenames": [],
+          "imageCount": 0
+        },
+        "small_heavy_and_crowded_neighbor": {
+          "filenames": [],
+          "imageCount": 0
+        }
+      }
+    }
+  },
+  "unusedUnlabeledSupply": {
+    "ant2Historical": {
+      "alreadyInV4TrainImages": 27,
+      "directOldLabelUseAllowed": false,
+      "manualRelabelRequired": true,
+      "rawFrames": 70,
+      "targetFeasibility": "unlikely_useful_candidate",
+      "unusedRawFramesApprox": 43
+    },
+    "antsnetRaw": {
+      "alreadyRelabeledInV4TrainImages": 40,
+      "directLabelUseAllowed": false,
+      "manualRelabelRequired": true,
+      "rawImages": 997,
+      "rawLabels": 997,
+      "unusedRawImagesApprox": 957
+    },
+    "category": "C_UNLABELED_UNUSED_SOURCE_SUPPLY",
+    "labelBlindCandidateSample": "experiments/ants_v5/unused_train_candidate_supply.json",
+    "ownDomainVideos": {
+      "Ants10": {
+        "alreadyLabeledOrPoolImages": 8,
+        "durationSeconds": 96.5348,
+        "exactUnusedStrataAvailable": false,
+        "fps": 60.01980632890937,
+        "frameCount": 5794,
+        "manualAnnotationRequiredForUnusedFrames": true,
+        "path": "samples/v2/Ants10.mp4",
+        "unusedVideoFramesApprox": 5786,
+        "v4ExactTrainStrata": {
+          "annotations": 17,
+          "annotationsPerImage": {
+            "count": 8,
+            "max": 3.0,
+            "mean": 2.125,
+            "median": 2.0,
+            "min": 1.0,
+            "p25": 1.75,
+            "p75": 3.0
+          },
+          "bboxAreaMedianPerImage": {
+            "count": 8,
+            "max": 0.0033215181334876544,
+            "mean": 0.0024877477580087168,
+            "median": 0.00241051191222391,
+            "min": 0.0021490403199701004,
+            "p25": 0.0022692268294982154,
+            "p75": 0.002520525895167824
+          },
+          "density": {
+            "crowded": 0,
+            "medium": 0,
+            "sparse": 8
+          },
+          "images": 8,
+          "localCrowding": {
+            "crowded-neighbor": 0,
+            "isolated-dominant": 7,
+            "moderate": 1
+          },
+          "medianNeighborCountPerImage": {
+            "count": 8,
+            "max": 1.0,
+            "mean": 0.125,
+            "median": 0.0,
+            "min": 0.0,
+            "p25": 0.0,
+            "p75": 0.0
+          },
+          "scale": {
+            "medium-large-heavy": 1,
+            "mixed": 7,
+            "small-heavy": 0,
+            "zero-adult": 0
+          },
+          "targetCountsAndIntersections": {
+            "crowded": 0,
+            "crowded-neighbor": 0,
+            "crowded_and_crowded_neighbor": 0,
+            "crowded_and_small_heavy": 0,
+            "crowded_small_heavy_and_crowded_neighbor": 0,
+            "small-heavy": 0,
+            "small_heavy_and_crowded_neighbor": 0
+          }
+        }
+      },
+      "Ants3": {
+        "alreadyLabeledOrPoolImages": 7,
+        "durationSeconds": 31.372844444444446,
+        "exactUnusedStrataAvailable": false,
+        "fps": 60.020059811103444,
+        "frameCount": 1883,
+        "manualAnnotationRequiredForUnusedFrames": true,
+        "path": "samples/v2/Ants3.mp4",
+        "unusedVideoFramesApprox": 1876,
+        "v4ExactTrainStrata": {
+          "annotations": 18,
+          "annotationsPerImage": {
+            "count": 7,
+            "max": 4.0,
+            "mean": 2.5714285714285716,
+            "median": 2.0,
+            "min": 1.0,
+            "p25": 2.0,
+            "p75": 3.5
+          },
+          "bboxAreaMedianPerImage": {
+            "count": 7,
+            "max": 0.010629222180528029,
+            "mean": 0.005254040593187798,
+            "median": 0.005387811197860244,
+            "min": 0.0023411310765954862,
+            "p25": 0.0030514352452911506,
+            "p75": 0.006158624603374262
+          },
+          "density": {
+            "crowded": 0,
+            "medium": 0,
+            "sparse": 7
+          },
+          "images": 7,
+          "localCrowding": {
+            "crowded-neighbor": 0,
+            "isolated-dominant": 2,
+            "moderate": 5
+          },
+          "medianNeighborCountPerImage": {
+            "count": 7,
+            "max": 2.0,
+            "mean": 0.9285714285714286,
+            "median": 1.0,
+            "min": 0.0,
+            "p25": 0.5,
+            "p75": 1.25
+          },
+          "scale": {
+            "medium-large-heavy": 6,
+            "mixed": 1,
+            "small-heavy": 0,
+            "zero-adult": 0
+          },
+          "targetCountsAndIntersections": {
+            "crowded": 0,
+            "crowded-neighbor": 0,
+            "crowded_and_crowded_neighbor": 0,
+            "crowded_and_small_heavy": 0,
+            "crowded_small_heavy_and_crowded_neighbor": 0,
+            "small-heavy": 0,
+            "small_heavy_and_crowded_neighbor": 0
+          }
+        }
+      },
+      "Ants4": {
+        "alreadyLabeledOrPoolImages": 12,
+        "durationSeconds": 51.08308888888889,
+        "exactUnusedStrataAvailable": false,
+        "fps": 60.019863064053816,
+        "frameCount": 3066,
+        "manualAnnotationRequiredForUnusedFrames": true,
+        "path": "samples/v2/Ants4.mp4",
+        "unusedVideoFramesApprox": 3054,
+        "v4ExactTrainStrata": {
+          "annotations": 10,
+          "annotationsPerImage": {
+            "count": 12,
+            "max": 1.0,
+            "mean": 0.8333333333333334,
+            "median": 1.0,
+            "min": 0.0,
+            "p25": 1.0,
+            "p75": 1.0
+          },
+          "bboxAreaMedianPerImage": {
+            "count": 10,
+            "max": 0.0025332252587796874,
+            "mean": 0.0018398889223958316,
+            "median": 0.001853643565204726,
+            "min": 0.0009764227438876737,
+            "p25": 0.0015333827424093606,
+            "p75": 0.002309061487114236
+          },
+          "density": {
+            "crowded": 0,
+            "medium": 0,
+            "sparse": 12
+          },
+          "images": 12,
+          "localCrowding": {
+            "crowded-neighbor": 0,
+            "isolated-dominant": 12,
+            "moderate": 0
+          },
+          "medianNeighborCountPerImage": {
+            "count": 12,
+            "max": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "min": 0.0,
+            "p25": 0.0,
+            "p75": 0.0
+          },
+          "scale": {
+            "medium-large-heavy": 0,
+            "mixed": 6,
+            "small-heavy": 4,
+            "zero-adult": 2
+          },
+          "targetCountsAndIntersections": {
+            "crowded": 0,
+            "crowded-neighbor": 0,
+            "crowded_and_crowded_neighbor": 0,
+            "crowded_and_small_heavy": 0,
+            "crowded_small_heavy_and_crowded_neighbor": 0,
+            "small-heavy": 4,
+            "small_heavy_and_crowded_neighbor": 0
+          }
+        }
+      },
+      "Ants5": {
+        "alreadyLabeledOrPoolImages": 8,
+        "durationSeconds": 61.46302222222222,
+        "exactUnusedStrataAvailable": false,
+        "fps": 60.019827639816675,
+        "frameCount": 3689,
+        "manualAnnotationRequiredForUnusedFrames": true,
+        "path": "samples/v2/Ants5.mp4",
+        "unusedVideoFramesApprox": 3681,
+        "v4ExactTrainStrata": {
+          "annotations": 23,
+          "annotationsPerImage": {
+            "count": 8,
+            "max": 3.0,
+            "mean": 2.875,
+            "median": 3.0,
+            "min": 2.0,
+            "p25": 3.0,
+            "p75": 3.0
+          },
+          "bboxAreaMedianPerImage": {
+            "count": 8,
+            "max": 0.002411265435262346,
+            "mean": 0.0019339102286223238,
+            "median": 0.0018732518316092787,
+            "min": 0.0016607590685233412,
+            "p25": 0.0016878858022002798,
+            "p75": 0.0021091037307725694
+          },
+          "density": {
+            "crowded": 0,
+            "medium": 0,
+            "sparse": 8
+          },
+          "images": 8,
+          "localCrowding": {
+            "crowded-neighbor": 0,
+            "isolated-dominant": 6,
+            "moderate": 2
+          },
+          "medianNeighborCountPerImage": {
+            "count": 8,
+            "max": 1.0,
+            "mean": 0.25,
+            "median": 0.0,
+            "min": 0.0,
+            "p25": 0.0,
+            "p75": 0.25
+          },
+          "scale": {
+            "medium-large-heavy": 0,
+            "mixed": 5,
+            "small-heavy": 3,
+            "zero-adult": 0
+          },
+          "targetCountsAndIntersections": {
+            "crowded": 0,
+            "crowded-neighbor": 0,
+            "crowded_and_crowded_neighbor": 0,
+            "crowded_and_small_heavy": 0,
+            "crowded_small_heavy_and_crowded_neighbor": 0,
+            "small-heavy": 3,
+            "small_heavy_and_crowded_neighbor": 0
+          }
+        }
+      },
+      "Ants6": {
+        "alreadyLabeledOrPoolImages": 12,
+        "durationSeconds": 73.34266666666667,
+        "exactUnusedStrataAvailable": false,
+        "fps": 60.01963386478084,
+        "frameCount": 4402,
+        "manualAnnotationRequiredForUnusedFrames": true,
+        "path": "samples/v2/Ants6.mp4",
+        "unusedVideoFramesApprox": 4390,
+        "v4ExactTrainStrata": {
+          "annotations": 12,
+          "annotationsPerImage": {
+            "count": 12,
+            "max": 1.0,
+            "mean": 1.0,
+            "median": 1.0,
+            "min": 1.0,
+            "p25": 1.0,
+            "p75": 1.0
+          },
+          "bboxAreaMedianPerImage": {
+            "count": 12,
+            "max": 0.0026415993459078316,
+            "mean": 0.0019268733729896602,
+            "median": 0.002003767481949836,
+            "min": 0.0013088348741623458,
+            "p25": 0.0015836940349137345,
+            "p75": 0.002266784374689231
+          },
+          "density": {
+            "crowded": 0,
+            "medium": 0,
+            "sparse": 12
+          },
+          "images": 12,
+          "localCrowding": {
+            "crowded-neighbor": 0,
+            "isolated-dominant": 12,
+            "moderate": 0
+          },
+          "medianNeighborCountPerImage": {
+            "count": 12,
+            "max": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "min": 0.0,
+            "p25": 0.0,
+            "p75": 0.0
+          },
+          "scale": {
+            "medium-large-heavy": 0,
+            "mixed": 7,
+            "small-heavy": 5,
+            "zero-adult": 0
+          },
+          "targetCountsAndIntersections": {
+            "crowded": 0,
+            "crowded-neighbor": 0,
+            "crowded_and_crowded_neighbor": 0,
+            "crowded_and_small_heavy": 0,
+            "crowded_small_heavy_and_crowded_neighbor": 0,
+            "small-heavy": 5,
+            "small_heavy_and_crowded_neighbor": 0
+          }
+        }
+      },
+      "Ants7": {
+        "alreadyLabeledOrPoolImages": 8,
+        "durationSeconds": 73.01266666666666,
+        "exactUnusedStrataAvailable": false,
+        "fps": 59.975894593632155,
+        "frameCount": 4379,
+        "manualAnnotationRequiredForUnusedFrames": true,
+        "path": "samples/v2/Ants7.mp4",
+        "unusedVideoFramesApprox": 4371,
+        "v4ExactTrainStrata": {
+          "annotations": 37,
+          "annotationsPerImage": {
+            "count": 8,
+            "max": 5.0,
+            "mean": 4.625,
+            "median": 5.0,
+            "min": 4.0,
+            "p25": 4.0,
+            "p75": 5.0
+          },
+          "bboxAreaMedianPerImage": {
+            "count": 8,
+            "max": 0.002179497057270968,
+            "mean": 0.0019306716904365572,
+            "median": 0.0020678488250799,
+            "min": 0.001322916667725,
+            "p25": 0.0018548794707491513,
+            "p75": 0.002123276438964294
+          },
+          "density": {
+            "crowded": 0,
+            "medium": 0,
+            "sparse": 8
+          },
+          "images": 8,
+          "localCrowding": {
+            "crowded-neighbor": 0,
+            "isolated-dominant": 1,
+            "moderate": 7
+          },
+          "medianNeighborCountPerImage": {
+            "count": 8,
+            "max": 2.0,
+            "mean": 0.9375,
+            "median": 0.75,
+            "min": 0.0,
+            "p25": 0.5,
+            "p75": 1.25
+          },
+          "scale": {
+            "medium-large-heavy": 0,
+            "mixed": 6,
+            "small-heavy": 2,
+            "zero-adult": 0
+          },
+          "targetCountsAndIntersections": {
+            "crowded": 0,
+            "crowded-neighbor": 0,
+            "crowded_and_crowded_neighbor": 0,
+            "crowded_and_small_heavy": 0,
+            "crowded_small_heavy_and_crowded_neighbor": 0,
+            "small-heavy": 2,
+            "small_heavy_and_crowded_neighbor": 0
+          }
+        }
+      },
+      "Ants8": {
+        "alreadyLabeledOrPoolImages": 8,
+        "durationSeconds": 61.29194444444445,
+        "exactUnusedStrataAvailable": false,
+        "fps": 59.97525504076573,
+        "frameCount": 3676,
+        "manualAnnotationRequiredForUnusedFrames": true,
+        "path": "samples/v2/Ants8.mp4",
+        "unusedVideoFramesApprox": 3668,
+        "v4ExactTrainStrata": {
+          "annotations": 23,
+          "annotationsPerImage": {
+            "count": 8,
+            "max": 4.0,
+            "mean": 2.875,
+            "median": 3.0,
+            "min": 2.0,
+            "p25": 2.75,
+            "p75": 3.0
+          },
+          "bboxAreaMedianPerImage": {
+            "count": 8,
+            "max": 0.006463429471485041,
+            "mean": 0.003420282826111877,
+            "median": 0.0030296465084132134,
+            "min": 0.0010068627504048998,
+            "p25": 0.0026072939323722125,
+            "p75": 0.0037937259568379582
+          },
+          "density": {
+            "crowded": 0,
+            "medium": 0,
+            "sparse": 8
+          },
+          "images": 8,
+          "localCrowding": {
+            "crowded-neighbor": 0,
+            "isolated-dominant": 1,
+            "moderate": 7
+          },
+          "medianNeighborCountPerImage": {
+            "count": 8,
+            "max": 2.0,
+            "mean": 1.0,
+            "median": 1.0,
+            "min": 0.0,
+            "p25": 1.0,
+            "p75": 1.0
+          },
+          "scale": {
+            "medium-large-heavy": 5,
+            "mixed": 2,
+            "small-heavy": 1,
+            "zero-adult": 0
+          },
+          "targetCountsAndIntersections": {
+            "crowded": 0,
+            "crowded-neighbor": 0,
+            "crowded_and_crowded_neighbor": 0,
+            "crowded_and_small_heavy": 0,
+            "crowded_small_heavy_and_crowded_neighbor": 0,
+            "small-heavy": 1,
+            "small_heavy_and_crowded_neighbor": 0
+          }
+        }
+      },
+      "Ants9": {
+        "alreadyLabeledOrPoolImages": 8,
+        "durationSeconds": 76.5414,
+        "exactUnusedStrataAvailable": false,
+        "fps": 60.019806274774176,
+        "frameCount": 4594,
+        "manualAnnotationRequiredForUnusedFrames": true,
+        "path": "samples/v2/Ants9.mp4",
+        "unusedVideoFramesApprox": 4586,
+        "v4ExactTrainStrata": {
+          "annotations": 15,
+          "annotationsPerImage": {
+            "count": 8,
+            "max": 3.0,
+            "mean": 1.875,
+            "median": 1.5,
+            "min": 1.0,
+            "p25": 1.0,
+            "p75": 3.0
+          },
+          "bboxAreaMedianPerImage": {
+            "count": 8,
+            "max": 0.0022545331761670523,
+            "mean": 0.0018713680302414881,
+            "median": 0.0018988715248263888,
+            "min": 0.0014467592560185184,
+            "p25": 0.0015959563077148436,
+            "p75": 0.002169385370809221
+          },
+          "density": {
+            "crowded": 0,
+            "medium": 0,
+            "sparse": 8
+          },
+          "images": 8,
+          "localCrowding": {
+            "crowded-neighbor": 0,
+            "isolated-dominant": 8,
+            "moderate": 0
+          },
+          "medianNeighborCountPerImage": {
+            "count": 8,
+            "max": 0.0,
+            "mean": 0.0,
+            "median": 0.0,
+            "min": 0.0,
+            "p25": 0.0,
+            "p75": 0.0
+          },
+          "scale": {
+            "medium-large-heavy": 0,
+            "mixed": 5,
+            "small-heavy": 3,
+            "zero-adult": 0
+          },
+          "targetCountsAndIntersections": {
+            "crowded": 0,
+            "crowded-neighbor": 0,
+            "crowded_and_crowded_neighbor": 0,
+            "crowded_and_small_heavy": 0,
+            "crowded_small_heavy_and_crowded_neighbor": 0,
+            "small-heavy": 3,
+            "small_heavy_and_crowded_neighbor": 0
+          }
+        }
+      },
+      "training_source_001": {
+        "alreadyLabeledOrPoolImages": 48,
+        "durationSeconds": 60.574511111111114,
+        "exactUnusedStrataAvailable": false,
+        "fps": 59.975721361350004,
+        "frameCount": 3633,
+        "manualAnnotationRequiredForUnusedFrames": true,
+        "path": "samples/v2/ants_v5_training_source_001.mp4",
+        "unusedVideoFramesApprox": 3585,
+        "v4ExactTrainStrata": null
+      }
+    },
+    "publicSequences": {
+      "Seq0002": {
+        "alreadyInV4TrainAnnotations": 247,
+        "alreadyInV4TrainImages": 25,
+        "exactUnusedStrataAvailable": false,
+        "fullSourceFrames": 351,
+        "fullSourceTrackingDensityReferenceOnly": {
+          "max": 10,
+          "mean": 10,
+          "median": 10,
+          "min": 10
+        },
+        "manualRelabelRequiredForUnusedFrames": true,
+        "originalPublicGtCompatibility": "INCOMPATIBLE_FOR_DIRECT_FORMICAI_IMPORT_FIXED_64PX_TRACKING_BOXES",
+        "representedFrameRange": [
+          1,
+          351
+        ],
+        "unusedArchiveFramesApprox": 326,
+        "v4ExactTrainStrata": {
+          "annotations": 247,
+          "annotationsPerImage": {
+            "count": 25,
+            "max": 10.0,
+            "mean": 9.88,
+            "median": 10.0,
+            "min": 9.0,
+            "p25": 10.0,
+            "p75": 10.0
+          },
+          "bboxAreaMedianPerImage": {
+            "count": 25,
+            "max": 0.0063903353984375005,
+            "mean": 0.0029291026473878845,
+            "median": 0.0025086504927228004,
+            "min": 0.0019634420348206,
+            "p25": 0.0022719825293451,
+            "p75": 0.00285413431698495
+          },
+          "density": {
+            "crowded": 0,
+            "medium": 25,
+            "sparse": 0
+          },
+          "images": 25,
+          "localCrowding": {
+            "crowded-neighbor": 0,
+            "isolated-dominant": 7,
+            "moderate": 18
+          },
+          "medianNeighborCountPerImage": {
+            "count": 25,
+            "max": 2.0,
+            "mean": 0.72,
+            "median": 1.0,
+            "min": 0.0,
+            "p25": 0.0,
+            "p75": 1.0
+          },
+          "scale": {
+            "medium-large-heavy": 9,
+            "mixed": 16,
+            "small-heavy": 0,
+            "zero-adult": 0
+          },
+          "targetCountsAndIntersections": {
+            "crowded": 0,
+            "crowded-neighbor": 0,
+            "crowded_and_crowded_neighbor": 0,
+            "crowded_and_small_heavy": 0,
+            "crowded_small_heavy_and_crowded_neighbor": 0,
+            "small-heavy": 0,
+            "small_heavy_and_crowded_neighbor": 0
+          }
+        }
+      },
+      "Seq0003": {
+        "alreadyInV4TrainAnnotations": 250,
+        "alreadyInV4TrainImages": 25,
+        "exactUnusedStrataAvailable": false,
+        "fullSourceFrames": 351,
+        "fullSourceTrackingDensityReferenceOnly": {
+          "max": 10,
+          "mean": 10,
+          "median": 10,
+          "min": 10
+        },
+        "manualRelabelRequiredForUnusedFrames": true,
+        "originalPublicGtCompatibility": "INCOMPATIBLE_FOR_DIRECT_FORMICAI_IMPORT_FIXED_64PX_TRACKING_BOXES",
+        "representedFrameRange": [
+          1,
+          351
+        ],
+        "unusedArchiveFramesApprox": 326,
+        "v4ExactTrainStrata": {
+          "annotations": 250,
+          "annotationsPerImage": {
+            "count": 25,
+            "max": 10.0,
+            "mean": 10.0,
+            "median": 10.0,
+            "min": 10.0,
+            "p25": 10.0,
+            "p75": 10.0
+          },
+          "bboxAreaMedianPerImage": {
+            "count": 25,
+            "max": 0.00508367076514275,
+            "mean": 0.003578117218452006,
+            "median": 0.00374348947743055,
+            "min": 0.00207558475570505,
+            "p25": 0.0034027777644675995,
+            "p75": 0.00391396628192515
+          },
+          "density": {
+            "crowded": 0,
+            "medium": 25,
+            "sparse": 0
+          },
+          "images": 25,
+          "localCrowding": {
+            "crowded-neighbor": 1,
+            "isolated-dominant": 3,
+            "moderate": 21
+          },
+          "medianNeighborCountPerImage": {
+            "count": 25,
+            "max": 3.0,
+            "mean": 1.08,
+            "median": 1.0,
+            "min": 0.0,
+            "p25": 1.0,
+            "p75": 1.0
+          },
+          "scale": {
+            "medium-large-heavy": 21,
+            "mixed": 4,
+            "small-heavy": 0,
+            "zero-adult": 0
+          },
+          "targetCountsAndIntersections": {
+            "crowded": 0,
+            "crowded-neighbor": 1,
+            "crowded_and_crowded_neighbor": 0,
+            "crowded_and_small_heavy": 0,
+            "crowded_small_heavy_and_crowded_neighbor": 0,
+            "small-heavy": 0,
+            "small_heavy_and_crowded_neighbor": 0
+          }
+        }
+      },
+      "Seq0004": {
+        "alreadyInV4TrainAnnotations": 250,
+        "alreadyInV4TrainImages": 25,
+        "exactUnusedStrataAvailable": false,
+        "fullSourceFrames": 351,
+        "fullSourceTrackingDensityReferenceOnly": {
+          "max": 10,
+          "mean": 10,
+          "median": 10,
+          "min": 10
+        },
+        "manualRelabelRequiredForUnusedFrames": true,
+        "originalPublicGtCompatibility": "INCOMPATIBLE_FOR_DIRECT_FORMICAI_IMPORT_FIXED_64PX_TRACKING_BOXES",
+        "representedFrameRange": [
+          1,
+          351
+        ],
+        "unusedArchiveFramesApprox": 326,
+        "v4ExactTrainStrata": {
+          "annotations": 250,
+          "annotationsPerImage": {
+            "count": 25,
+            "max": 10.0,
+            "mean": 10.0,
+            "median": 10.0,
+            "min": 10.0,
+            "p25": 10.0,
+            "p75": 10.0
+          },
+          "bboxAreaMedianPerImage": {
+            "count": 25,
+            "max": 0.0046325230624999995,
+            "mean": 0.0033419036682724164,
+            "median": 0.0033977627561960003,
+            "min": 0.00160525164957755,
+            "p25": 0.0031134261250000002,
+            "p75": 0.00375361686805555
+          },
+          "density": {
+            "crowded": 0,
+            "medium": 25,
+            "sparse": 0
+          },
+          "images": 25,
+          "localCrowding": {
+            "crowded-neighbor": 0,
+            "isolated-dominant": 9,
+            "moderate": 16
+          },
+          "medianNeighborCountPerImage": {
+            "count": 25,
+            "max": 2.0,
+            "mean": 0.56,
+            "median": 0.5,
+            "min": 0.0,
+            "p25": 0.0,
+            "p75": 1.0
+          },
+          "scale": {
+            "medium-large-heavy": 22,
+            "mixed": 1,
+            "small-heavy": 2,
+            "zero-adult": 0
+          },
+          "targetCountsAndIntersections": {
+            "crowded": 0,
+            "crowded-neighbor": 0,
+            "crowded_and_crowded_neighbor": 0,
+            "crowded_and_small_heavy": 0,
+            "crowded_small_heavy_and_crowded_neighbor": 0,
+            "small-heavy": 2,
+            "small_heavy_and_crowded_neighbor": 0
+          }
+        }
+      },
+      "Seq0007": {
+        "alreadyInV4TrainAnnotations": 1089,
+        "alreadyInV4TrainImages": 30,
+        "exactUnusedStrataAvailable": false,
+        "fullSourceFrames": 677,
+        "fullSourceTrackingDensityReferenceOnly": {
+          "max": 44,
+          "mean": 37.16100443131462,
+          "median": 37,
+          "min": 26
+        },
+        "manualRelabelRequiredForUnusedFrames": true,
+        "originalPublicGtCompatibility": "INCOMPATIBLE_FOR_DIRECT_FORMICAI_IMPORT_FIXED_64PX_TRACKING_BOXES",
+        "representedFrameRange": [
+          1,
+          677
+        ],
+        "unusedArchiveFramesApprox": 647,
+        "v4ExactTrainStrata": {
+          "annotations": 1089,
+          "annotationsPerImage": {
+            "count": 30,
+            "max": 42.0,
+            "mean": 36.3,
+            "median": 37.0,
+            "min": 25.0,
+            "p25": 35.0,
+            "p75": 38.75
+          },
+          "bboxAreaMedianPerImage": {
+            "count": 30,
+            "max": 0.0014843750625000002,
+            "mean": 0.0012733512685700232,
+            "median": 0.0012712791318749998,
+            "min": 0.0009689669726562498,
+            "p25": 0.001184624515625,
+            "p75": 0.001382378458984375
+          },
+          "density": {
+            "crowded": 30,
+            "medium": 0,
+            "sparse": 0
+          },
+          "images": 30,
+          "localCrowding": {
+            "crowded-neighbor": 5,
+            "isolated-dominant": 0,
+            "moderate": 25
+          },
+          "medianNeighborCountPerImage": {
+            "count": 30,
+            "max": 3.0,
+            "mean": 1.8333333333333333,
+            "median": 2.0,
+            "min": 1.0,
+            "p25": 1.0,
+            "p75": 2.0
+          },
+          "scale": {
+            "medium-large-heavy": 0,
+            "mixed": 0,
+            "small-heavy": 30,
+            "zero-adult": 0
+          },
+          "targetCountsAndIntersections": {
+            "crowded": 30,
+            "crowded-neighbor": 5,
+            "crowded_and_crowded_neighbor": 5,
+            "crowded_and_small_heavy": 30,
+            "crowded_small_heavy_and_crowded_neighbor": 5,
+            "small-heavy": 30,
+            "small_heavy_and_crowded_neighbor": 5
+          }
+        }
+      },
+      "Seq0008": {
+        "alreadyInV4TrainAnnotations": 541,
+        "alreadyInV4TrainImages": 30,
+        "exactUnusedStrataAvailable": false,
+        "fullSourceFrames": 577,
+        "fullSourceTrackingDensityReferenceOnly": {
+          "max": 35,
+          "mean": 17.81629116117851,
+          "median": 17,
+          "min": 0
+        },
+        "manualRelabelRequiredForUnusedFrames": true,
+        "originalPublicGtCompatibility": "INCOMPATIBLE_FOR_DIRECT_FORMICAI_IMPORT_FIXED_64PX_TRACKING_BOXES",
+        "representedFrameRange": [
+          1,
+          557
+        ],
+        "unusedArchiveFramesApprox": 547,
+        "v4ExactTrainStrata": {
+          "annotations": 541,
+          "annotationsPerImage": {
+            "count": 30,
+            "max": 33.0,
+            "mean": 18.033333333333335,
+            "median": 18.0,
+            "min": 8.0,
+            "p25": 13.0,
+            "p75": 20.75
+          },
+          "bboxAreaMedianPerImage": {
+            "count": 30,
+            "max": 0.0032845052773437505,
+            "mean": 0.002678150299088542,
+            "median": 0.0027110460390625,
+            "min": 0.0018608939687499999,
+            "p25": 0.002477349283203125,
+            "p75": 0.0028690592392578125
+          },
+          "density": {
+            "crowded": 27,
+            "medium": 3,
+            "sparse": 0
+          },
+          "images": 30,
+          "localCrowding": {
+            "crowded-neighbor": 0,
+            "isolated-dominant": 19,
+            "moderate": 11
+          },
+          "medianNeighborCountPerImage": {
+            "count": 30,
+            "max": 1.0,
+            "mean": 0.31666666666666665,
+            "median": 0.0,
+            "min": 0.0,
+            "p25": 0.0,
+            "p75": 0.875
+          },
+          "scale": {
+            "medium-large-heavy": 10,
+            "mixed": 20,
+            "small-heavy": 0,
+            "zero-adult": 0
+          },
+          "targetCountsAndIntersections": {
+            "crowded": 27,
+            "crowded-neighbor": 0,
+            "crowded_and_crowded_neighbor": 0,
+            "crowded_and_small_heavy": 0,
+            "crowded_small_heavy_and_crowded_neighbor": 0,
+            "small-heavy": 0,
+            "small_heavy_and_crowded_neighbor": 0
+          }
+        }
+      },
+      "Seq0009": {
+        "alreadyInV4TrainAnnotations": 987,
+        "alreadyInV4TrainImages": 20,
+        "exactUnusedStrataAvailable": false,
+        "fullSourceFrames": 526,
+        "fullSourceTrackingDensityReferenceOnly": {
+          "max": 61,
+          "mean": 53.045627376425855,
+          "median": 53.0,
+          "min": 43
+        },
+        "manualRelabelRequiredForUnusedFrames": true,
+        "originalPublicGtCompatibility": "INCOMPATIBLE_FOR_DIRECT_FORMICAI_IMPORT_FIXED_64PX_TRACKING_BOXES",
+        "representedFrameRange": [
+          1,
+          526
+        ],
+        "unusedArchiveFramesApprox": 506,
+        "v4ExactTrainStrata": {
+          "annotations": 987,
+          "annotationsPerImage": {
+            "count": 20,
+            "max": 56.0,
+            "mean": 49.35,
+            "median": 51.0,
+            "min": 39.0,
+            "p25": 46.5,
+            "p75": 52.25
+          },
+          "bboxAreaMedianPerImage": {
+            "count": 20,
+            "max": 0.00247341583203125,
+            "mean": 0.002249484580859375,
+            "median": 0.002272677943359375,
+            "min": 0.00185384112890625,
+            "p25": 0.002184787203125,
+            "p75": 0.0023421224863281248
+          },
+          "density": {
+            "crowded": 20,
+            "medium": 0,
+            "sparse": 0
+          },
+          "images": 20,
+          "localCrowding": {
+            "crowded-neighbor": 0,
+            "isolated-dominant": 0,
+            "moderate": 20
+          },
+          "medianNeighborCountPerImage": {
+            "count": 20,
+            "max": 2.0,
+            "mean": 1.375,
+            "median": 1.0,
+            "min": 1.0,
+            "p25": 1.0,
+            "p75": 2.0
+          },
+          "scale": {
+            "medium-large-heavy": 0,
+            "mixed": 20,
+            "small-heavy": 0,
+            "zero-adult": 0
+          },
+          "targetCountsAndIntersections": {
+            "crowded": 20,
+            "crowded-neighbor": 0,
+            "crowded_and_crowded_neighbor": 0,
+            "crowded_and_small_heavy": 0,
+            "crowded_small_heavy_and_crowded_neighbor": 0,
+            "small-heavy": 0,
+            "small_heavy_and_crowded_neighbor": 0
+          }
+        }
+      }
+    }
+  }
+}
