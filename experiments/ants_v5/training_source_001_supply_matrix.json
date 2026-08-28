@@ -1,0 +1,565 @@
+{
+  "allowedTrainingRecordComparison": {
+    "comparisonSummary": [
+      "Training source 001 annotation pool is denser than the prior V4 own-domain addition on mean annotations/image (4.02 vs 2.18), but remains below V4 base train density (13.26).",
+      "The pool contains medium-density frames (10/48) but no crowded frames under the preregistered >10 annotations/image threshold.",
+      "The pool contains no small-heavy image-level median-area stratum and no crowded-neighbor image-level median-crowding stratum under preregistered thresholds.",
+      "All H3/H4 target combinations involving crowded, small-heavy, or crowded-neighbor strata have zero supply in this annotated pool."
+    ],
+    "policy": {
+      "allowedRecordsOnly": true,
+      "ant4SelectionUsed": false,
+      "finalTestContentAccessed": false,
+      "formerFinalTest001UsedForDecision": false,
+      "interpretation": "Evidence-only comparison against preregistered train-distribution records; no final-test content or observed-reference final test used."
+    },
+    "trainingSource001AnnotationPool": {
+      "annotations": 193,
+      "annotationsPerImage": {
+        "count": 48,
+        "max": 7.0,
+        "mean": 4.020833333333333,
+        "median": 4.0,
+        "min": 1.0,
+        "p10": 2.0,
+        "p25": 3.0,
+        "p75": 5.0,
+        "p90": 6.0
+      },
+      "bboxAreaRatio": {
+        "count": 193,
+        "max": 0.018512686896,
+        "mean": 0.005361732809746113,
+        "median": 0.002808009295,
+        "min": 0.0008246301389999999,
+        "p10": 0.0015195614032,
+        "p25": 0.002202334266,
+        "p75": 0.004925783949,
+        "p90": 0.0139739930878
+      },
+      "images": 48,
+      "marginalStrata": {
+        "density": {
+          "crowded": 0,
+          "medium": 10,
+          "sparse": 38
+        },
+        "localCrowding": {
+          "crowded-neighbor": 0,
+          "isolated-dominant": 27,
+          "moderate": 21
+        },
+        "scale": {
+          "medium-large-heavy": 23,
+          "mixed": 25,
+          "small-heavy": 0,
+          "zero-adult": 0
+        }
+      },
+      "neighborCountWithinRadius": {
+        "count": 193,
+        "max": 3.0,
+        "mean": 0.5181347150259067,
+        "median": 0.0,
+        "min": 0.0,
+        "p10": 0.0,
+        "p25": 0.0,
+        "p75": 1.0,
+        "p90": 1.8000000000000114
+      },
+      "record": "experiments/ants_v5/training_source_001_strata_analysis.json",
+      "zeroAdultImages": 0
+    },
+    "v4BaseTrain": {
+      "annotations": 3886,
+      "annotationsPerImage": {
+        "count": 293,
+        "max": 56,
+        "mean": 13.262798634812286,
+        "median": 10.0,
+        "min": 0,
+        "p10": 1.0,
+        "p25": 3.0,
+        "p75": 14.0,
+        "p90": 38.0
+      },
+      "bboxAreaRatio": {
+        "count": 3886,
+        "max": 0.4699874968875,
+        "mean": 0.004183100536299292,
+        "median": 0.002196180515625,
+        "min": 0.0002737693411632,
+        "p10": 0.00104166675,
+        "p25": 0.0014583332031250001,
+        "p75": 0.00328125,
+        "p90": 0.00570167859346065
+      },
+      "images": 293,
+      "neighborCountWithinRadius": {
+        "count": 3886,
+        "max": 9,
+        "mean": 1.3082861554297478,
+        "median": 1.0,
+        "min": 0,
+        "p10": 0.0,
+        "p25": 0.0,
+        "p75": 2.0,
+        "p90": 3.0
+      },
+      "record": "experiments/ants_v5/train_distribution_analysis.json#datasets.ants_v4_domain_e01.splits.train",
+      "zeroAdultImages": 2
+    },
+    "v4OwnDomainAddition": {
+      "annotations": 155,
+      "annotationsPerImageMean": 2.183098591549296,
+      "densityInterpretationAtSourceSummaryLevel": "all V4 own-domain source summaries have max annotations/image <= 5, so no medium/crowded source summary is present in the allowed record",
+      "images": 71,
+      "maxAnnotationsPerImageAtSourceSummaryLevel": 5,
+      "record": "experiments/ants_v5/train_distribution_analysis.json#datasets.ants_v4_domain_e01.trainSources roles.V4_OWN_DOMAIN_TRAIN_ADDITION",
+      "sourceNames": [
+        "Ants10",
+        "Ants3",
+        "Ants4",
+        "Ants5",
+        "Ants6",
+        "Ants7",
+        "Ants8",
+        "Ants9"
+      ],
+      "sourceSummaries": {
+        "Ants10": {
+          "annotations": 17,
+          "annotationsPerImage": {
+            "count": 8,
+            "max": 3,
+            "mean": 2.125,
+            "median": 2.0,
+            "min": 1,
+            "p10": 1.0,
+            "p25": 1.75,
+            "p75": 3.0,
+            "p90": 3.0
+          },
+          "bboxAreaRatio": {
+            "count": 17,
+            "max": 0.003680193863729745,
+            "mean": 0.002417825492371607,
+            "median": 0.0023509837971064816,
+            "min": 0.0012598861909529323,
+            "p10": 0.0014756944440972222,
+            "p25": 0.0018807870351562502,
+            "p75": 0.0028935185189814814,
+            "p90": 0.0033757716034818674
+          },
+          "images": 8,
+          "neighborCountWithinRadius": {
+            "count": 17,
+            "max": 1,
+            "mean": 0.11764705882352941,
+            "median": 0.0,
+            "min": 0,
+            "p10": 0.0,
+            "p25": 0.0,
+            "p75": 0.0,
+            "p90": 0.40000000000000036
+          },
+          "zeroAdultImages": 0
+        },
+        "Ants3": {
+          "annotations": 18,
+          "annotationsPerImage": {
+            "count": 7,
+            "max": 4,
+            "mean": 2.5714285714285716,
+            "median": 2.0,
+            "min": 1,
+            "p10": 1.6,
+            "p25": 2.0,
+            "p75": 3.5,
+            "p90": 4.0
+          },
+          "bboxAreaRatio": {
+            "count": 18,
+            "max": 0.013227623453042285,
+            "mean": 0.005470829757193204,
+            "median": 0.0029574327979524882,
+            "min": 0.00154123755946875,
+            "p10": 0.001962042543679464,
+            "p25": 0.0022837043188200954,
+            "p75": 0.009637423924903535,
+            "p90": 0.010629383390704933
+          },
+          "images": 7,
+          "neighborCountWithinRadius": {
+            "count": 18,
+            "max": 3,
+            "mean": 1.2222222222222223,
+            "median": 1.0,
+            "min": 0,
+            "p10": 0.0,
+            "p25": 1.0,
+            "p75": 2.0,
+            "p90": 2.0
+          },
+          "zeroAdultImages": 0
+        },
+        "Ants4": {
+          "annotations": 10,
+          "annotationsPerImage": {
+            "count": 12,
+            "max": 1,
+            "mean": 0.8333333333333334,
+            "median": 1.0,
+            "min": 0,
+            "p10": 0.10000000000000009,
+            "p25": 1.0,
+            "p75": 1.0,
+            "p90": 1.0
+          },
+          "bboxAreaRatio": {
+            "count": 10,
+            "max": 0.0025332252587796874,
+            "mean": 0.0018398889223958314,
+            "median": 0.001853643565204726,
+            "min": 0.0009764227438876737,
+            "p10": 0.00112174409545033,
+            "p25": 0.0015333827424093606,
+            "p75": 0.002309061487114236,
+            "p90": 0.002383782422170156
+          },
+          "images": 12,
+          "neighborCountWithinRadius": {
+            "count": 10,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "p10": 0.0,
+            "p25": 0.0,
+            "p75": 0.0,
+            "p90": 0.0
+          },
+          "zeroAdultImages": 2
+        },
+        "Ants5": {
+          "annotations": 23,
+          "annotationsPerImage": {
+            "count": 8,
+            "max": 3,
+            "mean": 2.875,
+            "median": 3.0,
+            "min": 2,
+            "p10": 2.7,
+            "p25": 3.0,
+            "p75": 3.0,
+            "p90": 3.0
+          },
+          "bboxAreaRatio": {
+            "count": 23,
+            "max": 0.0028844762718750003,
+            "mean": 0.0020027918256464287,
+            "median": 0.0018566743801311726,
+            "min": 0.001410590278125,
+            "p10": 0.0015389901623668982,
+            "p25": 0.0016743224352695797,
+            "p75": 0.0023359133870466823,
+            "p90": 0.0025227864590625
+          },
+          "images": 8,
+          "neighborCountWithinRadius": {
+            "count": 23,
+            "max": 1,
+            "mean": 0.17391304347826086,
+            "median": 0.0,
+            "min": 0,
+            "p10": 0.0,
+            "p25": 0.0,
+            "p75": 0.0,
+            "p90": 1.0
+          },
+          "zeroAdultImages": 0
+        },
+        "Ants6": {
+          "annotations": 12,
+          "annotationsPerImage": {
+            "count": 12,
+            "max": 1,
+            "mean": 1,
+            "median": 1.0,
+            "min": 1,
+            "p10": 1.0,
+            "p25": 1.0,
+            "p75": 1.0,
+            "p90": 1.0
+          },
+          "bboxAreaRatio": {
+            "count": 12,
+            "max": 0.0026415993459078316,
+            "mean": 0.0019268733729896604,
+            "median": 0.002003767481949836,
+            "min": 0.0013088348741623458,
+            "p10": 0.0013333341233751814,
+            "p25": 0.0015836940349137343,
+            "p75": 0.002266784374689231,
+            "p90": 0.002393092078346983
+          },
+          "images": 12,
+          "neighborCountWithinRadius": {
+            "count": 12,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "p10": 0.0,
+            "p25": 0.0,
+            "p75": 0.0,
+            "p90": 0.0
+          },
+          "zeroAdultImages": 0
+        },
+        "Ants7": {
+          "annotations": 37,
+          "annotationsPerImage": {
+            "count": 8,
+            "max": 5,
+            "mean": 4.625,
+            "median": 5.0,
+            "min": 4,
+            "p10": 4.0,
+            "p25": 4.0,
+            "p75": 5.0,
+            "p90": 5.0
+          },
+          "bboxAreaRatio": {
+            "count": 37,
+            "max": 0.01057463801735,
+            "mean": 0.003514552020146101,
+            "median": 0.0020393518516314815,
+            "min": 0.0006928362771934992,
+            "p10": 0.0010646571487687732,
+            "p25": 0.0013541499347248648,
+            "p75": 0.0023738258583001545,
+            "p90": 0.010073058386027407
+          },
+          "images": 8,
+          "neighborCountWithinRadius": {
+            "count": 37,
+            "max": 2,
+            "mean": 0.7567567567567568,
+            "median": 1.0,
+            "min": 0,
+            "p10": 0.0,
+            "p25": 0.0,
+            "p75": 1.0,
+            "p90": 2.0
+          },
+          "zeroAdultImages": 0
+        },
+        "Ants8": {
+          "annotations": 23,
+          "annotationsPerImage": {
+            "count": 8,
+            "max": 4,
+            "mean": 2.875,
+            "median": 3.0,
+            "min": 2,
+            "p10": 2.0,
+            "p25": 2.75,
+            "p75": 3.0,
+            "p90": 3.3
+          },
+          "bboxAreaRatio": {
+            "count": 23,
+            "max": 0.012046231338210938,
+            "mean": 0.005291888922635572,
+            "median": 0.0028149978759671682,
+            "min": 0.0009093364176091821,
+            "p10": 0.0016607865250981445,
+            "p25": 0.002139643761953057,
+            "p75": 0.010191060306318818,
+            "p90": 0.011451159772976218
+          },
+          "images": 8,
+          "neighborCountWithinRadius": {
+            "count": 23,
+            "max": 2,
+            "mean": 1.1304347826086956,
+            "median": 1.0,
+            "min": 0,
+            "p10": 0.20000000000000018,
+            "p25": 1.0,
+            "p75": 1.5,
+            "p90": 2.0
+          },
+          "zeroAdultImages": 0
+        },
+        "Ants9": {
+          "annotations": 15,
+          "annotationsPerImage": {
+            "count": 8,
+            "max": 3,
+            "mean": 1.875,
+            "median": 1.5,
+            "min": 1,
+            "p10": 1.0,
+            "p25": 1.0,
+            "p75": 3.0,
+            "p90": 3.0
+          },
+          "bboxAreaRatio": {
+            "count": 15,
+            "max": 0.0030743634216435184,
+            "mean": 0.0019145447527160492,
+            "median": 0.0018325617306327161,
+            "min": 0.0013714072158468363,
+            "p10": 0.0013967255017843364,
+            "p25": 0.0014467592578920716,
+            "p75": 0.0021234206247130595,
+            "p90": 0.0026988088333150073
+          },
+          "images": 8,
+          "neighborCountWithinRadius": {
+            "count": 15,
+            "max": 0,
+            "mean": 0,
+            "median": 0.0,
+            "min": 0,
+            "p10": 0.0,
+            "p25": 0.0,
+            "p75": 0.0,
+            "p90": 0.0
+          },
+          "zeroAdultImages": 0
+        }
+      },
+      "weightedMeanBBoxAreaRatio": 0.0032750554319113663,
+      "weightedMeanNeighborCountWithinRadius": 0.5290322580645161,
+      "zeroAdultImages": 2
+    }
+  },
+  "availabilityShortfalls": [
+    "crowded density images: 0 available under >10 annotations/image threshold",
+    "small-heavy image-level median-area images: 0 available under <=0.0016905380624999999 threshold",
+    "crowded-neighbor image-level median-crowding images: 0 available under >2 median neighbors threshold",
+    "crowded + small-heavy: 0 available",
+    "crowded + crowded-neighbor: 0 available",
+    "small-heavy + crowded-neighbor: 0 available",
+    "crowded + small-heavy + crowded-neighbor: 0 available"
+  ],
+  "createdAtUtc": "2026-08-28T07:41:58Z",
+  "crossTabs": {
+    "densityByLocalCrowding": {
+      "crowded": {
+        "crowded-neighbor": 0,
+        "isolated-dominant": 0,
+        "moderate": 0
+      },
+      "medium": {
+        "crowded-neighbor": 0,
+        "isolated-dominant": 2,
+        "moderate": 8
+      },
+      "sparse": {
+        "crowded-neighbor": 0,
+        "isolated-dominant": 25,
+        "moderate": 13
+      }
+    },
+    "densityByScale": {
+      "crowded": {
+        "medium-large-heavy": 0,
+        "mixed": 0,
+        "small-heavy": 0,
+        "zero-adult": 0
+      },
+      "medium": {
+        "medium-large-heavy": 2,
+        "mixed": 8,
+        "small-heavy": 0,
+        "zero-adult": 0
+      },
+      "sparse": {
+        "medium-large-heavy": 21,
+        "mixed": 17,
+        "small-heavy": 0,
+        "zero-adult": 0
+      }
+    },
+    "scaleByLocalCrowding": {
+      "medium-large-heavy": {
+        "crowded-neighbor": 0,
+        "isolated-dominant": 16,
+        "moderate": 7
+      },
+      "mixed": {
+        "crowded-neighbor": 0,
+        "isolated-dominant": 11,
+        "moderate": 14
+      },
+      "small-heavy": {
+        "crowded-neighbor": 0,
+        "isolated-dominant": 0,
+        "moderate": 0
+      },
+      "zero-adult": {
+        "crowded-neighbor": 0,
+        "isolated-dominant": 0,
+        "moderate": 0
+      }
+    }
+  },
+  "experiment": "ants_v5_crowdedscale_e01",
+  "finalTestBoundary": {
+    "archivalTagContentsInspected": false,
+    "finalTestContentAccessed": false,
+    "formerFinalTest001UsedForDecision": false,
+    "sealedFinalTestCommitInspected": false
+  },
+  "finalTrainAdditionSelected": false,
+  "h3h4TargetSupply": {
+    "crowded_and_crowded_neighbor": {
+      "filenames": [],
+      "imageCount": 0
+    },
+    "crowded_and_small_heavy": {
+      "filenames": [],
+      "imageCount": 0
+    },
+    "crowded_small_heavy_and_crowded_neighbor": {
+      "filenames": [],
+      "imageCount": 0
+    },
+    "small_heavy_and_crowded_neighbor": {
+      "filenames": [],
+      "imageCount": 0
+    }
+  },
+  "marginalCounts": {
+    "density": {
+      "crowded": 0,
+      "medium": 10,
+      "sparse": 38
+    },
+    "localCrowding": {
+      "crowded-neighbor": 0,
+      "isolated-dominant": 27,
+      "moderate": 21
+    },
+    "scale": {
+      "medium-large-heavy": 23,
+      "mixed": 25,
+      "small-heavy": 0,
+      "zero-adult": 0
+    }
+  },
+  "preregisteredSelectionPolicySufficient": false,
+  "role": "ANNOTATION_POOL",
+  "schemaVersion": "1.0",
+  "selectionStatus": {
+    "blockedStatus": "SELECTION_POLICY_PREREGISTRATION_REQUIRED",
+    "finalTrainAdditionSelected": false,
+    "preExistingSelectionRuleSufficient": false,
+    "reason": "Pre-GT preregistration audit found qualitative targets but no fixed subset size, numerical quotas, balancing priority, or deterministic tie-breakers for GT-characterized candidates."
+  },
+  "sourceId": "training_source_001"
+}

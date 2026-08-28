@@ -1,0 +1,68 @@
+{
+  "auditTiming": "completed_before_opening_or_parsing_training_source_001_cvat_gt_export",
+  "createdAtUtc": "2026-08-28T07:33:11.948726+00:00",
+  "deterministicTieBreakersForFinalTrainAddition": null,
+  "experiment": "ants_v5_crowdedscale_e01",
+  "finalTestBoundary": {
+    "archivalTagContentsInspected": false,
+    "finalTestSemanticContentAccessed": false,
+    "former_v5_final_test_001": "OBSERVED_REFERENCE and not eligible for V5 decisions",
+    "sealedFinalTestCommitInspected": false,
+    "v5_final_test_002": "blind registry/source-role identity only; no semantic content accessed"
+  },
+  "missingPreregistrationDetails": [
+    "final subset size is not fixed",
+    "maximum density-stratum share is not numerical",
+    "minimum crowded representation is unspecified",
+    "minimum medium-density representation is unspecified",
+    "minimum small-heavy representation is unspecified",
+    "minimum crowded-neighbor representation is unspecified",
+    "balancing priority among density, scale, local crowding, temporal coverage, and diversity is undefined",
+    "deterministic rejection/tie-breaking rules for GT-characterized candidates are undefined",
+    "rule does not specify whether all 48 annotated candidates should be used"
+  ],
+  "preExistingSelectionRuleSufficient": false,
+  "preregisteredBalancingConstraints": [
+    "no single density stratum should dominate the addition",
+    "crowded and medium-density frames must both be materially represented",
+    "small-heavy and crowded-neighbor examples are required",
+    "do not fill quotas with near-duplicates or low-quality ambiguity",
+    "if supply cannot satisfy these targets, record the shortfall instead of lowering criteria"
+  ],
+  "preregisteredStrata": {
+    "density": {
+      "crowded": "annotations/image > 10",
+      "medium": "annotations/image > 5 and <= 10",
+      "sparse": "annotations/image <= 5"
+    },
+    "localCrowding": {
+      "basis": "per-ant count of other GT centers within radius; per-image median neighbor count",
+      "crowded-neighbor": "> 2",
+      "isolated-dominant": "<= 0",
+      "moderate": "> 0 and <= 2",
+      "radiusNormalized": 0.095833335
+    },
+    "scale": {
+      "basis": "per-image median normalized bbox area",
+      "medium/large-heavy": "> 0.0028168401",
+      "mixed": "> 0.0016905381 and <= 0.0028168401",
+      "small-heavy": "<= 0.0016905381"
+    },
+    "source": "experiments/ants_v5/ants_v5_crowdedscale_e01_plan.md and v4 train boundaries in train_distribution_analysis.json"
+  },
+  "preregisteredTemporalDiversityRequirements": {
+    "annotationPoolSelection": "48-image annotation pool already frozen from 12 temporal regions, four per region, using temporal spacing and dHash diversity before manual GT.",
+    "futureFinalSelection": "must not fill quotas with near-duplicates or low-quality ambiguity; no deterministic GT-aware tie-breakers are numerically specified for final subset selection."
+  },
+  "quotasMinimumsMaximums": null,
+  "schemaVersion": "1.0",
+  "selectionBlockedStatus": "SELECTION_POLICY_PREREGISTRATION_REQUIRED",
+  "sourcesInspectedBeforeGtParsing": [
+    "experiments/ants_v5/ants_v5_crowdedscale_e01_plan.md",
+    "experiments/ants_v5/train_distribution_analysis.json",
+    "experiments/ants_v5/candidate_supply_analysis.json",
+    "experiments/ants_v5/success_criteria.json",
+    "experiments/ants_v5/source_role_registry.json"
+  ],
+  "subsetSizeRule": null
+}
