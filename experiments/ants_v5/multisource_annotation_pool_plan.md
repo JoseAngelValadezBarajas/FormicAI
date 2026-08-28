@@ -127,10 +127,13 @@ Readability gates are technical only:
 Near-duplicate pruning:
 
 - compute 64-bit dHash and 64-bit pHash
-- reject a same-source candidate if dHash Hamming distance is `<=5` from any already accepted same-source frame
-- reject a same-source candidate if pHash Hamming distance is `<=8` from any already accepted same-source frame
+- exact image SHA256 matches always reject
+- reject a same-source candidate if dHash Hamming distance is `<=5` and pHash Hamming distance is `<=8` against the same already accepted same-source frame
+- if only dHash `<=5` or only pHash `<=8`, record `PERCEPTUAL_SIMILARITY_FLAG` and keep the candidate eligible subject to all other rules
 - do not automatically reject cross-source similarities, but flag cross-source dHash `<=3` or pHash `<=6`
 - do not lower hash or spacing thresholds to fill the target number
+
+Remediation note: a label-blind policy-validation attempt under the prior `dHash <=5 OR pHash <=8` rule reached only `19 / 36` public-family images and produced `341` pHash-only hard rejections versus `4` dHash hard rejections. The diagnosis is `PERCEPTUAL_HASH_BACKGROUND_DOMINANCE`: pHash is retained as a useful audit signal, but no longer acts as a standalone hard-rejection criterion in this relatively static-background acquisition regime.
 
 ## Redistribution
 

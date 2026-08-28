@@ -268,12 +268,28 @@
     "reason": "Readability gates are image-technical only and do not estimate adult counts, bbox scale, or crowding."
   },
   "nearDuplicatePolicy": {
+    "remediationStatus": "REMEDIATED_AFTER_LABEL_BLIND_POLICY_VALIDATION_REVIEW",
+    "diagnosis": "PERCEPTUAL_HASH_BACKGROUND_DOMINANCE",
+    "previousHardRejectRule": "dHash Hamming distance <=5 OR pHash Hamming distance <=8",
+    "observedAggregateRejectionCountsFromReview": {
+      "same_source_dhash_near_duplicate": 4,
+      "same_source_phash_near_duplicate": 341
+    },
+    "observedPublicFamilyReviewResult": {
+      "target": 36,
+      "feasibleUnderPreviousRule": 19,
+      "shortfallUnderPreviousRule": 17
+    },
+    "hardRejectRule": "exact image SHA256 match OR (dHash Hamming distance <=5 AND pHash Hamming distance <=8)",
     "hashes": [
       "64-bit dHash",
       "64-bit pHash"
     ],
+    "exactImageSha256MatchAlwaysRejects": true,
     "sameSourceRejectIfDhashHammingDistanceLessOrEqual": 5,
     "sameSourceRejectIfPhashHammingDistanceLessOrEqual": 8,
+    "sameSourcePerceptualHardRejectRequiresBothDhashAndPhashThresholds": true,
+    "singleHashThresholdCrossingAction": "PERCEPTUAL_SIMILARITY_FLAG_ONLY",
     "crossSourceRejectAutomatically": false,
     "crossSourceFlagIfDhashHammingDistanceLessOrEqual": 3,
     "crossSourceFlagIfPhashHammingDistanceLessOrEqual": 6,
